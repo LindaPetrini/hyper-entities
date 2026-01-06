@@ -394,9 +394,9 @@ def create_html_visualization(vis_data, cluster_centers):
                     return lines.join('<br>');
                 };
 
-                // Show more text - ~450 chars (about 10 wrapped lines)
-                const displayDesc = d.description.length > 450
-                    ? d.description.substring(0, 450) + '...'
+                // Show much more text - ~800 chars (about 20 wrapped lines)
+                const displayDesc = d.description.length > 800
+                    ? d.description.substring(0, 800) + '...'
                     : d.description;
 
                 return `<b>${d.name}</b><br>` +
@@ -416,7 +416,7 @@ def create_html_visualization(vis_data, cluster_centers):
                     bgcolor: 'white',
                     bordercolor: colors[clusterId % colors.length],
                     font: {
-                        size: 11,
+                        size: 10,
                         family: 'Arial, sans-serif',
                         color: '#333'
                     },
