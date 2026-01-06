@@ -340,24 +340,6 @@ def create_html_visualization(vis_data, cluster_centers):
         .stats h3 {
             margin-top: 0;
         }
-        /* Compact vertical hover tooltip with proper wrapping */
-        .hoverlayer .hovertext {
-            max-width: 280px !important;
-            min-width: 200px !important;
-            white-space: pre-wrap !important;
-            word-wrap: break-word !important;
-            overflow-wrap: break-word !important;
-            line-height: 1.5 !important;
-            padding: 10px 12px !important;
-            max-height: 400px !important;
-            overflow-y: auto !important;
-        }
-        .hoverlayer .hovertext path {
-            shape-rendering: auto !important;
-        }
-        .hoverlayer .hovertext text {
-            white-space: pre-wrap !important;
-        }
     </style>
 </head>
 <body>
@@ -382,24 +364,43 @@ def create_html_visualization(vis_data, cluster_centers):
         const traces = [];
         const clusterIds = [...new Set(data.map(d => d.cluster))].sort((a, b) => a - b);
 
-        // Vibrant color palette
+        // Vibrant, readable color palette (no bright yellow)
         const colors = [
             '#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00',
-            '#ffff33', '#a65628', '#f781bf', '#999999', '#66c2a5',
-            '#fc8d62', '#8da0cb', '#e78ac3', '#a6d854', '#ffd92f'
+            '#b8860b', '#a65628', '#f781bf', '#666666', '#66c2a5',
+            '#fc8d62', '#8da0cb', '#e78ac3', '#a6d854', '#cd853f'
         ];
 
         clusterIds.forEach(clusterId => {
             const clusterData = data.filter(d => d.cluster === clusterId);
 
-            // Compact hover text - shorter and more concise
+            // Compact hover text with word wrapping
             const hoverText = clusterData.map(d => {
-                const shortDesc = d.description.length > 150
-                    ? d.description.substring(0, 150) + '...'
+                // Wrap text to ~40 chars per line for readability
+                const wrapText = (text, maxLen) => {
+                    const words = text.split(' ');
+                    const lines = [];
+                    let currentLine = '';
+
+                    words.forEach(word => {
+                        if ((currentLine + word).length > maxLen) {
+                            if (currentLine) lines.push(currentLine.trim());
+                            currentLine = word + ' ';
+                        } else {
+                            currentLine += word + ' ';
+                        }
+                    });
+                    if (currentLine) lines.push(currentLine.trim());
+                    return lines.join('<br>');
+                };
+
+                const shortDesc = d.description.length > 200
+                    ? d.description.substring(0, 200) + '...'
                     : d.description;
+
                 return `<b>${d.name}</b><br>` +
                     `<i>${d.category}</i><br><br>` +
-                    `${shortDesc}`;
+                    `${wrapText(shortDesc, 40)}`;
             });
 
             traces.push({
@@ -414,8 +415,9 @@ def create_html_visualization(vis_data, cluster_centers):
                     bgcolor: 'white',
                     bordercolor: colors[clusterId % colors.length],
                     font: {
-                        size: 12,
-                        family: 'Arial, sans-serif'
+                        size: 11,
+                        family: 'Arial, sans-serif',
+                        color: '#333'
                     },
                     align: 'left',
                     namelength: -1
