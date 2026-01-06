@@ -394,14 +394,10 @@ def create_html_visualization(vis_data, cluster_centers):
                     return lines.join('<br>');
                 };
 
-                // Show much more text - ~800 chars (about 20 wrapped lines)
-                const displayDesc = d.description.length > 800
-                    ? d.description.substring(0, 800) + '...'
-                    : d.description;
-
+                // Show full description - no character limit
                 return `<b>${d.name}</b><br>` +
                     `<i>${d.category}</i><br><br>` +
-                    `${wrapText(displayDesc, 40)}`;
+                    `${wrapText(d.description, 40)}`;
             });
 
             traces.push({
