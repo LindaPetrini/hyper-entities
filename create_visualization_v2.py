@@ -64,8 +64,8 @@ def load_and_parse_entities():
                     all_entities.append({
                         "name": entity_name,
                         "category": category,
-                        "description": description[:300] if description else "No description",
-                        "why_promising": why_promising[:200] if why_promising else "",
+                        "description": description if description else "No description",
+                        "why_promising": why_promising if why_promising else "",
                         "source": source_file,
                         "full_text": full_text,
                     })
