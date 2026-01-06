@@ -88,10 +88,14 @@
                     return lines.join('<br>');
                 };
 
-                // Show full description (no truncation)
+                // Limit to ~220 chars (about 5 wrapped lines) for tooltip display
+                const displayDesc = d.description.length > 220
+                    ? d.description.substring(0, 220) + '...'
+                    : d.description;
+
                 return `<b>${d.name}</b><br>` +
                     `<i>${d.category}</i><br><br>` +
-                    `${wrapText(d.description, 45)}`;
+                    `${wrapText(displayDesc, 45)}`;
             });
 
             traces.push({
