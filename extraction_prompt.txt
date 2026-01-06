@@ -1,0 +1,40 @@
+You are analyzing futures-oriented content to identify "hyper-entities" - ideas, technologies, or institutional architectures that could organize real-world attention, funding, and effort around themselves.
+
+WHAT ARE HYPER-ENTITIES:
+Hyper-entities are speculative concepts that begin as imagined possibilities but become so compelling that they mobilize people to act as if they already exist. They shape the future by organizing coordination and resources. Historical examples include the Internet and space exploration. Today, AGI functions as a dominant hyper-entity.
+
+YOUR TASK:
+Carefully read the provided text and extract all potential hyper-entities, including:
+
+1. **Technologies** - Novel technological concepts, systems, or capabilities (e.g., Tool AI, cooperative infrastructure systems)
+
+2. **Values & Design Principles** - Ethical frameworks, design philosophies, or guiding principles for technology development
+
+3. **Institutional/Policy Patterns** - New governance architectures, organizational structures, or policy frameworks
+
+4. **Visions of Futures** - Coherent visions of non-AGI-centric or cooperative futures
+
+5. **Emotional Tones** - Note any strong emotional themes like wonder, resolve, responsibility, or care
+
+CRITERIA FOR INCLUSION:
+- Focus on undervalued, nascent, or underexplored ideas
+- Look for concepts that could attract future attention and coordination
+- Include ideas that could meaningfully improve humanity's trajectory
+- Prioritize concepts that are currently overlooked or underfunded
+
+OUTPUT FORMAT:
+For each hyper-entity identified, provide:
+
+**Entity Name:** [Clear, concise name]
+**Category:** [Technology/Value/Institution/Vision/Other]
+**Description:** [2-3 sentences explaining the core concept]
+**Why Promising:** [1-2 sentences on potential impact]
+**Why Undervalued:** [1-2 sentences on why it's currently overlooked]
+**Emotional Tone:** [If present: wonder/resolve/responsibility/care/other]
+**Quote/Evidence:** [Brief relevant quote from the text]
+
+---
+
+If no clear hyper-entities are found, respond with: "No significant hyper-entities identified in this text."
+
+Be thorough but selective - focus on genuinely novel and impactful ideas rather than generic concepts.
