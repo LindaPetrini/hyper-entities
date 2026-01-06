@@ -374,9 +374,9 @@ def create_html_visualization(vis_data, cluster_centers):
         clusterIds.forEach(clusterId => {
             const clusterData = data.filter(d => d.cluster === clusterId);
 
-            // Compact hover text with word wrapping
+            // Hover text with word wrapping
             const hoverText = clusterData.map(d => {
-                // Wrap text to ~40 chars per line for readability
+                // Wrap text to ~45 chars per line for readability
                 const wrapText = (text, maxLen) => {
                     const words = text.split(' ');
                     const lines = [];
@@ -394,13 +394,10 @@ def create_html_visualization(vis_data, cluster_centers):
                     return lines.join('<br>');
                 };
 
-                const shortDesc = d.description.length > 200
-                    ? d.description.substring(0, 200) + '...'
-                    : d.description;
-
+                // Show full description (no truncation)
                 return `<b>${d.name}</b><br>` +
                     `<i>${d.category}</i><br><br>` +
-                    `${wrapText(shortDesc, 40)}`;
+                    `${wrapText(d.description, 45)}`;
             });
 
             traces.push({
