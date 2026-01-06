@@ -340,17 +340,23 @@ def create_html_visualization(vis_data, cluster_centers):
         .stats h3 {
             margin-top: 0;
         }
-        /* Compact vertical hover tooltip */
+        /* Compact vertical hover tooltip with proper wrapping */
         .hoverlayer .hovertext {
             max-width: 280px !important;
             min-width: 200px !important;
-            white-space: normal !important;
+            white-space: pre-wrap !important;
             word-wrap: break-word !important;
-            line-height: 1.4 !important;
-            padding: 8px 12px !important;
+            overflow-wrap: break-word !important;
+            line-height: 1.5 !important;
+            padding: 10px 12px !important;
+            max-height: 400px !important;
+            overflow-y: auto !important;
         }
         .hoverlayer .hovertext path {
             shape-rendering: auto !important;
+        }
+        .hoverlayer .hovertext text {
+            white-space: pre-wrap !important;
         }
     </style>
 </head>
@@ -451,6 +457,13 @@ def create_html_visualization(vis_data, cluster_centers):
             hovermode: 'closest',
             showlegend: true,
             annotations: annotations,
+            hoverlabel: {
+                bgcolor: 'white',
+                font: {
+                    size: 12
+                },
+                align: 'left'
+            },
             legend: {
                 x: 1.02,
                 y: 1,

@@ -32,3 +32,22 @@ results/d-acc_extraction.md
 !results/synthesis/
 !results/hyperentities_visualization_v2.html
 !results/entities_data.json
+
+# Test files and temporary scripts
+test_*.py
+test_*.md
+test_*.json
+setup.sh
+fix_failed_file.py
+prompts/
+
+# Old versions of scripts (keep only v2)
+extract_hyperentities.py
+extract_hyperentities_chunked.py
+synthesize_hyperentities.py
+create_visualization.py
+results/hyperentities_visualization.html
+synthesis_prompt.txt
+
+# Claude Code IDE files
+.claude/
