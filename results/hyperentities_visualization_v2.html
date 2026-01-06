@@ -70,7 +70,7 @@
 
             // Hover text with word wrapping
             const hoverText = clusterData.map(d => {
-                // Wrap text to ~45 chars per line for readability
+                // Wrap text to ~40 chars per line for narrow vertical tooltips
                 const wrapText = (text, maxLen) => {
                     const words = text.split(' ');
                     const lines = [];
@@ -88,14 +88,14 @@
                     return lines.join('<br>');
                 };
 
-                // Limit to ~220 chars (about 5 wrapped lines) for tooltip display
-                const displayDesc = d.description.length > 220
-                    ? d.description.substring(0, 220) + '...'
+                // Show more text - ~450 chars (about 10 wrapped lines)
+                const displayDesc = d.description.length > 450
+                    ? d.description.substring(0, 450) + '...'
                     : d.description;
 
                 return `<b>${d.name}</b><br>` +
                     `<i>${d.category}</i><br><br>` +
-                    `${wrapText(displayDesc, 45)}`;
+                    `${wrapText(displayDesc, 40)}`;
             });
 
             traces.push({
