@@ -185,7 +185,7 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
             overflow: hidden;
         }}
         #list-panel {{
-            width: 400px;
+            width: 500px;
             background: white;
             border-right: 1px solid #e5e7eb;
             display: flex;
@@ -237,6 +237,7 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
             color: #111827;
             font-size: 14px;
             margin-bottom: 4px;
+            line-height: 1.4;
         }}
         .entity-meta {{
             font-size: 12px;
@@ -268,7 +269,7 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
             background: white;
         }}
         #detail-panel {{
-            width: 350px;
+            width: 450px;
             background: white;
             border-left: 1px solid #e5e7eb;
             padding: 20px;
@@ -286,7 +287,55 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
         }}
         .detail-value {{
             color: #374151;
-            line-height: 1.5;
+            line-height: 1.6;
+            font-size: 14px;
+        }}
+        .expand-btn {{
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }}
+        .expand-btn:hover {{
+            background: #1d4ed8;
+        }}
+        .modal {{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }}
+        .modal.active {{
+            display: flex;
+        }}
+        .modal-content {{
+            background: white;
+            border-radius: 8px;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 30px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+        }}
+        .modal-close {{
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+            line-height: 1;
+        }}
+        .modal-close:hover {{
+            color: #333;
         }}
         .scoring-grid {{
             display: grid;
@@ -388,6 +437,13 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
 
             <div id="detail-panel" style="display:none;">
                 <div id="detail-content"></div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+                <div id="modal-body"></div>
             </div>
         </div>
     </div>
@@ -587,6 +643,7 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
             }}
 
             content.innerHTML = `
+                <button class="expand-btn" onclick="expandEntity()">📄 Open in Larger View</button>
                 <h3 style="margin-top:0;color:#2563eb;">${{entity.name}}</h3>
 
                 <div class="detail-section">
@@ -625,6 +682,98 @@ def create_dashboard_html(data, coords_2d, labels, cluster_names, has_stage2):
         document.getElementById('search-box').addEventListener('input', updateList);
         document.getElementById('sort-by').addEventListener('change', updateList);
         document.getElementById('sort-order').addEventListener('change', updateList);
+
+        // Modal functions
+        function expandEntity() {{
+            if (!selectedEntity) return;
+
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modal-body');
+
+            // Build full entity display
+            let stage1HTML = '<div class="scoring-grid">';
+            for (const [axis, score] of Object.entries(selectedEntity.scoring)) {{
+                const pct = (score / 3) * 100;
+                stage1HTML += `
+                    <div>${{axis}}</div>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <div class="score-bar" style="flex:1;">
+                            <div class="score-fill" style="width:${{pct}}%;"></div>
+                        </div>
+                        <span style="font-size:11px;color:#6b7280;">${{score}}/3</span>
+                    </div>
+                `;
+            }}
+            stage1HTML += '</div>';
+
+            let stage2HTML = '';
+            if (hasStage2 && selectedEntity.stage2_scores) {{
+                stage2HTML = '<div class="detail-section"><div class="detail-label">Stage 2: Impact Assessment (0-5 per dimension)</div><div class="scoring-grid">';
+                for (const [dim, score] of Object.entries(selectedEntity.stage2_scores)) {{
+                    const pct = (score / 5) * 100;
+                    stage2HTML += `
+                        <div>${{dim}}</div>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <div class="score-bar" style="flex:1;">
+                                <div class="score-fill score-fill-stage2" style="width:${{pct}}%;"></div>
+                            </div>
+                            <span style="font-size:11px;color:#6b7280;">${{score}}/5</span>
+                        </div>
+                    `;
+                }}
+                stage2HTML += '</div></div>';
+            }}
+
+            modalBody.innerHTML = `
+                <h2 style="margin-top:0;color:#2563eb;">${{selectedEntity.name}}</h2>
+
+                <div class="detail-section">
+                    <div class="detail-label">Scores</div>
+                    <div style="font-size:24px;">
+                        <strong style="color:#2563eb;">Stage 1: ${{selectedEntity.stage1_score}}/27</strong>
+                        ${{hasStage2 ? `<br><strong style="color:#10b981;margin-top:8px;display:inline-block;">Stage 2: ${{selectedEntity.stage2_total || 0}}/70</strong>` : ''}}
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <div class="detail-label">Category</div>
+                    <div class="detail-value">${{selectedEntity.category}}</div>
+                </div>
+
+                <div class="detail-section">
+                    <div class="detail-label">Description</div>
+                    <div class="detail-value" style="font-size:15px;line-height:1.7;">${{selectedEntity.description}}</div>
+                </div>
+
+                <div class="detail-section">
+                    <div class="detail-label">Stage 1: Qualification Scoring (0-3 per axis)</div>
+                    ${{stage1HTML}}
+                </div>
+
+                ${{stage2HTML}}
+
+                <div class="detail-section">
+                    <div class="detail-label">Source</div>
+                    <div class="detail-value" style="font-size:12px;color:#999;">${{selectedEntity.source}}</div>
+                </div>
+            `;
+
+            modal.classList.add('active');
+        }}
+
+        function closeModal() {{
+            document.getElementById('modal').classList.remove('active');
+        }}
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {{
+            if (e.key === 'Escape') closeModal();
+        }});
+
+        // Close modal on background click
+        document.getElementById('modal').addEventListener('click', (e) => {{
+            if (e.target.id === 'modal') closeModal();
+        }});
 
         // Initial render
         updateList();
