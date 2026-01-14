@@ -1,3 +1,7 @@
+# Environment variables and secrets
+.env
+.env.local
+
 # Exclude large source files
 sources/
 
@@ -51,3 +55,6 @@ synthesis_prompt.txt
 
 # Claude Code IDE files
 .claude/
+
+# Archive directory
+archive/
