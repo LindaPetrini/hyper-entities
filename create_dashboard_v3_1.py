@@ -703,9 +703,9 @@ SCORING FRAMEWORK: 9 axes (0-3 per axis). Maximum: 27 points. Threshold: ≥18 t
 | Resource pull      | Trivial    | Some grants | Serious capital  | Massive capital+talent  |
 | Narrative centrality| Ignored   | Peripheral  | Often referenced | Justifies present acts  |
 | Pre-real effects   | None       | Speculation | Market/policy    | Institutions reorganize |</pre>
-            </div>
+                </div>
 
-            <div id="method-v31" class="method-content" style="display: none;">
+                <div id="method-v31" class="method-content" style="display: none;">
                 <h3>Stage 2: Entity Expansion Prompt</h3>
                 <p style="color: #94a3b8; margin-bottom: 15px;">Used to add concrete details and consolidated scoring to each entity.</p>
                 <pre style="background: #0a0e27; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; line-height: 1.5; white-space: pre-wrap;">You are expanding a hyper-entity description with concrete, specific details.
@@ -1374,56 +1374,6 @@ Stage 2 scores are consolidated into 3 dimensions:
                     '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080'
                 ]);
 
-            // Draw cluster labels positioned radially outside the circle
-            const labelRadius = radius + 100; // Position labels well outside the node clusters
-            Array.from(clusterIds).sort((a, b) => a - b).forEach((cid, i) => {{
-                const angle = (2 * Math.PI * i / numClusters) - Math.PI / 2;
-                const labelX = centerX + labelRadius * Math.cos(angle);
-                const labelY = centerY + labelRadius * Math.sin(angle);
-                const clusterName = currentData.clusters?.[cid]?.name || `Cluster ${{cid}}`;
-
-                // Determine text anchor based on position (left/right of center)
-                let textAnchor = 'middle';
-                let rotation = 0;
-                const angleDeg = (angle * 180 / Math.PI + 360) % 360;
-
-                // Rotate labels to be readable (not upside down)
-                if (angleDeg > 90 && angleDeg < 270) {{
-                    rotation = angleDeg + 180;
-                    textAnchor = 'middle';
-                }} else {{
-                    rotation = angleDeg;
-                }}
-
-                // Create a group for label + background
-                const labelGroup = g.append('g')
-                    .attr('transform', `translate(${{labelX}}, ${{labelY}}) rotate(${{rotation}})`);
-
-                // Add background rectangle with cluster color
-                const bgRect = labelGroup.append('rect')
-                    .attr('fill', colorScale(cid))
-                    .attr('rx', 4)
-                    .attr('ry', 4)
-                    .attr('opacity', 0.9);
-
-                // Add text in white for contrast
-                const text = labelGroup.append('text')
-                    .attr('text-anchor', 'middle')
-                    .attr('dominant-baseline', 'middle')
-                    .attr('fill', '#ffffff')
-                    .attr('font-size', '10px')
-                    .attr('font-weight', '600')
-                    .text(clusterName);
-
-                // Size background to fit text
-                const bbox = text.node().getBBox();
-                bgRect
-                    .attr('x', bbox.x - 4)
-                    .attr('y', bbox.y - 2)
-                    .attr('width', bbox.width + 8)
-                    .attr('height', bbox.height + 4);
-            }});
-
             // Create simulation with cluster-based forces
             const simulation = d3.forceSimulation(vizData)
                 .force('charge', d3.forceManyBody().strength(-30))
@@ -1453,6 +1403,47 @@ Stage 2 scores are consolidated into 3 dimensions:
             // Add tooltips
             nodes.append('title')
                 .text(d => `${{d.entity.name}}\n${{d.clusterName}}`);
+
+            // Draw cluster labels ON TOP of nodes (drawn after nodes so they appear above)
+            const labelRadius = radius + 100;
+            Array.from(clusterIds).sort((a, b) => a - b).forEach((cid, i) => {{
+                const angle = (2 * Math.PI * i / numClusters) - Math.PI / 2;
+                const labelX = centerX + labelRadius * Math.cos(angle);
+                const labelY = centerY + labelRadius * Math.sin(angle);
+                const clusterName = currentData.clusters?.[cid]?.name || `Cluster ${{cid}}`;
+
+                let rotation = 0;
+                const angleDeg = (angle * 180 / Math.PI + 360) % 360;
+                if (angleDeg > 90 && angleDeg < 270) {{
+                    rotation = angleDeg + 180;
+                }} else {{
+                    rotation = angleDeg;
+                }}
+
+                const labelGroup = g.append('g')
+                    .attr('transform', `translate(${{labelX}}, ${{labelY}}) rotate(${{rotation}})`);
+
+                const bgRect = labelGroup.append('rect')
+                    .attr('fill', colorScale(cid))
+                    .attr('rx', 4)
+                    .attr('ry', 4)
+                    .attr('opacity', 0.95);
+
+                const text = labelGroup.append('text')
+                    .attr('text-anchor', 'middle')
+                    .attr('dominant-baseline', 'middle')
+                    .attr('fill', '#ffffff')
+                    .attr('font-size', '11px')
+                    .attr('font-weight', '700')
+                    .text(clusterName);
+
+                const bbox = text.node().getBBox();
+                bgRect
+                    .attr('x', bbox.x - 6)
+                    .attr('y', bbox.y - 3)
+                    .attr('width', bbox.width + 12)
+                    .attr('height', bbox.height + 6);
+            }});
 
             // Update positions
             simulation.on('tick', () => {{
