@@ -668,19 +668,20 @@ def create_dashboard_html(v3_0_data, v3_1_data):
     </div>
 
     <div id="methodology-modal" class="modal">
-        <div class="modal-content" style="max-width: 900px;">
+        <div class="modal-content" style="max-width: 900px; max-height: 85vh; display: flex; flex-direction: column;">
             <span class="modal-close" onclick="closeMethodology()">&times;</span>
-            <h2 style="margin-bottom: 20px; color: #60a5fa;">Extraction Methodology</h2>
+            <h2 style="margin-bottom: 20px; color: #60a5fa; flex-shrink: 0;">Extraction Methodology</h2>
 
-            <div class="method-tabs">
+            <div class="method-tabs" style="flex-shrink: 0;">
                 <button class="method-tab active" onclick="showMethodTab('v30')">v3.0 Extraction</button>
                 <button class="method-tab" onclick="showMethodTab('v31')">v3.1 Expansion</button>
             </div>
 
-            <div id="method-v30" class="method-content active">
-                <h3>Stage 1: Hyper-Entity Extraction Prompt</h3>
-                <p style="color: #94a3b8; margin-bottom: 15px;">Used to identify and score hyper-entities from source documents.</p>
-                <pre style="background: #0a0e27; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; line-height: 1.5; white-space: pre-wrap;">You are analyzing futures-oriented content to identify HYPER-ENTITIES using a rigorous scoring framework.
+            <div style="flex: 1; overflow-y: auto; padding-right: 10px;">
+                <div id="method-v30" class="method-content active">
+                    <h3>Stage 1: Hyper-Entity Extraction Prompt</h3>
+                    <p style="color: #94a3b8; margin-bottom: 15px;">Used to identify and score hyper-entities from source documents.</p>
+                    <pre style="background: #0a0e27; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; line-height: 1.5; white-space: pre-wrap;">You are analyzing futures-oriented content to identify HYPER-ENTITIES using a rigorous scoring framework.
 
 DEFINITION: A hyper-entity is "A coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence."
 
@@ -737,6 +738,7 @@ Stage 2 scores are consolidated into 3 dimensions:
 - Transformative Power (0-25): Capability Discontinuity + Cross-Domain Reach + Scalability + Autonomy + Composability
 - Systemic Risk (0-25): Irreversibility + Power Concentration + Externality Magnitude + Misuse Asymmetry + Governance Lag
 - Lock-in Effects (0-20): Feedback Intensity + Narrative Lock-In + Path Dependency + Human Agency Impact</pre>
+                </div>
             </div>
         </div>
     </div>
@@ -1373,7 +1375,7 @@ Stage 2 scores are consolidated into 3 dimensions:
                 ]);
 
             // Draw cluster labels positioned radially outside the circle
-            const labelRadius = radius + 80; // Position labels outside the node clusters
+            const labelRadius = radius + 100; // Position labels well outside the node clusters
             Array.from(clusterIds).sort((a, b) => a - b).forEach((cid, i) => {{
                 const angle = (2 * Math.PI * i / numClusters) - Math.PI / 2;
                 const labelX = centerX + labelRadius * Math.cos(angle);
@@ -1397,17 +1399,18 @@ Stage 2 scores are consolidated into 3 dimensions:
                 const labelGroup = g.append('g')
                     .attr('transform', `translate(${{labelX}}, ${{labelY}}) rotate(${{rotation}})`);
 
-                // Add background rectangle (will be sized after text is added)
+                // Add background rectangle with cluster color
                 const bgRect = labelGroup.append('rect')
-                    .attr('fill', 'rgba(15, 22, 41, 0.9)')
-                    .attr('rx', 3)
-                    .attr('ry', 3);
+                    .attr('fill', colorScale(cid))
+                    .attr('rx', 4)
+                    .attr('ry', 4)
+                    .attr('opacity', 0.9);
 
-                // Add text
+                // Add text in white for contrast
                 const text = labelGroup.append('text')
                     .attr('text-anchor', 'middle')
                     .attr('dominant-baseline', 'middle')
-                    .attr('fill', colorScale(cid))
+                    .attr('fill', '#ffffff')
                     .attr('font-size', '10px')
                     .attr('font-weight', '600')
                     .text(clusterName);
