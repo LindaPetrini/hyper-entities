@@ -627,8 +627,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <input type="text" id="search" placeholder="Search entities...">
             </div>
             <div class="sort-controls">
-                <button class="sort-btn active" data-sort="s1">Sort: Stage 1 ↓</button>
-                <button class="sort-btn" data-sort="s2">Sort: Stage 2 ↓</button>
+                <button class="sort-btn active" data-sort="s1">Sort: Hyper-Entity ↓</button>
+                <button class="sort-btn" data-sort="s2">Sort: Technology ↓</button>
                 <button class="sort-btn" data-sort="name">Sort: Name</button>
                 <button class="sort-btn" data-sort="category">Sort: Category</button>
             </div>
@@ -726,7 +726,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                     </ul>
                 </div>
 
-                <div id="method-v31" class="method-content" style="display: none;">
+                <div id="method-v31" class="method-content">
                     <h3 style="color: #a78bfa; margin-bottom: 15px;">Stage 2: Technology Impact Assessment</h3>
                     <p style="color: #94a3b8; margin-bottom: 15px;">For entities that pass Stage 1 (≥18 points), we assess potential impact using 14 dimensions scored 0-5 each.</p>
 
