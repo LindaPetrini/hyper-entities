@@ -15,8 +15,8 @@ from anthropic import Anthropic
 CONFIG = {
     "api_key_env": "ANTHROPIC_API_KEY",
     "model": "claude-3-5-haiku-20241022",
-    "input_json": "results/cluster_analysis_v3.json",
-    "output_json": "results/v3.1_organized_expanded/entities.json",
+    "input_json": "results/cluster_analysis.json",
+    "output_json": "results/stage2_assessment/entities.json",
     "max_tokens": 1500,
     "temperature": 0.3,
     "batch_delay": 1,  # seconds between requests

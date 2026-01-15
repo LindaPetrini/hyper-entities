@@ -13,8 +13,8 @@ from sklearn.decomposition import PCA
 from collections import Counter, defaultdict
 
 CONFIG = {
-    "input_json": "results/v3.0_rigorous_dual_scoring/entities.json",
-    "output_json": "results/cluster_analysis_v3.json",
+    "input_json": "results/stage1_extraction/entities.json",
+    "output_json": "results/cluster_analysis.json",
     "n_clusters": 20,  # More granular clustering for organization
 }
 

@@ -639,71 +639,104 @@
             <h2 style="margin-bottom: 20px; color: #60a5fa; flex-shrink: 0;">Extraction Methodology</h2>
 
             <div class="method-tabs" style="flex-shrink: 0;">
-                <button class="method-tab active" onclick="showMethodTab('v30')">v3.0 Extraction</button>
-                <button class="method-tab" onclick="showMethodTab('v31')">v3.1 Expansion</button>
+                <button class="method-tab active" onclick="showMethodTab('v30')">Hyper-Entity Assessment</button>
+                <button class="method-tab" onclick="showMethodTab('v31')">Technology Assessment</button>
             </div>
 
             <div style="flex: 1; overflow-y: scroll; min-height: 0; padding-right: 10px; margin-top: 15px;">
                 <div id="method-v30" class="method-content active">
-                    <h3>Stage 1: Hyper-Entity Extraction Prompt</h3>
-                    <p style="color: #94a3b8; margin-bottom: 15px;">Used to identify and score hyper-entities from source documents.</p>
-                    <pre style="background: #0a0e27; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; line-height: 1.5; white-space: pre-wrap;">You are analyzing futures-oriented content to identify HYPER-ENTITIES using a rigorous scoring framework.
+                    <h3 style="color: #a78bfa; margin-bottom: 15px;">What is a Hyper-Entity?</h3>
+                    <div style="background: #1a1f3a; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 3px solid #60a5fa;">
+                        <p style="font-style: italic; color: #e0e6f0;">A coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence.</p>
+                    </div>
 
-DEFINITION: A hyper-entity is "A coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence."
+                    <h4 style="color: #60a5fa; margin: 20px 0 10px;">Key Characteristics</h4>
+                    <ul style="color: #94a3b8; margin-left: 20px; line-height: 1.8;">
+                        <li><strong style="color: #e0e6f0;">Non-existent but treated as real</strong> - The system doesn't exist yet, but people act as if it will</li>
+                        <li><strong style="color: #e0e6f0;">Creates new action spaces</strong> - Would enable fundamentally new things humans can do</li>
+                        <li><strong style="color: #e0e6f0;">Pre-real effects</strong> - Already reorganizing coordination, investment, and narrative now</li>
+                    </ul>
 
-KEY REQUIREMENTS (ALL must be true):
-1. Does NOT exist yet (or only partially exists)
-2. Creates a NEW stable action space (new things humans can do)
-3. Has PRE-REAL EFFECTS (already reorganizing coordination/investment/narrative NOW)
+                    <h4 style="color: #60a5fa; margin: 25px 0 10px;">Stage 1: Initial Qualification Scoring</h4>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">Score each candidate on 9 axes (0-3 per axis). Maximum: 27 points. Threshold: ≥18 to qualify.</p>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 15px;">
+                            <thead>
+                                <tr style="background: #1e293b;">
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #3a4f7a; color: #60a5fa;">Axis</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">0</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">1</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">2</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">3</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: #e0e6f0;">
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Non-existence</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Deployed</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Prototype</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Partial demos</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">No instantiation</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Plausibility</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Fantasy</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Hand-wavy</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Credible theory</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Active scientific path</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Design specificity</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Vague</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Metaphor</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Coarse arch.</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Detailed model</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>New action space</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Incremental</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Narrow new</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Broad new cap.</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Entirely new verb</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Roadmap clarity</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">None</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Wishful</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Research agenda</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Multi-stage roadmap</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Coordination gravity</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Solo</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Small niche</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Multiple orgs</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Global coordination</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Resource pull</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Trivial</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Some grants</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Serious capital</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Massive capital</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Narrative centrality</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Ignored</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Peripheral</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Often referenced</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Justifies actions</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Pre-real effects</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">None</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Speculation</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Market/policy</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Institutions reorganize</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-SCORING FRAMEWORK: 9 axes (0-3 per axis). Maximum: 27 points. Threshold: ≥18 to qualify.
-
-| Axis               | 0          | 1           | 2                | 3                       |
-|--------------------|------------|-------------|------------------|-------------------------|
-| Non-existence      | Deployed   | Prototype   | Partial demos    | No instantiation        |
-| Plausibility       | Fantasy    | Hand-wavy   | Credible theory  | Active scientific path  |
-| Design specificity | Vague      | Metaphor    | Coarse arch.     | Detailed system model   |
-| New action space   | Incremental| Narrow new  | Broad new cap.   | Entirely new verb       |
-| Roadmap clarity    | None       | Wishful     | Research agenda  | Multi-stage roadmap     |
-| Coordination gravity| Solo      | Small niche | Multiple orgs    | Global coordination     |
-| Resource pull      | Trivial    | Some grants | Serious capital  | Massive capital+talent  |
-| Narrative centrality| Ignored   | Peripheral  | Often referenced | Justifies present acts  |
-| Pre-real effects   | None       | Speculation | Market/policy    | Institutions reorganize |</pre>
+                    <h4 style="color: #60a5fa; margin: 25px 0 10px;">Historical Examples</h4>
+                    <ul style="color: #94a3b8; margin-left: 20px; line-height: 1.8;">
+                        <li><strong style="color: #e0e6f0;">The Internet (pre-1990s)</strong> - Reorganized telecoms R&D and policy before widespread deployment</li>
+                        <li><strong style="color: #e0e6f0;">Space Exploration (1950s-60s)</strong> - Organized national budgets and narratives before any moon landings</li>
+                        <li><strong style="color: #e0e6f0;">AGI (current)</strong> - Reorganizes AI research and tech strategy despite not existing yet</li>
+                    </ul>
                 </div>
 
                 <div id="method-v31" class="method-content" style="display: none;">
-                <h3>Stage 2: Entity Expansion Prompt</h3>
-                <p style="color: #94a3b8; margin-bottom: 15px;">Used to add concrete details and consolidated scoring to each entity.</p>
-                <pre style="background: #0a0e27; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; line-height: 1.5; white-space: pre-wrap;">You are expanding a hyper-entity description with concrete, specific details.
+                    <h3 style="color: #a78bfa; margin-bottom: 15px;">Stage 2: Technology Impact Assessment</h3>
+                    <p style="color: #94a3b8; margin-bottom: 15px;">For entities that pass Stage 1 (≥18 points), we assess potential impact using 14 dimensions scored 0-5 each.</p>
 
-ENTITY: [Entity Name]
-CATEGORY: [Category]
-CURRENT DESCRIPTION: [Description]
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 20px;">
+                            <thead>
+                                <tr style="background: #1e293b;">
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #3a4f7a; color: #60a5fa;">Dimension</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #3a4f7a; color: #94a3b8;">What you're scoring</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">0</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">5</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: #e0e6f0;">
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Capability Discontinuity</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">New powers unlocked</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Incremental</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Phase change</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Cross-Domain Reach</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Sectors touched</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Single domain</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Many domains</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Scalability</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Speed of global spread</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Local/slow</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Global/fast</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Autonomy</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Human control needed</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Fully manual</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Largely autonomous</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Composability</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Embeddability</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Standalone</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Universal substrate</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Feedback Intensity</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Self-reinforcing loops</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Weak</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Explosive</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Irreversibility</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Rollback difficulty</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Easy</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Impossible</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Power Concentration</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Centralizes leverage</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Dispersed</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Concentrated</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Externality Magnitude</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Size of spillovers</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Contained</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Civilizational</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Misuse Asymmetry</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Harm vs benefit ratio</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Symmetric</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Offense-dominant</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Governance Lag</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Gap vs institutions</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Aligned</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Wildly outpaced</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Narrative Lock-In</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Enforced story</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Optional</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Totalizing</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Path Dependency</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Futures foreclosed</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Minimal</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Many locked</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Human Agency Impact</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Effect on choice</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Expands</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Compresses</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-Add the following details in a concise, specific manner:
+                    <div style="background: #1a1f3a; padding: 15px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+                        <p style="color: #f59e0b; font-weight: 600; margin-bottom: 8px;">Note on Interpretation</p>
+                        <p style="color: #94a3b8;">Higher scores indicate greater impact/risk/priority - but are not necessarily "better." Some dimensions (e.g., Misuse Asymmetry, Human Agency Impact) indicate potential dangers at high scores.</p>
+                    </div>
 
-1. **PROBLEMS SOLVED** (2-3 sentences):
-   - What specific challenges or gaps does this address?
-   - What pain points does it solve?
-
-2. **WHY NEW/DIFFERENT** (2-3 sentences):
-   - What makes this distinct from existing approaches?
-   - What novel capabilities or architecture does it introduce?
-
-3. **WHY NOT EXISTS YET** (2-3 sentences):
-   - What are the key barriers preventing deployment today?
-   - What needs to change or be built first?
-
-CONSOLIDATED SCORING (v3.1):
-Stage 1 scores are consolidated into 3 dimensions:
-- Reality Gap (0-9): Non-existence + Plausibility + Design specificity
-- Transformative Potential (0-6): New action space + Roadmap clarity
-- Current Momentum (0-12): Coordination gravity + Resource pull + Narrative centrality + Pre-real effects
-
-Stage 2 scores are consolidated into 3 dimensions:
-- Transformative Power (0-25): Capability Discontinuity + Cross-Domain Reach + Scalability + Autonomy + Composability
-- Systemic Risk (0-25): Irreversibility + Power Concentration + Externality Magnitude + Misuse Asymmetry + Governance Lag
-- Lock-in Effects (0-20): Feedback Intensity + Narrative Lock-In + Path Dependency + Human Agency Impact</pre>
+                    <h4 style="color: #60a5fa; margin: 25px 0 10px;">Consolidated Scoring (Dashboard View)</h4>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">For easier comparison, scores are grouped into 3 categories:</p>
+                    <ul style="color: #94a3b8; margin-left: 20px; line-height: 1.8;">
+                        <li><strong style="color: #e0e6f0;">Transformative Power (0-25)</strong> - Capability Discontinuity + Cross-Domain Reach + Scalability + Autonomy + Composability</li>
+                        <li><strong style="color: #e0e6f0;">Systemic Risk (0-25)</strong> - Irreversibility + Power Concentration + Externality Magnitude + Misuse Asymmetry + Governance Lag</li>
+                        <li><strong style="color: #e0e6f0;">Lock-in Effects (0-20)</strong> - Feedback Intensity + Narrative Lock-In + Path Dependency + Human Agency Impact</li>
+                    </ul>
                 </div>
             </div>
         </div>
