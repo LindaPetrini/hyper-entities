@@ -668,7 +668,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
     </div>
 
     <div id="methodology-modal" class="modal">
-        <div class="modal-content" style="max-width: 900px; max-height: 85vh; display: flex; flex-direction: column;">
+        <div class="modal-content" style="max-width: 900px; height: 80vh; display: flex; flex-direction: column; overflow: hidden;">
             <span class="modal-close" onclick="closeMethodology()">&times;</span>
             <h2 style="margin-bottom: 20px; color: #60a5fa; flex-shrink: 0;">Extraction Methodology</h2>
 
@@ -677,7 +677,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <button class="method-tab" onclick="showMethodTab('v31')">v3.1 Expansion</button>
             </div>
 
-            <div style="flex: 1; overflow-y: auto; padding-right: 10px;">
+            <div style="flex: 1; overflow-y: scroll; min-height: 0; padding-right: 10px; margin-top: 15px;">
                 <div id="method-v30" class="method-content active">
                     <h3>Stage 1: Hyper-Entity Extraction Prompt</h3>
                     <p style="color: #94a3b8; margin-bottom: 15px;">Used to identify and score hyper-entities from source documents.</p>
@@ -1421,7 +1421,8 @@ Stage 2 scores are consolidated into 3 dimensions:
                 }}
 
                 const labelGroup = g.append('g')
-                    .attr('transform', `translate(${{labelX}}, ${{labelY}}) rotate(${{rotation}})`);
+                    .attr('transform', `translate(${{labelX}}, ${{labelY}}) rotate(${{rotation}})`)
+                    .style('pointer-events', 'none');  // Allow clicks to pass through to nodes
 
                 const bgRect = labelGroup.append('rect')
                     .attr('fill', colorScale(cid))
