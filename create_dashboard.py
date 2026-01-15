@@ -627,8 +627,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <input type="text" id="search" placeholder="Search entities...">
             </div>
             <div class="sort-controls">
-                <button class="sort-btn active" data-sort="s1">Sort: Hyper-Entity ↓</button>
-                <button class="sort-btn" data-sort="s2">Sort: Technology ↓</button>
+                <button class="sort-btn" data-sort="s1">Sort: Hyper-Entity ↓</button>
+                <button class="sort-btn active" data-sort="s2">Sort: Technology ↓</button>
                 <button class="sort-btn" data-sort="name">Sort: Name</button>
                 <button class="sort-btn" data-sort="category">Sort: Category</button>
             </div>
@@ -823,7 +823,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
         let entities = currentData.entities;
         let filteredEntities = entities;
         let selectedEntity = null;
-        let currentSort = 's1';
+        let currentSort = 's2';
         let showOnlyStarred = false;
 
         // Starred entities management (persisted to localStorage)
