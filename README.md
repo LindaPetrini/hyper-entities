@@ -4,7 +4,7 @@ Rigorous extraction and dual-scoring assessment of hyper-entities from Foresight
 
 ## 📊 Interactive Dashboard
 
-**[View Live Dashboard →](results/hyperentities_dashboard_v4.html)**
+**[View Live Dashboard →](results/dashboard.html)**
 
 Interactive dashboard with 345 hyper-entities, dual scoring framework, searchable list, and cluster visualization.
 
