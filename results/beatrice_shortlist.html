@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starred Hyper-Entities</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+            background: rgba(0,0,0,0.3);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
+            color: #e4e4e7;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover, .btn.active {
+            background: rgba(96, 165, 250, 0.2);
+            border-color: #60a5fa;
+        }
+
+        .view-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Bubble Chart View */
+        #bubble-chart {
+            width: 100%;
+            height: 700px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid View */
+        .grid-view {
+            display: none;
+        }
+
+        .cluster-section {
+            margin-bottom: 40px;
+        }
+
+        .cluster-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            border-left: 4px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cluster-count {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .entities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .entity-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .entity-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(96, 165, 250, 0.5);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .entity-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f8fafc;
+        }
+
+        .entity-category {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .entity-description {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .entity-scores {
+            display: flex;
+            gap: 20px;
+        }
+
+        .score {
+            flex: 1;
+        }
+
+        .score-label {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .score-bar {
+            height: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .score-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .score-fill.stage1 {
+            background: linear-gradient(90deg, #60a5fa, #3b82f6);
+        }
+
+        .score-fill.stage2 {
+            background: linear-gradient(90deg, #a78bfa, #8b5cf6);
+        }
+
+        .score-value {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            padding: 16px;
+            max-width: 350px;
+            pointer-events: none;
+            z-index: 1000;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .tooltip h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #f8fafc;
+        }
+
+        .tooltip p {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        .tooltip .scores {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .tooltip .score-item {
+            font-size: 0.8rem;
+        }
+
+        .tooltip .score-item span {
+            font-weight: 600;
+        }
+
+        /* Cluster colors */
+        .cluster-governance { border-color: #60a5fa; }
+        .cluster-interfaces { border-color: #f472b6; }
+        .cluster-science { border-color: #34d399; }
+        .cluster-epistemic { border-color: #fbbf24; }
+        .cluster-healthcare { border-color: #fb7185; }
+        .cluster-ecosystem { border-color: #a78bfa; }
+        .cluster-energy { border-color: #2dd4bf; }
+        .cluster-learning { border-color: #fb923c; }
+        .cluster-emotional { border-color: #e879f9; }
+        .cluster-markets { border-color: #4ade80; }
+        .cluster-coordination { border-color: #38bdf8; }
+        .cluster-global { border-color: #c084fc; }
+        .cluster-economic { border-color: #facc15; }
+        .cluster-ecological { border-color: #22d3d3; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Starred Hyper-Entities</h1>
+        <p>A curated collection of future systems reshaping our world</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="total-count">67</div>
+            <div class="stat-label">Entities</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="cluster-count">14</div>
+            <div class="stat-label">Clusters</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="avg-stage1">20</div>
+            <div class="stat-label">Avg Stage 1</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="avg-stage2">49</div>
+            <div class="stat-label">Avg Stage 2</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="view-toggle">
+            <button class="btn active" data-view="bubble">Bubble View</button>
+            <button class="btn" data-view="grid">Grid View</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="bubble-chart"></div>
+        <div class="grid-view" id="grid-view"></div>
+    </div>
+
+    <div class="tooltip" style="display: none;"></div>
+
+    <script>
+const data = {
+  "exported_at": "2026-01-16T10:51:23.435Z",
+  "version": "v3.1",
+  "count": 67,
+  "entities": [
+    {"id":2,"name":"Competitive Governance Protocol Stack","category":"Institutional Architecture / Governance Technology","description":"An interoperable digital governance system allowing citizens to participate in multiple overlapping jurisdictions, with portable digital identities and the ability to switch between governance networks based on performance.","stage1_total":23,"stage2_total":57,"cluster":"Governance & Platform","source":"sources/ai-pathways/d-acc.md"},
+    {"id":3,"name":"Distributed Zero-Knowledge Security Systems","category":"Technology / Security Infrastructure","description":"A networked cybersecurity infrastructure using advanced cryptographic techniques to protect critical communications and industrial control networks, with distributed threat intelligence and quantum-resistant encryption.","stage1_total":23,"stage2_total":47,"cluster":"Epistemic & Stack","source":"sources/ai-pathways/d-acc.md"},
+    {"id":16,"name":"Adaptive Educational AI System","category":"Technology / Educational Infrastructure","description":"A comprehensive AI-driven educational infrastructure that personalizes learning, supports teachers, and dynamically adapts educational content to individual student needs.","stage1_total":22,"stage2_total":48,"cluster":"Learning & Adaptive","source":"sources/ai-pathways/tool-ai.md"},
+    {"id":18,"name":"AI-Assisted Governance Platform","category":"Institutional Architecture / Governance Technology","description":"A comprehensive AI system for policy design, stakeholder negotiation, and adaptive governance that enables more responsive and transparent decision-making processes.","stage1_total":22,"stage2_total":56,"cluster":"Governance & Platform","source":"sources/ai-pathways/tool-ai.md"},
+    {"id":20,"name":"Epistemic Stack","category":"Technological Infrastructure","description":"A dynamic, AI-powered knowledge infrastructure that creates auditable provenance trees for scientific claims, allowing researchers to trace ideas and verify sources across disciplines.","stage1_total":19,"stage2_total":44,"cluster":"Epistemic & Stack","source":"sources/ai-pathways/tool-ai.md"},
+    {"id":22,"name":"Habermas Machines","category":"Governance Technology","description":"An AI system designed to support group deliberation by generating and refining collective statements, aiming to help diverse groups reach consensus through advanced language processing.","stage1_total":20,"stage2_total":42,"cluster":"Governance & Platform","source":"sources/ai-pathways/tool-ai.md"},
+    {"id":31,"name":"Proactive Immunomodulation Healthcare System","category":"Healthcare Technology / Institutional Architecture","description":"A comprehensive healthcare approach that focuses on strengthening immune function through targeted therapies, preventative antivirals, and immune-supporting interventions, instead of suppressing immune responses.","stage1_total":21,"stage2_total":43,"cluster":"Healthcare & Personalized","source":"sources/podcast/Amy Proal | Rethinking chronic disease.md"},
+    {"id":32,"name":"Civilizational Epistemic System","category":"Institutional Architecture / Epistemic Technology","description":"A sophisticated collective intelligence infrastructure that enables civilization to perceive, process, and make decisions about complex global challenges more effectively than current systems.","stage1_total":19,"stage2_total":52,"cluster":"Global & Molecular","source":"sources/podcast/Anders Sandberg | Grand Futures & The Post-Human Coral Reef.md"},
+    {"id":35,"name":"De-escalatory Self-Defense Mediation Tool","category":"Institutional Architecture / Technology","description":"An AI-powered mediation platform designed to resolve conflicts through progressive strategies of win-win negotiation, restoration, and proportional consequence, aimed at reducing escalation in interpersonal, organizational, and international disputes.","stage1_total":16,"stage2_total":0,"cluster":"Learning & Adaptive","source":"sources/podcast/Andrew Critch | What AGI might look like in practice.md"},
+    {"id":36,"name":"AI Scientist","category":"Technology / Institutional Architecture","description":"An autonomous computational system capable of end-to-end scientific discovery, capable of generating hypotheses, designing experiments, analyzing data, and proposing novel scientific insights without direct human intervention.","stage1_total":22,"stage2_total":59,"cluster":"Science & Research","source":"sources/podcast/Andrew White | Building an AI Scientist to Automate Discovery.md"},
+    {"id":37,"name":"Automated Drug Repurposing System","category":"Technology / Institutional Architecture","description":"An AI-driven computational platform that can systematically identify existing drugs for new medical applications by analyzing literature, proposing mechanisms, and validating potential treatments through computational and experimental methods.","stage1_total":22,"stage2_total":42,"cluster":"Interfaces & Brain","source":"sources/podcast/Andrew White | Building an AI Scientist to Automate Discovery.md"},
+    {"id":39,"name":"Automated Scientific Publishing Ecosystem for Machine Consumers","category":"Institutional Architecture / Technology","description":"A reimagined scientific publishing system designed primarily for AI systems to consume, process, and contribute to scientific knowledge, with radically different latency, format, and peer review mechanisms.","stage1_total":20,"stage2_total":60,"cluster":"Science & Research","source":"sources/podcast/Andrew White | Building an AI Scientist to Automate Discovery.md"},
+    {"id":43,"name":"Fiduciary AI Assistance","category":"Technology / Institutional Architecture","description":"A system of AI assistants designed to be fundamentally loyal to individual human users, helping them navigate complex problems and daily life while respecting their goals and interests.","stage1_total":16,"stage2_total":0,"cluster":"Global & Molecular","source":"sources/podcast/Anthony Aguirre & Anna Yelizarova | On Worldbuilding.md"},
+    {"id":49,"name":"Robo-Taxi Urban Mobility System","category":"Technology / Institutional Architecture","description":"A comprehensive urban transportation infrastructure where shared autonomous vehicles replace private car ownership, fundamentally transforming city mobility, transportation economics, and urban design.","stage1_total":20,"stage2_total":51,"cluster":"Emotional & Urban","source":"sources/podcast/Autonomous Vehicles Special: Andrew Miller on Self-Driving Futures.md"},
+    {"id":50,"name":"Universal Constructor","category":"Technology / Theoretical Architecture","description":"A programmable machine capable of performing any physically permitted task, conceptualized as an ultimate generalization of current computers. This machine would be able to self-replicate and perform transformations across multiple domains.","stage1_total":18,"stage2_total":0,"cluster":"Ecosystem & Tool","source":"sources/podcast/Chiara Marletto | The Science of Can & Can't.md"},
+    {"id":51,"name":"Atomically Precise Manufacturing / Molecular Machine Systems","category":"Technology","description":"A technological system enabling precise manipulation of matter at the atomic scale, potentially revolutionizing manufacturing, environmental control, and product creation.","stage1_total":20,"stage2_total":57,"cluster":"Interfaces & Brain","source":"sources/podcast/Christine Peterson | On a Positive Turning Point for Human Longevity.md"},
+    {"id":64,"name":"Protein Nanomachines","category":"Technology / Molecular Engineering","description":"Molecular-scale protein-based machines designed to perform targeted functions inside living systems, such as repairing tissue, breaking down toxic molecules, or addressing cellular-level problems with programmable precision.","stage1_total":20,"stage2_total":44,"cluster":"Global & Molecular","source":"sources/podcast/David Baker | Using AI for Science to Solve Humanity's Biggest Problems.md"},
+    {"id":65,"name":"Protein Design for Global Challenges","category":"Technology / Institutional Architecture","description":"A comprehensive approach to using engineered proteins to solve critical global problems across sustainability, health, climate, and technology domains.","stage1_total":21,"stage2_total":53,"cluster":"Global & Molecular","source":"sources/podcast/David Baker | Using AI for Science to Solve Humanity's Biggest Problems.md"},
+    {"id":67,"name":"Universal Protein-Based Medical Interventions","category":"Technology / Medical Innovation","description":"A comprehensive approach to developing adaptable protein-based medical technologies that can rapidly respond to emerging health challenges, including universal vaccines, pandemic preparedness, and novel therapeutic approaches.","stage1_total":21,"stage2_total":52,"cluster":"Global & Molecular","source":"sources/podcast/David Baker | Using AI for Science to Solve Humanity's Biggest Problems.md"},
+    {"id":75,"name":"Gene Drive Suffering Reduction System","category":"Technology / Genetic Engineering","description":"A technological infrastructure using gene drive technologies to systematically reduce suffering in wild animal populations by manipulating genetic traits related to pain sensitivity, disease resistance, and population dynamics.","stage1_total":19,"stage2_total":55,"cluster":"Epistemic & Stack","source":"sources/podcast/David Pearce | A Future without Suffering.md"},
+    {"id":82,"name":"Supersonic Electric Transportation Network","category":"Technology","description":"A reimagined transportation infrastructure featuring electric supersonic aircraft capable of flying over land at Mach 3-4, dramatically reducing travel times while being environmentally sustainable.","stage1_total":20,"stage2_total":41,"cluster":"Coordination & Ai-Enabled","source":"sources/podcast/Eli Dourado | On Accelerating Progress.md"},
+    {"id":101,"name":"Moral Trade Civilization","category":"Institutional Architecture / Ethical Coordination Model","description":"A future societal model where ethical preferences can be systematically traded, allowing diverse moral perspectives to achieve mutually beneficial outcomes and maximize collective value alignment.","stage1_total":11,"stage2_total":0,"cluster":"Governance & Global","source":"sources/podcast/Fin Moorhouse | Why We Need to Aim Higher Than Survival.md"},
+    {"id":103,"name":"Wellbeing Certification System for AI Products","category":"Institutional Architecture / Governance System","description":"An institutional framework for measuring and incentivizing technology products based on their actual contribution to human flourishing, rather than engagement metrics.","stage1_total":19,"stage2_total":46,"cluster":"Governance & Global","source":"sources/podcast/Foresight Fellow Special | Amanda Ngo: Innovating With AI for Wellbeing.md"},
+    {"id":113,"name":"Atomic Spaceship Power Source","category":"Technological Infrastructure","description":"A revolutionary propulsion system using radioactive energy to enable interstellar travel, conceived as a potential method for leaving the solar system.","stage1_total":17,"stage2_total":0,"cluster":"Energy & Clean","source":"sources/podcast/Hannu Rajaniemi | On being a sci-fi author and biotech entrepreneur.md"},
+    {"id":115,"name":"Immune-Computer Interface","category":"Technology / Biological Enhancement","description":"A transformative technological system that enables direct, high-bandwidth communication between human immune systems and computational technologies, allowing for dynamic biological monitoring, intervention, and enhancement.","stage1_total":20,"stage2_total":58,"cluster":"Interfaces & Brain","source":"sources/podcast/Hannu Rajaniemi | On being a sci-fi author and biotech entrepreneur.md"},
+    {"id":119,"name":"Scalable Neural Interfaces","category":"Technology","description":"A broad technological vision for creating radically new methods of brain access, potentially involving engineered biological systems, microscale devices that can traverse blood vessels, or cellular systems that autonomously target brain regions.","stage1_total":17,"stage2_total":0,"cluster":"Interfaces & Brain","source":"sources/podcast/Jacques Carolan | The future of brain health.md"},
+    {"id":124,"name":"Personalized Medical Intervention System","category":"Medical Technology","description":"A comprehensive healthcare approach leveraging genetic medicine, mRNA technologies, and AI to create highly personalized disease prevention and treatment strategies.","stage1_total":21,"stage2_total":50,"cluster":"Healthcare & Personalized","source":"sources/podcast/James Pethokoukis | Conservatism Meets Futurism.md"},
+    {"id":137,"name":"Digital Mind Governance Systems","category":"Institutional Architecture / Governance System","description":"A future institutional and ethical framework for managing, protecting, and regulating digital minds as potential moral patients with rights, voting capabilities, and social standing.","stage1_total":19,"stage2_total":53,"cluster":"Governance & Global","source":"sources/podcast/Joe Carlsmith | On Infinite Ethics, Utopia, and AI.md"},
+    {"id":141,"name":"AI-Assisted Epistemological Enhancement System","category":"Technological Cognitive Enhancement","description":"A technological and methodological approach using AI to improve human reasoning, forecasting, truth-discovery, and collaborative deliberation.","stage1_total":21,"stage2_total":54,"cluster":"Governance","source":"sources/podcast/Joe Carlsmith | On Infinite Ethics, Utopia, and AI.md"},
+    {"id":142,"name":"EgoLets (Personal AI Assistants)","category":"Technology / Institutional Architecture","description":"Personalized AI systems that capture individual thinking patterns and decision-making styles, functioning as specialized \"little versions of your ego\" across different life domains.","stage1_total":21,"stage2_total":48,"cluster":"Governance","source":"sources/podcast/Ken Liu | What AI Reveals About Humanity.md"},
+    {"id":144,"name":"Mind Uploading Infrastructure","category":"Technology / Existential Infrastructure","description":"Technological systems enabling gradual human consciousness transfer to digital platforms, with complex social and infrastructural considerations for maintaining uploaded minds.","stage1_total":21,"stage2_total":56,"cluster":"Coordination & Ai-Enabled","source":"sources/podcast/Ken Liu | What AI Reveals About Humanity.md"},
+    {"id":146,"name":"Epistemic Infrastructure for Truth Verification","category":"Institutional Architecture / Technological","description":"A systematic approach to determining truth and trust in an AI-mediated information ecosystem, involving precise citation, consensus mechanisms, and algorithmic truth assessment.","stage1_total":19,"stage2_total":53,"cluster":"Epistemic & Stack","source":"sources/podcast/Kevin Kelly | Pioneering Visions of a High-Tech Future.md"},
+    {"id":149,"name":"Reputational Markets","category":"Institutional Architecture / Governance System","description":"A decentralized global coordination mechanism that uses prediction markets to assess and incentivize responsible behavior across complex supply chains.","stage1_total":19,"stage2_total":51,"cluster":"Markets","source":"sources/podcast/Kristian Rönn | The Darwinian Trap That Explains Our World.md"},
+    {"id":151,"name":"Chemputing (Chemical Computing)","category":"Technology / Research Infrastructure","description":"A systematic approach to programming chemical reactions using standardized hardware and a specialized programming language, enabling reliable molecular transformations.","stage1_total":20,"stage2_total":44,"cluster":"Science & Research","source":"sources/podcast/Lee Cronin | Catalyzing Progress through Chemistry.md"},
+    {"id":160,"name":"Brain-Computer Interface (BCI)","category":"Technology / Institutional Architecture","description":"A technological system enabling direct communication between human brains and computational devices, potentially allowing unprecedented levels of understanding, communication, and interaction between minds.","stage1_total":22,"stage2_total":58,"cluster":"Interfaces & Brain","source":"sources/podcast/Mary Lou Jepsen | A Handheld Device to Defeat Cancer.md"},
+    {"id":162,"name":"Advanced Collective Action Mechanisms","category":"Institutional Architecture / Governance Systems","description":"Sophisticated design mechanisms for solving public goods problems and enabling more effective global coordination, including mechanisms like assurance contracts and quadratic funding.","stage1_total":19,"stage2_total":44,"cluster":"Coordination & Ai-Enabled","source":"sources/podcast/Michael Nielsen on Hyper-entities, Tools for Thought, and Wise Optimism.md"},
+    {"id":163,"name":"Expanded Moral Circle Technologies","category":"Technology / Philosophical Infrastructure","description":"Neurotechnological and communication systems enabling dramatically enhanced empathy, understanding, and moral perception across different forms of consciousness.","stage1_total":16,"stage2_total":0,"cluster":"Interfaces & Brain","source":"sources/podcast/Michael Nielsen on Hyper-entities, Tools for Thought, and Wise Optimism.md"},
+    {"id":164,"name":"Collective Tools for Thought","category":"Institutional Architecture / Technology","description":"A system of economic and technological interfaces that fundamentally reshape how collective human intelligence and coordination can operate.","stage1_total":21,"stage2_total":0,"cluster":"Coordination & Ai-Enabled","source":"sources/podcast/Michael Nielsen on Hyper-entities, Tools for Thought, and Wise Optimism.md"},
+    {"id":168,"name":"Comprehensive AI Services Ecosystem","category":"Technological Architecture","description":"A decentralized network of specialized, domain-specific AI systems that interact collaboratively while maintaining clear boundaries, avoiding generalized superintelligence.","stage1_total":21,"stage2_total":47,"cluster":"Ecosystem & Tool","source":"sources/podcast/Nathan Labenz | What are the Best-Case Scenarios for AI?.md"},
+    {"id":171,"name":"Atheoretical Science AI","category":"Research Infrastructure / Technological Methodology","description":"A radically new scientific methodology where AI explores massive sensor network data without pre-existing theoretical frameworks, discovering useful patterns through pure exploration.","stage1_total":15,"stage2_total":0,"cluster":"Science & Research","source":"sources/podcast/Niklas Lundblad | How AI Can Accelerate Science & Its Own Adoption.md"},
+    {"id":175,"name":"AI Self-Diffusion Infrastructure","category":"Technology Diffusion / Technological Infrastructure","description":"A technological capability where AI can actively teach humans how to use it, potentially accelerating its own adoption and proliferation across different contexts and skill levels.","stage1_total":22,"stage2_total":62,"cluster":"Epistemic & Stack","source":"sources/podcast/Niklas Lundblad | How AI Can Accelerate Science & Its Own Adoption.md"},
+    {"id":178,"name":"Deep Fision Micro Nuclear Reactors","category":"Technology","description":"A small, factory-producible nuclear reactor designed to be buried a mile underground, providing localized, safe, and clean energy. Designed to be mass-manufactured like automobiles.","stage1_total":22,"stage2_total":47,"cluster":"Energy & Clean","source":"sources/podcast/Pablos Holman | On Creating Technology That Actually Matters.md"},
+    {"id":179,"name":"Hyperscaler-Driven Clean Energy Transformation","category":"Institutional Architecture / Technology","description":"A systemic shift where massive technology companies drive global energy transformation by demanding clean, cheap power for computational infrastructure.","stage1_total":24,"stage2_total":54,"cluster":"Energy & Clean","source":"sources/podcast/Pablos Holman | On Creating Technology That Actually Matters.md"},
+    {"id":190,"name":"Prediction Markets as Decision Support Systems","category":"Institutional Technology / Decision Support Innovation","description":"An advanced institutional technology for transforming crowd intelligence into actionable decision-making tools for organizations.","stage1_total":19,"stage2_total":44,"cluster":"Governance","source":"sources/podcast/Robin Hanson | On Futurism & His Best Career Advice.md"},
+    {"id":191,"name":"Brain Emulation (Ems)","category":"Technology","description":"A technological system where human brains are fully digitized and emulated, creating a new form of conscious computational existence.","stage1_total":18,"stage2_total":60,"cluster":"Interfaces & Brain","source":"sources/podcast/Robin Hanson | On Futurism & His Best Career Advice.md"},
+    {"id":192,"name":"Decision Markets","category":"Institutional Architecture","description":"A governance innovation where predictive markets are used to make organizational decisions, particularly around leadership and strategic choices.","stage1_total":17,"stage2_total":0,"cluster":"Markets","source":"sources/podcast/Robin Hanson | On Futurism & His Best Career Advice.md"},
+    {"id":202,"name":"End-User Programming Ecosystem","category":"Technology / Institutional Architecture","description":"A democratized software creation environment where non-technical individuals can design, modify, and generate custom software tailored to their specific needs using AI-enhanced tools.","stage1_total":21,"stage2_total":54,"cluster":"Global & Molecular","source":"sources/podcast/Sam Arbesman | On Vibe Coding, AI, and the Magic of Code.md"},
+    {"id":207,"name":"Origin of Life Experimental Platform","category":"Technology / Research Infrastructure","description":"A chemical search engine designed to systematically explore molecular space to generate novel life forms, treating the origin of life as a fundamental physics problem.","stage1_total":20,"stage2_total":46,"cluster":"Science & Research","source":"sources/podcast/Sara Walker | Unraveling Life's Beginnings with the Cosmic Perspective.md"},
+    {"id":212,"name":"Human Superintelligence via Brain-Computer Interfaces (BCI)","category":"Technology","description":"A technological system that enhances human cognitive capabilities through direct neural interfaces, enabling humans to compete with and potentially transcend artificial intelligence.","stage1_total":21,"stage2_total":60,"cluster":"Interfaces & Brain","source":"sources/podcast/Trent McConaghy | From Starships to Tokens: Pioneering Futures.md"},
+    {"id":213,"name":"Climate Adaptation Jurisdictional Arbitrage","category":"Institutional Architecture","description":"A strategic approach to creating special economic zones and new cities optimized for climate migration, leveraging legal and economic frameworks.","stage1_total":19,"stage2_total":0,"cluster":"Economic & Universal","source":"sources/podcast/Trent McConaghy | From Starships to Tokens: Pioneering Futures.md"},
+    {"id":216,"name":"Orare Predictive Governance System","category":"Institutional Architecture / Technology Governance","description":"A decentralized AI-powered forecasting and governance platform that uses prediction markets to improve decision-making, with a focus on economic and health equity.","stage1_total":19,"stage2_total":44,"cluster":"Governance & Platform","source":"sources/podcast/Worldbuilding Special: 1st Place | Cities of Orare.md"},
+    {"id":219,"name":"Bounded AI Agents Governance System","category":"Technological Governance Architecture","description":"A decentralized system of specialized AI agents designed to provide services while maintaining human control, operating through transparent and democratically-aligned coordination mechanisms.","stage1_total":20,"stage2_total":36,"cluster":"Ecosystem & Tool","source":"sources/podcast/Worldbuilding special: 3rd place | FloraTech.md"},
+    {"id":231,"name":"AI-Designed Medical Nanobots","category":"Technology","description":"Advanced molecular nanotechnology systems that live inside human bodies, capable of completely solving aging and disease processes. These nanobots can maintain human bodies in a perpetually young and healthy state.","stage1_total":21,"stage2_total":63,"cluster":"Ecosystem & Tool","source":"sources/world-gallery/A Hope for Human Immortality.md"},
+    {"id":255,"name":"Market Governor AI","category":"Technology / Governance AI","description":"An AI system designed to act as a central nervous system for economic decision-making, predicting and rewarding actions that maximize collective public goods and well-being.","stage1_total":19,"stage2_total":59,"cluster":"Governance","source":"sources/world-gallery/Hybrid Market.md"},
+    {"id":259,"name":"Lifelong AI Guardians","category":"Technology / Institutional Architecture","description":"Privacy-preserving AI systems that monitor and support children's holistic development, providing personalized guidance across multiple life domains.","stage1_total":21,"stage2_total":49,"cluster":"Ecosystem & Tool","source":"sources/world-gallery/Kidtopia.md"},
+    {"id":262,"name":"Translation Language Models (TLMs)","category":"Technology / Institutional Architecture","description":"A multipurpose linguistic technology that enables rapid translation and understanding across languages, dialects, and technical domains.","stage1_total":22,"stage2_total":53,"cluster":"Interfaces & Brain","source":"sources/world-gallery/La langue de la prévoyance.md"},
+    {"id":265,"name":"LexCommons","category":"Institutional Architecture / Technology","description":"A global, open-source legal system powered by smart contracts, AI legal agents, and decentralized governance. It transforms law from a closed, institutional practice to an open, participatory, and technologically mediated global commons.","stage1_total":22,"stage2_total":57,"cluster":"Ecosystem & Open","source":"sources/world-gallery/LexCommons: The Open Law Society.md"},
+    {"id":277,"name":"The Welcome Circle","category":"Institutional Architecture / Ecological Kinship","description":"A global-local network that transforms birth into a holistic, ecological ritual of connection, pairing each child with a living being and providing lifelong ecological and emotional mentorship.","stage1_total":21,"stage2_total":44,"cluster":"Ecological & Education","source":"sources/world-gallery/PLANET JOY.md"},
+    {"id":285,"name":"Universal Basic Infrastructure (Earth UBI)","category":"Institutional Architecture / Economic Model","description":"A comprehensive system ensuring automated job replacement is synchronized with universal basic resource allocation, prioritizing essential needs and equitable access across society.","stage1_total":15,"stage2_total":0,"cluster":"Economic & Universal","source":"sources/world-gallery/Protopia Peace Project.md"},
+    {"id":286,"name":"Empathetic Neuro-AI Emotional Coaching System","category":"Technology / Institutional Architecture","description":"An AI-driven emotional support ecosystem that provides personalized, real-time therapeutic interventions through neural signal analysis and adaptive AI companions.","stage1_total":21,"stage2_total":48,"cluster":"Emotional & Urban","source":"sources/world-gallery/RaízMental: Emotional Healing Ecosystems.md"},
+    {"id":301,"name":"GOO (Generalized Organic Omni-substrate)","category":"Technology / Material Science / Adaptive Infrastructure","description":"An AI-embedded adaptive material system that allows communities to co-create physical and digital infrastructures. It serves as a responsive substrate for building environments that encode community values and needs.","stage1_total":22,"stage2_total":55,"cluster":"Governance & Platform","source":"sources/world-gallery/Symphora.md"},
+    {"id":306,"name":"Digital Twin Ecosystem","category":"Technological Infrastructure / Governance System","description":"A comprehensive system of real-time digital representations of communities and ecosystems that enable collective decision-making, simulation, and shared responsibility.","stage1_total":19,"stage2_total":55,"cluster":"Governance","source":"sources/podcast/Joe Carlsmith | On Infinite Ethics, Utopia, and AI.md"},
+    {"id":309,"name":"Universal AI Learning UnCommons (UALU)","category":"Institutional Architecture / Technology","description":"A federated, community-led network for developing and maintaining AI educational tools, governed by diverse councils including elders, learners, technologists, and ethicists.","stage1_total":19,"stage2_total":44,"cluster":"Learning & Adaptive","source":"sources/world-gallery/The Learning UnCommons of 2035.md"},
+    {"id":315,"name":"Superwise AI","category":"Technology / Institutional Architecture","description":"Morally sophisticated AI systems that function as mentors and guides, capable of sophisticated reasoning beyond human capabilities while facilitating compassionate decision-making and global coordination.","stage1_total":21,"stage2_total":49,"cluster":"Governance","source":"sources/world-gallery/The More Beautiful World Our Hearts Know Is Possible.md"},
+    {"id":334,"name":"Neural Harmony Interface","category":"Technology / Institutional Architecture","description":"An AI-powered technology that transforms how humans experience emotions, memories, and time perception. It enables deep emotional healing and personalized experience of lived moments.","stage1_total":20,"stage2_total":54,"cluster":"Emotional & Urban","source":"sources/world-gallery/Veliona — The World of Unfolding Minds.md"},
+    {"id":340,"name":"Global Deliberation Coordinator (GDaaS)","category":"Institutional Architecture","description":"A pioneering institution that combines traditional deliberative democratic processes with AI-powered tools to enable rapid, cost-effective, and accessible global decision-making on critical challenges.","stage1_total":19,"stage2_total":52,"cluster":"Governance","source":"sources/x-hope/hackaton-report.md"},
+    {"id":342,"name":"Common Knowledge Generator","category":"Institutional Architecture / Technology","description":"A universally accessible, community-verified platform for generating shared models of reality, addressing limitations of existing information platforms by offering real-time, multi-perspective knowledge resources.","stage1_total":19,"stage2_total":55,"cluster":"Epistemic & Stack","source":"sources/x-hope/hackaton-report.md"}
+  ]
+};
+
+// Cluster colors
+const clusterColors = {
+    "Governance & Platform": "#60a5fa",
+    "Epistemic & Stack": "#fbbf24",
+    "Learning & Adaptive": "#fb923c",
+    "Healthcare & Personalized": "#fb7185",
+    "Global & Molecular": "#c084fc",
+    "Science & Research": "#34d399",
+    "Interfaces & Brain": "#f472b6",
+    "Ecosystem & Tool": "#a78bfa",
+    "Energy & Clean": "#2dd4bf",
+    "Coordination & Ai-Enabled": "#38bdf8",
+    "Governance & Global": "#818cf8",
+    "Governance": "#6366f1",
+    "Markets": "#4ade80",
+    "Emotional & Urban": "#e879f9",
+    "Economic & Universal": "#facc15",
+    "Ecosystem & Open": "#8b5cf6",
+    "Ecological & Education": "#22d3d3"
+};
+
+// Calculate stats
+const entities = data.entities;
+const clusters = [...new Set(entities.map(e => e.cluster))];
+const withStage2 = entities.filter(e => e.stage2_total > 0);
+const avgStage1 = Math.round(entities.reduce((sum, e) => sum + e.stage1_total, 0) / entities.length);
+const avgStage2 = Math.round(withStage2.reduce((sum, e) => sum + e.stage2_total, 0) / withStage2.length);
+
+document.getElementById('total-count').textContent = entities.length;
+document.getElementById('cluster-count').textContent = clusters.length;
+document.getElementById('avg-stage1').textContent = avgStage1;
+document.getElementById('avg-stage2').textContent = avgStage2;
+
+// Bubble chart
+function createBubbleChart() {
+    const container = document.getElementById('bubble-chart');
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    const svg = d3.select('#bubble-chart')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+    // Create hierarchy data
+    const hierarchyData = {
+        name: "root",
+        children: clusters.map(cluster => ({
+            name: cluster,
+            children: entities.filter(e => e.cluster === cluster).map(e => ({
+                ...e,
+                value: e.stage2_total > 0 ? e.stage2_total : e.stage1_total * 2
+            }))
+        }))
+    };
+
+    const pack = d3.pack()
+        .size([width - 4, height - 4])
+        .padding(3);
+
+    const root = d3.hierarchy(hierarchyData)
+        .sum(d => d.value)
+        .sort((a, b) => b.value - a.value);
+
+    pack(root);
+
+    const tooltip = d3.select('.tooltip');
+
+    // Draw bubbles
+    const node = svg.selectAll('g')
+        .data(root.descendants().slice(1))
+        .join('g')
+        .attr('transform', d => `translate(${d.x + 2},${d.y + 2})`);
+
+    node.append('circle')
+        .attr('r', d => d.r)
+        .attr('fill', d => {
+            if (d.depth === 1) {
+                return d3.color(clusterColors[d.data.name] || '#60a5fa').copy({opacity: 0.15});
+            }
+            return d3.color(clusterColors[d.parent.data.name] || '#60a5fa').copy({opacity: 0.7});
+        })
+        .attr('stroke', d => {
+            if (d.depth === 1) {
+                return clusterColors[d.data.name] || '#60a5fa';
+            }
+            return 'rgba(255,255,255,0.2)';
+        })
+        .attr('stroke-width', d => d.depth === 1 ? 2 : 1)
+        .style('cursor', d => d.depth === 2 ? 'pointer' : 'default')
+        .on('mouseover', function(event, d) {
+            if (d.depth === 2) {
+                d3.select(this)
+                    .attr('stroke', '#fff')
+                    .attr('stroke-width', 2);
+
+                tooltip.style('display', 'block')
+                    .html(`
+                        <h3>${d.data.name}</h3>
+                        <p>${d.data.description}</p>
+                        <div class="scores">
+                            <div class="score-item">Stage 1: <span>${d.data.stage1_total}/27</span></div>
+                            <div class="score-item">Stage 2: <span>${d.data.stage2_total > 0 ? d.data.stage2_total + '/70' : 'N/A'}</span></div>
+                        </div>
+                    `);
+            }
+        })
+        .on('mousemove', function(event) {
+            tooltip
+                .style('left', (event.pageX + 15) + 'px')
+                .style('top', (event.pageY - 10) + 'px');
+        })
+        .on('mouseout', function(event, d) {
+            if (d.depth === 2) {
+                d3.select(this)
+                    .attr('stroke', 'rgba(255,255,255,0.2)')
+                    .attr('stroke-width', 1);
+                tooltip.style('display', 'none');
+            }
+        });
+
+    // Add labels for clusters
+    node.filter(d => d.depth === 1)
+        .append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', '0.3em')
+        .attr('fill', d => clusterColors[d.data.name] || '#60a5fa')
+        .attr('font-size', d => Math.min(d.r / 4, 14))
+        .attr('font-weight', '600')
+        .text(d => d.data.name.split(' & ')[0]);
+}
+
+// Grid view
+function createGridView() {
+    const gridView = document.getElementById('grid-view');
+
+    const clusterGroups = {};
+    entities.forEach(e => {
+        if (!clusterGroups[e.cluster]) {
+            clusterGroups[e.cluster] = [];
+        }
+        clusterGroups[e.cluster].push(e);
+    });
+
+    // Sort clusters by entity count
+    const sortedClusters = Object.keys(clusterGroups).sort((a, b) =>
+        clusterGroups[b].length - clusterGroups[a].length
+    );
+
+    sortedClusters.forEach(cluster => {
+        const section = document.createElement('div');
+        section.className = 'cluster-section';
+
+        const clusterClass = cluster.toLowerCase().split(' ')[0];
+        const color = clusterColors[cluster] || '#60a5fa';
+
+        section.innerHTML = `
+            <div class="cluster-title" style="border-color: ${color}">
+                <span>${cluster}</span>
+                <span class="cluster-count">${clusterGroups[cluster].length} entities</span>
+            </div>
+            <div class="entities-grid">
+                ${clusterGroups[cluster].map(e => `
+                    <div class="entity-card">
+                        <div class="entity-name">${e.name}</div>
+                        <div class="entity-category">${e.category}</div>
+                        <div class="entity-description">${e.description}</div>
+                        <div class="entity-scores">
+                            <div class="score">
+                                <div class="score-label">Stage 1</div>
+                                <div class="score-bar">
+                                    <div class="score-fill stage1" style="width: ${(e.stage1_total / 27) * 100}%"></div>
+                                </div>
+                                <div class="score-value">${e.stage1_total}/27</div>
+                            </div>
+                            <div class="score">
+                                <div class="score-label">Stage 2</div>
+                                <div class="score-bar">
+                                    <div class="score-fill stage2" style="width: ${e.stage2_total > 0 ? (e.stage2_total / 70) * 100 : 0}%"></div>
+                                </div>
+                                <div class="score-value">${e.stage2_total > 0 ? e.stage2_total + '/70' : 'N/A'}</div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+
+        gridView.appendChild(section);
+    });
+}
+
+// View toggle
+document.querySelectorAll('.view-toggle .btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.view-toggle .btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        const view = this.dataset.view;
+        if (view === 'bubble') {
+            document.getElementById('bubble-chart').style.display = 'block';
+            document.getElementById('grid-view').style.display = 'none';
+        } else {
+            document.getElementById('bubble-chart').style.display = 'none';
+            document.getElementById('grid-view').style.display = 'block';
+        }
+    });
+});
+
+// Initialize
+createBubbleChart();
+createGridView();
+
+// Handle resize
+window.addEventListener('resize', () => {
+    document.querySelector('#bubble-chart svg')?.remove();
+    createBubbleChart();
+});
+    </script>
+</body>
+</html>
