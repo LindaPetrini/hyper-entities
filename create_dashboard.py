@@ -619,7 +619,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     <option value="v3.0">v3.0 - Rigorous Dual Scoring (9+14 axes)</option>
                     <option value="v3.1">v3.1 - Organized & Expanded (3+3 scores)</option>
                     <option value="v3.2">v3.2 - d/acc Values Alignment</option>
-                    <option value="v3.3" selected>v3.3 - Concreteness Extraction</option>
+                    <option value="v3.3">v3.3 - Concreteness Extraction</option>
+                    <option value="v3.4" selected>v3.4 - Hidden Gems (d/acc + Concrete)</option>
                 </select>
             </div>
         </div>
@@ -647,9 +648,9 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             <div class="search-box">
                 <input type="text" id="search" placeholder="Search entities...">
             </div>
-            <div class="sort-controls">
-                <button class="sort-btn" data-sort="s1">Hyper-Entity ↓</button>
-                <button class="sort-btn" data-sort="s2">Technology ↓</button>
+            <div class="sort-controls" id="basic-sorts">
+                <button class="sort-btn" data-sort="s1" id="sort-s1">Hyper-Entity ↓</button>
+                <button class="sort-btn" data-sort="s2" id="sort-s2">Technology ↓</button>
                 <button class="sort-btn" data-sort="dacc" id="sort-dacc">d/acc ↓</button>
                 <button class="sort-btn" data-sort="concrete" id="sort-concrete">Concrete ↓</button>
                 <button class="sort-btn" data-sort="name">Name</button>
@@ -897,7 +898,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
         const v3_1_data = __V3_1_DATA_PLACEHOLDER__;
         const v3_3_data = __V3_3_DATA_PLACEHOLDER__;
 
-        let currentVersion = 'v3.3';
+        let currentVersion = 'v3.4';
         let currentData = v3_3_data;
         let entities = currentData.entities;
         let filteredEntities = entities;
@@ -1004,26 +1005,33 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
 
         // Initialize
         function init() {{
-            // Show d/acc sort buttons only for v3.2+
-            const daccBtn = document.getElementById('sort-dacc');
-            const daccSorts = document.getElementById('dacc-sorts');
-            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
-            daccBtn.style.display = showDacc ? 'inline-block' : 'none';
-            daccSorts.style.display = showDacc ? 'flex' : 'none';
-
-            // Show concreteness sort only for v3.3
-            const concreteBtn = document.getElementById('sort-concrete');
-            concreteBtn.style.display = currentVersion === 'v3.3' ? 'inline-block' : 'none';
-
-            // Show composite sorts only for v3.3
-            const compositeSorts = document.getElementById('composite-sorts');
-            compositeSorts.style.display = currentVersion === 'v3.3' ? 'flex' : 'none';
-
+            updateSortVisibility();
             updateStats();
             updateStarredCount();
             filterAndSort();
             renderVisualization();
             setupEventListeners();
+        }}
+
+        function updateSortVisibility() {{
+            const isV34 = currentVersion === 'v3.4';
+            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3' || isV34;
+            const showConcrete = currentVersion === 'v3.3' || isV34;
+            const showComposite = currentVersion === 'v3.3' || isV34;
+
+            // Hide S1/S2 for v3.4
+            document.getElementById('sort-s1').style.display = isV34 ? 'none' : 'inline-block';
+            document.getElementById('sort-s2').style.display = isV34 ? 'none' : 'inline-block';
+
+            // Show d/acc sort buttons
+            document.getElementById('sort-dacc').style.display = showDacc ? 'inline-block' : 'none';
+            document.getElementById('dacc-sorts').style.display = showDacc ? 'flex' : 'none';
+
+            // Show concreteness sort
+            document.getElementById('sort-concrete').style.display = showConcrete ? 'inline-block' : 'none';
+
+            // Show composite sorts
+            document.getElementById('composite-sorts').style.display = showComposite ? 'flex' : 'none';
         }}
 
         // Setup event listeners
@@ -1044,7 +1052,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             currentVersion = e.target.value;
             if (currentVersion === 'v3.0') {{
                 currentData = v3_0_data;
-            }} else if (currentVersion === 'v3.3') {{
+            }} else if (currentVersion === 'v3.3' || currentVersion === 'v3.4') {{
                 currentData = v3_3_data;
             }} else {{
                 currentData = v3_1_data;  // v3.1 and v3.2 use same data
@@ -1053,31 +1061,29 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             filteredEntities = entities;
             selectedEntity = null;
 
-            // Show/hide d/acc sort buttons based on version
-            const daccBtn = document.getElementById('sort-dacc');
-            const daccSorts = document.getElementById('dacc-sorts');
-            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
-            daccBtn.style.display = showDacc ? 'inline-block' : 'none';
-            daccSorts.style.display = showDacc ? 'flex' : 'none';
-
-            // Show/hide concreteness sort button
-            const concreteBtn = document.getElementById('sort-concrete');
-            concreteBtn.style.display = currentVersion === 'v3.3' ? 'inline-block' : 'none';
-
-            // Show/hide composite sorts
-            const compositeSorts = document.getElementById('composite-sorts');
-            compositeSorts.style.display = currentVersion === 'v3.3' ? 'flex' : 'none';
+            updateSortVisibility();
 
             // Reset sort if current sort is not available in the version
+            const isV34 = currentVersion === 'v3.4';
+            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3' || isV34;
+            const showConcrete = currentVersion === 'v3.3' || isV34;
+            const showComposite = currentVersion === 'v3.3' || isV34;
+
             const daccSortTypes = ['dacc', 'democratic', 'decentralized', 'defensive', 'differential'];
             const concreteSortTypes = ['concrete'];
             const compositeSortTypes = ['hidden_gem', 'buildable_good', 'defensive_tech', 'underdog'];
-            if ((daccSortTypes.includes(currentSort) && !showDacc) ||
-                (concreteSortTypes.includes(currentSort) && currentVersion !== 'v3.3') ||
-                (compositeSortTypes.includes(currentSort) && currentVersion !== 'v3.3')) {{
-                currentSort = 's2';
+            const s1s2SortTypes = ['s1', 's2'];
+
+            let needsReset = false;
+            if (daccSortTypes.includes(currentSort) && !showDacc) needsReset = true;
+            if (concreteSortTypes.includes(currentSort) && !showConcrete) needsReset = true;
+            if (compositeSortTypes.includes(currentSort) && !showComposite) needsReset = true;
+            if (s1s2SortTypes.includes(currentSort) && isV34) needsReset = true;
+
+            if (needsReset) {{
+                currentSort = isV34 ? 'hidden_gem' : 's2';
                 document.querySelectorAll('.sort-btn[data-sort]').forEach(btn => btn.classList.remove('active'));
-                document.querySelector('.sort-btn[data-sort="s2"]').classList.add('active');
+                document.querySelector(`.sort-btn[data-sort="${{currentSort}}"]`).classList.add('active');
             }}
 
             updateStats();
@@ -1227,6 +1233,16 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     compositeBadge = `<div class="entity-score"><span class="score-badge" style="color: #fbbf24;">${{labels[currentSort]}}: ${{score}}</span></div>`;
                 }}
 
+                // Hide S1/S2 for v3.4
+                const showS1S2 = currentVersion !== 'v3.4';
+                const s1s2Badges = showS1S2 ? `
+                        <div class="entity-score">
+                            <span class="score-badge score-s1">S1: ${{s1Score}}</span>
+                        </div>
+                        <div class="entity-score">
+                            <span class="score-badge score-s2">S2: ${{s2Score}}</span>
+                        </div>` : '';
+
                 div.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                         <div class="entity-name">${{entity.name}}</div>
@@ -1235,12 +1251,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         </button>
                     </div>
                     <div class="entity-meta">
-                        <div class="entity-score">
-                            <span class="score-badge score-s1">S1: ${{s1Score}}</span>
-                        </div>
-                        <div class="entity-score">
-                            <span class="score-badge score-s2">S2: ${{s2Score}}</span>
-                        </div>
+                        ${{s1s2Badges}}
                         ${{daccBadge}}
                         ${{concreteBadge}}
                         ${{compositeBadge}}
@@ -1278,13 +1289,32 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             const concreteScore = entity.concreteness?.score || 0;
             const starred = isStarred(entity.id);
 
-            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
+            const isV34 = currentVersion === 'v3.4';
+            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3' || isV34;
+            const showConcrete = currentVersion === 'v3.3' || isV34;
+
             const daccScoreBox = showDacc
-                ? `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}</div></div>`
+                ? `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}/20</div></div>`
                 : '';
-            const concreteScoreBox = currentVersion === 'v3.3'
-                ? `<div class="score-box"><div class="score-label">Concrete</div><div class="score-value score-concrete">${{concreteScore}}</div></div>`
+            const concreteScoreBox = showConcrete
+                ? `<div class="score-box"><div class="score-label">Concrete</div><div class="score-value score-concrete">${{concreteScore}}/5</div></div>`
                 : '';
+
+            // For v3.4, show composite score instead of S1/S2
+            const compositeScore = entity.composites?.hidden_gem || 0;
+            const s1s2Boxes = isV34 ? `
+                        <div class="score-box">
+                            <div class="score-label">Hidden Gem</div>
+                            <div class="score-value" style="color: #fbbf24;">${{(compositeScore * 100).toFixed(0)}}%</div>
+                        </div>` : `
+                        <div class="score-box">
+                            <div class="score-label">Stage 1</div>
+                            <div class="score-value score-s1">${{s1Score}}</div>
+                        </div>
+                        <div class="score-box">
+                            <div class="score-label">Stage 2</div>
+                            <div class="score-value score-s2">${{s2Score}}</div>
+                        </div>`;
 
             let html = `
                 <div class="detail-header">
@@ -1296,14 +1326,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     </div>
                     <div class="detail-category">${{entity.category || 'Uncategorized'}}</div>
                     <div class="detail-scores">
-                        <div class="score-box">
-                            <div class="score-label">Stage 1</div>
-                            <div class="score-value score-s1">${{s1Score}}</div>
-                        </div>
-                        <div class="score-box">
-                            <div class="score-label">Stage 2</div>
-                            <div class="score-value score-s2">${{s2Score}}</div>
-                        </div>
+                        ${{s1s2Boxes}}
                         ${{daccScoreBox}}
                         ${{concreteScoreBox}}
                     </div>
@@ -1316,7 +1339,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             `;
 
             // Version-specific sections
-            if (currentVersion === 'v3.1' || currentVersion === 'v3.2' || currentVersion === 'v3.3') {{
+            if (currentVersion === 'v3.1' || currentVersion === 'v3.2' || currentVersion === 'v3.3' || currentVersion === 'v3.4') {{
                 // Show concreteness first (v3.3 only)
                 if (currentVersion === 'v3.3' && entity.concreteness) {{
                     const c = entity.concreteness;
@@ -1408,8 +1431,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     `;
                 }}
 
-                // Show consolidated scores
-                if (entity.stage1_consolidated) {{
+                // Show consolidated scores (hide for v3.4)
+                if (entity.stage1_consolidated && currentVersion !== 'v3.4') {{
                     const s1_rg = (entity.stage1_consolidated.reality_gap / 9 * 10).toFixed(1);
                     const s1_tp = (entity.stage1_consolidated.transformative_potential / 6 * 10).toFixed(1);
                     const s1_cm = (entity.stage1_consolidated.current_momentum / 12 * 10).toFixed(1);
@@ -1443,7 +1466,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     `;
                 }}
 
-                if (entity.stage2_consolidated) {{
+                if (entity.stage2_consolidated && currentVersion !== 'v3.4') {{
                     const s2_tp = (entity.stage2_consolidated.transformative_power / 25 * 10).toFixed(1);
                     const s2_sr = (entity.stage2_consolidated.systemic_risk / 25 * 10).toFixed(1);
                     const s2_le = (entity.stage2_consolidated.lockin_effects / 20 * 10).toFixed(1);
