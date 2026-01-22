@@ -648,11 +648,18 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 <input type="text" id="search" placeholder="Search entities...">
             </div>
             <div class="sort-controls">
-                <button class="sort-btn" data-sort="s1">Sort: Hyper-Entity ↓</button>
-                <button class="sort-btn" data-sort="s2">Sort: Technology ↓</button>
-                <button class="sort-btn" data-sort="dacc" id="sort-dacc">Sort: d/acc ↓</button>
-                <button class="sort-btn active" data-sort="concrete" id="sort-concrete">Sort: Concrete ↓</button>
-                <button class="sort-btn" data-sort="name">Sort: Name</button>
+                <button class="sort-btn" data-sort="s1">Hyper-Entity ↓</button>
+                <button class="sort-btn" data-sort="s2">Technology ↓</button>
+                <button class="sort-btn" data-sort="dacc" id="sort-dacc">d/acc ↓</button>
+                <button class="sort-btn" data-sort="concrete" id="sort-concrete">Concrete ↓</button>
+                <button class="sort-btn" data-sort="name">Name</button>
+            </div>
+            <div class="sort-controls composite-sorts" id="composite-sorts">
+                <span style="color: #f59e0b; font-size: 11px; margin-right: 5px;">Composite:</span>
+                <button class="sort-btn active" data-sort="hidden_gem" id="sort-hidden-gem">Hidden Gem ↓</button>
+                <button class="sort-btn" data-sort="buildable_good">Buildable Good ↓</button>
+                <button class="sort-btn" data-sort="defensive_tech">Defensive Tech ↓</button>
+                <button class="sort-btn" data-sort="underdog">Underdog ↓</button>
             </div>
             <div class="sort-controls dacc-sorts" id="dacc-sorts">
                 <span style="color: #34d399; font-size: 11px; margin-right: 5px;">d/acc:</span>
@@ -895,8 +902,35 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
         let entities = currentData.entities;
         let filteredEntities = entities;
         let selectedEntity = null;
-        let currentSort = 's2';
+        let currentSort = 'hidden_gem';
         let showOnlyStarred = false;
+
+        // Calculate composite scores for an entity
+        function calcCompositeScores(e) {{
+            const concrete = (e.concreteness?.score || 0) / 5;
+            const dacc = (e.stage3_dacc?.total || 0) / 20;
+            const momentum = (e.stage1_consolidated?.current_momentum || 0) / 12;
+            const transform = (e.stage1_consolidated?.transformative_potential || 0) / 6;
+            const power = (e.stage2_consolidated?.transformative_power || 0) / 25;
+            const risk = (e.stage2_consolidated?.systemic_risk || 0) / 25;
+            const defensive = (e.stage3_dacc?.defensive || 0) / 5;
+            const decent = (e.stage3_dacc?.decentralized || 0) / 5;
+
+            return {{
+                hidden_gem: concrete * 0.35 + dacc * 0.35 + (1 - momentum) * 0.30,
+                buildable_good: concrete * 0.40 + dacc * 0.40 + power * 0.20,
+                defensive_tech: defensive * 0.40 + concrete * 0.30 + decent * 0.30,
+                underdog: (transform + concrete + dacc) / (momentum + 0.1)
+            }};
+        }}
+
+        // Pre-calculate composite scores for all entities
+        function enrichWithComposites(data) {{
+            data.entities.forEach(e => {{
+                e.composites = calcCompositeScores(e);
+            }});
+        }}
+        enrichWithComposites(v3_3_data);
 
         // Starred entities management (persisted to localStorage)
         let starredEntities = new Set(JSON.parse(localStorage.getItem('starredEntities') || '[]'));
@@ -981,9 +1015,13 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             const concreteBtn = document.getElementById('sort-concrete');
             concreteBtn.style.display = currentVersion === 'v3.3' ? 'inline-block' : 'none';
 
+            // Show composite sorts only for v3.3
+            const compositeSorts = document.getElementById('composite-sorts');
+            compositeSorts.style.display = currentVersion === 'v3.3' ? 'flex' : 'none';
+
             updateStats();
             updateStarredCount();
-            renderList();
+            filterAndSort();
             renderVisualization();
             setupEventListeners();
         }}
@@ -1026,11 +1064,17 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             const concreteBtn = document.getElementById('sort-concrete');
             concreteBtn.style.display = currentVersion === 'v3.3' ? 'inline-block' : 'none';
 
+            // Show/hide composite sorts
+            const compositeSorts = document.getElementById('composite-sorts');
+            compositeSorts.style.display = currentVersion === 'v3.3' ? 'flex' : 'none';
+
             // Reset sort if current sort is not available in the version
             const daccSortTypes = ['dacc', 'democratic', 'decentralized', 'defensive', 'differential'];
             const concreteSortTypes = ['concrete'];
+            const compositeSortTypes = ['hidden_gem', 'buildable_good', 'defensive_tech', 'underdog'];
             if ((daccSortTypes.includes(currentSort) && !showDacc) ||
-                (concreteSortTypes.includes(currentSort) && currentVersion !== 'v3.3')) {{
+                (concreteSortTypes.includes(currentSort) && currentVersion !== 'v3.3') ||
+                (compositeSortTypes.includes(currentSort) && currentVersion !== 'v3.3')) {{
                 currentSort = 's2';
                 document.querySelectorAll('.sort-btn[data-sort]').forEach(btn => btn.classList.remove('active'));
                 document.querySelector('.sort-btn[data-sort="s2"]').classList.add('active');
@@ -1111,6 +1155,14 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 filteredEntities.sort((a, b) => (b.stage3_dacc?.differential || 0) - (a.stage3_dacc?.differential || 0));
             }} else if (currentSort === 'concrete') {{
                 filteredEntities.sort((a, b) => (b.concreteness?.score || 0) - (a.concreteness?.score || 0));
+            }} else if (currentSort === 'hidden_gem') {{
+                filteredEntities.sort((a, b) => (b.composites?.hidden_gem || 0) - (a.composites?.hidden_gem || 0));
+            }} else if (currentSort === 'buildable_good') {{
+                filteredEntities.sort((a, b) => (b.composites?.buildable_good || 0) - (a.composites?.buildable_good || 0));
+            }} else if (currentSort === 'defensive_tech') {{
+                filteredEntities.sort((a, b) => (b.composites?.defensive_tech || 0) - (a.composites?.defensive_tech || 0));
+            }} else if (currentSort === 'underdog') {{
+                filteredEntities.sort((a, b) => (b.composites?.underdog || 0) - (a.composites?.underdog || 0));
             }} else if (currentSort === 'name') {{
                 filteredEntities.sort((a, b) => a.name.localeCompare(b.name));
             }}
@@ -1166,6 +1218,15 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     ? `<div class="entity-score"><span class="score-badge score-concrete" title="${{concreteVerdict}}">C: ${{concreteScore}}</span></div>`
                     : '';
 
+                // Show current composite score if sorting by composite
+                const compositeTypes = ['hidden_gem', 'buildable_good', 'defensive_tech', 'underdog'];
+                let compositeBadge = '';
+                if (currentVersion === 'v3.3' && compositeTypes.includes(currentSort) && entity.composites) {{
+                    const score = (entity.composites[currentSort] * 100).toFixed(0);
+                    const labels = {{hidden_gem: 'Gem', buildable_good: 'Build', defensive_tech: 'Def', underdog: 'Dog'}};
+                    compositeBadge = `<div class="entity-score"><span class="score-badge" style="color: #fbbf24;">${{labels[currentSort]}}: ${{score}}</span></div>`;
+                }}
+
                 div.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                         <div class="entity-name">${{entity.name}}</div>
@@ -1182,6 +1243,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         </div>
                         ${{daccBadge}}
                         ${{concreteBadge}}
+                        ${{compositeBadge}}
                     </div>
                 `;
 
