@@ -602,7 +602,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <label for="version-select">Version:</label>
                 <select id="version-select">
                     <option value="v3.0">v3.0 - Rigorous Dual Scoring (9+14 axes)</option>
-                    <option value="v3.1" selected>v3.1 - Organized & Expanded (3+3 scores)</option>
+                    <option value="v3.1" selected>v3.1 - Organized & Expanded (3+3 scores + d/acc)</option>
                 </select>
             </div>
         </div>
