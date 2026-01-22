@@ -637,6 +637,13 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <button class="sort-btn" data-sort="dacc" id="sort-dacc">Sort: d/acc ↓</button>
                 <button class="sort-btn" data-sort="name">Sort: Name</button>
             </div>
+            <div class="sort-controls dacc-sorts" id="dacc-sorts">
+                <span style="color: #34d399; font-size: 11px; margin-right: 5px;">d/acc:</span>
+                <button class="sort-btn dacc-dim-btn" data-sort="democratic">Democratic ↓</button>
+                <button class="sort-btn dacc-dim-btn" data-sort="decentralized">Decentralized ↓</button>
+                <button class="sort-btn dacc-dim-btn" data-sort="defensive">Defensive ↓</button>
+                <button class="sort-btn dacc-dim-btn" data-sort="differential">Differential ↓</button>
+            </div>
             <div class="sort-controls">
                 <button class="sort-btn filter-starred" id="filter-starred" onclick="toggleStarredFilter()">
                     ★ Starred<span class="starred-count" id="starred-count">(0)</span>
@@ -945,9 +952,11 @@ def create_dashboard_html(v3_0_data, v3_1_data):
 
         // Initialize
         function init() {{
-            // Show d/acc sort button only for v3.2
+            // Show d/acc sort buttons only for v3.2
             const daccBtn = document.getElementById('sort-dacc');
+            const daccSorts = document.getElementById('dacc-sorts');
             daccBtn.style.display = currentVersion === 'v3.2' ? 'inline-block' : 'none';
+            daccSorts.style.display = currentVersion === 'v3.2' ? 'flex' : 'none';
 
             updateStats();
             updateStarredCount();
@@ -977,12 +986,15 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             filteredEntities = entities;
             selectedEntity = null;
 
-            // Show/hide d/acc sort button based on version
+            // Show/hide d/acc sort buttons based on version
             const daccBtn = document.getElementById('sort-dacc');
+            const daccSorts = document.getElementById('dacc-sorts');
             daccBtn.style.display = currentVersion === 'v3.2' ? 'inline-block' : 'none';
+            daccSorts.style.display = currentVersion === 'v3.2' ? 'flex' : 'none';
 
-            // Reset sort to s2 if currently on dacc but switching away from v3.2
-            if (currentSort === 'dacc' && currentVersion !== 'v3.2') {{
+            // Reset sort to s2 if currently on a d/acc sort but switching away from v3.2
+            const daccSortTypes = ['dacc', 'democratic', 'decentralized', 'defensive', 'differential'];
+            if (daccSortTypes.includes(currentSort) && currentVersion !== 'v3.2') {{
                 currentSort = 's2';
                 document.querySelectorAll('.sort-btn[data-sort]').forEach(btn => btn.classList.remove('active'));
                 document.querySelector('.sort-btn[data-sort="s2"]').classList.add('active');
@@ -1053,6 +1065,14 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 }}
             }} else if (currentSort === 'dacc') {{
                 filteredEntities.sort((a, b) => (b.stage3_dacc?.total || 0) - (a.stage3_dacc?.total || 0));
+            }} else if (currentSort === 'democratic') {{
+                filteredEntities.sort((a, b) => (b.stage3_dacc?.democratic || 0) - (a.stage3_dacc?.democratic || 0));
+            }} else if (currentSort === 'decentralized') {{
+                filteredEntities.sort((a, b) => (b.stage3_dacc?.decentralized || 0) - (a.stage3_dacc?.decentralized || 0));
+            }} else if (currentSort === 'defensive') {{
+                filteredEntities.sort((a, b) => (b.stage3_dacc?.defensive || 0) - (a.stage3_dacc?.defensive || 0));
+            }} else if (currentSort === 'differential') {{
+                filteredEntities.sort((a, b) => (b.stage3_dacc?.differential || 0) - (a.stage3_dacc?.differential || 0));
             }} else if (currentSort === 'name') {{
                 filteredEntities.sort((a, b) => a.name.localeCompare(b.name));
             }}
