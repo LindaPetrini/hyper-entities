@@ -18,6 +18,7 @@ Dashboard for exploring "hyper-entities" - future systems that don't exist yet b
 ## Scoring Framework
 - **Stage 1 (Hyper-Entity Assessment)**: 9 axes, 0-3 each, max 27. Threshold ≥18 to qualify.
 - **Stage 2 (Technology Assessment)**: 14 dimensions, 0-5 each, max 70. Assesses impact/risk.
+- **Stage 3 (d/acc Values Alignment)**: 4 dimensions (Democratic, Decentralized, Defensive, Differential), 0-5 each, max 20. Based on Vitalik Buterin's d/acc framework.
 
 ## Dashboard Features
 - Version switcher (v3.0/v3.1)
@@ -32,4 +33,5 @@ https://lindapetrini.github.io/hyper-entities/results/dashboard.html
 ## Commands
 ```bash
 python create_dashboard.py  # Regenerate dashboard
+python score_dacc.py        # Score entities on d/acc dimensions (requires API key)
 ```

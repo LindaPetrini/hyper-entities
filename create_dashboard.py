@@ -305,6 +305,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             color: #a78bfa;
         }}
 
+        .score-dacc {{
+            color: #34d399;
+        }}
+
         #viz-container {{
             flex: 1;
             background: #0f1629;
@@ -629,8 +633,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             <div class="sort-controls">
                 <button class="sort-btn" data-sort="s1">Sort: Hyper-Entity ↓</button>
                 <button class="sort-btn active" data-sort="s2">Sort: Technology ↓</button>
+                <button class="sort-btn" data-sort="dacc">Sort: d/acc ↓</button>
                 <button class="sort-btn" data-sort="name">Sort: Name</button>
-                <button class="sort-btn" data-sort="category">Sort: Category</button>
             </div>
             <div class="sort-controls">
                 <button class="sort-btn filter-starred" id="filter-starred" onclick="toggleStarredFilter()">
@@ -675,6 +679,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             <div class="method-tabs" style="flex-shrink: 0;">
                 <button class="method-tab active" onclick="showMethodTab('v30')">Hyper-Entity Assessment</button>
                 <button class="method-tab" onclick="showMethodTab('v31')">Technology Assessment</button>
+                <button class="method-tab" onclick="showMethodTab('dacc')">d/acc Assessment</button>
             </div>
 
             <div style="flex: 1; overflow-y: scroll; min-height: 0; padding-right: 10px; margin-top: 15px;">
@@ -770,6 +775,47 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                         <li><strong style="color: #e0e6f0;">Transformative Power (0-25)</strong> - Capability Discontinuity + Cross-Domain Reach + Scalability + Autonomy + Composability</li>
                         <li><strong style="color: #e0e6f0;">Systemic Risk (0-25)</strong> - Irreversibility + Power Concentration + Externality Magnitude + Misuse Asymmetry + Governance Lag</li>
                         <li><strong style="color: #e0e6f0;">Lock-in Effects (0-20)</strong> - Feedback Intensity + Narrative Lock-In + Path Dependency + Human Agency Impact</li>
+                    </ul>
+                </div>
+
+                <div id="method-dacc" class="method-content">
+                    <h3 style="color: #34d399; margin-bottom: 15px;">Stage 3: d/acc Values Alignment Assessment</h3>
+                    <div style="background: #1a1f3a; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 3px solid #34d399;">
+                        <p style="font-style: italic; color: #e0e6f0;">Based on Vitalik Buterin's d/acc framework (Defensive/Decentralized/Democratic/Differential Acceleration), this assessment evaluates whether a hyper-entity aligns with values that promote human flourishing, resilience, and freedom.</p>
+                    </div>
+
+                    <h4 style="color: #34d399; margin: 20px 0 10px;">The Four D's</h4>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">Score each entity on 4 dimensions (0-5 per dimension). Maximum: 20 points.</p>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 15px;">
+                            <thead>
+                                <tr style="background: #1e293b;">
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #3a4f7a; color: #34d399;">Dimension</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #3a4f7a; color: #94a3b8;">What you're scoring</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">0</th>
+                                    <th style="padding: 8px; text-align: center; border: 1px solid #3a4f7a; color: #94a3b8;">5</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: #e0e6f0;">
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Democratic</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Collective decision-making</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Elite control</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Community choice</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Decentralized</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Power distribution</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Single point of control</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Broadly distributed</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Defensive</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Protection vs harm</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Offense-dominant</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Defense-favoring</td></tr>
+                                <tr><td style="padding: 6px; border: 1px solid #3a4f7a;"><strong>Differential</strong></td><td style="padding: 6px; border: 1px solid #3a4f7a;">Should be accelerated?</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">High dual-use risk</td><td style="padding: 6px; border: 1px solid #3a4f7a; text-align: center;">Positive asymmetry</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="background: #1a1f3a; padding: 15px; border-radius: 8px; border-left: 3px solid #34d399; margin-bottom: 15px;">
+                        <p style="color: #34d399; font-weight: 600; margin-bottom: 8px;">Note on Interpretation</p>
+                        <p style="color: #94a3b8;">Higher d/acc scores indicate technologies that align with values promoting human flourishing: distributed power, collective decision-making, defensive capabilities, and selective acceleration of beneficial technologies.</p>
+                    </div>
+
+                    <h4 style="color: #34d399; margin: 25px 0 10px;">Framework Source</h4>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">Based on Vitalik Buterin's essays:</p>
+                    <ul style="color: #94a3b8; margin-left: 20px; line-height: 1.8;">
+                        <li><a href="https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html" style="color: #34d399;">My techno-optimism (2023)</a></li>
+                        <li><a href="https://vitalik.eth.limo/general/2025/01/05/dacc2.html" style="color: #34d399;">d/acc: one year later (2025)</a></li>
                     </ul>
                 </div>
             </div>
@@ -989,10 +1035,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 }} else {{
                     filteredEntities.sort((a, b) => (b.stage2_consolidated?.total || 0) - (a.stage2_consolidated?.total || 0));
                 }}
+            }} else if (currentSort === 'dacc') {{
+                filteredEntities.sort((a, b) => (b.stage3_dacc?.total || 0) - (a.stage3_dacc?.total || 0));
             }} else if (currentSort === 'name') {{
                 filteredEntities.sort((a, b) => a.name.localeCompare(b.name));
-            }} else if (currentSort === 'category') {{
-                filteredEntities.sort((a, b) => (a.category || '').localeCompare(b.category || ''));
             }}
 
             renderList();
@@ -1033,6 +1079,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 const s2Score = currentVersion === 'v3.0'
                     ? (entity.stage2_total || 0)
                     : (entity.stage2_consolidated?.total || 0);
+                const daccScore = entity.stage3_dacc?.total || 0;
                 const starred = isStarred(entity.id);
 
                 div.innerHTML = `
@@ -1048,6 +1095,9 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                         </div>
                         <div class="entity-score">
                             <span class="score-badge score-s2">S2: ${{s2Score}}</span>
+                        </div>
+                        <div class="entity-score">
+                            <span class="score-badge score-dacc">d/acc: ${{daccScore}}</span>
                         </div>
                     </div>
                 `;
@@ -1079,6 +1129,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             const s2Score = currentVersion === 'v3.0'
                 ? (entity.stage2_total || 0)
                 : (entity.stage2_consolidated?.total || 0);
+            const daccScore = entity.stage3_dacc?.total || 0;
             const starred = isStarred(entity.id);
 
             let html = `
@@ -1098,6 +1149,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                         <div class="score-box">
                             <div class="score-label">Stage 2</div>
                             <div class="score-value score-s2">${{s2Score}}</div>
+                        </div>
+                        <div class="score-box">
+                            <div class="score-label">d/acc</div>
+                            <div class="score-value score-dacc">${{daccScore}}</div>
                         </div>
                     </div>
                 </div>
@@ -1175,6 +1230,47 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                                     <span class="score-num">${{s2_le}}</span>
                                 </div>
                             </div>
+                        </div>
+                    `;
+                }}
+
+                // Show d/acc scores
+                if (entity.stage3_dacc) {{
+                    const dacc = entity.stage3_dacc;
+                    html += `
+                        <div class="detail-section">
+                            <div class="section-title" style="color: #34d399;">d/acc Values Alignment</div>
+                            <div class="scoring-grid">
+                                <div class="score-row">
+                                    <span class="score-name">Democratic</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.democratic / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.democratic}}/5</span>
+                                </div>
+                                <div class="score-row">
+                                    <span class="score-name">Decentralized</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.decentralized / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.decentralized}}/5</span>
+                                </div>
+                                <div class="score-row">
+                                    <span class="score-name">Defensive</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.defensive / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.defensive}}/5</span>
+                                </div>
+                                <div class="score-row">
+                                    <span class="score-name">Differential</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.differential / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.differential}}/5</span>
+                                </div>
+                            </div>
+                            ${{dacc.reasoning ? `<p style="margin-top: 10px; font-size: 12px; color: #94a3b8; font-style: italic;">${{dacc.reasoning}}</p>` : ''}}
                         </div>
                     `;
                 }}
@@ -1322,12 +1418,16 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             document.querySelectorAll('.method-tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.method-content').forEach(c => c.classList.remove('active'));
 
+            const tabs = document.querySelectorAll('.method-tab');
             if (tab === 'v30') {{
-                document.querySelector('.method-tab:first-child').classList.add('active');
+                tabs[0].classList.add('active');
                 document.getElementById('method-v30').classList.add('active');
-            }} else {{
-                document.querySelector('.method-tab:last-child').classList.add('active');
+            }} else if (tab === 'v31') {{
+                tabs[1].classList.add('active');
                 document.getElementById('method-v31').classList.add('active');
+            }} else if (tab === 'dacc') {{
+                tabs[2].classList.add('active');
+                document.getElementById('method-dacc').classList.add('active');
             }}
         }}
 
