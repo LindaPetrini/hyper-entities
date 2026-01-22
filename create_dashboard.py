@@ -1216,32 +1216,45 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 const concreteVerdict = entity.concreteness?.verdict || '';
                 const starred = isStarred(entity.id);
 
-                const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
-                const daccBadge = showDacc
-                    ? `<div class="entity-score"><span class="score-badge score-dacc">d/acc: ${{daccScore}}</span></div>`
-                    : '';
-                const concreteBadge = currentVersion === 'v3.3'
-                    ? `<div class="entity-score"><span class="score-badge score-concrete" title="${{concreteVerdict}}">C: ${{concreteScore}}</span></div>`
+                const isV34 = currentVersion === 'v3.4';
+                const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3' || isV34;
+                const showConcrete = currentVersion === 'v3.3' || isV34;
+
+                // For v3.4, show all 4 d/acc dimensions normalized to 0-100
+                let daccBadge = '';
+                if (isV34) {{
+                    const dem = Math.round((entity.stage3_dacc?.democratic || 0) * 20);
+                    const dec = Math.round((entity.stage3_dacc?.decentralized || 0) * 20);
+                    const def = Math.round((entity.stage3_dacc?.defensive || 0) * 20);
+                    const dif = Math.round((entity.stage3_dacc?.differential || 0) * 20);
+                    daccBadge = `
+                        <span class="score-badge score-dacc" title="Democratic">Dm${{dem}}</span>
+                        <span class="score-badge score-dacc" title="Decentralized">Dc${{dec}}</span>
+                        <span class="score-badge score-dacc" title="Defensive">Df${{def}}</span>
+                        <span class="score-badge score-dacc" title="Differential">Di${{dif}}</span>`;
+                }} else if (showDacc) {{
+                    daccBadge = `<span class="score-badge score-dacc">d/acc: ${{daccScore}}</span>`;
+                }}
+
+                const concreteNorm = Math.round(concreteScore * 20);
+                const concreteBadge = showConcrete
+                    ? `<span class="score-badge score-concrete" title="${{concreteVerdict}}">C${{concreteNorm}}</span>`
                     : '';
 
                 // Show current composite score if sorting by composite
                 const compositeTypes = ['hidden_gem', 'buildable_good', 'defensive_tech', 'underdog'];
                 let compositeBadge = '';
-                if (currentVersion === 'v3.3' && compositeTypes.includes(currentSort) && entity.composites) {{
+                if ((currentVersion === 'v3.3' || isV34) && compositeTypes.includes(currentSort) && entity.composites) {{
                     const score = (entity.composites[currentSort] * 100).toFixed(0);
                     const labels = {{hidden_gem: 'Gem', buildable_good: 'Build', defensive_tech: 'Def', underdog: 'Dog'}};
-                    compositeBadge = `<div class="entity-score"><span class="score-badge" style="color: #fbbf24;">${{labels[currentSort]}}: ${{score}}</span></div>`;
+                    compositeBadge = `<span class="score-badge" style="color: #fbbf24;">${{labels[currentSort]}}${{score}}</span>`;
                 }}
 
                 // Hide S1/S2 for v3.4
-                const showS1S2 = currentVersion !== 'v3.4';
+                const showS1S2 = !isV34;
                 const s1s2Badges = showS1S2 ? `
-                        <div class="entity-score">
-                            <span class="score-badge score-s1">S1: ${{s1Score}}</span>
-                        </div>
-                        <div class="entity-score">
-                            <span class="score-badge score-s2">S2: ${{s2Score}}</span>
-                        </div>` : '';
+                            <span class="score-badge score-s1">S1:${{s1Score}}</span>
+                            <span class="score-badge score-s2">S2:${{s2Score}}</span>` : '';
 
                 div.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
@@ -1251,10 +1264,10 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         </button>
                     </div>
                     <div class="entity-meta">
-                        ${{s1s2Badges}}
-                        ${{daccBadge}}
-                        ${{concreteBadge}}
                         ${{compositeBadge}}
+                        ${{concreteBadge}}
+                        ${{daccBadge}}
+                        ${{s1s2Badges}}
                     </div>
                 `;
 
@@ -1293,19 +1306,35 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3' || isV34;
             const showConcrete = currentVersion === 'v3.3' || isV34;
 
-            const daccScoreBox = showDacc
-                ? `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}/20</div></div>`
-                : '';
+            // Normalize scores to 0-100 for v3.4
+            const concreteNorm = Math.round(concreteScore * 20);
+            const compositeScore = entity.composites?.hidden_gem || 0;
+
+            // For v3.4, show 4 d/acc scores normalized
+            let daccScoreBox = '';
+            if (isV34) {{
+                const dem = Math.round((entity.stage3_dacc?.democratic || 0) * 20);
+                const dec = Math.round((entity.stage3_dacc?.decentralized || 0) * 20);
+                const def = Math.round((entity.stage3_dacc?.defensive || 0) * 20);
+                const dif = Math.round((entity.stage3_dacc?.differential || 0) * 20);
+                daccScoreBox = `
+                        <div class="score-box"><div class="score-label">Democratic</div><div class="score-value score-dacc">${{dem}}</div></div>
+                        <div class="score-box"><div class="score-label">Decentral</div><div class="score-value score-dacc">${{dec}}</div></div>
+                        <div class="score-box"><div class="score-label">Defensive</div><div class="score-value score-dacc">${{def}}</div></div>
+                        <div class="score-box"><div class="score-label">Differential</div><div class="score-value score-dacc">${{dif}}</div></div>`;
+            }} else if (showDacc) {{
+                daccScoreBox = `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}/20</div></div>`;
+            }}
+
             const concreteScoreBox = showConcrete
-                ? `<div class="score-box"><div class="score-label">Concrete</div><div class="score-value score-concrete">${{concreteScore}}/5</div></div>`
+                ? `<div class="score-box"><div class="score-label">Concrete</div><div class="score-value score-concrete">${{concreteNorm}}</div></div>`
                 : '';
 
             // For v3.4, show composite score instead of S1/S2
-            const compositeScore = entity.composites?.hidden_gem || 0;
             const s1s2Boxes = isV34 ? `
                         <div class="score-box">
                             <div class="score-label">Hidden Gem</div>
-                            <div class="score-value" style="color: #fbbf24;">${{(compositeScore * 100).toFixed(0)}}%</div>
+                            <div class="score-value" style="color: #fbbf24;">${{(compositeScore * 100).toFixed(0)}}</div>
                         </div>` : `
                         <div class="score-box">
                             <div class="score-label">Stage 1</div>
@@ -1325,10 +1354,10 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         </button>
                     </div>
                     <div class="detail-category">${{entity.category || 'Uncategorized'}}</div>
-                    <div class="detail-scores">
+                    <div class="detail-scores" style="flex-wrap: wrap;">
                         ${{s1s2Boxes}}
-                        ${{daccScoreBox}}
                         ${{concreteScoreBox}}
+                        ${{daccScoreBox}}
                     </div>
                 </div>
 
@@ -1340,8 +1369,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
 
             // Version-specific sections
             if (currentVersion === 'v3.1' || currentVersion === 'v3.2' || currentVersion === 'v3.3' || currentVersion === 'v3.4') {{
-                // Show concreteness first (v3.3 only)
-                if (currentVersion === 'v3.3' && entity.concreteness) {{
+                // Show concreteness first (v3.3 and v3.4)
+                if ((currentVersion === 'v3.3' || currentVersion === 'v3.4') && entity.concreteness) {{
                     const c = entity.concreteness;
                     const verdictColor = c.verdict === 'keep' ? '#34d399' : c.verdict === 'transform' ? '#f59e0b' : '#ef4444';
                     const verdictLabel = c.verdict === 'keep' ? 'KEEP (Concrete)' : c.verdict === 'transform' ? 'TRANSFORM (Made Concrete)' : 'REJECT (Too Vague)';
@@ -1390,8 +1419,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                     html += `</div>`;
                 }}
 
-                // Show d/acc scores (v3.2 and v3.3)
-                if ((currentVersion === 'v3.2' || currentVersion === 'v3.3') && entity.stage3_dacc) {{
+                // Show d/acc scores (v3.2, v3.3, v3.4)
+                if ((currentVersion === 'v3.2' || currentVersion === 'v3.3' || currentVersion === 'v3.4') && entity.stage3_dacc) {{
                     const dacc = entity.stage3_dacc;
                     html += `
                         <div class="detail-section">
