@@ -1184,6 +1184,47 @@ def create_dashboard_html(v3_0_data, v3_1_data):
 
             // Version-specific sections
             if (currentVersion === 'v3.1' || currentVersion === 'v3.2') {{
+                // Show d/acc scores first (v3.2 only)
+                if (currentVersion === 'v3.2' && entity.stage3_dacc) {{
+                    const dacc = entity.stage3_dacc;
+                    html += `
+                        <div class="detail-section">
+                            <div class="section-title" style="color: #34d399;">d/acc Values Alignment</div>
+                            <div class="scoring-grid">
+                                <div class="score-row">
+                                    <span class="score-name">Democratic</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.democratic / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.democratic}}/5</span>
+                                </div>
+                                <div class="score-row">
+                                    <span class="score-name">Decentralized</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.decentralized / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.decentralized}}/5</span>
+                                </div>
+                                <div class="score-row">
+                                    <span class="score-name">Defensive</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.defensive / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.defensive}}/5</span>
+                                </div>
+                                <div class="score-row">
+                                    <span class="score-name">Differential</span>
+                                    <div class="score-bar-container">
+                                        <div class="score-bar" style="width: ${{(dacc.differential / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                                    </div>
+                                    <span class="score-num">${{dacc.differential}}/5</span>
+                                </div>
+                            </div>
+                            ${{dacc.reasoning ? `<p style="margin-top: 10px; font-size: 12px; color: #94a3b8; font-style: italic;">${{dacc.reasoning}}</p>` : ''}}
+                        </div>
+                    `;
+                }}
+
                 // Show consolidated scores
                 if (entity.stage1_consolidated) {{
                     const s1_rg = (entity.stage1_consolidated.reality_gap / 9 * 10).toFixed(1);
@@ -1249,47 +1290,6 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                                     <span class="score-num">${{s2_le}}</span>
                                 </div>
                             </div>
-                        </div>
-                    `;
-                }}
-
-                // Show d/acc scores (v3.2 only)
-                if (currentVersion === 'v3.2' && entity.stage3_dacc) {{
-                    const dacc = entity.stage3_dacc;
-                    html += `
-                        <div class="detail-section">
-                            <div class="section-title" style="color: #34d399;">d/acc Values Alignment</div>
-                            <div class="scoring-grid">
-                                <div class="score-row">
-                                    <span class="score-name">Democratic</span>
-                                    <div class="score-bar-container">
-                                        <div class="score-bar" style="width: ${{(dacc.democratic / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
-                                    </div>
-                                    <span class="score-num">${{dacc.democratic}}/5</span>
-                                </div>
-                                <div class="score-row">
-                                    <span class="score-name">Decentralized</span>
-                                    <div class="score-bar-container">
-                                        <div class="score-bar" style="width: ${{(dacc.decentralized / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
-                                    </div>
-                                    <span class="score-num">${{dacc.decentralized}}/5</span>
-                                </div>
-                                <div class="score-row">
-                                    <span class="score-name">Defensive</span>
-                                    <div class="score-bar-container">
-                                        <div class="score-bar" style="width: ${{(dacc.defensive / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
-                                    </div>
-                                    <span class="score-num">${{dacc.defensive}}/5</span>
-                                </div>
-                                <div class="score-row">
-                                    <span class="score-name">Differential</span>
-                                    <div class="score-bar-container">
-                                        <div class="score-bar" style="width: ${{(dacc.differential / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
-                                    </div>
-                                    <span class="score-num">${{dacc.differential}}/5</span>
-                                </div>
-                            </div>
-                            ${{dacc.reasoning ? `<p style="margin-top: 10px; font-size: 12px; color: #94a3b8; font-style: italic;">${{dacc.reasoning}}</p>` : ''}}
                         </div>
                     `;
                 }}
