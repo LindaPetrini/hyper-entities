@@ -865,7 +865,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
         const v3_0_data = __V3_0_DATA_PLACEHOLDER__;
         const v3_1_data = __V3_1_DATA_PLACEHOLDER__;
 
-        let currentVersion = 'v3.1';
+        let currentVersion = 'v3.2';
         let currentData = v3_1_data;
         let entities = currentData.entities;
         let filteredEntities = entities;
