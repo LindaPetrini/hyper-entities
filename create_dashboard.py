@@ -602,7 +602,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <label for="version-select">Version:</label>
                 <select id="version-select">
                     <option value="v3.0">v3.0 - Rigorous Dual Scoring (9+14 axes)</option>
-                    <option value="v3.1" selected>v3.1 - Organized & Expanded (3+3 scores + d/acc)</option>
+                    <option value="v3.1">v3.1 - Organized & Expanded (3+3 scores)</option>
+                    <option value="v3.2" selected>v3.2 - d/acc Values Alignment</option>
                 </select>
             </div>
         </div>
@@ -633,7 +634,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             <div class="sort-controls">
                 <button class="sort-btn" data-sort="s1">Sort: Hyper-Entity ↓</button>
                 <button class="sort-btn active" data-sort="s2">Sort: Technology ↓</button>
-                <button class="sort-btn" data-sort="dacc">Sort: d/acc ↓</button>
+                <button class="sort-btn" data-sort="dacc" id="sort-dacc">Sort: d/acc ↓</button>
                 <button class="sort-btn" data-sort="name">Sort: Name</button>
             </div>
             <div class="sort-controls">
@@ -944,6 +945,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
 
         // Initialize
         function init() {{
+            // Show d/acc sort button only for v3.2
+            const daccBtn = document.getElementById('sort-dacc');
+            daccBtn.style.display = currentVersion === 'v3.2' ? 'inline-block' : 'none';
+
             updateStats();
             updateStarredCount();
             renderList();
@@ -972,8 +977,19 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             filteredEntities = entities;
             selectedEntity = null;
 
+            // Show/hide d/acc sort button based on version
+            const daccBtn = document.getElementById('sort-dacc');
+            daccBtn.style.display = currentVersion === 'v3.2' ? 'inline-block' : 'none';
+
+            // Reset sort to s2 if currently on dacc but switching away from v3.2
+            if (currentSort === 'dacc' && currentVersion !== 'v3.2') {{
+                currentSort = 's2';
+                document.querySelectorAll('.sort-btn[data-sort]').forEach(btn => btn.classList.remove('active'));
+                document.querySelector('.sort-btn[data-sort="s2"]').classList.add('active');
+            }}
+
             updateStats();
-            renderList();
+            filterAndSort();
             renderVisualization();
 
             // Clear detail panel
@@ -1082,6 +1098,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 const daccScore = entity.stage3_dacc?.total || 0;
                 const starred = isStarred(entity.id);
 
+                const daccBadge = currentVersion === 'v3.2'
+                    ? `<div class="entity-score"><span class="score-badge score-dacc">d/acc: ${{daccScore}}</span></div>`
+                    : '';
+
                 div.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                         <div class="entity-name">${{entity.name}}</div>
@@ -1096,9 +1116,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                         <div class="entity-score">
                             <span class="score-badge score-s2">S2: ${{s2Score}}</span>
                         </div>
-                        <div class="entity-score">
-                            <span class="score-badge score-dacc">d/acc: ${{daccScore}}</span>
-                        </div>
+                        ${{daccBadge}}
                     </div>
                 `;
 
@@ -1132,6 +1150,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             const daccScore = entity.stage3_dacc?.total || 0;
             const starred = isStarred(entity.id);
 
+            const daccScoreBox = currentVersion === 'v3.2'
+                ? `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}</div></div>`
+                : '';
+
             let html = `
                 <div class="detail-header">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
@@ -1150,10 +1172,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                             <div class="score-label">Stage 2</div>
                             <div class="score-value score-s2">${{s2Score}}</div>
                         </div>
-                        <div class="score-box">
-                            <div class="score-label">d/acc</div>
-                            <div class="score-value score-dacc">${{daccScore}}</div>
-                        </div>
+                        ${{daccScoreBox}}
                     </div>
                 </div>
 
@@ -1164,7 +1183,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             `;
 
             // Version-specific sections
-            if (currentVersion === 'v3.1') {{
+            if (currentVersion === 'v3.1' || currentVersion === 'v3.2') {{
                 // Show consolidated scores
                 if (entity.stage1_consolidated) {{
                     const s1_rg = (entity.stage1_consolidated.reality_gap / 9 * 10).toFixed(1);
@@ -1234,8 +1253,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                     `;
                 }}
 
-                // Show d/acc scores
-                if (entity.stage3_dacc) {{
+                // Show d/acc scores (v3.2 only)
+                if (currentVersion === 'v3.2' && entity.stage3_dacc) {{
                     const dacc = entity.stage3_dacc;
                     html += `
                         <div class="detail-section">
