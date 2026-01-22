@@ -9,12 +9,13 @@ from pathlib import Path
 CONFIG = {
     "v3_0_json": "results/stage1_extraction/entities.json",
     "v3_1_json": "results/stage2_assessment/entities.json",
+    "v3_3_json": "results/stage3_concrete/entities.json",
     "output_html": "results/dashboard.html",
 }
 
 
 def load_data():
-    """Load both v3.0 and v3.1 data."""
+    """Load v3.0, v3.1, and v3.3 data."""
     print("Loading v3.0 data...")
     with open(CONFIG["v3_0_json"]) as f:
         v3_0_data = json.load(f)
@@ -25,12 +26,22 @@ def load_data():
         v3_1_data = json.load(f)
     print(f"✓ Loaded {len(v3_1_data['entities'])} v3.1 entities")
 
-    return v3_0_data, v3_1_data
+    print("Loading v3.3 data (with concreteness)...")
+    with open(CONFIG["v3_3_json"]) as f:
+        v3_3_data = json.load(f)
+    print(f"✓ Loaded {len(v3_3_data['entities'])} v3.3 entities")
+
+    # Count concreteness stats
+    keep_count = len([e for e in v3_3_data['entities'] if e.get('concreteness', {}).get('verdict') == 'keep'])
+    transform_count = len([e for e in v3_3_data['entities'] if e.get('concreteness', {}).get('verdict') == 'transform'])
+    print(f"  - Keep: {keep_count}, Transform: {transform_count}")
+
+    return v3_0_data, v3_1_data, v3_3_data
 
 
-def create_dashboard_html(v3_0_data, v3_1_data):
+def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
     """Create dashboard HTML with version switcher."""
-    print("Creating v3.1 dashboard...")
+    print("Creating v3.3 dashboard...")
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -307,6 +318,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
 
         .score-dacc {{
             color: #34d399;
+        }}
+
+        .score-concrete {{
+            color: #f59e0b;
         }}
 
         #viz-container {{
@@ -603,7 +618,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 <select id="version-select">
                     <option value="v3.0">v3.0 - Rigorous Dual Scoring (9+14 axes)</option>
                     <option value="v3.1">v3.1 - Organized & Expanded (3+3 scores)</option>
-                    <option value="v3.2" selected>v3.2 - d/acc Values Alignment</option>
+                    <option value="v3.2">v3.2 - d/acc Values Alignment</option>
+                    <option value="v3.3" selected>v3.3 - Concreteness Extraction</option>
                 </select>
             </div>
         </div>
@@ -633,8 +649,9 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             </div>
             <div class="sort-controls">
                 <button class="sort-btn" data-sort="s1">Sort: Hyper-Entity ↓</button>
-                <button class="sort-btn active" data-sort="s2">Sort: Technology ↓</button>
+                <button class="sort-btn" data-sort="s2">Sort: Technology ↓</button>
                 <button class="sort-btn" data-sort="dacc" id="sort-dacc">Sort: d/acc ↓</button>
+                <button class="sort-btn active" data-sort="concrete" id="sort-concrete">Sort: Concrete ↓</button>
                 <button class="sort-btn" data-sort="name">Sort: Name</button>
             </div>
             <div class="sort-controls dacc-sorts" id="dacc-sorts">
@@ -871,9 +888,10 @@ def create_dashboard_html(v3_0_data, v3_1_data):
         // Data embedded in HTML
         const v3_0_data = __V3_0_DATA_PLACEHOLDER__;
         const v3_1_data = __V3_1_DATA_PLACEHOLDER__;
+        const v3_3_data = __V3_3_DATA_PLACEHOLDER__;
 
-        let currentVersion = 'v3.2';
-        let currentData = v3_1_data;
+        let currentVersion = 'v3.3';
+        let currentData = v3_3_data;
         let entities = currentData.entities;
         let filteredEntities = entities;
         let selectedEntity = null;
@@ -952,11 +970,16 @@ def create_dashboard_html(v3_0_data, v3_1_data):
 
         // Initialize
         function init() {{
-            // Show d/acc sort buttons only for v3.2
+            // Show d/acc sort buttons only for v3.2+
             const daccBtn = document.getElementById('sort-dacc');
             const daccSorts = document.getElementById('dacc-sorts');
-            daccBtn.style.display = currentVersion === 'v3.2' ? 'inline-block' : 'none';
-            daccSorts.style.display = currentVersion === 'v3.2' ? 'flex' : 'none';
+            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
+            daccBtn.style.display = showDacc ? 'inline-block' : 'none';
+            daccSorts.style.display = showDacc ? 'flex' : 'none';
+
+            // Show concreteness sort only for v3.3
+            const concreteBtn = document.getElementById('sort-concrete');
+            concreteBtn.style.display = currentVersion === 'v3.3' ? 'inline-block' : 'none';
 
             updateStats();
             updateStarredCount();
@@ -981,7 +1004,13 @@ def create_dashboard_html(v3_0_data, v3_1_data):
         // Handle version change
         function handleVersionChange(e) {{
             currentVersion = e.target.value;
-            currentData = currentVersion === 'v3.0' ? v3_0_data : v3_1_data;
+            if (currentVersion === 'v3.0') {{
+                currentData = v3_0_data;
+            }} else if (currentVersion === 'v3.3') {{
+                currentData = v3_3_data;
+            }} else {{
+                currentData = v3_1_data;  // v3.1 and v3.2 use same data
+            }}
             entities = currentData.entities;
             filteredEntities = entities;
             selectedEntity = null;
@@ -989,12 +1018,19 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             // Show/hide d/acc sort buttons based on version
             const daccBtn = document.getElementById('sort-dacc');
             const daccSorts = document.getElementById('dacc-sorts');
-            daccBtn.style.display = currentVersion === 'v3.2' ? 'inline-block' : 'none';
-            daccSorts.style.display = currentVersion === 'v3.2' ? 'flex' : 'none';
+            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
+            daccBtn.style.display = showDacc ? 'inline-block' : 'none';
+            daccSorts.style.display = showDacc ? 'flex' : 'none';
 
-            // Reset sort to s2 if currently on a d/acc sort but switching away from v3.2
+            // Show/hide concreteness sort button
+            const concreteBtn = document.getElementById('sort-concrete');
+            concreteBtn.style.display = currentVersion === 'v3.3' ? 'inline-block' : 'none';
+
+            // Reset sort if current sort is not available in the version
             const daccSortTypes = ['dacc', 'democratic', 'decentralized', 'defensive', 'differential'];
-            if (daccSortTypes.includes(currentSort) && currentVersion !== 'v3.2') {{
+            const concreteSortTypes = ['concrete'];
+            if ((daccSortTypes.includes(currentSort) && !showDacc) ||
+                (concreteSortTypes.includes(currentSort) && currentVersion !== 'v3.3')) {{
                 currentSort = 's2';
                 document.querySelectorAll('.sort-btn[data-sort]').forEach(btn => btn.classList.remove('active'));
                 document.querySelector('.sort-btn[data-sort="s2"]').classList.add('active');
@@ -1073,6 +1109,8 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 filteredEntities.sort((a, b) => (b.stage3_dacc?.defensive || 0) - (a.stage3_dacc?.defensive || 0));
             }} else if (currentSort === 'differential') {{
                 filteredEntities.sort((a, b) => (b.stage3_dacc?.differential || 0) - (a.stage3_dacc?.differential || 0));
+            }} else if (currentSort === 'concrete') {{
+                filteredEntities.sort((a, b) => (b.concreteness?.score || 0) - (a.concreteness?.score || 0));
             }} else if (currentSort === 'name') {{
                 filteredEntities.sort((a, b) => a.name.localeCompare(b.name));
             }}
@@ -1116,10 +1154,16 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                     ? (entity.stage2_total || 0)
                     : (entity.stage2_consolidated?.total || 0);
                 const daccScore = entity.stage3_dacc?.total || 0;
+                const concreteScore = entity.concreteness?.score || 0;
+                const concreteVerdict = entity.concreteness?.verdict || '';
                 const starred = isStarred(entity.id);
 
-                const daccBadge = currentVersion === 'v3.2'
+                const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
+                const daccBadge = showDacc
                     ? `<div class="entity-score"><span class="score-badge score-dacc">d/acc: ${{daccScore}}</span></div>`
+                    : '';
+                const concreteBadge = currentVersion === 'v3.3'
+                    ? `<div class="entity-score"><span class="score-badge score-concrete" title="${{concreteVerdict}}">C: ${{concreteScore}}</span></div>`
                     : '';
 
                 div.innerHTML = `
@@ -1137,6 +1181,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                             <span class="score-badge score-s2">S2: ${{s2Score}}</span>
                         </div>
                         ${{daccBadge}}
+                        ${{concreteBadge}}
                     </div>
                 `;
 
@@ -1168,10 +1213,15 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                 ? (entity.stage2_total || 0)
                 : (entity.stage2_consolidated?.total || 0);
             const daccScore = entity.stage3_dacc?.total || 0;
+            const concreteScore = entity.concreteness?.score || 0;
             const starred = isStarred(entity.id);
 
-            const daccScoreBox = currentVersion === 'v3.2'
+            const showDacc = currentVersion === 'v3.2' || currentVersion === 'v3.3';
+            const daccScoreBox = showDacc
                 ? `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}</div></div>`
+                : '';
+            const concreteScoreBox = currentVersion === 'v3.3'
+                ? `<div class="score-box"><div class="score-label">Concrete</div><div class="score-value score-concrete">${{concreteScore}}</div></div>`
                 : '';
 
             let html = `
@@ -1193,6 +1243,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
                             <div class="score-value score-s2">${{s2Score}}</div>
                         </div>
                         ${{daccScoreBox}}
+                        ${{concreteScoreBox}}
                     </div>
                 </div>
 
@@ -1203,9 +1254,59 @@ def create_dashboard_html(v3_0_data, v3_1_data):
             `;
 
             // Version-specific sections
-            if (currentVersion === 'v3.1' || currentVersion === 'v3.2') {{
-                // Show d/acc scores first (v3.2 only)
-                if (currentVersion === 'v3.2' && entity.stage3_dacc) {{
+            if (currentVersion === 'v3.1' || currentVersion === 'v3.2' || currentVersion === 'v3.3') {{
+                // Show concreteness first (v3.3 only)
+                if (currentVersion === 'v3.3' && entity.concreteness) {{
+                    const c = entity.concreteness;
+                    const verdictColor = c.verdict === 'keep' ? '#34d399' : c.verdict === 'transform' ? '#f59e0b' : '#ef4444';
+                    const verdictLabel = c.verdict === 'keep' ? 'KEEP (Concrete)' : c.verdict === 'transform' ? 'TRANSFORM (Made Concrete)' : 'REJECT (Too Vague)';
+
+                    html += `
+                        <div class="detail-section">
+                            <div class="section-title" style="color: #f59e0b;">Concreteness Assessment</div>
+                            <div style="display: flex; gap: 15px; margin-bottom: 10px;">
+                                <div style="background: #1a1f3a; padding: 8px 12px; border-radius: 6px; border-left: 3px solid ${{verdictColor}};">
+                                    <span style="color: ${{verdictColor}}; font-weight: 600;">${{verdictLabel}}</span>
+                                    <span style="color: #94a3b8; margin-left: 10px;">Score: ${{c.score}}/5</span>
+                                </div>
+                            </div>
+                    `;
+
+                    if (c.core_technologies && c.core_technologies.length > 0) {{
+                        html += `
+                            <div style="margin-bottom: 10px;">
+                                <div style="color: #94a3b8; font-size: 12px; margin-bottom: 5px;">Core Technologies:</div>
+                                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                    ${{c.core_technologies.map(tech => `<span style="background: #1e293b; padding: 4px 8px; border-radius: 4px; font-size: 11px; color: #f59e0b;">${{tech}}</span>`).join('')}}
+                                </div>
+                            </div>
+                        `;
+                    }}
+
+                    if (c.concrete_version && c.verdict === 'transform') {{
+                        html += `
+                            <div style="margin-bottom: 10px;">
+                                <div style="color: #94a3b8; font-size: 12px; margin-bottom: 5px;">Concrete Version:</div>
+                                <div style="background: #1a1f3a; padding: 10px; border-radius: 6px; font-size: 13px; color: #e0e6f0; line-height: 1.5; border-left: 3px solid #f59e0b;">
+                                    ${{c.concrete_version}}
+                                </div>
+                            </div>
+                        `;
+                    }}
+
+                    if (c.reasoning) {{
+                        html += `
+                            <div style="font-size: 12px; color: #64748b; font-style: italic; margin-top: 8px;">
+                                ${{c.reasoning}}
+                            </div>
+                        `;
+                    }}
+
+                    html += `</div>`;
+                }}
+
+                // Show d/acc scores (v3.2 and v3.3)
+                if ((currentVersion === 'v3.2' || currentVersion === 'v3.3') && entity.stage3_dacc) {{
                     const dacc = entity.stage3_dacc;
                     html += `
                         <div class="detail-section">
@@ -1674,6 +1775,7 @@ def create_dashboard_html(v3_0_data, v3_1_data):
     # Embed data in HTML
     html = html.replace("__V3_0_DATA_PLACEHOLDER__", json.dumps(v3_0_data))
     html = html.replace("__V3_1_DATA_PLACEHOLDER__", json.dumps(v3_1_data))
+    html = html.replace("__V3_3_DATA_PLACEHOLDER__", json.dumps(v3_3_data))
 
     return html
 
@@ -1681,15 +1783,15 @@ def create_dashboard_html(v3_0_data, v3_1_data):
 def main():
     """Main execution."""
     print("=" * 80)
-    print("Creating v3.1 Dashboard with Version Switcher")
+    print("Creating v3.3 Dashboard with Concreteness")
     print("=" * 80)
     print()
 
     # Load data
-    v3_0_data, v3_1_data = load_data()
+    v3_0_data, v3_1_data, v3_3_data = load_data()
 
     # Create HTML
-    html = create_dashboard_html(v3_0_data, v3_1_data)
+    html = create_dashboard_html(v3_0_data, v3_1_data, v3_3_data)
 
     # Save
     output_path = Path(CONFIG["output_html"])
@@ -1705,10 +1807,14 @@ def main():
     print(f"✓ Saved to: {output_path}")
     print()
     print("Features:")
-    print("  • Version dropdown to switch between v3.0 and v3.1")
+    print("  • Version dropdown: v3.0, v3.1, v3.2, v3.3")
     print("  • v3.0: Original 9+14 scoring display")
     print("  • v3.1: Consolidated 3+3 scores + expanded details")
-    print("  • Cluster visualization based on v3.1 analysis")
+    print("  • v3.2: d/acc Values Alignment scoring")
+    print("  • v3.3: Concreteness extraction (NEW)")
+    print("  • Sort by concreteness score")
+    print("  • View concrete version, core technologies, reasoning")
+    print("  • Cluster visualization based on analysis")
     print("  • Search, sort, and filter capabilities")
     print("  • Modal view for detailed reading")
     print()
