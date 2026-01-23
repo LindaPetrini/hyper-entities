@@ -112,6 +112,19 @@
             line-height: 1.5;
             color: rgba(255,255,255,0.8);
         }
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .tech-tag {
+            background: linear-gradient(135deg, #2d3436, #636e72);
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 13px;
+            color: #dfe6e9;
+        }
         .buttons {
             display: flex;
             justify-content: center;
@@ -233,7 +246,7 @@
         let history = [];
 
         // Load data
-        fetch('stage2_assessment/entities.json')
+        fetch('stage3_concrete/entities.json')
             .then(r => r.json())
             .then(data => {
                 entities = data.entities
@@ -279,16 +292,12 @@
                 <div class="cluster-tag">${e.cluster_name || e.category || 'Uncategorized'}</div>
                 <div class="description">${e.description || 'No description available.'}</div>
                 <div class="details">
-                    ${e.problems_solved ? `
+                    ${e.concreteness?.core_technologies?.length ? `
                         <div class="detail-section">
-                            <div class="detail-label">Problems Solved</div>
-                            <div class="detail-text">${truncate(e.problems_solved, 200)}</div>
-                        </div>
-                    ` : ''}
-                    ${e.why_new_different ? `
-                        <div class="detail-section">
-                            <div class="detail-label">What's New/Different</div>
-                            <div class="detail-text">${truncate(e.why_new_different, 200)}</div>
+                            <div class="detail-label">Core Technologies</div>
+                            <div class="tech-tags">
+                                ${e.concreteness.core_technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                            </div>
                         </div>
                     ` : ''}
                 </div>
