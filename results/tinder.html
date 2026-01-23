@@ -237,8 +237,7 @@
             .then(r => r.json())
             .then(data => {
                 entities = data.entities
-                    .filter(e => e.stage2_total != null)
-                    .sort((a, b) => (b.stage2_total || 0) - (a.stage2_total || 0));
+                    .sort((a, b) => (b.stage3_dacc?.total ?? 0) - (a.stage3_dacc?.total ?? 0));
 
                 // Load saved progress
                 const saved = localStorage.getItem('hyper-entity-tinder');
@@ -273,8 +272,8 @@
                 <div class="card-header">
                     <div class="entity-name">${e.name}</div>
                     <div class="scores">
-                        <span class="score-badge tech-score">Tech: ${e.stage2_total}/70</span>
                         <span class="score-badge dacc-score">d/acc: ${daccTotal}/20</span>
+                        <span class="score-badge tech-score">Tech: ${e.stage2_total ?? 'N/A'}/70</span>
                     </div>
                 </div>
                 <div class="cluster-tag">${e.cluster_name || e.category || 'Uncategorized'}</div>
