@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consensus Picks - Hyper-Entities</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ffd700, #ffaa00, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .stat {
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffd700;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .entities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        .entity-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,215,0,0.3);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s;
+        }
+        .entity-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255,215,0,0.6);
+            box-shadow: 0 10px 40px rgba(255,215,0,0.1);
+        }
+        .entity-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f8fafc;
+        }
+        .entity-cluster {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: #ffd700;
+            background: rgba(255,215,0,0.1);
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+        .entity-description {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .scores {
+            display: flex;
+            gap: 15px;
+        }
+        .score-badge {
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .dacc-score {
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #1a1a2e;
+        }
+        .tech-score {
+            background: linear-gradient(135deg, #7b2cbf, #c77dff);
+            color: white;
+        }
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .tech-tag {
+            background: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+        
+        <div class="header">
+            <h1>★ Consensus Picks ★</h1>
+            <p>26 hyper-entities starred by both Linda and Beatrice</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">88</div>
+                    <div class="stat-label">Linda's Picks</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">67</div>
+                    <div class="stat-label">Beatrice's Picks</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">26</div>
+                    <div class="stat-label">Consensus</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">20%</div>
+                    <div class="stat-label">Overlap Rate</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="entities-grid">
+
+            <div class="entity-card">
+                <div class="entity-name">Automated Scientific Publishing Ecosystem for Machine Consumers</div>
+                <span class="entity-cluster">Science & Research</span>
+                <div class="entity-description">A reimagined scientific publishing system designed primarily for AI systems to consume, process, and contribute to scientific knowledge, with radically different latency, format, and peer review mechanisms.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 18/20</span>
+                    <span class="score-badge tech-score">Tech: 60/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">blockchain verification</span><span class="tech-tag">multi-agent verification protocols</span><span class="tech-tag">semantic metadata systems</span><span class="tech-tag">dynamic knowledge graph integration</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Competitive Governance Protocol Stack</div>
+                <span class="entity-cluster">Governance & Platform</span>
+                <div class="entity-description">An interoperable digital governance system allowing citizens to participate in multiple overlapping jurisdictions, with portable digital identities and the ability to switch between governance networks based on performance.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 18/20</span>
+                    <span class="score-badge tech-score">Tech: 57/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">blockchain</span><span class="tech-tag">digital identity</span><span class="tech-tag">smart contracts</span><span class="tech-tag">decentralized governance protocols</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">LexCommons</div>
+                <span class="entity-cluster">Ecosystem & Open</span>
+                <div class="entity-description">A global, open-source legal system powered by smart contracts, AI legal agents, and decentralized governance. It transforms law from a closed, institutional practice to an open, participatory, and technologically mediated global commons.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 18/20</span>
+                    <span class="score-badge tech-score">Tech: 57/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">smart contracts</span><span class="tech-tag">AI legal reasoning</span><span class="tech-tag">decentralized governance protocols</span><span class="tech-tag">blockchain-based dispute resolution</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Epistemic Stack</div>
+                <span class="entity-cluster">Epistemic & Stack</span>
+                <div class="entity-description">A comprehensive information verification and tracing system that allows users to follow the provenance of information from high-level claims down to raw data sources, enabling more robust trust and understanding.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 17/20</span>
+                    <span class="score-badge tech-score">Tech: 44/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">blockchain provenance tracking</span><span class="tech-tag">cryptographic source linking</span><span class="tech-tag">multi-layer verification protocol</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Reputational Markets</div>
+                <span class="entity-cluster">Markets</span>
+                <div class="entity-description">A decentralized global coordination mechanism that uses prediction markets to assess and incentivize responsible behavior across complex supply chains. It creates a dynamic reputation scoring system that encourages collective accountability for long-term human values.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 17/20</span>
+                    <span class="score-badge tech-score">Tech: 51/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">blockchain</span><span class="tech-tag">prediction markets</span><span class="tech-tag">cryptographic reputation scoring</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Universal AI Learning UnCommons (UALU)</div>
+                <span class="entity-cluster">Learning & Adaptive</span>
+                <div class="entity-description">A federated, community-led network for developing and maintaining AI educational tools, governed by diverse councils including elders, learners, technologists, and ethicists to ensure just and caring educational infrastructure.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 17/20</span>
+                    <span class="score-badge tech-score">Tech: 44/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">federated learning</span><span class="tech-tag">collaborative governance</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">AI-Assisted Epistemological Enhancement System</div>
+                <span class="entity-cluster">Governance</span>
+                <div class="entity-description">A technological and methodological approach using AI to improve human reasoning, forecasting, truth-discovery, and collaborative deliberation. This system would leverage AI capabilities to enhance human cognitive processes and decision-making.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 54/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">machine learning interpretability</span><span class="tech-tag">cognitive bias detection algorithms</span><span class="tech-tag">multi-model reasoning systems</span><span class="tech-tag">probabilistic reasoning frameworks</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">De-escalatory Self-Defense Mediation Tool</div>
+                <span class="entity-cluster">Learning & Adaptive</span>
+                <div class="entity-description">An AI-powered mediation platform designed to resolve conflicts through progressive strategies of win-win negotiation, restoration, and proportional consequence, aimed at reducing escalation in interpersonal, organizational, and international disputes.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: N/A/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Natural Language Processing</span><span class="tech-tag">Emotional Intelligence Algorithms</span><span class="tech-tag">Conflict Mapping AI</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Deep Fision Micro Nuclear Reactors</div>
+                <span class="entity-cluster">Energy & Clean</span>
+                <div class="entity-description">A small, factory-producible nuclear reactor designed to be buried a mile underground, providing localized, safe, and clean energy. Designed to be mass-manufactured like automobiles, with each reactor about the size of a Toyota.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 47/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Thorium nuclear reactor</span><span class="tech-tag">Underground sealed nuclear core</span><span class="tech-tag">Modular nuclear power generation</span><span class="tech-tag">Passive safety nuclear design</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Digital Mind Governance Systems</div>
+                <span class="entity-cluster">Governance & Global</span>
+                <div class="entity-description">A future institutional and ethical framework for managing, protecting, and regulating digital minds as potential moral patients with rights, voting capabilities, and social standing.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 53/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">machine learning classification</span><span class="tech-tag">ethical reasoning algorithms</span><span class="tech-tag">rights progression frameworks</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Distributed Zero-Knowledge Security Systems</div>
+                <span class="entity-cluster">Epistemic & Stack</span>
+                <div class="entity-description">A networked cybersecurity infrastructure using advanced cryptographic techniques to protect critical communications and industrial control networks, with distributed threat intelligence and quantum-resistant encryption.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 47/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Zero-knowledge proofs</span><span class="tech-tag">Distributed cryptographic networks</span><span class="tech-tag">Quantum-resistant encryption</span><span class="tech-tag">Mesh network architecture</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">End-User Programming Ecosystem</div>
+                <span class="entity-cluster">Global & Molecular</span>
+                <div class="entity-description">A democratized software creation environment where non-technical individuals can design, modify, and generate custom software tailored to their specific needs using AI-enhanced tools.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 54/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Large Language Model (LLM)</span><span class="tech-tag">Code Generation AI</span><span class="tech-tag">Natural Language Processing</span><span class="tech-tag">Visual Programming Interface</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Epistemic Infrastructure for Truth Verification</div>
+                <span class="entity-cluster">Epistemic & Stack</span>
+                <div class="entity-description">A systematic approach to determining truth and trust in an AI-mediated information ecosystem, involving precise citation, consensus mechanisms, and algorithmic truth assessment.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 53/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">distributed consensus mechanisms</span><span class="tech-tag">multi-modal AI verification</span><span class="tech-tag">semantic network analysis</span><span class="tech-tag">probabilistic trust scoring</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Fiduciary AI Assistance</div>
+                <span class="entity-cluster">Global & Molecular</span>
+                <div class="entity-description">A system of AI assistants designed to be fundamentally loyal to individual human users, helping them navigate complex problems and daily life while respecting their goals and interests.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: N/A/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">machine learning personalization</span><span class="tech-tag">ethical AI alignment</span><span class="tech-tag">individual preference modeling</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Prediction Markets as Decision Support Systems</div>
+                <span class="entity-cluster">Governance</span>
+                <div class="entity-description">An advanced institutional technology for transforming crowd intelligence into actionable decision-making tools for organizations, moving beyond current crypto-based betting platforms to create sophisticated advisory systems.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 44/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">machine learning calibration</span><span class="tech-tag">reputation scoring systems</span><span class="tech-tag">decision workflow integration</span><span class="tech-tag">probabilistic forecasting</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Translation Language Models (TLMs)</div>
+                <span class="entity-cluster">Interfaces & Brain</span>
+                <div class="entity-description">A multipurpose linguistic technology that enables rapid translation and understanding across languages, dialects, and technical domains. These models aim to democratize knowledge work by breaking down communication barriers.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 16/20</span>
+                    <span class="score-badge tech-score">Tech: 53/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Large Language Models</span><span class="tech-tag">Neural Machine Translation</span><span class="tech-tag">Multi-modal AI</span><span class="tech-tag">Deep Learning</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Digital Twin Ecosystem</div>
+                <span class="entity-cluster">Governance</span>
+                <div class="entity-description">A comprehensive system of real-time digital representations of communities and ecosystems that enable collective decision-making, simulation, and shared responsibility. These digital twins provide a new infrastructure for understanding and managing complex social and ecological systems.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 15/20</span>
+                    <span class="score-badge tech-score">Tech: 55/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">IoT sensor networks</span><span class="tech-tag">Real-time data integration</span><span class="tech-tag">Complex systems modeling</span><span class="tech-tag">Distributed simulation platforms</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">EgoLets (Personal AI Assistants)</div>
+                <span class="entity-cluster">Governance</span>
+                <div class="entity-description">Personalized AI systems that capture individual thinking patterns and decision-making styles, functioning as specialized "little versions of your ego" across different life domains.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 15/20</span>
+                    <span class="score-badge tech-score">Tech: 48/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">machine learning</span><span class="tech-tag">personalization algorithms</span><span class="tech-tag">cognitive modeling</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Global Deliberation Coordinator (GDaaS)</div>
+                <span class="entity-cluster">Governance</span>
+                <div class="entity-description">A pioneering institution that combines traditional deliberative democratic processes with AI-powered tools to enable rapid, cost-effective, and accessible global decision-making on critical challenges.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 15/20</span>
+                    <span class="score-badge tech-score">Tech: 52/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Natural Language Processing</span><span class="tech-tag">Machine Learning Sentiment Analysis</span><span class="tech-tag">Multilingual Translation AI</span><span class="tech-tag">Distributed Consensus Algorithms</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Atheoretical Science AI</div>
+                <span class="entity-cluster">Science & Research</span>
+                <div class="entity-description">A radically new scientific methodology where AI explores massive sensor network data without pre-existing theoretical frameworks, discovering useful patterns and mechanisms through pure exploration and pattern recognition.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 13/20</span>
+                    <span class="score-badge tech-score">Tech: N/A/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">unsupervised machine learning</span><span class="tech-tag">large-scale sensor data analysis</span><span class="tech-tag">multi-domain correlation detection</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Atomically Precise Manufacturing / Molecular Machine Systems</div>
+                <span class="entity-cluster">Interfaces & Brain</span>
+                <div class="entity-description">A technological system enabling precise manipulation of matter at the atomic scale, potentially revolutionizing manufacturing, environmental control, and product creation.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 13/20</span>
+                    <span class="score-badge tech-score">Tech: 57/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Scanning Probe Microscopy</span><span class="tech-tag">Nanoscale Fabrication</span><span class="tech-tag">Molecular Robotics</span><span class="tech-tag">Quantum Positioning Systems</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Chemputing (Chemical Computing)</div>
+                <span class="entity-cluster">Science & Research</span>
+                <div class="entity-description">A systematic approach to programming chemical reactions using standardized hardware and a specialized programming language, enabling reliable molecular transformations and potentially revolutionizing drug discovery, materials science, and computational chemistry.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 13/20</span>
+                    <span class="score-badge tech-score">Tech: 44/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Robotic synthesis platforms</span><span class="tech-tag">Machine learning reaction optimization</span><span class="tech-tag">Automated chemical reaction programming</span><span class="tech-tag">Molecular interaction predictive modeling</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Immune-Computer Interface</div>
+                <span class="entity-cluster">Interfaces & Brain</span>
+                <div class="entity-description">A transformative technological system that enables direct, high-bandwidth communication between human immune systems and computational technologies, allowing for dynamic biological monitoring, intervention, and enhancement.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 13/20</span>
+                    <span class="score-badge tech-score">Tech: 58/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">nanosensor technology</span><span class="tech-tag">molecular biosensing</span><span class="tech-tag">real-time immunological data processing</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Universal Constructor</div>
+                <span class="entity-cluster">Interfaces & Brain</span>
+                <div class="entity-description">A hypothetical machine capable of being programmed to construct virtually anything within the laws of physics, fundamentally transforming human labor and production by eliminating physical toil and enabling exponential self-replication.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 13/20</span>
+                    <span class="score-badge tech-score">Tech: N/A/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">nanotechnology</span><span class="tech-tag">molecular assembly</span><span class="tech-tag">programmable matter</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Human Superintelligence via Brain-Computer Interfaces (BCI)</div>
+                <span class="entity-cluster">Interfaces & Brain</span>
+                <div class="entity-description">A technological system that enhances human cognitive capabilities through direct neural interfaces, enabling humans to compete with and potentially transcend artificial intelligence. This would fundamentally expand human potential for understanding and exploring the universe.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 12/20</span>
+                    <span class="score-badge tech-score">Tech: 60/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">Neural interfaces</span><span class="tech-tag">Brain-computer interfaces</span><span class="tech-tag">Neural signal processing</span><span class="tech-tag">Machine learning decoding</span></div>
+            </div>
+
+            <div class="entity-card">
+                <div class="entity-name">Mind Uploading Infrastructure</div>
+                <span class="entity-cluster">Coordination & Ai-Enabled</span>
+                <div class="entity-description">Technological systems enabling gradual human consciousness transfer to digital platforms, with complex social and infrastructural considerations for maintaining uploaded minds.</div>
+                <div class="scores">
+                    <span class="score-badge dacc-score">d/acc: 8/20</span>
+                    <span class="score-badge tech-score">Tech: 56/70</span>
+                </div>
+                <div class="tech-tags"><span class="tech-tag">quantum neural mapping</span><span class="tech-tag">computational neuroscience</span><span class="tech-tag">neural interface technologies</span></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
