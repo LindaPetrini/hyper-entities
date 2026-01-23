@@ -39,6 +39,17 @@
         }
         .stats span { display: flex; align-items: center; gap: 5px; }
         .starred-count { color: #ffd700; }
+        .save-btn {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            font-size: 13px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .save-btn:hover { opacity: 0.85; }
         .card-container {
             position: relative;
             width: 100%;
@@ -223,6 +234,7 @@
     <div class="stats">
         <span id="counter">0 / 0</span>
         <span class="starred-count" id="starred-count">0 starred</span>
+        <button class="save-btn" onclick="exportJSON()" title="Save starred entities to JSON">💾 Save</button>
     </div>
 
     <div class="card-container" id="card-container">
@@ -236,7 +248,7 @@
     </div>
 
     <div class="keyboard-hints">
-        &#8592; Skip &nbsp;&nbsp;|&nbsp;&nbsp; &#8594; Star &nbsp;&nbsp;|&nbsp;&nbsp; B = Back
+        &#8592; Skip &nbsp;&nbsp;|&nbsp;&nbsp; &#8594; Star &nbsp;&nbsp;|&nbsp;&nbsp; B = Back &nbsp;&nbsp;|&nbsp;&nbsp; S = Save
     </div>
 
     <script>
@@ -418,6 +430,7 @@
             if (e.key === 'ArrowLeft') skip();
             else if (e.key === 'ArrowRight') star();
             else if (e.key.toLowerCase() === 'b') goBack();
+            else if (e.key.toLowerCase() === 's') exportJSON();
         });
     </script>
 </body>
