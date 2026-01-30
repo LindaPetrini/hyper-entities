@@ -16,7 +16,7 @@
         .header {
             text-align: center;
             padding: 40px 20px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
         .header h1 {
             font-size: 2.5rem;
@@ -58,67 +58,95 @@
             letter-spacing: 1px;
         }
         .container {
-            max-width: 1400px;
+            max-width: 900px;
             margin: 0 auto;
         }
-        .entities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-        }
-        .entity-card {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,215,0,0.3);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-        .entity-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255,215,0,0.6);
-            box-shadow: 0 10px 40px rgba(255,215,0,0.1);
-        }
-        .entity-name {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #f8fafc;
-        }
-        .entity-cluster {
+        .back-link {
             display: inline-block;
-            font-size: 0.75rem;
-            color: #ffd700;
-            background: rgba(255,215,0,0.1);
-            padding: 4px 10px;
-            border-radius: 12px;
-            margin-bottom: 12px;
-        }
-        .entity-description {
+            margin-bottom: 20px;
+            color: #60a5fa;
+            text-decoration: none;
             font-size: 0.9rem;
-            color: #cbd5e1;
-            line-height: 1.6;
-            margin-bottom: 16px;
         }
-        .scores {
+        .back-link:hover { text-decoration: underline; }
+
+        /* Topic sections */
+        .topic-section {
+            margin-bottom: 36px;
+        }
+        .topic-heading {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffd700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            margin-bottom: 4px;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+        }
+        .topic-count {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #64748b;
+            text-transform: none;
+            letter-spacing: 0;
+            margin-left: 8px;
+        }
+
+        /* Entity list items */
+        .entity-item {
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            cursor: pointer;
+            transition: background 0.2s;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 8px;
+        }
+        .entity-item:hover {
+            background: rgba(255,255,255,0.04);
+        }
+        .entity-item:last-child {
+            border-bottom: none;
+        }
+        .entity-top-row {
             display: flex;
-            gap: 15px;
-            align-items: center;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 8px;
             flex-wrap: wrap;
         }
-        .score-badge {
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-size: 0.8rem;
+        .entity-name {
+            font-size: 1.1rem;
             font-weight: 600;
+            color: #f8fafc;
         }
-        .dacc-score {
-            background: linear-gradient(135deg, #ffd700, #ffaa00);
-            color: #1a1a2e;
+        .entity-scores-inline {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-left: auto;
+            flex-shrink: 0;
         }
-        .tech-score {
-            background: linear-gradient(135deg, #7b2cbf, #c77dff);
-            color: white;
+        .score-pill {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+        .pill-dacc {
+            background: rgba(255,215,0,0.15);
+            color: #ffd700;
+        }
+        .pill-tech {
+            background: rgba(123,44,191,0.2);
+            color: #c77dff;
+        }
+        .entity-description {
+            font-size: 0.88rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 8px;
         }
         .dacc-breakdown {
             display: flex;
@@ -129,12 +157,11 @@
             display: flex;
             align-items: center;
             gap: 3px;
-            font-size: 0.65rem;
-            color: #94a3b8;
-            background: rgba(255,255,255,0.06);
-            padding: 3px 7px;
-            border-radius: 8px;
-            letter-spacing: 0.3px;
+            font-size: 0.62rem;
+            color: #64748b;
+            background: rgba(255,255,255,0.04);
+            padding: 2px 6px;
+            border-radius: 6px;
         }
         .dacc-mini-label {
             text-transform: uppercase;
@@ -143,29 +170,8 @@
         }
         .dacc-mini-val {
             font-weight: 700;
-            color: #e2e8f0;
-        }
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 12px;
-        }
-        .tech-tag {
-            background: rgba(255,255,255,0.1);
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 0.75rem;
             color: #94a3b8;
         }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #60a5fa;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        .back-link:hover { text-decoration: underline; }
 
         /* Modal */
         .modal-overlay {
@@ -205,7 +211,15 @@
             margin-bottom: 6px;
             padding-right: 40px;
         }
-        .modal .entity-cluster { margin-bottom: 16px; }
+        .modal .entity-cluster {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: #ffd700;
+            background: rgba(255,215,0,0.1);
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
         .modal-section {
             margin-top: 20px;
         }
@@ -283,6 +297,19 @@
             margin-top: 8px;
             font-style: italic;
         }
+        .modal-tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .modal-tech-tag {
+            background: rgba(255,255,255,0.08);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
         .source-file {
             font-size: 0.75rem;
             color: #64748b;
@@ -302,7 +329,7 @@
             <div class="stats" id="stats"></div>
         </div>
 
-        <div class="entities-grid" id="grid"></div>
+        <div id="list"></div>
     </div>
 
     <div class="modal-overlay" id="modal-overlay">
@@ -316,7 +343,7 @@
         const resp = await fetch('consensus_entities.json');
         DATA = await resp.json();
         renderHeader();
-        renderGrid();
+        renderList();
     }
 
     function renderHeader() {
@@ -331,29 +358,50 @@
         ].map(s => `<div class="stat"><div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div></div>`).join('');
     }
 
-    function renderGrid() {
-        const grid = document.getElementById('grid');
-        grid.innerHTML = DATA.entities.map((e, i) => {
-            const dacc = e.stage3_dacc || {};
-            const techTotal = e.stage2_total != null ? e.stage2_total : 'N/A';
-            const tags = (e.concreteness?.core_technologies || []).map(t =>
-                `<span class="tech-tag">${t}</span>`).join('');
+    function renderList() {
+        // Group by cluster
+        const groups = {};
+        DATA.entities.forEach((e, i) => {
+            const cluster = e.cluster_name || 'Other';
+            if (!groups[cluster]) groups[cluster] = [];
+            groups[cluster].push({ ...e, _idx: i });
+        });
+
+        // Sort clusters alphabetically, entities within by d/acc desc
+        const sortedClusters = Object.keys(groups).sort();
+
+        const listEl = document.getElementById('list');
+        listEl.innerHTML = sortedClusters.map(cluster => {
+            const entities = groups[cluster].sort((a, b) =>
+                (b.stage3_dacc?.total || 0) - (a.stage3_dacc?.total || 0));
+            const count = entities.length;
+
+            const items = entities.map(e => {
+                const dacc = e.stage3_dacc || {};
+                const techTotal = e.stage2_total != null ? e.stage2_total : 'N/A';
+                return `
+                <div class="entity-item" onclick="openModal(${e._idx})">
+                    <div class="entity-top-row">
+                        <span class="entity-name">${e.name}</span>
+                        <span class="entity-scores-inline">
+                            <span class="score-pill pill-dacc">d/acc ${dacc.total ?? '?'}/20</span>
+                            <span class="score-pill pill-tech">Tech ${techTotal}/70</span>
+                        </span>
+                    </div>
+                    <div class="entity-description">${e.description}</div>
+                    <div class="dacc-breakdown">
+                        <span class="dacc-mini"><span class="dacc-mini-label">Dem</span> <span class="dacc-mini-val">${dacc.democratic ?? '?'}</span></span>
+                        <span class="dacc-mini"><span class="dacc-mini-label">Dec</span> <span class="dacc-mini-val">${dacc.decentralized ?? '?'}</span></span>
+                        <span class="dacc-mini"><span class="dacc-mini-label">Def</span> <span class="dacc-mini-val">${dacc.defensive ?? '?'}</span></span>
+                        <span class="dacc-mini"><span class="dacc-mini-label">Dif</span> <span class="dacc-mini-val">${dacc.differential ?? '?'}</span></span>
+                    </div>
+                </div>`;
+            }).join('');
+
             return `
-            <div class="entity-card" onclick="openModal(${i})">
-                <div class="entity-name">${e.name}</div>
-                <span class="entity-cluster">${e.cluster_name || ''}</span>
-                <div class="entity-description">${e.description}</div>
-                <div class="scores">
-                    <span class="score-badge dacc-score">d/acc: ${dacc.total ?? '?'}/20</span>
-                    <span class="score-badge tech-score">Tech: ${techTotal}/70</span>
-                </div>
-                <div class="dacc-breakdown">
-                    <span class="dacc-mini"><span class="dacc-mini-label">Dem</span> <span class="dacc-mini-val">${dacc.democratic ?? '?'}</span></span>
-                    <span class="dacc-mini"><span class="dacc-mini-label">Dec</span> <span class="dacc-mini-val">${dacc.decentralized ?? '?'}</span></span>
-                    <span class="dacc-mini"><span class="dacc-mini-label">Def</span> <span class="dacc-mini-val">${dacc.defensive ?? '?'}</span></span>
-                    <span class="dacc-mini"><span class="dacc-mini-label">Dif</span> <span class="dacc-mini-val">${dacc.differential ?? '?'}</span></span>
-                </div>
-                ${tags ? `<div class="tech-tags">${tags}</div>` : ''}
+            <div class="topic-section">
+                <div class="topic-heading">${cluster}<span class="topic-count">${count} entit${count === 1 ? 'y' : 'ies'}</span></div>
+                ${items}
             </div>`;
         }).join('');
     }
@@ -371,6 +419,9 @@
         const s1Items = Object.entries(e.scoring || {}).map(([k, v]) =>
             `<div class="modal-score-item"><span class="label">${k}</span><span class="value">${v}/3</span></div>`
         ).join('');
+
+        const tags = (e.concreteness?.core_technologies || []).map(t =>
+            `<span class="modal-tech-tag">${t}</span>`).join('');
 
         const source = (e.source_file || '').replace('sources/', '');
 
@@ -400,6 +451,8 @@
                 </div>
                 ${dacc.reasoning ? `<p class="modal-reasoning">${dacc.reasoning}</p>` : ''}
             </div>
+
+            ${tags ? `<div class="modal-section"><h3>Core Technologies</h3><div class="modal-tech-tags">${tags}</div></div>` : ''}
 
             ${s2Items ? `
             <div class="modal-section">
