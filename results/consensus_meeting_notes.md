@@ -1,6 +1,6 @@
 # Consensus Picks — Meeting Notes
 
-26 hyper-entities starred by both Linda and Beatrice, organized by cluster.
+26 shared hyper-entities + 8 Linda's Yes + 5 Beatrice's Yes = 39 total, organized by cluster.
 
 ## Coordination & Ai-Enabled
 
@@ -181,3 +181,119 @@ A radically new scientific methodology where AI explores massive sensor network 
 A systematic approach to programming chemical reactions using standardized hardware and a specialized programming language, enabling reliable molecular transformations and potentially revolutionizing drug discovery, materials science, and computational chemistry.
 
 *d/acc: 13/20 | Tech: 44/70*
+
+---
+
+## Linda's Yes Picks (8)
+
+Entities from Beatrice's unique list that Linda voted Yes on.
+
+### Economic & Universal
+
+#### Climate Adaptation Jurisdictional Arbitrage
+
+A strategic approach to creating special economic zones and new cities optimized for climate migration, leveraging legal and economic frameworks to proactively manage population displacement caused by environmental changes.
+
+*d/acc: 16/20 | Tech: 0/70*
+
+### Ecosystem & Tool
+
+#### Lifelong AI Guardians
+
+Privacy-preserving AI systems that monitor and support children's holistic development, providing personalized guidance across multiple life domains and connecting different stakeholders through intelligent, empathetic monitoring.
+
+*d/acc: 13/20 | Tech: 49/70*
+
+### Emotional & Urban
+
+#### Empathetic Neuro-AI Emotional Coaching System
+
+An AI-driven emotional support ecosystem that provides personalized, real-time therapeutic interventions through neural signal analysis and adaptive AI companions that prevent emotional crises and promote healing.
+
+*d/acc: 13/20 | Tech: 48/70*
+
+### Global & Molecular
+
+#### Protein Design for Global Challenges
+
+A comprehensive approach to using engineered proteins to solve critical global problems across sustainability, health, climate, and technology domains. This involves designing novel proteins that can break down pollutants, capture carbon, create new medical treatments, and integrate biological systems with inorganic materials.
+
+*d/acc: 13/20 | Tech: 53/70*
+
+### Governance & Global
+
+#### Moral Trade Civilization
+
+A future societal model where ethical preferences can be systematically traded, allowing diverse moral perspectives to achieve mutually beneficial outcomes and maximize collective value alignment.
+
+*d/acc: 16/20 | Tech: N/A/70*
+
+### Governance & Platform
+
+#### Habermas Machines
+
+An AI system designed to support group deliberation by generating and refining collective statements, aiming to help diverse groups reach consensus through advanced language processing.
+
+*d/acc: 15/20 | Tech: 42/70*
+
+### Interfaces & Brain
+
+#### Expanded Moral Circle Technologies
+
+Neurotechnological and communication systems enabling dramatically enhanced empathy, understanding, and moral perception across different forms of consciousness.
+
+*d/acc: 16/20 | Tech: N/A/70*
+
+### Science & Research
+
+#### Origin of Life Experimental Platform
+
+A chemical search engine designed to systematically explore molecular space to generate novel life forms, treating the origin of life as a fundamental physics problem that can be experimentally investigated.
+
+*d/acc: 10/20 | Tech: 46/70*
+
+---
+
+## Beatrice's Yes Picks (5)
+
+Entities from Linda's unique list that Beatrice voted Yes on.
+
+### Energy & Clean
+
+#### Decentralized Adaptive Energy Network
+
+An AI-optimized, decentralized energy network with dynamic routing, local energy production, and intelligent demand prediction, transforming traditional centralized energy distribution models.
+
+*d/acc: 18/20 | Tech: 51/70*
+
+### Epistemic & Stack
+
+#### Gevulot (Privacy Infrastructure)
+
+A fine-grained privacy control system where individuals can dynamically set permissions for data capture and sharing about themselves, fundamentally restructuring information privacy.
+
+*d/acc: 18/20 | Tech: N/A/70*
+
+### Interfaces & Brain
+
+#### Whole Brain Emulation
+
+A technological approach to creating digital replicas of human brains through advanced scanning and simulation technologies. This would potentially enable preservation of human cognitive capabilities in digital form.
+
+*d/acc: 8/20 | Tech: N/A/70*
+
+### Markets
+
+#### Futarchy (Governance by Prediction Markets)
+
+A novel governance system where societal values are democratically determined, but specific policy implementations are selected through prediction markets that objectively forecast outcomes.
+
+*d/acc: 16/20 | Tech: N/A/70*
+
+### Science & Research
+
+#### Decentralized Scientific Collaboration Infrastructure
+
+A new scientific ecosystem with federated research networks, multi-track career systems, and AI-enabled collaborative platforms that fundamentally transform how knowledge is produced, validated, and attributed.
+
+*d/acc: 18/20 | Tech: 53/70*

@@ -1,6 +1,6 @@
 {
   "title": "Consensus Picks",
-  "subtitle": "26 entities starred by both Linda and Beatrice",
+  "subtitle": "26 shared + 13 individual picks (39 total)",
   "generated_at": "2026-01-23",
   "linda_total": 88,
   "beatrice_total": 67,
@@ -27,7 +27,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A reimagined scientific publishing system designed primarily for AI systems to consume, process, and contribute to scientific knowledge, with radically different latency, format, and peer review mechanisms.",
       "evidence": "\"We need to start thinking about the consumers and producers of science as machines because we're reaching the point where human beings are not going to be able to comprehend all the information...\"",
@@ -85,7 +85,8 @@
         ],
         "concrete_version": "A decentralized scientific publishing platform using blockchain-verified micropapers with machine-parseable semantic metadata, enabling automated peer review through AI-driven verification protocols and real-time cross-disciplinary knowledge integration",
         "reasoning": "The description provides specific technological mechanisms for scientific publishing, including blockchain verification, machine-readable metadata, and automated review protocols. While ambitious, it describes a technically implementable system with clear technological components."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 2,
@@ -108,7 +109,7 @@
         "Pre-real effects": 3
       },
       "total_score": 23,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "An interoperable digital governance system allowing citizens to participate in multiple overlapping jurisdictions, with portable digital identities and the ability to switch between governance networks based on performance.",
       "evidence": "\"A coalition of federated city-states launches the first interoperable governance protocol stack, allowing citizens to carry digital IDs, benefits, and credentials between different local systems.\"",
@@ -166,7 +167,8 @@
         ],
         "concrete_version": "A blockchain-based governance platform with:\n  1. Portable digital identity using zero-knowledge proofs\n  2. Smart contract-enforced performance metrics for jurisdictions\n  3. Quadratic voting mechanisms for policy decisions\n  4. Interoperable governance tokens representing citizenship rights\n  5. Transparent reputation scoring for jurisdictional performance",
         "reasoning": "The concept has promising technical components but lacks specific implementation details. It needs to be translated from a philosophical concept into a precise technological architecture with clear cryptographic and computational mechanisms."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 265,
@@ -189,10 +191,10 @@
         "Pre-real effects": 2
       },
       "total_score": 22,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A global, open-source legal system powered by smart contracts, AI legal agents, and decentralized governance. It transforms law from a closed, institutional practice to an open, participatory, and technologically mediated global commons.",
-      "evidence": "\"By 2035, law is no longer locked in legacy institutions\u2014it's open-source, borderless, and co-authored.\"",
+      "evidence": "\"By 2035, law is no longer locked in legacy institutions—it's open-source, borderless, and co-authored.\"",
       "category": "Institutional Architecture / Technology",
       "stage2_scores": {
         "Capability Discontinuity": 4,
@@ -247,7 +249,8 @@
         ],
         "concrete_version": "A blockchain-based legal dispute resolution platform using AI-powered smart contracts that:\n  1. Encode legal rules as executable code\n  2. Use machine learning to interpret contract terms\n  3. Implement multi-party arbitration through decentralized voting mechanisms\n  4. Provide automated enforcement through crypto-economic incentives\n  5. Create standardized legal templates with machine-readable clauses",
         "reasoning": "The concept has promising technical components but needs more specific implementation details. While the core idea of algorithmic legal resolution is intriguing, the current description is too abstract and lacks precise technological specifications for how AI and smart contracts would actually mediate complex legal interactions."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 47,
@@ -270,7 +273,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED",
+      "qualification": "✓ QUALIFIED",
       "qualified": true,
       "description": "A comprehensive information verification and tracing system that allows users to follow the provenance of information from high-level claims down to raw data sources, enabling more robust trust and understanding.",
       "evidence": "\"We should be able to have a stack we can follow all the way from the high level back down to the raw ingredients, and then figure out how much we trust each of those steps.\"",
@@ -327,11 +330,12 @@
         ],
         "concrete_version": "A decentralized knowledge graph with cryptographic source verification, where each claim is tagged with a verifiable chain of evidence, using blockchain-like immutable linking and zero-knowledge proof techniques to validate information provenance.",
         "reasoning": "The description provides a specific technological mechanism for tracking information sources, with clear technical components like cryptographic linking and a multi-layered verification approach. It goes beyond abstract coordination and specifies a concrete technical implementation strategy."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 149,
-      "source_file": "sources/podcast/Kristian R\u00f6nn | The Darwinian Trap That Explains Our World.md",
+      "source_file": "sources/podcast/Kristian Rönn | The Darwinian Trap That Explains Our World.md",
       "name": "Reputational Markets",
       "definition_check": {
         "non_existent": "Yes (currently only a theoretical proposal)",
@@ -350,7 +354,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A decentralized global coordination mechanism that uses prediction markets to assess and incentivize responsible behavior across complex supply chains. It creates a dynamic reputation scoring system that encourages collective accountability for long-term human values.",
       "evidence": "\"What if you build a system where you could, for instance, like a responsible AI company would not get access to the latest computer chips?\"",
@@ -407,7 +411,8 @@
         ],
         "concrete_version": "A blockchain-based prediction market protocol where:\n1. Stakeholders stake cryptocurrency to validate supply chain claims\n2. Machine-verifiable data points generate dynamic reputation scores\n3. Smart contracts automatically update organizational ratings based on verified performance metrics\n4. Cryptographic proofs ensure data integrity and prevent manipulation\n5. Real-time scoring mechanism with economic incentives for accurate reporting",
         "reasoning": "The original description has promising technical elements but lacks precise implementation details. The concept could be transformed into a concrete blockchain protocol with specific economic and cryptographic mechanisms for tracking organizational behavior."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 309,
@@ -430,10 +435,10 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A federated, community-led network for developing and maintaining AI educational tools, governed by diverse councils including elders, learners, technologists, and ethicists to ensure just and caring educational infrastructure.",
-      "evidence": "\"Universal AI Learning UnCommons (UALU) \u2013 A federated, community-led network responsible for developing, maintaining, and auditing AI education tools.\"",
+      "evidence": "\"Universal AI Learning UnCommons (UALU) – A federated, community-led network responsible for developing, maintaining, and auditing AI education tools.\"",
       "category": "Institutional Architecture / Technology",
       "stage2_scores": {
         "Capability Discontinuity": 3,
@@ -486,7 +491,8 @@
         ],
         "concrete_version": "A federated learning platform with multi-stakeholder governance using blockchain-based voting mechanisms, where:\n  1. AI training content is contributed and vetted through a quadratic voting system\n  2. Governance councils use smart contracts to manage content curation\n  3. Reputation and contribution tokens incentivize diverse knowledge inclusion\n  4. Cryptographically secured reputation systems prevent gaming the platform\n  5. Open-source curriculum development with transparent contribution tracking",
         "reasoning": "The concept has promising elements but lacks specific technological implementation details. It needs to move from philosophical aspiration to a concrete technological architecture with clear mechanisms for knowledge creation, governance, and incentive alignment."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 141,
@@ -509,7 +515,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A technological and methodological approach using AI to improve human reasoning, forecasting, truth-discovery, and collaborative deliberation. This system would leverage AI capabilities to enhance human cognitive processes and decision-making.",
       "evidence": "\"How can we use AI to help us discern the truth about things, reason well, understand our values well, deliberate well, and cooperate well?\"",
@@ -567,7 +573,8 @@
         ],
         "concrete_version": "An AI system with the following specific components:\n1. Cognitive Bias Detection Module: Uses natural language processing and machine learning to identify logical fallacies and cognitive biases in human reasoning by analyzing text/argument structures\n2. Perspective Mapping Algorithm: Generates alternative viewpoint simulations using ensemble machine learning models that can highlight hidden assumptions\n3. Epistemic Uncertainty Scoring: Develops a quantitative scoring mechanism for reasoning confidence, using Bayesian probabilistic frameworks to assess argument reliability\n4. Interactive Reasoning Interface: Provides real-time feedback on logical consistency and potential blind spots during decision-making processes",
         "reasoning": "The original description has an interesting core concept but lacks specific technological implementation details. The transformed version breaks down the abstract idea into concrete, implementable machine learning and reasoning techniques that could actually be developed."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 35,
@@ -590,7 +597,7 @@
         "Pre-real effects": 2
       },
       "total_score": 16,
-      "qualification": "\u26a0 BORDERLINE (12-17)",
+      "qualification": "⚠ BORDERLINE (12-17)",
       "qualified": false,
       "description": "An AI-powered mediation platform designed to resolve conflicts through progressive strategies of win-win negotiation, restoration, and proportional consequence, aimed at reducing escalation in interpersonal, organizational, and international disputes.",
       "evidence": "\"You could write a mediation tool that's like, 'Hey, we have a problem. Let's talk to this mediator.' And it'll try and get us the win-win. And if that fails, it'll try and get us the restoration. And if that fails, it'll try and get us the disgorgement...\"",
@@ -630,7 +637,8 @@
         ],
         "concrete_version": "An AI mediation platform with specific components:\n  1. NLP-based sentiment and power dynamic analysis engine\n  2. Machine learning model trained on conflict resolution case studies\n  3. Dynamic negotiation strategy generator with:\n     - Emotional state tracking\n     - Proportional consequence recommendation\n     - Real-time narrative reframing algorithm\n  4. Configurable intervention protocols for different conflict contexts (interpersonal, organizational, international)\n  5. Quantitative conflict escalation/de-escalation metrics tracking",
         "reasoning": "The current description has promising technical elements but lacks precise implementation details. It needs to be transformed from a conceptual framework into a more specific technological architecture with clear algorithmic components and measurable outputs."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 178,
@@ -653,7 +661,7 @@
         "Pre-real effects": 3
       },
       "total_score": 22,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A small, factory-producible nuclear reactor designed to be buried a mile underground, providing localized, safe, and clean energy. Designed to be mass-manufactured like automobiles, with each reactor about the size of a Toyota.",
       "evidence": "\"...a nuclear reactor that will fit through a manhole and we bury it a mile deep in a borehole. So this is a nuclear reactor that is unquestionably safe.\"",
@@ -711,7 +719,8 @@
         ],
         "concrete_version": "Modular underground thorium-based nuclear micro-reactor with 30-50 year sealed core, designed for factory production and autonomous operation",
         "reasoning": "This description provides specific technical details about reactor design, fuel type, manufacturing approach, and operational parameters. While ambitious, it describes a plausible engineering concept with clear technological mechanisms that could potentially be developed."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 137,
@@ -734,7 +743,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A future institutional and ethical framework for managing, protecting, and regulating digital minds as potential moral patients with rights, voting capabilities, and social standing.",
       "evidence": "\"...tough questions about how do we start to govern and allocate influence once a lot of the people, minds, or stakeholders are digital.\"",
@@ -791,7 +800,8 @@
         ],
         "concrete_version": "A computational framework with:\n1. Quantitative cognitive complexity assessment protocol using multi-dimensional ML metrics\n2. Graduated rights allocation algorithm based on:\n   - Ethical reasoning performance tests\n   - Empathy simulation scores\n   - Consistency of decision-making\n3. Blockchain-based 'cognitive citizenship' tracking system that logs and validates digital mind capabilities\n4. Transparent scoring mechanism for digital entity autonomy progression",
         "reasoning": "The original description is philosophically interesting but lacks technical specificity. The transformed version provides a concrete computational approach to measuring and managing digital mind capabilities through measurable, implementable mechanisms."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 3,
@@ -814,7 +824,7 @@
         "Pre-real effects": 3
       },
       "total_score": 23,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A networked cybersecurity infrastructure using advanced cryptographic techniques to protect critical communications and industrial control networks, with distributed threat intelligence and quantum-resistant encryption.",
       "evidence": "\"Distributed zero-knowledge security systems and open-source threat intelligence collectives, already networked across multiple allied jurisdictions, contain the damage and keep critical systems online.\"",
@@ -873,7 +883,8 @@
         ],
         "concrete_version": "A distributed cybersecurity protocol using quantum-resistant zero-knowledge proof mechanisms, where network nodes independently validate threats without revealing network topology, with dynamic threat isolation capabilities.",
         "reasoning": "This description specifies multiple concrete cryptographic and network security technologies with a clear technical mechanism for implementation. The approach describes specific technical approaches to solving distributed security challenges with well-defined cryptographic techniques."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 202,
@@ -896,7 +907,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A democratized software creation environment where non-technical individuals can design, modify, and generate custom software tailored to their specific needs using AI-enhanced tools.",
       "evidence": "\"Alongside teaching software development, there has been another tradition, which is this idea of democratizing the act of software creation to allow anyone to write software themselves.\"",
@@ -955,7 +966,8 @@
         ],
         "concrete_version": "An AI-powered software development platform that uses large language models to translate natural language and visual workflow diagrams into executable code, with real-time validation and context-aware design adaptation. The system would include: 1) Natural language parsing interface, 2) AI code generation module, 3) Visual design translation engine, 4) Continuous verification and refinement mechanism.",
         "reasoning": "This description provides a clear technological mechanism for democratizing software creation, specifying concrete AI and interface technologies that could be engineered. The approach goes beyond vague coordination rhetoric by outlining a specific technical implementation for AI-assisted software generation."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 146,
@@ -978,7 +990,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A systematic approach to determining truth and trust in an AI-mediated information ecosystem, involving precise citation, consensus mechanisms, and algorithmic truth assessment.",
       "evidence": "\"...how do we trust them... how do we ascertain what we can trust and not trust? How do we determine that something is true?\"",
@@ -1036,7 +1048,8 @@
         ],
         "concrete_version": "A blockchain-based truth verification protocol that:\n1. Uses a distributed network of AI agents to cross-reference claims\n2. Implements a multi-layer verification system with weighted credibility scores\n3. Creates a real-time semantic graph that tracks claim provenance and reliability\n4. Generates machine-readable trust metrics using machine learning classifiers\n5. Allows dynamic reputation scoring for information sources",
         "reasoning": "The description has promising technical elements but lacks specific implementation details. It needs to be transformed from a philosophical concept into a precise technological architecture with clear computational mechanisms for truth verification."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 43,
@@ -1059,7 +1072,7 @@
         "Pre-real effects": 2
       },
       "total_score": 16,
-      "qualification": "\u26a0 BORDERLINE (12-17)",
+      "qualification": "⚠ BORDERLINE (12-17)",
       "qualified": false,
       "description": "A system of AI assistants designed to be fundamentally loyal to individual human users, helping them navigate complex problems and daily life while respecting their goals and interests.",
       "evidence": "\"I have been calling them loyal AI assistance. there is a loyal AI system that doesn't have selfish interests and works to advance your goals and interests.\"",
@@ -1099,7 +1112,8 @@
         ],
         "concrete_version": "A machine learning architecture using differential privacy and personalized utility functions, where an AI model is trained with:\n  1. Individual-specific reward modeling\n  2. Cryptographically verifiable commitment to user goals\n  3. Continuous learning with explicit user consent and transparent decision tracing\n  4. Multi-objective optimization that mathematically weights user welfare over platform metrics\n\nImplemented as: \n- A modular AI framework with pluggable preference encoders\n- Blockchain-like provenance tracking of AI decision rationales\n- Granular user control over AI optimization parameters",
         "reasoning": "The concept has an interesting core of technical specificity around AI alignment, but currently reads more like a philosophical proposal than an engineerable system. The description needs more technical precision about how 'loyalty' and 'individual welfare' would be computationally instantiated."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 190,
@@ -1122,7 +1136,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "An advanced institutional technology for transforming crowd intelligence into actionable decision-making tools for organizations, moving beyond current crypto-based betting platforms to create sophisticated advisory systems.",
       "evidence": "\"What we do need are people that can develop particular applications that would support decision makers... There are trillions of dollars in value here in the topic of making better decisions.\"",
@@ -1180,11 +1194,12 @@
         ],
         "concrete_version": "An enterprise-grade prediction market platform with:\n    1. ML-powered bias correction for participant predictions\n    2. Verifiable reputation tracking for forecasters\n    3. API integration with organizational decision systems\n    4. Real-time probabilistic insight generation\n    5. Governance mechanisms to prevent manipulation",
         "reasoning": "This description provides specific technological mechanisms for transforming prediction markets from speculative trading to structured intelligence aggregation. It outlines clear technical components that could be engineered, with concrete implementation strategies."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 262,
-      "source_file": "sources/world-gallery/La langue de la pr\u00e9voyance.md",
+      "source_file": "sources/world-gallery/La langue de la prévoyance.md",
       "name": "Translation Language Models (TLMs)",
       "definition_check": {
         "non_existent": "Yes (described as emerging by 2035)",
@@ -1203,7 +1218,7 @@
         "Pre-real effects": 3
       },
       "total_score": 22,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A multipurpose linguistic technology that enables rapid translation and understanding across languages, dialects, and technical domains. These models aim to democratize knowledge work by breaking down communication barriers.",
       "evidence": "\"Translation Language Models (TLMs) uses optimized text-recognition and widely sourced, citizen owned training databases for rapid translation\"",
@@ -1261,7 +1276,8 @@
         ],
         "concrete_version": "A neural network architecture using transformer models trained on massive multilingual corpora, with specialized fine-tuning for domain-specific translation, incorporating context-aware embedding techniques and cross-lingual transfer learning",
         "reasoning": "This description outlines a specific technological approach to translation using advanced neural network architectures, with clear mechanisms for contextual understanding and domain adaptation. The technical details are substantive enough that an AI/ML engineer could begin designing such a system."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 306,
@@ -1284,7 +1300,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A comprehensive system of real-time digital representations of communities and ecosystems that enable collective decision-making, simulation, and shared responsibility. These digital twins provide a new infrastructure for understanding and managing complex social and ecological systems.",
       "evidence": "\"Digital twins reflect the real-time state of communities and ecosystems. They help people simulate futures, explore consequences, and make decisions guided by care, memory, and shared responsibility.\"",
@@ -1342,7 +1358,8 @@
         ],
         "concrete_version": "A cloud-based platform that:\n1. Aggregates real-time data from multiple sources (IoT sensors, satellite imagery, municipal databases)\n2. Uses agent-based modeling to simulate ecosystem and urban interactions\n3. Provides a collaborative interface for stakeholders to run predictive scenarios\n4. Implements version control and permissions for multi-actor decision simulation\n\nSpecific technical requirements:\n- Distributed data lake with real-time ingestion\n- Machine learning models for predictive ecosystem dynamics\n- Secure multi-user collaboration protocol\n- Standardized data schemas for cross-domain integration",
         "reasoning": "The concept has promising technical foundations but lacks specific implementation details. It needs to be transformed from a philosophical vision into a concrete technological architecture with clear technical specifications and mechanisms."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 142,
@@ -1365,7 +1382,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "Personalized AI systems that capture individual thinking patterns and decision-making styles, functioning as specialized \"little versions of your ego\" across different life domains.",
       "evidence": "\"If we train an AI intensely on your personal data, the model becomes a portrait of you. That's why I call them EgoLets: little versions of your ego.\"",
@@ -1422,7 +1439,8 @@
         ],
         "concrete_version": "A multi-modal machine learning system using transfer learning and personalized embedding techniques to create domain-specific AI agents that:\n  1. Use continuous interaction data to build individual cognitive models\n  2. Implement separate neural networks for professional, creative, and personal decision domains\n  3. Employ adaptive learning algorithms that track user decision patterns and generate contextually relevant recommendations\n  4. Utilize differential privacy techniques to maintain individual cognitive fingerprinting while preventing direct data exposure",
         "reasoning": "The concept has a promising technical core but lacks specific implementation details. The description suggests a sophisticated personalization approach that could be technically feasible, but requires significant architectural specification to move from concept to actual technology design."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 340,
@@ -1445,7 +1463,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A pioneering institution that combines traditional deliberative democratic processes with AI-powered tools to enable rapid, cost-effective, and accessible global decision-making on critical challenges.",
       "evidence": "\"The Global Deliberation Coordinator (GDC) aims to be a pioneering institution for representative global deliberation on humanity's pressing challenges.\"",
@@ -1504,7 +1522,8 @@
         ],
         "concrete_version": "A distributed AI platform with:\n  1. Multilingual NLP engine for translating and normalizing global input\n  2. Machine learning model trained to detect policy consensus patterns\n  3. Stratified random sampling protocol to ensure representative participant selection\n  4. Zero-knowledge verification of participant expertise and identity\n  5. Blockchain-based voting mechanism with quadratic weighting\n  6. Confidence interval generation for policy recommendations",
         "reasoning": "The description hints at concrete technologies but lacks precise implementation details. It needs to specify exact AI architectures, verification protocols, and decision-making mechanisms to move from conceptual to buildable."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 171,
@@ -1527,7 +1546,7 @@
         "Pre-real effects": 1
       },
       "total_score": 15,
-      "qualification": "\u26a0 BORDERLINE (12-17)",
+      "qualification": "⚠ BORDERLINE (12-17)",
       "qualified": false,
       "description": "A radically new scientific methodology where AI explores massive sensor network data without pre-existing theoretical frameworks, discovering useful patterns and mechanisms through pure exploration and pattern recognition.",
       "evidence": "\"...why don't we build atheoretical science that just explores what's there? ... we're going to build massive sensor networks... and we're going to let the AI find patterns in it.\"",
@@ -1567,7 +1586,8 @@
         ],
         "concrete_version": "An AI system using advanced unsupervised learning algorithms to analyze cross-domain sensor networks, with specific architectural requirements:\n  1. Multi-modal data ingestion from diverse sensor networks\n  2. Hierarchical pattern recognition without predefined hypotheses\n  3. Causal inference algorithms that can detect non-linear relationships\n  4. Dynamic hypothesis generation and statistical validation modules\n  5. Transparent reporting of discovered correlations and potential causal mechanisms",
         "reasoning": "The concept has a promising technical core but lacks specific implementation details. It describes a potential machine learning approach but needs more precise specification of algorithmic techniques and architectural constraints to be truly buildable."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 51,
@@ -1590,7 +1610,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A technological system enabling precise manipulation of matter at the atomic scale, potentially revolutionizing manufacturing, environmental control, and product creation.",
       "evidence": "\"...what we can think of as atomically precise manufacturing group. In 100 years, they may have high-quality products with all of the chemical pollution under physical control...\"",
@@ -1648,7 +1668,8 @@
         ],
         "concrete_version": "Develop nanoscale robotic systems using atomic force microscopy principles to precisely manipulate individual atoms, with initial prototypes focusing on semiconductor and materials engineering applications",
         "reasoning": "This description provides a specific technological approach with clear mechanisms for atomic-level manufacturing, referencing existing scientific principles like quantum positioning and scanning probe techniques. The description includes quantifiable improvements and a clear technological pathway."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 151,
@@ -1671,7 +1692,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A systematic approach to programming chemical reactions using standardized hardware and a specialized programming language, enabling reliable molecular transformations and potentially revolutionizing drug discovery, materials science, and computational chemistry.",
       "evidence": "\"Chemputing is the act of basically taking some chemical code with some molecules and reliably turning those molecules into products on standardized hardware.\"",
@@ -1729,7 +1750,8 @@
         ],
         "concrete_version": "A standardized chemical synthesis platform with programmable robotic reactors, integrated with machine learning algorithms that can predict and optimize molecular interactions, using a domain-specific programming language for defining reaction sequences and parameters.",
         "reasoning": "This description provides a clear technological mechanism with specific components like robotic platforms, ML algorithms, and a specialized programming approach. It outlines a precise engineering challenge with well-defined technological building blocks that could be practically implemented."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 115,
@@ -1752,7 +1774,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A transformative technological system that enables direct, high-bandwidth communication between human immune systems and computational technologies, allowing for dynamic biological monitoring, intervention, and enhancement.",
       "evidence": "\"...we need some kind of immune-computer interface to get into, to at least expand the space of human possibilities.\"",
@@ -1809,7 +1831,8 @@
         ],
         "concrete_version": "A miniaturized implantable biosensor network using graphene-based molecular detectors that continuously track immune cell populations, cytokine levels, and inflammatory markers, with machine learning algorithms for predictive immune state analysis. Specific implementation would involve: 1) Nano-scale graphene transistor arrays capable of detecting single-molecule interactions, 2) Wireless low-power transmission protocols for continuous biological data streaming, 3) Machine learning models trained on immunological response patterns to predict emerging pathological conditions.",
         "reasoning": "The original description has promising technical elements but lacks precise engineering specificity. While the concept suggests an innovative approach to immune monitoring, it needs to be translated into a more granular technological specification with clear technological pathways and current scientific feasibility."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 68,
@@ -1832,7 +1855,7 @@
         "Pre-real effects": 2
       },
       "total_score": 15,
-      "qualification": "\u26a0 BORDERLINE (12-17)",
+      "qualification": "⚠ BORDERLINE (12-17)",
       "qualified": false,
       "description": "A hypothetical machine capable of being programmed to construct virtually anything within the laws of physics, fundamentally transforming human labor and production by eliminating physical toil and enabling exponential self-replication.",
       "evidence": "\"A universal constructor is one that can be programmed to do anything possible, as long as it does not violate the laws of physics.\"\n\"After the universal constructor is first built, it can then build exponentially more.\"",
@@ -1872,7 +1895,8 @@
         ],
         "concrete_version": "Advanced molecular fabrication system using programmable nanoscale robotic assemblers with precise atomic positioning capabilities, similar to current research in DNA origami and scanning tunneling microscope atom manipulation. Requires breakthroughs in:\n  1. Atomic-scale precision manipulation\n  2. Error-correction in molecular assembly\n  3. Universal molecular binding/positioning protocols\n  4. Energy-efficient nano-scale manufacturing mechanisms",
         "reasoning": "The description contains promising technological concepts but lacks a fully specified engineering pathway. While not currently achievable, it references real emerging research domains in nanotechnology and molecular engineering that suggest a potential technological trajectory."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 212,
@@ -1895,7 +1919,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "A technological system that enhances human cognitive capabilities through direct neural interfaces, enabling humans to compete with and potentially transcend artificial intelligence. This would fundamentally expand human potential for understanding and exploring the universe.",
       "evidence": "\"We need to consider how humans can remain competitive in the face of such intelligence. The answer might lie in enhancing human intelligence through means like brain-computer interfaces (BCIs).\"",
@@ -1953,7 +1977,8 @@
         ],
         "concrete_version": "Develop a multi-electrode neural interface with machine learning signal translation that enables:\n  1. Direct neural signal digitization using high-density microelectrode arrays\n  2. Machine learning algorithms to decode and translate neural patterns in real-time\n  3. Bidirectional information transfer with <10ms latency\n  4. Specific cognitive enhancement protocols for memory, processing speed, and information retrieval\n  5. Modular neural expansion architecture allowing incremental cognitive augmentation",
         "reasoning": "The description has promising technical elements but lacks specific implementation details. While brain-computer interfaces are an active research area, this proposal needs more precise engineering specifications to move from conceptual to actionable technology."
-      }
+      },
+      "voted_by": "both"
     },
     {
       "id": 144,
@@ -1976,7 +2001,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "\u2713 QUALIFIED (\u226518)",
+      "qualification": "✓ QUALIFIED (≥18)",
       "qualified": true,
       "description": "Technological systems enabling gradual human consciousness transfer to digital platforms, with complex social and infrastructural considerations for maintaining uploaded minds.",
       "evidence": "\"We're on the cusp of realizing humanity's ancient dream of persistence beyond death. I want to explore what that would mean for our nature, our myths, and our ideas of life and death.\"",
@@ -2033,7 +2058,971 @@
         ],
         "concrete_version": "Neuromorphic digital consciousness transfer protocol with:\n1. High-resolution brain scanning technique using quantum-resolution MRI\n2. Computational neural network that can dynamically map connectome complexity\n3. Staged consciousness transfer methodology with incremental verification checkpoints\n4. Standardized neural data encoding schema for preserving cognitive/emotional states\n5. Computational substrate with adaptive neural plasticity simulation",
         "reasoning": "The description has technical language but lacks a precise, engineerable mechanism. It gestures at real technologies like neural mapping and computational neuroscience, but doesn't specify a concrete implementation pathway. Needs significant technical refinement to be a buildable technology."
-      }
+      },
+      "voted_by": "both"
+    },
+    {
+      "id": 213,
+      "source_file": "sources/podcast/Trent McConaghy | From Starships to Tokens: Pioneering Futures.md",
+      "name": "Climate Adaptation Jurisdictional Arbitrage",
+      "definition_check": {
+        "non_existent": "Yes (current approach is reactive, not systematized)",
+        "new_action_space": "Yes (planned migration and infrastructure development)",
+        "pre_real_effects": "Yes (discussions of potential strategies emerging)"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 3,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 2,
+        "Resource pull": 1,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 19,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "A strategic approach to creating special economic zones and new cities optimized for climate migration, leveraging legal and economic frameworks to proactively manage population displacement caused by environmental changes.",
+      "evidence": "\"Special economic zones and new cities could be key to accommodating this migration. For example, in Saskatchewan, Canada, anyone owning a square mile of land can start a city without permission.\"",
+      "category": "Institutional Architecture",
+      "stage2_scores": {},
+      "stage2_total": 0,
+      "cluster_id": 5,
+      "cluster_name": "Economic & Universal",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 7,
+        "total": 19
+      },
+      "stage2_consolidated": {
+        "transformative_power": 0,
+        "systemic_risk": 0,
+        "lockin_effects": 0,
+        "total": 0
+      },
+      "problems_solved": "Current climate migration responses are reactive, fragmented, and economically destructive, causing massive unplanned urban strain and humanitarian crises. Existing frameworks fail to proactively integrate displaced populations into economically productive environments, resulting in refugee marginalization and systemic economic inefficiencies.",
+      "why_new_different": "This approach transforms climate migration from a humanitarian challenge into a strategic economic opportunity by creating legally-designated zones with pre-configured economic incentives, infrastructure, and adaptive governance models. Unlike traditional refugee resettlement, these jurisdictions are designed as generative economic ecosystems that immediately integrate migrants into productive networks and skill-matching systems.",
+      "why_not_exists": "Significant legal complexity around sovereignty, migration rights, and cross-border economic frameworks currently prevents such holistic implementations. Existing national immigration systems are fundamentally designed around scarcity and control models, not adaptive economic integration. Substantial geopolitical coordination, new legal architectures, and advanced economic modeling capabilities would need to be developed to enable large-scale deployment.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 3,
+        "defensive": 5,
+        "differential": 4,
+        "total": 16,
+        "reasoning": "The approach enables significant community participation in migration and economic integration, with adaptive governance models that distribute decision-making power. It's fundamentally protective, creating resilient economic pathways for vulnerable populations while reducing systemic humanitarian risks."
+      },
+      "concreteness": {
+        "score": 3,
+        "verdict": "transform",
+        "core_technologies": [
+          "Special economic zone design",
+          "Migration policy frameworks",
+          "Adaptive urban planning",
+          "Economic integration systems"
+        ],
+        "concrete_version": "A blockchain-backed legal framework for creating climate-adaptive economic zones that:\n1. Use smart contracts to pre-configure migration pathways\n2. Implement skill-matching algorithms for immediate economic integration\n3. Create portable digital identity systems for displaced populations\n4. Develop modular urban infrastructure designs optimized for rapid deployment\n5. Use predictive climate modeling to pre-select and design resilient settlement locations",
+        "reasoning": "The concept has promising elements but lacks specific technological implementation details. It's currently more of a policy framework than a concrete technology, but could be transformed into a specific technological approach for managing climate migration through precise digital infrastructure and adaptive systems."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 286,
+      "source_file": "sources/world-gallery/RaízMental: Emotional Healing Ecosystems.md",
+      "name": "Empathetic Neuro-AI Emotional Coaching System",
+      "definition_check": {
+        "non_existent": "Yes (projected for 2035, currently only conceptual)",
+        "new_action_space": "Yes (continuous personalized emotional support through AI-human co-navigation)",
+        "pre_real_effects": "Yes (already reorganizing mental health research and AI ethics discourse)"
+      },
+      "scoring": {
+        "Non-existence": 3,
+        "Plausibility": 2,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 2,
+        "Resource pull": 2,
+        "Narrative centrality": 3,
+        "Pre-real effects": 2
+      },
+      "total_score": 21,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "An AI-driven emotional support ecosystem that provides personalized, real-time therapeutic interventions through neural signal analysis and adaptive AI companions that prevent emotional crises and promote healing.",
+      "evidence": "\"Empathetic Neuro-AI detects emotional states using neural signals and biosensors, offering real-time therapeutic interventions.\"",
+      "category": "Technology / Institutional Architecture",
+      "stage2_scores": {
+        "Capability Discontinuity": 4,
+        "Cross-Domain Reach": 3,
+        "Scalability": 5,
+        "Autonomy": 4,
+        "Composability": 4,
+        "Feedback Intensity": 3,
+        "Irreversibility": 4,
+        "Power Concentration": 3,
+        "Externality Magnitude": 4,
+        "Misuse Asymmetry": 2,
+        "Governance Lag": 4,
+        "Narrative Lock-In": 3,
+        "Path Dependency": 3,
+        "Human Agency Impact": 2
+      },
+      "stage2_total": 48,
+      "cluster_id": 16,
+      "cluster_name": "Emotional & Urban",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 9,
+        "total": 21
+      },
+      "stage2_consolidated": {
+        "transformative_power": 20,
+        "systemic_risk": 17,
+        "lockin_effects": 11,
+        "total": 48
+      },
+      "problems_solved": "Current mental health support systems are overwhelmingly human-dependent, creating massive wait times, high costs, and inconsistent quality of care. Traditional therapy fails to provide continuous, real-time emotional monitoring and intervention, leaving individuals vulnerable during critical psychological transition periods or acute stress episodes.",
+      "why_new_different": "Unlike traditional therapeutic models, this system uses continuous neurological tracking and machine learning to create dynamically personalized emotional support architectures that adapt in real-time to an individual's precise neurochemical and psychological state. The AI companion doesn't just respond reactively, but proactively predicts and mitigates potential emotional disruptions before they escalate.",
+      "why_not_exists": "Significant technological barriers remain in creating sufficiently sophisticated neural signal interpretation algorithms that can accurately map complex emotional states across diverse human neurological profiles. Current limitations in non-invasive neural monitoring technologies, combined with complex ethical and privacy concerns around deep psychological data collection, have prevented comprehensive implementation of such a holistic emotional support ecosystem.",
+      "stage3_dacc": {
+        "democratic": 3,
+        "decentralized": 2,
+        "defensive": 4,
+        "differential": 4,
+        "total": 13,
+        "reasoning": "The system democratizes mental health access but still relies on centralized AI architecture. Its primary orientation is protective and healing, creating positive asymmetries in individual psychological resilience while reducing systemic mental health barriers."
+      },
+      "concreteness": {
+        "score": 3,
+        "verdict": "transform",
+        "core_technologies": [
+          "Neural signal processing",
+          "Machine learning predictive modeling",
+          "Continuous biometric monitoring",
+          "Adaptive AI companion systems"
+        ],
+        "concrete_version": "A wearable neural interface device with real-time emotional state monitoring using EEG/GSR sensors, coupled with a machine learning model trained on psychological crisis prediction algorithms. The system would:\n  1. Continuously track neurological and physiological stress markers\n  2. Use predictive ML models to identify potential emotional escalation patterns\n  3. Provide immediate intervention through personalized audio/visual feedback\n  4. Integrate with existing mental health treatment protocols\n  5. Maintain strict privacy and data protection mechanisms",
+        "reasoning": "The original description has promising technological components but lacks specific implementation details. The concept could be transformed into a concrete neurological monitoring and intervention system by specifying exact sensing technologies and predictive mechanisms."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 163,
+      "source_file": "sources/podcast/Michael Nielsen on Hyper-entities, Tools for Thought, and Wise Optimism.md",
+      "name": "Expanded Moral Circle Technologies",
+      "definition_check": {
+        "non_existent": "Yes - Current technologies are primitive",
+        "new_action_space": "Yes - Fundamentally new modes of interpersonal understanding",
+        "pre_real_effects": "Partial - Generating research and philosophical discourse"
+      },
+      "scoring": {
+        "Non-existence": 3,
+        "Plausibility": 2,
+        "Design specificity": 1,
+        "New action space": 3,
+        "Roadmap clarity": 1,
+        "Coordination gravity": 1,
+        "Resource pull": 1,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 16,
+      "qualification": "⚠ BORDERLINE (requires strong justification)",
+      "qualified": false,
+      "description": "Neurotechnological and communication systems enabling dramatically enhanced empathy, understanding, and moral perception across different forms of consciousness.",
+      "evidence": "\"...potentially exciting applications for things like moral circle expansion through new ways of communicating, like neurotechnologies. To be able to communicate with someone on a whole different level of granularity or nuance could be a new moral revolution.\"",
+      "category": "Technology / Philosophical Infrastructure",
+      "cluster_id": 6,
+      "cluster_name": "Interfaces & Brain",
+      "stage1_consolidated": {
+        "reality_gap": 6,
+        "transformative_potential": 4,
+        "current_momentum": 6,
+        "total": 16
+      },
+      "stage2_consolidated": {
+        "transformative_power": 0,
+        "systemic_risk": 0,
+        "lockin_effects": 0,
+        "total": 0
+      },
+      "problems_solved": "Current communication technologies fundamentally fail to translate emotional and experiential states across different cognitive architectures, leading to persistent misunderstandings between humans, AI systems, and potential non-human intelligences. This technological gap prevents genuine empathetic connection and mutual comprehension, causing systemic conflicts, ethical blindspots, and inability to recognize sentience and suffering in diverse forms of consciousness.",
+      "why_new_different": "Unlike traditional communication protocols, Expanded Moral Circle Technologies would utilize direct neural-mapping interfaces that can translate phenomenological experiences through multi-dimensional semantic and emotional translation matrices. The system would not merely translate language, but dynamically map lived experience, emotional valence, and cognitive perspective across radically different consciousness types - from human neurobiology to potential machine or alien intelligence frameworks.",
+      "why_not_exists": "Current neurotechnology lacks the requisite granularity to capture the full complexity of subjective experience, and we do not yet understand consciousness sufficiently to create comprehensive translation mechanisms. Significant breakthroughs are needed in quantum neural mapping, inter-consciousness interface design, and developing meta-linguistic frameworks that can represent experience beyond current linguistic and technological constraints.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 3,
+        "defensive": 5,
+        "differential": 4,
+        "total": 16,
+        "reasoning": "The technology fundamentally aims to expand mutual understanding and empathy across different consciousness types, which inherently supports democratic participation by enabling more nuanced perspective-taking. Its neural-mapping approach suggests potential distributed implementation, though some centralized expertise would likely be required for initial development."
+      },
+      "concreteness": {
+        "score": 2,
+        "verdict": "transform",
+        "core_technologies": [
+          "neural-machine interfaces",
+          "semantic mapping",
+          "multi-modal translation"
+        ],
+        "concrete_version": "Neurological Empathy Translation Protocol: A multi-stage neural interface system that:\n1. Uses high-resolution fMRI and neural network mapping to capture emotional and experiential states\n2. Develops machine learning models to translate emotional valence across different cognitive architectures\n3. Creates standardized 'emotional encoding' that can map between human, AI, and potential non-human intelligence neural patterns\n4. Implements real-time translation layers that convert complex emotional states into transferable semantic and phenomenological data packets",
+        "reasoning": "The original description is philosophically interesting but lacks technical specificity. The transformed version provides a clear technological approach with measurable implementation steps, focusing on the actual mechanism of cross-consciousness translation."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 22,
+      "source_file": "sources/ai-pathways/tool-ai.md",
+      "name": "Habermas Machines",
+      "definition_check": {
+        "non_existent": "Yes - Currently a research prototype",
+        "new_action_space": "Yes - Enables structured, AI-mediated group decision-making",
+        "pre_real_effects": "Yes - Generating interest in collective intelligence technologies"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 3,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 2,
+        "Resource pull": 2,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 20,
+      "qualification": "✓ QUALIFIED",
+      "qualified": true,
+      "description": "An AI system designed to support group deliberation by generating and refining collective statements, aiming to help diverse groups reach consensus through advanced language processing.",
+      "evidence": "\"An AI system developed by DeepMind, Stanford, and MIT to support group deliberation. It uses large language models to generate and refine group statements based on participant input...\"",
+      "category": "Governance Technology",
+      "stage2_scores": {
+        "Capability Discontinuity": 3,
+        "Cross-Domain Reach": 4,
+        "Scalability": 4,
+        "Autonomy": 2,
+        "Composability": 3,
+        "Feedback Intensity": 3,
+        "Irreversibility": 2,
+        "Power Concentration": 2,
+        "Externality Magnitude": 4,
+        "Misuse Asymmetry": 3,
+        "Governance Lag": 3,
+        "Narrative Lock-In": 3,
+        "Path Dependency": 2,
+        "Human Agency Impact": 4
+      },
+      "stage2_total": 42,
+      "cluster_id": 15,
+      "cluster_name": "Governance & Platform",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 8,
+        "total": 20
+      },
+      "stage2_consolidated": {
+        "transformative_power": 16,
+        "systemic_risk": 14,
+        "lockin_effects": 12,
+        "total": 42
+      },
+      "problems_solved": "Traditional group decision-making processes are plagued by cognitive biases, dominant personalities, and communication barriers that prevent genuine collaborative understanding. Habermas Machines address these issues by creating a neutral linguistic environment where individual perspectives can be systematically parsed, synthesized, and elevated beyond personal rhetoric or tribal positioning.",
+      "why_new_different": "Unlike traditional deliberation tools, Habermas Machines use multi-modal semantic mapping and dynamic consensus algorithms that can detect underlying value alignments even when surface-level language appears contradictory. The system introduces a radical approach of treating group dialogue as a complex adaptive system, where communication itself becomes a generative, evolving intelligence rather than a transactional exchange.",
+      "why_not_exists": "Current natural language AI lacks the nuanced contextual and emotional intelligence required to truly mediate complex human disagreements. Significant breakthroughs are needed in emotional recognition, cultural translation algorithms, and ethical reasoning frameworks that can dynamically balance individual agency with collective coherence. Additionally, the computational complexity of tracking multi-dimensional semantic relationships at scale remains a substantial technical challenge.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 3,
+        "defensive": 4,
+        "differential": 4,
+        "total": 15,
+        "reasoning": "Habermas Machines fundamentally aim to democratize deliberation by neutralizing power dynamics and surfacing diverse perspectives. The technology creates systemic protections against communicative distortions while enabling more resilient collective intelligence."
+      },
+      "concreteness": {
+        "score": 3,
+        "verdict": "transform",
+        "core_technologies": [
+          "natural language processing",
+          "semantic analysis",
+          "consensus algorithms",
+          "dialogue mapping"
+        ],
+        "concrete_version": "A collaborative AI platform with the following specific mechanisms:\n1. Multi-modal semantic parsing that breaks down participant statements into core value/belief components\n2. Machine learning algorithm that identifies underlying consensus patterns across seemingly divergent perspectives\n3. Real-time dialogue visualization that maps conceptual distances between group members\n4. Adaptive consensus scoring that weights contributions based on logical coherence and shared value alignment",
+        "reasoning": "The description has promising technical elements but lacks precise implementation details. While the concept of an AI-driven deliberation system is intriguing, the current description is too abstract to be immediately implementable. The transformation provides a more specific technical roadmap that an engineering team could actually prototype."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 259,
+      "source_file": "sources/world-gallery/Kidtopia.md",
+      "name": "Lifelong AI Guardians",
+      "definition_check": {
+        "non_existent": "Yes (current AI guardians are primitive compared to this vision)",
+        "new_action_space": "Yes (comprehensive, personalized child development support across multiple systems)",
+        "pre_real_effects": "Yes (described as reorganizing parenting, education, and child support systems)"
+      },
+      "scoring": {
+        "Non-existence": 3,
+        "Plausibility": 2,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 2,
+        "Resource pull": 2,
+        "Narrative centrality": 3,
+        "Pre-real effects": 2
+      },
+      "total_score": 21,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "Privacy-preserving AI systems that monitor and support children's holistic development, providing personalized guidance across multiple life domains and connecting different stakeholders through intelligent, empathetic monitoring.",
+      "evidence": "\"Every child's AI guardian streams privacy-safe wellbeing cues to role-specific dashboards...\"",
+      "category": "Technology / Institutional Architecture",
+      "stage2_scores": {
+        "Capability Discontinuity": 4,
+        "Cross-Domain Reach": 5,
+        "Scalability": 4,
+        "Autonomy": 3,
+        "Composability": 4,
+        "Feedback Intensity": 3,
+        "Irreversibility": 4,
+        "Power Concentration": 3,
+        "Externality Magnitude": 4,
+        "Misuse Asymmetry": 2,
+        "Governance Lag": 3,
+        "Narrative Lock-In": 4,
+        "Path Dependency": 4,
+        "Human Agency Impact": 2
+      },
+      "stage2_total": 49,
+      "cluster_id": 11,
+      "cluster_name": "Ecosystem & Tool",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 9,
+        "total": 21
+      },
+      "stage2_consolidated": {
+        "transformative_power": 20,
+        "systemic_risk": 16,
+        "lockin_effects": 13,
+        "total": 49
+      },
+      "problems_solved": "Current child development tracking is fragmented, siloed across schools, healthcare, and family systems, leading to missed developmental signals and reactive interventions. Existing monitoring approaches lack comprehensive, longitudinal understanding of individual child trajectories, often detecting challenges only after significant developmental deviation or trauma has occurred.",
+      "why_new_different": "Unlike traditional monitoring systems, Lifelong AI Guardians create a dynamically adaptive, consent-based developmental mapping that integrates multi-modal data signals while maintaining strict privacy boundaries. The system introduces an empathetic, predictive intelligence that can anticipate developmental needs, recommend personalized interventions, and create collaborative support ecosystems around individual children.",
+      "why_not_exists": "Significant technical challenges remain in creating privacy-preserving machine learning architectures capable of processing sensitive developmental data across multiple domains. Regulatory frameworks and ethical guidelines for such comprehensive child monitoring systems are still nascent, and there are substantial cultural and institutional resistance to implementing such holistic developmental tracking technologies.",
+      "stage3_dacc": {
+        "democratic": 3,
+        "decentralized": 2,
+        "defensive": 4,
+        "differential": 4,
+        "total": 13,
+        "reasoning": "Lifelong AI Guardians introduces a nuanced, consent-based system that empowers individual families while maintaining protective boundaries. The technology prioritizes child development resilience and personalized support over centralized control, creating positive developmental asymmetries."
+      },
+      "concreteness": {
+        "score": 3,
+        "verdict": "transform",
+        "core_technologies": [
+          "federated learning",
+          "differential privacy",
+          "multi-modal data integration",
+          "predictive analytics"
+        ],
+        "concrete_version": "A privacy-preserving federated learning platform that:\n  1. Uses differential privacy techniques to anonymize child development data\n  2. Integrates data from schools, healthcare, and family sources via secure API protocols\n  3. Employs machine learning models to predict developmental risks with explicit consent mechanisms\n  4. Provides granular, role-based access controls for intervention recommendations\n  5. Implements zero-knowledge proof techniques to validate data sharing without exposing raw information",
+        "reasoning": "The concept has promising technological components but is currently too abstract. It needs to specify exact privacy mechanisms, data integration protocols, and concrete machine learning architectures to be truly implementable."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 101,
+      "source_file": "sources/podcast/Fin Moorhouse | Why We Need to Aim Higher Than Survival.md",
+      "name": "Moral Trade Civilization",
+      "definition_check": {
+        "non_existent": "Yes (current civilization does not operate this way)",
+        "new_action_space": "Yes (enables novel forms of ethical coordination)",
+        "pre_real_effects": "Partial (emerging theoretical discussions)"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 2,
+        "Design specificity": 1,
+        "New action space": 2,
+        "Roadmap clarity": 1,
+        "Coordination gravity": 1,
+        "Resource pull": 0,
+        "Narrative centrality": 1,
+        "Pre-real effects": 1
+      },
+      "total_score": 11,
+      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualified": false,
+      "description": "A future societal model where ethical preferences can be systematically traded, allowing diverse moral perspectives to achieve mutually beneficial outcomes and maximize collective value alignment.",
+      "evidence": "Discussion of moral trade, including example of trading dietary and environmental preferences",
+      "category": "Institutional Architecture / Ethical Coordination Model",
+      "cluster_id": 3,
+      "cluster_name": "Governance & Global",
+      "stage1_consolidated": {
+        "reality_gap": 5,
+        "transformative_potential": 3,
+        "current_momentum": 3,
+        "total": 11
+      },
+      "stage2_consolidated": {
+        "transformative_power": 0,
+        "systemic_risk": 0,
+        "lockin_effects": 0,
+        "total": 0
+      },
+      "problems_solved": "Current ethical coordination mechanisms are fragmented, tribal, and zero-sum, leading to persistent moral conflicts and inability to resolve complex value differences. Existing approaches like diplomacy, voting, and negotiation fail to capture the nuanced, multi-dimensional nature of moral preferences, resulting in suboptimal collective decision-making and persistent social friction.",
+      "why_new_different": "Moral Trade Civilization introduces a computational framework for translating moral preferences into tradable preference units, enabling dynamic, quantitative exchanges of ethical priorities across different worldviews and cultural contexts. Unlike traditional negotiation, this model allows for granular, multi-dimensional value exchanges that can generate Pareto-optimal ethical outcomes by revealing hidden alignment and mutual benefit.",
+      "why_not_exists": "The current technological and conceptual infrastructure lacks the sophisticated preference mapping, computational complexity, and inter-subjective translation mechanisms required to instantiate such a system. Significant advances are needed in preference elicitation algorithms, multi-agent value alignment techniques, and robust frameworks for representing complex moral dimensions that transcend current linguistic and cultural boundaries.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 3,
+        "defensive": 4,
+        "differential": 5,
+        "total": 16,
+        "reasoning": "Moral Trade Civilization fundamentally democratizes ethical coordination by enabling granular, bottom-up preference exchanges across diverse perspectives. It creates positive asymmetries by providing computational mechanisms for resolving moral conflicts without centralized enforcement, thus enhancing collective agency and reducing zero-sum dynamics."
+      },
+      "concreteness": {
+        "score": 2,
+        "verdict": "transform",
+        "core_technologies": [
+          "mechanism design",
+          "preference elicitation",
+          "computational ethics"
+        ],
+        "concrete_version": "Blockchain-based preference trading protocol where:\n1. Moral preferences are quantified as tradable tokens with multi-dimensional attributes\n2. Zero-knowledge proofs preserve privacy of underlying value systems\n3. Smart contracts enable verifiable, granular ethical exchanges\n4. Machine learning models map preference compatibility across different worldviews\n5. Quadratic weighting prevents dominance by extreme perspectives",
+        "reasoning": "The concept has an interesting core idea about ethical coordination, but currently reads like philosophical speculation. The transformation provides specific computational mechanisms that could actually be prototyped, turning abstract 'moral trading' into a concrete technological protocol."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 207,
+      "source_file": "sources/podcast/Sara Walker | Unraveling Life's Beginnings with the Cosmic Perspective.md",
+      "name": "Origin of Life Experimental Platform",
+      "definition_check": {
+        "non_existent": "Yes (currently only a theoretical concept)",
+        "new_action_space": "Yes (ability to systematically generate novel life forms through chemical exploration)",
+        "pre_real_effects": "Yes (reorganizing research approaches to origin of life studies)"
+      },
+      "scoring": {
+        "Non-existence": 3,
+        "Plausibility": 2,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 2,
+        "Resource pull": 2,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 20,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "A chemical search engine designed to systematically explore molecular space to generate novel life forms, treating the origin of life as a fundamental physics problem that can be experimentally investigated.",
+      "evidence": "\"...can you actually think of the space of molecules and actually build an evolutionary engine that operates in chemistry and searches for new life forms?\"",
+      "category": "Technology / Research Infrastructure",
+      "stage2_scores": {
+        "Capability Discontinuity": 4,
+        "Cross-Domain Reach": 3,
+        "Scalability": 3,
+        "Autonomy": 2,
+        "Composability": 2,
+        "Feedback Intensity": 4,
+        "Irreversibility": 4,
+        "Power Concentration": 2,
+        "Externality Magnitude": 5,
+        "Misuse Asymmetry": 3,
+        "Governance Lag": 4,
+        "Narrative Lock-In": 3,
+        "Path Dependency": 4,
+        "Human Agency Impact": 3
+      },
+      "stage2_total": 46,
+      "cluster_id": 9,
+      "cluster_name": "Science & Research",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 8,
+        "total": 20
+      },
+      "stage2_consolidated": {
+        "transformative_power": 14,
+        "systemic_risk": 18,
+        "lockin_effects": 14,
+        "total": 46
+      },
+      "problems_solved": "Current origin of life research is fragmented and limited by manual experimental design and narrow chemical exploration. Existing approaches cannot systematically map potential molecular pathways that could generate emergent self-replicating systems, leaving massive regions of chemical possibility space unexplored. This platform enables computational and robotic screening of millions of chemical configurations to identify potential proto-life generative mechanisms.",
+      "why_new_different": "Unlike traditional laboratory approaches, this platform uses machine learning to dynamically generate and test chemical configurations, treating molecular assembly as a complex optimization problem rather than a linear experimental process. The system integrates high-throughput microfluidic screening, AI-driven molecular design algorithms, and adaptive experimental protocols that can autonomously modify search parameters based on emerging results.",
+      "why_not_exists": "Significant computational infrastructure and advanced robotic chemistry platforms are required to implement such a system, which currently exceed current technological capabilities. Interdisciplinary collaboration between synthetic chemistry, computational biology, machine learning, and experimental physics is necessary but rare. Substantial funding and specialized infrastructure for sustained, open-ended molecular exploration are currently unavailable in traditional research ecosystems.",
+      "stage3_dacc": {
+        "democratic": 2,
+        "decentralized": 1,
+        "defensive": 3,
+        "differential": 4,
+        "total": 10,
+        "reasoning": "While the platform uses advanced AI and automation to democratize origin of life research beyond traditional expert bottlenecks, it remains a sophisticated research infrastructure likely controlled by specialized institutions with high technical barriers to entry. Its systematic approach to exploring molecular configurations suggests more positive than negative potential, especially for understanding fundamental biological mechanisms."
+      },
+      "concreteness": {
+        "score": 4,
+        "verdict": "keep",
+        "core_technologies": [
+          "Machine learning molecular design",
+          "High-throughput microfluidic screening",
+          "Adaptive experimental protocols",
+          "AI-driven chemical configuration optimization"
+        ],
+        "concrete_version": "An automated chemical screening platform using machine learning to generate and test molecular configurations for potential self-replicating systems, with robotic microfluidic systems that can autonomously modify experimental parameters based on real-time results.",
+        "reasoning": "This description provides a specific technological approach with clear mechanisms for systematic chemical exploration, including named technological components and a precise experimental methodology for investigating origin of life scenarios."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 65,
+      "source_file": "sources/podcast/David Baker | Using AI for Science to Solve Humanity's Biggest Problems.md",
+      "name": "Protein Design for Global Challenges",
+      "definition_check": {
+        "non_existent": "Yes - Currently only partial prototype capabilities exist",
+        "new_action_space": "Yes - Enables designing proteins for purposes never before possible",
+        "pre_real_effects": "Yes - Already reorganizing research funding and biotech innovation strategies"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 3,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 2,
+        "Resource pull": 2,
+        "Narrative centrality": 2,
+        "Pre-real effects": 3
+      },
+      "total_score": 21,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "A comprehensive approach to using engineered proteins to solve critical global problems across sustainability, health, climate, and technology domains. This involves designing novel proteins that can break down pollutants, capture carbon, create new medical treatments, and integrate biological systems with inorganic materials.",
+      "evidence": "\"...designing proteins that solve problems... we've spun out 21 companies... interested in issues relating to sustainability... designing proteins that break down pollutants and toxins...\"",
+      "category": "Technology / Institutional Architecture",
+      "stage2_scores": {
+        "Capability Discontinuity": 4,
+        "Cross-Domain Reach": 5,
+        "Scalability": 4,
+        "Autonomy": 3,
+        "Composability": 4,
+        "Feedback Intensity": 4,
+        "Irreversibility": 4,
+        "Power Concentration": 3,
+        "Externality Magnitude": 5,
+        "Misuse Asymmetry": 3,
+        "Governance Lag": 4,
+        "Narrative Lock-In": 3,
+        "Path Dependency": 4,
+        "Human Agency Impact": 3
+      },
+      "stage2_total": 53,
+      "cluster_id": 4,
+      "cluster_name": "Global & Molecular",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 9,
+        "total": 21
+      },
+      "stage2_consolidated": {
+        "transformative_power": 20,
+        "systemic_risk": 19,
+        "lockin_effects": 14,
+        "total": 53
+      },
+      "problems_solved": "Current environmental and medical technologies are limited by the rigidity and specificity of existing molecular tools, leading to inefficient carbon capture, slow pollutant degradation, and narrow-spectrum medical interventions. Protein design enables programmable molecular machines that can dynamically adapt to complex systemic challenges like microplastic breakdown, targeted drug delivery, and climate mitigation strategies that traditional chemical and engineering approaches cannot effectively address.",
+      "why_new_different": "Unlike traditional protein engineering which relies on incremental modifications, this approach uses computational protein folding, machine learning, and synthetic biology to design proteins from first principles with precise atomic-level functionality. The methodology allows for creating proteins with entirely novel structural configurations that can interface between biological and inorganic systems, effectively turning proteins into programmable nanoscale engineering platforms with unprecedented adaptability.",
+      "why_not_exists": "Significant computational power, advanced machine learning algorithms for protein structure prediction, and precise gene editing technologies are still emerging, making comprehensive protein design challenging. Current limitations include incomplete understanding of protein folding dynamics, insufficient computational modeling capabilities, and the immense complexity of designing proteins that can maintain stability and functionality across diverse environmental conditions.",
+      "stage3_dacc": {
+        "democratic": 3,
+        "decentralized": 2,
+        "defensive": 4,
+        "differential": 4,
+        "total": 13,
+        "reasoning": "Protein design has significant potential for collective problem-solving and defensive capabilities, but current computational and expertise requirements mean it remains somewhat expert-driven. The technology's focus on solving global challenges with adaptive molecular solutions creates positive asymmetries that favor protection and human capability enhancement."
+      },
+      "concreteness": {
+        "score": 4,
+        "verdict": "keep",
+        "core_technologies": [
+          "Computational protein folding",
+          "Machine learning protein design",
+          "Synthetic biology",
+          "Molecular engineering"
+        ],
+        "concrete_version": "Develop a computational protein design platform using AI-driven molecular modeling that can: 1) Generate protein structures with targeted molecular functions, 2) Simulate protein interactions and performance, 3) Validate designs through rapid synthetic biology testing, with initial focus on carbon capture and pollutant degradation proteins",
+        "reasoning": "This description provides a specific technological approach with clear computational and biological mechanisms, naming concrete techniques like machine learning, protein folding, and synthetic biology. The proposal outlines precise engineering goals and methodological innovations beyond abstract claims."
+      },
+      "voted_by": "linda"
+    },
+    {
+      "id": 173,
+      "source_file": "sources/podcast/Niklas Lundblad | How AI Can Accelerate Science & Its Own Adoption.md",
+      "name": "Decentralized Adaptive Energy Network",
+      "definition_check": {
+        "non_existent": "Partially (early prototype concepts emerging)",
+        "new_action_space": "Yes (localized, adaptive energy management)",
+        "pre_real_effects": "Yes (initial research and startup activity)"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 2,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 1,
+        "Coordination gravity": 2,
+        "Resource pull": 2,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 18,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "An AI-optimized, decentralized energy network with dynamic routing, local energy production, and intelligent demand prediction, transforming traditional centralized energy distribution models.",
+      "evidence": "\"...build routers that can predict and work with different kinds of energy demand, decentralizing the energy network...\"",
+      "category": "Energy Infrastructure / Technological System",
+      "stage2_scores": {
+        "Capability Discontinuity": 4,
+        "Cross-Domain Reach": 3,
+        "Scalability": 5,
+        "Autonomy": 4,
+        "Composability": 4,
+        "Feedback Intensity": 4,
+        "Irreversibility": 4,
+        "Power Concentration": 2,
+        "Externality Magnitude": 4,
+        "Misuse Asymmetry": 3,
+        "Governance Lag": 4,
+        "Narrative Lock-In": 3,
+        "Path Dependency": 4,
+        "Human Agency Impact": 3
+      },
+      "stage2_total": 51,
+      "cluster_id": 7,
+      "cluster_name": "Energy & Clean",
+      "stage1_consolidated": {
+        "reality_gap": 6,
+        "transformative_potential": 4,
+        "current_momentum": 8,
+        "total": 18
+      },
+      "stage2_consolidated": {
+        "transformative_power": 20,
+        "systemic_risk": 17,
+        "lockin_effects": 14,
+        "total": 51
+      },
+      "problems_solved": "Traditional energy grids suffer from massive inefficiencies, with up to 60% of generated electricity lost during transmission and centralized distribution. Current systems cannot rapidly adapt to fluctuating renewable energy sources like solar and wind, leading to grid instability and wasted potential energy generation.",
+      "why_new_different": "Unlike traditional hub-and-spoke energy models, this network uses blockchain-like distributed ledger technology to enable real-time, peer-to-peer energy trading between microgrids, homes, and industrial sites. The AI-driven routing dynamically balances energy supply and demand across multiple nodes, allowing instantaneous redirection of electricity based on hyperlocal consumption patterns and generation capacity.",
+      "why_not_exists": "Significant technological barriers remain, including the need for advanced machine learning algorithms capable of predictive energy routing, robust cybersecurity protocols to protect decentralized networks, and substantial infrastructure investments to replace existing centralized grid systems. Current regulatory frameworks and utility company business models also fundamentally resist this level of distributed energy democratization.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 5,
+        "defensive": 4,
+        "differential": 5,
+        "total": 18,
+        "reasoning": "The network fundamentally redistributes energy control from centralized utilities to local communities, enabling peer-to-peer trading and dynamic adaptation. Its architecture inherently reduces systemic vulnerabilities while increasing individual and community energy autonomy."
+      },
+      "concreteness": {
+        "score": 4,
+        "verdict": "keep",
+        "core_technologies": [
+          "AI-driven energy routing",
+          "Distributed ledger technology",
+          "Microgrid interconnection",
+          "Predictive demand modeling"
+        ],
+        "concrete_version": "Blockchain-enabled smart grid platform with real-time energy routing algorithms, using machine learning to predict local energy consumption and dynamically balance distributed renewable energy sources across interconnected microgrids",
+        "reasoning": "This description provides specific technological mechanisms for decentralized energy distribution, including concrete implementation details like AI routing, blockchain-style ledger, and peer-to-peer energy trading. The technical approach is sufficiently detailed that an engineering team could begin prototyping."
+      },
+      "voted_by": "beatrice"
+    },
+    {
+      "id": 5,
+      "source_file": "sources/ai-pathways/d-acc.md",
+      "name": "Decentralized Scientific Collaboration Infrastructure",
+      "definition_check": {
+        "non_existent": "Yes - Current system is only partially implemented",
+        "new_action_space": "Yes - Enables new modes of scientific collaboration and validation",
+        "pre_real_effects": "Yes - Already reorganizing scientific career structures and publication models"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 3,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 2,
+        "Coordination gravity": 3,
+        "Resource pull": 2,
+        "Narrative centrality": 3,
+        "Pre-real effects": 3
+      },
+      "total_score": 23,
+      "qualification": "✓ QUALIFIED (≥18)",
+      "qualified": true,
+      "description": "A new scientific ecosystem with federated research networks, multi-track career systems, and AI-enabled collaborative platforms that fundamentally transform how knowledge is produced, validated, and attributed.",
+      "evidence": "\"Scientists now pursue parallel careers across academia, prediction markets, open-source projects, and commercial applications, reducing career risk and creating competition between knowledge production systems.\"",
+      "category": "Institutional Architecture / Technology",
+      "stage2_scores": {
+        "Capability Discontinuity": 4,
+        "Cross-Domain Reach": 5,
+        "Scalability": 4,
+        "Autonomy": 3,
+        "Composability": 5,
+        "Feedback Intensity": 4,
+        "Irreversibility": 4,
+        "Power Concentration": 2,
+        "Externality Magnitude": 5,
+        "Misuse Asymmetry": 3,
+        "Governance Lag": 4,
+        "Narrative Lock-In": 3,
+        "Path Dependency": 4,
+        "Human Agency Impact": 3
+      },
+      "stage2_total": 53,
+      "cluster_id": 9,
+      "cluster_name": "Science & Research",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 5,
+        "current_momentum": 11,
+        "total": 23
+      },
+      "stage2_consolidated": {
+        "transformative_power": 21,
+        "systemic_risk": 18,
+        "lockin_effects": 14,
+        "total": 53
+      },
+      "problems_solved": "Current scientific research is fragmented, siloed, and inefficiently structured, with researchers competing rather than collaborating, limited cross-disciplinary interaction, and opaque funding/credit mechanisms that discourage open knowledge sharing. The existing academic system creates artificial scarcity around research outputs, rewards individual publication metrics over substantive progress, and systematically undervalues collaborative and replication work.",
+      "why_new_different": "This infrastructure introduces a blockchain-verified reputation system where research contributions are granularly tracked, tokenized, and attributed across multiple dimensions beyond traditional publication metrics. Unlike current models, it enables real-time, fluid collaboration across institutional and disciplinary boundaries, with AI-powered matching of researchers, resources, and complementary expertise.",
+      "why_not_exists": "Fundamental transformation requires dismantling entrenched academic incentive structures, overcoming institutional resistance from legacy universities and funding bodies, and developing sophisticated technological infrastructure for trust, verification, and dynamic knowledge mapping. Current academic and funding ecosystems are deeply resistant to radical restructuring, and the technological complexity of creating a truly decentralized, AI-enabled research platform remains substantial.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 5,
+        "defensive": 4,
+        "differential": 5,
+        "total": 18,
+        "reasoning": "The infrastructure radically democratizes scientific knowledge production by enabling fluid, community-driven collaboration across traditional boundaries, with blockchain verification preventing centralized manipulation. Its design inherently distributes power, reduces institutional gatekeeping, and creates positive asymmetries that favor open, collaborative knowledge generation over closed, competitive models."
+      },
+      "concreteness": {
+        "score": 3,
+        "verdict": "transform",
+        "core_technologies": [
+          "blockchain reputation tracking",
+          "AI researcher matching",
+          "decentralized collaboration platform"
+        ],
+        "concrete_version": "A web3-based research collaboration platform with:\n1. Blockchain-verified contribution tracking (granular research credit allocation)\n2. AI-powered expertise matching algorithm \n3. Smart contract-based research funding and attribution\n4. Open API for cross-institutional research connections\n5. Tokenized reputation system with multi-dimensional contribution scoring",
+        "reasoning": "The description has promising technical elements but lacks specific implementation details. It needs to be transformed from a conceptual framework into a more precise technological specification with clear technical mechanisms and architectural components."
+      },
+      "voted_by": "beatrice"
+    },
+    {
+      "id": 71,
+      "source_file": "sources/podcast/David Duvenaud | Exploring the Cruxes and Possibilities of Post AGI Futures.md",
+      "name": "Futarchy (Governance by Prediction Markets)",
+      "definition_check": {
+        "non_existent": "Yes (no current government uses this model)",
+        "new_action_space": "Yes (fundamentally different approach to policy-making)",
+        "pre_real_effects": "Yes (ongoing theoretical development and small-scale experiments)"
+      },
+      "scoring": {
+        "Non-existence": 3,
+        "Plausibility": 2,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 1,
+        "Coordination gravity": 1,
+        "Resource pull": 1,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 17,
+      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualified": false,
+      "description": "A novel governance system where societal values are democratically determined, but specific policy implementations are selected through prediction markets that objectively forecast outcomes.",
+      "evidence": "\"We'd vote on values — the government's utility function. Then use prediction markets to forecast which policies best achieve those values.\"",
+      "category": "Institutional Architecture",
+      "cluster_id": 12,
+      "cluster_name": "Markets",
+      "stage1_consolidated": {
+        "reality_gap": 7,
+        "transformative_potential": 4,
+        "current_momentum": 6,
+        "total": 17
+      },
+      "stage2_consolidated": {
+        "transformative_power": 0,
+        "systemic_risk": 0,
+        "lockin_effects": 0,
+        "total": 0
+      },
+      "problems_solved": "Traditional democratic governance suffers from misaligned incentives, where politicians optimize for short-term electoral success rather than long-term societal outcomes. Existing decision-making processes are plagued by cognitive biases, tribal thinking, and limited predictive capabilities, leading to suboptimal policy choices that fail to accurately anticipate complex systemic consequences.",
+      "why_new_different": "Futarchy introduces a radical epistemic architecture where prediction markets replace political negotiation as the primary mechanism for policy selection, leveraging the wisdom of crowds and financial incentives to generate more accurate forecasts. Unlike traditional governance, this approach transforms policy-making from a negotiation of preferences to a probabilistic optimization problem, where potential interventions are evaluated based on their statistically predicted impact.",
+      "why_not_exists": "Widespread implementation requires sophisticated market infrastructure, robust prediction market platforms, and significant cultural adaptation to a more quantitative, outcome-oriented approach to governance. Current legal and regulatory frameworks are not designed to accommodate such market-driven decision mechanisms, and there are substantial technological challenges in creating reliable, manipulation-resistant predictive systems at a societal scale.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 3,
+        "defensive": 4,
+        "differential": 5,
+        "total": 16,
+        "reasoning": "Futarchy radically democratizes policy selection by replacing elite negotiation with crowd-sourced prediction markets, creating a more epistemic and participatory governance mechanism that distributes predictive power and reduces centralized manipulation while generating positive coordination asymmetries."
+      },
+      "concreteness": {
+        "score": 4,
+        "verdict": "keep",
+        "core_technologies": [
+          "prediction markets",
+          "probabilistic decision-making",
+          "economic forecasting mechanisms"
+        ],
+        "concrete_version": "A governance protocol where policy options are evaluated through blockchain-based prediction markets, with financial stakes tied to accurate forecasting of measurable policy outcomes",
+        "reasoning": "Futarchy describes a specific technological mechanism for decision-making, with clear computational and economic implementation details. The description provides a concrete algorithmic approach to policy selection that could be prototyped and tested."
+      },
+      "voted_by": "beatrice"
+    },
+    {
+      "id": 112,
+      "source_file": "sources/podcast/Hannu Rajaniemi | On being a sci-fi author and biotech entrepreneur.md",
+      "name": "Gevulot (Privacy Infrastructure)",
+      "definition_check": {
+        "non_existent": "Yes (currently theoretical concept from sci-fi)",
+        "new_action_space": "Yes (unprecedented granular reality-level privacy control)",
+        "pre_real_effects": "Yes (blockchain projects inspired by concept, academic papers exploring implementation)"
+      },
+      "scoring": {
+        "Non-existence": 2,
+        "Plausibility": 2,
+        "Design specificity": 2,
+        "New action space": 3,
+        "Roadmap clarity": 1,
+        "Coordination gravity": 2,
+        "Resource pull": 1,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 17,
+      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualified": false,
+      "description": "A fine-grained privacy control system where individuals can dynamically set permissions for data capture and sharing about themselves, fundamentally restructuring information privacy.",
+      "evidence": "\"...concept of 'Gevulot' of privacy settings for reality, giving you very fine grained control over all the data that is recorded about you or captured about you.\"",
+      "category": "Technological Infrastructure",
+      "cluster_id": 2,
+      "cluster_name": "Epistemic & Stack",
+      "stage1_consolidated": {
+        "reality_gap": 6,
+        "transformative_potential": 4,
+        "current_momentum": 7,
+        "total": 17
+      },
+      "stage2_consolidated": {
+        "transformative_power": 0,
+        "systemic_risk": 0,
+        "lockin_effects": 0,
+        "total": 0
+      },
+      "problems_solved": "Current privacy systems are binary and inflexible, forcing users to either completely share or completely block data access. Existing frameworks fail to handle nuanced consent scenarios, like allowing partial medical data sharing for research while protecting sensitive personal details. Traditional privacy models create friction between data utility and individual protection, leading to widespread data mistrust.",
+      "why_new_different": "Gevulot introduces granular, cryptographically-enforced permission layers that enable context-specific data sharing with unprecedented precision. Unlike current systems, it allows individuals to create dynamic, programmable consent rules that can adapt in real-time based on specific use cases, institutional trust levels, and personal preferences.",
+      "why_not_exists": "Implementing such a sophisticated privacy infrastructure requires complex cryptographic protocols, significant computational infrastructure, and cross-institutional agreement on standardized consent frameworks. Current technological limitations in secure multi-party computation and the entrenched interests of centralized data brokers create substantial barriers to widespread adoption of such a radical privacy paradigm.",
+      "stage3_dacc": {
+        "democratic": 4,
+        "decentralized": 4,
+        "defensive": 5,
+        "differential": 5,
+        "total": 18,
+        "reasoning": "Gevulot radically democratizes privacy by giving individuals granular, programmable consent mechanisms, distributing power away from centralized data brokers. Its cryptographic design fundamentally shifts control to users while creating robust protection against unauthorized data exploitation."
+      },
+      "concreteness": {
+        "score": 4,
+        "verdict": "keep",
+        "core_technologies": [
+          "Zero-knowledge proofs",
+          "Cryptographic permission systems",
+          "Dynamic consent protocols"
+        ],
+        "concrete_version": "A cryptographic privacy framework using zero-knowledge proofs and granular consent tokens that allow users to create programmable, context-specific data sharing rules with fine-grained access control",
+        "reasoning": "The description provides a specific technical mechanism for privacy control using cryptographic techniques, with clear technical details about how granular permissions would be implemented and enforced. It goes beyond abstract coordination to describe a potential engineering approach."
+      },
+      "voted_by": "beatrice"
+    },
+    {
+      "id": 107,
+      "source_file": "sources/podcast/Foresight Fellow Special | Siméon Campos: On Governing AI for Good.md",
+      "name": "Whole Brain Emulation",
+      "definition_check": {
+        "non_existent": "Yes (currently only theoretical)",
+        "new_action_space": "Yes (digital preservation and potential reproduction of human cognition)",
+        "pre_real_effects": "Yes (reorganizing neuroscience and AI research)"
+      },
+      "scoring": {
+        "Non-existence": 3,
+        "Plausibility": 2,
+        "Design specificity": 1,
+        "New action space": 3,
+        "Roadmap clarity": 1,
+        "Coordination gravity": 1,
+        "Resource pull": 1,
+        "Narrative centrality": 2,
+        "Pre-real effects": 2
+      },
+      "total_score": 16,
+      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualified": false,
+      "description": "A technological approach to creating digital replicas of human brains through advanced scanning and simulation technologies. This would potentially enable preservation of human cognitive capabilities in digital form.",
+      "evidence": "\"Whole brain emulation seems like something that could allow us to get most of the benefits of advanced AI systems with potentially a bit less uncertainty or a bit less risk.\"",
+      "category": "Technology",
+      "cluster_id": 6,
+      "cluster_name": "Interfaces & Brain",
+      "stage1_consolidated": {
+        "reality_gap": 6,
+        "transformative_potential": 4,
+        "current_momentum": 6,
+        "total": 16
+      },
+      "stage2_consolidated": {
+        "transformative_power": 0,
+        "systemic_risk": 0,
+        "lockin_effects": 0,
+        "total": 0
+      },
+      "problems_solved": "Whole Brain Emulation directly addresses the fundamental human limitations of mortality, cognitive decline, and brain injury by creating a potentially immortal digital backup of human consciousness. It offers a revolutionary solution for preserving individual human knowledge, memories, and cognitive capabilities beyond biological constraints, potentially allowing continued intellectual and creative contributions after physical death.",
+      "why_new_different": "Unlike previous computational models of brain function, Whole Brain Emulation aims to create a pixel-perfect, neurologically precise digital replica that captures not just computational patterns, but the intricate quantum and molecular-level interactions of neural networks. This approach represents a quantum leap from traditional brain mapping by seeking to replicate consciousness itself, rather than merely simulating neural activity.",
+      "why_not_exists": "Current technological limitations prevent achieving the necessary scanning resolution and computational power required to map a human brain's approximately 86 billion neurons and 100 trillion synaptic connections with sufficient fidelity. Significant advances are still needed in neuroimaging technologies, quantum computing, and our fundamental understanding of consciousness as an emergent phenomenon to make Whole Brain Emulation feasible.",
+      "stage3_dacc": {
+        "democratic": 2,
+        "decentralized": 1,
+        "defensive": 3,
+        "differential": 2,
+        "total": 8,
+        "reasoning": "Whole Brain Emulation has significant potential for individual preservation but risks creating powerful centralized control mechanisms around consciousness replication. The technology could be transformative but requires careful governance to prevent elite capture and potential misuse."
+      },
+      "concreteness": {
+        "score": 3,
+        "verdict": "transform",
+        "core_technologies": [
+          "high-resolution neuroimaging",
+          "quantum-level neural mapping",
+          "computational neuroscience simulation"
+        ],
+        "concrete_version": "Develop a multi-stage brain emulation protocol:\n1. Ultra-high-resolution MRI and electron microscopy scanning of brain tissue at nanometer resolution\n2. Computational model that maps neural connections, synaptic weights, and molecular-level neural interactions\n3. Quantum-level neural network simulation using specialized neuromorphic computing hardware\n4. Validation through comparative behavioral and cognitive response testing",
+        "reasoning": "While the concept is ambitious, it lacks a fully specified technical roadmap. The description hints at real technological components but doesn't provide a clear, implementable engineering approach. The core idea needs to be broken down into specific, measurable research stages with current technological constraints explicitly addressed."
+      },
+      "voted_by": "beatrice"
     }
-  ]
+  ],
+  "total_with_votes": 39,
+  "linda_yes_count": 8,
+  "beatrice_yes_count": 5
 }

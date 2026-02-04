@@ -93,6 +93,54 @@
             margin-left: 8px;
         }
 
+        /* Vote section headers */
+        .vote-section-header {
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 24px 0 12px;
+            margin-top: 40px;
+            border-top: 2px solid rgba(255,255,255,0.1);
+        }
+        .vote-section-header.shared {
+            color: #ffd700;
+            border-top: none;
+            margin-top: 0;
+        }
+        .vote-section-header.linda {
+            color: #f472b6;
+        }
+        .vote-section-header.beatrice {
+            color: #60a5fa;
+        }
+        .vote-section-subtitle {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        /* Vote badge on entity items */
+        .vote-badge {
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+        .vote-badge.linda {
+            background: rgba(244,114,182,0.15);
+            color: #f472b6;
+        }
+        .vote-badge.beatrice {
+            background: rgba(96,165,250,0.15);
+            color: #60a5fa;
+        }
+        .vote-badge.both {
+            background: rgba(255,215,0,0.15);
+            color: #ffd700;
+        }
+
         /* Entity list items */
         .entity-item {
             padding: 18px 0;
@@ -347,36 +395,37 @@
     }
 
     function renderHeader() {
+        const total = DATA.entities.length;
+        const shared = DATA.entities.filter(e => e.voted_by === 'both').length;
+        const lindaOnly = DATA.entities.filter(e => e.voted_by === 'linda').length;
+        const beatriceOnly = DATA.entities.filter(e => e.voted_by === 'beatrice').length;
         document.getElementById('subtitle').textContent =
-            `${DATA.overlap_count} hyper-entities starred by both Linda and Beatrice`;
+            `${shared} shared + ${lindaOnly} Linda's Yes + ${beatriceOnly} Beatrice's Yes = ${total} total`;
         const stats = document.getElementById('stats');
         stats.innerHTML = [
-            { value: DATA.linda_total, label: "Linda's Picks" },
-            { value: DATA.beatrice_total, label: "Beatrice's Picks" },
-            { value: DATA.overlap_count, label: "Consensus" },
-            { value: Math.round(DATA.overlap_count / (DATA.linda_total + DATA.beatrice_total - DATA.overlap_count) * 100) + '%', label: "Overlap Rate" },
+            { value: shared, label: "Shared Picks" },
+            { value: lindaOnly, label: "Linda's Yes" },
+            { value: beatriceOnly, label: "Beatrice's Yes" },
+            { value: total, label: "Total" },
         ].map(s => `<div class="stat"><div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div></div>`).join('');
     }
 
-    function renderList() {
+    function renderSection(entities, allEntities) {
         // Group by cluster
         const groups = {};
-        DATA.entities.forEach((e, i) => {
+        entities.forEach(e => {
             const cluster = e.cluster_name || 'Other';
             if (!groups[cluster]) groups[cluster] = [];
-            groups[cluster].push({ ...e, _idx: i });
+            groups[cluster].push(e);
         });
 
-        // Sort clusters alphabetically, entities within by d/acc desc
         const sortedClusters = Object.keys(groups).sort();
-
-        const listEl = document.getElementById('list');
-        listEl.innerHTML = sortedClusters.map(cluster => {
-            const entities = groups[cluster].sort((a, b) =>
+        return sortedClusters.map(cluster => {
+            const clusterEntities = groups[cluster].sort((a, b) =>
                 (b.stage3_dacc?.total || 0) - (a.stage3_dacc?.total || 0));
-            const count = entities.length;
+            const count = clusterEntities.length;
 
-            const items = entities.map(e => {
+            const items = clusterEntities.map(e => {
                 const dacc = e.stage3_dacc || {};
                 const techTotal = e.stage2_total != null ? e.stage2_total : 'N/A';
                 return `
@@ -404,6 +453,39 @@
                 ${items}
             </div>`;
         }).join('');
+    }
+
+    function renderList() {
+        // Add index to each entity for modal reference
+        DATA.entities.forEach((e, i) => { e._idx = i; });
+
+        const shared = DATA.entities.filter(e => e.voted_by === 'both');
+        const lindaYes = DATA.entities.filter(e => e.voted_by === 'linda');
+        const beatriceYes = DATA.entities.filter(e => e.voted_by === 'beatrice');
+
+        const listEl = document.getElementById('list');
+        let html = '';
+
+        // Shared section
+        html += `<div class="vote-section-header shared">&#9733; Shared Picks (${shared.length})</div>`;
+        html += `<div class="vote-section-subtitle">Starred by both Linda and Beatrice</div>`;
+        html += renderSection(shared, DATA.entities);
+
+        // Linda's Yes section
+        if (lindaYes.length > 0) {
+            html += `<div class="vote-section-header linda">&#9829; Linda's Yes (${lindaYes.length})</div>`;
+            html += `<div class="vote-section-subtitle">From Beatrice's unique picks — Linda voted Yes</div>`;
+            html += renderSection(lindaYes, DATA.entities);
+        }
+
+        // Beatrice's Yes section
+        if (beatriceYes.length > 0) {
+            html += `<div class="vote-section-header beatrice">&#9829; Beatrice's Yes (${beatriceYes.length})</div>`;
+            html += `<div class="vote-section-subtitle">From Linda's unique picks — Beatrice voted Yes</div>`;
+            html += renderSection(beatriceYes, DATA.entities);
+        }
+
+        listEl.innerHTML = html;
     }
 
     function openModal(idx) {
