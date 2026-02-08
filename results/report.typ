@@ -59,7 +59,13 @@ This project set out to systematically identify, score, and curate hyper-entitie
 - *2 AI-pathways essays*, including Vitalik Buterin's d/acc framework and analysis of Tool AI approaches.
 - *1 x-hope document* providing additional framing.
 
-From this corpus, over 300 candidate hyper-entities were extracted, scored across three assessment stages, clustered thematically, and then curated through an independent review process by two researchers (Linda Petrini and Beatrice Erkers) to arrive at a final consensus list of 39 highlighted entities.
+From this corpus, over 300 candidate hyper-entities were extracted, scored across three assessment stages, clustered thematically, and then curated through an independent review process by two researchers (Linda Petrini and Beatrice Erkers).
+
+The curation process involved two rounds:
+1. *Initial consensus round*: Identification of 26 entities both researchers independently selected as high-priority (shared picks)
+2. *Second-choice integration*: Inclusion of entities each researcher scored highly on their unique shortlists (Linda: 5 additional, Beatrice: 8 additional), subject to substantive research expansion
+
+This two-round approach yielded a final consensus list of 52 highlighted entities, balancing both broad agreement and individual research expertise.
 
 // ═══════════════════════════════════════════
 = Methodology <methodology>

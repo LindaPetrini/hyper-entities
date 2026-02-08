@@ -2,8 +2,8 @@
   "title": "Consensus Picks",
   "subtitle": "26 shared + 13 individual picks (39 total)",
   "generated_at": "2026-01-23",
-  "linda_total": 88,
-  "beatrice_total": 67,
+  "linda_total": 93,
+  "beatrice_total": 75,
   "overlap_count": 26,
   "entities": [
     {
@@ -27,7 +27,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A reimagined scientific publishing system designed primarily for AI systems to consume, process, and contribute to scientific knowledge, with radically different latency, format, and peer review mechanisms.",
       "evidence": "\"We need to start thinking about the consumers and producers of science as machines because we're reaching the point where human beings are not going to be able to comprehend all the information...\"",
@@ -109,7 +109,7 @@
         "Pre-real effects": 3
       },
       "total_score": 23,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "An interoperable digital governance system allowing citizens to participate in multiple overlapping jurisdictions, with portable digital identities and the ability to switch between governance networks based on performance.",
       "evidence": "\"A coalition of federated city-states launches the first interoperable governance protocol stack, allowing citizens to carry digital IDs, benefits, and credentials between different local systems.\"",
@@ -191,10 +191,10 @@
         "Pre-real effects": 2
       },
       "total_score": 22,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A global, open-source legal system powered by smart contracts, AI legal agents, and decentralized governance. It transforms law from a closed, institutional practice to an open, participatory, and technologically mediated global commons.",
-      "evidence": "\"By 2035, law is no longer locked in legacy institutions—it's open-source, borderless, and co-authored.\"",
+      "evidence": "\"By 2035, law is no longer locked in legacy institutions\u2014it's open-source, borderless, and co-authored.\"",
       "category": "Institutional Architecture / Technology",
       "stage2_scores": {
         "Capability Discontinuity": 4,
@@ -273,7 +273,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED",
+      "qualification": "\u2713 QUALIFIED",
       "qualified": true,
       "description": "A comprehensive information verification and tracing system that allows users to follow the provenance of information from high-level claims down to raw data sources, enabling more robust trust and understanding.",
       "evidence": "\"We should be able to have a stack we can follow all the way from the high level back down to the raw ingredients, and then figure out how much we trust each of those steps.\"",
@@ -335,7 +335,7 @@
     },
     {
       "id": 149,
-      "source_file": "sources/podcast/Kristian Rönn | The Darwinian Trap That Explains Our World.md",
+      "source_file": "sources/podcast/Kristian R\u00f6nn | The Darwinian Trap That Explains Our World.md",
       "name": "Reputational Markets",
       "definition_check": {
         "non_existent": "Yes (currently only a theoretical proposal)",
@@ -354,7 +354,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A decentralized global coordination mechanism that uses prediction markets to assess and incentivize responsible behavior across complex supply chains. It creates a dynamic reputation scoring system that encourages collective accountability for long-term human values.",
       "evidence": "\"What if you build a system where you could, for instance, like a responsible AI company would not get access to the latest computer chips?\"",
@@ -435,10 +435,10 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A federated, community-led network for developing and maintaining AI educational tools, governed by diverse councils including elders, learners, technologists, and ethicists to ensure just and caring educational infrastructure.",
-      "evidence": "\"Universal AI Learning UnCommons (UALU) – A federated, community-led network responsible for developing, maintaining, and auditing AI education tools.\"",
+      "evidence": "\"Universal AI Learning UnCommons (UALU) \u2013 A federated, community-led network responsible for developing, maintaining, and auditing AI education tools.\"",
       "category": "Institutional Architecture / Technology",
       "stage2_scores": {
         "Capability Discontinuity": 3,
@@ -515,7 +515,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A technological and methodological approach using AI to improve human reasoning, forecasting, truth-discovery, and collaborative deliberation. This system would leverage AI capabilities to enhance human cognitive processes and decision-making.",
       "evidence": "\"How can we use AI to help us discern the truth about things, reason well, understand our values well, deliberate well, and cooperate well?\"",
@@ -597,7 +597,7 @@
         "Pre-real effects": 2
       },
       "total_score": 16,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "An AI-powered mediation platform designed to resolve conflicts through progressive strategies of win-win negotiation, restoration, and proportional consequence, aimed at reducing escalation in interpersonal, organizational, and international disputes.",
       "evidence": "\"You could write a mediation tool that's like, 'Hey, we have a problem. Let's talk to this mediator.' And it'll try and get us the win-win. And if that fails, it'll try and get us the restoration. And if that fails, it'll try and get us the disgorgement...\"",
@@ -661,7 +661,7 @@
         "Pre-real effects": 3
       },
       "total_score": 22,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A small, factory-producible nuclear reactor designed to be buried a mile underground, providing localized, safe, and clean energy. Designed to be mass-manufactured like automobiles, with each reactor about the size of a Toyota.",
       "evidence": "\"...a nuclear reactor that will fit through a manhole and we bury it a mile deep in a borehole. So this is a nuclear reactor that is unquestionably safe.\"",
@@ -743,7 +743,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A future institutional and ethical framework for managing, protecting, and regulating digital minds as potential moral patients with rights, voting capabilities, and social standing.",
       "evidence": "\"...tough questions about how do we start to govern and allocate influence once a lot of the people, minds, or stakeholders are digital.\"",
@@ -824,7 +824,7 @@
         "Pre-real effects": 3
       },
       "total_score": 23,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A networked cybersecurity infrastructure using advanced cryptographic techniques to protect critical communications and industrial control networks, with distributed threat intelligence and quantum-resistant encryption.",
       "evidence": "\"Distributed zero-knowledge security systems and open-source threat intelligence collectives, already networked across multiple allied jurisdictions, contain the damage and keep critical systems online.\"",
@@ -907,7 +907,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A democratized software creation environment where non-technical individuals can design, modify, and generate custom software tailored to their specific needs using AI-enhanced tools.",
       "evidence": "\"Alongside teaching software development, there has been another tradition, which is this idea of democratizing the act of software creation to allow anyone to write software themselves.\"",
@@ -990,7 +990,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A systematic approach to determining truth and trust in an AI-mediated information ecosystem, involving precise citation, consensus mechanisms, and algorithmic truth assessment.",
       "evidence": "\"...how do we trust them... how do we ascertain what we can trust and not trust? How do we determine that something is true?\"",
@@ -1072,7 +1072,7 @@
         "Pre-real effects": 2
       },
       "total_score": 16,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A system of AI assistants designed to be fundamentally loyal to individual human users, helping them navigate complex problems and daily life while respecting their goals and interests.",
       "evidence": "\"I have been calling them loyal AI assistance. there is a loyal AI system that doesn't have selfish interests and works to advance your goals and interests.\"",
@@ -1136,7 +1136,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "An advanced institutional technology for transforming crowd intelligence into actionable decision-making tools for organizations, moving beyond current crypto-based betting platforms to create sophisticated advisory systems.",
       "evidence": "\"What we do need are people that can develop particular applications that would support decision makers... There are trillions of dollars in value here in the topic of making better decisions.\"",
@@ -1199,7 +1199,7 @@
     },
     {
       "id": 262,
-      "source_file": "sources/world-gallery/La langue de la prévoyance.md",
+      "source_file": "sources/world-gallery/La langue de la pr\u00e9voyance.md",
       "name": "Translation Language Models (TLMs)",
       "definition_check": {
         "non_existent": "Yes (described as emerging by 2035)",
@@ -1218,7 +1218,7 @@
         "Pre-real effects": 3
       },
       "total_score": 22,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A multipurpose linguistic technology that enables rapid translation and understanding across languages, dialects, and technical domains. These models aim to democratize knowledge work by breaking down communication barriers.",
       "evidence": "\"Translation Language Models (TLMs) uses optimized text-recognition and widely sourced, citizen owned training databases for rapid translation\"",
@@ -1300,7 +1300,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A comprehensive system of real-time digital representations of communities and ecosystems that enable collective decision-making, simulation, and shared responsibility. These digital twins provide a new infrastructure for understanding and managing complex social and ecological systems.",
       "evidence": "\"Digital twins reflect the real-time state of communities and ecosystems. They help people simulate futures, explore consequences, and make decisions guided by care, memory, and shared responsibility.\"",
@@ -1382,7 +1382,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "Personalized AI systems that capture individual thinking patterns and decision-making styles, functioning as specialized \"little versions of your ego\" across different life domains.",
       "evidence": "\"If we train an AI intensely on your personal data, the model becomes a portrait of you. That's why I call them EgoLets: little versions of your ego.\"",
@@ -1463,7 +1463,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A pioneering institution that combines traditional deliberative democratic processes with AI-powered tools to enable rapid, cost-effective, and accessible global decision-making on critical challenges.",
       "evidence": "\"The Global Deliberation Coordinator (GDC) aims to be a pioneering institution for representative global deliberation on humanity's pressing challenges.\"",
@@ -1546,7 +1546,7 @@
         "Pre-real effects": 1
       },
       "total_score": 15,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A radically new scientific methodology where AI explores massive sensor network data without pre-existing theoretical frameworks, discovering useful patterns and mechanisms through pure exploration and pattern recognition.",
       "evidence": "\"...why don't we build atheoretical science that just explores what's there? ... we're going to build massive sensor networks... and we're going to let the AI find patterns in it.\"",
@@ -1610,7 +1610,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A technological system enabling precise manipulation of matter at the atomic scale, potentially revolutionizing manufacturing, environmental control, and product creation.",
       "evidence": "\"...what we can think of as atomically precise manufacturing group. In 100 years, they may have high-quality products with all of the chemical pollution under physical control...\"",
@@ -1692,7 +1692,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A systematic approach to programming chemical reactions using standardized hardware and a specialized programming language, enabling reliable molecular transformations and potentially revolutionizing drug discovery, materials science, and computational chemistry.",
       "evidence": "\"Chemputing is the act of basically taking some chemical code with some molecules and reliably turning those molecules into products on standardized hardware.\"",
@@ -1774,7 +1774,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A transformative technological system that enables direct, high-bandwidth communication between human immune systems and computational technologies, allowing for dynamic biological monitoring, intervention, and enhancement.",
       "evidence": "\"...we need some kind of immune-computer interface to get into, to at least expand the space of human possibilities.\"",
@@ -1855,7 +1855,7 @@
         "Pre-real effects": 2
       },
       "total_score": 15,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A hypothetical machine capable of being programmed to construct virtually anything within the laws of physics, fundamentally transforming human labor and production by eliminating physical toil and enabling exponential self-replication.",
       "evidence": "\"A universal constructor is one that can be programmed to do anything possible, as long as it does not violate the laws of physics.\"\n\"After the universal constructor is first built, it can then build exponentially more.\"",
@@ -1919,7 +1919,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A technological system that enhances human cognitive capabilities through direct neural interfaces, enabling humans to compete with and potentially transcend artificial intelligence. This would fundamentally expand human potential for understanding and exploring the universe.",
       "evidence": "\"We need to consider how humans can remain competitive in the face of such intelligence. The answer might lie in enhancing human intelligence through means like brain-computer interfaces (BCIs).\"",
@@ -2001,7 +2001,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "Technological systems enabling gradual human consciousness transfer to digital platforms, with complex social and infrastructural considerations for maintaining uploaded minds.",
       "evidence": "\"We're on the cusp of realizing humanity's ancient dream of persistence beyond death. I want to explore what that would mean for our nature, our myths, and our ideas of life and death.\"",
@@ -2082,7 +2082,7 @@
         "Pre-real effects": 2
       },
       "total_score": 19,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A strategic approach to creating special economic zones and new cities optimized for climate migration, leveraging legal and economic frameworks to proactively manage population displacement caused by environmental changes.",
       "evidence": "\"Special economic zones and new cities could be key to accommodating this migration. For example, in Saskatchewan, Canada, anyone owning a square mile of land can start a city without permission.\"",
@@ -2130,7 +2130,7 @@
     },
     {
       "id": 286,
-      "source_file": "sources/world-gallery/RaízMental: Emotional Healing Ecosystems.md",
+      "source_file": "sources/world-gallery/Ra\u00edzMental: Emotional Healing Ecosystems.md",
       "name": "Empathetic Neuro-AI Emotional Coaching System",
       "definition_check": {
         "non_existent": "Yes (projected for 2035, currently only conceptual)",
@@ -2149,7 +2149,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "An AI-driven emotional support ecosystem that provides personalized, real-time therapeutic interventions through neural signal analysis and adaptive AI companions that prevent emotional crises and promote healing.",
       "evidence": "\"Empathetic Neuro-AI detects emotional states using neural signals and biosensors, offering real-time therapeutic interventions.\"",
@@ -2231,7 +2231,7 @@
         "Pre-real effects": 2
       },
       "total_score": 16,
-      "qualification": "⚠ BORDERLINE (requires strong justification)",
+      "qualification": "\u26a0 BORDERLINE (requires strong justification)",
       "qualified": false,
       "description": "Neurotechnological and communication systems enabling dramatically enhanced empathy, understanding, and moral perception across different forms of consciousness.",
       "evidence": "\"...potentially exciting applications for things like moral circle expansion through new ways of communicating, like neurotechnologies. To be able to communicate with someone on a whole different level of granularity or nuance could be a new moral revolution.\"",
@@ -2295,7 +2295,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "✓ QUALIFIED",
+      "qualification": "\u2713 QUALIFIED",
       "qualified": true,
       "description": "An AI system designed to support group deliberation by generating and refining collective statements, aiming to help diverse groups reach consensus through advanced language processing.",
       "evidence": "\"An AI system developed by DeepMind, Stanford, and MIT to support group deliberation. It uses large language models to generate and refine group statements based on participant input...\"",
@@ -2377,7 +2377,7 @@
         "Pre-real effects": 2
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "Privacy-preserving AI systems that monitor and support children's holistic development, providing personalized guidance across multiple life domains and connecting different stakeholders through intelligent, empathetic monitoring.",
       "evidence": "\"Every child's AI guardian streams privacy-safe wellbeing cues to role-specific dashboards...\"",
@@ -2459,7 +2459,7 @@
         "Pre-real effects": 1
       },
       "total_score": 11,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A future societal model where ethical preferences can be systematically traded, allowing diverse moral perspectives to achieve mutually beneficial outcomes and maximize collective value alignment.",
       "evidence": "Discussion of moral trade, including example of trading dietary and environmental preferences",
@@ -2523,7 +2523,7 @@
         "Pre-real effects": 2
       },
       "total_score": 20,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A chemical search engine designed to systematically explore molecular space to generate novel life forms, treating the origin of life as a fundamental physics problem that can be experimentally investigated.",
       "evidence": "\"...can you actually think of the space of molecules and actually build an evolutionary engine that operates in chemistry and searches for new life forms?\"",
@@ -2605,7 +2605,7 @@
         "Pre-real effects": 3
       },
       "total_score": 21,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A comprehensive approach to using engineered proteins to solve critical global problems across sustainability, health, climate, and technology domains. This involves designing novel proteins that can break down pollutants, capture carbon, create new medical treatments, and integrate biological systems with inorganic materials.",
       "evidence": "\"...designing proteins that solve problems... we've spun out 21 companies... interested in issues relating to sustainability... designing proteins that break down pollutants and toxins...\"",
@@ -2687,7 +2687,7 @@
         "Pre-real effects": 2
       },
       "total_score": 18,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "An AI-optimized, decentralized energy network with dynamic routing, local energy production, and intelligent demand prediction, transforming traditional centralized energy distribution models.",
       "evidence": "\"...build routers that can predict and work with different kinds of energy demand, decentralizing the energy network...\"",
@@ -2769,7 +2769,7 @@
         "Pre-real effects": 3
       },
       "total_score": 23,
-      "qualification": "✓ QUALIFIED (≥18)",
+      "qualification": "\u2713 QUALIFIED (\u226518)",
       "qualified": true,
       "description": "A new scientific ecosystem with federated research networks, multi-track career systems, and AI-enabled collaborative platforms that fundamentally transform how knowledge is produced, validated, and attributed.",
       "evidence": "\"Scientists now pursue parallel careers across academia, prediction markets, open-source projects, and commercial applications, reducing career risk and creating competition between knowledge production systems.\"",
@@ -2850,10 +2850,10 @@
         "Pre-real effects": 2
       },
       "total_score": 17,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A novel governance system where societal values are democratically determined, but specific policy implementations are selected through prediction markets that objectively forecast outcomes.",
-      "evidence": "\"We'd vote on values — the government's utility function. Then use prediction markets to forecast which policies best achieve those values.\"",
+      "evidence": "\"We'd vote on values \u2014 the government's utility function. Then use prediction markets to forecast which policies best achieve those values.\"",
       "category": "Institutional Architecture",
       "cluster_id": 12,
       "cluster_name": "Markets",
@@ -2914,7 +2914,7 @@
         "Pre-real effects": 2
       },
       "total_score": 17,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A fine-grained privacy control system where individuals can dynamically set permissions for data capture and sharing about themselves, fundamentally restructuring information privacy.",
       "evidence": "\"...concept of 'Gevulot' of privacy settings for reality, giving you very fine grained control over all the data that is recorded about you or captured about you.\"",
@@ -2959,7 +2959,7 @@
     },
     {
       "id": 107,
-      "source_file": "sources/podcast/Foresight Fellow Special | Siméon Campos: On Governing AI for Good.md",
+      "source_file": "sources/podcast/Foresight Fellow Special | Sim\u00e9on Campos: On Governing AI for Good.md",
       "name": "Whole Brain Emulation",
       "definition_check": {
         "non_existent": "Yes (currently only theoretical)",
@@ -2978,7 +2978,7 @@
         "Pre-real effects": 2
       },
       "total_score": 16,
-      "qualification": "⚠ BORDERLINE (12-17)",
+      "qualification": "\u26a0 BORDERLINE (12-17)",
       "qualified": false,
       "description": "A technological approach to creating digital replicas of human brains through advanced scanning and simulation technologies. This would potentially enable preservation of human cognitive capabilities in digital form.",
       "evidence": "\"Whole brain emulation seems like something that could allow us to get most of the benefits of advanced AI systems with potentially a bit less uncertainty or a bit less risk.\"",
@@ -3020,9 +3020,296 @@
         "reasoning": "While the concept is ambitious, it lacks a fully specified technical roadmap. The description hints at real technological components but doesn't provide a clear, implementable engineering approach. The core idea needs to be broken down into specific, measurable research stages with current technological constraints explicitly addressed."
       },
       "voted_by": "beatrice"
+    },
+    {
+      "id": 341,
+      "name": "Decentralized Adaptive Energy Network",
+      "description": "Decentralized Adaptive Energy Network - from Linda's 2nd choice votes",
+      "sota": "Dynamic blockchain platforms (Algorand, Fabric) enable P2P energy trading. Smart grids with battery storage + EV networks operational in pilots. ZK-proofs enable privacy-preserving decentralized audits.",
+      "development_paths": [
+        "Cross-border energy marketplaces with region-specific compliance",
+        "AI-driven demand response in fully decentralized networks",
+        "Renewable microgrid integration with adaptive governance"
+      ],
+      "references": [
+        "Frontiers in Blockchain - Revolutionizing energy sector via diverse blockchain (2025)",
+        "Scientific Reports - Decentralized energy optimization (2025)",
+        "TRENDS - Politics of Energy Blockchain (2024)"
+      ],
+      "voted_by": "linda",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 342,
+      "name": "Decentralized Scientific Collaboration Infrastructure",
+      "description": "Decentralized Scientific Collaboration Infrastructure - from Linda's 2nd choice votes",
+      "sota": "Platforms like Researchhub, ScienceMatters enable researcher-to-researcher collaboration. Blockchain peer review + tokenized contributions emerging. IPFS enables open access without centralized servers.",
+      "development_paths": [
+        "Decentralized funding via DAOs",
+        "Cryptographic proof of research priority",
+        "Cross-disciplinary mesh networks for serendipitous discovery"
+      ],
+      "references": [
+        "Researchhub Whitepaper (2023)",
+        "Frontiers Research Metrics - Open Science & Blockchain (2023)",
+        "arXiv - DAOs for Scientific Governance (2024)"
+      ],
+      "voted_by": "linda",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 343,
+      "name": "Futarchy (Governance by Prediction Markets)",
+      "description": "Futarchy (Governance by Prediction Markets) - from Linda's 2nd choice votes",
+      "sota": "Futarchy theory (Hanson, 1999) remains conceptual. Polymarket, Manifold, Metaculus show functional prediction markets ($billions notional). True policy futarchy not yet institutionalized at government level.",
+      "development_paths": [
+        "DAO + decentralized governance integration",
+        "Moral + empirical uncertainty markets",
+        "Hybrid governance: markets inform (not replace) deliberation"
+      ],
+      "references": [
+        "Robin Hanson - Futarchy: vote on values, bet on beliefs (2007)",
+        "Polymarket Documentation (2023)",
+        "Journal of Political Economy - Economics of Governance (2024)"
+      ],
+      "voted_by": "linda",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 344,
+      "name": "Gevulot (Privacy Infrastructure)",
+      "description": "Gevulot (Privacy Infrastructure) - from Linda's 2nd choice votes",
+      "sota": "ZK-proofs (zk-SNARKs/STARKs) enable computation without revealing inputs. TEEs (Intel SGX) + homomorphic encryption production-ready for specific use cases. FHE approaching practical performance.",
+      "development_paths": [
+        "Quantum-resistant cryptographic protocols",
+        "Verifiable private ML inference",
+        "Privacy-preserving credential systems"
+      ],
+      "references": [
+        "Cryptography.io - ZK-Proofs Primer (2024)",
+        "Gevulot Technical Whitepaper (2024)",
+        "IEEE Transactions - Practical Fully Homomorphic Encryption (2024)"
+      ],
+      "voted_by": "linda",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 345,
+      "name": "Whole Brain Emulation",
+      "description": "Whole Brain Emulation - from Linda's 2nd choice votes",
+      "sota": "No technology can achieve destructive scan at nm scale. Best: C. elegans (302 neurons, fully mapped). Human connectome impossible with current tools. Consciousness upload remains theoretical. Est. feasibility: 2060-2100+.",
+      "development_paths": [
+        "Non-destructive high-resolution brain imaging",
+        "Coarse-graining connectome models",
+        "Consciousness mechanisms + substrate independence research"
+      ],
+      "references": [
+        "Mind uploading - Wikipedia (2025)",
+        "arXiv - Continuum of consciousness (2007)",
+        "Medium - Would AI Emulation Be Conscious? (2025)"
+      ],
+      "voted_by": "linda",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 346,
+      "name": "Climate Adaptation Jurisdictional Arbitrage",
+      "description": "Climate Adaptation Jurisdictional Arbitrage - from Beatrice's 2nd choice votes",
+      "sota": "Early-stage concept. Capital flows toward climate-favorable jurisdictions. ICC arbitration used for climate disputes. Concept: exploit differential regulations for adaptation financing optimization.",
+      "development_paths": [
+        "Climate-adaptation investment vehicles exploiting regulatory gaps",
+        "Climate risk pricing derivatives",
+        "International climate courts for dispute resolution"
+      ],
+      "references": [
+        "CRA - Climate policies and investment implications (2024)",
+        "ICLG - Climate Change Arbitration Update (2024)",
+        "Investment Treaty Arbitration Review - Energy asset valuation (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 347,
+      "name": "Empathetic Neuro-AI Emotional Coaching System",
+      "description": "Empathetic Neuro-AI Emotional Coaching System - from Beatrice's 2nd choice votes",
+      "sota": "Affective computing + LLMs enable emotion recognition (text, speech, biometric). Woebot, Wysa, Replika offer conversational emotional support. Neurofeedback + AI (Muse, Headspace) combines biometrics with adaptive guidance. Limitation: no genuine empathy.",
+      "development_paths": [
+        "Multimodal emotion recognition (facial, vocal, EEG, autonomic)",
+        "Personalized longitudinal emotional models",
+        "Embodied coaching via robots/avatars"
+      ],
+      "references": [
+        "Springer - Affective Computing (Rosalind Picard, 2023)",
+        "ACM Transactions - Emotional Intelligence in HCI (2024)",
+        "The Lancet Psychiatry - Digital Mental Health & Conversational AI (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 348,
+      "name": "Expanded Moral Circle Technologies",
+      "description": "Expanded Moral Circle Technologies - from Beatrice's 2nd choice votes",
+      "sota": "Digital ethics councils, moral status databases emerging. Wild Sentience + orgs using AI to detect animal suffering. Switzerland, EU grant limited animal rights. Tech mostly informational/advocacy vs. binding enforcement.",
+      "development_paths": [
+        "AI-driven morality expansion computing moral implications",
+        "Sentience detection via bioacoustics/behavior analysis",
+        "Rights-bearing digital twins for non-human interests"
+      ],
+      "references": [
+        "CEA - Evolution of the Moral Circle (2023)",
+        "Journal of Moral Philosophy - Expanding Moral Circle (2024)",
+        "Frontiers Animal Science - Animal Sentience & Technology (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 349,
+      "name": "Habermas Machines",
+      "description": "Habermas Machines - from Beatrice's 2nd choice votes",
+      "sota": "Google DeepMind's Habermas Machine (2024) demonstrates AI-mediated deliberation. Tested on divisive issues (Brexit, climate, childcare). AI acts as neutral mediator helping groups find common ground. Initial findings: AI helps diverse groups converge. Not yet integrated into governance.",
+      "development_paths": [
+        "Scaled deliberation: small groups \u2192 national deliberative assemblies",
+        "Multi-stakeholder mediation (business vs. environment)",
+        "Constitutional deliberation for designing democratic rules"
+      ],
+      "references": [
+        "Science - AI helps humans find common ground (2024)",
+        "AAAI/ACM AIES - Deliberative Democracy in Habermas Machine (2025)",
+        "AI & Society - Deliberative AI at Scale (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 350,
+      "name": "Lifelong AI Guardians",
+      "description": "Lifelong AI Guardians - from Beatrice's 2nd choice votes",
+      "sota": "Personal AI assistants (Claude, ChatGPT with memory) store limited context. No system achieves decades-long mentorship with genuine life continuity. Replika attempts lifelong relationships. Privacy/data retention limiting factor.",
+      "development_paths": [
+        "Secure personal knowledge bases (encrypted lifetime memory)",
+        "Longitudinal psychological models + proactive intervention",
+        "Portable AI identity trained on personal data"
+      ],
+      "references": [
+        "CHI 2024 - Designing Long-Term Human-AI Relationships",
+        "Journal of Ethics & IT - Personal AI and Epistemic Privacy (2024)",
+        "AI Magazine - Continuity in Lifelong Learning (2023)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 351,
+      "name": "Moral Trade Civilization",
+      "description": "Moral Trade Civilization - from Beatrice's 2nd choice votes",
+      "sota": "Theoretical concept (William MacAskill et al). Basic idea: trade off values (humans prioritize animal welfare, etc.). Operationalization minimal. No institutional framework for moral trades at scale. Blockchain value tokenization emerging conceptually.",
+      "development_paths": [
+        "Moral tokens: tradeable value representations",
+        "Mechanism design for value negotiation",
+        "Moral bankruptcy protocols for resource scarcity"
+      ],
+      "references": [
+        "William MacAskill - Moral Trade (2014)",
+        "Journal of Philosophy - Moral Disagreement & Cooperation (2023)",
+        "arXiv - Tokenizing Values for Moral Governance (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 352,
+      "name": "Origin of Life Experimental Platform",
+      "description": "Origin of Life Experimental Platform - from Beatrice's 2nd choice votes",
+      "sota": "UCLA Institute of Geophysics, MPI Molecular Biology, CMB study prebiotic chemistry + RNA world. Recent: nucleotide synthesis from precursors (Sutherland 2024), self-replicating peptide systems. Infrastructure: high-throughput combinatorial chemistry, microfluidics.",
+      "development_paths": [
+        "Automated experimentation screening millions of reaction pathways",
+        "In vitro protocell synthesis with metabolism + self-replication",
+        "Environmental simulation chambers (hydrothermal vents, tidal pools)"
+      ],
+      "references": [
+        "PNAS - RNA World and Modern RNA (2023)",
+        "Nature - Synthesis of Activated Pyrimidine Ribonucleotides (2024)",
+        "Life - Systems Chemistry Approaches to Abiogenesis (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
+    },
+    {
+      "id": 353,
+      "name": "Protein Design for Global Challenges",
+      "description": "Protein Design for Global Challenges - from Beatrice's 2nd choice votes",
+      "sota": "AlphaFold2 solved protein folding; AlphaFold3 designs novel proteins. RFdiffusion (Baker Lab, UW) generates task-specific proteins. Breakthroughs: synthetic antibodies for cancer, plastic-degrading enzymes (PETase), CRISPR improvements. Companies (Isomorphic, Generate Biomedicines) deploying.",
+      "development_paths": [
+        "Programmable matter via designed proteins",
+        "De novo metabolic pathways for bioremediation + biomanufacturing",
+        "Personalized therapeutic proteins for rare diseases"
+      ],
+      "references": [
+        "Nature - AlphaFold3 accurate biomolecular structure prediction (2024)",
+        "Science - Computational design of novel proteins (2023)",
+        "Annual Review of Biomedical Engineering - ML-Guided Protein Engineering (2024)"
+      ],
+      "voted_by": "beatrice",
+      "consensus_status": "2nd_choice_added",
+      "source_file": "consensus_vote_integration",
+      "category": "TBD - to be categorized",
+      "cluster_id": 99,
+      "cluster_name": "Pending Recategorization"
     }
   ],
   "total_with_votes": 39,
   "linda_yes_count": 8,
-  "beatrice_yes_count": 5
+  "beatrice_yes_count": 5,
+  "total_entities": 52
 }
