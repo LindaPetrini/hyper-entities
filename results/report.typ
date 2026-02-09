@@ -15,6 +15,8 @@
 #set text(font: "New Computer Modern", size: 10.5pt)
 #set par(justify: true, leading: 0.65em)
 #set heading(numbering: "1.")
+#show link: set text(fill: rgb("#1e40af"))
+#show link: underline
 
 // ─── Title Page ───
 #v(4cm)
