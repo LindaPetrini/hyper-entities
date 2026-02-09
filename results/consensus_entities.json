@@ -50,7 +50,7 @@
       },
       "stage2_total": 60,
       "cluster_id": 9,
-      "cluster_name": "Science & Research",
+      "cluster_name": "Science & Discovery",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -131,8 +131,8 @@
         "Human Agency Impact": 5
       },
       "stage2_total": 57,
-      "cluster_id": 15,
-      "cluster_name": "Governance & Platform",
+      "cluster_id": 4,
+      "cluster_name": "Governance & Collective Intelligence",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -213,8 +213,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 57,
-      "cluster_id": 18,
-      "cluster_name": "Ecosystem & Open",
+      "cluster_id": 4,
+      "cluster_name": "Governance & Collective Intelligence",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -295,8 +295,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 44,
-      "cluster_id": 2,
-      "cluster_name": "Epistemic & Stack",
+      "cluster_id": 3,
+      "cluster_name": "Truth & Epistemic Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -376,8 +376,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 51,
-      "cluster_id": 12,
-      "cluster_name": "Markets",
+      "cluster_id": 5,
+      "cluster_name": "Markets & Incentive Systems",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -457,8 +457,8 @@
         "Human Agency Impact": 4
       },
       "stage2_total": 44,
-      "cluster_id": 14,
-      "cluster_name": "Learning & Adaptive",
+      "cluster_id": 9,
+      "cluster_name": "Science & Discovery",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -537,8 +537,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 54,
-      "cluster_id": 13,
-      "cluster_name": "Governance",
+      "cluster_id": 3,
+      "cluster_name": "Truth & Epistemic Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -602,8 +602,8 @@
       "description": "An AI-powered mediation platform designed to resolve conflicts through progressive strategies of win-win negotiation, restoration, and proportional consequence, aimed at reducing escalation in interpersonal, organizational, and international disputes.",
       "evidence": "\"You could write a mediation tool that's like, 'Hey, we have a problem. Let's talk to this mediator.' And it'll try and get us the win-win. And if that fails, it'll try and get us the restoration. And if that fails, it'll try and get us the disgorgement...\"",
       "category": "Institutional Architecture / Technology",
-      "cluster_id": 14,
-      "cluster_name": "Learning & Adaptive",
+      "cluster_id": 4,
+      "cluster_name": "Governance & Collective Intelligence",
       "stage1_consolidated": {
         "reality_gap": 6,
         "transformative_potential": 4,
@@ -683,8 +683,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 47,
-      "cluster_id": 7,
-      "cluster_name": "Energy & Clean",
+      "cluster_id": 1,
+      "cluster_name": "Energy & Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 8,
         "transformative_potential": 5,
@@ -765,8 +765,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 53,
-      "cluster_id": 3,
-      "cluster_name": "Governance & Global",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -846,8 +846,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 47,
-      "cluster_id": 2,
-      "cluster_name": "Epistemic & Stack",
+      "cluster_id": 3,
+      "cluster_name": "Truth & Epistemic Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -929,8 +929,8 @@
         "Human Agency Impact": 4
       },
       "stage2_total": 54,
-      "cluster_id": 4,
-      "cluster_name": "Global & Molecular",
+      "cluster_id": 2,
+      "cluster_name": "Manufacturing & Matter",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1012,8 +1012,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 53,
-      "cluster_id": 2,
-      "cluster_name": "Epistemic & Stack",
+      "cluster_id": 3,
+      "cluster_name": "Truth & Epistemic Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 8,
         "transformative_potential": 4,
@@ -1077,8 +1077,8 @@
       "description": "A system of AI assistants designed to be fundamentally loyal to individual human users, helping them navigate complex problems and daily life while respecting their goals and interests.",
       "evidence": "\"I have been calling them loyal AI assistance. there is a loyal AI system that doesn't have selfish interests and works to advance your goals and interests.\"",
       "category": "Technology / Institutional Architecture",
-      "cluster_id": 4,
-      "cluster_name": "Global & Molecular",
+      "cluster_id": 7,
+      "cluster_name": "AI & Human Agency",
       "stage1_consolidated": {
         "reality_gap": 5,
         "transformative_potential": 3,
@@ -1158,8 +1158,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 44,
-      "cluster_id": 13,
-      "cluster_name": "Governance",
+      "cluster_id": 5,
+      "cluster_name": "Markets & Incentive Systems",
       "stage1_consolidated": {
         "reality_gap": 6,
         "transformative_potential": 5,
@@ -1240,8 +1240,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 53,
-      "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1322,8 +1322,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 55,
-      "cluster_id": 13,
-      "cluster_name": "Governance",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1404,8 +1404,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 48,
-      "cluster_id": 13,
-      "cluster_name": "Governance",
+      "cluster_id": 7,
+      "cluster_name": "AI & Human Agency",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1485,8 +1485,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 52,
-      "cluster_id": 13,
-      "cluster_name": "Governance",
+      "cluster_id": 4,
+      "cluster_name": "Governance & Collective Intelligence",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1552,7 +1552,7 @@
       "evidence": "\"...why don't we build atheoretical science that just explores what's there? ... we're going to build massive sensor networks... and we're going to let the AI find patterns in it.\"",
       "category": "Research Infrastructure / Technological Methodology",
       "cluster_id": 9,
-      "cluster_name": "Science & Research",
+      "cluster_name": "Science & Discovery",
       "stage1_consolidated": {
         "reality_gap": 5,
         "transformative_potential": 4,
@@ -1632,8 +1632,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 57,
-      "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_id": 2,
+      "cluster_name": "Manufacturing & Matter",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1714,8 +1714,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 44,
-      "cluster_id": 9,
-      "cluster_name": "Science & Research",
+      "cluster_id": 2,
+      "cluster_name": "Manufacturing & Matter",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1796,8 +1796,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 58,
-      "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -1860,8 +1860,8 @@
       "description": "A hypothetical machine capable of being programmed to construct virtually anything within the laws of physics, fundamentally transforming human labor and production by eliminating physical toil and enabling exponential self-replication.",
       "evidence": "\"A universal constructor is one that can be programmed to do anything possible, as long as it does not violate the laws of physics.\"\n\"After the universal constructor is first built, it can then build exponentially more.\"",
       "category": "Technology / Institutional Architecture",
-      "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_id": 2,
+      "cluster_name": "Manufacturing & Matter",
       "stage1_consolidated": {
         "reality_gap": 5,
         "transformative_potential": 4,
@@ -1941,8 +1941,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 60,
-      "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2023,8 +2023,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 56,
-      "cluster_id": 1,
-      "cluster_name": "Coordination & Ai-Enabled",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2089,8 +2089,8 @@
       "category": "Institutional Architecture",
       "stage2_scores": {},
       "stage2_total": 0,
-      "cluster_id": 5,
-      "cluster_name": "Economic & Universal",
+      "cluster_id": 1,
+      "cluster_name": "Energy & Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2171,8 +2171,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 48,
-      "cluster_id": 16,
-      "cluster_name": "Emotional & Urban",
+      "cluster_id": 7,
+      "cluster_name": "AI & Human Agency",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2237,7 +2237,7 @@
       "evidence": "\"...potentially exciting applications for things like moral circle expansion through new ways of communicating, like neurotechnologies. To be able to communicate with someone on a whole different level of granularity or nuance could be a new moral revolution.\"",
       "category": "Technology / Philosophical Infrastructure",
       "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_name": "Ethics & Moral Expansion",
       "stage1_consolidated": {
         "reality_gap": 6,
         "transformative_potential": 4,
@@ -2317,8 +2317,8 @@
         "Human Agency Impact": 4
       },
       "stage2_total": 42,
-      "cluster_id": 15,
-      "cluster_name": "Governance & Platform",
+      "cluster_id": 4,
+      "cluster_name": "Governance & Collective Intelligence",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2399,8 +2399,8 @@
         "Human Agency Impact": 2
       },
       "stage2_total": 49,
-      "cluster_id": 11,
-      "cluster_name": "Ecosystem & Tool",
+      "cluster_id": 7,
+      "cluster_name": "AI & Human Agency",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2464,8 +2464,8 @@
       "description": "A future societal model where ethical preferences can be systematically traded, allowing diverse moral perspectives to achieve mutually beneficial outcomes and maximize collective value alignment.",
       "evidence": "Discussion of moral trade, including example of trading dietary and environmental preferences",
       "category": "Institutional Architecture / Ethical Coordination Model",
-      "cluster_id": 3,
-      "cluster_name": "Governance & Global",
+      "cluster_id": 6,
+      "cluster_name": "Ethics & Moral Expansion",
       "stage1_consolidated": {
         "reality_gap": 5,
         "transformative_potential": 3,
@@ -2546,7 +2546,7 @@
       },
       "stage2_total": 46,
       "cluster_id": 9,
-      "cluster_name": "Science & Research",
+      "cluster_name": "Science & Discovery",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2627,8 +2627,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 53,
-      "cluster_id": 4,
-      "cluster_name": "Global & Molecular",
+      "cluster_id": 9,
+      "cluster_name": "Science & Discovery",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2709,8 +2709,8 @@
         "Human Agency Impact": 3
       },
       "stage2_total": 51,
-      "cluster_id": 7,
-      "cluster_name": "Energy & Clean",
+      "cluster_id": 1,
+      "cluster_name": "Energy & Infrastructure",
       "stage1_consolidated": {
         "reality_gap": 6,
         "transformative_potential": 4,
@@ -2792,7 +2792,7 @@
       },
       "stage2_total": 53,
       "cluster_id": 9,
-      "cluster_name": "Science & Research",
+      "cluster_name": "Science & Discovery",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 5,
@@ -2855,8 +2855,8 @@
       "description": "A novel governance system where societal values are democratically determined, but specific policy implementations are selected through prediction markets that objectively forecast outcomes.",
       "evidence": "\"We'd vote on values — the government's utility function. Then use prediction markets to forecast which policies best achieve those values.\"",
       "category": "Institutional Architecture",
-      "cluster_id": 12,
-      "cluster_name": "Markets",
+      "cluster_id": 5,
+      "cluster_name": "Markets & Incentive Systems",
       "stage1_consolidated": {
         "reality_gap": 7,
         "transformative_potential": 4,
@@ -2919,8 +2919,8 @@
       "description": "A fine-grained privacy control system where individuals can dynamically set permissions for data capture and sharing about themselves, fundamentally restructuring information privacy.",
       "evidence": "\"...concept of 'Gevulot' of privacy settings for reality, giving you very fine grained control over all the data that is recorded about you or captured about you.\"",
       "category": "Technological Infrastructure",
-      "cluster_id": 2,
-      "cluster_name": "Epistemic & Stack",
+      "cluster_id": 4,
+      "cluster_name": "Governance & Collective Intelligence",
       "stage1_consolidated": {
         "reality_gap": 6,
         "transformative_potential": 4,
@@ -2983,8 +2983,8 @@
       "description": "A technological approach to creating digital replicas of human brains through advanced scanning and simulation technologies. This would potentially enable preservation of human cognitive capabilities in digital form.",
       "evidence": "\"Whole brain emulation seems like something that could allow us to get most of the benefits of advanced AI systems with potentially a bit less uncertainty or a bit less risk.\"",
       "category": "Technology",
-      "cluster_id": 6,
-      "cluster_name": "Interfaces & Brain",
+      "cluster_id": 8,
+      "cluster_name": "Interfaces & Augmentation",
       "stage1_consolidated": {
         "reality_gap": 6,
         "transformative_potential": 4,
