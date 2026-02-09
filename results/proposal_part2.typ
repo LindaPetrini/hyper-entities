@@ -15,7 +15,7 @@
   #text(13pt, fill: luma(80))[From Identification to Action]
   #v(4pt)
   #text(9.5pt, fill: luma(100))[
-    Linda Petrini & Beatrice Erkers  ---  Foresight Institute
+    Linda Petrini, Beatrice Erkers & Martin Karlsson  ---  Foresight Institute
   ]
 ]
 #v(0.3cm)

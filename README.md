@@ -1,149 +1,77 @@
-# Hyper-Entities Extraction & Analysis v3
+# Hyper-Entities
 
-Rigorous extraction and dual-scoring assessment of hyper-entities from Foresight Institute's content collection.
+Systematic identification, scoring, and curation of **hyper-entities** from the Foresight Institute research community.
 
-## 📊 Interactive Dashboard
+A hyper-entity is a coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence.
 
-**[View Live Dashboard →](https://lindapetrini.github.io/hyper-entities/results/dashboard.html)**
+## Key Links
 
-Interactive dashboard with 345 hyper-entities, dual scoring framework, searchable list, and cluster visualization.
+| | |
+|---|---|
+| **[Entity Explorer Dashboard](https://lindapetrini.github.io/hyper-entities/results/dashboard.html)** | All 345 extracted entities with dual scoring, search, and cluster visualization |
+| **[Consensus Highlights](https://lindapetrini.github.io/hyper-entities/results/highlights.html)** | 39 curated entities organized into 9 thematic groups with research summaries |
+| **[Full Report (PDF)](results/report.pdf)** | Methodology, scoring framework, all 39 entities with state-of-the-art and next-steps analysis, 147 source links |
+| **[Part II Proposal (PDF)](results/proposal_part2.pdf)** | One-pager for turning research into action via coordination.network, owockibot bounties, and Drips funding |
 
-## 🎯 What's a Hyper-Entity?
+## Process
 
-A hyper-entity is:
+**Extraction** — 345 hyper-entities extracted from 108 Foresight Institute sources (podcasts, world-gallery submissions, essays) using a three-stage scoring pipeline:
 
-> "A coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence."
+- **Stage 1** (Hyper-Entity Qualification): 9 axes, 0–3 each, max 27. Threshold ≥18.
+- **Stage 2** (Technology Impact): 14 dimensions, 0–5 each, max 70.
+- **Stage 3** (d/acc Values Alignment): 4 dimensions (Democratic, Decentralized, Defensive, Differential), 0–5 each, max 20.
 
-## 📐 Two-Stage Scoring Framework
+**Curation** — Linda Petrini and Beatrice Erkers independently reviewed all scored entities, then cross-voted on each other's unique picks, producing a consensus list of 39 highlighted entities.
 
-### Stage 1: Qualification (9 axes, 0-3 each, max 27)
-Entities must score **≥18/27** to qualify:
-- Non-existence, Plausibility, Design specificity
-- New action space, Roadmap clarity, Coordination gravity
-- Resource pull, Narrative centrality, Pre-real effects
+**Research** — Each of the 39 entities was enriched with two paragraphs: current state of the art and viable next steps / key challenges.
 
-### Stage 2: Impact Assessment (14 dimensions, 0-5 each, max 70)
-For qualified entities:
-- Capability Discontinuity, Cross-Domain Reach, Scalability
-- Autonomy, Composability, Feedback Intensity
-- Irreversibility, Power Concentration, Externality Magnitude
-- Misuse Asymmetry, Governance Lag, Narrative Lock-In
-- Path Dependency, Human Agency Impact
+**Grouping** — The 39 entities are organized into 9 thematic groups:
 
-See **[METHODOLOGY.md](METHODOLOGY.md)** for full scoring framework.
+1. Energy & Infrastructure (3)
+2. Manufacturing & Matter (4)
+3. Truth & Epistemic Infrastructure (4)
+4. Governance & Collective Intelligence (6)
+5. Markets & Incentive Systems (3)
+6. Ethics & Moral Expansion (2)
+7. AI & Human Agency (4)
+8. Interfaces & Augmentation (7)
+9. Science & Discovery (6)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── results/
-│   ├── hyperentities_dashboard_v4.html         # Interactive dashboard ⭐
-│   ├── hyperentities_v3_with_stage2.json       # All entities with dual scoring (583KB)
-│   ├── hyperentities_v3.json                   # Entities with Stage 1 only (461KB)
-│   └── hyperentities_extracted_v3.md           # Full extraction results (13,689 lines)
-├── METHODOLOGY.md                               # Scoring framework documentation
-├── extract_hyperentities_v3.py                  # Main extraction script
-├── assess_stage2_scoring.py                     # Stage 2 assessment script
-├── create_dashboard_v4.py                       # Dashboard generator
-├── convert_to_json_v3.py                        # MD to JSON converter
-└── extraction_prompt_v3.txt                     # Extraction prompt
+│   ├── dashboard.html                  # Full entity explorer (345 entities)
+│   ├── highlights.html                 # Consensus highlights (39 entities)
+│   ├── report.typ                      # Full report (Typst source)
+│   ├── report.pdf                      # Full report (compiled)
+│   ├── proposal_part2.typ              # Part II proposal (Typst source)
+│   ├── proposal_part2.pdf              # Part II proposal (compiled)
+│   ├── consensus_entities.json         # 39 consensus entities with scores
+│   ├── consensus_meeting_notes.md      # Entities grouped by theme
+│   ├── entity_research.json            # Research data (SOTA + next steps)
+│   ├── entity_research.md              # Research (readable markdown)
+│   ├── cluster_analysis.json           # Clustering data
+│   └── stage1_extraction/              # Raw extraction results
+├── create_dashboard.py                 # Dashboard generator
+├── analyze_clusters.py                 # Thematic clustering
+├── score_dacc.py                       # d/acc scoring (requires API key)
+├── METHODOLOGY.md                      # Full scoring framework
+└── CLAUDE.md                           # Project instructions
 ```
 
-## 🚀 Key Results
+## Commands
 
-- **345 hyper-entities** extracted from 108 sources
-- **261 qualified entities** (≥18/27 on Stage 1)
-- **Average Stage 1 score:** 19.3/27
-- **Average Stage 2 score:** 46.5/70
-- **12 thematic clusters** identified via semantic embeddings
-
-## 🏆 Top 10 Entities by Stage 2 Impact Score
-
-1. **AI-Designed Medical Nanobots** - S1: 21/27 | S2: 63/70
-2. **AI Self-Diffusion Infrastructure** - S1: 22/27 | S2: 62/70
-3. **Cosmological Constant Manipulation** - S1: 19/27 | S2: 60/70
-4. **Adaptive AI-Driven Problem Solving** - S1: 24/27 | S2: 60/70
-5. **AI Research Acceleration System** - S1: 23/27 | S2: 60/70
-6. **Inference-Time Scaling Paradigm** - S1: 22/27 | S2: 60/70
-7. **Brain Emulation (Ems)** - S1: 18/27 | S2: 60/70
-8. **Human Superintelligence via BCIs** - S1: 21/27 | S2: 60/70
-9. **AI Scientist** - S1: 24/27 | S2: 59/70
-10. **Neuroscience Architectural Understanding** - S1: 22/27 | S2: 59/70
-
-## 📈 Dashboard Features
-
-- **Scrollable entity list** with live search
-- **Sort by:** Stage 1 score, Stage 2 score, name, category
-- **Interactive cluster visualization** with D3.js
-- **Expandable detail view** - click "Open in Larger View" button for full-screen reading
-- **Dual scoring display** - see both qualification and impact scores
-- **Visual scoring bars** for all 9 Stage 1 axes and 14 Stage 2 dimensions
-
-## 🔧 Usage
-
-### Run Full Extraction (v3)
 ```bash
-# Set API key
-export ANTHROPIC_API_KEY='your-key'
-
-# Run extraction
-python3 extract_hyperentities_v3.py
-
-# Run Stage 2 assessment (on qualified entities)
-python3 assess_stage2_scoring.py
-
-# Generate dashboard
-python3 create_dashboard_v4.py
+python create_dashboard.py   # Regenerate main dashboard
+python score_dacc.py         # Score entities on d/acc dimensions (requires API key)
+typst compile results/report.typ results/report.pdf  # Compile report
 ```
 
-### Convert to JSON
-```bash
-python3 convert_to_json_v3.py
-```
+## Credits
 
-## 💰 Cost
-
-**Total API cost: $5.38**
-- Extraction (345 entities, 108 files): $5.08
-- Stage 2 Assessment (261 entities): $0.30
-
-## 📊 Statistics
-
-**Category Distribution:**
-- Technology / Institutional Architecture: 44 (12.8%)
-- Institutional Architecture: 38 (11.0%)
-- Technology: 29 (8.4%)
-- Institutional Architecture / Technology: 24 (7.0%)
-- Other categories: 210 (60.8%)
-
-**Scoring Distribution:**
-- Qualified (≥18/27): 261 entities (75.7%)
-- Borderline (12-17/27): 73 entities (21.2%)
-- Below threshold (<12/27): 11 entities (3.1%)
-
-## 🔬 Methodology
-
-This project uses a rigorous two-stage framework:
-
-1. **Stage 1 Qualification:** Filters for genuine hyper-entities with specific system architectures and pre-real effects
-2. **Stage 2 Impact Assessment:** Evaluates qualified entities on 14 dimensions of civilizational impact
-
-The framework dramatically improves on v2 (which extracted 1,077 vague concepts) by:
-- ✅ Requiring formal definition compliance
-- ✅ Using 30k chunk size with 3k overlap for thorough extraction
-- ✅ Applying explicit scoring thresholds (≥18/27)
-- ✅ Providing detailed justification for each score
-
-See **[METHODOLOGY.md](METHODOLOGY.md)** for complete details.
-
-## 📝 License
-
-For Foresight Institute internal use.
-
-## 🤝 Credits
-
-Extraction and analysis conducted with Claude Sonnet 4.5 via Claude Code.
+Linda Petrini & Beatrice Erkers, Foresight Institute. Extraction and analysis conducted with Claude.
 
 ---
 
-**Last updated:** 2026-01-14
-**Version:** 3.0 with dual scoring framework
+**Last updated:** 2026-02-09
