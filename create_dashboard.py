@@ -681,6 +681,10 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
         </div>
 
         <div id="viz-container">
+            <div class="viz-toggle" style="position: absolute; top: 10px; left: 10px; z-index: 100; display: flex; gap: 5px;">
+                <button class="zoom-btn" style="width: auto; padding: 4px 10px; font-size: 11px;" id="btn-cluster-view" onclick="switchVizMode('cluster')" title="Cluster View">Clusters</button>
+                <button class="zoom-btn" style="width: auto; padding: 4px 10px; font-size: 11px; opacity: 0.6;" id="btn-scatter-view" onclick="switchVizMode('scatter')" title="Scatter Plot">Scatter</button>
+            </div>
             <div class="zoom-controls">
                 <button class="zoom-btn" onclick="zoomIn()" title="Zoom In">+</button>
                 <button class="zoom-btn" onclick="zoomOut()" title="Zoom Out">-</button>
@@ -898,6 +902,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
         const v3_1_data = __V3_1_DATA_PLACEHOLDER__;
         const v3_3_data = __V3_3_DATA_PLACEHOLDER__;
 
+        const scatterData = __SCATTER_DATA_PLACEHOLDER__;
+
         let currentVersion = 'v3.4';
         let currentData = v3_3_data;
         let entities = currentData.entities;
@@ -905,6 +911,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
         let selectedEntity = null;
         let currentSort = 'hidden_gem';
         let showOnlyStarred = false;
+        let currentVizMode = 'cluster';
 
         // Calculate composite scores for an entity
         function calcCompositeScores(e) {{
@@ -1233,7 +1240,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         <span class="score-badge score-dacc" title="Defensive">Df${{def}}</span>
                         <span class="score-badge score-dacc" title="Differential">Di${{dif}}</span>`;
                 }} else if (showDacc) {{
-                    daccBadge = `<span class="score-badge score-dacc">d/acc: ${{daccScore}}</span>`;
+                    daccBadge = `<span class="score-badge score-dacc">d/acc: ${{Math.round(daccScore/20*100)}}</span>`;
                 }}
 
                 const concreteNorm = Math.round(concreteScore * 20);
@@ -1253,8 +1260,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 // Hide S1/S2 for v3.4
                 const showS1S2 = !isV34;
                 const s1s2Badges = showS1S2 ? `
-                            <span class="score-badge score-s1">S1:${{s1Score}}</span>
-                            <span class="score-badge score-s2">S2:${{s2Score}}</span>` : '';
+                            <span class="score-badge score-s1">S1:${{Math.round(s1Score/27*100)}}</span>
+                            <span class="score-badge score-s2">S2:${{Math.round(s2Score/70*100)}}</span>` : '';
 
                 div.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
@@ -1323,7 +1330,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         <div class="score-box"><div class="score-label">Defensive</div><div class="score-value score-dacc">${{def}}</div></div>
                         <div class="score-box"><div class="score-label">Differential</div><div class="score-value score-dacc">${{dif}}</div></div>`;
             }} else if (showDacc) {{
-                daccScoreBox = `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{daccScore}}/20</div></div>`;
+                daccScoreBox = `<div class="score-box"><div class="score-label">d/acc</div><div class="score-value score-dacc">${{Math.round(daccScore/20*100)}}</div></div>`;
             }}
 
             const concreteScoreBox = showConcrete
@@ -1338,11 +1345,11 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                         </div>` : `
                         <div class="score-box">
                             <div class="score-label">Stage 1</div>
-                            <div class="score-value score-s1">${{s1Score}}</div>
+                            <div class="score-value score-s1">${{Math.round(s1Score/27*100)}}</div>
                         </div>
                         <div class="score-box">
                             <div class="score-label">Stage 2</div>
-                            <div class="score-value score-s2">${{s2Score}}</div>
+                            <div class="score-value score-s2">${{Math.round(s2Score/70*100)}}</div>
                         </div>`;
 
             let html = `
@@ -1381,7 +1388,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                             <div style="display: flex; gap: 15px; margin-bottom: 10px;">
                                 <div style="background: #1a1f3a; padding: 8px 12px; border-radius: 6px; border-left: 3px solid ${{verdictColor}};">
                                     <span style="color: ${{verdictColor}}; font-weight: 600;">${{verdictLabel}}</span>
-                                    <span style="color: #94a3b8; margin-left: 10px;">Score: ${{c.score}}/5</span>
+                                    <span style="color: #94a3b8; margin-left: 10px;">Score: ${{Math.round(c.score/5*100)}}</span>
                                 </div>
                             </div>
                     `;
@@ -1431,28 +1438,28 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                                     <div class="score-bar-container">
                                         <div class="score-bar" style="width: ${{(dacc.democratic / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
                                     </div>
-                                    <span class="score-num">${{dacc.democratic}}/5</span>
+                                    <span class="score-num">${{Math.round(dacc.democratic/5*100)}}</span>
                                 </div>
                                 <div class="score-row">
                                     <span class="score-name">Decentralized</span>
                                     <div class="score-bar-container">
                                         <div class="score-bar" style="width: ${{(dacc.decentralized / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
                                     </div>
-                                    <span class="score-num">${{dacc.decentralized}}/5</span>
+                                    <span class="score-num">${{Math.round(dacc.decentralized/5*100)}}</span>
                                 </div>
                                 <div class="score-row">
                                     <span class="score-name">Defensive</span>
                                     <div class="score-bar-container">
                                         <div class="score-bar" style="width: ${{(dacc.defensive / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
                                     </div>
-                                    <span class="score-num">${{dacc.defensive}}/5</span>
+                                    <span class="score-num">${{Math.round(dacc.defensive/5*100)}}</span>
                                 </div>
                                 <div class="score-row">
                                     <span class="score-name">Differential</span>
                                     <div class="score-bar-container">
                                         <div class="score-bar" style="width: ${{(dacc.differential / 5) * 100}}%; background: linear-gradient(90deg, #34d399, #10b981);"></div>
                                     </div>
-                                    <span class="score-num">${{dacc.differential}}/5</span>
+                                    <span class="score-num">${{Math.round(dacc.differential/5*100)}}</span>
                                 </div>
                             </div>
                             ${{dacc.reasoning ? `<p style="margin-top: 10px; font-size: 12px; color: #94a3b8; font-style: italic;">${{dacc.reasoning}}</p>` : ''}}
@@ -1462,9 +1469,9 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
 
                 // Show consolidated scores (hide for v3.4)
                 if (entity.stage1_consolidated && currentVersion !== 'v3.4') {{
-                    const s1_rg = (entity.stage1_consolidated.reality_gap / 9 * 10).toFixed(1);
-                    const s1_tp = (entity.stage1_consolidated.transformative_potential / 6 * 10).toFixed(1);
-                    const s1_cm = (entity.stage1_consolidated.current_momentum / 12 * 10).toFixed(1);
+                    const s1_rg = (entity.stage1_consolidated.reality_gap / 9 * 100).toFixed(0);
+                    const s1_tp = (entity.stage1_consolidated.transformative_potential / 6 * 100).toFixed(0);
+                    const s1_cm = (entity.stage1_consolidated.current_momentum / 12 * 100).toFixed(0);
                     html += `
                         <div class="detail-section">
                             <div class="section-title">Stage 1 Consolidated</div>
@@ -1496,9 +1503,9 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 }}
 
                 if (entity.stage2_consolidated && currentVersion !== 'v3.4') {{
-                    const s2_tp = (entity.stage2_consolidated.transformative_power / 25 * 10).toFixed(1);
-                    const s2_sr = (entity.stage2_consolidated.systemic_risk / 25 * 10).toFixed(1);
-                    const s2_le = (entity.stage2_consolidated.lockin_effects / 20 * 10).toFixed(1);
+                    const s2_tp = (entity.stage2_consolidated.transformative_power / 25 * 100).toFixed(0);
+                    const s2_sr = (entity.stage2_consolidated.systemic_risk / 25 * 100).toFixed(0);
+                    const s2_le = (entity.stage2_consolidated.lockin_effects / 20 * 100).toFixed(0);
                     html += `
                         <div class="detail-section">
                             <div class="section-title">Stage 2 Consolidated</div>
@@ -1561,7 +1568,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 if (entity.scoring) {{
                     html += `
                         <div class="detail-section">
-                            <div class="section-title">Stage 1 Scoring (0-27)</div>
+                            <div class="section-title">Stage 1 Scoring (0-100)</div>
                             <div class="scoring-grid">
                     `;
 
@@ -1573,7 +1580,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
 
                     stage1Axes.forEach(axis => {{
                         const score = entity.scoring[axis] || 0;
-                        const normalized = (score / 3 * 10).toFixed(1);
+                        const normalized = (score / 3 * 100).toFixed(0);
                         html += `
                             <div class="score-row">
                                 <span class="score-name">${{axis}}</span>
@@ -1594,7 +1601,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 if (entity.stage2_scores) {{
                     html += `
                         <div class="detail-section">
-                            <div class="section-title">Stage 2 Impact Assessment (0-70)</div>
+                            <div class="section-title">Stage 2 Impact Assessment (0-100)</div>
                             <div class="scoring-grid">
                     `;
 
@@ -1608,7 +1615,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
 
                     stage2Dims.forEach(dim => {{
                         const score = entity.stage2_scores[dim] || 0;
-                        const normalized = (score / 5 * 10).toFixed(1);
+                        const normalized = (score / 5 * 100).toFixed(0);
                         html += `
                             <div class="score-row">
                                 <span class="score-name">${{dim}}</span>
@@ -1879,6 +1886,178 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
             }}
         }}
 
+        // Scatter plot colors (must match static plot)
+        const scatterColors = {{
+            'Energy & Infrastructure': '#e63946',
+            'Manufacturing & Matter': '#f4a261',
+            'Truth & Epistemic Infrastructure': '#2a9d8f',
+            'Governance & Collective Intelligence': '#264653',
+            'Markets & Incentive Systems': '#e9c46a',
+            'Ethics & Moral Expansion': '#a8dadc',
+            'AI & Human Agency': '#457b9d',
+            'Interfaces & Augmentation': '#6a4c93',
+            'Science & Discovery': '#1d3557',
+        }};
+
+        const maturitySizes = {{
+            'Foundational Research': 5,
+            'Early Demonstrations': 8,
+            'Scaling Challenges': 11,
+            'Near Deployment': 15,
+        }};
+
+        function switchVizMode(mode) {{
+            currentVizMode = mode;
+            document.getElementById('btn-cluster-view').style.opacity = mode === 'cluster' ? '1' : '0.6';
+            document.getElementById('btn-scatter-view').style.opacity = mode === 'scatter' ? '1' : '0.6';
+            if (mode === 'cluster') {{
+                renderVisualization();
+            }} else {{
+                renderScatterPlot();
+            }}
+        }}
+
+        function renderScatterPlot() {{
+            const container = document.getElementById('viz-container');
+            // Remove SVG but keep control buttons
+            const existingSvg = container.querySelector('svg');
+            if (existingSvg) existingSvg.remove();
+
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            const margin = {{ top: 40, right: 30, bottom: 60, left: 60 }};
+            const plotW = width - margin.left - margin.right;
+            const plotH = height - margin.top - margin.bottom;
+
+            const svg = d3.select(container)
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            const g = svg.append('g')
+                .attr('transform', `translate(${{margin.left}},${{margin.top}})`);
+
+            // Scales (scores normalized to 0-100)
+            const xScale = d3.scaleLinear().domain([30, 105]).range([0, plotW]);
+            const yScale = d3.scaleLinear().domain([54, 94]).range([plotH, 0]);
+
+            // Quadrant lines (d/acc=75 = 15/20*100, tech=74 = 52/70*100)
+            g.append('line').attr('x1', xScale(75)).attr('x2', xScale(75))
+                .attr('y1', 0).attr('y2', plotH)
+                .attr('stroke', '#3a4f7a').attr('stroke-dasharray', '4,4').attr('opacity', 0.5);
+            g.append('line').attr('x1', 0).attr('x2', plotW)
+                .attr('y1', yScale(74)).attr('y2', yScale(74))
+                .attr('stroke', '#3a4f7a').attr('stroke-dasharray', '4,4').attr('opacity', 0.5);
+
+            // Quadrant labels
+            g.append('text').attr('x', xScale(52)).attr('y', yScale(92))
+                .attr('text-anchor', 'middle').attr('fill', '#555').attr('font-size', '10px')
+                .text('Needs governance attention');
+            g.append('text').attr('x', xScale(92)).attr('y', yScale(92))
+                .attr('text-anchor', 'middle').attr('fill', '#555').attr('font-size', '10px')
+                .text('"Sweet spot"');
+            g.append('text').attr('x', xScale(92)).attr('y', yScale(57))
+                .attr('text-anchor', 'middle').attr('fill', '#555').attr('font-size', '10px')
+                .text('Values-aligned, niche impact');
+
+            // Axes
+            g.append('g').attr('transform', `translate(0,${{plotH}})`)
+                .call(d3.axisBottom(xScale).ticks(8))
+                .selectAll('text,line,path').attr('stroke', '#555').attr('fill', '#94a3b8');
+            g.append('g')
+                .call(d3.axisLeft(yScale).ticks(8))
+                .selectAll('text,line,path').attr('stroke', '#555').attr('fill', '#94a3b8');
+
+            // Axis labels
+            g.append('text').attr('x', plotW / 2).attr('y', plotH + 45)
+                .attr('text-anchor', 'middle').attr('fill', '#94a3b8').attr('font-size', '12px')
+                .text('d/acc Values Alignment (0-100)');
+            g.append('text').attr('transform', 'rotate(-90)')
+                .attr('x', -plotH / 2).attr('y', -45)
+                .attr('text-anchor', 'middle').attr('fill', '#94a3b8').attr('font-size', '12px')
+                .text('Technology Impact (0-100)');
+
+            // Title
+            svg.append('text').attr('x', width / 2).attr('y', 25)
+                .attr('text-anchor', 'middle').attr('fill', '#60a5fa')
+                .attr('font-size', '14px').attr('font-weight', 'bold')
+                .text('d/acc Alignment vs. Technology Impact');
+
+            // Tooltip
+            const tooltip = d3.select(container).append('div')
+                .style('position', 'absolute')
+                .style('background', '#1e293b')
+                .style('border', '1px solid #3a4f7a')
+                .style('border-radius', '6px')
+                .style('padding', '8px 12px')
+                .style('font-size', '12px')
+                .style('color', '#e0e6f0')
+                .style('pointer-events', 'none')
+                .style('opacity', 0)
+                .style('z-index', 200);
+
+            // Plot points
+            g.selectAll('circle.scatter-dot')
+                .data(scatterData)
+                .enter()
+                .append('circle')
+                .attr('class', 'scatter-dot')
+                .attr('cx', d => xScale(Math.round(d.dacc/20*100)))
+                .attr('cy', d => yScale(Math.round(d.tech/70*100)))
+                .attr('r', d => maturitySizes[d.maturity] || 8)
+                .attr('fill', d => scatterColors[d.cluster] || '#999')
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 0.5)
+                .attr('opacity', 0.85)
+                .style('cursor', 'pointer')
+                .on('mouseover', function(event, d) {{
+                    d3.select(this).attr('opacity', 1).attr('stroke-width', 2);
+                    tooltip.style('opacity', 1)
+                        .html(`<strong>${{d.name}}</strong><br/>d/acc: ${{Math.round(d.dacc/20*100)}} | Tech: ${{Math.round(d.tech/70*100)}}<br/>${{d.cluster}} · ${{d.maturity}}`)
+                        .style('left', (event.offsetX + 15) + 'px')
+                        .style('top', (event.offsetY - 10) + 'px');
+                }})
+                .on('mouseout', function() {{
+                    d3.select(this).attr('opacity', 0.85).attr('stroke-width', 0.5);
+                    tooltip.style('opacity', 0);
+                }})
+                .on('click', (event, d) => {{
+                    // Find the entity in the main dataset and select it
+                    const entity = entities.find(e => e.id === d.id);
+                    if (entity) selectEntity(entity);
+                }});
+
+            // Labels for Tier 1 entities
+            g.selectAll('text.scatter-label')
+                .data(scatterData.filter(d => d.tier === 1))
+                .enter()
+                .append('text')
+                .attr('class', 'scatter-label')
+                .attr('x', d => xScale(Math.round(d.dacc/20*100)) + (maturitySizes[d.maturity] || 8) + 3)
+                .attr('y', d => yScale(Math.round(d.tech/70*100)) + 3)
+                .attr('fill', '#94a3b8')
+                .attr('font-size', '9px')
+                .text(d => d.name.length > 28 ? d.name.slice(0, 25) + '...' : d.name);
+
+            // Legend
+            const legendG = svg.append('g').attr('transform', `translate(${{width - 180}}, 45)`);
+            let ly = 0;
+            Object.entries(scatterColors).forEach(([group, color]) => {{
+                legendG.append('rect').attr('x', 0).attr('y', ly).attr('width', 10).attr('height', 10)
+                    .attr('fill', color).attr('rx', 2);
+                legendG.append('text').attr('x', 14).attr('y', ly + 9)
+                    .attr('fill', '#94a3b8').attr('font-size', '8px')
+                    .text(group);
+                ly += 14;
+            }});
+
+            // Note about excluded entities
+            svg.append('text')
+                .attr('x', width - 10).attr('y', height - 8)
+                .attr('text-anchor', 'end').attr('fill', '#555').attr('font-size', '9px')
+                .text(`${{scatterData.length}} entities plotted (10 excluded: no tech score)`);
+        }}
+
         // Initialize on load
         init();
     </script>
@@ -1886,10 +2065,20 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
 </html>
 """
 
+    # Load scatter plot data
+    scatter_path = Path("results/report_v2_data/scatter_data.json")
+    if scatter_path.exists():
+        with open(scatter_path) as f:
+            scatter_data = json.load(f)
+    else:
+        scatter_data = []
+        print("  ⚠ Scatter data not found — run prepare_report_v2.py first")
+
     # Embed data in HTML
     html = html.replace("__V3_0_DATA_PLACEHOLDER__", json.dumps(v3_0_data))
     html = html.replace("__V3_1_DATA_PLACEHOLDER__", json.dumps(v3_1_data))
     html = html.replace("__V3_3_DATA_PLACEHOLDER__", json.dumps(v3_3_data))
+    html = html.replace("__SCATTER_DATA_PLACEHOLDER__", json.dumps(scatter_data))
 
     return html
 
