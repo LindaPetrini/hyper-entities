@@ -283,12 +283,12 @@ def main():
         json.dump(output, f, indent=2)
     print(f"\nSaved enriched data to {OUTPUT_DIR / 'enriched_entities.json'}")
 
-    # Save scatter plot data (only plottable entities)
+    # Save scatter plot data (only plottable entities, scores normalized to 0-100)
     scatter_data = [{
         "id": e["id"],
         "name": e["name"],
-        "dacc": e["dacc_total"],
-        "tech": e["tech_total"],
+        "dacc": round(e["dacc_total"] / 20 * 100),
+        "tech": round(e["tech_total"] / 70 * 100),
         "cluster": e["cluster_name"],
         "cluster_id": e["cluster_id"],
         "maturity": e["maturity"],

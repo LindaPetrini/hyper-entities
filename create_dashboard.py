@@ -2002,8 +2002,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 .enter()
                 .append('circle')
                 .attr('class', 'scatter-dot')
-                .attr('cx', d => xScale(Math.round(d.dacc/20*100)))
-                .attr('cy', d => yScale(Math.round(d.tech/70*100)))
+                .attr('cx', d => xScale(d.dacc))
+                .attr('cy', d => yScale(d.tech))
                 .attr('r', d => maturitySizes[d.maturity] || 8)
                 .attr('fill', d => scatterColors[d.cluster] || '#999')
                 .attr('stroke', '#fff')
@@ -2013,7 +2013,7 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 .on('mouseover', function(event, d) {{
                     d3.select(this).attr('opacity', 1).attr('stroke-width', 2);
                     tooltip.style('opacity', 1)
-                        .html(`<strong>${{d.name}}</strong><br/>d/acc: ${{Math.round(d.dacc/20*100)}} | Tech: ${{Math.round(d.tech/70*100)}}<br/>${{d.cluster}} · ${{d.maturity}}`)
+                        .html(`<strong>${{d.name}}</strong><br/>d/acc: ${{d.dacc}} | Tech: ${{d.tech}}<br/>${{d.cluster}} · ${{d.maturity}}`)
                         .style('left', (event.offsetX + 15) + 'px')
                         .style('top', (event.offsetY - 10) + 'px');
                 }})
@@ -2033,8 +2033,8 @@ def create_dashboard_html(v3_0_data, v3_1_data, v3_3_data):
                 .enter()
                 .append('text')
                 .attr('class', 'scatter-label')
-                .attr('x', d => xScale(Math.round(d.dacc/20*100)) + (maturitySizes[d.maturity] || 8) + 3)
-                .attr('y', d => yScale(Math.round(d.tech/70*100)) + 3)
+                .attr('x', d => xScale(d.dacc) + (maturitySizes[d.maturity] || 8) + 3)
+                .attr('y', d => yScale(d.tech) + 3)
                 .attr('fill', '#94a3b8')
                 .attr('font-size', '9px')
                 .text(d => d.name.length > 28 ? d.name.slice(0, 25) + '...' : d.name);

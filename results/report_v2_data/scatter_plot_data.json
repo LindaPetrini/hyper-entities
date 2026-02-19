@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Decentralized Adaptive Energy Network",
+    "dacc": 90,
+    "tech": 73,
+    "cluster": "Energy & Infrastructure",
+    "maturity": "Scaling Challenges",
+    "tier": 1
+  },
+  {
+    "name": "Deep Fision Micro Nuclear Reactors",
+    "dacc": 80,
+    "tech": 67,
+    "cluster": "Energy & Infrastructure",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "End-User Programming Ecosystem",
+    "dacc": 80,
+    "tech": 77,
+    "cluster": "Manufacturing & Matter",
+    "maturity": "Scaling Challenges",
+    "tier": 1
+  },
+  {
+    "name": "Atomically Precise Manufacturing / Molecular Machine Systems",
+    "dacc": 65,
+    "tech": 81,
+    "cluster": "Manufacturing & Matter",
+    "maturity": "Foundational Research",
+    "tier": 2
+  },
+  {
+    "name": "Chemputing (Chemical Computing)",
+    "dacc": 65,
+    "tech": 63,
+    "cluster": "Manufacturing & Matter",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Epistemic Stack",
+    "dacc": 85,
+    "tech": 63,
+    "cluster": "Truth & Epistemic Infrastructure",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "AI-Assisted Epistemological Enhancement System",
+    "dacc": 80,
+    "tech": 77,
+    "cluster": "Truth & Epistemic Infrastructure",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Distributed Zero-Knowledge Security Systems",
+    "dacc": 80,
+    "tech": 67,
+    "cluster": "Truth & Epistemic Infrastructure",
+    "maturity": "Scaling Challenges",
+    "tier": 2
+  },
+  {
+    "name": "Epistemic Infrastructure for Truth Verification",
+    "dacc": 80,
+    "tech": 76,
+    "cluster": "Truth & Epistemic Infrastructure",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Competitive Governance Protocol Stack",
+    "dacc": 90,
+    "tech": 81,
+    "cluster": "Governance & Collective Intelligence",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "LexCommons",
+    "dacc": 90,
+    "tech": 81,
+    "cluster": "Governance & Collective Intelligence",
+    "maturity": "Foundational Research",
+    "tier": 1
+  },
+  {
+    "name": "Global Deliberation Coordinator (GDaaS)",
+    "dacc": 75,
+    "tech": 74,
+    "cluster": "Governance & Collective Intelligence",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "Habermas Machines",
+    "dacc": 75,
+    "tech": 60,
+    "cluster": "Governance & Collective Intelligence",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Reputational Markets",
+    "dacc": 85,
+    "tech": 73,
+    "cluster": "Markets & Incentive Systems",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "Prediction Markets as Decision Support Systems",
+    "dacc": 80,
+    "tech": 63,
+    "cluster": "Markets & Incentive Systems",
+    "maturity": "Scaling Challenges",
+    "tier": 2
+  },
+  {
+    "name": "EgoLets (Personal AI Assistants)",
+    "dacc": 75,
+    "tech": 69,
+    "cluster": "AI & Human Agency",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "Empathetic Neuro-AI Emotional Coaching System",
+    "dacc": 65,
+    "tech": 69,
+    "cluster": "AI & Human Agency",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Lifelong AI Guardians",
+    "dacc": 65,
+    "tech": 70,
+    "cluster": "AI & Human Agency",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Digital Mind Governance Systems",
+    "dacc": 80,
+    "tech": 76,
+    "cluster": "Interfaces & Augmentation",
+    "maturity": "Foundational Research",
+    "tier": 1
+  },
+  {
+    "name": "Translation Language Models (TLMs)",
+    "dacc": 80,
+    "tech": 76,
+    "cluster": "Interfaces & Augmentation",
+    "maturity": "Near Deployment",
+    "tier": 2
+  },
+  {
+    "name": "Digital Twin Ecosystem",
+    "dacc": 75,
+    "tech": 79,
+    "cluster": "Interfaces & Augmentation",
+    "maturity": "Scaling Challenges",
+    "tier": 2
+  },
+  {
+    "name": "Immune-Computer Interface",
+    "dacc": 65,
+    "tech": 83,
+    "cluster": "Interfaces & Augmentation",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Human Superintelligence via Brain-Computer Interfaces (BCI)",
+    "dacc": 60,
+    "tech": 86,
+    "cluster": "Interfaces & Augmentation",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  },
+  {
+    "name": "Mind Uploading Infrastructure",
+    "dacc": 40,
+    "tech": 80,
+    "cluster": "Interfaces & Augmentation",
+    "maturity": "Foundational Research",
+    "tier": 2
+  },
+  {
+    "name": "Automated Scientific Publishing Ecosystem for Machine Consumers",
+    "dacc": 90,
+    "tech": 86,
+    "cluster": "Science & Discovery",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "Universal AI Learning UnCommons (UALU)",
+    "dacc": 85,
+    "tech": 63,
+    "cluster": "Science & Discovery",
+    "maturity": "Early Demonstrations",
+    "tier": 1
+  },
+  {
+    "name": "Decentralized Scientific Collaboration Infrastructure",
+    "dacc": 90,
+    "tech": 76,
+    "cluster": "Science & Discovery",
+    "maturity": "Scaling Challenges",
+    "tier": 2
+  },
+  {
+    "name": "Protein Design for Global Challenges",
+    "dacc": 65,
+    "tech": 76,
+    "cluster": "Science & Discovery",
+    "maturity": "Near Deployment",
+    "tier": 2
+  },
+  {
+    "name": "Origin of Life Experimental Platform",
+    "dacc": 50,
+    "tech": 66,
+    "cluster": "Science & Discovery",
+    "maturity": "Early Demonstrations",
+    "tier": 2
+  }
+]

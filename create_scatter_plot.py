@@ -60,6 +60,11 @@ def main():
     # Create figure
     fig, ax = plt.subplots(1, 1, figsize=(14, 10))
 
+    # Normalize scores to 0-100
+    for e in plottable:
+        e["dacc_norm"] = round(e["dacc_total"] / 20 * 100)
+        e["tech_norm"] = round(e["tech_total"] / 70 * 100)
+
     # Plot each entity
     for e in plottable:
         color = GROUP_COLORS.get(e["cluster_name"], "#999999")
@@ -67,8 +72,8 @@ def main():
         marker = MATURITY_MARKERS.get(e["maturity"], "o")
 
         ax.scatter(
-            e["dacc_total"],
-            e["tech_total"],
+            e["dacc_norm"],
+            e["tech_norm"],
             c=color,
             s=size,
             marker=marker,
@@ -85,7 +90,7 @@ def main():
         # Shorten long names
         if len(name) > 35:
             name = name[:32] + "..."
-        texts.append((e["dacc_total"], e["tech_total"], name, e["tier"]))
+        texts.append((e["dacc_norm"], e["tech_norm"], name, e["tier"]))
 
     # Label Tier 1 entities always, Tier 2 only if space
     for x, y, name, tier in texts:
@@ -105,39 +110,39 @@ def main():
             color="#333333",
         )
 
-    # Quadrant annotations
-    ax.axhline(y=52, color="#cccccc", linestyle="--", linewidth=0.8, alpha=0.5)
-    ax.axvline(x=15, color="#cccccc", linestyle="--", linewidth=0.8, alpha=0.5)
+    # Quadrant annotations (normalized: d/acc=75, tech=74)
+    ax.axhline(y=74, color="#cccccc", linestyle="--", linewidth=0.8, alpha=0.5)
+    ax.axvline(x=75, color="#cccccc", linestyle="--", linewidth=0.8, alpha=0.5)
 
     # Quadrant labels
     ax.text(
-        11.5, 63, "High tech impact\nLow d/acc alignment\n(needs governance attention)",
+        57, 90, "High tech impact\nLow d/acc alignment\n(needs governance attention)",
         fontsize=8, color="#999999", ha="center", style="italic",
     )
     ax.text(
-        18.5, 63, "High tech impact\nHigh d/acc alignment\n(\"sweet spot\")",
+        92, 90, "High tech impact\nHigh d/acc alignment\n(\"sweet spot\")",
         fontsize=8, color="#999999", ha="center", style="italic",
     )
     ax.text(
-        11.5, 42, "Lower tech impact\nLow d/acc alignment",
+        57, 60, "Lower tech impact\nLow d/acc alignment",
         fontsize=8, color="#999999", ha="center", style="italic",
     )
     ax.text(
-        18.5, 42, "Lower tech impact\nHigh d/acc alignment\n(values-aligned, niche impact)",
+        92, 60, "Lower tech impact\nHigh d/acc alignment\n(values-aligned, niche impact)",
         fontsize=8, color="#999999", ha="center", style="italic",
     )
 
     # Axis labels and title
-    ax.set_xlabel("d/acc Values Alignment Score (0-20)", fontsize=12, labelpad=10)
-    ax.set_ylabel("Technology Impact Score (0-70)", fontsize=12, labelpad=10)
+    ax.set_xlabel("d/acc Values Alignment Score (0-100)", fontsize=12, labelpad=10)
+    ax.set_ylabel("Technology Impact Score (0-100)", fontsize=12, labelpad=10)
     ax.set_title(
         "Hyper-Entities: d/acc Alignment vs. Technology Impact",
         fontsize=14, fontweight="bold", pad=15,
     )
 
     # Set axis limits with padding
-    ax.set_xlim(6, 20.5)
-    ax.set_ylim(38, 66)
+    ax.set_xlim(30, 105)
+    ax.set_ylim(54, 95)
 
     # Grid
     ax.grid(True, alpha=0.15, linestyle="-")
