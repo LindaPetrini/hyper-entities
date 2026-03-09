@@ -11,7 +11,7 @@
     "url": "https://www.existentialhope.com/podcasts/adam-brown-a-theoretical-physicists-take-on-the-future",
     "type": "podcast"
   },
-  "podcast/Adam Marblestone | Solving Science’s Biggest Gaps.md": {
+  "podcast/Adam Marblestone | Solving Science\u2019s Biggest Gaps.md": {
     "url": "https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps",
     "type": "podcast"
   },
@@ -35,7 +35,7 @@
     "url": "https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery",
     "type": "podcast"
   },
-  "podcast/Anna Gát | How to create communities that connect, even when people disagree.md": {
+  "podcast/Anna G\u00e1t | How to create communities that connect, even when people disagree.md": {
     "url": "https://www.existentialhope.com/podcasts/anna-gt-how-to-create-communities-that-connect-even-when-people-disagree",
     "type": "podcast"
   },
@@ -51,7 +51,7 @@
     "url": "https://www.existentialhope.com/podcasts/autonomous-vehicles-special-andrew-miller-on-self-driving-futures",
     "type": "podcast"
   },
-  "podcast/Chiara Marletto | The Science of Can & Can’t.md": {
+  "podcast/Chiara Marletto | The Science of Can & Can\u2019t.md": {
     "url": "https://www.existentialhope.com/podcasts/chiara-marletto-the-science-of-can-cant",
     "type": "podcast"
   },
@@ -131,7 +131,7 @@
     "url": "https://www.existentialhope.com/podcasts/foresight-fellow-special-amanda-ngo-innovating-with-ai-for-wellbeing",
     "type": "podcast"
   },
-  "podcast/Foresight Fellow Special | Siméon Campos: On Governing AI for Good.md": {
+  "podcast/Foresight Fellow Special | Sim\u00e9on Campos: On Governing AI for Good.md": {
     "url": "https://www.existentialhope.com/podcasts/foresight-fellow-special-simon-campos-on-governing-ai-for-good",
     "type": "podcast"
   },
@@ -175,7 +175,7 @@
     "url": "https://www.existentialhope.com/podcasts/kevin-kelly-pioneering-visions-of-a-high-tech-future",
     "type": "podcast"
   },
-  "podcast/Kristian Rönn | The Darwinian Trap That Explains Our World.md": {
+  "podcast/Kristian R\u00f6nn | The Darwinian Trap That Explains Our World.md": {
     "url": "https://www.existentialhope.com/podcasts/kristian-rnn-the-darwinian-trap-that-explains-our-world",
     "type": "podcast"
   },
@@ -227,7 +227,7 @@
     "url": "https://www.existentialhope.com/podcasts/sam-arbesman-on-vibe-coding-ai-and-the-magic-of-code",
     "type": "podcast"
   },
-  "podcast/Sam Bowman | What’s holding back progress (and how to fix it).md": {
+  "podcast/Sam Bowman | What\u2019s holding back progress (and how to fix it).md": {
     "url": "https://www.existentialhope.com/podcasts/sam-bowman-whats-holding-back-progress-and-how-to-fix-it",
     "type": "podcast"
   },
@@ -315,7 +315,7 @@
     "url": "https://worlds.existentialhope.com/world/kidtopia/",
     "type": "world-gallery"
   },
-  "world-gallery/La langue de la prévoyance.md": {
+  "world-gallery/La langue de la pr\u00e9voyance.md": {
     "url": "https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/",
     "type": "world-gallery"
   },
@@ -347,7 +347,7 @@
     "url": "https://worlds.existentialhope.com/world/protopia-peace-project/",
     "type": "world-gallery"
   },
-  "world-gallery/RaízMental: Emotional Healing Ecosystems.md": {
+  "world-gallery/Ra\u00edzMental: Emotional Healing Ecosystems.md": {
     "url": "https://worlds.existentialhope.com/world/razmental-emotional-healing-ecosystems/",
     "type": "world-gallery"
   },
@@ -415,7 +415,7 @@
     "url": "https://worlds.existentialhope.com/world/unity-through-diversity/",
     "type": "world-gallery"
   },
-  "world-gallery/Veliona — The World of Unfolding Minds.md": {
+  "world-gallery/Veliona \u2014 The World of Unfolding Minds.md": {
     "url": "https://worlds.existentialhope.com/world/veliona-the-world-of-unfolding-minds/",
     "type": "world-gallery"
   },
@@ -430,5 +430,9 @@
   "x-hope/hackaton-report.md": {
     "url": null,
     "type": "report"
+  },
+  "world-gallery/Harmonized Urban Ecosystems.md": {
+    "url": "https://worlds.existentialhope.com/world/harmonized-urban-ecosystems/",
+    "type": "world-gallery"
   }
 }
