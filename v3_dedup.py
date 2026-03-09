@@ -313,7 +313,15 @@ def merge_clusters(candidates, same_pairs):
 # Thematic grouping
 # ---------------------------------------------------------------------------
 
-GROUPING_PROMPT = """Below is a list of {n} hyper-entity candidates (future technologies, systems, and institutions). Assign each one to exactly ONE thematic group. Create 8-12 groups with descriptive names.
+GROUP_DEFINE_PROMPT = """Below is a list of {n} hyper-entity candidates (future technologies, systems, and institutions).
+
+Define 8-12 thematic groups that cover all these entities. Return a JSON array of group names.
+Example: ["Decentralized Governance", "Biotech & Health", "Energy & Climate"]
+
+Entities:
+{entity_list}"""
+
+GROUP_ASSIGN_PROMPT = """Assign each entity below to exactly ONE of these groups: {groups}
 
 Return a JSON object mapping each entity name (exactly as given) to its group name.
 Example: {{"Entity Name": "Decentralized Governance", "Another Entity": "Biotech & Health"}}
@@ -323,43 +331,107 @@ Entities:
 
 
 async def assign_groups(client, candidates):
-    """Send candidates to Haiku for thematic grouping. Returns (name->group dict, in_tok, out_tok)."""
-    entity_list = "\n".join(
-        f"- {c.get('name', 'Unknown')}: {c.get('one_liner', '')}"
-        for c in candidates
-    )
+    """Two-step grouping: define groups, then assign in batches. Returns (name->group dict, in_tok, out_tok)."""
+    total_in, total_out = 0, 0
 
-    prompt = GROUPING_PROMPT.format(n=len(candidates), entity_list=entity_list)
+    # Step 1: Define groups using all entity names (compact)
+    name_list = "\n".join(f"- {c.get('name', 'Unknown')}" for c in candidates)
+    define_prompt = GROUP_DEFINE_PROMPT.format(n=len(candidates), entity_list=name_list)
 
+    groups = None
     for attempt in range(CONFIG["max_retries"]):
         try:
             response = await client.messages.create(
                 model=CONFIG["model"],
-                max_tokens=4096,
+                max_tokens=1024,
                 temperature=CONFIG["temperature"],
                 system="You categorize entities into thematic groups and return JSON only.",
-                messages=[{"role": "user", "content": prompt}],
+                messages=[{"role": "user", "content": define_prompt}],
             )
             text = response.content[0].text
-            in_tok = response.usage.input_tokens
-            out_tok = response.usage.output_tokens
-            mapping = extract_json(text)
-            if isinstance(mapping, dict):
-                return mapping, in_tok, out_tok
-            raise ValueError("Expected JSON object for grouping")
+            total_in += response.usage.input_tokens
+            total_out += response.usage.output_tokens
+            result = extract_json(text)
+            if isinstance(result, list) and len(result) >= 6:
+                groups = result
+                print(f"  Defined {len(groups)} groups: {groups}")
+                break
+            raise ValueError(f"Expected JSON array of 6+ groups, got {type(result)}")
         except RateLimitError:
             wait = (2 ** attempt) * 2
-            print(f"  Rate limited during grouping, waiting {wait}s")
+            print(f"  Rate limited during group definition, waiting {wait}s")
             await asyncio.sleep(wait)
         except Exception as e:
             if attempt < CONFIG["max_retries"] - 1:
-                print(f"  Grouping error: {e}, retrying...")
+                print(f"  Group definition error: {e}, retrying...")
                 await asyncio.sleep(2 ** attempt)
             else:
-                print(f"  Grouping failed after retries: {e}")
+                print(f"  Group definition failed after retries: {e}")
                 return {}, 0, 0
 
-    return {}, 0, 0
+    if not groups:
+        return {}, 0, 0
+
+    # Step 2: Assign in batches of 50
+    BATCH_SIZE = 50
+    full_mapping = {}
+    groups_str = ", ".join(groups)
+
+    for i in range(0, len(candidates), BATCH_SIZE):
+        batch = candidates[i:i + BATCH_SIZE]
+        entity_list = "\n".join(
+            f"- {c.get('name', 'Unknown')}: {c.get('one_liner', '')}"
+            for c in batch
+        )
+        assign_prompt = GROUP_ASSIGN_PROMPT.format(groups=groups_str, entity_list=entity_list)
+
+        for attempt in range(CONFIG["max_retries"]):
+            try:
+                response = await client.messages.create(
+                    model=CONFIG["model"],
+                    max_tokens=4096,
+                    temperature=CONFIG["temperature"],
+                    system="You categorize entities into thematic groups and return JSON only.",
+                    messages=[{"role": "user", "content": assign_prompt}],
+                )
+                text = response.content[0].text
+                total_in += response.usage.input_tokens
+                total_out += response.usage.output_tokens
+                mapping = extract_json(text)
+                if isinstance(mapping, dict):
+                    full_mapping.update(mapping)
+                    print(f"  Assigned batch {i // BATCH_SIZE + 1}/{(len(candidates) + BATCH_SIZE - 1) // BATCH_SIZE} ({len(mapping)} entities)")
+                    break
+                raise ValueError("Expected JSON object for assignment")
+            except RateLimitError:
+                wait = (2 ** attempt) * 2
+                print(f"  Rate limited during assignment, waiting {wait}s")
+                await asyncio.sleep(wait)
+            except Exception as e:
+                if attempt < CONFIG["max_retries"] - 1:
+                    print(f"  Assignment error: {e}, retrying...")
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    print(f"  Assignment batch failed after retries: {e}")
+
+    # Normalize: fuzzy-match assigned groups back to canonical names
+    normalized = {}
+    for name, assigned_group in full_mapping.items():
+        if assigned_group in groups:
+            normalized[name] = assigned_group
+        else:
+            # Find best matching canonical group by word overlap
+            best, best_score = assigned_group, 0
+            assigned_words = set(assigned_group.lower().replace(",", "").replace("&", "").split())
+            for canonical in groups:
+                canonical_words = set(canonical.lower().replace(",", "").replace("&", "").split())
+                overlap = len(assigned_words & canonical_words)
+                if overlap > best_score:
+                    best_score = overlap
+                    best = canonical
+            normalized[name] = best
+
+    return normalized, total_in, total_out
 
 
 # ---------------------------------------------------------------------------

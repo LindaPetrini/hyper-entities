@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-03-09T11:27:42.537129+00:00",
+  "tfidf_pairs": [
+    {
+      "i": 6,
+      "j": 7,
+      "cosine": 0.7754
+    },
+    {
+      "i": 38,
+      "j": 39,
+      "cosine": 0.5293
+    },
+    {
+      "i": 185,
+      "j": 190,
+      "cosine": 0.4626
+    },
+    {
+      "i": 183,
+      "j": 192,
+      "cosine": 0.46
+    },
+    {
+      "i": 31,
+      "j": 94,
+      "cosine": 0.4338
+    },
+    {
+      "i": 163,
+      "j": 164,
+      "cosine": 0.3782
+    },
+    {
+      "i": 136,
+      "j": 160,
+      "cosine": 0.3744
+    },
+    {
+      "i": 182,
+      "j": 191,
+      "cosine": 0.3709
+    },
+    {
+      "i": 73,
+      "j": 74,
+      "cosine": 0.3549
+    },
+    {
+      "i": 143,
+      "j": 175,
+      "cosine": 0.3381
+    },
+    {
+      "i": 130,
+      "j": 131,
+      "cosine": 0.3184
+    },
+    {
+      "i": 87,
+      "j": 88,
+      "cosine": 0.3018
+    }
+  ],
+  "results": [
+    {
+      "i": 6,
+      "j": 7,
+      "name_a": "AGI Liability Safe Harbor Framework",
+      "name_b": "AI Liability Framework",
+      "cosine": 0.7754,
+      "verdict": "SAME",
+      "reason": "Both entities describe identical core concepts: a tiered liability framework using a high-autonomy + high-generality + high-intelligence triple intersection test to impose strict/criminal liability on executives while granting safe harbor to systems lacking any one dimension, with economic incentives to constrain systems accordingly."
+    },
+    {
+      "i": 182,
+      "j": 191,
+      "name_a": "The Open Source BCI Project",
+      "name_b": "BCI Operating System (BCI-OS)",
+      "cosine": 0.3709,
+      "verdict": "SAME",
+      "reason": "Both describe an open-source operating system layer for BCIs that prioritizes privacy, user control, and cognitive enhancement, with the main differences being implementation details and naming conventions rather than fundamental conceptual differences."
+    },
+    {
+      "i": 73,
+      "j": 74,
+      "name_a": "Agent Contract Declaration Requirement",
+      "name_b": "Alexa Gentia (machine-negotiated agent legal structures)",
+      "cosine": 0.3549,
+      "verdict": "DISTINCT",
+      "reason": "Entity A describes a human-defined, standardized template system where agents declare pre-existing contract types, while Entity B describes autonomous agent-to-agent negotiation of novel legal structures in machine-readable formats\u2014fundamentally opposite approaches to agent governance."
+    },
+    {
+      "i": 185,
+      "j": 190,
+      "name_a": "The World Convention on Transformative Artificial Intelligence",
+      "name_b": "World Convention on Transformative Artificial Intelligence (WCTAI)",
+      "cosine": 0.4626,
+      "verdict": "OVERLAPPING",
+      "reason": "Both describe preparatory work toward a global TAI convention, but Entity A focuses on foundational diplomacy and research to eventually convene a convention, while Entity B describes a pre-negotiated convention with automatic triggering mechanisms based on technological milestones\u2014representing different stages and structural approaches to the same governance goal."
+    },
+    {
+      "i": 136,
+      "j": 160,
+      "name_a": "Decentralized community-built AI systems",
+      "name_b": "Community-Governed AI Mesh Systems",
+      "cosine": 0.3744,
+      "verdict": "OVERLAPPING",
+      "reason": "Both describe decentralized, community-governed AI systems with local data sovereignty, but Entity A emphasizes federated infrastructure with DAO governance across diverse communities, while Entity B specifically centers Indigenous and racialized community trust circles with consent frameworks, making them related but distinct approaches to the same problem space."
+    },
+    {
+      "i": 143,
+      "j": 175,
+      "name_a": "Emotional Coach (Empathetic Neuro-AI)",
+      "name_b": "Neural Harmony Interface",
+      "cosine": 0.3381,
+      "verdict": "OVERLAPPING",
+      "reason": "Both describe AI systems using neural/biosensor data for personalized emotional support, but Entity A focuses on real-time crisis prevention through therapeutic dialogue while Entity B targets memory reprocessing and time perception modulation\u2014distinct intervention mechanisms despite shared foundational technology."
+    },
+    {
+      "i": 163,
+      "j": 164,
+      "name_a": "AI Alignment Markets",
+      "name_b": "Global AI Alignment Commission (GAAC)",
+      "cosine": 0.3782,
+      "verdict": "OVERLAPPING",
+      "reason": "Entity A describes a market mechanism for incentivizing AI safety through developer rewards, while Entity B describes a regulatory body that would govern and fund such a system\u2014they are complementary components of a larger ecosystem rather than the same concept."
+    },
+    {
+      "i": 183,
+      "j": 192,
+      "name_a": "The SECHI Institute",
+      "name_b": "TimeLike / SECHI (Simulation-Enabled Cooperative Human Intelligence)",
+      "cosine": 0.46,
+      "verdict": "SAME",
+      "reason": "Both describe the same core system\u2014a simulation-based platform using model predictive control to coordinate human decision-making at planetary scale\u2014with Entity B providing additional technical implementation details (component-based architecture, specific model types) while Entity A describes the conceptual approach."
+    },
+    {
+      "i": 87,
+      "j": 88,
+      "name_a": "Origin of Life Evolutionary Engine (chemical space search experiment)",
+      "name_b": "Assembly Theory",
+      "cosine": 0.3018,
+      "verdict": "OVERLAPPING",
+      "reason": "Entity B (Assembly Theory) is a theoretical framework that motivates and informs Entity A (the experimental engine), but they are distinct concepts\u2014one is a physical theory for quantifying life, the other is a proposed large-scale experimental implementation of that theory."
+    },
+    {
+      "i": 38,
+      "j": 39,
+      "name_a": "Integration of Brain Preservation into the Medical System",
+      "name_b": "Brain Preservation Integration into Medical System",
+      "cosine": 0.5293,
+      "verdict": "SAME",
+      "reason": "Both describe an identical core concept: integrating brain preservation as an elective end-of-life medical option within hospitals/hospices with long-term storage infrastructure, differing only in minor naming conventions and level of detail (Entity B adds cost estimates and storage warehouse specifics, while Entity A specifies aldehyde-stabilized cryopreservation and consent frameworks)."
+    },
+    {
+      "i": 31,
+      "j": 94,
+      "name_a": "Futarchy",
+      "name_b": "Orare - AI-powered Futarchy governance system",
+      "cosine": 0.4338,
+      "verdict": "OVERLAPPING",
+      "reason": "Entity B is a specific AI-augmented implementation of the general futarchy concept described in Entity A, sharing the core prediction market mechanism but introducing a distinct technological layer (AI forecasting engine) that represents a meaningful architectural difference warranting separate documentation."
+    },
+    {
+      "i": 130,
+      "j": 131,
+      "name_a": "LexCommons",
+      "name_b": "LexNodes",
+      "cosine": 0.3184,
+      "verdict": "OVERLAPPING",
+      "reason": "LexCommons is a comprehensive platform architecture combining smart contracts, AI agents, and decentralized governance for borderless law-making, while LexNodes are locally-deployed community-operated instances of that infrastructure\u2014they are related components within the same ecosystem but serve distinct architectural roles (platform vs. node implementation)."
+    }
+  ]
+}
