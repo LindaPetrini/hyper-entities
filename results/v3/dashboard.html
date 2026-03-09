@@ -910,9 +910,10 @@
             if (passesFilter(d, filters)) filtered.add(d.name);
         });
 
-        // Update scatter dots
+        // Update scatter dots and labels
         if (svg) {
             svg.selectAll('.node').classed('dimmed', d => !filtered.has(d.name));
+            svg.selectAll('.node-label').classed('dimmed', d => !filtered.has(d.name));
         }
 
         // Update action view if visible
@@ -940,7 +941,11 @@
         // Zoom
         zoom = d3.zoom()
             .scaleExtent([0.5, 10])
-            .on('zoom', (event) => { g.attr('transform', event.transform); });
+            .on('zoom', (event) => {
+                g.attr('transform', event.transform);
+                const k = event.transform.k;
+                g.selectAll('.node-label').attr('opacity', k > 1.5 ? 0.9 : 0);
+            });
         svg.call(zoom);
 
         g = svg.append('g')
@@ -998,17 +1003,31 @@
             .attr('y1', d => yScale(d)).attr('y2', d => yScale(d))
             .attr('stroke', '#1e293b').attr('stroke-dasharray', '2,4');
 
-        // Jitter to avoid overlapping dots
-        const jitter = () => (Math.random() - 0.5) * 8;
+        // Force simulation for collision avoidance
+        scatterData.forEach(d => {
+            d.x = xScale(d.dacc_total);
+            d.y = yScale(d.transformative);
+            d.targetX = d.x;
+            d.targetY = d.y;
+            d.r = d.tier === 1 ? 8 : 4.5;
+        });
+
+        const simulation = d3.forceSimulation(scatterData)
+            .force('x', d3.forceX(d => d.targetX).strength(0.8))
+            .force('y', d3.forceY(d => d.targetY).strength(0.8))
+            .force('collide', d3.forceCollide(d => d.r + 2).strength(0.7).iterations(4))
+            .stop();
+
+        for (let i = 0; i < 300; i++) simulation.tick();
 
         // Dots
         g.selectAll('.node')
             .data(scatterData)
             .join('circle')
             .attr('class', 'node')
-            .attr('cx', d => xScale(d.dacc_total) + jitter())
-            .attr('cy', d => yScale(d.transformative) + jitter())
-            .attr('r', d => d.tier === 1 ? 8 : 4.5)
+            .attr('cx', d => d.x)
+            .attr('cy', d => d.y)
+            .attr('r', d => d.r)
             .attr('fill', d => d.tier === 1 ? (bottleneckColors[d.bottleneck] || '#888') : 'none')
             .attr('stroke', d => bottleneckColors[d.bottleneck] || '#888')
             .attr('stroke-width', d => d.tier === 1 ? 0 : 1.5)
@@ -1019,6 +1038,19 @@
             .on('click', (event, d) => {
                 selectEntity(d.name);
             });
+
+        // Tier 1 labels (visible only when zoomed in)
+        g.selectAll('.node-label')
+            .data(scatterData.filter(d => d.tier === 1))
+            .join('text')
+            .attr('class', 'node-label')
+            .attr('x', d => d.x + d.r + 3)
+            .attr('y', d => d.y + 3)
+            .attr('fill', '#cbd5e1')
+            .attr('font-size', '10px')
+            .attr('pointer-events', 'none')
+            .attr('opacity', 0)
+            .text(d => d.name);
     }
 
     // ---- Tooltip ----
