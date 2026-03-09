@@ -43,7 +43,7 @@
 = Hyper-Entities V3: Spotlight Report
 
 
-Linda Petrini
+Linda Petrini & Beatrice Erkers
 Foresight Institute
 March 2026
 
@@ -70,25 +70,110 @@ All candidates were sourced from #link("https://www.existentialhope.com/")[Exist
 #line(length: 100%, stroke: 0.5pt + luma(180))
 
 
-== 2. Methodology
+== 2. Introduction
 
 
-This report represents the third iteration of the Foresight Institute's hyper-entity pipeline, designated V3. The pipeline has five stages: extraction, deduplication, web research, scoring, and curation into tiers.
+=== What Are Hyper-Entities?
 
-_Source extraction._ Candidate entities were extracted from 109 distinct sources hosted on or linked through Existential Hope. These fell into three categories: transcripts from the Existential Hope podcast series, submissions to the Foresight World Gallery, and essays contributed to the AI Pathways project. Extraction targeted named systems, protocols, institutions, or frameworks described as anticipated or proposed rather than fully operational.
 
-_Deduplication._ Raw extraction produced substantial overlap, with the same concept appearing under variant names across sources. Candidates were deduplicated by concept rather than by label, collapsing near-synonyms into single entries and preserving the most descriptive name. This process reduced the candidate pool to 189 distinct entities.
+A hyper-entity is a coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence. The term was coined by #link("https://michaelnielsen.org/")[Michael Nielsen], whose broader definition informed this project's more operationally focused criteria.
 
-_Web research._ Each deduplicated entity was researched to establish current development status, identify relevant actors, and assign a Technology Readiness Level on the standard 1–9 scale. The distribution skewed early-stage, with a modal TRL of 4 and a range of 1–8. Most candidates have demonstrated feasibility in laboratory or limited-context conditions but have not yet achieved validated prototypes.
+Nielsen's emphasis was on the design dimension — hyper-entities as orienting visions that carry new affordances, requiring genuine imagination and depth of understanding to conceive. This project adds an operational criterion: that the entity's anticipated existence is already causally active, reshaping coordination and investment before any prototype exists.
 
-_Scoring._ Each entity was scored on three dimensions. The d/acc score (0–20) assessed alignment with democratic, decentralized, defensive, and differential acceleration principles, with five points available per dimension. The transformative score (0–5) captured how much it could change the way societies coordinate or govern. The actionability score (0–5) assessed whether concrete next steps exist and whether current actors can execute them. Composite scores summed d/acc and transformative dimensions. Scoring was performed by the Claude API (Anthropic); we reviewed results by hand at the tiering and editorial stages to catch systematic errors and resolve ambiguous cases.
+Three characteristics define a hyper-entity:
 
-_Tiering._ Entities with composite scores of 14 or above were designated Tier 1 spotlight entities, yielding 19 candidates. The remaining 170 entities form the Tier 2 watch list. Twenty-seven entities appeared in both V3 and the prior V2 analysis, giving us a consistency check that was weighted positively in borderline cases. Primary bottleneck and recommended action type were assigned categorically rather than scored, based on the web research stage assessment of what currently constrains each entity's development.
++ _Not yet deployed_ — exists only as concept, early fragments, or shared anticipation — not as a functioning system at scale.
++ _Transformatively novel_ — would enable fundamentally new things humans can do, not just improve on existing capabilities.
++ _Already causally active_ — its anticipated existence reorganizes coordination, investment, and narrative now, before any prototype exists. This is the key distinguishing feature: a hyper-entity has causal force through expectation alone.
+
+Historical examples include the Internet (pre-1990s), which reorganized telecoms R&D, policy, and venture capital before widespread deployment; the Space Race (1950s-60s), where Moon missions organized national budgets and education systems before any launches; and AGI today, which reshapes AI research priorities, corporate strategies, and policy discussions despite not yet existing.
+
+=== Project Overview
+
+
+This project set out to systematically identify, score, and curate hyper-entities emerging from the discourse around the #link("https://www.existentialhope.com/")[Existential Hope] community. The source material comprises:
+
+- 65 podcast transcripts from the #link("https://www.existentialhope.com/podcasts")[Existential Hope podcast] by the #link("https://foresight.org/")[Foresight Institute]
+- 41 #link("https://worlds.existentialhope.com/")[world gallery] submissions from Existential Hope
+- 3 #link("https://www.existentialhope.com/ai-pathways")[AI pathways] essays, including #link("https://en.wikipedia.org/wiki/Vitalik_Buterin")[Vitalik Buterin]'s #link("https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html")[d/acc framework] and its 2025 update
+
+From this corpus, over 300 candidate hyper-entities were extracted, scored across three assessment dimensions, deduplicated, researched via web search, and curated to arrive at a final list of 189 distinct entities, with 19 highlighted as Tier 1 spotlight entities.
+
+=== Why This Matters: The AGI Crowding-Out Problem
+
+
+If you follow technology discourse in 2026, you might reasonably conclude that artificial general intelligence is the only future worth preparing for. In 2024, over \$252 billion in corporate investment flowed into AI and AGI companies. In 2025, AI startups alone raised \$211 billion in venture capital, an 85% year-over-year increase. Major governments have appointed AI safety czars. CEOs casually discuss "the arrival of superintelligence" in quarterly earnings calls.
+
+This isn't inherently wrong — AGI could indeed be transformative. But this concentration creates what economists call a crowding-out effect: when one opportunity dominates attention and capital, other valuable investments get systematically underfunded.
+
+This project attempts to answer a different question: not "what hyper-entity is most likely to arrive?" but "which ones should we be naming, funding, and building toward, given the kind of future we actually want?"
+
+Our research identifies 189 such entities, ranging from planetary-scale governance systems to new tools for collective decision-making, from programmable biology to infrastructure for shared truth. Many score highly on metrics that should matter to rational funders: broad benefit distribution, downside protection, and resilience to political shifts.
+
+Yet they receive fragmentary attention. Consider epistemic infrastructure — systems designed to help communities establish shared facts and navigate information disorders. By our analysis, projects in this space align strongly with human values and address urgent coordination failures. The same pattern repeats across governance innovation, distributed energy systems, and open science infrastructure.
+
+This imbalance carries real costs. First, many of these overlooked systems represent critical infrastructure for human flourishing regardless of AGI timelines. Whether artificial superintelligence arrives in 2030 or 2080, we'll still need tools for democratic legitimacy, ways to manage synthetic biology safely, and governance protocols that prevent technological lock-in.
+
+Second, several entities on our list would actually help society navigate AGI's arrival more safely. Better epistemic infrastructure means clearer public deliberation about AI governance. Advanced collective intelligence systems could help coordinate complex international AI safety regimes. We're underfunding the very tools we'd need to handle the future we're investing so heavily in creating.
+
+The argument here isn't anti-AGI. It's closer to portfolio theory applied to civilizational bets: under genuine uncertainty, concentration in a single scenario carries real risk. Infrastructure that creates value across many possible futures — not just one — seems worth naming, even if the allocation decisions belong to others.
 
 #line(length: 100%, stroke: 0.5pt + luma(180))
 
 
-== 3. Spotlight Entities (Tier 1)
+== 3. Key Findings
+
+
+=== The Landscape: d/acc Alignment vs. Transformative Potential
+
+
+The scatter plot below positions all 189 entities by their d/acc values alignment score (x-axis) and transformative potential (y-axis). Point size reflects the composite score; color indicates thematic group.
+
+!#link("scatter_plot_v3.svg")[Scatter plot: d/acc alignment vs transformative potential]
+
+The upper-right quadrant — high transformative potential and strong d/acc alignment — contains the systems most worth prioritizing: those that could change how societies coordinate while distributing power rather than concentrating it. This is where we find _Community-Governed AI Mesh Systems_, the _Universal AI Learning UnCommons_, and _Moral Trade_.
+
+The upper-left quadrant highlights transformative systems with weaker d/acc alignment — powerful but potentially centralizing. Several neurotechnology entities fall here, reflecting BCIs' enormous potential alongside unresolved questions about who controls neural data.
+
+Most entities cluster in the mid-range of both axes, indicating meaningful but not yet paradigm-shifting systems that are still in early development stages.
+
+=== Maturity Distribution
+
+
+#table(columns: (auto, auto, auto),
+  stroke: 0.5pt + luma(180),
+  inset: 6pt,
+  table.cell[*TRL Range*],
+  table.cell[*Description*],
+  table.cell[*Count*],
+  table.cell[1-2],
+  table.cell[Conceptual / early research],
+  table.cell[34],
+  table.cell[3-4],
+  table.cell[Proof of concept / early validation],
+  table.cell[105],
+  table.cell[5-6],
+  table.cell[Prototype / operational in limited context],
+  table.cell[41],
+  table.cell[7-8],
+  table.cell[Near deployment],
+  table.cell[9],
+)
+
+
+The average TRL of 3.9 places the field, in aggregate, between proof-of-concept and early validation. This is not a list of things almost ready to ship — it is a map of things that need patient capital and sustained attention.
+
+=== Bottleneck and Action Distribution
+
+
+The most common bottleneck is coordination (76 entities), followed by regulation (57), engineering (24), social acceptance (13), and funding (7). That funding ranks last challenges the common assumption that emerging technology primarily needs more capital. The scarcest resource appears to be institutional glue — shared standards, protocols, and governance frameworks.
+
+Recommended actions mirror this: 68 entities most need research, 58 need convening, 39 need advocacy, 17 need building, and 7 need funding.
+
+#line(length: 100%, stroke: 0.5pt + luma(180))
+
+
+== 4. Spotlight Entities (Tier 1)
 
 
 The following 19 entities scored highest on our composite metric (d/acc alignment + transformative potential + actionability). Each represents a system that doesn't yet exist but is already shaping coordination and investment.
@@ -451,7 +536,7 @@ _d/acc alignment._ Defensive scores highest (4/5) because accurate provenance di
 #line(length: 100%, stroke: 0.5pt + luma(180))
 
 
-== 4. Watch List (Tier 2)
+== 5. Watch List (Tier 2)
 
 
 The remaining 170 entities form the watch list — systems worth tracking but not yet meeting the composite score threshold for spotlight treatment.
@@ -1833,7 +1918,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
 #line(length: 100%, stroke: 0.5pt + luma(180))
 
 
-== 5. How to Get Involved
+== 6. How to Get Involved
 
 
 === Fund (7 entities)
@@ -1946,7 +2031,66 @@ _Watch list_ (49 entities):
 #line(length: 100%, stroke: 0.5pt + luma(180))
 
 
-== 6. Appendix: Scoring Details
+== 7. Conclusion
+
+
+The 189 hyper-entities identified in this report represent a curated map of futures that are already shaping the present. They are not predictions — they are coordination attractors, systems around which investment, research, and narrative are already forming even before the first prototype exists. What makes them worth attending to now is precisely that earliness: the decisions made in the next five to ten years about which of these systems to fund, govern, and build will determine whether the technologies of the 2030s and 2040s concentrate power or distribute it, protect human agency or erode it, accelerate beneficial futures or foreclose them.
+
+For funders and policymakers, the key question is not "what is the most powerful technology on the horizon?" Power is not scarce in current technology development — attention and capital are already flowing toward the most transformative systems. The question is: what infrastructure ensures that powerful technologies serve broad human interests rather than narrow ones?
+
+Several patterns in this data are striking. Epistemic infrastructure — systems for verifying truth, enhancing collective reasoning, and making knowledge legible — is chronically underfunded relative to its importance. Governance tools and coordination protocols tend to have the longest time horizons but the highest systemic leverage. Energy and ecological systems consistently score high on d/acc alignment, suggesting that sustainability transitions, if done right, could be among the most broadly beneficial shifts.
+
+The maturity distribution tells its own story. The modal TRL of 3.9 means most entities are between proof-of-concept and early validation. This is not a list of things almost ready to ship — it is a list of things that need patient capital, cross-disciplinary collaboration, and regulatory frameworks designed for experimentation rather than premature standardization.
+
+The window for shaping these systems is open now, and it will not remain open indefinitely. Once infrastructure standards calcify around centralized control, once regulatory frameworks cement incumbent advantages, once public narrative settles on a narrow vision of which futures are possible — the range of available paths narrows dramatically.
+
+What can you do with this information? If you are a funder, the Tier 1 spotlight entities and the action breakdown in this report provide a starting point. Consider whether your portfolio has exposure to infrastructure that works across many possible futures, not just the ones currently receiving the most hype. If you are a policymaker, the entities scoring highest on d/acc alignment represent the systems most worth building regulatory runway for today. If you are a researcher or technologist, the bottleneck analysis throughout this report identifies genuine frontiers: places where the field lacks basic understanding, where governance frameworks don't yet exist, or where the coordination problem is more tractable than the technical one.
+
+This research is designed to be repeatable and extensible. Future iterations should expand the source corpus to include non-English discourse communities, incorporate structured expert elicitation alongside automated scoring, and track entities longitudinally to see which ones move from foundational research toward deployment. The goal is not to produce a single authoritative ranking but to build a shared language for talking about which futures are forming, which deserve more resources, and how the choices we make today constrain or expand the range of tomorrow.
+
+#line(length: 100%, stroke: 0.5pt + luma(180))
+
+
+== 8. Appendix
+
+
+=== A. Methodology
+
+
+This report represents the third iteration of the Foresight Institute's hyper-entity pipeline, designated V3. The pipeline has five stages: extraction, deduplication, web research, scoring, and curation into tiers.
+
+_Source extraction._ Candidate entities were extracted from 109 distinct sources hosted on or linked through Existential Hope. These fell into three categories: transcripts from the Existential Hope podcast series, submissions to the Foresight World Gallery, and essays contributed to the AI Pathways project. Extraction targeted named systems, protocols, institutions, or frameworks described as anticipated or proposed rather than fully operational.
+
+_Deduplication._ Raw extraction produced substantial overlap, with the same concept appearing under variant names across sources. Candidates were deduplicated by concept rather than by label, collapsing near-synonyms into single entries and preserving the most descriptive name. This process reduced the candidate pool to 189 distinct entities.
+
+_Web research._ Each deduplicated entity was researched to establish current development status, identify relevant actors, and assign a Technology Readiness Level on the standard 1–9 scale. The distribution skewed early-stage, with a modal TRL of 4 and a range of 1–8. Most candidates have demonstrated feasibility in laboratory or limited-context conditions but have not yet achieved validated prototypes.
+
+_Scoring._ Each entity was scored on three dimensions. The d/acc score (0–20) assessed alignment with democratic, decentralized, defensive, and differential acceleration principles, with five points available per dimension. The transformative score (0–5) captured how much it could change the way societies coordinate or govern. The actionability score (0–5) assessed whether concrete next steps exist and whether current actors can execute them. Composite scores summed d/acc and transformative dimensions. Scoring was performed by the #link("https://docs.anthropic.com/en/api/getting-started")[Claude API] (#link("https://www.anthropic.com/")[Anthropic]); we reviewed results by hand at the tiering and editorial stages to catch systematic errors and resolve ambiguous cases.
+
+_Tiering._ Entities with composite scores of 14 or above were designated Tier 1 spotlight entities, yielding 19 candidates. The remaining 170 entities form the Tier 2 watch list. Twenty-seven entities appeared in both V3 and the prior V2 analysis, giving us a consistency check that was weighted positively in borderline cases. Primary bottleneck and recommended action type were assigned categorically rather than scored, based on the web research stage assessment of what currently constrains each entity's development.
+
+=== B. Pipeline Prompts
+
+
+The following prompts were used in the automated stages of the pipeline. All were executed via the Claude API (Anthropic).
+
+_Extraction prompt (podcasts)._
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[Extract SPECIFIC proposals, systems, architectures, or technologies discussed by the speaker that are: 1. NAMED or CONCRETE enough that someone could write a spec for it 2. NOT YET BUILT at scale (may have prototypes or research) 3. DISCUSSED SERIOUSLY with some mechanism explained (not throwaway mentions)  ANTI-PATTERNS (do NOT extract these): - Generic field descriptions ('AI-enhanced governance') - Vague compound nouns you invented - Already widely deployed technology - Abstract values or principles without implementation mechanisms]
+
+
+_Extraction prompt (world gallery)._
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[This is a brief speculative world sketch. Extract 0-2 SPECIFIC technologies, institutions, or systems described that someone could actually build or fund. If nothing is concrete enough to have a mechanism of action, return an empty list. Do NOT extract vague concepts or genre labels.]
+
+
+_Deduplication prompt._
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[You are comparing two hyper-entity candidates to determine if they describe the same concept. Classify the relationship as exactly one of: - SAME: These describe the same entity/concept/system (even if named differently). They should be merged. - OVERLAPPING: Related concepts in the same domain, but distinct enough to keep separate. - DISTINCT: Unrelated or only superficially similar.]
+
+
+_Scoring prompt (excerpt)._
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[Score this hyper-entity candidate on three dimensions. Use ONLY evidence from the provided description and research data. No evidence = score 0.  A. d/acc Values (0–5 per dimension: Democratic, Decentralized, Defensive, Differential) B. Transformative potential (0–5) C. Actionability: primary bottleneck and recommended action type]
+
+
+=== C. Scoring Details
 
 
 Full scoring breakdown for all Tier 1 entities.
