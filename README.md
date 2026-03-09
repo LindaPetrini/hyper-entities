@@ -9,7 +9,7 @@ A hyper-entity is a coherent, future-instantiated system that does not yet exist
 | | |
 |---|---|
 | **[Entity Explorer Dashboard (v3)](https://lindapetrini.github.io/hyper-entities/results/v3/dashboard.html)** | All 189 entities with scoring, search, and cluster visualization |
-| **[Spotlight Report (Typst source)](results/v3/report_v3.typ)** | v3 report: 19 Tier 1 spotlight entities, watch list, methodology |
+| **[Spotlight Report](results/v3/report_v3.md)** | v3 report: 19 Tier 1 spotlight entities, watch list, methodology |
 | **[Entity Explorer Dashboard (v2)](https://lindapetrini.github.io/hyper-entities/results/dashboard.html)** | Legacy v2 dashboard with 345 entities |
 | **[v2 Report (Markdown)](results/report_v2_data/report_v2.md)** | v2 report: methodology, 39 consensus entities with deep write-ups |
 | **[Part II Proposal (PDF)](results/proposal_part2.pdf)** | One-pager for turning research into action |
