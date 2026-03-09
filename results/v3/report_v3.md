@@ -55,6 +55,18 @@ Decentralized AI networks trained on locally governed data and stewarded by comm
 
 **d/acc alignment.** This entity scores at the ceiling on Democratic (5/5) and Decentralized (5/5) dimensions, reflecting structural governance design that places decision-making authority with affected communities rather than extracting it upward. Defensive posture scores 4/5, as the architecture resists both corporate data capture and state surveillance by design.
 
+
+**Links.**
+- [Flower (adap gmbh)](https://flower.ai) — Building federated learning framework for decentralized AI training
+- [OpenMined](https://www.openmined.org) — Developing PySyft library for privacy-preserving federated learning
+- [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org) — Stewarding CARE Principles for Indigenous Data Governance
+- [Local Contexts](https://localcontexts.org) — Supporting Indigenous data sovereignty and cultural heritage protection
+- [Bittensor](https://bittensor.com) — Building decentralized AI infrastructure with community-governed token incentives
+- [FLOWER: A Friendly Federated Learning Framework](https://arxiv.org/abs/2007.14390) (2020)
+- [The CARE Principles for Indigenous Data Governance](https://datascience.codata.org/articles/dsj-2020-043) (2019)
+- [Indigenous People-Centered Artificial Intelligence: Perspectives from Latin America and the Caribbean](https://www.unesco.org/ethics-ai/en/articles/new-report-and-guidelines-indigenous-data-sovereignty-artificial-intelligence-developments) (2024)
+- Source: [the-living-rights-network](https://worlds.existentialhope.com/world/the-living-rights-network/)
+
 > **What can someone do RIGHT NOW?** Convene a working group that puts Indigenous data governance leaders, federated learning developers (Flower, OpenMined), and mesh network operators in the same room to draft interoperability standards and shared governance protocols—this coordination work is the actual bottleneck, not missing technology. A funder could seed that process directly by commissioning a joint technical-governance scoping study across these currently siloed communities.
 
 > "communities shaped by displacement, colonization, and exclusion are building decentralized, care-centered mesh networks. These relational systems are trained on locally governed data, stewarded by Indigenous and racialized trust circles, and guided by protocols rooted in consent, dignity, and interdependence—not control." — *Source: [the-living-rights-network](https://worlds.existentialhope.com/world/the-living-rights-network/)*
@@ -69,6 +81,18 @@ A federated governance institution that develops, maintains, and audits AI educa
 **Who's building toward this.** Mozilla Foundation has committed $2.7M (2023) for its Responsible Computing Challenge across Kenya, India, and the US, and $1M (2025–2027) for its Democracy x AI Cohort. The African Union Commission is developing a Continental AI Strategy and Digital Education Strategy (2023–2028) through multi-stakeholder consultation. UNESCO is establishing AI ethics standards and competency frameworks for students and teachers. AIGN is developing operational AI governance frameworks for schools and universities with audit mechanisms. IDRC supports the EmpowerED initiative for responsible AI implementation in African education systems. The project sits at **TRL 3**—conceptual frameworks are mature, but no fully operational federated institution with formal elder council oversight exists at scale.
 
 **d/acc alignment.** UALU scores highest on Democratic (5/5) and Defensive (5/5), reflecting its structural commitment to participatory oversight and harm mitigation through community-led auditing. Decentralization scores 4/5, grounded in the federated node architecture.
+
+
+**Links.**
+- [AIGN (AI Governance Network)](https://aign.global/ai-governance-framework/global-ai-governance-framework/education-ai-governance-framework/) — Developing operational AI governance framework for schools and universities with audit mechanisms and compliance tools
+- [Mozilla Foundation](https://www.mozillafoundation.org/en/internet-health/trustworthy-artificial-intelligence/) — Funding responsible AI governance initiatives and multi-stakeholder accountability mechanisms for AI systems
+- [African Union Commission](https://au.int/en/pressreleases/20240617/african-ministers-adopt-landmark-continental-artificial-intelligence-strategy) — Developing Continental AI Strategy and Digital Education Strategy (2023-2028) with multi-stakeholder consultation frameworks
+- [UNESCO](https://en.unesco.org/) — Establishing AI ethics standards, competency frameworks for students/teachers, and guidance for responsible AI in education
+- [IDRC (International Development Research Centre)](https://idrc-crdi.ca/en/research-in-action/commitment-action-advancing-use-ai-education-africa) — Supporting AI4D and EmpowerED initiatives for capacity-building and responsible AI implementation in African education systems
+- [Creating Trustworthy AI](https://assets.mofoprod.net/network/documents/Mozilla-Trustworthy_AI.pdf) (2020)
+- [Multi-stakeholder collaboration and co-creation: towards responsible application of AI in education](https://www.oecd.org/en/publications/oecd-digital-education-outlook-2023_c74f03de-en/full-report/multi-stakeholder-collaboration-and-co-creation-towards-responsible-application-of-ai-in-education_07fbbd0d.html) (2023)
+- [AI Governance in Higher Education: A course design exploring regulatory, ethical and practical considerations](https://arxiv.org/html/2509.06176v1) (2025)
+- Source: [the-learning-uncommons-of-2035](https://worlds.existentialhope.com/world/the-learning-uncommons-of-2035/)
 
 > **What can someone do RIGHT NOW?** A funder or institutional actor could convene a working group drawing on Mozilla, AIGN, UNESCO, and African Union representatives to design a pilot federated governance structure—the funding exists across these organizations but lacks a coordinating mechanism to integrate elder council participation with operational audit processes.
 
@@ -85,6 +109,17 @@ A fraud-resistance layer combining zero-knowledge proofs from IoT sensor data, A
 
 **d/acc alignment.** Defensive scores highest at 5/5, reflecting the system's explicit design to detect and penalize fraud at multiple layers. Democratic and Decentralized both score 4/5, driven by the jury-DAO's human override capacity and the absence of any central arbiter.
 
+
+**Links.**
+- [Kleros](https://kleros.io/) — Decentralized jury-DAO for dispute resolution and arbitration on blockchain
+- [RISC Zero](https://www.risczero.com/) — Zero-knowledge virtual machine (zkVM) for generating ZK proofs of computation
+- [Chainlink](https://chain.link/) — Decentralized oracle network for secure off-chain data feeds
+- [API3](https://api3.org/) — First-party oracle network providing direct API connectivity to smart contracts
+- [zk-IoT: Securing the Internet of Things with Zero-Knowledge Proofs on Blockchain Platforms](https://arxiv.org/html/2402.08322v2) (2024)
+- [Detecting Anomalies in Blockchain Transactions using Machine Learning Classifiers and Explainability Analysis](https://arxiv.org/html/2401.03530v1) (2024)
+- [Anomaly Detection in Blockchain: A Systematic Review of Trends, Challenges, and Future Directions](https://www.mdpi.com/2076-3417/15/15/8330) (2025)
+- Source: [hybrid-market](https://worlds.existentialhope.com/world/hybrid-market/)
+
 > **What can someone do RIGHT NOW?** A researcher or cryptoeconomics team could publish a formal integration specification—defining the trust boundaries, oracle assumptions, and incentive parameters needed to combine ZK-IoT proofs, AI anomaly detection, quadratic slashing, and DAO adjudication into a coherent system. A funder could convene Kleros, RISC Zero, and a blockchain ML group around a shared testnet deployment to resolve the coordination gap blocking production-scale validation.
 
 > "A hard-fork deployed AI cryptographic oracles tied to sensor roots for zero-knowledge IoT based auditing, quadratic-stake slashing to take on 'too-big-to-fail' cheaters, and a jury-DAO to retro-adjust balances." — *Source: [hybrid-market](https://worlds.existentialhope.com/world/hybrid-market/)*
@@ -99,6 +134,15 @@ A mechanism by which people or groups with different moral priorities swap conce
 **Who's building toward this.** The Future of Humanity Institute and University of Oxford provided the academic home for Toby Ord's foundational theoretical work. The Effective Altruism community has explored small-scale applications through informal coordination on charitable donations across cause areas. No dedicated funding has been identified, and the concept sits at TRL 2—theorized and occasionally applied ad hoc, but without formal institutional infrastructure or governance mechanisms.
 
 **d/acc alignment.** Moral trade scores highest on Democratic (5/5) and Decentralized (4/5) dimensions, reflecting its core design goal of enabling pluralistic coordination without imposing a dominant moral framework. Defensive and Differential scores are lower, as the concept addresses coordination rather than security or targeted acceleration.
+
+
+**Links.**
+- [Future of Humanity Institute, University of Oxford](https://www.fhi.ox.ac.uk/) — Academic research on moral trade theory; Toby Ord's institutional affiliation
+- [Effective Altruism Community](https://www.effectivealtruism.org/) — Informal coordination of moral trade discussions and small-scale implementations in cause prioritization
+- [Moral Trade](https://www.journals.uchicago.edu/doi/10.1086/682187) (2015)
+- [Moral public goods are a big deal for whether we get a good future](https://forum.effectivealtruism.org/posts/L76qZhfvkediwXd6f/moral-public-goods-are-a-big-deal-for-whether-we-get-a-good) (2025)
+- [Moral Trade Proposal with 95-100% Surplus](https://forum.effectivealtruism.org/posts/jvW6p5Hk2r4883tNT/moral-trade-proposal-with-95-100-surplus) (2024)
+- Source: [fin-moorhouse-why-we-need-to-aim-higher-than-survival](https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival)
 
 > **What can someone do RIGHT NOW?** A researcher or funder could commission a systematic mapping of existing informal moral trade instances—across activist coalitions, international negotiations, and EA cause prioritization—to identify which coordination mechanisms succeeded and why. A builder with AI expertise could prototype a preference-elicitation and matching tool that helps parties identify low-cost concessions across moral domains, directly attacking the measurement and trust barriers that keep this at TRL 2.
 
@@ -115,6 +159,16 @@ An open-source operating system layer for brain-computer interfaces that embeds 
 
 **d/acc alignment.** BCI-OS scores highest on Defensive (5/5) and Democratic (4/5), reflecting its core architectural commitment to protecting user agency and neural data privacy, and its open-source governance model that distributes control away from any single manufacturer.
 
+
+**Links.**
+- [OpenBCI](https://openbci.com/) — Developing open-source BCI hardware and software platform with GUI, drivers, and developer tools
+- [AE Studio](https://www.ae.studio/brain-computer-interface) — Building BCI operating system with agency evaluation, neuroethical principles, and open-source software like Neurotech Development Kit
+- [Future of Privacy Forum](https://fpf.org/) — Researching BCI privacy standards, data protection recommendations, and ethical frameworks for neurotechnology
+- [IEEE Standards Association](https://standards.ieee.org/) — Developing Standards Roadmap for Neurotechnologies for Machine Interfacing covering sensing, feedback, data management, and performance
+- [Enhancing the Security & Privacy of Wearable Brain-Computer Interfaces](https://arxiv.org/abs/2201.07711) (2022)
+- [Standards Roadmap: Neurotechnologies for Machine Interfacing](https://standards.ieee.org/) (2024)
+- [Brain-Computer Interfaces: Applications, Challenges, and Policy Options](https://www.gao.gov/products/gao-25-106952) (2025)
+
 > **What can someone do RIGHT NOW?** A funder or institution could convene a working group pulling together OpenBCI, AE Studio, IEEE, FDA representatives, and privacy researchers to draft a governance charter and interoperability specification for BCI-OS—the fragmented ecosystem is the binding constraint, not technical readiness. Hosting a structured multi-stakeholder workshop with a concrete deliverable (a draft standards framework) would directly address the coordination bottleneck.
 
 > "['The Open Source BCI Project: Create an open-source brain-computer interface (BCI) operating system to enhance human cognitive abilities and privacy in a TAI era.', 'Develop a privacy-preserving, open-source BCI operating system (BCI-OS) that enhances human cognitive abilities and safeguards human-agency in the TAI era. Integrated agency evaluations, model compatibility protocols, and robust data privacy standards in the BCI-OS.']" — *Source: Diogo de Lucena, Judd Rosenblatt, Mamun Miah*
@@ -129,6 +183,16 @@ A privacy architecture for BCI systems in which neural data is tokenized so user
 **Who's building toward this.** The Neurorights Foundation drives advocacy and state-level legislation for neural data privacy. The Future of Privacy Forum produces research and guidance on BCI privacy frameworks. Columbia University's Neurotechnology Center works on neurorights and data protection frameworks. No funding for this specific architecture has been documented. **TRL: 2** — regulatory concepts exist and are codified in Colorado, California, Montana, and Chile's constitutional protections, but no BCI system with tokenized selective-disclosure has been deployed or demonstrated.
 
 **d/acc alignment.** This scores highest on Defensive (5/5) and Democratic empowerment (4/5), reflecting its core function as a user-controlled protection against involuntary neural data exposure. Decentralization scores lower (2/5) because current implementations rely on centralized regulatory and institutional frameworks.
+
+
+**Links.**
+- [Neurorights Foundation](https://www.neurorightsfoundation.org) — Advocacy and policy development for neural data privacy; supports state-level legislation
+- [Future of Privacy Forum (FPF)](https://fpf.org) — Research and guidance on BCI privacy frameworks and ethical considerations
+- [Columbia University Neurotechnology Center](https://www.columbia.edu) — Research on neurorights and neural data protection frameworks
+- [Regulating neural data processing in the age of BCIs: Ethical concerns and legal approaches](https://journals.sagepub.com/doi/10.1177/20552076251326123) (2025)
+- [A Framework for Preserving Privacy and Cybersecurity in Brain-Computer Interfacing Applications](https://arxiv.org/abs/2209.09653) (2022)
+- [Chilean Supreme Court ruling on the protection of brain activity: neurorights, personal data protection, and neurodata](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1330439/full) (2024)
+- Source: [mary-lou-jepsen-a-handheld-device-to-defeat-cancer](https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer)
 
 > **What can someone do RIGHT NOW?** Policy advocates and legal researchers should push for federal technical standards that define granular consent mechanisms for neural data—without unified specifications, companies have no regulatory incentive to build tokenized architectures. Organizations with healthcare IT expertise could draft model technical standards bridging existing OAuth-style access control frameworks to BCI data streams, giving regulators concrete language to adopt.
 
@@ -145,6 +209,16 @@ A global open-source consortium that develops and maintains ethical AI tools for
 
 **d/acc alignment.** Democratic (4/5), Decentralized (4/5), and Defensive (4/5) scores are all strong, reflecting the model's emphasis on distributed control, member accountability, and protection against vendor lock-in. Differential impact scores lower (2/5) because the mechanism operates within civic tech rather than across multiple domains.
 
+
+**Links.**
+- [Digital Public Goods Alliance (DPGA)](https://digitalpublicgoods.xyz/) — UN-endorsed multi-stakeholder initiative facilitating discovery, development, and investment in open-source digital public goods for governance and SDGs
+- [Open Government Partnership (OGP)](https://www.opengovpartnership.org/) — Multi-stakeholder initiative promoting transparent, accountable AI governance in local and national governments
+- [OpenGov](https://opengov.com/) — AI-enabled software platform serving 2,000+ US communities with governance tools for budgeting, permitting, and public engagement
+- [Open Knowledge Foundation (OKFN)](https://okfn.org/) — Develops open-source standards and civic tech tools for governance; member of DPGA
+- [Artificial Intelligence and Open Government: Local Perspectives](https://www.opengovpartnership.org/documents/artificial-intelligence-and-open-government-local-perspectives-2025/) (2025)
+- [Building Accountable Artificial Intelligence in Government: A Practical Reform Agenda](https://www.opengovpartnership.org/stories/building-accountable-artificial-intelligence-in-government-a-practical-reform-agenda/) (2025)
+- Source: [the-commons-cloud](https://worlds.existentialhope.com/world/the-commons-cloud/)
+
 > **What can someone do RIGHT NOW?** A foundation or civic technology funder could convene the Digital Public Goods Alliance, Open Government Partnership, and two or three member cities to draft a formal consortium charter and contribution model, directly addressing the coordination gap that prevents existing fragmented initiatives from coalescing. A researcher could map interoperability requirements across current municipal AI deployments to define the technical baseline a shared repository would need to meet.
 
 > "The Civic Systems Co-Op: a global open-source consortium maintaining ethical, adaptable AI systems for cities and communities." — *Source: [the-commons-cloud](https://worlds.existentialhope.com/world/the-commons-cloud/)*
@@ -159,6 +233,17 @@ A rotating bioregional assembly that grants formal representation to ecosystems 
 **Who's building toward this.** bioregional.agency (Austria, co-founded 2025 by Gordon Selbach and Jakob Travnik) is piloting bioregional assembly practices; Resilience.Earth is developing distributed decision-making and adaptive governance tools for bioregional communities; Department of Bioregion / CascadiaNow! has advanced bioregional education across the Cascadia region since 2005; and the Ozark Area Community Congress has operated a rotating, consensus-based bioregional assembly in the Ozarks since 1980. No dedicated funding has been identified for the integrated Interbeing Forum model. TRL: 3—component precedents exist, but no institution yet combines rotating bioregional representation, ecosystem guardianship, and digital twin advisory in a single body.
 
 **d/acc alignment.** Democratic and Decentralized dimensions both score 4/5, reflecting the rotating stewardship structure and formal power-sharing across bioregions that structurally resists capture. Differential scores lowest (2/5), as the model does not yet create new civilizational action space beyond the governance domain.
+
+
+**Links.**
+- [bioregional.agency](https://lina.community/projects/8e9dd1ac-2b08-4136-9680-d365de3de61b/) — Implementing bioregional assembly practices in Austria; co-founded 2025 by Gordon Selbach and Jakob Travnik
+- [Resilience.Earth](https://www.regenerosity.world/bioregionalism-in-practice/) — Developing distributed decision-making tools and adaptive governance systems for bioregional communities
+- [Department of Bioregion / CascadiaNow!](https://cascadiabioregion.org/) — Advancing bioregional education and place-based regeneration strategies across Cascadia bioregion since 2005
+- [Ozark Area Community Congress (OACC)](https://cascadiabioregion.org/ozarks-bioregion) — Operating rotating consensus-based bioregional assembly since 1980 in Ozarks bioregion
+- [Where are you at? Re-engaging bioregional ideas and what they offer geography](https://compass.onlinelibrary.wiley.com/doi/full/10.1111/gec3.12722) (2023)
+- [Cyber-governance of the natural world: the implications of digital twins in environmental governance](https://www.sciencedirect.com/science/article/pii/S2589811625000424) (2025)
+- [Digital Collaborative Mechanism of Ecological Governance Based on Digital Twin](https://www.mdpi.com/2673-4591/120/1/32) (2026)
+- Source: [the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences](https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/)
 
 > **What can someone do RIGHT NOW?** Legal advocates and policy researchers should work to establish or extend ecosystem legal personhood frameworks—building on New Zealand's Whanganui River precedent and Wales's Future Generations Commissioner—into cross-jurisdictional bioregional contexts. Connecting existing practitioners (OACC, bioregional.agency) with environmental digital twin researchers would accelerate the governance integration that no institution has yet achieved.
 
@@ -175,6 +260,16 @@ A shared technical and governance protocol layer that allows citizens to port di
 
 **d/acc alignment.** Decentralized (4/5) and Defensive (4/5) are the strongest dimensions: the modular architecture preserves jurisdictional autonomy while the crisis coordination capability directly reduces harm from disasters. Democratic alignment (3/5) reflects meaningful but incomplete citizen-facing benefits, and Differential (2/5) is low because the underlying technologies are established rather than frontier.
 
+
+**Links.**
+- [OpenID Foundation](https://openid.net/) — Developing OpenID for Verifiable Credentials standards and interoperability specifications for digital identity across jurisdictions
+- [W3C (World Wide Web Consortium)](https://www.w3.org/) — Maintaining Decentralized Identifiers (DIDs) and Verifiable Credentials standards for cross-jurisdictional identity portability
+- [Trust Over IP Foundation](https://www.trustoverip.org/) — Developing governance frameworks and architecture for decentralized digital trust infrastructure enabling interoperable identity systems
+- [GovStack](https://govstack.global/) — Building modular government digital infrastructure with interoperable building blocks for identity, payments, and data exchange across jurisdictions
+- [Interoperable Architecture for Digital Identity Delegation for AI Agents with Blockchain Integration](https://arxiv.org/pdf/2601.14982) (2026)
+- [Real-World Interoperability Demonstration of New Standards](https://openid.net/openid-foundation-demonstrates-real-world-interoperabiity-of-new-digital-identity-standards/) (2025)
+- [Disaster Management in the Era of Agentic AI Systems: A Vision for Federated Crisis Response](https://www.arxiv.org/pdf/2510.16034) (2025)
+
 > **What can someone do RIGHT NOW?** Convene a working group that brings together municipal governments, standards bodies, and emergency management agencies to draft a model mutual-recognition agreement for cross-jurisdictional verifiable credentials — starting with a bilateral pilot between two willing cities. Engaging regulators early to establish shared legal frameworks for benefits eligibility translation is the single highest-leverage action given that regulatory fragmentation, not technical readiness, is the primary bottleneck.
 
 > "A coalition of federated city-states launches the first interoperable governance protocol stack, allowing citizens to carry digital IDs, benefits, and credentials between different local systems. When severe flooding hits multiple jurisdictions, modular governance systems coordinate relief in hours instead of weeks, sharing resources and logistics seamlessly across local and regional levels." — *Source: N/A*
@@ -189,6 +284,12 @@ An architecture of many narrow, domain-limited superhuman AIs that interact comp
 **Who's building toward this.** No organization is deliberately implementing CAIS as a unified design paradigm. The Future of Humanity Institute at the University of Oxford published Drexler's foundational 2019 technical report, *Reframing Superintelligence*, which remains the primary articulation of the framework. Individual narrow superhuman AIs—AlphaFold, chess engines—demonstrate isolated components, but without architectural enforcement of narrowness or a competitive service ecology. No dedicated funding has been identified. TRL: 2.
 
 **d/acc alignment.** CAIS scores highest on Decentralized (4/5) and Defensive (4/5), reflecting its structural resistance to power concentration and its safety-by-design approach. The low Differential score (2/5) reflects the absence of any implementation pathway that would accelerate this approach relative to general-purpose foundation models.
+
+
+**Links.**
+- [Future of Humanity Institute (FHI), University of Oxford](https://www.fhi.ox.ac.uk) — Published Drexler's foundational CAIS technical report; conducts research on AI safety and superintelligence
+- [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://www.fhi.ox.ac.uk/publications/reframing-superintelligence-comprehensive-ai-services-as-general-intelligence-technical-report-2019-1-k-eric-drexler/) (2019)
+- Source: [nathan-labenz-what-are-the-best-case-scenarios-for-ai](https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai)
 
 > **What can someone do RIGHT NOW?** A researcher or funder could commission formal technical work on the core unsolved problem: whether service composition across domain-limited AIs can be architecturally bounded to prevent emergent generalization. A policy advocate could draft a regulatory proposal requiring capability partitioning disclosures for frontier model developers, creating the coordination infrastructure the CAIS model currently lacks entirely.
 
@@ -205,6 +306,17 @@ A DAO that funds and coordinates environmental litigation on behalf of legally-r
 
 **d/acc alignment.** The concept scores highest on democratic distribution (4/5) and defensive posture (4/5)—it distributes access to legal enforcement mechanisms and directly counters harmful actors—while decentralization is constrained (3/5) by guardian bottlenecks and DAO liability exposure under current law.
 
+
+**Links.**
+- [Ryval](https://www.ryval.io) — Pioneering tokenized litigation finance via Initial Litigation Offerings (ILOs) on blockchain
+- [LawCoin](https://www.lawcoin.io) — Tokenizing litigation finance deals on Ethereum blockchain for institutional investors
+- [MediCoin](https://www.medicoin.io) — Tokenizing attorney fee interests in environmental litigation (PFAS cases)
+- [ClientEarth](https://www.clientearth.org) — Environmental law firm; inspired Aristata Capital's litigation finance focus on climate cases
+- [Litigation Finance and Crypto Tokens: How a Blockchain Startup Seeks to Create Financing Marketplaces for Disputes](https://arbitrationblog.kluwerarbitration.com/2022/03/16/litigation-finance-and-crypto-tokens-how-a-blockchain-startup-seeks-to-create-financing-marketplaces-for-disputes/) (2022)
+- [Environmental Personhood and Standing for Nature: Examining the Colorado River Case](https://scholars.unh.edu/unh_lr/vol17/iss2/13/) (2019)
+- [Granting legal 'personhood' to nature is a growing movement](https://theconversation.com/granting-legal-personhood-to-nature-is-a-growing-movement-can-it-stem-biodiversity-loss-227336) (2026)
+- Source: [trent-mcconaghy-from-starships-to-tokens-pioneering-futures](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures)
+
 > **What can someone do RIGHT NOW?** Advocates and legal scholars should push for standardized environmental personhood frameworks across jurisdictions and clarity on DAO liability structures—these are the blocking conditions, not engineering gaps. Engaging securities regulators on the classification of tokenized litigation interests would directly unblock retail investor participation and cross-border enforcement.
 
 > "One approach is creating an attack dog DAO (Decentralized Autonomous Organization) for climate, similar to the Electronic Frontier Foundation but focused on environmental issues. This DAO could sue on behalf of natural bodies, like rivers or lakes, that have been granted legal personhood. It would leverage litigation finance, where people can invest in these legal battles." — *Source: [podcasts](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures)*
@@ -219,6 +331,17 @@ A decentralized autonomous organization where human citizens and AI systems join
 **Who's building toward this.** Near Foundation is developing AI-powered delegates and the Pulse sentiment-tracking tool for DAO governance. SingularityNET operates a decentralized AI coordination platform using blockchain for service governance and privacy-preserving datasets. Aragon provides DAO infrastructure and tooling, while MakerDAO demonstrates on-chain token-based governance at meaningful scale. No dedicated funding for integrated human-AI hybrid governance DAOs has been identified. **TRL: 4** — AI agents have been tested against 3,383 real proposals with 97% alignment to historical human decisions, and simulations show a 40% participation increase, but no production deployment at city or national scale exists.
 
 **d/acc alignment.** Democratic (4/5) and Decentralized (4/5) are the strongest dimensions, reflecting the system's core design: distributed decision-making authority shared between citizens and AI rather than concentrated in bureaucratic institutions. Defensive scores lower (3/5) because the system's resilience against manipulation and adversarial voting remains unproven at scale.
+
+
+**Links.**
+- [Near Foundation](https://near.org) — Developing AI-powered delegates and governance tools (Pulse) for DAO voting and community sentiment tracking
+- [SingularityNET](https://singularitynet.io) — Decentralized AI governance platform using blockchain for AI service coordination and privacy-preserving datasets
+- [Aragon](https://aragon.org) — DAO governance infrastructure and tooling for decentralized organizations
+- [MakerDAO](https://makerdao.com) — Major DAO with on-chain governance and token-based voting mechanisms
+- [QOC DAO - Stepwise Development Towards an AI Driven Decentralized Autonomous Organization](https://arxiv.org/html/2511.08641v1) (2025)
+- [DAO-AI: Evaluating Collective Decision-Making through Agentic AI in Decentralized Governance](https://arxiv.org/html/2510.21117v2) (2025)
+- [Democratic governance through DAO-based deliberation and voting for inclusive decision making in AI models](https://www.nature.com/articles/s41598-026-40180-8) (2026)
+- Source: [worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai](https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/)
 
 > **What can someone do RIGHT NOW?** Researchers should publish comparative studies of existing DAO governance pilots—particularly Near Foundation's Pulse deployments—to build the empirical record regulators need to draft workable legal frameworks. Policy advocates should engage directly with EU AI Act implementation bodies and NIST to push for explicit guidance on AI-assisted voting systems before legal ambiguity freezes further development.
 
@@ -235,6 +358,18 @@ An international treaty framework that organizes political cooperation around wa
 
 **d/acc alignment.** Scores highest on democratic inclusion (4/5) and defensive orientation (4/5), reflecting its emphasis on multi-stakeholder governance and ecological protection over extractive national interest. Decentralization scores moderate (3/5) because watershed bodies, while sub-national in logic, still require centralized treaty architecture to function.
 
+
+**Links.**
+- [International Joint Commission (IJC)](https://ijc.org) — Manages transboundary watershed cooperation between Canada and US; operates International Watersheds Initiative with ecosystem-based governance around river basins
+- [Mekong River Commission (MRC)](https://www.mrcmekong.org/) — Coordinates sustainable management of Mekong River Basin across four countries; implements integrated water resources management based on watershed boundaries
+- [International Network of Basin Organizations (INBO)](https://www.inbo-news.org/) — Global network supporting 120+ international river basin organizations; facilitates knowledge exchange on watershed-based governance
+- [Cascadia Department of Bioregion](https://cascadiabioregion.org/) — Develops bioregional governance frameworks organized around watershed and ecological boundaries across Pacific Northwest
+- [Resilience.Earth](https://resilience.earth/) — Supports bioregional governance training and implementation in Asia-Pacific; develops climate-resilient ecosystem management frameworks
+- [A Quarter Century of the International Watersheds Initiative](https://ijc.org/en/quarter-century-international-watersheds-initiative) (2023)
+- [Bioregional Governance for Climate-Resilient Ecosystems in Asia and the Pacific - Training Guide](https://ecolise.eu/wp-content/uploads/2025/03/Bioregional-Governance-Training-Guide.pdf) (2024)
+- [Human Watershed: The Emerging Politics of Bioregional Democracy](https://www.kosmosjournal.org/article/human-watershed-the-emerging-politics-of-bioregional-democracy/) (2024)
+- Source: [2035-rewild](https://worlds.existentialhope.com/world/2035-rewild/)
+
 > **What can someone do RIGHT NOW?** Legal advocates and international law scholars can draft model treaty language that converts existing watershed commission frameworks—IJC, MRC—into a replicable binding instrument with enforceable ecological indicators. Policy advocates with access to UN Environment Assembly or CBD processes should push for a formal resolution recognizing bioregional governance as a legitimate basis for transboundary treaty obligations.
 
 > "The Accord of Watersheds—a treaty system where ecosystems, not nations, are the organizing principle of cooperation." — *Source: [2035-rewild](https://worlds.existentialhope.com/world/2035-rewild/)*
@@ -249,6 +384,17 @@ A DAO-based governance structure that mandates open-source documentation and com
 **Who's building toward this.** No single organization has yet integrated all components at production scale, but several are building the necessary infrastructure. Hugging Face hosts over 1,000 community-contributed translation models (TRL 4–5). Mozilla Common Voice crowdsources multilingual voice data through community-driven collection (TRL 4). Ocean Protocol provides decentralized data exchange with DAO governance and tokenized data assets (TRL 3–4). Aragon supplies DAO governance frameworks and is exploring AI-DAO integration. No dedicated funding for the integrated system has been identified. Overall TRL: 3.
 
 **d/acc alignment.** Democratic (4/5) and Decentralized (4/5) are the strongest dimensions, reflecting the core design intent to distribute control over model development away from proprietary actors and toward affected communities. Defensive scores lower (3/5) because the system's protective value depends on successful implementation that has not yet been demonstrated at scale.
+
+
+**Links.**
+- [Hugging Face](https://huggingface.co) — Hosts open-source translation models and community contributions; over 1,000 translation models available on Hub
+- [Ocean Protocol](https://oceanprotocol.com) — Decentralized data exchange with DAO governance; enables tokenized data assets and AI model training with community oversight
+- [Mozilla Common Voice](https://commonvoice.mozilla.org) — Crowdsources multilingual voice data for open-source speech recognition; community-driven data collection
+- [Aragon](https://aragon.org) — DAO governance framework and tools; explores AI-DAO integration for decentralized decision-making
+- [QOC DAO - Stepwise Development Towards an AI Driven Decentralized Autonomous Organization](https://arxiv.org/html/2511.08641) (2025)
+- [Governance of decentralized autonomous organizations that produce open source software](https://www.sciencedirect.com/science/article/pii/S2096720923000416) (2023)
+- [The Future of DAOs is Powered by AI](https://blog.aragon.org/ai-daos-the-future-of-daos-powered-by-artificial-intelligence/) (2023)
+- Source: [la-langue-de-la-prvoyance](https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/)
 
 > **What can someone do RIGHT NOW?** Convene a working group that brings together Hugging Face contributors, Ocean Protocol governance participants, and multilingual community organizations to design and pilot a DAO governance layer specifically for a production translation model — starting with a bounded language pair to test coordination mechanisms before scaling. A funder could seed this pilot by commissioning a governance design sprint that maps smart-contract voting to concrete model update decisions.
 
@@ -265,6 +411,16 @@ Bioregional governance bodies organized around watershed boundaries rather than 
 
 **d/acc alignment.** Watershed Parliaments score highest on Democratic (4/5) and Defensive (4/5), reflecting their potential to distribute political power along ecological lines and build long-term resilience against resource conflicts. Decentralization scores lower (3/5) because existing implementations remain embedded within nation-state structures rather than replacing them.
 
+
+**Links.**
+- [Murray-Darling Basin Authority (MDBA)](https://www.mdba.gov.au/) — Principal government agency managing integrated water resources across Australian watershed; includes Indigenous representation and multi-stakeholder governance
+- [Susquehanna River Basin Commission (SRBC)](https://www.srbc.gov/) — Interstate agency coordinating water resource management across multi-state watershed in North America
+- [Interstate Commission on the Potomac River Basin (ICPRB)](https://www.potomacriver.org/) — Regional cooperation body for watershed governance bridging political boundaries across multiple states
+- [Cascadia Department of Bioregion](https://cascadiabioregion.org/) — Bioregional governance advocacy organization promoting watershed-based political and economic restructuring
+- [Human Watershed: The Emerging Politics of Bioregional Democracy](https://www.kosmosjournal.org/article/human-watershed-the-emerging-politics-of-bioregional-democracy/) (2022)
+- [Bioregionalism: A Model for a Self-Sufficient and Democratic Economy](https://earth.org/bioregionalism/) (2021)
+- Source: [mycelial-democracy](https://worlds.existentialhope.com/world/mycelial-democracy/)
+
 > **What can someone do RIGHT NOW?** Advocates and legal scholars can work to expand the Whanganui River legal personhood model into binding governance frameworks in other jurisdictions, building the regulatory precedents that watershed parliaments require. Researchers can document and compare existing river basin commissions to identify which governance features are most transferable to full bioregional authority structures.
 
 > "Watershed Parliaments replace geopolitical boundaries with bioregional governance aligned with natural water systems. These institutions integrate human decision-making with ecological feedback, where voting rights extend to ecosystem representatives and decisions must demonstrate positive impacts across seven generations of all life forms within the watershed." — *Source: [mycelial-democracy](https://worlds.existentialhope.com/world/mycelial-democracy/)*
@@ -279,6 +435,17 @@ Real-time digital models of communities and ecosystems that enable participatory
 **Who's building toward this.** The **Singapore Land Authority** built Virtual Singapore, the first country-scale urban digital twin, operational since 2022 following a $73M investment over 2012–2017. The **Alan Turing Institute** is developing methodology for scalable digital twin ecosystems and national digital twin infrastructure. **Northeastern University's Boston Area Research Initiative (BARI)** is building Fora.ai, a participatory modeling platform for community-led digital twins in green infrastructure planning. **The Nature Conservancy and Esri** are developing environmental digital twins for ecosystem monitoring, including the Point Conception project. TRL sits at 5: urban digital twin components are mature, but participatory governance integrated with community data sovereignty at scale remains in prototype phase.
 
 **d/acc alignment.** This entity scores highest on democratic (4/5) and defensive (4/5) dimensions, reflecting its potential to distribute simulation capacity to communities and reduce harm from uninformed governance decisions. Decentralization scores 3/5 because data sovereignty frameworks and community-owned infrastructure remain partially realized rather than structurally embedded.
+
+
+**Links.**
+- [The Nature Conservancy & Esri](https://www.esri.com/about/newsroom/blog/open-science-environmental-digital-twin) — Creating environmental digital twins for ecosystem monitoring and conservation (Point Conception project)
+- [Alan Turing Institute](https://www.turing.ac.uk/research/research-projects/ecosystems-digital-twins) — Developing methodology for scalable digital twin ecosystems and National Digital Twin infrastructure
+- [Northeastern University Boston Area Research Initiative (BARI)](https://www.northeastern.edu/) — Building Fora.ai participatory modeling platform for community-led digital twins in green infrastructure planning
+- [Singapore Land Authority (SLA)](https://www.sla.gov.sg/) — Developing Virtual Singapore, the first country-scale digital twin for urban planning and disaster management
+- [Enhancing digital twin technology with community-led, science-driven participatory modeling: A case in green infrastructure planning](https://journals.sagepub.com/doi/10.1177/23998083251323671) (2025)
+- [Digital twins and the digital logics of biodiversity](https://journals.sagepub.com/doi/full/10.1177/03063127241236809) (2024)
+- [City Digital Twin Concepts: A Vision for Community Participation](https://www.researchgate.net/publication/359184358_City_Digital_Twin_Concepts_A_Vision_for_Community_Participation) (2022)
+- Source: [the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences](https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/)
 
 > **What can someone do RIGHT NOW?** Convene a working group that connects existing digital twin operators (urban planning, ecological monitoring), data sovereignty practitioners (Indigenous data governance initiatives, GDPR implementers), and community organizations already using participatory planning tools—the component technologies exist and the primary gap is institutional coordination to integrate them. Funding a structured pilot that combines Fora.ai-style participatory modeling with a community data ownership agreement and an operational sensor network would move this from conceptual integration to demonstrated production system.
 
@@ -295,6 +462,16 @@ A personal AI system explicitly designed to serve the individual user's goals ra
 
 **d/acc alignment.** Scores highest on Democratic control (4/5) and Defensive posture (4/5), reflecting its core purpose of returning AI agency to individuals and protecting users from manipulative system design. Decentralization and differential acceleration scores are weaker (2/5 each), as the concept does not inherently restructure AI infrastructure or accelerate capabilities differentially.
 
+
+**Links.**
+- [Montreal AI Ethics Institute](https://montrealethics.ai/) — Research and design framework for Fiduciary AI systems
+- [Consumer Reports Innovation](https://innovation.consumerreports.org/) — Exploring personal AI agents with fiduciary duty frameworks
+- [Alignment Research Center](https://alignment.anthropic.com/) — AI alignment research including user-centric AI systems
+- [Designing Fiduciary Artificial Intelligence](https://dl.acm.org/doi/fullHtml/10.1145/3617694.3623230) (2023)
+- [Fiduciary Principles in AI: Utilizing the Duty of Loyalty](https://www.bu.edu/law/files/2023/09/Fiduciary-paper.pdf) (2023)
+- [Empowering Consumers with Personal AI Agents: Legal Foundations and Design Considerations](https://innovation.consumerreports.org/empowering-consumers-with-personal-ai-agents-legal-foundations-and-design-considerations/) (2025)
+- Source: [anthony-aguirre-anna-yelizarova-on-worldbuilding](https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding)
+
 > **What can someone do RIGHT NOW?** Legal scholars, policy advocates, and AI governance organizations should push for regulatory frameworks that define and enforce fiduciary duty standards for AI assistants — this is the explicit gating factor for commercial adoption. Connecting existing legal instruments like UETA to AI agent accountability, and building coalitions that pressure regulators to establish compliance mechanisms, would move this from research artifact to deployable standard.
 
 > "One of the things that came out of the augmented intelligence summit was fiduciary AI assistance. I have been calling them loyal AI assistance. There is a loyal AI system that doesn't have selfish interests and works to advance your goals and interests." — *Source: [podcasts](https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding)*
@@ -309,6 +486,17 @@ A platform institution designed to coordinate global deliberative processes and 
 **Who's building toward this.** The **UN Global Dialogue on AI Governance** (launched August 2025) provides the most operational foundation, offering an inclusive state-and-stakeholder platform. **AI4Deliberation** (Horizon Europe, €2,999,500) is building AI-enabled deliberative toolkits for governments. **Connected by Data** is researching independent global assembly designs for AI governance. **AI & Democracy Foundation** focuses on deliberative processes for AI alignment. **Metagov** develops digital self-governance infrastructure. TRL sits at 4: pilots are proven, but no unified global coordination architecture exists yet.
 
 **d/acc alignment.** Democratic (4/5) and Defensive (4/5) are the strongest dimensions—this entity directly addresses who gets a voice in AI governance decisions and builds resilience against unilateral capture of those decisions. Decentralized and Differential scores (2/5 each) reflect that coordination infrastructure, by design, requires some centralization.
+
+
+**Links.**
+- [Global Dialogue on AI Governance (UN)](https://www.un.org/global-dialogue-ai-governance/en) — UN platform for inclusive global stakeholder discussions on AI governance, established August 2025
+- [AI4Deliberation (Horizon Europe Project)](https://cordis.europa.eu/project/id/101178806) — Building AI-enabled deliberative processes and toolkit for governments to design and institutionalize mass citizen deliberations
+- [AI & Democracy Foundation](https://aidemocracyfoundation.org/) — Driving design and adoption of democratic systems for AI alignment and governance through deliberative processes
+- [Connected by Data](https://connectedbydata.org/resources/global-deliberation-ai) — Researching global citizen deliberation options for AI governance, including independent global assembly designs
+- [Metagov](https://metagov.org/) — Nonprofit research lab facilitating self-governance through technology and digital deliberation systems
+- [Global AI Governance: Where the Challenge is the Solution](https://arxiv.org/pdf/2503.04766) (2025)
+- [Global Citizen Deliberation on Artificial Intelligence: Options and design considerations](https://connectedbydata.org/resources/global-deliberation-ai) (2024)
+- [Governing AI for Humanity (UN High-Level Advisory Body Final Report)](https://www.un.org/sites/un2.un.org/files/governing_ai_for_humanity_final_report_en.pdf) (2024)
 
 > **What can someone do RIGHT NOW?** Use the UN Global Dialogue on AI Governance as a convening anchor: fund Connected by Data or Metagov to translate their global assembly design research into a concrete coordination architecture proposal, then pressure-test it with delegations from the 118 currently excluded countries before the next major AI governance summit.
 
@@ -325,6 +513,17 @@ A citation and provenance system for all information—from newspaper articles t
 
 **d/acc alignment.** Defensive scores highest (4/5) because accurate provenance directly counters manipulation and misinformation at the infrastructure level. Democratic scores 3/5, reflecting the system's potential to equalize access to source-level verification across users and institutions.
 
+
+**Links.**
+- [Coalition for Content Provenance and Authenticity (C2PA)](https://c2pa.org/) — Developing open technical standards for digital content provenance and authenticity via Content Credentials
+- [Content Authenticity Initiative (CAI)](https://contentauthenticity.org/) — Creating open-source tools and systems for content provenance, part of C2PA coalition
+- [X (Twitter) Community Notes](https://communitynotes.x.com/) — Operating crowdsourced fact-checking and context-provision system with public data and algorithms
+- [Numbers Protocol / Capture](https://captureapp.xyz/) — Integrating C2PA provenance data with blockchain for immutable digital asset provenance tracking
+- [A Full Epistemic Stack: Knowledge Commons for the 21st Century](https://www.oliversourbut.net/p/a-full-epistemic-stack) (2025)
+- [The Provenance Problem: LLMs and the Breakdown of Citation Norms](https://arxiv.org/abs/2509.13365) (2025)
+- [Architecting Trust in Artificial Epistemic Agents](https://arxiv.org/html/2603.02960) (2025)
+- Source: [anthony-aguirre-tools-or-agents-choosing-our-ai-future](https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future)
+
 > **What can someone do RIGHT NOW?** Convene a working group spanning C2PA, academic citation graph projects, and platform trust-and-safety teams to define a shared metadata schema that bridges media provenance, inference-step logging, and per-node accuracy scoring. The core bottleneck is coordination, not technology—a funded convening body with a concrete interoperability mandate could close the gap between existing partial implementations faster than any single technical project.
 
 > "There is no reason why, when reading a newspaper article about something, you shouldn't be able to trace back: where did that quote come from, or where did this piece of information come from? How do I know whether to trust this?... We should be able to have a stack we can follow all the way from the high level back down to the raw ingredients, and then figure out how much we trust each of those steps." — *Source: [podcasts](https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future)*
@@ -336,178 +535,178 @@ A citation and provenance system for all information—from newspaper articles t
 
 The remaining 170 entities form the watch list — systems worth tracking but not yet meeting the composite score threshold for spotlight treatment.
 
-| Name | Group | d/acc | Trans. | Bottleneck | Action | TRL |
-|------|-------|-------|--------|------------|--------|-----|
-| AI Fiduciaries | AI Safety, Alignment & Governance | 17/20 | 3/5 | Coordination | Convene | 5 |
-| Liberal/Popperian AGI Education Framework | AI Safety, Alignment & Governance | 15/20 | 4/5 | Physics | Research | 1 |
-| Privacy-Preserving Global Regulatory Markets for AI Verif... | AI Safety, Alignment & Governance | 16/20 | 3/5 | Coordination | Convene | 3 |
-| LexNodes | Decentralized & Democratic Institutions | 16/20 | 3/5 | Regulation | Advocate | 4 |
-| Viotopia | Education, Development & Human Flouri... | 13/20 | 4/5 | Coordination | Research | 1 |
-| Continuity Guild | Education, Development & Human Flouri... | 15/20 | 2/5 | Coordination | Convene | 5 |
-| BioEcho Mesh | Ecological & Regenerative Systems | 14/20 | 2/5 | Coordination | Convene | 6 |
-| Cognitive Field Resonators (CFRs) | Scientific Research & Knowledge Infra... | 15/20 | 1/5 | Physics | Research | 1 |
-| The Mnemosyne Assembly | AI Safety, Alignment & Governance | 13/20 | 3/5 | Coordination | Convene | 3 |
-| Translation Language Models (TLMs) with citizen-owned tra... | AI-Mediated Deliberation & Collective... | 13/20 | 3/5 | Coordination | Build | 4 |
-| Open Cognition Ledger | Decentralized & Democratic Institutions | 13/20 | 3/5 | Coordination | Convene | 4 |
-| Polymesh Civic Ledger | Decentralized & Democratic Institutions | 13/20 | 3/5 | Coordination | Research | 4 |
-| Living Rights Network | Decentralized & Democratic Institutions | 13/20 | 3/5 | Coordination | Convene | 4 |
-| The Collective of Inner Weavers | AI Safety, Alignment & Governance | 13/20 | 3/5 | Funding | Fund | 4 |
-| Federated Procurement Platforms | Economic Systems & Resource Distribution | 13/20 | 2/5 | Coordination | Convene | 5 |
-| contextual autonomy | AI Safety, Alignment & Governance | 12/20 | 3/5 | Coordination | Convene | 4 |
-| Publishing for Machines (machine-readable scientific publ... | Scientific Research & Knowledge Infra... | 12/20 | 3/5 | Social Acceptance | Convene | 4 |
-| De novo designed universal flu vaccines (Neil King / Bake... | Biotech, Medicine & Life Extension | 12/20 | 3/5 | Regulation | Advocate | 6 |
-| Computational models for infectious disease spread and va... | Biotech, Medicine & Life Extension | 12/20 | 3/5 | Coordination | Convene | 7 |
-| AI-Democratic Institutions for Decentralized Governance | Decentralized & Democratic Institutions | 12/20 | 3/5 | Social Acceptance | Research | 4 |
-| Crowdfunded Independent Longevity AI Research Program | Nanotechnology & Advanced Manufacturing | 13/20 | 2/5 | Coordination | Convene | 4 |
-| Hybrid Market impact bond ledger | Economic Systems & Resource Distribution | 12/20 | 3/5 | Regulation | Advocate | 5 |
-| Isolated Societies Research Institute | Scientific Research & Knowledge Infra... | 13/20 | 2/5 | Funding | Research | 3 |
-| Mandatory Open-Source AI Release Policy | AI Safety, Alignment & Governance | 12/20 | 3/5 | Regulation | Advocate | 2 |
-| Loom Studios | Decentralized & Democratic Institutions | 12/20 | 3/5 | Coordination | Research | 4 |
-| The Common Knowledge Generator | Scientific Research & Knowledge Infra... | 12/20 | 3/5 | Coordination | Convene | 4 |
-| The Delphi Collaboration Protocol | AI-Mediated Deliberation & Collective... | 13/20 | 2/5 | Coordination | Build | 4 |
-| The Scenario Planning Institution | AI Safety, Alignment & Governance | 12/20 | 3/5 | Coordination | Convene | 4 |
-| Flourishing Certification | Education, Development & Human Flouri... | 12/20 | 3/5 | Coordination | Convene | 3 |
-| TAI Horizon Scanner | AI Safety, Alignment & Governance | 12/20 | 3/5 | Coordination | Convene | 4 |
-| Lean FRO (interactive theorem proving infrastructure for ... | Scientific Research & Knowledge Infra... | 11/20 | 3/5 | Engineering | Build | 6 |
-| Large-scale AI-mediated deliberation system | AI-Mediated Deliberation & Collective... | 11/20 | 3/5 | Engineering | Build | 5 |
-| Reputational Market | Economic Systems & Resource Distribution | 11/20 | 3/5 | Coordination | Research | 3 |
-| Learning Observatories | AI Safety, Alignment & Governance | 11/20 | 3/5 | Coordination | Convene | 4 |
-| Deep Fision borehole nuclear reactor | Energy, Environment & Planetary Systems | 11/20 | 3/5 | Regulation | Build | 4 |
-| Values-as-modality parametrization across AI systems | AI Safety, Alignment & Governance | 11/20 | 3/5 | Coordination | Research | 2 |
-| Parallel lightly-regulated childminder category (France) | Education, Development & Human Flouri... | 12/20 | 2/5 | Regulation | Research | 7 |
-| Orare - AI-powered Futarchy governance system | AI-Mediated Deliberation & Collective... | 11/20 | 3/5 | Social Acceptance | Advocate | 4 |
-| VOICE (Voice for Open Source Information and Community En... | AI-Mediated Deliberation & Collective... | 11/20 | 3/5 | Social Acceptance | Research | 4 |
-| Global Personhood Token / Trust-of-Personhood Standard | International Governance & Coordination | 11/20 | 3/5 | Regulation | Advocate | 6 |
-| LexCommons | Decentralized & Democratic Institutions | 12/20 | 2/5 | Regulation | Research | 5 |
-| The Welcome Circle | Education, Development & Human Flouri... | 12/20 | 2/5 | Coordination | Convene | 2 |
-| RaízMental Global | Biotech, Medicine & Life Extension | 11/20 | 3/5 | Regulation | Convene | 4 |
-| Ethical AI Tutors | Education, Development & Human Flouri... | 11/20 | 3/5 | Coordination | Convene | 5 |
-| Safety-Netted DAOs | Decentralized & Democratic Institutions | 11/20 | 2/5 | Engineering | Build | 2 |
-| AGI Liability Safe Harbor Framework | AI Safety, Alignment & Governance | 10/20 | 3/5 | Regulation | Research | 1 |
-| Multiplicity.ai | AI-Mediated Deliberation & Collective... | 11/20 | 2/5 | Engineering | Build | 7 |
-| Futarchy | Decentralized & Democratic Institutions | 10/20 | 3/5 | Social Acceptance | Build | 4 |
-| Active smart fabric with autonomous environmental response | Nanotechnology & Advanced Manufacturing | 11/20 | 2/5 | Engineering | Research | 3 |
-| Integration of Brain Preservation into the Medical System | Biotech, Medicine & Life Extension | 11/20 | 2/5 | Regulation | Advocate | 3 |
-| Imagination Annotated (book series) | Education, Development & Human Flouri... | 11/20 | 2/5 | Coordination | Convene | 6 |
-| Author Personal Knowledge Graph / Writing Corpus Utility | Scientific Research & Knowledge Infra... | 11/20 | 2/5 | Engineering | Build | 5 |
-| Artificial General Wisdom | AI Safety, Alignment & Governance | 10/20 | 3/5 | Coordination | Research | 2 |
-| Componentized architectures optimized for inner alignment... | AI Safety, Alignment & Governance | 10/20 | 3/5 | Coordination | Research | 2 |
-| Neighborhood opt-in upzoning with land value capture | Decentralized & Democratic Institutions | 11/20 | 2/5 | Regulation | Research | 4 |
-| Kacha's Global Symbiosis Council (GSC) | International Governance & Coordination | 10/20 | 3/5 | Coordination | Convene | 4 |
-| Guardian Network | International Governance & Coordination | 11/20 | 2/5 | Coordination | Convene | 4 |
-| Decentralized community-built AI systems | Decentralized & Democratic Institutions | 10/20 | 3/5 | Coordination | Convene | 5 |
-| Bio-Responsive AI Interfaces | Neurotechnology & Brain-Computer Inte... | 11/20 | 2/5 | Coordination | Convene | 4 |
-| Open-source AI-powered research funding and knowledge pla... | Scientific Research & Knowledge Infra... | 10/20 | 3/5 | Regulation | Advocate | 4 |
-| Interplanetary Cooperative | International Governance & Coordination | 11/20 | 2/5 | Regulation | Advocate | 2 |
-| Civic Loom | AI-Mediated Deliberation & Collective... | 11/20 | 2/5 | Coordination | Research | 5 |
-| AI-powered participatory policy simulation platform | AI-Mediated Deliberation & Collective... | 10/20 | 3/5 | Social Acceptance | Convene | 5 |
-| The Flourishing Foundation | Education, Development & Human Flouri... | 11/20 | 2/5 | Regulation | Advocate | 5 |
-| The Evals for Evals Institute | AI Safety, Alignment & Governance | 10/20 | 3/5 | Coordination | Convene | 3 |
-| The World Convention on Transformative Artificial Intelli... | International Governance & Coordination | 11/20 | 2/5 | Coordination | Convene | 4 |
-| Global Deliberation as a Service (GDaaS) | AI-Mediated Deliberation & Collective... | 10/20 | 3/5 | Coordination | Convene | 4 |
-| World Convention on Transformative Artificial Intelligenc... | International Governance & Coordination | 10/20 | 3/5 | Coordination | Research | 2 |
-| Tool AI for Tool AI | AI Safety, Alignment & Governance | 9/20 | 3/5 | Engineering | Build | 4 |
-| NotADoctor.ai medical record serialization and RCT search | Biotech, Medicine & Life Extension | 10/20 | 2/5 | Engineering | Research | 6 |
-| AI-mediated conflict resolution tool (retorsion/disgorgem... | AI-Mediated Deliberation & Collective... | 10/20 | 2/5 | Regulation | Research | 4 |
-| Aviary | Scientific Research & Knowledge Infra... | 10/20 | 2/5 | Social Acceptance | Build | 6 |
-| Windfall Clause | Economic Systems & Resource Distribution | 10/20 | 2/5 | Coordination | Convene | 2 |
-| Project Hieroglyph | Education, Development & Human Flouri... | 9/20 | 3/5 | Funding | Fund | 4 |
-| Provably Safe AGI via Formal Verification | AI Safety, Alignment & Governance | 9/20 | 3/5 | Engineering | Research | 3 |
-| Closed-loop gene therapy for seizure suppression via acti... | Biotech, Medicine & Life Extension | 9/20 | 3/5 | Regulation | Fund | 4 |
-| AI underwriting / mandatory insurance for AI systems | AI Safety, Alignment & Governance | 9/20 | 3/5 | Regulation | Advocate | 4 |
-| Self-Improving System Prompt for Continuous AI Capability... | AI Safety, Alignment & Governance | 10/20 | 2/5 | Engineering | Build | 4 |
-| Multicriteria safety architecture with explicit precedenc... | AI Safety, Alignment & Governance | 9/20 | 3/5 | Engineering | Research | 1 |
-| Blockchain-based Universal Self-Actualization Income | Economic Systems & Resource Distribution | 10/20 | 2/5 | Regulation | Research | 3 |
-| International Council of Life Extension | Biotech, Medicine & Life Extension | 10/20 | 2/5 | Regulation | Advocate | 4 |
-| Ecological Balance Council | Ecological & Regenerative Systems | 10/20 | 2/5 | Coordination | Convene | 2 |
-| Adaptive Wearable Tech | Biotech, Medicine & Life Extension | 9/20 | 3/5 | Regulation | Build | 7 |
-| Human-Tech Council | AI Safety, Alignment & Governance | 10/20 | 2/5 | Coordination | Convene | 4 |
-| Global Learning Collective | Education, Development & Human Flouri... | 9/20 | 3/5 | Coordination | Convene | 6 |
-| Emotional Coach (Empathetic Neuro-AI) | Neurotechnology & Brain-Computer Inte... | 9/20 | 3/5 | Regulation | Research | 4 |
-| Regenerative Biospheres | Ecological & Regenerative Systems | 9/20 | 3/5 | Engineering | Research | 5 |
-| AI Alignment Markets | AI Safety, Alignment & Governance | 10/20 | 2/5 | Coordination | Research | 3 |
-| Global AI Alignment Commission (GAAC) | International Governance & Coordination | 9/20 | 3/5 | Coordination | Convene | 2 |
-| Extracellular vesicle-based blood diagnostics for tissue-... | Biotech, Medicine & Life Extension | 9/20 | 2/5 | Coordination | Convene | 3 |
-| Protein-based nanomachines for in vivo tissue repair and ... | Biotech, Medicine & Life Extension | 8/20 | 3/5 | Engineering | Research | 3 |
-| Biohybrid living DBS electrode (neuron-based implant inte... | Neurotechnology & Brain-Computer Inte... | 8/20 | 3/5 | Engineering | Research | 3 |
-| Chemputer / Chemputation programming language | Nanotechnology & Advanced Manufacturing | 8/20 | 3/5 | Social Acceptance | Advocate | 7 |
-| Openwater universal diagnostic/therapeutic device | Biotech, Medicine & Life Extension | 8/20 | 3/5 | Regulation | Fund | 4 |
-| AI-driven forking narrative / interactive scenario conten... | AI-Mediated Deliberation & Collective... | 8/20 | 3/5 | Social Acceptance | Build | 5 |
-| Agent Contract Declaration Requirement | AI Safety, Alignment & Governance | 9/20 | 2/5 | Coordination | Convene | 2 |
-| Spectrum from environmental safety to metagenic safety | AI Safety, Alignment & Governance | 9/20 | 2/5 | Engineering | Research | 1 |
-| Bounded AI Agents | AI Safety, Alignment & Governance | 9/20 | 2/5 | Coordination | Research | 5 |
-| BTC Trust Grid | Economic Systems & Resource Distribution | 9/20 | 2/5 | Regulation | Advocate | 4 |
-| Global Fungal Biology Research Initiative (Big Tech + Pau... | Biotech, Medicine & Life Extension | 9/20 | 2/5 | Coordination | Convene | 3 |
-| Biophilic Architecture | Ecological & Regenerative Systems | 9/20 | 2/5 | Funding | Fund | 7 |
-| Urban Sustainability Network | Energy, Environment & Planetary Systems | 9/20 | 2/5 | Regulation | Advocate | 7 |
-| AI Market Intermediaries | Economic Systems & Resource Distribution | 8/20 | 3/5 | Coordination | Convene | 4 |
-| The Indefinite Lifespan | Biotech, Medicine & Life Extension | 8/20 | 3/5 | Regulation | Advocate | 4 |
-| Memory Looms | Education, Development & Human Flouri... | 10/20 | 1/5 | Physics | Research | 1 |
-| World Cultural Exchange Forum | International Governance & Coordination | 9/20 | 2/5 | Coordination | Convene | 6 |
-| TimeLike / SECHI (Simulation-Enabled Cooperative Human In... | AI-Mediated Deliberation & Collective... | 7/20 | 4/5 | Coordination | Research | 3 |
-| Request for Evaluation (RfE) Protocol | AI Safety, Alignment & Governance | 9/20 | 2/5 | Coordination | Convene | 1 |
-| Focused Research Organizations (FROs) | Scientific Research & Knowledge Infra... | 7/20 | 3/5 | Funding | Fund | 5 |
-| Vagus nerve microbiome characterization study | Biotech, Medicine & Life Extension | 8/20 | 2/5 | Coordination | Research | 3 |
-| AI-driven drug repurposing pipeline (AMD/Ripasudil discov... | Biotech, Medicine & Life Extension | 7/20 | 3/5 | Regulation | Research | 5 |
-| Universal Constructor | Nanotechnology & Advanced Manufacturing | 6/20 | 4/5 | Physics | Research | 1 |
-| Bell Labs Systems Engineer Role | Scientific Research & Knowledge Infra... | 8/20 | 2/5 | Coordination | Convene | 4 |
-| Meditation-State Detection Model | Neurotechnology & Brain-Computer Inte... | 9/20 | 1/5 | Engineering | Research | 4 |
-| Vertis Solus space-based solar power array | Energy, Environment & Planetary Systems | 7/20 | 3/5 | Engineering | Research | 4 |
-| Computer-controlled sail cargo ship | Energy, Environment & Planetary Systems | 7/20 | 3/5 | Regulation | Advocate | 6 |
-| Fire-the-CEO Decision Market | Economic Systems & Resource Distribution | 8/20 | 2/5 | Regulation | Advocate | 3 |
-| Planetary-Scale Intelligence | Ecological & Regenerative Systems | 7/20 | 3/5 | Coordination | Research | 2 |
-| NanoSync – Regenerative Nanotechnology | Biotech, Medicine & Life Extension | 7/20 | 3/5 | Physics | Research | 2 |
-| Institute for Life Extension (ILE) | Biotech, Medicine & Life Extension | 7/20 | 3/5 | Regulation | Advocate | 4 |
-| Urban AI systems | Energy, Environment & Planetary Systems | 7/20 | 3/5 | Coordination | Convene | 6 |
-| AI-Managed Childhood Development Centers | Education, Development & Human Flouri... | 7/20 | 3/5 | Regulation | Research | 4 |
-| Predictive AI System for R&D Funding Allocation | Scientific Research & Knowledge Infra... | 7/20 | 3/5 | Regulation | Advocate | 4 |
-| Lifelong AI Guardians | Education, Development & Human Flouri... | 8/20 | 2/5 | Regulation | Advocate | 4 |
-| Earth UBI | Economic Systems & Resource Distribution | 8/20 | 2/5 | Coordination | Convene | 2 |
-| Jurisdictional Routers | International Governance & Coordination | 8/20 | 1/5 | Regulation | Research | 3 |
-| Pareto-Optimal Negotiation Bots | AI-Mediated Deliberation & Collective... | 7/20 | 2/5 | Social Acceptance | Advocate | 7 |
-| LitQA3 (high-recall literature evaluation benchmark) | Scientific Research & Knowledge Infra... | 7/20 | 2/5 | Engineering | Build | 4 |
-| LLM Historical Forecasting Benchmark | Scientific Research & Knowledge Infra... | 7/20 | 2/5 | Engineering | Research | 3 |
-| BBN-style Applied R&D Contractor (New BBNs) | Scientific Research & Knowledge Infra... | 6/20 | 3/5 | Coordination | Fund | 5 |
-| Closed-loop ultrasound brain-state readout and mood modul... | Neurotechnology & Brain-Computer Inte... | 6/20 | 3/5 | Regulation | Research | 5 |
-| Massively scalable intravascular or CSF-routed neural int... | Neurotechnology & Brain-Computer Inte... | 6/20 | 3/5 | Regulation | Advocate | 5 |
-| Continuous AI-Driven Book Marketing Matchmaker | Economic Systems & Resource Distribution | 7/20 | 2/5 | Engineering | Build | 6 |
-| Child Equity Stake Fund (US Birth Endowment) | Economic Systems & Resource Distribution | 7/20 | 2/5 | Social Acceptance | Advocate | 8 |
-| Onerofex (collective AI-mediated dreaming experience) | AI-Mediated Deliberation & Collective... | 7/20 | 2/5 | Regulation | Research | 4 |
-| Atheoretical Science via Massive Sensor Networks and AI P... | Scientific Research & Knowledge Infra... | 6/20 | 3/5 | Coordination | Research | 3 |
-| Parallel Federal Science Funding System with Mandatory In... | Scientific Research & Knowledge Infra... | 6/20 | 3/5 | Funding | Advocate | 2 |
-| Global Childhood Development Authority (GCDA) | Education, Development & Human Flouri... | 7/20 | 2/5 | Coordination | Convene | 4 |
-| The Children's Movement | Education, Development & Human Flouri... | 6/20 | 3/5 | Funding | Convene | 4 |
-| Neural-Adaptive Learning AI | Neurotechnology & Brain-Computer Inte... | 7/20 | 2/5 | Regulation | Advocate | 4 |
-| Bitcoin-funded renewable energy cooperatives | Energy, Environment & Planetary Systems | 7/20 | 2/5 | Regulation | Advocate | 5 |
-| Ecosystem-responsive AI management system | Ecological & Regenerative Systems | 7/20 | 2/5 | Regulation | Advocate | 4 |
-| GAI (Global AI Board) | AI Safety, Alignment & Governance | 7/20 | 2/5 | Coordination | Convene | 4 |
-| United Nations Biosphere Geoengineering and AI Governance... | International Governance & Coordination | 7/20 | 2/5 | Coordination | Convene | 2 |
-| Little AI Robots (emotional decision-support chatbots) | Education, Development & Human Flouri... | 7/20 | 2/5 | Regulation | Research | 6 |
-| Consolidated Intelligence Council | International Governance & Coordination | 7/20 | 2/5 | Coordination | Research | 4 |
-| Neural Harmony Interface | Neurotechnology & Brain-Computer Inte... | 6/20 | 3/5 | Regulation | Research | 4 |
-| Bio-templated microchips via implosion fabrication | Nanotechnology & Advanced Manufacturing | 5/20 | 3/5 | Engineering | Research | 3 |
-| Programmable synthetic molecular robots for chemical synt... | Nanotechnology & Advanced Manufacturing | 5/20 | 3/5 | Physics | Research | 3 |
-| Aldehyde-Stabilized Cryopreservation | Biotech, Medicine & Life Extension | 6/20 | 2/5 | Regulation | Research | 4 |
-| AI-powered blog aggregator with conversational interface | Education, Development & Human Flouri... | 7/20 | 1/5 | Engineering | Build | 6 |
-| EgoLets | AI-Mediated Deliberation & Collective... | 5/20 | 3/5 | Regulation | Advocate | 4 |
-| Chemical substrate computation / chemical consciousness | Scientific Research & Knowledge Infra... | 5/20 | 3/5 | Physics | Research | 2 |
-| Alexa Gentia (machine-negotiated agent legal structures) | AI Safety, Alignment & Governance | 6/20 | 2/5 | Regulation | Research | 4 |
-| Origin of Life Evolutionary Engine (chemical space search... | Scientific Research & Knowledge Infra... | 5/20 | 3/5 | Physics | Research | 4 |
-| Assembly Theory | Scientific Research & Knowledge Infra... | 6/20 | 2/5 | Physics | Research | 4 |
-| National Science and Technology Foresight Agency (NSTFA) | Scientific Research & Knowledge Infra... | 6/20 | 2/5 | Coordination | Convene | 4 |
-| Minimum-payload terraforming nanomachine for Mars | Nanotechnology & Advanced Manufacturing | 3/20 | 4/5 | Physics | Research | 2 |
-| Microbial Interaction Simulation AI (Anthropic-built) | Scientific Research & Knowledge Infra... | 5/20 | 2/5 | Engineering | Research | 4 |
-| Institute for Human Perplexity | Scientific Research & Knowledge Infra... | 5/20 | 2/5 | Coordination | Research | 2 |
-| Gene Drives for Wild Animal Suffering Reduction | Ecological & Regenerative Systems | 2/20 | 4/5 | Regulation | Convene | 4 |
-| Focused Philanthropic Bet Modeled on Warren Weaver / Rock... | Scientific Research & Knowledge Infra... | 3/20 | 3/5 | Social Acceptance | Advocate | 6 |
-| Jurisdictional Arbitrage Special Economic Zones for BCI R... | Neurotechnology & Brain-Computer Inte... | 4/20 | 2/5 | Regulation | Advocate | 5 |
-| Affective and Socio-Emotional Atmospheric Reading System | Education, Development & Human Flouri... | 4/20 | 2/5 | Social Acceptance | Advocate | 5 |
-| AI-driven individualized peace education system | Education, Development & Human Flouri... | 4/20 | 2/5 | Regulation | Research | 4 |
-| Elective Cryonic Suspension at Peak Vitality ('Kyasia') | Biotech, Medicine & Life Extension | 4/20 | 1/5 | Regulation | Advocate | 2 |
-| Earth AI | Economic Systems & Resource Distribution | 3/20 | 2/5 | Coordination | Research | 4 |
-| Neural Linguistic Interfaces | Neurotechnology & Brain-Computer Inte... | 2/20 | 3/5 | Engineering | Research | 4 |
-| Phenomenal Binding-Based Sentient AI Architecture | Neurotechnology & Brain-Computer Inte... | 1/20 | 3/5 | Physics | Research | 1 |
-| Grabby Aliens Three-Parameter Model | Scientific Research & Knowledge Infra... | 0/20 | 2/5 | Physics | Research | 4 |
+| Name | Group | d/acc | Trans. | Bottleneck | Action | TRL | Source |
+|------|-------|-------|--------|------------|--------|-----|-----|
+| AI Fiduciaries | AI Safety, Alignment & Governance | 17/20 | 3/5 | Coordination | Convene | 5 | |
+| Liberal/Popperian AGI Education Framework | AI Safety, Alignment & Governance | 15/20 | 4/5 | Physics | Research | 1 | [david-deutsch-on-beauty-knowle](https://www.existentialhope.com/podcasts/david-deutsch-on-beauty-knowledge-and-progress) |
+| Privacy-Preserving Global Regulatory Markets for AI Verif... | AI Safety, Alignment & Governance | 16/20 | 3/5 | Coordination | Convene | 3 | [emilia-javorsky-the-future-of-](https://www.existentialhope.com/podcasts/emilia-javorsky-the-future-of-ai-bioengineering-and-human-empathy) |
+| LexNodes | Decentralized & Democratic Institutions | 16/20 | 3/5 | Regulation | Advocate | 4 | [lexcommons-the-open-law-societ](https://worlds.existentialhope.com/world/lexcommons-the-open-law-society/) |
+| Viotopia | Education, Development & Human Flouri... | 13/20 | 4/5 | Coordination | Research | 1 | [fin-moorhouse-why-we-need-to-a](https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival) |
+| Continuity Guild | Education, Development & Human Flouri... | 15/20 | 2/5 | Coordination | Convene | 5 | [threadtime](https://worlds.existentialhope.com/world/threadtime/) |
+| BioEcho Mesh | Ecological & Regenerative Systems | 14/20 | 2/5 | Coordination | Convene | 6 | [2035-rewild](https://worlds.existentialhope.com/world/2035-rewild/) |
+| Cognitive Field Resonators (CFRs) | Scientific Research & Knowledge Infra... | 15/20 | 1/5 | Physics | Research | 1 | [harmonic-futures-a-2035-of-coh](https://worlds.existentialhope.com/world/harmonic-futures-a-2035-of-coherence-not-convenience/) |
+| The Mnemosyne Assembly | AI Safety, Alignment & Governance | 13/20 | 3/5 | Coordination | Convene | 3 | [harmonic-futures-a-2035-of-coh](https://worlds.existentialhope.com/world/harmonic-futures-a-2035-of-coherence-not-convenience/) |
+| Translation Language Models (TLMs) with citizen-owned tra... | AI-Mediated Deliberation & Collective... | 13/20 | 3/5 | Coordination | Build | 4 | [la-langue-de-la-prvoyance](https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/) |
+| Open Cognition Ledger | Decentralized & Democratic Institutions | 13/20 | 3/5 | Coordination | Convene | 4 | [symbiotic-wisdom](https://worlds.existentialhope.com/world/symbiotic-wisdom/) |
+| Polymesh Civic Ledger | Decentralized & Democratic Institutions | 13/20 | 3/5 | Coordination | Research | 4 | [symbiotic-wisdom](https://worlds.existentialhope.com/world/symbiotic-wisdom/) |
+| Living Rights Network | Decentralized & Democratic Institutions | 13/20 | 3/5 | Coordination | Convene | 4 | [the-living-rights-network](https://worlds.existentialhope.com/world/the-living-rights-network/) |
+| The Collective of Inner Weavers | AI Safety, Alignment & Governance | 13/20 | 3/5 | Funding | Fund | 4 | [veliona-the-world-of-unfolding](https://worlds.existentialhope.com/world/veliona-the-world-of-unfolding-minds/) |
+| Federated Procurement Platforms | Economic Systems & Resource Distribution | 13/20 | 2/5 | Coordination | Convene | 5 | |
+| contextual autonomy | AI Safety, Alignment & Governance | 12/20 | 3/5 | Coordination | Convene | 4 | |
+| Publishing for Machines (machine-readable scientific publ... | Scientific Research & Knowledge Infra... | 12/20 | 3/5 | Social Acceptance | Convene | 4 | [andrew-white-building-an-ai-sc](https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery) |
+| De novo designed universal flu vaccines (Neil King / Bake... | Biotech, Medicine & Life Extension | 12/20 | 3/5 | Regulation | Advocate | 6 | [david-baker-using-ai-for-scien](https://www.existentialhope.com/podcasts/david-baker-using-ai-for-science-to-solve-humanitys-biggest-problems) |
+| Computational models for infectious disease spread and va... | Biotech, Medicine & Life Extension | 12/20 | 3/5 | Coordination | Convene | 7 | [pablos-holman-on-creating-tech](https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters) |
+| AI-Democratic Institutions for Decentralized Governance | Decentralized & Democratic Institutions | 12/20 | 3/5 | Social Acceptance | Research | 4 | [worldbuilding-special-3rd-plac](https://www.existentialhope.com/podcasts/worldbuilding-special-3rd-place-floratech) |
+| Crowdfunded Independent Longevity AI Research Program | Nanotechnology & Advanced Manufacturing | 13/20 | 2/5 | Coordination | Convene | 4 | [a-hope-for-human-immortality](https://worlds.existentialhope.com/world/a-hope-for-human-immortality/) |
+| Hybrid Market impact bond ledger | Economic Systems & Resource Distribution | 12/20 | 3/5 | Regulation | Advocate | 5 | [hybrid-market](https://worlds.existentialhope.com/world/hybrid-market/) |
+| Isolated Societies Research Institute | Scientific Research & Knowledge Infra... | 13/20 | 2/5 | Funding | Research | 3 | [self-sustaining-isolated-socie](https://worlds.existentialhope.com/world/self-sustaining-isolated-societies/) |
+| Mandatory Open-Source AI Release Policy | AI Safety, Alignment & Governance | 12/20 | 3/5 | Regulation | Advocate | 2 | [sustainable-abundance](https://worlds.existentialhope.com/world/sustainable-abundance/) |
+| Loom Studios | Decentralized & Democratic Institutions | 12/20 | 3/5 | Coordination | Research | 4 | [symphora](https://worlds.existentialhope.com/world/symphora/) |
+| The Common Knowledge Generator | Scientific Research & Knowledge Infra... | 12/20 | 3/5 | Coordination | Convene | 4 | |
+| The Delphi Collaboration Protocol | AI-Mediated Deliberation & Collective... | 13/20 | 2/5 | Coordination | Build | 4 | |
+| The Scenario Planning Institution | AI Safety, Alignment & Governance | 12/20 | 3/5 | Coordination | Convene | 4 | |
+| Flourishing Certification | Education, Development & Human Flouri... | 12/20 | 3/5 | Coordination | Convene | 3 | |
+| TAI Horizon Scanner | AI Safety, Alignment & Governance | 12/20 | 3/5 | Coordination | Convene | 4 | |
+| Lean FRO (interactive theorem proving infrastructure for ... | Scientific Research & Knowledge Infra... | 11/20 | 3/5 | Engineering | Build | 6 | [adam-marblestone-solving-scien](https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps) |
+| Large-scale AI-mediated deliberation system | AI-Mediated Deliberation & Collective... | 11/20 | 3/5 | Engineering | Build | 5 | [anthony-aguirre-tools-or-agent](https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future) |
+| Reputational Market | Economic Systems & Resource Distribution | 11/20 | 3/5 | Coordination | Research | 3 | [kristian-rnn-the-darwinian-tra](https://www.existentialhope.com/podcasts/kristian-rnn-the-darwinian-trap-that-explains-our-world) |
+| Learning Observatories | AI Safety, Alignment & Governance | 11/20 | 3/5 | Coordination | Convene | 4 | [niklas-lundblad-how-ai-can-acc](https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption) |
+| Deep Fision borehole nuclear reactor | Energy, Environment & Planetary Systems | 11/20 | 3/5 | Regulation | Build | 4 | [pablos-holman-on-creating-tech](https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters) |
+| Values-as-modality parametrization across AI systems | AI Safety, Alignment & Governance | 11/20 | 3/5 | Coordination | Research | 2 | [richard-mallah-how-aligned-ai-](https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future) |
+| Parallel lightly-regulated childminder category (France) | Education, Development & Human Flouri... | 12/20 | 2/5 | Regulation | Research | 7 | [sam-bowman-whats-holding-back-](https://www.existentialhope.com/podcasts/sam-bowman-whats-holding-back-progress-and-how-to-fix-it) |
+| Orare - AI-powered Futarchy governance system | AI-Mediated Deliberation & Collective... | 11/20 | 3/5 | Social Acceptance | Advocate | 4 | [worldbuilding-special-1st-plac](https://www.existentialhope.com/podcasts/worldbuilding-special-1st-place-cities-of-orare) |
+| VOICE (Voice for Open Source Information and Community En... | AI-Mediated Deliberation & Collective... | 11/20 | 3/5 | Social Acceptance | Research | 4 | [worldbuilding-special-2nd-plac](https://www.existentialhope.com/podcasts/worldbuilding-special-2nd-place-rising-choir) |
+| Global Personhood Token / Trust-of-Personhood Standard | International Governance & Coordination | 11/20 | 3/5 | Regulation | Advocate | 6 | [worldbuilding-special-2nd-plac](https://www.existentialhope.com/podcasts/worldbuilding-special-2nd-place-rising-choir) |
+| LexCommons | Decentralized & Democratic Institutions | 12/20 | 2/5 | Regulation | Research | 5 | [lexcommons-the-open-law-societ](https://worlds.existentialhope.com/world/lexcommons-the-open-law-society/) |
+| The Welcome Circle | Education, Development & Human Flouri... | 12/20 | 2/5 | Coordination | Convene | 2 | [planet-joy](https://worlds.existentialhope.com/world/planet-joy/) |
+| RaízMental Global | Biotech, Medicine & Life Extension | 11/20 | 3/5 | Regulation | Convene | 4 | [razmental-emotional-healing-ec](https://worlds.existentialhope.com/world/razmental-emotional-healing-ecosystems/) |
+| Ethical AI Tutors | Education, Development & Human Flouri... | 11/20 | 3/5 | Coordination | Convene | 5 | [the-learning-uncommons-of-2035](https://worlds.existentialhope.com/world/the-learning-uncommons-of-2035/) |
+| Safety-Netted DAOs | Decentralized & Democratic Institutions | 11/20 | 2/5 | Engineering | Build | 2 | |
+| AGI Liability Safe Harbor Framework | AI Safety, Alignment & Governance | 10/20 | 3/5 | Regulation | Research | 1 | |
+| Multiplicity.ai | AI-Mediated Deliberation & Collective... | 11/20 | 2/5 | Engineering | Build | 7 | [andrew-critch-what-agi-might-l](https://www.existentialhope.com/podcasts/andrew-critch-what-agi-might-look-like-in-practice) |
+| Futarchy | Decentralized & Democratic Institutions | 10/20 | 3/5 | Social Acceptance | Build | 4 | [david-duvenaud-exploring-the-c](https://www.existentialhope.com/podcasts/david-duvenaud-exploring-the-cruxes-and-possibilities-of-post-agi-futures) |
+| Active smart fabric with autonomous environmental response | Nanotechnology & Advanced Manufacturing | 11/20 | 2/5 | Engineering | Research | 3 | [david-leigh-exploring-the-poss](https://www.existentialhope.com/podcasts/david-leigh-exploring-the-possibilities-of-nanotechnology) |
+| Integration of Brain Preservation into the Medical System | Biotech, Medicine & Life Extension | 11/20 | 2/5 | Regulation | Advocate | 3 | [dr-ariel-zeleznikow-johnston-t](https://www.existentialhope.com/podcasts/dr-ariel-zeleznikow-johnston-the-future-loves-you) |
+| Imagination Annotated (book series) | Education, Development & Human Flouri... | 11/20 | 2/5 | Coordination | Convene | 6 | [ed-finn-how-science-fiction-ca](https://www.existentialhope.com/podcasts/ed-finn-how-science-fiction-can-inspire-real-world-innovation) |
+| Author Personal Knowledge Graph / Writing Corpus Utility | Scientific Research & Knowledge Infra... | 11/20 | 2/5 | Engineering | Build | 5 | [jim-oshaughnessy-on-investing-](https://www.existentialhope.com/podcasts/jim-oshaughnessy-on-investing-in-infinite-human-potential) |
+| Artificial General Wisdom | AI Safety, Alignment & Governance | 10/20 | 3/5 | Coordination | Research | 2 | [liv-boeree-game-theory-moloch-](https://www.existentialhope.com/podcasts/liv-boeree-game-theory-moloch-our-hopeful-future) |
+| Componentized architectures optimized for inner alignment... | AI Safety, Alignment & Governance | 10/20 | 3/5 | Coordination | Research | 2 | [richard-mallah-how-aligned-ai-](https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future) |
+| Neighborhood opt-in upzoning with land value capture | Decentralized & Democratic Institutions | 11/20 | 2/5 | Regulation | Research | 4 | [sam-bowman-whats-holding-back-](https://www.existentialhope.com/podcasts/sam-bowman-whats-holding-back-progress-and-how-to-fix-it) |
+| Kacha's Global Symbiosis Council (GSC) | International Governance & Coordination | 10/20 | 3/5 | Coordination | Convene | 4 | [2035-the-era-of-sentient-symbi](https://worlds.existentialhope.com/world/2035-the-era-of-sentient-symbiosis-and-human-ai-flourishment/) |
+| Guardian Network | International Governance & Coordination | 11/20 | 2/5 | Coordination | Convene | 4 | [edusafe](https://worlds.existentialhope.com/world/edusafe/) |
+| Decentralized community-built AI systems | Decentralized & Democratic Institutions | 10/20 | 3/5 | Coordination | Convene | 5 | [new-world-in-the-making](https://worlds.existentialhope.com/world/new-world-in-the-making/) |
+| Bio-Responsive AI Interfaces | Neurotechnology & Brain-Computer Inte... | 11/20 | 2/5 | Coordination | Convene | 4 | [planet-joy](https://worlds.existentialhope.com/world/planet-joy/) |
+| Open-source AI-powered research funding and knowledge pla... | Scientific Research & Knowledge Infra... | 10/20 | 3/5 | Regulation | Advocate | 4 | [potentia](https://worlds.existentialhope.com/world/potentia/) |
+| Interplanetary Cooperative | International Governance & Coordination | 11/20 | 2/5 | Regulation | Advocate | 2 | [resilient-planetary-settlement](https://worlds.existentialhope.com/world/resilient-planetary-settlements/) |
+| Civic Loom | AI-Mediated Deliberation & Collective... | 11/20 | 2/5 | Coordination | Research | 5 | [symphora](https://worlds.existentialhope.com/world/symphora/) |
+| AI-powered participatory policy simulation platform | AI-Mediated Deliberation & Collective... | 10/20 | 3/5 | Social Acceptance | Convene | 5 | [the-commons-cloud](https://worlds.existentialhope.com/world/the-commons-cloud/) |
+| The Flourishing Foundation | Education, Development & Human Flouri... | 11/20 | 2/5 | Regulation | Advocate | 5 | |
+| The Evals for Evals Institute | AI Safety, Alignment & Governance | 10/20 | 3/5 | Coordination | Convene | 3 | |
+| The World Convention on Transformative Artificial Intelli... | International Governance & Coordination | 11/20 | 2/5 | Coordination | Convene | 4 | |
+| Global Deliberation as a Service (GDaaS) | AI-Mediated Deliberation & Collective... | 10/20 | 3/5 | Coordination | Convene | 4 | |
+| World Convention on Transformative Artificial Intelligenc... | International Governance & Coordination | 10/20 | 3/5 | Coordination | Research | 2 | |
+| Tool AI for Tool AI | AI Safety, Alignment & Governance | 9/20 | 3/5 | Engineering | Build | 4 | |
+| NotADoctor.ai medical record serialization and RCT search | Biotech, Medicine & Life Extension | 10/20 | 2/5 | Engineering | Research | 6 | [andrew-critch-what-agi-might-l](https://www.existentialhope.com/podcasts/andrew-critch-what-agi-might-look-like-in-practice) |
+| AI-mediated conflict resolution tool (retorsion/disgorgem... | AI-Mediated Deliberation & Collective... | 10/20 | 2/5 | Regulation | Research | 4 | [andrew-critch-what-agi-might-l](https://www.existentialhope.com/podcasts/andrew-critch-what-agi-might-look-like-in-practice) |
+| Aviary | Scientific Research & Knowledge Infra... | 10/20 | 2/5 | Social Acceptance | Build | 6 | [andrew-white-building-an-ai-sc](https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery) |
+| Windfall Clause | Economic Systems & Resource Distribution | 10/20 | 2/5 | Coordination | Convene | 2 | [anthony-aguirre-anna-yelizarov](https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding) |
+| Project Hieroglyph | Education, Development & Human Flouri... | 9/20 | 3/5 | Funding | Fund | 4 | [ed-finn-how-science-fiction-ca](https://www.existentialhope.com/podcasts/ed-finn-how-science-fiction-can-inspire-real-world-innovation) |
+| Provably Safe AGI via Formal Verification | AI Safety, Alignment & Governance | 9/20 | 3/5 | Engineering | Research | 3 | [gus-docker-beyond-survival-env](https://www.existentialhope.com/podcasts/gus-docker-beyond-survival-envisioning-a-technologically-enhanced-utopia) |
+| Closed-loop gene therapy for seizure suppression via acti... | Biotech, Medicine & Life Extension | 9/20 | 3/5 | Regulation | Fund | 4 | [jacques-carolan-the-future-of-](https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health) |
+| AI underwriting / mandatory insurance for AI systems | AI Safety, Alignment & Governance | 9/20 | 3/5 | Regulation | Advocate | 4 | [nathan-labenz-what-are-the-bes](https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai) |
+| Self-Improving System Prompt for Continuous AI Capability... | AI Safety, Alignment & Governance | 10/20 | 2/5 | Engineering | Build | 4 | [niklas-lundblad-how-ai-can-acc](https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption) |
+| Multicriteria safety architecture with explicit precedenc... | AI Safety, Alignment & Governance | 9/20 | 3/5 | Engineering | Research | 1 | [richard-mallah-how-aligned-ai-](https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future) |
+| Blockchain-based Universal Self-Actualization Income | Economic Systems & Resource Distribution | 10/20 | 2/5 | Regulation | Research | 3 | [trent-mcconaghy-from-starships](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures) |
+| International Council of Life Extension | Biotech, Medicine & Life Extension | 10/20 | 2/5 | Regulation | Advocate | 4 | [a-hope-for-human-immortality](https://worlds.existentialhope.com/world/a-hope-for-human-immortality/) |
+| Ecological Balance Council | Ecological & Regenerative Systems | 10/20 | 2/5 | Coordination | Convene | 2 | [green-renaissance](https://worlds.existentialhope.com/world/green-renaissance/) |
+| Adaptive Wearable Tech | Biotech, Medicine & Life Extension | 9/20 | 3/5 | Regulation | Build | 7 | [human-centric-technology](https://worlds.existentialhope.com/world/human-centric-technology/) |
+| Human-Tech Council | AI Safety, Alignment & Governance | 10/20 | 2/5 | Coordination | Convene | 4 | [human-centric-technology](https://worlds.existentialhope.com/world/human-centric-technology/) |
+| Global Learning Collective | Education, Development & Human Flouri... | 9/20 | 3/5 | Coordination | Convene | 6 | [lumina-the-world-illuminated-b](https://worlds.existentialhope.com/world/lumina-the-world-illuminated-by-unleashed-human-brilliance/) |
+| Emotional Coach (Empathetic Neuro-AI) | Neurotechnology & Brain-Computer Inte... | 9/20 | 3/5 | Regulation | Research | 4 | [razmental-emotional-healing-ec](https://worlds.existentialhope.com/world/razmental-emotional-healing-ecosystems/) |
+| Regenerative Biospheres | Ecological & Regenerative Systems | 9/20 | 3/5 | Engineering | Research | 5 | [resilient-planetary-settlement](https://worlds.existentialhope.com/world/resilient-planetary-settlements/) |
+| AI Alignment Markets | AI Safety, Alignment & Governance | 10/20 | 2/5 | Coordination | Research | 3 | [the-symbiotic-age](https://worlds.existentialhope.com/world/the-symbiotic-age/) |
+| Global AI Alignment Commission (GAAC) | International Governance & Coordination | 9/20 | 3/5 | Coordination | Convene | 2 | [the-symbiotic-age](https://worlds.existentialhope.com/world/the-symbiotic-age/) |
+| Extracellular vesicle-based blood diagnostics for tissue-... | Biotech, Medicine & Life Extension | 9/20 | 2/5 | Coordination | Convene | 3 | [amy-proal-rethinking-chronic-d](https://www.existentialhope.com/podcasts/amy-proal-rethinking-chronic-disease) |
+| Protein-based nanomachines for in vivo tissue repair and ... | Biotech, Medicine & Life Extension | 8/20 | 3/5 | Engineering | Research | 3 | [david-baker-using-ai-for-scien](https://www.existentialhope.com/podcasts/david-baker-using-ai-for-science-to-solve-humanitys-biggest-problems) |
+| Biohybrid living DBS electrode (neuron-based implant inte... | Neurotechnology & Brain-Computer Inte... | 8/20 | 3/5 | Engineering | Research | 3 | [jacques-carolan-the-future-of-](https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health) |
+| Chemputer / Chemputation programming language | Nanotechnology & Advanced Manufacturing | 8/20 | 3/5 | Social Acceptance | Advocate | 7 | [lee-cronin-catalyzing-progress](https://www.existentialhope.com/podcasts/lee-cronin-catalyzing-progress-through-chemistry) |
+| Openwater universal diagnostic/therapeutic device | Biotech, Medicine & Life Extension | 8/20 | 3/5 | Regulation | Fund | 4 | [mary-lou-jepsen-a-handheld-dev](https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer) |
+| AI-driven forking narrative / interactive scenario conten... | AI-Mediated Deliberation & Collective... | 8/20 | 3/5 | Social Acceptance | Build | 5 | [nathan-labenz-what-are-the-bes](https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai) |
+| Agent Contract Declaration Requirement | AI Safety, Alignment & Governance | 9/20 | 2/5 | Coordination | Convene | 2 | [niklas-lundblad-how-ai-can-acc](https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption) |
+| Spectrum from environmental safety to metagenic safety | AI Safety, Alignment & Governance | 9/20 | 2/5 | Engineering | Research | 1 | [richard-mallah-how-aligned-ai-](https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future) |
+| Bounded AI Agents | AI Safety, Alignment & Governance | 9/20 | 2/5 | Coordination | Research | 5 | [worldbuilding-special-3rd-plac](https://www.existentialhope.com/podcasts/worldbuilding-special-3rd-place-floratech) |
+| BTC Trust Grid | Economic Systems & Resource Distribution | 9/20 | 2/5 | Regulation | Advocate | 4 | [worldbuilding-course-worldbuil](https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/) |
+| Global Fungal Biology Research Initiative (Big Tech + Pau... | Biotech, Medicine & Life Extension | 9/20 | 2/5 | Coordination | Convene | 3 | [fungi-terra](https://worlds.existentialhope.com/world/fungi-terra/) |
+| Biophilic Architecture | Ecological & Regenerative Systems | 9/20 | 2/5 | Funding | Fund | 7 | [green-renaissance](https://worlds.existentialhope.com/world/green-renaissance/) |
+| Urban Sustainability Network | Energy, Environment & Planetary Systems | 9/20 | 2/5 | Regulation | Advocate | 7 | [harmonized-urban-ecosystems](https://worlds.existentialhope.com/world/harmonized-urban-ecosystems/) |
+| AI Market Intermediaries | Economic Systems & Resource Distribution | 8/20 | 3/5 | Coordination | Convene | 4 | [the-more-beautiful-world-our-h](https://worlds.existentialhope.com/world/the-more-beautiful-world-our-hearts-know-is-possible/) |
+| The Indefinite Lifespan | Biotech, Medicine & Life Extension | 8/20 | 3/5 | Regulation | Advocate | 4 | [the-world-of-equal-opportunity](https://worlds.existentialhope.com/world/the-world-of-equal-opportunity-for-sentient-beings-living-the-indefinite-lifespan-immortally/) |
+| Memory Looms | Education, Development & Human Flouri... | 10/20 | 1/5 | Physics | Research | 1 | [threadtime](https://worlds.existentialhope.com/world/threadtime/) |
+| World Cultural Exchange Forum | International Governance & Coordination | 9/20 | 2/5 | Coordination | Convene | 6 | [unity-through-diversity](https://worlds.existentialhope.com/world/unity-through-diversity/) |
+| TimeLike / SECHI (Simulation-Enabled Cooperative Human In... | AI-Mediated Deliberation & Collective... | 7/20 | 4/5 | Coordination | Research | 3 | |
+| Request for Evaluation (RfE) Protocol | AI Safety, Alignment & Governance | 9/20 | 2/5 | Coordination | Convene | 1 | |
+| Focused Research Organizations (FROs) | Scientific Research & Knowledge Infra... | 7/20 | 3/5 | Funding | Fund | 5 | [adam-marblestone-solving-scien](https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps) |
+| Vagus nerve microbiome characterization study | Biotech, Medicine & Life Extension | 8/20 | 2/5 | Coordination | Research | 3 | [amy-proal-rethinking-chronic-d](https://www.existentialhope.com/podcasts/amy-proal-rethinking-chronic-disease) |
+| AI-driven drug repurposing pipeline (AMD/Ripasudil discov... | Biotech, Medicine & Life Extension | 7/20 | 3/5 | Regulation | Research | 5 | [andrew-white-building-an-ai-sc](https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery) |
+| Universal Constructor | Nanotechnology & Advanced Manufacturing | 6/20 | 4/5 | Physics | Research | 1 | [david-deutsch-on-beauty-knowle](https://www.existentialhope.com/podcasts/david-deutsch-on-beauty-knowledge-and-progress) |
+| Bell Labs Systems Engineer Role | Scientific Research & Knowledge Infra... | 8/20 | 2/5 | Coordination | Convene | 4 | [eric-gilliam-what-history-can-](https://www.existentialhope.com/podcasts/eric-gilliam-what-history-can-teach-us-about-doing-better-science) |
+| Meditation-State Detection Model | Neurotechnology & Brain-Computer Inte... | 9/20 | 1/5 | Engineering | Research | 4 | [gus-docker-beyond-survival-env](https://www.existentialhope.com/podcasts/gus-docker-beyond-survival-envisioning-a-technologically-enhanced-utopia) |
+| Vertis Solus space-based solar power array | Energy, Environment & Planetary Systems | 7/20 | 3/5 | Engineering | Research | 4 | [pablos-holman-on-creating-tech](https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters) |
+| Computer-controlled sail cargo ship | Energy, Environment & Planetary Systems | 7/20 | 3/5 | Regulation | Advocate | 6 | [pablos-holman-on-creating-tech](https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters) |
+| Fire-the-CEO Decision Market | Economic Systems & Resource Distribution | 8/20 | 2/5 | Regulation | Advocate | 3 | [robin-hanson-on-futurism-his-b](https://www.existentialhope.com/podcasts/robin-hanson-on-futurism-his-best-career-advice) |
+| Planetary-Scale Intelligence | Ecological & Regenerative Systems | 7/20 | 3/5 | Coordination | Research | 2 | [sara-walker-unraveling-lifes-b](https://www.existentialhope.com/podcasts/sara-walker-unraveling-lifes-beginnings-with-the-cosmic-perspective) |
+| NanoSync – Regenerative Nanotechnology | Biotech, Medicine & Life Extension | 7/20 | 3/5 | Physics | Research | 2 | [elysium](https://worlds.existentialhope.com/world/elysium/) |
+| Institute for Life Extension (ILE) | Biotech, Medicine & Life Extension | 7/20 | 3/5 | Regulation | Advocate | 4 | [elysium](https://worlds.existentialhope.com/world/elysium/) |
+| Urban AI systems | Energy, Environment & Planetary Systems | 7/20 | 3/5 | Coordination | Convene | 6 | [harmonized-urban-ecosystems](https://worlds.existentialhope.com/world/harmonized-urban-ecosystems/) |
+| AI-Managed Childhood Development Centers | Education, Development & Human Flouri... | 7/20 | 3/5 | Regulation | Research | 4 | [harmony-haven](https://worlds.existentialhope.com/world/harmony-haven/) |
+| Predictive AI System for R&D Funding Allocation | Scientific Research & Knowledge Infra... | 7/20 | 3/5 | Regulation | Advocate | 4 | [innovation-nation](https://worlds.existentialhope.com/world/innovation-nation/) |
+| Lifelong AI Guardians | Education, Development & Human Flouri... | 8/20 | 2/5 | Regulation | Advocate | 4 | [kidtopia](https://worlds.existentialhope.com/world/kidtopia/) |
+| Earth UBI | Economic Systems & Resource Distribution | 8/20 | 2/5 | Coordination | Convene | 2 | [protopia-peace-project](https://worlds.existentialhope.com/world/protopia-peace-project/) |
+| Jurisdictional Routers | International Governance & Coordination | 8/20 | 1/5 | Regulation | Research | 3 | |
+| Pareto-Optimal Negotiation Bots | AI-Mediated Deliberation & Collective... | 7/20 | 2/5 | Social Acceptance | Advocate | 7 | |
+| LitQA3 (high-recall literature evaluation benchmark) | Scientific Research & Knowledge Infra... | 7/20 | 2/5 | Engineering | Build | 4 | [andrew-white-building-an-ai-sc](https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery) |
+| LLM Historical Forecasting Benchmark | Scientific Research & Knowledge Infra... | 7/20 | 2/5 | Engineering | Research | 3 | [david-duvenaud-exploring-the-c](https://www.existentialhope.com/podcasts/david-duvenaud-exploring-the-cruxes-and-possibilities-of-post-agi-futures) |
+| BBN-style Applied R&D Contractor (New BBNs) | Scientific Research & Knowledge Infra... | 6/20 | 3/5 | Coordination | Fund | 5 | [eric-gilliam-what-history-can-](https://www.existentialhope.com/podcasts/eric-gilliam-what-history-can-teach-us-about-doing-better-science) |
+| Closed-loop ultrasound brain-state readout and mood modul... | Neurotechnology & Brain-Computer Inte... | 6/20 | 3/5 | Regulation | Research | 5 | [jacques-carolan-the-future-of-](https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health) |
+| Massively scalable intravascular or CSF-routed neural int... | Neurotechnology & Brain-Computer Inte... | 6/20 | 3/5 | Regulation | Advocate | 5 | [jacques-carolan-the-future-of-](https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health) |
+| Continuous AI-Driven Book Marketing Matchmaker | Economic Systems & Resource Distribution | 7/20 | 2/5 | Engineering | Build | 6 | [jim-oshaughnessy-on-investing-](https://www.existentialhope.com/podcasts/jim-oshaughnessy-on-investing-in-infinite-human-potential) |
+| Child Equity Stake Fund (US Birth Endowment) | Economic Systems & Resource Distribution | 7/20 | 2/5 | Social Acceptance | Advocate | 8 | [jim-oshaughnessy-on-investing-](https://www.existentialhope.com/podcasts/jim-oshaughnessy-on-investing-in-infinite-human-potential) |
+| Onerofex (collective AI-mediated dreaming experience) | AI-Mediated Deliberation & Collective... | 7/20 | 2/5 | Regulation | Research | 4 | [ken-liu-what-ai-reveals-about-](https://www.existentialhope.com/podcasts/ken-liu-what-ai-reveals-about-humanity) |
+| Atheoretical Science via Massive Sensor Networks and AI P... | Scientific Research & Knowledge Infra... | 6/20 | 3/5 | Coordination | Research | 3 | [niklas-lundblad-how-ai-can-acc](https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption) |
+| Parallel Federal Science Funding System with Mandatory In... | Scientific Research & Knowledge Infra... | 6/20 | 3/5 | Funding | Advocate | 2 | [stuart-buck-what-is-good-scien](https://www.existentialhope.com/podcasts/stuart-buck-what-is-good-science) |
+| Global Childhood Development Authority (GCDA) | Education, Development & Human Flouri... | 7/20 | 2/5 | Coordination | Convene | 4 | [harmony-haven](https://worlds.existentialhope.com/world/harmony-haven/) |
+| The Children's Movement | Education, Development & Human Flouri... | 6/20 | 3/5 | Funding | Convene | 4 | [kidtopia](https://worlds.existentialhope.com/world/kidtopia/) |
+| Neural-Adaptive Learning AI | Neurotechnology & Brain-Computer Inte... | 7/20 | 2/5 | Regulation | Advocate | 4 | [lumina-the-world-illuminated-b](https://worlds.existentialhope.com/world/lumina-the-world-illuminated-by-unleashed-human-brilliance/) |
+| Bitcoin-funded renewable energy cooperatives | Energy, Environment & Planetary Systems | 7/20 | 2/5 | Regulation | Advocate | 5 | [new-world-in-the-making](https://worlds.existentialhope.com/world/new-world-in-the-making/) |
+| Ecosystem-responsive AI management system | Ecological & Regenerative Systems | 7/20 | 2/5 | Regulation | Advocate | 4 | [potentia](https://worlds.existentialhope.com/world/potentia/) |
+| GAI (Global AI Board) | AI Safety, Alignment & Governance | 7/20 | 2/5 | Coordination | Convene | 4 | [sustainable-abundance](https://worlds.existentialhope.com/world/sustainable-abundance/) |
+| United Nations Biosphere Geoengineering and AI Governance... | International Governance & Coordination | 7/20 | 2/5 | Coordination | Convene | 2 | [the-world-of-equal-opportunity](https://worlds.existentialhope.com/world/the-world-of-equal-opportunity-for-sentient-beings-living-the-indefinite-lifespan-immortally/) |
+| Little AI Robots (emotional decision-support chatbots) | Education, Development & Human Flouri... | 7/20 | 2/5 | Regulation | Research | 6 | [uniqualia](https://worlds.existentialhope.com/world/uniqualia/) |
+| Consolidated Intelligence Council | International Governance & Coordination | 7/20 | 2/5 | Coordination | Research | 4 | [unified-peace](https://worlds.existentialhope.com/world/unified-peace/) |
+| Neural Harmony Interface | Neurotechnology & Brain-Computer Inte... | 6/20 | 3/5 | Regulation | Research | 4 | [veliona-the-world-of-unfolding](https://worlds.existentialhope.com/world/veliona-the-world-of-unfolding-minds/) |
+| Bio-templated microchips via implosion fabrication | Nanotechnology & Advanced Manufacturing | 5/20 | 3/5 | Engineering | Research | 3 | [adam-marblestone-solving-scien](https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps) |
+| Programmable synthetic molecular robots for chemical synt... | Nanotechnology & Advanced Manufacturing | 5/20 | 3/5 | Physics | Research | 3 | [david-leigh-exploring-the-poss](https://www.existentialhope.com/podcasts/david-leigh-exploring-the-possibilities-of-nanotechnology) |
+| Aldehyde-Stabilized Cryopreservation | Biotech, Medicine & Life Extension | 6/20 | 2/5 | Regulation | Research | 4 | [dr-ariel-zeleznikow-johnston-t](https://www.existentialhope.com/podcasts/dr-ariel-zeleznikow-johnston-the-future-loves-you) |
+| AI-powered blog aggregator with conversational interface | Education, Development & Human Flouri... | 7/20 | 1/5 | Engineering | Build | 6 | [eli-dourado-on-accelerating-pr](https://www.existentialhope.com/podcasts/eli-dourado-on-accelerating-progress) |
+| EgoLets | AI-Mediated Deliberation & Collective... | 5/20 | 3/5 | Regulation | Advocate | 4 | [ken-liu-what-ai-reveals-about-](https://www.existentialhope.com/podcasts/ken-liu-what-ai-reveals-about-humanity) |
+| Chemical substrate computation / chemical consciousness | Scientific Research & Knowledge Infra... | 5/20 | 3/5 | Physics | Research | 2 | [lee-cronin-catalyzing-progress](https://www.existentialhope.com/podcasts/lee-cronin-catalyzing-progress-through-chemistry) |
+| Alexa Gentia (machine-negotiated agent legal structures) | AI Safety, Alignment & Governance | 6/20 | 2/5 | Regulation | Research | 4 | [niklas-lundblad-how-ai-can-acc](https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption) |
+| Origin of Life Evolutionary Engine (chemical space search... | Scientific Research & Knowledge Infra... | 5/20 | 3/5 | Physics | Research | 4 | [sara-walker-unraveling-lifes-b](https://www.existentialhope.com/podcasts/sara-walker-unraveling-lifes-beginnings-with-the-cosmic-perspective) |
+| Assembly Theory | Scientific Research & Knowledge Infra... | 6/20 | 2/5 | Physics | Research | 4 | [sara-walker-unraveling-lifes-b](https://www.existentialhope.com/podcasts/sara-walker-unraveling-lifes-beginnings-with-the-cosmic-perspective) |
+| National Science and Technology Foresight Agency (NSTFA) | Scientific Research & Knowledge Infra... | 6/20 | 2/5 | Coordination | Convene | 4 | [innovation-nation](https://worlds.existentialhope.com/world/innovation-nation/) |
+| Minimum-payload terraforming nanomachine for Mars | Nanotechnology & Advanced Manufacturing | 3/20 | 4/5 | Physics | Research | 2 | [lee-cronin-catalyzing-progress](https://www.existentialhope.com/podcasts/lee-cronin-catalyzing-progress-through-chemistry) |
+| Microbial Interaction Simulation AI (Anthropic-built) | Scientific Research & Knowledge Infra... | 5/20 | 2/5 | Engineering | Research | 4 | [fungi-terra](https://worlds.existentialhope.com/world/fungi-terra/) |
+| Institute for Human Perplexity | Scientific Research & Knowledge Infra... | 5/20 | 2/5 | Coordination | Research | 2 | [uniqualia](https://worlds.existentialhope.com/world/uniqualia/) |
+| Gene Drives for Wild Animal Suffering Reduction | Ecological & Regenerative Systems | 2/20 | 4/5 | Regulation | Convene | 4 | [david-pearce-a-future-without-](https://www.existentialhope.com/podcasts/david-pearce-a-future-without-suffering) |
+| Focused Philanthropic Bet Modeled on Warren Weaver / Rock... | Scientific Research & Knowledge Infra... | 3/20 | 3/5 | Social Acceptance | Advocate | 6 | [eric-gilliam-what-history-can-](https://www.existentialhope.com/podcasts/eric-gilliam-what-history-can-teach-us-about-doing-better-science) |
+| Jurisdictional Arbitrage Special Economic Zones for BCI R... | Neurotechnology & Brain-Computer Inte... | 4/20 | 2/5 | Regulation | Advocate | 5 | [trent-mcconaghy-from-starships](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures) |
+| Affective and Socio-Emotional Atmospheric Reading System | Education, Development & Human Flouri... | 4/20 | 2/5 | Social Acceptance | Advocate | 5 | [edusafe](https://worlds.existentialhope.com/world/edusafe/) |
+| AI-driven individualized peace education system | Education, Development & Human Flouri... | 4/20 | 2/5 | Regulation | Research | 4 | [unified-peace](https://worlds.existentialhope.com/world/unified-peace/) |
+| Elective Cryonic Suspension at Peak Vitality ('Kyasia') | Biotech, Medicine & Life Extension | 4/20 | 1/5 | Regulation | Advocate | 2 | [david-pearce-a-future-without-](https://www.existentialhope.com/podcasts/david-pearce-a-future-without-suffering) |
+| Earth AI | Economic Systems & Resource Distribution | 3/20 | 2/5 | Coordination | Research | 4 | [protopia-peace-project](https://worlds.existentialhope.com/world/protopia-peace-project/) |
+| Neural Linguistic Interfaces | Neurotechnology & Brain-Computer Inte... | 2/20 | 3/5 | Engineering | Research | 4 | [unity-through-diversity](https://worlds.existentialhope.com/world/unity-through-diversity/) |
+| Phenomenal Binding-Based Sentient AI Architecture | Neurotechnology & Brain-Computer Inte... | 1/20 | 3/5 | Physics | Research | 1 | [david-pearce-a-future-without-](https://www.existentialhope.com/podcasts/david-pearce-a-future-without-suffering) |
+| Grabby Aliens Three-Parameter Model | Scientific Research & Knowledge Infra... | 0/20 | 2/5 | Physics | Research | 4 | [robin-hanson-on-futurism-his-b](https://www.existentialhope.com/podcasts/robin-hanson-on-futurism-his-best-career-advice) |
 
 ---
 
