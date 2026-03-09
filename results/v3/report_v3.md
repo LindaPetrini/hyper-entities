@@ -9,9 +9,9 @@ March 2026
 
 ## 1. Executive Summary
 
-Right now, the vast majority of attention and investment in transformative technology is going to one thing: artificial intelligence. But AI is not the only system that could reshape civilization — and by focusing so narrowly, we risk neglecting dozens of other futures that matter just as much.
+What are technologies like Dyson spheres — ideas so big they reshape how people think and invest, even though nobody has actually built them yet? And what if there were dozens of those, not in science fiction, but in active research communities right now, quietly reorganizing funding, policy, and coordination while most of the world's attention goes to AI?
 
-This report maps 189 of those overlooked futures. We call them *[hyper-entities](https://www.existentialhope.com/podcasts/michael-nielsen-on-hyper-entities-tools-for-thought-and-wise-optimism)* — a term coined by researcher Michael Nielsen. In plain English, a hyper-entity is a system that doesn't exist yet but is already changing how people organize, invest, and plan because they expect it to arrive. Think of the Internet before most people had ever used it: by the late 1980s, telecom companies, governments, and venture capitalists were already reshaping their strategies around a network that was still years from mass adoption. That anticipatory pull — the way an imagined future reorganizes the present — is what makes something a hyper-entity.
+This report maps 189 of those overlooked futures. We call them *[hyper-entities](https://www.existentialhope.com/podcasts/michael-nielsen-on-hyper-entities-tools-for-thought-and-wise-optimism)* — a term coined by researcher Michael Nielsen. A hyper-entity is a system that doesn't exist yet but is already changing how people organize, invest, and plan because they expect it to arrive. Think of the Internet before most people had ever used it: by the late 1980s, telecom companies, governments, and venture capitalists were already reshaping their strategies around a network that was still years from mass adoption. That anticipatory pull — the way an imagined future reorganizes the present — is what makes something a hyper-entity.
 
 To evaluate these 189 systems, we used the [d/acc framework](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html) — a set of values proposed by Ethereum creator [Vitalik Buterin](https://en.wikipedia.org/wiki/Vitalik_Buterin) for evaluating whether a technology distributes power (democratic), resists central control (decentralized), protects rather than harms (defensive), and speeds up good outcomes faster than bad ones (differential). We also scored each system on how transformative it could be and how actionable it is right now, producing a combined score — a composite reflecting values alignment, transformative potential, and near-term actionability — that determined how we ranked them.
 
@@ -33,17 +33,17 @@ All candidates were sourced from [Existential Hope](https://www.existentialhope.
 
 Some of the most powerful forces shaping our world are things that don't exist yet.
 
-Before the first Moon landing, the idea of reaching the Moon had already reorganized national budgets, university curricula, and entire industries. Before most people had ever sent an email, the anticipated Internet was already redirecting billions in telecom investment and reshaping government policy. Today, artificial general intelligence (AGI) — which no one has built — is already transforming AI research priorities, corporate strategies, and international policy debates.
+Everyone knows what a Dyson sphere is — a hypothetical megastructure that would capture all of a star's energy. Nobody is building one. But the idea has shaped decades of thinking about energy, civilization, and space exploration. Now imagine that same dynamic, but closer to home and more practical: systems that don't exist yet but are already pulling funding, talent, and policy toward them. New ways of governing cities. Tools that let communities verify the truth together. Infrastructure for sharing brain data without losing privacy. Nobody has built these systems — but serious people are already organizing as if they will arrive.
 
-These are hyper-entities: systems that haven't arrived yet but are already pulling the present toward them. The term was coined by [Michael Nielsen](https://michaelnielsen.org/), and this project builds on his insight with a more specific definition. A hyper-entity is a system that (a) does not yet exist at scale, (b) would enable fundamentally new things humans can do, and (c) is already reorganizing coordination, investment, and narrative around its anticipated arrival. That third quality is the crucial one — a hyper-entity has causal force through expectation alone.
+[Michael Nielsen](https://michaelnielsen.org/) coined the term *hyper-entity* for exactly this phenomenon. This project builds on his insight with a more specific definition: a hyper-entity is a system that (a) does not yet exist at scale, (b) would enable fundamentally new things humans can do, and (c) is already reorganizing coordination, investment, and narrative around its anticipated arrival. That third quality is the crucial one — a hyper-entity has causal force through expectation alone.
 
-Nielsen's emphasis was on the design dimension — hyper-entities as orienting visions that carry new possibilities, requiring genuine imagination and depth of understanding to conceive. This project adds an operational criterion: that the system's anticipated existence is already causally active, reshaping coordination and investment before any prototype exists.
+Before the first Moon landing, the idea of reaching the Moon had already reorganized national budgets, university curricula, and entire industries. Before most people had ever sent an email, the anticipated Internet was already redirecting billions in telecom investment and reshaping government policy. Today, artificial general intelligence (AGI) — which no one has built — is already transforming AI research priorities, corporate strategies, and international policy debates. These are all hyper-entities.
 
-Three characteristics define a hyper-entity:
+More precisely, three characteristics define one:
 
 1. **Not yet deployed** — exists only as concept, early fragments, or shared anticipation — not as a functioning system at scale.
 2. **Transformatively novel** — would enable fundamentally new things humans can do, not just improve on existing capabilities.
-3. **Already causally active** — its anticipated existence reorganizes coordination, investment, and narrative now, before any prototype exists. This is the key distinguishing feature: a hyper-entity has causal force through expectation alone.
+3. **Already causally active** — its anticipated existence reorganizes coordination, investment, and narrative now, before any prototype exists.
 
 ### How We Found Them
 
