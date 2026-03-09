@@ -129,7 +129,10 @@ The argument here isn't anti-AGI. It's closer to portfolio theory applied to civ
 
 The scatter plot below positions all 189 entities by their d/acc values alignment score (x-axis) and transformative potential (y-axis). Point size reflects the composite score; color indicates thematic group.
 
-!#link("scatter_plot_v3.svg")[Scatter plot: d/acc alignment vs transformative potential]
+#figure(
+  image("scatter_plot_v3.png", width: 100%),
+  caption: [Hyper-Entities v3: d/acc Alignment vs. Transformative Potential. Each point represents one of 189 candidate systems. Point size reflects the composite score; color indicates thematic group.],
+)
 
 The upper-right quadrant — high transformative potential and strong d/acc alignment — contains the systems most worth prioritizing: those that could change how societies coordinate while distributing power rather than concentrating it. This is where we find _Community-Governed AI Mesh Systems_, the _Universal AI Learning UnCommons_, and _Moral Trade_.
 
