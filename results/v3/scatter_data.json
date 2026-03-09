@@ -1,0 +1,1703 @@
+[
+  {
+    "name": "AI Fiduciaries",
+    "dacc_total": 17,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Interoperable Governance Protocol Stack",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Convene"
+  },
+  {
+    "name": "Federated Procurement Platforms",
+    "dacc_total": 13,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Jurisdictional Routers",
+    "dacc_total": 8,
+    "transformative": 1,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Safety-Netted DAOs",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Pareto-Optimal Negotiation Bots",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Advocate"
+  },
+  {
+    "name": "AGI Liability Safe Harbor Framework",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "contextual autonomy",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Tool AI for Tool AI",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Focused Research Organizations (FROs)",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Fund"
+  },
+  {
+    "name": "Lean FRO (interactive theorem proving infrastructure for mathematics and AI)",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Bio-templated microchips via implosion fabrication",
+    "dacc_total": 5,
+    "transformative": 3,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Vagus nerve microbiome characterization study",
+    "dacc_total": 8,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Extracellular vesicle-based blood diagnostics for tissue-resident infections",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Multiplicity.ai",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "NotADoctor.ai medical record serialization and RCT search",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "AI-mediated conflict resolution tool (retorsion/disgorgement mediator)",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "LitQA3 (high-recall literature evaluation benchmark)",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "AI-driven drug repurposing pipeline (AMD/Ripasudil discovery workflow)",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Publishing for Machines (machine-readable scientific publishing framework)",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Convene"
+  },
+  {
+    "name": "Aviary",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Build"
+  },
+  {
+    "name": "Loyal AI Assistance (Fiduciary AI Assistance)",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Windfall Clause",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Large-scale AI-mediated deliberation system",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Epistemic stack",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Protein-based nanomachines for in vivo tissue repair and cleanup",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "De novo designed universal flu vaccines (Neil King / Baker Lab platform)",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Universal Constructor",
+    "dacc_total": 6,
+    "transformative": 4,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Liberal/Popperian AGI Education Framework",
+    "dacc_total": 15,
+    "transformative": 4,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "LLM Historical Forecasting Benchmark",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Futarchy",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Build"
+  },
+  {
+    "name": "Programmable synthetic molecular robots for chemical synthesis",
+    "dacc_total": 5,
+    "transformative": 3,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Active smart fabric with autonomous environmental response",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Gene Drives for Wild Animal Suffering Reduction",
+    "dacc_total": 2,
+    "transformative": 4,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Convene"
+  },
+  {
+    "name": "Elective Cryonic Suspension at Peak Vitality ('Kyasia')",
+    "dacc_total": 4,
+    "transformative": 1,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Phenomenal Binding-Based Sentient AI Architecture",
+    "dacc_total": 1,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Aldehyde-Stabilized Cryopreservation",
+    "dacc_total": 6,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Integration of Brain Preservation into the Medical System",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Imagination Annotated (book series)",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Project Hieroglyph",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Fund"
+  },
+  {
+    "name": "AI-powered blog aggregator with conversational interface",
+    "dacc_total": 7,
+    "transformative": 1,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Privacy-Preserving Global Regulatory Markets for AI Verification",
+    "dacc_total": 16,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Bell Labs Systems Engineer Role",
+    "dacc_total": 8,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "BBN-style Applied R&D Contractor (New BBNs)",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Fund"
+  },
+  {
+    "name": "Focused Philanthropic Bet Modeled on Warren Weaver / Rockefeller Molecular Biology Program",
+    "dacc_total": 3,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Advocate"
+  },
+  {
+    "name": "Viotopia",
+    "dacc_total": 13,
+    "transformative": 4,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Moral Trade",
+    "dacc_total": 14,
+    "transformative": 4,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Provably Safe AGI via Formal Verification",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Meditation-State Detection Model",
+    "dacc_total": 9,
+    "transformative": 1,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Closed-loop ultrasound brain-state readout and mood modulation system",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Closed-loop gene therapy for seizure suppression via activity-sensing potassium-channel upregulation",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Fund"
+  },
+  {
+    "name": "Biohybrid living DBS electrode (neuron-based implant interface)",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Massively scalable intravascular or CSF-routed neural interface devices",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Author Personal Knowledge Graph / Writing Corpus Utility",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Continuous AI-Driven Book Marketing Matchmaker",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Child Equity Stake Fund (US Birth Endowment)",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Advocate"
+  },
+  {
+    "name": "EgoLets",
+    "dacc_total": 5,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Onerofex (collective AI-mediated dreaming experience)",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Reputational Market",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Chemputer / Chemputation programming language",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Advocate"
+  },
+  {
+    "name": "Chemical substrate computation / chemical consciousness",
+    "dacc_total": 5,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Minimum-payload terraforming nanomachine for Mars",
+    "dacc_total": 3,
+    "transformative": 4,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Artificial General Wisdom",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Openwater universal diagnostic/therapeutic device",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Fund"
+  },
+  {
+    "name": "Tokenized neural data sharing with selective disclosure",
+    "dacc_total": 14,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "AI underwriting / mandatory insurance for AI systems",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Comprehensive AI Services (Drexler)",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "AI-driven forking narrative / interactive scenario content for civic agency",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Build"
+  },
+  {
+    "name": "Learning Observatories",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Atheoretical Science via Massive Sensor Networks and AI Pattern Discovery",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Self-Improving System Prompt for Continuous AI Capability Discovery",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Build"
+  },
+  {
+    "name": "Agent Contract Declaration Requirement",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Alexa Gentia (machine-negotiated agent legal structures)",
+    "dacc_total": 6,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Deep Fision borehole nuclear reactor",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "Energy, Environment & Planetary Systems",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Build"
+  },
+  {
+    "name": "Vertis Solus space-based solar power array",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Energy, Environment & Planetary Systems",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Computational models for infectious disease spread and vaccination optimization",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Computer-controlled sail cargo ship",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Energy, Environment & Planetary Systems",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Multicriteria safety architecture with explicit precedence hierarchy for instrumental goals",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Values-as-modality parametrization across AI systems",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Componentized architectures optimized for inner alignment propagation",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Spectrum from environmental safety to metagenic safety",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Fire-the-CEO Decision Market",
+    "dacc_total": 8,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Grabby Aliens Three-Parameter Model",
+    "dacc_total": 0,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Neighborhood opt-in upzoning with land value capture",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Parallel lightly-regulated childminder category (France)",
+    "dacc_total": 12,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Origin of Life Evolutionary Engine (chemical space search experiment)",
+    "dacc_total": 5,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Assembly Theory",
+    "dacc_total": 6,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Planetary-Scale Intelligence",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Parallel Federal Science Funding System with Mandatory Institutional Diversity",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Advocate"
+  },
+  {
+    "name": "Attack Dog DAO for Climate",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Blockchain-based Universal Self-Actualization Income",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Jurisdictional Arbitrage Special Economic Zones for BCI Research",
+    "dacc_total": 4,
+    "transformative": 2,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Orare - AI-powered Futarchy governance system",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Advocate"
+  },
+  {
+    "name": "VOICE (Voice for Open Source Information and Community Engagement)",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Research"
+  },
+  {
+    "name": "Global Personhood Token / Trust-of-Personhood Standard",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Bounded AI Agents",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "AI-Democratic Institutions for Decentralized Governance",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Social Acceptance",
+    "action": "Research"
+  },
+  {
+    "name": "Wisdom DAO",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "BTC Trust Grid",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "BioEcho Mesh",
+    "dacc_total": 14,
+    "transformative": 2,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Accord of Watersheds",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "International Governance & Coordination",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Kacha's Global Symbiosis Council (GSC)",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "International Council of Life Extension",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Crowdfunded Independent Longevity AI Research Program",
+    "dacc_total": 13,
+    "transformative": 2,
+    "group": "Nanotechnology & Advanced Manufacturing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Affective and Socio-Emotional Atmospheric Reading System",
+    "dacc_total": 4,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Advocate"
+  },
+  {
+    "name": "Guardian Network",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "NanoSync \u2013 Regenerative Nanotechnology",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Institute for Life Extension (ILE)",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Microbial Interaction Simulation AI (Anthropic-built)",
+    "dacc_total": 5,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Global Fungal Biology Research Initiative (Big Tech + Paul Stamets)",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Ecological Balance Council",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Biophilic Architecture",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Fund"
+  },
+  {
+    "name": "Cognitive Field Resonators (CFRs)",
+    "dacc_total": 15,
+    "transformative": 1,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "The Mnemosyne Assembly",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Urban AI systems",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Energy, Environment & Planetary Systems",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Urban Sustainability Network",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "Energy, Environment & Planetary Systems",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Global Childhood Development Authority (GCDA)",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "AI-Managed Childhood Development Centers",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Adaptive Wearable Tech",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Build"
+  },
+  {
+    "name": "Human-Tech Council",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Hybrid Market impact bond ledger",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "AI cryptographic oracle with zero-knowledge IoT auditing and jury-DAO",
+    "dacc_total": 16,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Predictive AI System for R&D Funding Allocation",
+    "dacc_total": 7,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "National Science and Technology Foresight Agency (NSTFA)",
+    "dacc_total": 6,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Lifelong AI Guardians",
+    "dacc_total": 8,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "The Children's Movement",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Convene"
+  },
+  {
+    "name": "Translation Language Models (TLMs) with citizen-owned training databases",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Build"
+  },
+  {
+    "name": "DAO-governed open innovation platform for TLM documentation and training data",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "LexCommons",
+    "dacc_total": 12,
+    "transformative": 2,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "LexNodes",
+    "dacc_total": 16,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Neural-Adaptive Learning AI",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Global Learning Collective",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Watershed Parliaments",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Bitcoin-funded renewable energy cooperatives",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Energy, Environment & Planetary Systems",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Decentralized community-built AI systems",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Bio-Responsive AI Interfaces",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "The Welcome Circle",
+    "dacc_total": 12,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Ecosystem-responsive AI management system",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Open-source AI-powered research funding and knowledge platform",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Earth AI",
+    "dacc_total": 3,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Earth UBI",
+    "dacc_total": 8,
+    "transformative": 2,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Emotional Coach (Empathetic Neuro-AI)",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Ra\u00edzMental Global",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Convene"
+  },
+  {
+    "name": "Regenerative Biospheres",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "Ecological & Regenerative Systems",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "Interplanetary Cooperative",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Isolated Societies Research Institute",
+    "dacc_total": 13,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Research"
+  },
+  {
+    "name": "GAI (Global AI Board)",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Mandatory Open-Source AI Release Policy",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Open Cognition Ledger",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Polymesh Civic Ledger",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Civic Loom",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Loom Studios",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Civic Systems Co-Op",
+    "dacc_total": 14,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "AI-powered participatory policy simulation platform",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Social Acceptance",
+    "action": "Convene"
+  },
+  {
+    "name": "Digital Twins for Communities and Ecosystems",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Interbeing Forum",
+    "dacc_total": 14,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "Ethical AI Tutors",
+    "dacc_total": 11,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Universal AI Learning UnCommons (UALU)",
+    "dacc_total": 17,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Community-Governed AI Mesh Systems",
+    "dacc_total": 17,
+    "transformative": 4,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Living Rights Network",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "Decentralized & Democratic Institutions",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "AI Market Intermediaries",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "Economic Systems & Resource Distribution",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "AI Alignment Markets",
+    "dacc_total": 10,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Global AI Alignment Commission (GAAC)",
+    "dacc_total": 9,
+    "transformative": 3,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "The Indefinite Lifespan",
+    "dacc_total": 8,
+    "transformative": 3,
+    "group": "Biotech, Medicine & Life Extension",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "United Nations Biosphere Geoengineering and AI Governance Institution",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Memory Looms",
+    "dacc_total": 10,
+    "transformative": 1,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Physics",
+    "action": "Research"
+  },
+  {
+    "name": "Continuity Guild",
+    "dacc_total": 15,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Little AI Robots (emotional decision-support chatbots)",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Institute for Human Perplexity",
+    "dacc_total": 5,
+    "transformative": 2,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "Consolidated Intelligence Council",
+    "dacc_total": 7,
+    "transformative": 2,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "AI-driven individualized peace education system",
+    "dacc_total": 4,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "Neural Linguistic Interfaces",
+    "dacc_total": 2,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Engineering",
+    "action": "Research"
+  },
+  {
+    "name": "World Cultural Exchange Forum",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Neural Harmony Interface",
+    "dacc_total": 6,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Research"
+  },
+  {
+    "name": "The Collective of Inner Weavers",
+    "dacc_total": 13,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Funding",
+    "action": "Fund"
+  },
+  {
+    "name": "The Flourishing Foundation",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 2,
+    "bottleneck": "Regulation",
+    "action": "Advocate"
+  },
+  {
+    "name": "The Global Deliberation Coordinator",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "The Evals for Evals Institute",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "The Common Knowledge Generator",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Scientific Research & Knowledge Infrastructure",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "The Delphi Collaboration Protocol",
+    "dacc_total": 13,
+    "transformative": 2,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Build"
+  },
+  {
+    "name": "BCI Operating System (BCI-OS)",
+    "dacc_total": 15,
+    "transformative": 3,
+    "group": "Neurotechnology & Brain-Computer Interfaces",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "TimeLike / SECHI (Simulation-Enabled Cooperative Human Intelligence)",
+    "dacc_total": 7,
+    "transformative": 4,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  },
+  {
+    "name": "The Scenario Planning Institution",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "The World Convention on Transformative Artificial Intelligence",
+    "dacc_total": 11,
+    "transformative": 2,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Flourishing Certification",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "Education, Development & Human Flourishing",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "TAI Horizon Scanner",
+    "dacc_total": 12,
+    "transformative": 3,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Global Deliberation as a Service (GDaaS)",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "AI-Mediated Deliberation & Collective Intelligence",
+    "tier": 1,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "Request for Evaluation (RfE) Protocol",
+    "dacc_total": 9,
+    "transformative": 2,
+    "group": "AI Safety, Alignment & Governance",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Convene"
+  },
+  {
+    "name": "World Convention on Transformative Artificial Intelligence (WCTAI)",
+    "dacc_total": 10,
+    "transformative": 3,
+    "group": "International Governance & Coordination",
+    "tier": 2,
+    "bottleneck": "Coordination",
+    "action": "Research"
+  }
+]
