@@ -40,7 +40,7 @@ CONFIG = {
     "max_retries": 3,
     "semaphore_limit": 10,
     "save_every": 10,
-    "max_web_searches": 5,
+    "max_web_searches": 3,
 }
 
 # Haiku 4.5 pricing
