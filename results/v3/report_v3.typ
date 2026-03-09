@@ -1,4 +1,4 @@
-#set document(title: "Hyper-Entities V3: Spotlight Report", author: "Linda Petrini")
+#set document(title: "Hyper-Entities V3: Spotlight Report", author: ("Linda Petrini", "Beatrice Erkers"))
 #set page(margin: 1in, numbering: "1")
 #set text(font: "Helvetica", size: 11pt, lang: "en")
 #set par(justify: true, leading: 0.65em)
@@ -27,7 +27,7 @@
 #align(center + horizon)[
   #text(size: 28pt, weight: "bold")[Hyper-Entities V3:\ Spotlight Report]
   #v(1.5em)
-  #text(size: 14pt)[Linda Petrini]
+  #text(size: 14pt)[Linda Petrini & Beatrice Erkers]
   #v(0.5em)
   #text(size: 12pt)[Foresight Institute]
   #v(0.5em)
@@ -130,7 +130,7 @@ The argument here isn't anti-AGI. It's closer to portfolio theory applied to civ
 The scatter plot below positions all 189 entities by their d/acc values alignment score (x-axis) and transformative potential (y-axis). Point size reflects the composite score; color indicates thematic group.
 
 #figure(
-  image("scatter_plot_v3.png", width: 100%),
+  image("scatter_plot_v3.svg", width: 100%),
   caption: [Hyper-Entities v3: d/acc Alignment vs. Transformative Potential. Each point represents one of 189 candidate systems. Point size reflects the composite score; color indicates thematic group.],
 )
 
