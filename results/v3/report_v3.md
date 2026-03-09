@@ -1,26 +1,29 @@
-# Hyper-Entities V3: Spotlight Report
+# Beyond AI: 189 Transformative Systems the World Is Overlooking
+### A Hyper-Entity Spotlight Report
 
 Linda Petrini & Beatrice Erkers
-Foresight Institute  
+Foresight Institute
 March 2026
 
 ---
 
 ## 1. Executive Summary
 
-The term *[hyper-entity](https://www.existentialhope.com/podcasts/michael-nielsen-on-hyper-entities-tools-for-thought-and-wise-optimism)* was coined by Michael Nielsen to describe systems that do not yet exist but are already reshaping how people coordinate, allocate capital, and construct shared narratives around their anticipated arrival. These are not speculative fictions. They are attractors — specific enough that researchers, funders, and institutions start organizing around them before anything works. This report identifies and ranks 189 such candidates drawn from 109 sources, with the goal of helping funders, policymakers, and technologists figure out where to pay attention.
+Right now, the vast majority of attention and investment in transformative technology is going to one thing: artificial intelligence. But AI is not the only system that could reshape civilization — and by focusing so narrowly, we risk neglecting dozens of other futures that matter just as much.
 
-The analysis applies the [d/acc framework](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html) developed by Vitalik Buterin, which evaluates entities across four overlapping properties: democratic (distributing power rather than concentrating it), decentralized (resistant to single points of control or failure), defensive (strengthening protective over offensive capabilities), and differential (accelerating beneficial technologies faster than harmful ones). Entities were also scored on transformative potential and actionability, producing a composite score that determined tier placement.
+This report maps 189 of those overlooked futures. We call them *[hyper-entities](https://www.existentialhope.com/podcasts/michael-nielsen-on-hyper-entities-tools-for-thought-and-wise-optimism)* — a term coined by researcher Michael Nielsen. In plain English, a hyper-entity is a system that doesn't exist yet but is already changing how people organize, invest, and plan because they expect it to arrive. Think of the Internet before most people had ever used it: by the late 1980s, telecom companies, governments, and venture capitalists were already reshaping their strategies around a network that was still years from mass adoption. That anticipatory pull — the way an imagined future reorganizes the present — is what makes something a hyper-entity.
 
-From 189 candidates, 19 were designated Tier 1 spotlight entities and 170 placed on a Tier 2 watch list. The spotlight entities represent the strongest combination of d/acc alignment, transformative potential, and near-term actionability. Leading this group are Community-Governed AI Mesh Systems (composite score 21), the Universal AI Learning UnCommons (20), and an AI cryptographic oracle with zero-knowledge IoT auditing and jury-DAO governance (19). Across all 189 entities, the average d/acc score was 9.5 out of 20, average transformative score 2.6 out of 5, and average Technology Readiness Level (TRL) 3.9 — placing the field, in aggregate, between proof-of-concept and early validation.
+To evaluate these 189 systems, we used the [d/acc framework](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html) — a set of values proposed by Ethereum creator [Vitalik Buterin](https://en.wikipedia.org/wiki/Vitalik_Buterin) for evaluating whether a technology distributes power (democratic), resists central control (decentralized), protects rather than harms (defensive), and speeds up good outcomes faster than bad ones (differential). We also scored each system on how transformative it could be and how actionable it is right now, producing a combined score — a composite reflecting values alignment, transformative potential, and near-term actionability — that determined how we ranked them.
 
-The largest thematic cluster is AI Safety, Alignment & Governance with 31 entities, followed by Scientific Research & Knowledge Infrastructure (25) and Education, Development & Human Flourishing (20). Decentralized & Democratic Institutions and AI-Mediated Deliberation & Collective Intelligence each contribute 18 entities, reflecting how much energy is going into the question of whether governance can scale without centralizing control.
+From 189 candidates, 19 were designated as top-tier spotlight systems and 170 placed on a watch list. The spotlight systems represent the strongest combination of values alignment, transformative potential, and near-term actionability. Leading this group are Community-Governed AI Mesh Systems (composite score 21), the Universal AI Learning UnCommons (20), and a fraud-detection system combining cryptographic proofs, AI monitoring, and community juries (19). Across all 189 systems, the average values alignment score was 9.5 out of 20, average transformative score 2.6 out of 5, and average Technology Readiness Level — scored from 1 (just an idea) to 9 (deployed and working) — was 3.9, placing the field between proof-of-concept and early validation.
 
-The most common bottleneck across the full dataset is coordination, affecting 76 of 189 entities. Regulatory uncertainty constrains 57, engineering challenges 24, and social acceptance barriers 13. Funding, despite its prominence in public discourse about emerging technology, ranks last as a primary bottleneck, cited for only 7 entities. This distribution suggests that the scarcest resource is not capital but institutional glue — shared standards, protocols, governance frameworks — that gets people pulling in the same direction.
+The largest thematic cluster is AI Safety, Alignment & Governance with 31 systems, followed by Scientific Research & Knowledge Infrastructure (25) and Education, Development & Human Flourishing (20). Decentralized & Democratic Institutions and AI-Mediated Deliberation & Collective Intelligence each contribute 18 systems, reflecting how much energy is going into the question of whether governance can scale without centralizing control.
 
-Recommended primary actions reflect this: 68 entities most need sustained research, 58 require convening (bringing together the communities of practice that can establish norms and test coordination mechanisms), and 39 need advocacy to shift regulatory and political conditions. Only 17 are primarily in a build phase. Seven are primarily funding-constrained.
+The most common bottleneck across the full dataset is coordination, affecting 76 of 189 systems. Regulatory uncertainty constrains 57, engineering challenges 24, and social acceptance barriers 13. Funding, despite its prominence in public discourse about emerging technology, ranks last as a primary bottleneck, cited for only 7 systems. This suggests that the scarcest resource is not capital but institutional glue — shared standards, protocols, governance frameworks — that gets people pulling in the same direction.
 
-All candidates were sourced from [Existential Hope](https://www.existentialhope.com/) ([existentialhope.com](https://www.existentialhope.com/)), the [Foresight Institute](https://foresight.org/)'s initiative cataloguing pathways to long-term human and civilizational flourishing, drawing on [podcast transcripts](https://www.existentialhope.com/podcasts), [world gallery](https://worlds.existentialhope.com/) submissions, and [AI pathways](https://www.existentialhope.com/ai-pathways) essays. Twenty-seven entities appeared in both this analysis and the prior v2 analysis, giving us a consistency check between two rounds.
+Recommended primary actions reflect this: 68 systems most need sustained research, 58 require convening (bringing together the communities of practice that can establish norms and test coordination mechanisms), and 39 need advocacy to shift regulatory and political conditions. Only 17 are primarily in a build phase. Seven are primarily funding-constrained.
+
+All candidates were sourced from [Existential Hope](https://www.existentialhope.com/) ([existentialhope.com](https://www.existentialhope.com/)), the [Foresight Institute](https://foresight.org/)'s initiative cataloguing pathways to long-term human and civilizational flourishing, drawing on [podcast transcripts](https://www.existentialhope.com/podcasts), [world gallery](https://worlds.existentialhope.com/) submissions, and [AI pathways](https://www.existentialhope.com/ai-pathways) essays. Twenty-seven systems appeared in both this analysis and a prior round, giving us a consistency check between two iterations.
 
 ---
 
@@ -28,9 +31,13 @@ All candidates were sourced from [Existential Hope](https://www.existentialhope.
 
 ### What Are Hyper-Entities?
 
-A hyper-entity is a coherent, future-instantiated system that does not yet exist, but is treated as if it will; whose realization would create a new stable action space for humanity; and which already reorganizes coordination, investment, and narrative around its anticipated existence. The term was coined by [Michael Nielsen](https://michaelnielsen.org/), whose broader definition informed this project's more operationally focused criteria.
+Some of the most powerful forces shaping our world are things that don't exist yet.
 
-Nielsen's emphasis was on the design dimension — hyper-entities as orienting visions that carry new affordances, requiring genuine imagination and depth of understanding to conceive. This project adds an operational criterion: that the entity's anticipated existence is already causally active, reshaping coordination and investment before any prototype exists.
+Before the first Moon landing, the idea of reaching the Moon had already reorganized national budgets, university curricula, and entire industries. Before most people had ever sent an email, the anticipated Internet was already redirecting billions in telecom investment and reshaping government policy. Today, artificial general intelligence (AGI) — which no one has built — is already transforming AI research priorities, corporate strategies, and international policy debates.
+
+These are hyper-entities: systems that haven't arrived yet but are already pulling the present toward them. The term was coined by [Michael Nielsen](https://michaelnielsen.org/), and this project builds on his insight with a more specific definition. A hyper-entity is a system that (a) does not yet exist at scale, (b) would enable fundamentally new things humans can do, and (c) is already reorganizing coordination, investment, and narrative around its anticipated arrival. That third quality is the crucial one — a hyper-entity has causal force through expectation alone.
+
+Nielsen's emphasis was on the design dimension — hyper-entities as orienting visions that carry new possibilities, requiring genuine imagination and depth of understanding to conceive. This project adds an operational criterion: that the system's anticipated existence is already causally active, reshaping coordination and investment before any prototype exists.
 
 Three characteristics define a hyper-entity:
 
@@ -38,9 +45,7 @@ Three characteristics define a hyper-entity:
 2. **Transformatively novel** — would enable fundamentally new things humans can do, not just improve on existing capabilities.
 3. **Already causally active** — its anticipated existence reorganizes coordination, investment, and narrative now, before any prototype exists. This is the key distinguishing feature: a hyper-entity has causal force through expectation alone.
 
-Historical examples include the Internet (pre-1990s), which reorganized telecoms R&D, policy, and venture capital before widespread deployment; the Space Race (1950s-60s), where Moon missions organized national budgets and education systems before any launches; and AGI today, which reshapes AI research priorities, corporate strategies, and policy discussions despite not yet existing.
-
-### Project Overview
+### How We Found Them
 
 This project set out to systematically identify, score, and curate hyper-entities emerging from the discourse around the [Existential Hope](https://www.existentialhope.com/) community. The source material comprises:
 
@@ -48,7 +53,7 @@ This project set out to systematically identify, score, and curate hyper-entitie
 - 41 [world gallery](https://worlds.existentialhope.com/) submissions from Existential Hope
 - 3 [AI pathways](https://www.existentialhope.com/ai-pathways) essays, including [Vitalik Buterin](https://en.wikipedia.org/wiki/Vitalik_Buterin)'s [d/acc framework](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html) and its 2025 update
 
-From this corpus, over 300 candidate hyper-entities were extracted, scored across three assessment dimensions, deduplicated, researched via web search, and curated to arrive at a final list of 189 distinct entities, with 19 highlighted as Tier 1 spotlight entities.
+From this corpus, over 300 candidates were extracted, scored across three assessment dimensions, deduplicated, researched via web search, and curated to arrive at a final list of 189 distinct systems, with 19 highlighted as top-tier spotlight systems.
 
 ### Why This Matters: The AGI Crowding-Out Problem
 
@@ -70,49 +75,53 @@ The argument here isn't anti-AGI. It's closer to portfolio theory applied to civ
 
 ---
 
-## 3. Key Findings
+## 3. What We Found
 
-### The Landscape: d/acc Alignment vs. Transformative Potential
+### The Landscape: Values Alignment vs. Transformative Potential
 
-The scatter plot below positions all 189 entities by their d/acc values alignment score (x-axis) and transformative potential (y-axis). Point size reflects the composite score; color indicates thematic group.
+The scatter plot below positions all 189 systems by their d/acc values alignment score (x-axis, measuring how well they distribute power, resist central control, protect people, and accelerate good outcomes) and transformative potential (y-axis). Point size reflects the composite score; color indicates thematic group.
 
 ![Scatter plot: d/acc alignment vs transformative potential](scatter_plot_v3.svg)
 
-The upper-right quadrant — high transformative potential and strong d/acc alignment — contains the systems most worth prioritizing: those that could change how societies coordinate while distributing power rather than concentrating it. This is where we find **Community-Governed AI Mesh Systems**, the **Universal AI Learning UnCommons**, and **Moral Trade**.
+The upper-right quadrant — high transformative potential and strong values alignment — contains the systems most worth prioritizing: those that could change how societies coordinate while distributing power rather than concentrating it. This is where we find **Community-Governed AI Mesh Systems**, the **Universal AI Learning UnCommons**, and **Moral Trade**.
 
-The upper-left quadrant highlights transformative systems with weaker d/acc alignment — powerful but potentially centralizing. Several neurotechnology entities fall here, reflecting BCIs' enormous potential alongside unresolved questions about who controls neural data.
+The upper-left quadrant highlights transformative systems with weaker values alignment — powerful but potentially centralizing. Several neurotechnology systems fall here, reflecting the enormous potential of brain-computer interfaces alongside unresolved questions about who controls neural data.
 
-Most entities cluster in the mid-range of both axes, indicating meaningful but not yet paradigm-shifting systems that are still in early development stages.
+Most systems cluster in the mid-range of both axes, indicating meaningful but not yet paradigm-shifting systems that are still in early development stages.
 
-### Maturity Distribution
+### How Close to Reality Are These Systems?
 
-| TRL Range | Description | Count |
+We assessed each system's maturity using Technology Readiness Level (TRL), a standard scale that runs from 1 (just an idea) to 9 (deployed and working in the real world).
+
+| Readiness Range | What It Means | Count |
 |-----------|-------------|-------|
 | 1-2 | Conceptual / early research | 34 |
 | 3-4 | Proof of concept / early validation | 105 |
 | 5-6 | Prototype / operational in limited context | 41 |
 | 7-8 | Near deployment | 9 |
 
-The average TRL of 3.9 places the field, in aggregate, between proof-of-concept and early validation. This is not a list of things almost ready to ship — it is a map of things that need patient capital and sustained attention.
+The average readiness level of 3.9 places the field, in aggregate, between proof-of-concept and early validation. This is not a list of things almost ready to ship — it is a map of things that need patient capital and sustained attention.
 
-### Bottleneck and Action Distribution
+### What's Holding Them Back — and What Would Help
 
-The most common bottleneck is coordination (76 entities), followed by regulation (57), engineering (24), social acceptance (13), and funding (7). That funding ranks last challenges the common assumption that emerging technology primarily needs more capital. The scarcest resource appears to be institutional glue — shared standards, protocols, and governance frameworks.
+The most common bottleneck is coordination (76 systems), followed by regulation (57), engineering (24), social acceptance (13), and funding (7). That funding ranks last challenges the common assumption that emerging technology primarily needs more capital. The scarcest resource appears to be institutional glue — shared standards, protocols, and governance frameworks.
 
-Recommended actions mirror this: 68 entities most need research, 58 need convening, 39 need advocacy, 17 need building, and 7 need funding.
+Recommended actions mirror this: 68 systems most need research, 58 need convening, 39 need advocacy, 17 need building, and 7 need funding.
 
 ---
 
-## 4. Spotlight Entities (Tier 1)
+## 4. The Top 19: Systems That Could Change Everything
 
-The following 19 entities scored highest on our composite metric (d/acc alignment + transformative potential + actionability). Each represents a system that doesn't yet exist but is already shaping coordination and investment.
+The following 19 systems scored highest on our composite metric (d/acc values alignment + transformative potential + actionability). Each represents a system that doesn't yet exist but is already shaping coordination and investment.
 
 ### Community-Governed AI Mesh Systems
+*What if communities — not corporations — controlled the AI trained on their data?*
+
 **Decentralized & Democratic Institutions** | Composite: 21
 
 Decentralized AI networks trained on locally governed data and stewarded by community trust circles rather than centralized corporate or state actors.
 
-**How it works.** Local communities retain sovereignty over data used to train and fine-tune AI models, with governance handled by designated trust circles (particularly Indigenous and racialized community groups) operating under consent frameworks those communities define. A [mesh architecture](https://en.wikipedia.org/wiki/Mesh_networking) distributes both compute and decision-making authority across nodes, so no single actor controls the system. [Flower](https://flower.ai) and [OpenMined](https://www.openmined.org) have proven [federated learning](https://en.wikipedia.org/wiki/Federated_learning) works. [GIDA](https://www.gida-global.org) has proven Indigenous data governance works. Mesh networks work. But nobody has tried to wire them together, partly because the governance conversations happen in completely different rooms from the engineering ones.
+**How it works.** Local communities retain sovereignty over data used to train and fine-tune AI models, with governance handled by designated trust circles (particularly Indigenous and racialized community groups) operating under consent frameworks those communities define. A [mesh architecture](https://en.wikipedia.org/wiki/Mesh_networking) (a network where devices connect directly to each other rather than routing through a central hub) distributes both compute and decision-making authority across nodes, so no single actor controls the system. [Flower](https://flower.ai) and [OpenMined](https://www.openmined.org) have proven [federated learning](https://en.wikipedia.org/wiki/Federated_learning) (a technique where AI models learn from data spread across many devices without that data ever leaving its home) works. [GIDA](https://www.gida-global.org) has proven Indigenous data governance works. Mesh networks work. But nobody has tried to wire them together, partly because the governance conversations happen in completely different rooms from the engineering ones.
 
 **Who's building toward this.** [Flower (adap gmbh)](https://flower.ai) and OpenMined ([PySyft](https://github.com/OpenMined/PySyft)) provide production-grade federated learning infrastructure for distributed model training. The [Global Indigenous Data Alliance](https://www.gida-global.org) stewards the [CARE Principles](https://en.wikipedia.org/wiki/CARE_Principles_for_Indigenous_Data_Governance), and [Local Contexts](https://localcontexts.org) supports Indigenous data sovereignty and cultural heritage protection in digital systems. [Bittensor](https://bittensor.com) is building decentralized AI infrastructure with community-governed token incentives. No dedicated funding for an integrated system has been identified. **TRL: 4**—individual components are mature and deployed; full integration remains unbuilt.
 
@@ -123,6 +132,8 @@ Decentralized AI networks trained on locally governed data and stewarded by comm
 > "communities shaped by displacement, colonization, and exclusion are building decentralized, care-centered mesh networks. These relational systems are trained on locally governed data, stewarded by Indigenous and racialized trust circles, and guided by protocols rooted in consent, dignity, and interdependence—not control." — *Source: [the-living-rights-network](https://worlds.existentialhope.com/world/the-living-rights-network/)*
 
 ### Universal AI Learning UnCommons (UALU)
+*What if the people most affected by AI in education — teachers, students, elders, ethicists — actually got to govern how it's built and used?*
+
 **Education, Development & Human Flourishing** | Composite: 20
 
 A federated governance institution that develops, maintains, and audits AI education tools through multi-stakeholder councils including elders, learners, and ethicists.
@@ -138,11 +149,13 @@ A federated governance institution that develops, maintains, and audits AI educa
 > "A federated, community-led network responsible for developing, maintaining, and auditing AI education tools. Overseen by councils including elders, learners, technologists, and ethicists to uphold justice and care." — *Source: [the-learning-uncommons-of-2035](https://worlds.existentialhope.com/world/the-learning-uncommons-of-2035/)*
 
 ### AI cryptographic oracle with zero-knowledge IoT auditing and jury-DAO
+*A fraud-detection system where sensors prove data is real without revealing it, AI spots cheating, and a community jury settles disputes.*
+
 **Decentralized & Democratic Institutions** | Composite: 19
 
-A fraud-resistance layer combining [zero-knowledge proofs](https://en.wikipedia.org/wiki/Zero-knowledge_proof) from IoT sensor data, AI anomaly detection, stake-slashing penalties, and a decentralized human jury for retroactive balance correction.
+A fraud-resistance layer combining [zero-knowledge proofs](https://en.wikipedia.org/wiki/Zero-knowledge_proof) (a cryptographic method that lets you prove something is true without revealing the underlying data) from IoT sensor data, AI anomaly detection, stake-slashing penalties, and a decentralized human jury for retroactive balance correction.
 
-**How it works.** [IoT](https://en.wikipedia.org/wiki/Internet_of_things) devices generate zero-knowledge proofs of their sensor readings, letting a ledger verify data authenticity without exposing raw feeds that could be spoofed or fabricated. An AI layer monitors token-minting patterns for statistical anomalies, while actors caught cheating face quadratic slashing, penalties that scale super-linearly with stake size to neutralize "too-big-to-fail" manipulation. A randomly selected jury-DAO of token holders can then vote to retroactively adjust balances, placing a human override on top of automated enforcement.
+**How it works.** [IoT](https://en.wikipedia.org/wiki/Internet_of_things) (Internet of Things — the network of physical sensors and devices connected to the internet) devices generate zero-knowledge proofs of their sensor readings, letting a ledger verify data authenticity without exposing raw feeds that could be spoofed or fabricated. An AI layer monitors token-minting patterns for statistical anomalies, while actors caught cheating face quadratic slashing — penalties that scale super-linearly with stake size to neutralize "too-big-to-fail" manipulation. A randomly selected jury-DAO (a [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization), or decentralized autonomous organization — essentially a community-run organization where decisions are made by member votes on a blockchain) of token holders can then vote to retroactively adjust balances, placing a human override on top of automated enforcement.
 
 **Who's building toward this.** [**RISC Zero**](https://www.risczero.com/) provides the zero-knowledge virtual machine for proof generation. [**Chainlink**](https://chain.link/) and [**API3**](https://api3.org/) supply decentralized [oracle](https://en.wikipedia.org/wiki/Blockchain_oracle) infrastructure. [**Kleros**](https://kleros.io/) has operated a live jury-DAO since 2018, handling 1,000+ cases. Slashing mechanisms are operational in [Ethereum proof-of-stake](https://ethereum.org/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/). The gap is not that nobody has the pieces but that nobody has tried to combine ZK-IoT with AI anomaly detection under DAO adjudication — the trust boundaries between these systems are undefined. TRL: 4; ZK-IoT proofs demonstrated on [ESP32](https://en.wikipedia.org/wiki/ESP32) microcontrollers at ~700ms.
 
@@ -153,6 +166,8 @@ A fraud-resistance layer combining [zero-knowledge proofs](https://en.wikipedia.
 > "A hard-fork deployed AI cryptographic oracles tied to sensor roots for zero-knowledge IoT based auditing, quadratic-stake slashing to take on 'too-big-to-fail' cheaters, and a jury-DAO to retro-adjust balances." — *Source: [hybrid-market](https://worlds.existentialhope.com/world/hybrid-market/)*
 
 ### Moral Trade
+*What if groups with different values could negotiate exchanges — "I'll do what matters to you if you do what matters to me" — and everyone ends up better off?*
+
 **AI-Mediated Deliberation & Collective Intelligence** | Composite: 18
 
 A mechanism by which people or groups with different moral priorities swap concessions so that each gets more of what they care about than unilateral action would yield.
@@ -169,9 +184,11 @@ A mechanism by which people or groups with different moral priorities swap conce
 > "Let's say you really care that people abstain from eating meat, and I really care about people reducing their carbon footprint. Maybe it's not much of a cost for me to eliminate meat from my diet, and it's not much of a cost for you to offset your emissions. Then we have an opportunity for a deal where I eat less meat and you reduce your carbon footprint... if you scale it up to the level of a civilization, there are huge opportunities." — *Source: [podcasts](https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival)*
 
 ### BCI Operating System (BCI-OS)
+*Imagine an operating system — like Android or iOS, but for brain-computer interfaces — that builds privacy and user protection into its foundation rather than leaving it to individual apps.*
+
 **Neurotechnology & Brain-Computer Interfaces** | Composite: 18
 
-An open-source operating system layer for [brain-computer interfaces](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) that embeds agency evaluation, AI model compatibility, and privacy standards as core OS-level features.
+An open-source operating system layer for [brain-computer interfaces](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) (BCIs — devices that create a direct communication pathway between the brain and a computer) that embeds agency evaluation, AI model compatibility, and privacy standards as core OS-level features.
 
 **How it works.** BCI-OS sits between BCI hardware and applications, enforcing privacy protocols and agency evaluations at the OS level rather than delegating them to individual apps. Standardized model compatibility protocols enable interoperability across hardware manufacturers. An open-source governance structure and standards body maintain human-agency principles, with academic and industry pilots iteratively refining the system.
 
@@ -185,9 +202,11 @@ An open-source operating system layer for [brain-computer interfaces](https://en
 > "['The Open Source BCI Project: Create an open-source brain-computer interface (BCI) operating system to enhance human cognitive abilities and privacy in a TAI era.', 'Develop a privacy-preserving, open-source BCI operating system (BCI-OS) that enhances human cognitive abilities and safeguards human-agency in the TAI era. Integrated agency evaluations, model compatibility protocols, and robust data privacy standards in the BCI-OS.']" — *Source: Diogo de Lucena, Judd Rosenblatt, Mamun Miah*
 
 ### Tokenized neural data sharing with selective disclosure
+*What if you could share specific types of brain data — say, your emotional state with a therapist — while keeping everything else completely private, the way you can grant an app access to your camera but not your contacts?*
+
 **Neurotechnology & Brain-Computer Interfaces** | Composite: 17
 
-Rather than broadcasting all neural data, the system segments and tokenizes different categories of neural output (emotional states, motor intentions, cognitive content), allowing users to grant or revoke access to specific tokens — a form of [selective disclosure](https://en.wikipedia.org/wiki/Selective_disclosure). Think [OAuth](https://en.wikipedia.org/wiki/OAuth) scopes for your brain: share an emotional state with a therapist, keep everything else private. Existing healthcare privacy frameworks, including [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) and [Montana's neuro-rights law](https://leg.mt.gov/bills/2025/billpdf/SB0163.pdf), provide the regulatory scaffolding on which such an architecture would sit (see [Regulating neural data processing in the age of BCIs](https://journals.sagepub.com/doi/10.1177/20552076251326123), 2025; [A Framework for Preserving Privacy and Cybersecurity in BCI Applications](https://arxiv.org/abs/2209.09653), 2022; and [Chilean Supreme Court ruling on the protection of brain activity](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1330439/full), 2024). The concept was discussed in a [podcast](https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer) with [Mary Lou Jepsen](https://en.wikipedia.org/wiki/Mary_Lou_Jepsen) on Existential Hope.
+Rather than broadcasting all neural data, the system segments and tokenizes different categories of neural output (emotional states, motor intentions, cognitive content), allowing users to grant or revoke access to specific tokens — a form of [selective disclosure](https://en.wikipedia.org/wiki/Selective_disclosure). Think of how your phone lets apps access your camera but not your contacts ([OAuth](https://en.wikipedia.org/wiki/OAuth) scopes) — this applies the same idea to your brain: share an emotional state with a therapist, keep everything else private. Existing healthcare privacy frameworks, including [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) and [Montana's neuro-rights law](https://leg.mt.gov/bills/2025/billpdf/SB0163.pdf), provide the regulatory scaffolding on which such an architecture would sit (see [Regulating neural data processing in the age of BCIs](https://journals.sagepub.com/doi/10.1177/20552076251326123), 2025; [A Framework for Preserving Privacy and Cybersecurity in BCI Applications](https://arxiv.org/abs/2209.09653), 2022; and [Chilean Supreme Court ruling on the protection of brain activity](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1330439/full), 2024). The concept was discussed in a [podcast](https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer) with [Mary Lou Jepsen](https://en.wikipedia.org/wiki/Mary_Lou_Jepsen) on Existential Hope.
 
 **Who's building toward this.** The [Neurorights Foundation](https://www.neurorightsfoundation.org) drives advocacy and state-level legislation for neural data privacy. The [Future of Privacy Forum](https://fpf.org) produces research and guidance on BCI privacy frameworks. [Columbia University's Neurotechnology Center](https://zuckermaninstitute.columbia.edu/neurotechnology-center), led by [Rafael Yuste](https://en.wikipedia.org/wiki/Rafael_Yuste), works on neurorights and data protection frameworks. No funding for this specific architecture has been documented. **TRL: 2** — regulatory concepts exist and are codified in [Colorado](https://leg.colorado.gov/bills/hb24-1058), California, Montana, and [Chile's constitutional protections](https://www.jurist.org/news/2021/10/chile-becomes-first-country-to-pass-neuro-rights-law/), but no BCI system with tokenized selective-disclosure has been deployed or demonstrated.
 
@@ -199,6 +218,8 @@ Rather than broadcasting all neural data, the system segments and tokenizes diff
 > "I think it'll be tokenized, basically. You'll let certain parts of what you want to share out, and you'll keep what you want as your innermost thoughts to yourself. Or perhaps you'll have relationships where you wish to share your innermost thoughts." — *Source: [podcasts](https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer)*
 
 ### Civic Systems Co-Op
+*What if cities pooled their AI tools into a shared, community-owned library instead of each buying from the same handful of tech vendors?*
+
 **AI Safety, Alignment & Governance** | Composite: 17
 
 A global open-source consortium that develops and maintains ethical AI tools for municipal and community governance.
@@ -215,11 +236,13 @@ A global open-source consortium that develops and maintains ethical AI tools for
 > "The Civic Systems Co-Op: a global open-source consortium maintaining ethical, adaptable AI systems for cities and communities." — *Source: [the-commons-cloud](https://worlds.existentialhope.com/world/the-commons-cloud/)*
 
 ### Interbeing Forum
+*Imagine a governing assembly where rivers, forests, and future generations have designated representatives sitting alongside human delegates — and where real-time ecological data informs every decision.*
+
 **Decentralized & Democratic Institutions** | Composite: 17
 
 > "The Interbeing Forum is a rotating assembly of stewards from across bioregions. It includes people, yes, but also guardians (advised by digital twins) for rivers, soils, and future generations. It oversees the Commonsense Accord and safeguards the integrity of the digital twin ecosystem." — *Source: [the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences](https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/)*
 
-A rotating [bioregional](https://en.wikipedia.org/wiki/Bioregionalism) assembly that grants formal representation to ecosystems and future generations through human guardians advised by [digital twin](https://en.wikipedia.org/wiki/Digital_twin) data.
+A rotating [bioregional](https://en.wikipedia.org/wiki/Bioregionalism) (organized around natural boundaries like watersheds and ecosystems rather than political borders) assembly that grants formal representation to ecosystems and future generations through human guardians advised by [digital twin](https://en.wikipedia.org/wiki/Digital_twin) data (digital twins are real-time computer models that mirror the state of a physical system, like a river or forest, using live sensor data).
 
 **How it works.** Stewards selected on a rotating basis from bioregions govern through a binding accord, preventing any single faction from entrenching power. Designated guardians speak for non-human entities (rivers, soils) and for future generations, with their positions informed by real-time ecological data from digital twin systems. The assembly also audits that digital infrastructure directly, ensuring it remains a tool of democratic participation rather than centralized control.
 
@@ -231,6 +254,8 @@ A rotating [bioregional](https://en.wikipedia.org/wiki/Bioregionalism) assembly 
 > **What can someone do RIGHT NOW?** Legal advocates and policy researchers should work to establish or extend ecosystem legal personhood frameworks, building on New Zealand's Whanganui River precedent and Wales's [Future Generations Commissioner](https://en.wikipedia.org/wiki/Future_Generations_Commissioner_for_Wales), into cross-jurisdictional bioregional contexts. Connecting existing practitioners (OACC, bioregional.agency) with environmental digital twin researchers would accelerate the governance integration that no institution has yet achieved.
 
 ### Interoperable Governance Protocol Stack
+*What if your government ID, health records, and professional credentials worked seamlessly across cities and countries — and during a disaster, those systems could automatically coordinate relief across borders?*
+
 **Decentralized & Democratic Institutions** | Composite: 16
 
 A shared technical and governance protocol layer that allows citizens to port [digital identities](https://en.wikipedia.org/wiki/Digital_identity), benefits, and credentials across distinct federated city-state systems, and enables AI systems across those jurisdictions to align resource allocation and crisis modeling.
@@ -247,6 +272,8 @@ The [**OpenID Foundation**](https://openid.net/) completed a [real-world multi-r
 > "A coalition of federated city-states launches the first interoperable governance protocol stack, allowing citizens to carry digital IDs, benefits, and credentials between different local systems. When severe flooding hits multiple jurisdictions, modular governance systems coordinate relief in hours instead of weeks, sharing resources and logistics seamlessly across local and regional levels." — *Source: N/A*
 
 ### Comprehensive AI Services (Drexler)
+*Instead of building one all-powerful AI, what if we built many specialized AIs — each superhuman at one thing but structurally unable to do anything else — and let them compete and check each other?*
+
 **AI Safety, Alignment & Governance** | Composite: 16
 
 An architecture of many narrow, domain-limited superhuman AIs that interact competitively rather than a single general [superintelligence](https://en.wikipedia.org/wiki/Superintelligence), achieving safety through structural narrowness.
@@ -263,11 +290,13 @@ An architecture of many narrow, domain-limited superhuman AIs that interact comp
 > "It's safety through narrowness. It's not to say that the AIs aren't really good at what they do—they could be superhuman at what they do—but in the same way that we have superhuman chess players that can only play chess, and we have superhuman protein folding AIs that can only fold protein, you don't really have to worry that that's going to do something surprising... I think that would be a really good design decision if we could manage it: to have AIs that are potentially superhuman in their domain but are in a pretty fundamental way limited to their domain so they don't do an end-run around whatever guardrails we've put in place." — *Source: [podcasts](https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai)*
 
 ### Attack Dog DAO for Climate
+*What if rivers and lakes that have been granted legal rights could actually sue their polluters — funded by a community investment pool where backers profit when the lawsuits win?*
+
 **Ecological & Regenerative Systems** | Composite: 16
 
-A [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization) that funds and coordinates environmental litigation on behalf of legally-recognized natural entities, financed through tokenized litigation investment. The idea was [proposed in a conversation about combining crypto mechanisms with climate action](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures).
+A community-run organization (a [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization) — see the explanation under "AI cryptographic oracle" above) that funds and coordinates environmental litigation on behalf of legally-recognized natural entities, financed through tokenized litigation investment. The idea was [proposed in a conversation about combining crypto mechanisms with climate action](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures).
 
-**How it works.** Natural bodies granted [legal personhood](https://scholars.unh.edu/unh_lr/vol17/iss2/13/)—rivers, lakes—become plaintiffs in lawsuits against polluters. A DAO pools capital from investors through tokenized litigation finance mechanisms, funding those cases and returning proceeds to investors when litigation succeeds. Investors profit when the lawsuits win. The lawsuits win when polluters lose. That's the whole trick. The [movement to grant legal personhood to nature is growing](https://theconversation.com/granting-legal-personhood-to-nature-is-a-growing-movement-can-it-stem-biodiversity-loss-227336), expanding the potential plaintiff pool.
+**How it works.** Natural bodies granted [legal personhood](https://scholars.unh.edu/unh_lr/vol17/iss2/13/) — rivers, lakes — become plaintiffs in lawsuits against polluters. A DAO pools capital from investors through tokenized litigation finance mechanisms, funding those cases and returning proceeds to investors when litigation succeeds. Investors profit when the lawsuits win. The lawsuits win when polluters lose. That's the whole trick. The [movement to grant legal personhood to nature is growing](https://theconversation.com/granting-legal-personhood-to-nature-is-a-growing-movement-can-it-stem-biodiversity-loss-227336), expanding the potential plaintiff pool.
 
 **Who's building toward this.** The closest attempt was Aristata Capital, which explored climate litigation finance but stopped short of DAO governance or tokenization. Adjacent work is underway from several directions. [**Ryval**](https://www.ryval.io) pioneered [tokenized litigation finance](https://arbitrationblog.kluwerarbitration.com/2022/03/16/litigation-finance-and-crypto-tokens-how-a-blockchain-startup-seeks-to-create-financing-marketplaces-for-disputes/) via Initial Litigation Offerings on blockchain, completing its first ILO in October 2021. [**LawCoin**](https://www.lawcoin.io) tokenizes litigation finance deals on [Ethereum](https://en.wikipedia.org/wiki/Ethereum) for institutional investors. [**MediCoin**](https://www.medicoin.io) has tokenized attorney fee interests specifically in environmental litigation, including [PFAS](https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances) cases. [**ClientEarth**](https://www.clientearth.org), the environmental law firm, has inspired litigation finance focused on climate cases through Aristata Capital. No known entity has combined environmental personhood, DAO governance, and tokenized litigation finance into a deployed system. TRL: 3. Funding: none identified for an integrated implementation.
 
@@ -279,11 +308,13 @@ A [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization) tha
 > "One approach is creating an attack dog DAO (Decentralized Autonomous Organization) for climate, similar to the Electronic Frontier Foundation but focused on environmental issues. This DAO could sue on behalf of natural bodies, like rivers or lakes, that have been granted legal personhood. It would leverage litigation finance, where people can invest in these legal battles." — *Source: [podcasts](https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures)*
 
 ### Wisdom DAO
+*What if citizens could use personal AI assistants to understand policy proposals, vote on them transparently, and have the results automatically executed — with no bureaucratic delay between "approved" and "implemented"?*
+
 **Decentralized & Democratic Institutions** | Composite: 16
 
-A [decentralized autonomous organization](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization) where human citizens and AI systems jointly propose, deliberate, and vote on governance policy using weighted voting and [blockchain](https://en.wikipedia.org/wiki/Blockchain) transparency. The concept originates from the [Sadvipra AI world-building scenario](https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/).
+A [decentralized autonomous organization](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization) where human citizens and AI systems jointly propose, deliberate, and vote on governance policy using weighted voting and [blockchain](https://en.wikipedia.org/wiki/Blockchain) (a tamper-proof shared ledger) transparency. The concept originates from the [Sadvipra AI world-building scenario](https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/).
 
-**How it works.** Citizens use personal AI assistants (Citizen-AI) to parse proposals and cast informed votes recorded on a blockchain ledger. A second AI layer aggregates votes into policy drafts. Humans still ratify, but execution runs on [smart contracts](https://en.wikipedia.org/wiki/Smart_contract), removing the usual discretionary window between "approved" and "implemented."
+**How it works.** Citizens use personal AI assistants (Citizen-AI) to parse proposals and cast informed votes recorded on a blockchain ledger. A second AI layer aggregates votes into policy drafts. Humans still ratify, but execution runs on [smart contracts](https://en.wikipedia.org/wiki/Smart_contract) (self-executing agreements written in code that automatically carry out their terms when conditions are met), removing the usual discretionary window between "approved" and "implemented."
 
 **Who's building toward this.** [Near Foundation](https://near.org) is developing AI-powered delegates and the Pulse sentiment-tracking tool for DAO governance. [SingularityNET](https://singularitynet.io) operates a decentralized AI coordination platform using blockchain for service governance and privacy-preserving datasets. [Aragon](https://aragon.org) provides DAO infrastructure and tooling, while [MakerDAO](https://makerdao.com) demonstrates on-chain token-based governance at meaningful scale. No dedicated funding for integrated human-AI hybrid governance DAOs has been identified. **TRL: 4** — AI agents have been [tested against 3,383 real proposals](https://arxiv.org/html/2510.21117v2) with 97% alignment to historical human decisions, and simulations show a 40% participation increase, but no production deployment at city or national scale exists. Recent research includes a [stepwise development framework for AI-driven DAOs](https://arxiv.org/html/2511.08641v1) and a study on [democratic governance through DAO-based deliberation](https://www.nature.com/articles/s41598-026-40180-8).
 
@@ -295,9 +326,11 @@ A [decentralized autonomous organization](https://en.wikipedia.org/wiki/Decentra
 > "Wisdom DAO – Citizens & AIs co-create policy. By 2035, governance shifted from centralized bureaucracy to decentralized wisdom guided by Sadvipra AI and DAOs. People co-create policy with personal AIs, corruption drops through blockchain transparency, and decisions align with dharma." — *Source: [worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai](https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/)*
 
 ### Accord of Watersheds
+*What if international treaties were organized around rivers and ecosystems instead of national borders — so that the people sharing a watershed governed it together, regardless of which country they lived in?*
+
 **International Governance & Coordination** | Composite: 16
 
-An international treaty framework that organizes political cooperation around [watershed](https://en.wikipedia.org/wiki/Watershed) and bioregional boundaries rather than national borders, envisioned in the [2035 Rewild scenario](https://worlds.existentialhope.com/world/2035-rewild/).
+An international treaty framework that organizes political cooperation around [watershed](https://en.wikipedia.org/wiki/Watershed) (the area of land that drains into a particular river or body of water) and bioregional boundaries rather than national borders, envisioned in the [2035 Rewild scenario](https://worlds.existentialhope.com/world/2035-rewild/).
 
 **How it works.** Signatory parties—nations, Indigenous governments, and regional bodies—agree to coordinate resource use, conservation, and conflict resolution according to the boundaries and health of shared watersheds. Governance bodies are constituted around [river basins](https://en.wikipedia.org/wiki/Drainage_basin) or bioregions, with binding obligations tied to ecological indicators rather than national interest. Dispute resolution and resource allocation follow hydrological logic rather than political boundaries.
 
@@ -311,11 +344,13 @@ An international treaty framework that organizes political cooperation around [w
 > "The Accord of Watersheds—a treaty system where ecosystems, not nations, are the organizing principle of cooperation." — *Source: [2035-rewild](https://worlds.existentialhope.com/world/2035-rewild/)*
 
 ### DAO-governed open innovation platform for TLM documentation and training data
+*What if the communities who speak a language got to decide how AI translation tools for that language are built, trained, and updated — instead of leaving those decisions to tech companies?*
+
 **Decentralized & Democratic Institutions** | Composite: 16
 
-A [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization)-based governance structure that mandates open-source documentation and community-sourced feedback loops for translation model development and adaptation, as envisioned in [La Langue de la Prévoyance](https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/).
+A DAO-based governance structure that mandates open-source documentation and community-sourced feedback loops for translation model development and adaptation, as envisioned in [La Langue de la Prévoyance](https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/).
 
-**How it works.** [Smart-contract](https://en.wikipedia.org/wiki/Smart_contract)-based voting gives communities formal decision-making power over how [translation language model](https://en.wikipedia.org/wiki/Language_model) (TLM) training data is collected, labeled, and updated. [Open innovation](https://en.wikipedia.org/wiki/Open_innovation) platforms serve as the interface for submitting feedback, flagging bias, and proposing model adaptations. Governance rules enforced through the DAO prevent proprietary capture, keeping models and documentation publicly accessible.
+**How it works.** Smart-contract-based voting gives communities formal decision-making power over how [translation language model](https://en.wikipedia.org/wiki/Language_model) (TLM) training data is collected, labeled, and updated. [Open innovation](https://en.wikipedia.org/wiki/Open_innovation) platforms serve as the interface for submitting feedback, flagging bias, and proposing model adaptations. Governance rules enforced through the DAO prevent proprietary capture, keeping models and documentation publicly accessible.
 
 **Who's building toward this.** [Hugging Face](https://huggingface.co) hosts over 1,000 community-contributed translation models but has no governance layer for community decision-making over those models. [Mozilla Common Voice](https://commonvoice.mozilla.org) crowdsources multilingual voice data but doesn't give contributors formal control over how it's used. [Ocean Protocol](https://oceanprotocol.com) provides decentralized data exchange with DAO governance and tokenized data assets. [Aragon](https://aragon.org) supplies DAO governance frameworks and is exploring [AI-DAO integration](https://blog.aragon.org/ai-daos-the-future-of-daos-powered-by-artificial-intelligence/). The missing link is connecting contributor governance to model development decisions. Overall TRL: 3. Relevant research includes work on [governance of DAOs that produce open source software](https://www.sciencedirect.com/science/article/pii/S2096720923000416) and a [stepwise development framework for AI-driven DAOs](https://arxiv.org/html/2511.08641).
 
@@ -327,9 +362,11 @@ A [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization)-bas
 > "Decentralized Autonomous Organizations (DAOs) ensure open access to TLM documentation and training data so that communities drive decision-making on model adaptations. Open innovation platforms source community feedback to further transparency and interoperability." — *Source: [la-langue-de-la-prvoyance](https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/)*
 
 ### Watershed Parliaments
+*What if political jurisdictions followed the flow of water rather than lines drawn on a map — and rivers, soil, and future generations got a vote?*
+
 **Decentralized & Democratic Institutions** | Composite: 16
 
-[Bioregional](https://en.wikipedia.org/wiki/Bioregionalism) governance bodies organized around watershed boundaries rather than political borders, incorporating ecological feedback into formal decision-making. The concept appears in the [Mycelial Democracy scenario](https://worlds.existentialhope.com/world/mycelial-democracy/).
+Bioregional governance bodies organized around watershed boundaries rather than political borders, incorporating ecological feedback into formal decision-making. The concept appears in the [Mycelial Democracy scenario](https://worlds.existentialhope.com/world/mycelial-democracy/).
 
 **How it works.** Governance jurisdiction is defined by hydrological catchment areas, replacing nation-state and municipal lines with boundaries that match the actual movement of water and the ecosystems it sustains. Decision-making bodies include designated representatives for ecosystem interests alongside human citizens. Before adoption, proposals must pass multi-generational impact assessments covering all species within the watershed.
 
@@ -343,6 +380,8 @@ A [DAO](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization)-bas
 > "Watershed Parliaments replace geopolitical boundaries with bioregional governance aligned with natural water systems. These institutions integrate human decision-making with ecological feedback, where voting rights extend to ecosystem representatives and decisions must demonstrate positive impacts across seven generations of all life forms within the watershed." — *Source: [mycelial-democracy](https://worlds.existentialhope.com/world/mycelial-democracy/)*
 
 ### Digital Twins for Communities and Ecosystems
+*Imagine a live, interactive computer model of your neighborhood or local river system — updated by real sensors — where residents can test "what would happen if...?" before any policy decision is made.*
+
 **AI-Mediated Deliberation & Collective Intelligence** | Composite: 16
 
 Real-time digital models of communities and ecosystems that enable participatory future simulation with locally-owned data.
@@ -359,11 +398,13 @@ Real-time digital models of communities and ecosystems that enable participatory
 > "Digital twins reflect the real-time state of communities and ecosystems. They help people simulate futures, explore consequences, and make decisions guided by care, memory, and shared responsibility. Every community and citizen holds its own data as a form of digital sovereignty." — *Source: [the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences](https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/)*
 
 ### Loyal AI Assistance (Fiduciary AI Assistance)
+*What if your AI assistant worked like a lawyer or financial advisor — legally bound to act in YOUR interest, not the company's that made it?*
+
 **AI Safety, Alignment & Governance** | Composite: 15
 
 > **What can someone do RIGHT NOW?** Legal scholars, policy advocates, and AI governance organizations should push for regulatory frameworks that define and enforce fiduciary duty standards for AI assistants. This is the explicit gating factor for commercial adoption. Connecting existing legal instruments like [UETA](https://en.wikipedia.org/wiki/Uniform_Electronic_Transactions_Act) to AI agent accountability, and building coalitions that pressure regulators to establish compliance mechanisms, would move this from research artifact to deployable standard.
 
-A personal AI system explicitly designed to serve the individual user's goals rather than platform or advertiser interests, functioning more like a [fiduciary](https://en.wikipedia.org/wiki/Fiduciary) than a product. A loyal AI assistant would know the user deeply enough to genuinely assist rather than manipulate, with no third-party incentives embedded in its objective function. Unlike Siri or Alexa, which are structurally oriented toward platform revenue and data monetization, a fiduciary AI would operate under a duty of loyalty and care analogous to legal fiduciary relationships.
+A personal AI system explicitly designed to serve the individual user's goals rather than platform or advertiser interests, functioning more like a [fiduciary](https://en.wikipedia.org/wiki/Fiduciary) (someone legally obligated to act in another person's best interest, like a doctor or trustee) than a product. A loyal AI assistant would know the user deeply enough to genuinely assist rather than manipulate, with no third-party incentives embedded in its objective function. Unlike Siri or Alexa, which are structurally oriented toward platform revenue and data monetization, a fiduciary AI would operate under a duty of loyalty and care analogous to legal fiduciary relationships.
 
 The [Montreal AI Ethics Institute](https://montrealethics.ai/) has developed research and design frameworks for fiduciary AI systems (see "[Designing Fiduciary Artificial Intelligence](https://dl.acm.org/doi/fullHtml/10.1145/3617694.3623230)," 2023). [Consumer Reports Innovation](https://innovation.consumerreports.org/) is exploring personal AI agents operating under fiduciary duty principles, detailed in "[Empowering Consumers with Personal AI Agents](https://innovation.consumerreports.org/empowering-consumers-with-personal-ai-agents-legal-foundations-and-design-considerations/)" (2025). The [Alignment Research Center](https://alignment.anthropic.com/) contributes relevant user-centric alignment research. Legal foundations are explored in "[Fiduciary Principles in AI: Utilizing the Duty of Loyalty](https://www.bu.edu/law/files/2023/09/Fiduciary-paper.pdf)" (2023). No dedicated external funding has been documented. **TRL 3** — published design methodologies and legal frameworks exist, but no commercial deployment has occurred. The concept emerged from a podcast discussion with [Anthony Aguirre](https://en.wikipedia.org/wiki/Anthony_Aguirre) [on worldbuilding](https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding).
 
@@ -373,6 +414,8 @@ The [Montreal AI Ethics Institute](https://montrealethics.ai/) has developed res
 > "One of the things that came out of the augmented intelligence summit was fiduciary AI assistance. I have been calling them loyal AI assistance. There is a loyal AI system that doesn't have selfish interests and works to advance your goals and interests." — *Source: [podcasts](https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding)*
 
 ### The Global Deliberation Coordinator
+*What if there were a permanent, inclusive institution where people from every country could deliberate together on how AI should be governed — not just the usual handful of wealthy nations?*
+
 **AI-Mediated Deliberation & Collective Intelligence** | Composite: 15
 
 A platform institution designed to coordinate global deliberative processes and collective decision-making specifically around AI governance.
@@ -389,11 +432,13 @@ A platform institution designed to coordinate global deliberative processes and 
 > "The Global Deliberation Coordinator (Hackathon shared second place): Focuses on establishing a platform for global discussions and decision-making on AI and other pressing issues." — *Source: N/A*
 
 ### Epistemic stack
+*What if every claim you read online — in a news article, a social media post, anywhere — came with a traceable chain back to its original source, and each link in that chain had a reliability score based on its track record?*
+
 **Scientific Research & Knowledge Infrastructure** | Composite: 14
 
 > "There is no reason why, when reading a newspaper article about something, you shouldn't be able to trace back: where did that quote come from, or where did this piece of information come from? How do I know whether to trust this?... We should be able to have a stack we can follow all the way from the high level back down to the raw ingredients, and then figure out how much we trust each of those steps." — *Source: [podcasts](https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future)*
 
-A citation and [provenance](https://en.wikipedia.org/wiki/Provenance) system for all information, from newspaper articles to social media claims, that lets users trace any assertion back to its raw data sources, with trust scores based on historical accuracy of each link in the chain.
+A citation and [provenance](https://en.wikipedia.org/wiki/Provenance) (origin-tracking) system for all information, from newspaper articles to social media claims, that lets users trace any assertion back to its raw data sources, with trust scores based on historical accuracy of each link in the chain.
 
 **How it works.** Every piece of information carries machine-readable provenance metadata linking it to its source, analogous to academic citations but applied universally. AI tools help users traverse this chain from a high-level claim down to raw data, which can be cryptographically signed by hardware [secure enclaves](https://en.wikipedia.org/wiki/Trusted_execution_environment). Each node in the chain (person, outlet, inference step) accumulates a reliability record based on past accuracy, giving users a principled basis for assessing any given claim.
 
@@ -409,7 +454,7 @@ A citation and [provenance](https://en.wikipedia.org/wiki/Provenance) system for
 
 ## 5. Watch List (Tier 2)
 
-The remaining 170 entities form the watch list — systems worth tracking but not yet meeting the composite score threshold for spotlight treatment.
+The remaining 170 systems form the watch list — worth tracking but not yet meeting the composite score threshold for spotlight treatment. The table below shows each system's thematic group, d/acc values alignment score (out of 20), transformative potential (out of 5), primary bottleneck, recommended action, Technology Readiness Level (1-9), and source.
 
 | Name | Group | d/acc | Trans. | Bottleneck | Action | TRL | Source |
 |------|-------|-------|--------|------------|--------|-----|-----|
@@ -692,25 +737,32 @@ The pieces exist separately — what's missing is coordination between stakehold
 
 ---
 
-## 7. Conclusion
+## 7. Conclusion: What You Can Do
 
-The 189 hyper-entities identified in this report represent a curated map of futures that are already shaping the present. They are not predictions — they are coordination attractors, systems around which investment, research, and narrative are already forming even before the first prototype exists. What makes them worth attending to now is precisely that earliness: the decisions made in the next five to ten years about which of these systems to fund, govern, and build will determine whether the technologies of the 2030s and 2040s concentrate power or distribute it, protect human agency or erode it, accelerate beneficial futures or foreclose them.
+The 189 systems identified in this report represent a curated map of futures that are already shaping the present. They are not predictions — they are coordination attractors, systems around which investment, research, and narrative are already forming even before the first prototype exists. What makes them worth attending to now is precisely that earliness: the decisions made in the next five to ten years about which of these systems to fund, govern, and build will determine whether the technologies of the 2030s and 2040s concentrate power or distribute it, protect human agency or erode it, accelerate beneficial futures or foreclose them.
 
-For funders and policymakers, the key question is not "what is the most powerful technology on the horizon?" Power is not scarce in current technology development — attention and capital are already flowing toward the most transformative systems. The question is: what infrastructure ensures that powerful technologies serve broad human interests rather than narrow ones?
+The key question is not "what is the most powerful technology on the horizon?" Power is not scarce in current technology development — attention and capital are already flowing toward the most transformative systems. The question is: what infrastructure ensures that powerful technologies serve broad human interests rather than narrow ones?
 
-Several patterns in this data are striking. Epistemic infrastructure — systems for verifying truth, enhancing collective reasoning, and making knowledge legible — is chronically underfunded relative to its importance. Governance tools and coordination protocols tend to have the longest time horizons but the highest systemic leverage. Energy and ecological systems consistently score high on d/acc alignment, suggesting that sustainability transitions, if done right, could be among the most broadly beneficial shifts.
+Several patterns in this data are striking. Epistemic infrastructure — systems for verifying truth, enhancing collective reasoning, and making knowledge legible — is chronically underfunded relative to its importance. Governance tools and coordination protocols tend to have the longest time horizons but the highest systemic leverage. Energy and ecological systems consistently score high on values alignment (the d/acc dimensions: democratic, decentralized, defensive, differential), suggesting that sustainability transitions, if done right, could be among the most broadly beneficial shifts.
 
-The maturity distribution tells its own story. The modal TRL of 3.9 means most entities are between proof-of-concept and early validation. This is not a list of things almost ready to ship — it is a list of things that need patient capital, cross-disciplinary collaboration, and regulatory frameworks designed for experimentation rather than premature standardization.
+The maturity distribution tells its own story. An average readiness level of 3.9 means most systems are between proof-of-concept and early validation. This is not a list of things almost ready to ship — it is a list of things that need patient capital, cross-disciplinary collaboration, and regulatory frameworks designed for experimentation rather than premature standardization.
 
 The window for shaping these systems is open now, and it will not remain open indefinitely. Once infrastructure standards calcify around centralized control, once regulatory frameworks cement incumbent advantages, once public narrative settles on a narrow vision of which futures are possible — the range of available paths narrows dramatically.
 
-What can you do with this information? If you are a funder, the Tier 1 spotlight entities and the action breakdown in this report provide a starting point. Consider whether your portfolio has exposure to infrastructure that works across many possible futures, not just the ones currently receiving the most hype. If you are a policymaker, the entities scoring highest on d/acc alignment represent the systems most worth building regulatory runway for today. If you are a researcher or technologist, the bottleneck analysis throughout this report identifies genuine frontiers: places where the field lacks basic understanding, where governance frameworks don't yet exist, or where the coordination problem is more tractable than the technical one.
+**What can you do with this information?**
 
-This research is designed to be repeatable and extensible. Future iterations should expand the source corpus to include non-English discourse communities, incorporate structured expert elicitation alongside automated scoring, and track entities longitudinally to see which ones move from foundational research toward deployment. The goal is not to produce a single authoritative ranking but to build a shared language for talking about which futures are forming, which deserve more resources, and how the choices we make today constrain or expand the range of tomorrow.
+- **If you fund or invest in technology:** The top 19 spotlight systems and the action breakdown in this report provide a starting point. Consider whether your portfolio has exposure to infrastructure that works across many possible futures, not just the ones currently receiving the most hype.
+- **If you work in policy or government:** The systems scoring highest on values alignment represent the ones most worth building regulatory runway for today. Many of them need not more money but clearer rules.
+- **If you are a researcher or technologist:** The bottleneck analysis throughout this report identifies genuine frontiers — places where the field lacks basic understanding, where governance frameworks don't yet exist, or where the coordination problem is more tractable than the technical one.
+- **If you are a citizen who cares about the future:** Read the "What can someone do RIGHT NOW?" sections in the spotlight write-ups. Many of the most impactful next steps are about convening — bringing the right people into the same room. You may know people who should be connected. Share this report with them.
+
+This research is designed to be repeatable and extensible. Future iterations should expand the source corpus to include non-English discourse communities, incorporate structured expert elicitation alongside automated scoring, and track systems longitudinally to see which ones move from foundational research toward deployment. The goal is not to produce a single authoritative ranking but to build a shared language for talking about which futures are forming, which deserve more resources, and how the choices we make today constrain or expand the range of tomorrow.
 
 ---
 
 ## 8. Appendix
+
+*For readers interested in the technical details of how we identified, scored, and ranked these systems, this appendix documents the full methodology, the prompts used in automated analysis, and detailed scoring breakdowns for all top-tier systems.*
 
 ### A. Methodology
 
@@ -722,9 +774,9 @@ This report represents the third iteration of the Foresight Institute's hyper-en
 
 **Web research.** Each deduplicated entity was researched to establish current development status, identify relevant actors, and assign a Technology Readiness Level on the standard 1–9 scale. The distribution skewed early-stage, with a modal TRL of 4 and a range of 1–8. Most candidates have demonstrated feasibility in laboratory or limited-context conditions but have not yet achieved validated prototypes.
 
-**Scoring.** Each entity was scored on three dimensions. The d/acc score (0–20) assessed alignment with democratic, decentralized, defensive, and differential acceleration principles, with five points available per dimension. The transformative score (0–5) captured how much it could change the way societies coordinate or govern. The actionability score (0–5) assessed whether concrete next steps exist and whether current actors can execute them. Composite scores summed d/acc and transformative dimensions. Scoring was performed by the [Claude API](https://docs.anthropic.com/en/api/getting-started) ([Anthropic](https://www.anthropic.com/)); we reviewed results by hand at the tiering and editorial stages to catch systematic errors and resolve ambiguous cases.
+**Scoring.** Each system was scored on three dimensions. The d/acc score (0-20) assessed alignment with the four d/acc values — democratic (distributes power), decentralized (resists central control), defensive (protects rather than harms), and differential (accelerates good outcomes faster than bad) — with five points available per dimension. The transformative score (0-5) captured how much a system could change the way societies coordinate or govern. The actionability score (0-5) assessed whether concrete next steps exist and whether current actors can execute them. Composite scores summed d/acc and transformative dimensions. Scoring was performed by the [Claude API](https://docs.anthropic.com/en/api/getting-started) ([Anthropic](https://www.anthropic.com/)); we reviewed results by hand at the tiering and editorial stages to catch systematic errors and resolve ambiguous cases.
 
-**Tiering.** Entities with composite scores of 14 or above were designated Tier 1 spotlight entities, yielding 19 candidates. The remaining 170 entities form the Tier 2 watch list. Twenty-seven entities appeared in both V3 and the prior V2 analysis, giving us a consistency check that was weighted positively in borderline cases. Primary bottleneck and recommended action type were assigned categorically rather than scored, based on the web research stage assessment of what currently constrains each entity's development.
+**Tiering.** Systems with composite scores of 14 or above were designated Tier 1 spotlight systems, yielding 19 candidates. The remaining 170 form the Tier 2 watch list. Twenty-seven systems appeared in both V3 and the prior V2 analysis, giving us a consistency check that was weighted positively in borderline cases. Primary bottleneck and recommended action type were assigned categorically rather than scored, based on the web research stage assessment of what currently constrains each system's development.
 
 ### B. Pipeline Prompts
 
