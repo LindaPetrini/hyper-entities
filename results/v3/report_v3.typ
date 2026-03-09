@@ -99,9 +99,9 @@ _Decentralized & Democratic Institutions_ | Composite: 21
 
 Decentralized AI networks trained on locally governed data and stewarded by community trust circles rather than centralized corporate or state actors.
 
-_How it works._ Local communities retain sovereignty over data used to train and fine-tune AI models, with governance handled by designated trust circles (particularly Indigenous and racialized community groups) operating under consent frameworks those communities define. A mesh architecture distributes both compute and decision-making authority across nodes, so no single actor controls the system. #link("https://flower.ai")[Flower] and #link("https://www.openmined.org")[OpenMined] have proven federated learning works. #link("https://www.gida-global.org")[GIDA] has proven Indigenous data governance works. Mesh networks work. But nobody has tried to wire them together, partly because the governance conversations happen in completely different rooms from the engineering ones.
+_How it works._ Local communities retain sovereignty over data used to train and fine-tune AI models, with governance handled by designated trust circles (particularly Indigenous and racialized community groups) operating under consent frameworks those communities define. A #link("https://en.wikipedia.org/wiki/Mesh_networking")[mesh architecture] distributes both compute and decision-making authority across nodes, so no single actor controls the system. #link("https://flower.ai")[Flower] and #link("https://www.openmined.org")[OpenMined] have proven #link("https://en.wikipedia.org/wiki/Federated_learning")[federated learning] works. #link("https://www.gida-global.org")[GIDA] has proven Indigenous data governance works. Mesh networks work. But nobody has tried to wire them together, partly because the governance conversations happen in completely different rooms from the engineering ones.
 
-_Who's building toward this._ #link("https://flower.ai")[Flower (adap gmbh)] and OpenMined (PySyft) provide production-grade federated learning infrastructure for distributed model training. The #link("https://www.gida-global.org")[Global Indigenous Data Alliance] stewards the CARE Principles, and #link("https://localcontexts.org")[Local Contexts] supports Indigenous data sovereignty and cultural heritage protection in digital systems. #link("https://bittensor.com")[Bittensor] is building decentralized AI infrastructure with community-governed token incentives. No dedicated funding for an integrated system has been identified. _TRL: 4_—individual components are mature and deployed; full integration remains unbuilt.
+_Who's building toward this._ #link("https://flower.ai")[Flower (adap gmbh)] and OpenMined (#link("https://github.com/OpenMined/PySyft")[PySyft]) provide production-grade federated learning infrastructure for distributed model training. The #link("https://www.gida-global.org")[Global Indigenous Data Alliance] stewards the #link("https://en.wikipedia.org/wiki/CARE_Principles_for_Indigenous_Data_Governance")[CARE Principles], and #link("https://localcontexts.org")[Local Contexts] supports Indigenous data sovereignty and cultural heritage protection in digital systems. #link("https://bittensor.com")[Bittensor] is building decentralized AI infrastructure with community-governed token incentives. No dedicated funding for an integrated system has been identified. _TRL: 4_—individual components are mature and deployed; full integration remains unbuilt.
 
 _d/acc alignment._ This entity scores at the ceiling on Democratic (5/5) and Decentralized (5/5) dimensions, reflecting structural governance design that places decision-making authority with affected communities rather than extracting it upward. Defensive posture scores 4/5, as the architecture resists both corporate data capture and state surveillance by design. Key research underpinning this space includes #link("https://arxiv.org/abs/2007.14390")[FLOWER: A Friendly Federated Learning Framework] (2020), #link("https://datascience.codata.org/articles/dsj-2020-043")[The CARE Principles for Indigenous Data Governance] (2019), and UNESCO's report on #link("https://www.unesco.org/ethics-ai/en/articles/new-report-and-guidelines-indigenous-data-sovereignty-artificial-intelligence-developments")[Indigenous People-Centered AI] (2024). (Source: #link("https://worlds.existentialhope.com/world/the-living-rights-network/")[the-living-rights-network])
 
@@ -117,7 +117,7 @@ _Education, Development & Human Flourishing_ | Composite: 20
 
 A federated governance institution that develops, maintains, and audits AI education tools through multi-stakeholder councils including elders, learners, and ethicists.
 
-_How it works._ UALU operates as a decentralized network of community nodes that co-create and oversee AI educational tools, with governance councils composed of elders, learners, technologists, and ethicists conducting regular audits and setting standards for bias mitigation and cultural appropriateness. The federated structure enables local adaptation while maintaining shared accountability frameworks across the network. Mozilla funds AI governance. The #link("https://au.int/en/pressreleases/20240617/african-ministers-adopt-landmark-continental-artificial-intelligence-strategy")[African Union Commission] is building a continental AI strategy. #link("https://en.unesco.org/")[UNESCO] sets ethics standards. But none of them have binding enforcement mechanisms that give elder councils actual veto power over AI tools.
+_How it works._ UALU operates as a decentralized network of community nodes that co-create and oversee AI educational tools, with governance councils composed of elders, learners, technologists, and ethicists conducting regular audits and setting standards for bias mitigation and cultural appropriateness. The federated structure enables local adaptation while maintaining shared accountability frameworks across the network. #link("https://en.wikipedia.org/wiki/Mozilla")[Mozilla] funds AI governance. The #link("https://au.int/en/pressreleases/20240617/african-ministers-adopt-landmark-continental-artificial-intelligence-strategy")[African Union Commission] is building a continental AI strategy. #link("https://en.unesco.org/")[UNESCO] sets ethics standards, including its #link("https://www.unesco.org/en/artificial-intelligence/recommendation-ethics")[Recommendation on the Ethics of AI] (2021). But none of them have binding enforcement mechanisms that give elder councils actual veto power over AI tools.
 
 _Who's building toward this._ #link("https://www.mozillafoundation.org/en/internet-health/trustworthy-artificial-intelligence/")[Mozilla Foundation] has committed \$2.7M (2023) for its Responsible Computing Challenge across Kenya, India, and the US, and \$1M (2025–2027) for its Democracy x AI Cohort. The African Union Commission is developing a Continental AI Strategy and Digital Education Strategy (2023–2028) through multi-stakeholder consultation. UNESCO is establishing AI ethics standards and competency frameworks for students and teachers. #link("https://aign.global/ai-governance-framework/global-ai-governance-framework/education-ai-governance-framework/")[AIGN] is developing operational AI governance frameworks for schools and universities with audit mechanisms. #link("https://idrc-crdi.ca/en/research-in-action/commitment-action-advancing-use-ai-education-africa")[IDRC] supports the EmpowerED initiative for responsible AI implementation in African education systems. The project sits at _TRL 3_—conceptual frameworks are mature, but no fully operational federated institution with formal elder council oversight exists at scale.
 
@@ -133,11 +133,11 @@ _d/acc alignment._ UALU scores highest on Democratic (5/5) and Defensive (5/5), 
 
 _Decentralized & Democratic Institutions_ | Composite: 19
 
-A fraud-resistance layer combining zero-knowledge proofs from IoT sensor data, AI anomaly detection, stake-slashing penalties, and a decentralized human jury for retroactive balance correction.
+A fraud-resistance layer combining #link("https://en.wikipedia.org/wiki/Zero-knowledge_proof")[zero-knowledge proofs] from IoT sensor data, AI anomaly detection, stake-slashing penalties, and a decentralized human jury for retroactive balance correction.
 
-_How it works._ IoT devices generate zero-knowledge proofs of their sensor readings, letting a ledger verify data authenticity without exposing raw feeds that could be spoofed or fabricated. An AI layer monitors token-minting patterns for statistical anomalies, while actors caught cheating face quadratic slashing, penalties that scale super-linearly with stake size to neutralize "too-big-to-fail" manipulation. A randomly selected jury-DAO of token holders can then vote to retroactively adjust balances, placing a human override on top of automated enforcement.
+_How it works._ #link("https://en.wikipedia.org/wiki/Internet_of_things")[IoT] devices generate zero-knowledge proofs of their sensor readings, letting a ledger verify data authenticity without exposing raw feeds that could be spoofed or fabricated. An AI layer monitors token-minting patterns for statistical anomalies, while actors caught cheating face quadratic slashing, penalties that scale super-linearly with stake size to neutralize "too-big-to-fail" manipulation. A randomly selected jury-DAO of token holders can then vote to retroactively adjust balances, placing a human override on top of automated enforcement.
 
-_Who's building toward this._ #link("https://www.risczero.com/")[_RISC Zero_] provides the zero-knowledge virtual machine for proof generation. #link("https://chain.link/")[_Chainlink_] and #link("https://api3.org/")[_API3_] supply decentralized oracle infrastructure. #link("https://kleros.io/")[_Kleros_] has operated a live jury-DAO since 2018, handling 1,000+ cases. Slashing mechanisms are operational in Ethereum proof-of-stake. The gap is not that nobody has the pieces but that nobody has tried to combine ZK-IoT with AI anomaly detection under DAO adjudication — the trust boundaries between these systems are undefined. TRL: 4; ZK-IoT proofs demonstrated on ESP32 microcontrollers at ~700ms.
+_Who's building toward this._ #link("https://www.risczero.com/")[_RISC Zero_] provides the zero-knowledge virtual machine for proof generation. #link("https://chain.link/")[_Chainlink_] and #link("https://api3.org/")[_API3_] supply decentralized #link("https://en.wikipedia.org/wiki/Blockchain_oracle")[oracle] infrastructure. #link("https://kleros.io/")[_Kleros_] has operated a live jury-DAO since 2018, handling 1,000+ cases. Slashing mechanisms are operational in #link("https://ethereum.org/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/")[Ethereum proof-of-stake]. The gap is not that nobody has the pieces but that nobody has tried to combine ZK-IoT with AI anomaly detection under DAO adjudication — the trust boundaries between these systems are undefined. TRL: 4; ZK-IoT proofs demonstrated on #link("https://en.wikipedia.org/wiki/ESP32")[ESP32] microcontrollers at ~700ms.
 
 _d/acc alignment._ Defensive scores highest at 5/5, reflecting the system's explicit design to detect and penalize fraud at multiple layers. Democratic and Decentralized both score 4/5, driven by the jury-DAO's human override capacity and the absence of any central arbiter. The research base includes #link("https://arxiv.org/html/2402.08322v2")[zk-IoT: Securing the Internet of Things with Zero-Knowledge Proofs on Blockchain Platforms] (2024), #link("https://arxiv.org/html/2401.03530v1")[Detecting Anomalies in Blockchain Transactions using Machine Learning Classifiers and Explainability Analysis] (2024), and #link("https://www.mdpi.com/2076-3417/15/15/8330")[Anomaly Detection in Blockchain: A Systematic Review] (2025). (Source: #link("https://worlds.existentialhope.com/world/hybrid-market/")[hybrid-market])
 
@@ -153,14 +153,14 @@ _AI-Mediated Deliberation & Collective Intelligence_ | Composite: 18
 
 A mechanism by which people or groups with different moral priorities swap concessions so that each gets more of what they care about than unilateral action would yield.
 
-_How it works._ Moral trade applies the logic of economic exchange to ethical preferences: parties identify where their moral priorities are relatively cheap for the other side to accommodate, then negotiate exchanges that leave both better off by their own values. At civilizational scale, this could allow diverse moral communities to each achieve far more of their valued outcomes than competition or majority-rule permits, without requiring any single ethical framework to dominate. Toby Ord formalized the concept academically in his paper #link("https://www.journals.uchicago.edu/doi/10.1086/682187")[Moral Trade] (2015); informal versions already occur in activist coalition bargaining and effective altruism cause prioritization.
+_How it works._ Moral trade applies the logic of economic exchange to ethical preferences: parties identify where their moral priorities are relatively cheap for the other side to accommodate, then negotiate exchanges that leave both better off by their own values. At civilizational scale, this could allow diverse moral communities to each achieve far more of their valued outcomes than competition or majority-rule permits, without requiring any single ethical framework to dominate. #link("https://en.wikipedia.org/wiki/Toby_Ord")[Toby Ord] formalized the concept academically in his paper #link("https://www.journals.uchicago.edu/doi/10.1086/682187")[Moral Trade] (2015); informal versions already occur in activist coalition bargaining and #link("https://en.wikipedia.org/wiki/Effective_altruism")[effective altruism] cause prioritization.
 
-_Who's building toward this._ The #link("https://www.fhi.ox.ac.uk/")[Future of Humanity Institute] and University of Oxford provided the academic home for Toby Ord's foundational theoretical work. The #link("https://www.effectivealtruism.org/")[Effective Altruism] community has explored small-scale applications through informal coordination on charitable donations across cause areas. No dedicated funding has been identified, and the concept sits at TRL 2—theorized and occasionally applied ad hoc, but without formal institutional infrastructure or governance mechanisms.
+_Who's building toward this._ The #link("https://www.fhi.ox.ac.uk/")[Future of Humanity Institute] and #link("https://en.wikipedia.org/wiki/University_of_Oxford")[University of Oxford] provided the academic home for Toby Ord's foundational theoretical work. The #link("https://www.effectivealtruism.org/")[Effective Altruism] community has explored small-scale applications through informal coordination on charitable donations across cause areas. No dedicated funding has been identified, and the concept sits at TRL 2—theorized and occasionally applied ad hoc, but without formal institutional infrastructure or governance mechanisms.
 
-_d/acc alignment._ Moral trade scores highest on Democratic (5/5) and Decentralized (4/5) dimensions, reflecting its core design goal of enabling pluralistic coordination without imposing a dominant moral framework. Defensive and Differential scores are lower, as the concept addresses coordination rather than security or targeted acceleration. Recent work includes #link("https://forum.effectivealtruism.org/posts/L76qZhfvkediwXd6f/moral-public-goods-are-a-big-deal-for-whether-we-get-a-good")[Moral public goods are a big deal for whether we get a good future] (2025) and a #link("https://forum.effectivealtruism.org/posts/jvW6p5Hk2r4883tNT/moral-trade-proposal-with-95-100-surplus")[Moral Trade Proposal with 95-100% Surplus] (2024). (Source: #link("https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival")[fin-moorhouse-why-we-need-to-aim-higher-than-survival])
+_d/acc alignment._ Moral trade scores highest on Democratic (5/5) and Decentralized (4/5) dimensions, reflecting its core design goal of enabling pluralistic coordination without imposing a dominant moral framework. Defensive and Differential scores are lower, as the concept addresses coordination rather than security or targeted acceleration. Recent work includes #link("https://forum.effectivealtruism.org/posts/L76qZhfvkediwXd6f/moral-public-goods-are-a-big-deal-for-whether-we-get-a-good")[Moral public goods are a big deal for whether we get a good future] (2025) and a #link("https://forum.effectivealtruism.org/posts/jvW6p5Hk2r4883tNT/moral-trade-proposal-with-95-100-surplus")[Moral Trade Proposal with 95-100% Surplus] (2024). (Source: #link("https://finmoorhouse.com/")[Fin Moorhouse] — #link("https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival")[fin-moorhouse-why-we-need-to-aim-higher-than-survival])
 
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ A researcher or funder could commission a systematic mapping of existing informal moral trade instances across activist coalitions, international negotiations, and EA cause prioritization to identify which coordination mechanisms succeeded and why. A builder with AI expertise could prototype a preference-elicitation and matching tool — the fair-division literature already has working algorithms (Adjusted Winner, Spliddit) that handle analogous problems — to help parties identify low-cost concessions across moral domains.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ A researcher or funder could commission a systematic mapping of existing informal moral trade instances across activist coalitions, international negotiations, and EA cause prioritization to identify which coordination mechanisms succeeded and why. A builder with AI expertise could prototype a preference-elicitation and matching tool — the #link("https://en.wikipedia.org/wiki/Fair_division")[fair-division] literature already has working algorithms (#link("https://en.wikipedia.org/wiki/Adjusted_winner_procedure")[Adjusted Winner], #link("http://spliddit.org/")[Spliddit]) that handle analogous problems — to help parties identify low-cost concessions across moral domains.]
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["Let's say you really care that people abstain from eating meat, and I really care about people reducing their carbon footprint. Maybe it's not much of a cost for me to eliminate meat from my diet, and it's not much of a cost for you to offset your emissions. Then we have an opportunity for a deal where I eat less meat and you reduce your carbon footprint... if you scale it up to the level of a civilization, there are huge opportunities." — _Source: #link("https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival")[podcasts]_]
@@ -170,16 +170,16 @@ _d/acc alignment._ Moral trade scores highest on Democratic (5/5) and Decentrali
 
 _Neurotechnology & Brain-Computer Interfaces_ | Composite: 18
 
-An open-source operating system layer for brain-computer interfaces that embeds agency evaluation, AI model compatibility, and privacy standards as core OS-level features.
+An open-source operating system layer for #link("https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface")[brain-computer interfaces] that embeds agency evaluation, AI model compatibility, and privacy standards as core OS-level features.
 
 _How it works._ BCI-OS sits between BCI hardware and applications, enforcing privacy protocols and agency evaluations at the OS level rather than delegating them to individual apps. Standardized model compatibility protocols enable interoperability across hardware manufacturers. An open-source governance structure and standards body maintain human-agency principles, with academic and industry pilots iteratively refining the system.
 
 _Who's building toward this._ #link("https://openbci.com/")[OpenBCI] provides open-source hardware and software platforms with community adoption but without unified privacy or agency frameworks. #link("https://www.ae.studio/brain-computer-interface")[AE Studio] is developing agency-focused BCI tools including the Neurotech Development Kit, with neuroethical principles embedded in its approach. The #link("https://fpf.org")[Future of Privacy Forum] is researching BCI-specific data protection standards, and the #link("https://standards.ieee.org/")[IEEE Standards Association] published a 2024 Standards Roadmap for Neurotechnologies for Machine Interfacing covering sensing, feedback, and data management. No dedicated funding for a unified BCI-OS has been identified. TRL: 3.
 
-_d/acc alignment._ BCI-OS scores highest on Defensive (5/5) and Democratic (4/5), reflecting its core architectural commitment to protecting user agency and neural data privacy, and its open-source governance model that distributes control away from any single manufacturer. Key references include #link("https://arxiv.org/abs/2201.07711")[Enhancing the Security & Privacy of Wearable Brain-Computer Interfaces] (2022), the IEEE #link("https://standards.ieee.org/")[Standards Roadmap: Neurotechnologies for Machine Interfacing] (2024), and the GAO report on #link("https://www.gao.gov/products/gao-25-106952")[Brain-Computer Interfaces: Applications, Challenges, and Policy Options] (2025).
+_d/acc alignment._ BCI-OS scores highest on Defensive (5/5) and Democratic (4/5), reflecting its core architectural commitment to protecting user agency and neural data privacy, and its open-source governance model that distributes control away from any single manufacturer. Key references include #link("https://arxiv.org/abs/2201.07711")[Enhancing the Security & Privacy of Wearable Brain-Computer Interfaces] (2022), the IEEE #link("https://standards.ieee.org/wp-content/uploads/import/documents/presentations/ieee-neurotech-for-bmi-standards-roadmap.pdf")[Standards Roadmap: Neurotechnologies for Machine Interfacing] (2024), and the GAO report on #link("https://www.gao.gov/products/gao-25-106952")[Brain-Computer Interfaces: Applications, Challenges, and Policy Options] (2025).
 
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ A funder or institution could convene a working group pulling together OpenBCI, AE Studio, IEEE, FDA representatives, and privacy researchers to draft a governance charter and interoperability specification for BCI-OS. The fragmented ecosystem is the binding constraint, not technical readiness. That alone won't solve the problem, but right now these groups aren't even using the same vocabulary for agency evaluation, which makes everything downstream harder.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ A funder or institution could convene a working group pulling together OpenBCI, AE Studio, IEEE, #link("https://en.wikipedia.org/wiki/Food_and_Drug_Administration")[FDA] representatives, and privacy researchers to draft a governance charter and interoperability specification for BCI-OS. The fragmented ecosystem is the binding constraint, not technical readiness. That alone won't solve the problem, but right now these groups aren't even using the same vocabulary for agency evaluation, which makes everything downstream harder.]
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["['The Open Source BCI Project: Create an open-source brain-computer interface (BCI) operating system to enhance human cognitive abilities and privacy in a TAI era.', 'Develop a privacy-preserving, open-source BCI operating system (BCI-OS) that enhances human cognitive abilities and safeguards human-agency in the TAI era. Integrated agency evaluations, model compatibility protocols, and robust data privacy standards in the BCI-OS.']" — _Source: Diogo de Lucena, Judd Rosenblatt, Mamun Miah_]
@@ -189,9 +189,9 @@ _d/acc alignment._ BCI-OS scores highest on Defensive (5/5) and Democratic (4/5)
 
 _Neurotechnology & Brain-Computer Interfaces_ | Composite: 17
 
-Rather than broadcasting all neural data, the system segments and tokenizes different categories of neural output (emotional states, motor intentions, cognitive content), allowing users to grant or revoke access to specific tokens. Think OAuth scopes for your brain: share an emotional state with a therapist, keep everything else private. Existing healthcare privacy frameworks, including HIPAA and Montana's neuro-rights law, provide the regulatory scaffolding on which such an architecture would sit (see #link("https://journals.sagepub.com/doi/10.1177/20552076251326123")[Regulating neural data processing in the age of BCIs], 2025; #link("https://arxiv.org/abs/2209.09653")[A Framework for Preserving Privacy and Cybersecurity in BCI Applications], 2022; and #link("https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1330439/full")[Chilean Supreme Court ruling on the protection of brain activity], 2024). The concept was discussed in a #link("https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer")[podcast with Mary Lou Jepsen] on Existential Hope.
+Rather than broadcasting all neural data, the system segments and tokenizes different categories of neural output (emotional states, motor intentions, cognitive content), allowing users to grant or revoke access to specific tokens — a form of #link("https://en.wikipedia.org/wiki/Selective_disclosure")[selective disclosure]. Think #link("https://en.wikipedia.org/wiki/OAuth")[OAuth] scopes for your brain: share an emotional state with a therapist, keep everything else private. Existing healthcare privacy frameworks, including #link("https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act")[HIPAA] and #link("https://leg.mt.gov/bills/2025/billpdf/SB0163.pdf")[Montana's neuro-rights law], provide the regulatory scaffolding on which such an architecture would sit (see #link("https://journals.sagepub.com/doi/10.1177/20552076251326123")[Regulating neural data processing in the age of BCIs], 2025; #link("https://arxiv.org/abs/2209.09653")[A Framework for Preserving Privacy and Cybersecurity in BCI Applications], 2022; and #link("https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1330439/full")[Chilean Supreme Court ruling on the protection of brain activity], 2024). The concept was discussed in a #link("https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer")[podcast] with #link("https://en.wikipedia.org/wiki/Mary_Lou_Jepsen")[Mary Lou Jepsen] on Existential Hope.
 
-_Who's building toward this._ The #link("https://www.neurorightsfoundation.org")[Neurorights Foundation] drives advocacy and state-level legislation for neural data privacy. The #link("https://fpf.org")[Future of Privacy Forum] produces research and guidance on BCI privacy frameworks. #link("https://www.columbia.edu")[Columbia University's Neurotechnology Center] works on neurorights and data protection frameworks. No funding for this specific architecture has been documented. _TRL: 2_ — regulatory concepts exist and are codified in Colorado, California, Montana, and Chile's constitutional protections, but no BCI system with tokenized selective-disclosure has been deployed or demonstrated.
+_Who's building toward this._ The #link("https://www.neurorightsfoundation.org")[Neurorights Foundation] drives advocacy and state-level legislation for neural data privacy. The #link("https://fpf.org")[Future of Privacy Forum] produces research and guidance on BCI privacy frameworks. #link("https://zuckermaninstitute.columbia.edu/neurotechnology-center")[Columbia University's Neurotechnology Center], led by #link("https://en.wikipedia.org/wiki/Rafael_Yuste")[Rafael Yuste], works on neurorights and data protection frameworks. No funding for this specific architecture has been documented. _TRL: 2_ — regulatory concepts exist and are codified in #link("https://leg.colorado.gov/bills/hb24-1058")[Colorado], California, Montana, and #link("https://www.jurist.org/news/2021/10/chile-becomes-first-country-to-pass-neuro-rights-law/")[Chile's constitutional protections], but no BCI system with tokenized selective-disclosure has been deployed or demonstrated.
 
 _d/acc alignment._ This scores highest on Defensive (5/5) and Democratic empowerment (4/5), reflecting its core function as a user-controlled protection against involuntary neural data exposure. Decentralization scores lower (2/5) because current implementations rely on centralized regulatory and institutional frameworks.
 
@@ -208,11 +208,11 @@ _AI Safety, Alignment & Governance_ | Composite: 17
 
 A global open-source consortium that develops and maintains ethical AI tools for municipal and community governance.
 
-_How it works._ Member cities and communities contribute to and draw from a shared repository of AI governance tools, with the consortium setting ethical standards and maintaining transparent decision logs. Governance is distributed across member organizations rather than controlled by a single vendor or government, keeping systems adaptable to local needs. #link("https://digitalpublicgoods.xyz/")[DPGA] has a registry of 150+ open-source governance tools but no shared development infrastructure. #link("https://www.opengovpartnership.org/")[OGP] has the political relationships but no technical platform. #link("https://opengov.com/")[OpenGov] has the platform but locks cities into a proprietary vendor. A cooperative model would sit between these, combining what each has without the constraints each imposes.
+_How it works._ Member cities and communities contribute to and draw from a shared repository of AI governance tools, with the consortium setting ethical standards and maintaining transparent decision logs. Governance is distributed across member organizations rather than controlled by a single vendor or government, keeping systems adaptable to local needs. #link("https://digitalpublicgoods.xyz/")[DPGA] has a registry of 150+ #link("https://en.wikipedia.org/wiki/Open-source_software")[open-source] governance tools but no shared development infrastructure. #link("https://www.opengovpartnership.org/")[OGP] has the political relationships but no technical platform. #link("https://opengov.com/")[OpenGov] has the platform but locks cities into a proprietary vendor. A #link("https://en.wikipedia.org/wiki/Cooperative")[cooperative] model would sit between these, combining what each has without the constraints each imposes.
 
 _Who's building toward this._ The #link("https://digitalpublicgoods.xyz/")[_Digital Public Goods Alliance_] (UN-endorsed) maintains a registry of 150+ open-source governance solutions and provides the closest structural analog to a coordinating body. The #link("https://www.opengovpartnership.org/")[_Open Government Partnership_] promotes transparency and accountability frameworks across local and national governments. #link("https://opengov.com/")[_OpenGov_] demonstrates commercial viability with AI-enabled tools for budgeting, permitting, and public engagement across 2,000+ US communities. The #link("https://okfn.org/")[_Open Knowledge Foundation_] develops open-source standards and civic tech tools as a DPGA member. No dedicated funding for a unified consortium has been identified. TRL: 5 — field-tested components exist, but a true cooperative with distributed member control remains at prototype stage. Recent research highlights both the opportunity and the gap: see OGP's #link("https://www.opengovpartnership.org/documents/artificial-intelligence-and-open-government-local-perspectives-2025/")[Artificial Intelligence and Open Government: Local Perspectives] (2025) and #link("https://www.opengovpartnership.org/stories/building-accountable-artificial-intelligence-in-government-a-practical-reform-agenda/")[Building Accountable AI in Government] (2025). The concept originates from the #link("https://worlds.existentialhope.com/world/the-commons-cloud/")[Commons Cloud] scenario on Existential Hope.
 
-_d/acc alignment._ Democratic (4/5), Decentralized (4/5), and Defensive (4/5) scores are all strong, reflecting the model's emphasis on distributed control, member accountability, and protection against vendor lock-in. Differential impact scores lower (2/5) because the mechanism operates within civic tech rather than across multiple domains.
+_d/acc alignment._ Democratic (4/5), Decentralized (4/5), and Defensive (4/5) scores are all strong, reflecting the model's emphasis on distributed control, member accountability, and protection against vendor lock-in. Differential impact scores lower (2/5) because the mechanism operates within #link("https://en.wikipedia.org/wiki/Civic_technology")[civic tech] rather than across multiple domains.
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ If DPGA won't convene this, a city coalition should just start drafting a consortium charter and contribution model with two or three willing municipalities. The interoperability requirements across current municipal AI deployments need mapping to define the technical baseline a shared repository would need to meet. Waiting for a top-down coordination mandate hasn't worked so far.]
@@ -228,27 +228,27 @@ _Decentralized & Democratic Institutions_ | Composite: 17
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["The Interbeing Forum is a rotating assembly of stewards from across bioregions. It includes people, yes, but also guardians (advised by digital twins) for rivers, soils, and future generations. It oversees the Commonsense Accord and safeguards the integrity of the digital twin ecosystem." — _Source: #link("https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/")[the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences]_]
 
 
-A rotating bioregional assembly that grants formal representation to ecosystems and future generations through human guardians advised by digital twin data.
+A rotating #link("https://en.wikipedia.org/wiki/Bioregionalism")[bioregional] assembly that grants formal representation to ecosystems and future generations through human guardians advised by #link("https://en.wikipedia.org/wiki/Digital_twin")[digital twin] data.
 
 _How it works._ Stewards selected on a rotating basis from bioregions govern through a binding accord, preventing any single faction from entrenching power. Designated guardians speak for non-human entities (rivers, soils) and for future generations, with their positions informed by real-time ecological data from digital twin systems. The assembly also audits that digital infrastructure directly, ensuring it remains a tool of democratic participation rather than centralized control.
 
-_Who's building toward this._ #link("https://lina.community/projects/8e9dd1ac-2b08-4136-9680-d365de3de61b/")[bioregional.agency] (Austria, co-founded 2025 by Gordon Selbach and Jakob Travnik) is piloting bioregional assembly practices; #link("https://resilience.earth/")[Resilience.Earth] is developing distributed decision-making and adaptive governance tools for bioregional communities; #link("https://cascadiabioregion.org/")[Department of Bioregion / CascadiaNow!] has advanced bioregional education across the Cascadia region since 2005; and the #link("https://cascadiabioregion.org/ozarks-bioregion")[Ozark Area Community Congress] has operated a rotating, consensus-based bioregional assembly in the Ozarks since 1980. No dedicated funding has been identified for the integrated Interbeing Forum model. TRL: 3. The Ozark Area Community Congress has run a rotating bioregional assembly since 1980, but without ecosystem guardianship. New Zealand's Whanganui River has legal personhood, but without a bioregional assembly. Nobody has tried both at once. Key research framing the opportunity includes #link("https://compass.onlinelibrary.wiley.com/doi/full/10.1111/gec3.12722")[Where are you at? Re-engaging bioregional ideas] (2023), #link("https://www.sciencedirect.com/science/article/pii/S2589811625000424")[Cyber-governance of the natural world: digital twins in environmental governance] (2025), and #link("https://www.mdpi.com/2673-4591/120/1/32")[Digital Collaborative Mechanism of Ecological Governance Based on Digital Twin] (2026).
+_Who's building toward this._ #link("https://lina.community/projects/8e9dd1ac-2b08-4136-9680-d365de3de61b/")[bioregional.agency] (Austria, co-founded 2025 by Gordon Selbach and Jakob Travnik) is piloting bioregional assembly practices; #link("https://resilience.earth/")[Resilience.Earth] is developing distributed decision-making and adaptive governance tools for bioregional communities; #link("https://cascadiabioregion.org/")[Department of Bioregion / CascadiaNow!] has advanced bioregional education across the Cascadia region since 2005; and the #link("https://cascadiabioregion.org/ozarks-bioregion")[Ozark Area Community Congress] has operated a rotating, consensus-based bioregional assembly in the Ozarks since 1980. No dedicated funding has been identified for the integrated _Interbeing Forum_ model. TRL: 3. The Ozark Area Community Congress has run a rotating bioregional assembly since 1980, but without ecosystem guardianship. New Zealand's #link("https://en.wikipedia.org/wiki/Environmental_personhood#New_Zealand")[Whanganui River] has #link("https://en.wikipedia.org/wiki/Environmental_personhood")[legal personhood], but without a bioregional assembly. Nobody has tried both at once. Key research framing the opportunity includes #link("https://compass.onlinelibrary.wiley.com/doi/full/10.1111/gec3.12722")[Where are you at? Re-engaging bioregional ideas] (2023), #link("https://www.sciencedirect.com/science/article/pii/S2589811625000424")[Cyber-governance of the natural world: digital twins in environmental governance] (2025), and #link("https://www.mdpi.com/2673-4591/120/1/32")[Digital Collaborative Mechanism of Ecological Governance Based on Digital Twin] (2026).
 
 _d/acc alignment._ Democratic and Decentralized dimensions both score 4/5, reflecting the rotating stewardship structure and formal power-sharing across bioregions that structurally resists capture. Differential scores lowest (2/5), as the model does not yet create new civilizational action space beyond the governance domain.
 
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Legal advocates and policy researchers should work to establish or extend ecosystem legal personhood frameworks, building on New Zealand's Whanganui River precedent and Wales's Future Generations Commissioner, into cross-jurisdictional bioregional contexts. Connecting existing practitioners (OACC, bioregional.agency) with environmental digital twin researchers would accelerate the governance integration that no institution has yet achieved.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Legal advocates and policy researchers should work to establish or extend ecosystem legal personhood frameworks, building on New Zealand's Whanganui River precedent and Wales's #link("https://en.wikipedia.org/wiki/Future_Generations_Commissioner_for_Wales")[Future Generations Commissioner], into cross-jurisdictional bioregional contexts. Connecting existing practitioners (OACC, bioregional.agency) with environmental digital twin researchers would accelerate the governance integration that no institution has yet achieved.]
 
 
 === Interoperable Governance Protocol Stack
 
 _Decentralized & Democratic Institutions_ | Composite: 16
 
-A shared technical and governance protocol layer that allows citizens to port digital identities, benefits, and credentials across distinct federated city-state systems, and enables AI systems across those jurisdictions to align resource allocation and crisis modeling.
+A shared technical and governance protocol layer that allows citizens to port #link("https://en.wikipedia.org/wiki/Digital_identity")[digital identities], benefits, and credentials across distinct federated city-state systems, and enables AI systems across those jurisdictions to align resource allocation and crisis modeling.
 
 The protocol stack defines common standards for digital identity, benefits entitlements, and credentials so that any compliant local system can read and honor records issued by another. During crises, federated AI systems across jurisdictions share resource allocation decisions and logistics data in a machine-readable format. Governance modules are deliberately modular: jurisdictions can adopt the stack without surrendering local policy autonomy.
 
-The #link("https://openid.net/")[_OpenID Foundation_] completed a #link("https://openid.net/openid-foundation-demonstrates-real-world-interoperabiity-of-new-digital-identity-standards/")[real-world multi-region interoperability demonstration] in May 2025. #link("https://www.w3.org/")[_W3C_] maintains Decentralized Identifiers (DIDs) and Verifiable Credentials standards. The #link("https://www.trustoverip.org/")[_Trust Over IP Foundation_] is developing governance frameworks for decentralized digital trust, and #link("https://govstack.global/")[_GovStack_] is assembling modular government building blocks covering identity, payments, and data exchange. Core identity standards are in production pilots across the EU, UK, Switzerland, Japan, and California, but the combined benefits-portability-plus-AI-crisis-coordination system remains at prototype stage. TRL: 4. Relevant research includes #link("https://arxiv.org/pdf/2601.14982")[Interoperable Architecture for Digital Identity Delegation for AI Agents with Blockchain Integration] (2026) and #link("https://www.arxiv.org/pdf/2510.16034")[Disaster Management in the Era of Agentic AI Systems: A Vision for Federated Crisis Response] (2025).
+The #link("https://openid.net/")[_OpenID Foundation_] completed a #link("https://openid.net/openid-foundation-demonstrates-real-world-interoperabiity-of-new-digital-identity-standards/")[real-world multi-region interoperability demonstration] in May 2025. #link("https://www.w3.org/")[_W3C_] maintains #link("https://www.w3.org/TR/did-1.1/")[Decentralized Identifiers (DIDs)] and #link("https://www.w3.org/TR/vc-data-model-2.0/")[Verifiable Credentials] standards. The #link("https://www.trustoverip.org/")[_Trust Over IP Foundation_] is developing governance frameworks for decentralized digital trust, and #link("https://govstack.global/")[_GovStack_] is assembling modular government building blocks covering identity, payments, and data exchange. Core identity standards are in production pilots across the EU, UK, Switzerland, Japan, and California, but the combined benefits-portability-plus-AI-crisis-coordination system remains at prototype stage. TRL: 4. Relevant research includes #link("https://arxiv.org/pdf/2601.14982")[Interoperable Architecture for Digital Identity Delegation for AI Agents with Blockchain Integration] (2026) and #link("https://www.arxiv.org/pdf/2510.16034")[Disaster Management in the Era of Agentic AI Systems: A Vision for Federated Crisis Response] (2025).
 
 _d/acc alignment._ Decentralized (4/5) and Defensive (4/5) are the strongest dimensions: the modular architecture preserves jurisdictional autonomy while the crisis coordination capability directly reduces harm from disasters. Democratic alignment (3/5) reflects meaningful but incomplete citizen-facing benefits, and Differential (2/5) is low because the underlying technologies are established rather than frontier.
 
@@ -263,16 +263,16 @@ _d/acc alignment._ Decentralized (4/5) and Defensive (4/5) are the strongest dim
 
 _AI Safety, Alignment & Governance_ | Composite: 16
 
-An architecture of many narrow, domain-limited superhuman AIs that interact competitively rather than a single general superintelligence, achieving safety through structural narrowness.
+An architecture of many narrow, domain-limited superhuman AIs that interact competitively rather than a single general #link("https://en.wikipedia.org/wiki/Superintelligence")[superintelligence], achieving safety through structural narrowness.
 
 _How it works._ Rather than building one general-purpose superintelligent system, AI capabilities are deliberately partitioned into domain-specific services that are superhuman within their lane but architecturally prevented from generalizing beyond it. The resulting ecology of competing specialized systems provides checks analogous to market competition or ecological balance, making unilateral takeover or unexpected generalization structurally difficult. Can you wire together narrow AIs without accidentally building a general one? That's the core unsolved question. Safety here comes from the architecture itself, not from aligning a single powerful agent.
 
-_Who's building toward this._ No organization is deliberately implementing CAIS as a unified design paradigm. The #link("https://www.fhi.ox.ac.uk")[Future of Humanity Institute] at the University of Oxford published Drexler's foundational 2019 technical report, #link("https://www.fhi.ox.ac.uk/publications/reframing-superintelligence-comprehensive-ai-services-as-general-intelligence-technical-report-2019-1-k-eric-drexler/")[_Reframing Superintelligence_], which remains the primary articulation of the framework. Individual narrow superhuman AIs—AlphaFold, chess engines—demonstrate isolated components, but without architectural enforcement of narrowness or a competitive service ecology. No dedicated funding has been identified. TRL: 2. The concept was discussed in a #link("https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai")[podcast with Nathan Labenz] on Existential Hope.
+_Who's building toward this._ No organization is deliberately implementing CAIS as a unified design paradigm. The #link("https://www.fhi.ox.ac.uk")[Future of Humanity Institute] at the University of Oxford published #link("https://en.wikipedia.org/wiki/K._Eric_Drexler")[K. Eric Drexler]'s foundational 2019 technical report, #link("https://www.fhi.ox.ac.uk/publications/reframing-superintelligence-comprehensive-ai-services-as-general-intelligence-technical-report-2019-1-k-eric-drexler/")[_Reframing Superintelligence_], which remains the primary articulation of the framework. Individual narrow superhuman AIs—#link("https://en.wikipedia.org/wiki/AlphaFold")[AlphaFold], chess engines—demonstrate isolated components, but without architectural enforcement of narrowness or a competitive service ecology. No dedicated funding has been identified. TRL: 2. The concept was discussed in a #link("https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai")[podcast with Nathan Labenz] on Existential Hope.
 
 _d/acc alignment._ CAIS scores highest on Decentralized (4/5) and Defensive (4/5), reflecting its structural resistance to power concentration and its safety-by-design approach. The low Differential score (2/5) reflects the absence of any implementation pathway that would accelerate this approach relative to general-purpose foundation models.
 
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Who funds the formal verification work? The core unsolved problem is whether service composition across domain-limited AIs can be architecturally bounded to prevent emergent generalization. On the policy side, a regulatory proposal requiring capability partitioning disclosures for frontier model developers would create the coordination infrastructure the CAIS model currently lacks entirely.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Who funds the #link("https://en.wikipedia.org/wiki/Formal_verification")[formal verification] work? The core unsolved problem is whether service composition across domain-limited AIs can be architecturally bounded to prevent emergent generalization. On the policy side, a regulatory proposal requiring capability partitioning disclosures for frontier model developers would create the coordination infrastructure the CAIS model currently lacks entirely.]
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["It's safety through narrowness. It's not to say that the AIs aren't really good at what they do—they could be superhuman at what they do—but in the same way that we have superhuman chess players that can only play chess, and we have superhuman protein folding AIs that can only fold protein, you don't really have to worry that that's going to do something surprising... I think that would be a really good design decision if we could manage it: to have AIs that are potentially superhuman in their domain but are in a pretty fundamental way limited to their domain so they don't do an end-run around whatever guardrails we've put in place." — _Source: #link("https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai")[podcasts]_]
@@ -282,11 +282,11 @@ _d/acc alignment._ CAIS scores highest on Decentralized (4/5) and Defensive (4/5
 
 _Ecological & Regenerative Systems_ | Composite: 16
 
-A DAO that funds and coordinates environmental litigation on behalf of legally-recognized natural entities, financed through tokenized litigation investment. The idea was #link("https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures")[proposed in a conversation about combining crypto mechanisms with climate action].
+A #link("https://en.wikipedia.org/wiki/Decentralized_autonomous_organization")[DAO] that funds and coordinates environmental litigation on behalf of legally-recognized natural entities, financed through tokenized litigation investment. The idea was #link("https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures")[proposed in a conversation about combining crypto mechanisms with climate action].
 
 _How it works._ Natural bodies granted #link("https://scholars.unh.edu/unh_lr/vol17/iss2/13/")[legal personhood]—rivers, lakes—become plaintiffs in lawsuits against polluters. A DAO pools capital from investors through tokenized litigation finance mechanisms, funding those cases and returning proceeds to investors when litigation succeeds. Investors profit when the lawsuits win. The lawsuits win when polluters lose. That's the whole trick. The #link("https://theconversation.com/granting-legal-personhood-to-nature-is-a-growing-movement-can-it-stem-biodiversity-loss-227336")[movement to grant legal personhood to nature is growing], expanding the potential plaintiff pool.
 
-_Who's building toward this._ The closest attempt was Aristata Capital, which explored climate litigation finance but stopped short of DAO governance or tokenization. Adjacent work is underway from several directions. #link("https://www.ryval.io")[_Ryval_] pioneered #link("https://arbitrationblog.kluwerarbitration.com/2022/03/16/litigation-finance-and-crypto-tokens-how-a-blockchain-startup-seeks-to-create-financing-marketplaces-for-disputes/")[tokenized litigation finance] via Initial Litigation Offerings on blockchain, completing its first ILO in October 2021. #link("https://www.lawcoin.io")[_LawCoin_] tokenizes litigation finance deals on Ethereum for institutional investors. #link("https://www.medicoin.io")[_MediCoin_] has tokenized attorney fee interests specifically in environmental litigation, including PFAS cases. #link("https://www.clientearth.org")[_ClientEarth_], the environmental law firm, has inspired litigation finance focused on climate cases through Aristata Capital. No known entity has combined environmental personhood, DAO governance, and tokenized litigation finance into a deployed system. TRL: 3. Funding: none identified for an integrated implementation.
+_Who's building toward this._ The closest attempt was Aristata Capital, which explored climate litigation finance but stopped short of DAO governance or tokenization. Adjacent work is underway from several directions. #link("https://www.ryval.io")[_Ryval_] pioneered #link("https://arbitrationblog.kluwerarbitration.com/2022/03/16/litigation-finance-and-crypto-tokens-how-a-blockchain-startup-seeks-to-create-financing-marketplaces-for-disputes/")[tokenized litigation finance] via Initial Litigation Offerings on blockchain, completing its first ILO in October 2021. #link("https://www.lawcoin.io")[_LawCoin_] tokenizes litigation finance deals on #link("https://en.wikipedia.org/wiki/Ethereum")[Ethereum] for institutional investors. #link("https://www.medicoin.io")[_MediCoin_] has tokenized attorney fee interests specifically in environmental litigation, including #link("https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances")[PFAS] cases. #link("https://www.clientearth.org")[_ClientEarth_], the environmental law firm, has inspired litigation finance focused on climate cases through Aristata Capital. No known entity has combined environmental personhood, DAO governance, and tokenized litigation finance into a deployed system. TRL: 3. Funding: none identified for an integrated implementation.
 
 _d/acc alignment._ The concept scores highest on democratic distribution (4/5) and defensive posture (4/5)—it distributes access to legal enforcement mechanisms and directly counters harmful actors—while decentralization is constrained (3/5) by guardian bottlenecks and DAO liability exposure under current law.
 
@@ -301,16 +301,16 @@ _d/acc alignment._ The concept scores highest on democratic distribution (4/5) a
 
 _Decentralized & Democratic Institutions_ | Composite: 16
 
-A decentralized autonomous organization where human citizens and AI systems jointly propose, deliberate, and vote on governance policy using weighted voting and blockchain transparency. The concept originates from the #link("https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/")[Sadvipra AI world-building scenario].
+A #link("https://en.wikipedia.org/wiki/Decentralized_autonomous_organization")[decentralized autonomous organization] where human citizens and AI systems jointly propose, deliberate, and vote on governance policy using weighted voting and #link("https://en.wikipedia.org/wiki/Blockchain")[blockchain] transparency. The concept originates from the #link("https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/")[Sadvipra AI world-building scenario].
 
-_How it works._ Citizens use personal AI assistants (Citizen-AI) to parse proposals and cast informed votes recorded on a blockchain ledger. A second AI layer aggregates votes into policy drafts. Humans still ratify, but execution runs on smart contracts, removing the usual discretionary window between "approved" and "implemented."
+_How it works._ Citizens use personal AI assistants (Citizen-AI) to parse proposals and cast informed votes recorded on a blockchain ledger. A second AI layer aggregates votes into policy drafts. Humans still ratify, but execution runs on #link("https://en.wikipedia.org/wiki/Smart_contract")[smart contracts], removing the usual discretionary window between "approved" and "implemented."
 
 _Who's building toward this._ #link("https://near.org")[Near Foundation] is developing AI-powered delegates and the Pulse sentiment-tracking tool for DAO governance. #link("https://singularitynet.io")[SingularityNET] operates a decentralized AI coordination platform using blockchain for service governance and privacy-preserving datasets. #link("https://aragon.org")[Aragon] provides DAO infrastructure and tooling, while #link("https://makerdao.com")[MakerDAO] demonstrates on-chain token-based governance at meaningful scale. No dedicated funding for integrated human-AI hybrid governance DAOs has been identified. _TRL: 4_ — AI agents have been #link("https://arxiv.org/html/2510.21117v2")[tested against 3,383 real proposals] with 97% alignment to historical human decisions, and simulations show a 40% participation increase, but no production deployment at city or national scale exists. Recent research includes a #link("https://arxiv.org/html/2511.08641v1")[stepwise development framework for AI-driven DAOs] and a study on #link("https://www.nature.com/articles/s41598-026-40180-8")[democratic governance through DAO-based deliberation].
 
 _d/acc alignment._ Democratic (4/5) and Decentralized (4/5) are the strongest dimensions, reflecting the system's core design: distributed decision-making authority shared between citizens and AI rather than concentrated in bureaucratic institutions. Defensive scores lower (3/5) because the system's resilience against manipulation and adversarial voting remains unproven at scale.
 
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Researchers should publish comparative studies of existing DAO governance pilots—particularly Near Foundation's Pulse deployments—to build the empirical record regulators need to draft workable legal frameworks. Policy advocates should engage directly with EU AI Act implementation bodies and NIST to push for explicit guidance on AI-assisted voting systems before legal ambiguity freezes further development.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Researchers should publish comparative studies of existing DAO governance pilots—particularly Near Foundation's Pulse deployments—to build the empirical record regulators need to draft workable legal frameworks. Policy advocates should engage directly with #link("https://en.wikipedia.org/wiki/Artificial_Intelligence_Act")[EU AI Act] implementation bodies and #link("https://www.nist.gov/artificial-intelligence")[NIST] to push for explicit guidance on AI-assisted voting systems before legal ambiguity freezes further development.]
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["Wisdom DAO – Citizens & AIs co-create policy. By 2035, governance shifted from centralized bureaucracy to decentralized wisdom guided by Sadvipra AI and DAOs. People co-create policy with personal AIs, corruption drops through blockchain transparency, and decisions align with dharma." — _Source: #link("https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/")[worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai]_]
@@ -320,16 +320,16 @@ _d/acc alignment._ Democratic (4/5) and Decentralized (4/5) are the strongest di
 
 _International Governance & Coordination_ | Composite: 16
 
-An international treaty framework that organizes political cooperation around watershed and bioregional boundaries rather than national borders, envisioned in the #link("https://worlds.existentialhope.com/world/2035-rewild/")[2035 Rewild scenario].
+An international treaty framework that organizes political cooperation around #link("https://en.wikipedia.org/wiki/Watershed")[watershed] and bioregional boundaries rather than national borders, envisioned in the #link("https://worlds.existentialhope.com/world/2035-rewild/")[2035 Rewild scenario].
 
-_How it works._ Signatory parties—nations, Indigenous governments, and regional bodies—agree to coordinate resource use, conservation, and conflict resolution according to the boundaries and health of shared watersheds. Governance bodies are constituted around river basins or bioregions, with binding obligations tied to ecological indicators rather than national interest. Dispute resolution and resource allocation follow hydrological logic rather than political boundaries.
+_How it works._ Signatory parties—nations, Indigenous governments, and regional bodies—agree to coordinate resource use, conservation, and conflict resolution according to the boundaries and health of shared watersheds. Governance bodies are constituted around #link("https://en.wikipedia.org/wiki/Drainage_basin")[river basins] or bioregions, with binding obligations tied to ecological indicators rather than national interest. Dispute resolution and resource allocation follow hydrological logic rather than political boundaries.
 
-_Who's building toward this._ The #link("https://ijc.org")[_International Joint Commission (IJC)_] has operated transboundary watershed governance between Canada and the US since 1909, with its #link("https://ijc.org/en/quarter-century-international-watersheds-initiative")[International Watersheds Initiative] (est. 1998) pioneering ecosystem-centered management with Indigenous participation. The #link("https://www.mrcmekong.org/")[_Mekong River Commission (MRC)_] coordinates four nations using integrated water resources management across the Mekong Basin. The #link("https://www.inbo-news.org/")[_International Network of Basin Organizations (INBO)_] supports 120+ river basin organizations globally. The #link("https://cascadiabioregion.org/")[_Cascadia Department of Bioregion_] is developing bioregional governance frameworks across the Pacific Northwest, while #link("https://resilience.earth/")[_Resilience.Earth_] delivers #link("https://ecolise.eu/wp-content/uploads/2025/03/Bioregional-Governance-Training-Guide.pdf")[bioregional governance training] in Asia-Pacific. No dedicated funding for a unified treaty framework has been identified. TRL: 6—operational regional structures exist, but a binding global framework remains conceptual.
+_Who's building toward this._ The #link("https://ijc.org")[_International Joint Commission (IJC)_] has operated transboundary #link("https://en.wikipedia.org/wiki/Watershed_management")[watershed governance] between Canada and the US since 1909, with its #link("https://ijc.org/en/quarter-century-international-watersheds-initiative")[International Watersheds Initiative] (est. 1998) pioneering ecosystem-centered management with Indigenous participation. The #link("https://www.mrcmekong.org/")[_Mekong River Commission (MRC)_] coordinates four nations using #link("https://en.wikipedia.org/wiki/Integrated_water_resources_management")[integrated water resources management] across the Mekong Basin. The #link("https://www.inbo-news.org/")[_International Network of Basin Organizations (INBO)_] supports 120+ river basin organizations globally. The #link("https://cascadiabioregion.org/")[_Cascadia Department of Bioregion_] is developing bioregional governance frameworks across the Pacific Northwest, while #link("https://resilience.earth/")[_Resilience.Earth_] delivers #link("https://ecolise.eu/wp-content/uploads/2025/03/Bioregional-Governance-Training-Guide.pdf")[bioregional governance training] in Asia-Pacific. No dedicated funding for a unified treaty framework has been identified. TRL: 6—operational regional structures exist, but a binding global framework remains conceptual.
 
 _d/acc alignment._ Scores highest on democratic inclusion (4/5) and defensive orientation (4/5), reflecting its emphasis on multi-stakeholder governance and ecological protection over extractive national interest. Decentralization scores moderate (3/5) because watershed bodies, while sub-national in logic, still require centralized treaty architecture to function. For further context, see "#link("https://www.kosmosjournal.org/article/human-watershed-the-emerging-politics-of-bioregional-democracy/")[Human Watershed: The Emerging Politics of Bioregional Democracy]" (2024).
 
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Legal advocates and international law scholars can draft model treaty language that converts existing watershed commission frameworks—IJC, MRC—into a replicable binding instrument with enforceable ecological indicators. Policy advocates with access to UN Environment Assembly or CBD processes should push for a formal resolution recognizing bioregional governance as a legitimate basis for transboundary treaty obligations.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Legal advocates and international law scholars can draft model treaty language that converts existing watershed commission frameworks—IJC, MRC—into a replicable binding instrument with enforceable ecological indicators. Policy advocates with access to #link("https://www.unep.org/environmentassembly/")[UN Environment Assembly] or #link("https://en.wikipedia.org/wiki/Convention_on_Biological_Diversity")[CBD] processes should push for a formal resolution recognizing bioregional governance as a legitimate basis for transboundary treaty obligations.]
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["The Accord of Watersheds—a treaty system where ecosystems, not nations, are the organizing principle of cooperation." — _Source: #link("https://worlds.existentialhope.com/world/2035-rewild/")[2035-rewild]_]
@@ -339,9 +339,9 @@ _d/acc alignment._ Scores highest on democratic inclusion (4/5) and defensive or
 
 _Decentralized & Democratic Institutions_ | Composite: 16
 
-A DAO-based governance structure that mandates open-source documentation and community-sourced feedback loops for translation model development and adaptation, as envisioned in #link("https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/")[La Langue de la Prévoyance].
+A #link("https://en.wikipedia.org/wiki/Decentralized_autonomous_organization")[DAO]-based governance structure that mandates open-source documentation and community-sourced feedback loops for translation model development and adaptation, as envisioned in #link("https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/")[La Langue de la Prévoyance].
 
-_How it works._ Smart-contract-based voting gives communities formal decision-making power over how translation language model (TLM) training data is collected, labeled, and updated. Open innovation platforms serve as the interface for submitting feedback, flagging bias, and proposing model adaptations. Governance rules enforced through the DAO prevent proprietary capture, keeping models and documentation publicly accessible.
+_How it works._ #link("https://en.wikipedia.org/wiki/Smart_contract")[Smart-contract]-based voting gives communities formal decision-making power over how #link("https://en.wikipedia.org/wiki/Language_model")[translation language model] (TLM) training data is collected, labeled, and updated. #link("https://en.wikipedia.org/wiki/Open_innovation")[Open innovation] platforms serve as the interface for submitting feedback, flagging bias, and proposing model adaptations. Governance rules enforced through the DAO prevent proprietary capture, keeping models and documentation publicly accessible.
 
 _Who's building toward this._ #link("https://huggingface.co")[Hugging Face] hosts over 1,000 community-contributed translation models but has no governance layer for community decision-making over those models. #link("https://commonvoice.mozilla.org")[Mozilla Common Voice] crowdsources multilingual voice data but doesn't give contributors formal control over how it's used. #link("https://oceanprotocol.com")[Ocean Protocol] provides decentralized data exchange with DAO governance and tokenized data assets. #link("https://aragon.org")[Aragon] supplies DAO governance frameworks and is exploring #link("https://blog.aragon.org/ai-daos-the-future-of-daos-powered-by-artificial-intelligence/")[AI-DAO integration]. The missing link is connecting contributor governance to model development decisions. Overall TRL: 3. Relevant research includes work on #link("https://www.sciencedirect.com/science/article/pii/S2096720923000416")[governance of DAOs that produce open source software] and a #link("https://arxiv.org/html/2511.08641")[stepwise development framework for AI-driven DAOs].
 
@@ -358,13 +358,13 @@ _d/acc alignment._ Democratic (4/5) and Decentralized (4/5) are the strongest di
 
 _Decentralized & Democratic Institutions_ | Composite: 16
 
-Bioregional governance bodies organized around watershed boundaries rather than political borders, incorporating ecological feedback into formal decision-making. The concept appears in the #link("https://worlds.existentialhope.com/world/mycelial-democracy/")[Mycelial Democracy scenario].
+#link("https://en.wikipedia.org/wiki/Bioregionalism")[Bioregional] governance bodies organized around watershed boundaries rather than political borders, incorporating ecological feedback into formal decision-making. The concept appears in the #link("https://worlds.existentialhope.com/world/mycelial-democracy/")[Mycelial Democracy scenario].
 
 _How it works._ Governance jurisdiction is defined by hydrological catchment areas, replacing nation-state and municipal lines with boundaries that match the actual movement of water and the ecosystems it sustains. Decision-making bodies include designated representatives for ecosystem interests alongside human citizens. Before adoption, proposals must pass multi-generational impact assessments covering all species within the watershed.
 
-_Who's building toward this._ The #link("https://www.mdba.gov.au/")[_Murray-Darling Basin Authority_] (Australia) manages integrated water resources across a major watershed with Indigenous representation and multi-stakeholder governance. The #link("https://www.srbc.gov/")[_Susquehanna River Basin Commission_] and #link("https://www.potomacriver.org/")[_Interstate Commission on the Potomac River Basin_] coordinate water management across multi-state jurisdictions in North America. The #link("https://cascadiabioregion.org/")[_Cascadia Department of Bioregion_] advocates for watershed-based political restructuring, aligned with the vision of "#link("https://www.kosmosjournal.org/article/human-watershed-the-emerging-politics-of-bioregional-democracy/")[bioregional democracy]" as an emerging political form. New Zealand's Whanganui River, granted legal personhood in 2017, remains the clearest proof-of-concept for ecosystem rights integration. No dedicated funding was identified. TRL: 4 — operational governance structures exist at watershed scale, but full ecosystem representation and multi-generational impact assessment mechanisms remain largely theoretical.
+_Who's building toward this._ The #link("https://www.mdba.gov.au/")[_Murray-Darling Basin Authority_] (Australia) manages integrated water resources across a major watershed with Indigenous representation and multi-stakeholder governance. The #link("https://www.srbc.gov/")[_Susquehanna River Basin Commission_] and #link("https://www.potomacriver.org/")[_Interstate Commission on the Potomac River Basin_] coordinate water management across multi-state jurisdictions in North America. The #link("https://cascadiabioregion.org/")[_Cascadia Department of Bioregion_] advocates for watershed-based political restructuring, aligned with the vision of "#link("https://www.kosmosjournal.org/article/human-watershed-the-emerging-politics-of-bioregional-democracy/")[bioregional democracy]" as an emerging political form. New Zealand's #link("https://en.wikipedia.org/wiki/Environmental_personhood#New_Zealand")[Whanganui River], granted #link("https://en.wikipedia.org/wiki/Environmental_personhood")[legal personhood] in 2017, remains the clearest proof-of-concept for ecosystem rights integration. No dedicated funding was identified. TRL: 4 — operational governance structures exist at watershed scale, but full ecosystem representation and multi-generational impact assessment mechanisms remain largely theoretical.
 
-_d/acc alignment._ Watershed Parliaments score highest on Democratic (4/5) and Defensive (4/5), reflecting their potential to distribute political power along ecological lines and build long-term resilience against resource conflicts. Decentralization scores lower (3/5) because existing implementations remain embedded within nation-state structures rather than replacing them. For a broader framing, see "#link("https://earth.org/bioregionalism/")[Bioregionalism: A Model for a Self-Sufficient and Democratic Economy]" (2021).
+_d/acc alignment._ _Watershed Parliaments_ score highest on Democratic (4/5) and Defensive (4/5), reflecting their potential to distribute political power along ecological lines and build long-term resilience against resource conflicts. Decentralization scores lower (3/5) because existing implementations remain embedded within nation-state structures rather than replacing them. For a broader framing, see "#link("https://earth.org/bioregionalism/")[Bioregionalism: A Model for a Self-Sufficient and Democratic Economy]" (2021).
 
 
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ If the Whanganui River legal personhood model can't be expanded into binding governance frameworks in other jurisdictions, watershed parliaments remain a thought experiment. Advocates and legal scholars should focus there first. Separately, a comparative study of existing river basin commissions would identify which governance features actually transfer to full bioregional authority structures.]
@@ -381,7 +381,7 @@ Real-time digital models of communities and ecosystems that enable participatory
 
 _How it works._ Sensor networks and continuous data feeds update digital models of local ecological and social conditions, allowing stakeholders to run simulations of policy or environmental decisions before implementing them. Critically, communities retain ownership of their data rather than ceding it to centralized platforms. Outputs can inform governance bodies, including representatives for non-human entities such as rivers.
 
-_Who's building toward this._ The #link("https://www.sla.gov.sg/")[_Singapore Land Authority_] built Virtual Singapore, the first country-scale urban digital twin, operational since 2022 following a \$73M investment over 2012–2017. The #link("https://www.turing.ac.uk/research/research-projects/ecosystems-digital-twins")[_Alan Turing Institute_] is developing methodology for scalable digital twin ecosystems and national digital twin infrastructure. #link("https://www.northeastern.edu/")[_Northeastern University's Boston Area Research Initiative (BARI)_] is building Fora.ai, a participatory modeling platform for community-led digital twins in green infrastructure planning (see "#link("https://journals.sagepub.com/doi/10.1177/23998083251323671")[Enhancing digital twin technology with community-led, science-driven participatory modeling]," 2025). #link("https://www.esri.com/about/newsroom/blog/open-science-environmental-digital-twin")[_The Nature Conservancy and Esri_] are developing environmental digital twins for ecosystem monitoring, including the Point Conception project. TRL sits at 5: urban digital twin components are mature, but participatory governance integrated with community data sovereignty at scale remains in prototype phase. Broader framing appears in "#link("https://journals.sagepub.com/doi/full/10.1177/03063127241236809")[Digital twins and the digital logics of biodiversity]" (2024) and "#link("https://www.researchgate.net/publication/359184358_City_Digital_Twin_Concepts_A_Vision_for_Community_Participation")[City Digital Twin Concepts: A Vision for Community Participation]" (2022). The concept originates from the #link("https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/")[Commonsense Accord world].
+_Who's building toward this._ The #link("https://www.sla.gov.sg/")[_Singapore Land Authority_] built #link("https://en.wikipedia.org/wiki/Virtual_Singapore")[Virtual Singapore], the first country-scale urban #link("https://en.wikipedia.org/wiki/Digital_twin")[digital twin], operational since 2022 following a \$73M investment over 2012–2017. The #link("https://www.turing.ac.uk/research/research-projects/ecosystems-digital-twins")[_Alan Turing Institute_] is developing methodology for scalable digital twin ecosystems and national digital twin infrastructure. #link("https://www.northeastern.edu/")[_Northeastern University's Boston Area Research Initiative (BARI)_] is building Fora.ai, a participatory modeling platform for community-led digital twins in green infrastructure planning (see "#link("https://journals.sagepub.com/doi/10.1177/23998083251323671")[Enhancing digital twin technology with community-led, science-driven participatory modeling]," 2025). #link("https://www.esri.com/about/newsroom/blog/open-science-environmental-digital-twin")[_The Nature Conservancy and Esri_] are developing environmental digital twins for ecosystem monitoring, including the Point Conception project. TRL sits at 5: urban digital twin components are mature, but participatory governance integrated with community #link("https://en.wikipedia.org/wiki/Data_sovereignty")[data sovereignty] at scale remains in prototype phase. Broader framing appears in "#link("https://journals.sagepub.com/doi/full/10.1177/03063127241236809")[Digital twins and the digital logics of biodiversity]" (2024) and "#link("https://www.researchgate.net/publication/359184358_City_Digital_Twin_Concepts_A_Vision_for_Community_Participation")[City Digital Twin Concepts: A Vision for Community Participation]" (2022). The concept originates from the #link("https://worlds.existentialhope.com/world/the-commonsense-accord-collectively-stewarding-the-world-across-time-and-across-differences/")[Commonsense Accord world].
 
 _d/acc alignment._ This entity scores highest on democratic (4/5) and defensive (4/5) dimensions, reflecting its potential to distribute simulation capacity to communities and reduce harm from uninformed governance decisions. Decentralization scores 3/5 because data sovereignty frameworks and community-owned infrastructure remain partially realized rather than structurally embedded.
 
@@ -396,12 +396,12 @@ _d/acc alignment._ This entity scores highest on democratic (4/5) and defensive 
 
 _AI Safety, Alignment & Governance_ | Composite: 15
 
-#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Legal scholars, policy advocates, and AI governance organizations should push for regulatory frameworks that define and enforce fiduciary duty standards for AI assistants. This is the explicit gating factor for commercial adoption. Connecting existing legal instruments like UETA to AI agent accountability, and building coalitions that pressure regulators to establish compliance mechanisms, would move this from research artifact to deployable standard.]
+#block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)[_What can someone do RIGHT NOW?_ Legal scholars, policy advocates, and AI governance organizations should push for regulatory frameworks that define and enforce fiduciary duty standards for AI assistants. This is the explicit gating factor for commercial adoption. Connecting existing legal instruments like #link("https://en.wikipedia.org/wiki/Uniform_Electronic_Transactions_Act")[UETA] to AI agent accountability, and building coalitions that pressure regulators to establish compliance mechanisms, would move this from research artifact to deployable standard.]
 
 
-A personal AI system explicitly designed to serve the individual user's goals rather than platform or advertiser interests, functioning more like a fiduciary than a product. A loyal AI assistant would know the user deeply enough to genuinely assist rather than manipulate, with no third-party incentives embedded in its objective function. Unlike Siri or Alexa, which are structurally oriented toward platform revenue and data monetization, a fiduciary AI would operate under a duty of loyalty and care analogous to legal fiduciary relationships.
+A personal AI system explicitly designed to serve the individual user's goals rather than platform or advertiser interests, functioning more like a #link("https://en.wikipedia.org/wiki/Fiduciary")[fiduciary] than a product. A loyal AI assistant would know the user deeply enough to genuinely assist rather than manipulate, with no third-party incentives embedded in its objective function. Unlike Siri or Alexa, which are structurally oriented toward platform revenue and data monetization, a fiduciary AI would operate under a duty of loyalty and care analogous to legal fiduciary relationships.
 
-The #link("https://montrealethics.ai/")[Montreal AI Ethics Institute] has developed research and design frameworks for fiduciary AI systems (see "#link("https://dl.acm.org/doi/fullHtml/10.1145/3617694.3623230")[Designing Fiduciary Artificial Intelligence]," 2023). #link("https://innovation.consumerreports.org/")[Consumer Reports Innovation] is exploring personal AI agents operating under fiduciary duty principles, detailed in "#link("https://innovation.consumerreports.org/empowering-consumers-with-personal-ai-agents-legal-foundations-and-design-considerations/")[Empowering Consumers with Personal AI Agents]" (2025). The #link("https://alignment.anthropic.com/")[Alignment Research Center] contributes relevant user-centric alignment research. Legal foundations are explored in "#link("https://www.bu.edu/law/files/2023/09/Fiduciary-paper.pdf")[Fiduciary Principles in AI: Utilizing the Duty of Loyalty]" (2023). No dedicated external funding has been documented. _TRL 3_ — published design methodologies and legal frameworks exist, but no commercial deployment has occurred. The concept emerged from #link("https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding")[a podcast discussion on worldbuilding].
+The #link("https://montrealethics.ai/")[Montreal AI Ethics Institute] has developed research and design frameworks for fiduciary AI systems (see "#link("https://dl.acm.org/doi/fullHtml/10.1145/3617694.3623230")[Designing Fiduciary Artificial Intelligence]," 2023). #link("https://innovation.consumerreports.org/")[Consumer Reports Innovation] is exploring personal AI agents operating under fiduciary duty principles, detailed in "#link("https://innovation.consumerreports.org/empowering-consumers-with-personal-ai-agents-legal-foundations-and-design-considerations/")[Empowering Consumers with Personal AI Agents]" (2025). The #link("https://alignment.anthropic.com/")[Alignment Research Center] contributes relevant user-centric alignment research. Legal foundations are explored in "#link("https://www.bu.edu/law/files/2023/09/Fiduciary-paper.pdf")[Fiduciary Principles in AI: Utilizing the Duty of Loyalty]" (2023). No dedicated external funding has been documented. _TRL 3_ — published design methodologies and legal frameworks exist, but no commercial deployment has occurred. The concept emerged from a podcast discussion with #link("https://en.wikipedia.org/wiki/Anthony_Aguirre")[Anthony Aguirre] #link("https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding")[on worldbuilding].
 
 _d/acc alignment._ Scores highest on Democratic control (4/5) and Defensive posture (4/5), reflecting its core purpose of returning AI agency to individuals and protecting users from manipulative system design. Decentralization and differential acceleration scores are weaker (2/5 each).
 
@@ -415,9 +415,9 @@ _AI-Mediated Deliberation & Collective Intelligence_ | Composite: 15
 
 A platform institution designed to coordinate global deliberative processes and collective decision-making specifically around AI governance.
 
-_How it works._ The institution establishes structured coordination infrastructure that convenes global stakeholders—states, civil society, technical experts—for deliberative discussions on AI governance, enabling collective decisions that cross national and organizational boundaries. Unlike existing expert bodies, the model centers inclusive participation and deliberative legitimacy rather than top-down technical guidance. AI tools support multilingual, asynchronous deliberation at scale across time zones and cultures.
+_How it works._ The institution establishes structured coordination infrastructure that convenes global stakeholders—states, civil society, technical experts—for deliberative discussions on AI governance, enabling collective decisions that cross national and organizational boundaries. Unlike existing expert bodies, the model centers inclusive participation and #link("https://en.wikipedia.org/wiki/Deliberative_democracy")[deliberative] legitimacy rather than top-down technical guidance. AI tools support multilingual, asynchronous deliberation at scale across time zones and cultures.
 
-_Who's building toward this._ The _UN #link("https://www.un.org/global-dialogue-ai-governance/en")[Global Dialogue on AI Governance]_ (launched August 2025) provides the most operational foundation, offering an inclusive state-and-stakeholder platform. #link("https://cordis.europa.eu/project/id/101178806")[_AI4Deliberation_] (Horizon Europe, €2,999,500) is building AI-enabled deliberative toolkits for governments. #link("https://connectedbydata.org/resources/global-deliberation-ai")[_Connected by Data_] is researching independent global assembly designs for AI governance. #link("https://aidemocracyfoundation.org/")[_AI & Democracy Foundation_] focuses on deliberative processes for AI alignment. #link("https://metagov.org/")[_Metagov_] develops digital self-governance infrastructure. TRL sits at 4: pilots are proven, but no unified global coordination architecture exists yet. Key publications include "#link("https://arxiv.org/pdf/2503.04766")[Global AI Governance: Where the Challenge is the Solution]" (2025), "#link("https://connectedbydata.org/resources/global-deliberation-ai")[Global Citizen Deliberation on Artificial Intelligence: Options and design considerations]" (2024), and the "#link("https://www.un.org/sites/un2.un.org/files/governing_ai_for_humanity_final_report_en.pdf")[Governing AI for Humanity]" UN High-Level Advisory Body Final Report (2024).
+_Who's building toward this._ The _UN #link("https://www.un.org/global-dialogue-ai-governance/en")[Global Dialogue on AI Governance]_ (launched August 2025) provides the most operational foundation, offering an inclusive state-and-stakeholder platform. #link("https://cordis.europa.eu/project/id/101178806")[_AI4Deliberation_] (#link("https://en.wikipedia.org/wiki/Horizon_Europe")[Horizon Europe], €2,999,500) is building AI-enabled deliberative toolkits for governments. #link("https://connectedbydata.org/resources/global-deliberation-ai")[_Connected by Data_] is researching independent global assembly designs for AI governance. #link("https://aidemocracyfoundation.org/")[_AI & Democracy Foundation_] focuses on deliberative processes for AI alignment. #link("https://metagov.org/")[_Metagov_] develops digital self-governance infrastructure. TRL sits at 4: pilots are proven, but no unified global coordination architecture exists yet. Key publications include "#link("https://arxiv.org/pdf/2503.04766")[Global AI Governance: Where the Challenge is the Solution]" (2025), "#link("https://connectedbydata.org/resources/global-deliberation-ai")[Global Citizen Deliberation on Artificial Intelligence: Options and design considerations]" (2024), and the "#link("https://www.un.org/sites/un2.un.org/files/governing_ai_for_humanity_final_report_en.pdf")[Governing AI for Humanity]" UN High-Level Advisory Body Final Report (2024).
 
 _d/acc alignment._ Democratic (4/5) and Defensive (4/5) are the strongest dimensions—this entity directly addresses who gets a voice in AI governance decisions and builds resilience against unilateral capture of those decisions. Decentralized and Differential scores (2/5 each) reflect that coordination infrastructure, by design, requires some centralization.
 
@@ -435,11 +435,11 @@ _Scientific Research & Knowledge Infrastructure_ | Composite: 14
 #block(fill: luma(245), inset: 12pt, radius: 4pt, width: 100%)["There is no reason why, when reading a newspaper article about something, you shouldn't be able to trace back: where did that quote come from, or where did this piece of information come from? How do I know whether to trust this?... We should be able to have a stack we can follow all the way from the high level back down to the raw ingredients, and then figure out how much we trust each of those steps." — _Source: #link("https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future")[podcasts]_]
 
 
-A citation and provenance system for all information, from newspaper articles to social media claims, that lets users trace any assertion back to its raw data sources, with trust scores based on historical accuracy of each link in the chain.
+A citation and #link("https://en.wikipedia.org/wiki/Provenance")[provenance] system for all information, from newspaper articles to social media claims, that lets users trace any assertion back to its raw data sources, with trust scores based on historical accuracy of each link in the chain.
 
-_How it works._ Every piece of information carries machine-readable provenance metadata linking it to its source, analogous to academic citations but applied universally. AI tools help users traverse this chain from a high-level claim down to raw data, which can be cryptographically signed by hardware secure enclaves. Each node in the chain (person, outlet, inference step) accumulates a reliability record based on past accuracy, giving users a principled basis for assessing any given claim.
+_How it works._ Every piece of information carries machine-readable provenance metadata linking it to its source, analogous to academic citations but applied universally. AI tools help users traverse this chain from a high-level claim down to raw data, which can be cryptographically signed by hardware #link("https://en.wikipedia.org/wiki/Trusted_execution_environment")[secure enclaves]. Each node in the chain (person, outlet, inference step) accumulates a reliability record based on past accuracy, giving users a principled basis for assessing any given claim.
 
-_Who's building toward this._ The #link("https://c2pa.org/")[Coalition for Content Provenance and Authenticity (C2PA)] released its open technical standard in 2022, with adoption now spanning camera makers, news outlets, and platforms. The #link("https://contentauthenticity.org/")[Content Authenticity Initiative (CAI)] develops open-source tooling within that coalition. #link("https://communitynotes.x.com/")[X's Community Notes] operates crowdsourced fact-checking at scale with 133,000+ contributors. #link("https://captureapp.xyz/")[Numbers Protocol] integrates C2PA provenance data with blockchain for immutable asset tracking. No dedicated funding for a unified epistemic stack has been identified. TRL: 4—components exist in isolation; end-to-end integration from raw sensor data through inference to published claims with per-node trust scoring remains unbuilt. The vision is articulated in "#link("https://www.oliversourbut.net/p/a-full-epistemic-stack")[A Full Epistemic Stack: Knowledge Commons for the 21st Century]" (2025), while related challenges are examined in "#link("https://arxiv.org/abs/2509.13365")[The Provenance Problem: LLMs and the Breakdown of Citation Norms]" (2025) and "#link("https://arxiv.org/html/2603.02960")[Architecting Trust in Artificial Epistemic Agents]" (2025). The concept draws from #link("https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future")[a podcast discussion] on choosing our AI future.
+_Who's building toward this._ The #link("https://c2pa.org/")[Coalition for Content Provenance and Authenticity (C2PA)] released its open technical standard in 2022, with adoption now spanning camera makers, news outlets, and platforms. The #link("https://contentauthenticity.org/")[Content Authenticity Initiative (CAI)] develops open-source tooling within that coalition. #link("https://communitynotes.x.com/")[X's Community Notes] operates crowdsourced fact-checking at scale with 133,000+ contributors. #link("https://captureapp.xyz/")[Numbers Protocol] integrates C2PA provenance data with blockchain for immutable asset tracking. No dedicated funding for a unified epistemic stack has been identified. TRL: 4—components exist in isolation; end-to-end integration from raw sensor data through inference to published claims with per-node trust scoring remains unbuilt. The vision is articulated in "#link("https://www.oliversourbut.net/p/a-full-epistemic-stack")[A Full Epistemic Stack: Knowledge Commons for the 21st Century]" (2025), while related challenges are examined in "#link("https://arxiv.org/abs/2509.13365")[The Provenance Problem: LLMs and the Breakdown of Citation Norms]" (2025) and "#link("https://arxiv.org/html/2603.02960")[Architecting Trust in Artificial Epistemic Agents]" (2025). The concept draws from a podcast discussion with #link("https://en.wikipedia.org/wiki/Anthony_Aguirre")[Anthony Aguirre] on #link("https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future")[choosing our AI future].
 
 _d/acc alignment._ Defensive scores highest (4/5) because accurate provenance directly counters manipulation and misinformation at the infrastructure level. Democratic scores 3/5, reflecting the system's potential to equalize access to source-level verification across users and institutions.
 
@@ -467,7 +467,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[*Action*],
   table.cell[*TRL*],
   table.cell[*Source*],
-  table.cell[AI Fiduciaries],
+  table.cell[_AI Fiduciaries_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[17/20],
   table.cell[3/5],
@@ -475,7 +475,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[5],
   table.cell[],
-  table.cell[Liberal/Popperian AGI Education Framework],
+  table.cell[_Liberal/Popperian AGI Education Framework_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[15/20],
   table.cell[4/5],
@@ -483,7 +483,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-deutsch-on-beauty-knowledge-and-progress")[david-deutsch-on-beauty-knowle]],
-  table.cell[Privacy-Preserving Global Regulatory Markets for AI Verif...],
+  table.cell[_Privacy-Preserving Global Regulatory Markets for AI Verif..._],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[16/20],
   table.cell[3/5],
@@ -491,7 +491,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/emilia-javorsky-the-future-of-ai-bioengineering-and-human-empathy")[emilia-javorsky-the-future-of-]],
-  table.cell[LexNodes],
+  table.cell[_LexNodes_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[16/20],
   table.cell[3/5],
@@ -499,7 +499,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/lexcommons-the-open-law-society/")[lexcommons-the-open-law-societ]],
-  table.cell[Viotopia],
+  table.cell[_Viotopia_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[13/20],
   table.cell[4/5],
@@ -507,7 +507,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://www.existentialhope.com/podcasts/fin-moorhouse-why-we-need-to-aim-higher-than-survival")[fin-moorhouse-why-we-need-to-a]],
-  table.cell[Continuity Guild],
+  table.cell[_Continuity Guild_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[15/20],
   table.cell[2/5],
@@ -515,7 +515,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/threadtime/")[threadtime]],
-  table.cell[BioEcho Mesh],
+  table.cell[_BioEcho Mesh_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[14/20],
   table.cell[2/5],
@@ -523,7 +523,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[6],
   table.cell[#link("https://worlds.existentialhope.com/world/2035-rewild/")[2035-rewild]],
-  table.cell[Cognitive Field Resonators (CFRs)],
+  table.cell[_Cognitive Field Resonators (CFRs)_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[15/20],
   table.cell[1/5],
@@ -531,7 +531,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://worlds.existentialhope.com/world/harmonic-futures-a-2035-of-coherence-not-convenience/")[harmonic-futures-a-2035-of-coh]],
-  table.cell[The Mnemosyne Assembly],
+  table.cell[_The Mnemosyne Assembly_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[13/20],
   table.cell[3/5],
@@ -539,7 +539,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[3],
   table.cell[#link("https://worlds.existentialhope.com/world/harmonic-futures-a-2035-of-coherence-not-convenience/")[harmonic-futures-a-2035-of-coh]],
-  table.cell[Translation Language Models (TLMs) with citizen-owned tra...],
+  table.cell[_Translation Language Models (TLMs) with citizen-owned tra..._],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[13/20],
   table.cell[3/5],
@@ -547,7 +547,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/la-langue-de-la-prvoyance/")[la-langue-de-la-prvoyance]],
-  table.cell[Open Cognition Ledger],
+  table.cell[_Open Cognition Ledger_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[13/20],
   table.cell[3/5],
@@ -555,7 +555,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/symbiotic-wisdom/")[symbiotic-wisdom]],
-  table.cell[Polymesh Civic Ledger],
+  table.cell[_Polymesh Civic Ledger_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[13/20],
   table.cell[3/5],
@@ -563,7 +563,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/symbiotic-wisdom/")[symbiotic-wisdom]],
-  table.cell[Living Rights Network],
+  table.cell[_Living Rights Network_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[13/20],
   table.cell[3/5],
@@ -571,7 +571,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/the-living-rights-network/")[the-living-rights-network]],
-  table.cell[The Collective of Inner Weavers],
+  table.cell[_The Collective of Inner Weavers_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[13/20],
   table.cell[3/5],
@@ -579,7 +579,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/veliona-the-world-of-unfolding-minds/")[veliona-the-world-of-unfolding]],
-  table.cell[Federated Procurement Platforms],
+  table.cell[_Federated Procurement Platforms_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[13/20],
   table.cell[2/5],
@@ -587,7 +587,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[5],
   table.cell[],
-  table.cell[contextual autonomy],
+  table.cell[_contextual autonomy_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[12/20],
   table.cell[3/5],
@@ -595,7 +595,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[],
-  table.cell[Publishing for Machines (machine-readable scientific publ...],
+  table.cell[_Publishing for Machines (machine-readable scientific publ..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[12/20],
   table.cell[3/5],
@@ -603,7 +603,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery")[andrew-white-building-an-ai-sc]],
-  table.cell[De novo designed universal flu vaccines (Neil King / Bake...],
+  table.cell[_De novo designed universal flu vaccines (Neil King / Bake..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[12/20],
   table.cell[3/5],
@@ -611,7 +611,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-baker-using-ai-for-science-to-solve-humanitys-biggest-problems")[david-baker-using-ai-for-scien]],
-  table.cell[Computational models for infectious disease spread and va...],
+  table.cell[_Computational models for infectious disease spread and va..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[12/20],
   table.cell[3/5],
@@ -619,7 +619,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[7],
   table.cell[#link("https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters")[pablos-holman-on-creating-tech]],
-  table.cell[AI-Democratic Institutions for Decentralized Governance],
+  table.cell[_AI-Democratic Institutions for Decentralized Governance_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[12/20],
   table.cell[3/5],
@@ -627,7 +627,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/worldbuilding-special-3rd-place-floratech")[worldbuilding-special-3rd-plac]],
-  table.cell[Crowdfunded Independent Longevity AI Research Program],
+  table.cell[_Crowdfunded Independent Longevity AI Research Program_],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[13/20],
   table.cell[2/5],
@@ -635,7 +635,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/a-hope-for-human-immortality/")[a-hope-for-human-immortality]],
-  table.cell[Hybrid Market impact bond ledger],
+  table.cell[_Hybrid Market impact bond ledger_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[12/20],
   table.cell[3/5],
@@ -643,7 +643,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/hybrid-market/")[hybrid-market]],
-  table.cell[Isolated Societies Research Institute],
+  table.cell[_Isolated Societies Research Institute_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[13/20],
   table.cell[2/5],
@@ -651,7 +651,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://worlds.existentialhope.com/world/self-sustaining-isolated-societies/")[self-sustaining-isolated-socie]],
-  table.cell[Mandatory Open-Source AI Release Policy],
+  table.cell[_Mandatory Open-Source AI Release Policy_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[12/20],
   table.cell[3/5],
@@ -659,7 +659,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/sustainable-abundance/")[sustainable-abundance]],
-  table.cell[Loom Studios],
+  table.cell[_Loom Studios_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[12/20],
   table.cell[3/5],
@@ -667,7 +667,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/symphora/")[symphora]],
-  table.cell[The Common Knowledge Generator],
+  table.cell[_The Common Knowledge Generator_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[12/20],
   table.cell[3/5],
@@ -675,7 +675,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[],
-  table.cell[The Delphi Collaboration Protocol],
+  table.cell[_The Delphi Collaboration Protocol_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[13/20],
   table.cell[2/5],
@@ -683,7 +683,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[],
-  table.cell[The Scenario Planning Institution],
+  table.cell[_The Scenario Planning Institution_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[12/20],
   table.cell[3/5],
@@ -691,7 +691,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[],
-  table.cell[Flourishing Certification],
+  table.cell[_Flourishing Certification_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[12/20],
   table.cell[3/5],
@@ -699,7 +699,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[3],
   table.cell[],
-  table.cell[TAI Horizon Scanner],
+  table.cell[_TAI Horizon Scanner_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[12/20],
   table.cell[3/5],
@@ -707,7 +707,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[],
-  table.cell[Lean FRO (interactive theorem proving infrastructure for ...],
+  table.cell[_Lean FRO (interactive theorem proving infrastructure for ..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[11/20],
   table.cell[3/5],
@@ -715,7 +715,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps")[adam-marblestone-solving-scien]],
-  table.cell[Large-scale AI-mediated deliberation system],
+  table.cell[_Large-scale AI-mediated deliberation system_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[11/20],
   table.cell[3/5],
@@ -723,7 +723,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/anthony-aguirre-tools-or-agents-choosing-our-ai-future")[anthony-aguirre-tools-or-agent]],
-  table.cell[Reputational Market],
+  table.cell[_Reputational Market_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[11/20],
   table.cell[3/5],
@@ -731,7 +731,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/kristian-rnn-the-darwinian-trap-that-explains-our-world")[kristian-rnn-the-darwinian-tra]],
-  table.cell[Learning Observatories],
+  table.cell[_Learning Observatories_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[11/20],
   table.cell[3/5],
@@ -739,7 +739,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption")[niklas-lundblad-how-ai-can-acc]],
-  table.cell[Deep Fision borehole nuclear reactor],
+  table.cell[_Deep Fision borehole nuclear reactor_],
   table.cell[Energy, Environment & Planetary Systems],
   table.cell[11/20],
   table.cell[3/5],
@@ -747,7 +747,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters")[pablos-holman-on-creating-tech]],
-  table.cell[Values-as-modality parametrization across AI systems],
+  table.cell[_Values-as-modality parametrization across AI systems_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[11/20],
   table.cell[3/5],
@@ -755,7 +755,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future")[richard-mallah-how-aligned-ai-]],
-  table.cell[Parallel lightly-regulated childminder category (France)],
+  table.cell[_Parallel lightly-regulated childminder category (France)_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[12/20],
   table.cell[2/5],
@@ -763,7 +763,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[7],
   table.cell[#link("https://www.existentialhope.com/podcasts/sam-bowman-whats-holding-back-progress-and-how-to-fix-it")[sam-bowman-whats-holding-back-]],
-  table.cell[Orare - AI-powered Futarchy governance system],
+  table.cell[_Orare - AI-powered Futarchy governance system_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[11/20],
   table.cell[3/5],
@@ -771,7 +771,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/worldbuilding-special-1st-place-cities-of-orare")[worldbuilding-special-1st-plac]],
-  table.cell[VOICE (Voice for Open Source Information and Community En...],
+  table.cell[_VOICE (Voice for Open Source Information and Community En..._],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[11/20],
   table.cell[3/5],
@@ -779,7 +779,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/worldbuilding-special-2nd-place-rising-choir")[worldbuilding-special-2nd-plac]],
-  table.cell[Global Personhood Token / Trust-of-Personhood Standard],
+  table.cell[_Global Personhood Token / Trust-of-Personhood Standard_],
   table.cell[International Governance & Coordination],
   table.cell[11/20],
   table.cell[3/5],
@@ -787,7 +787,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/worldbuilding-special-2nd-place-rising-choir")[worldbuilding-special-2nd-plac]],
-  table.cell[LexCommons],
+  table.cell[_LexCommons_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[12/20],
   table.cell[2/5],
@@ -795,7 +795,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/lexcommons-the-open-law-society/")[lexcommons-the-open-law-societ]],
-  table.cell[The Welcome Circle],
+  table.cell[_The Welcome Circle_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[12/20],
   table.cell[2/5],
@@ -803,7 +803,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/planet-joy/")[planet-joy]],
-  table.cell[RaízMental Global],
+  table.cell[_RaízMental Global_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[11/20],
   table.cell[3/5],
@@ -811,7 +811,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/razmental-emotional-healing-ecosystems/")[razmental-emotional-healing-ec]],
-  table.cell[Ethical AI Tutors],
+  table.cell[_Ethical AI Tutors_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[11/20],
   table.cell[3/5],
@@ -819,7 +819,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/the-learning-uncommons-of-2035/")[the-learning-uncommons-of-2035]],
-  table.cell[Safety-Netted DAOs],
+  table.cell[_Safety-Netted DAOs_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[11/20],
   table.cell[2/5],
@@ -827,7 +827,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[2],
   table.cell[],
-  table.cell[AGI Liability Safe Harbor Framework],
+  table.cell[_AGI Liability Safe Harbor Framework_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[3/5],
@@ -835,7 +835,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[],
-  table.cell[Multiplicity.ai],
+  table.cell[_Multiplicity.ai_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[11/20],
   table.cell[2/5],
@@ -843,7 +843,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[7],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-critch-what-agi-might-look-like-in-practice")[andrew-critch-what-agi-might-l]],
-  table.cell[Futarchy],
+  table.cell[_Futarchy_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[10/20],
   table.cell[3/5],
@@ -851,7 +851,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-duvenaud-exploring-the-cruxes-and-possibilities-of-post-agi-futures")[david-duvenaud-exploring-the-c]],
-  table.cell[Active smart fabric with autonomous environmental response],
+  table.cell[_Active smart fabric with autonomous environmental response_],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[11/20],
   table.cell[2/5],
@@ -859,7 +859,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-leigh-exploring-the-possibilities-of-nanotechnology")[david-leigh-exploring-the-poss]],
-  table.cell[Integration of Brain Preservation into the Medical System],
+  table.cell[_Integration of Brain Preservation into the Medical System_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[11/20],
   table.cell[2/5],
@@ -867,7 +867,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/dr-ariel-zeleznikow-johnston-the-future-loves-you")[dr-ariel-zeleznikow-johnston-t]],
-  table.cell[Imagination Annotated (book series)],
+  table.cell[_Imagination Annotated (book series)_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[11/20],
   table.cell[2/5],
@@ -875,7 +875,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/ed-finn-how-science-fiction-can-inspire-real-world-innovation")[ed-finn-how-science-fiction-ca]],
-  table.cell[Author Personal Knowledge Graph / Writing Corpus Utility],
+  table.cell[_Author Personal Knowledge Graph / Writing Corpus Utility_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[11/20],
   table.cell[2/5],
@@ -883,7 +883,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/jim-oshaughnessy-on-investing-in-infinite-human-potential")[jim-oshaughnessy-on-investing-]],
-  table.cell[Artificial General Wisdom],
+  table.cell[_Artificial General Wisdom_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[3/5],
@@ -891,7 +891,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/liv-boeree-game-theory-moloch-our-hopeful-future")[liv-boeree-game-theory-moloch-]],
-  table.cell[Componentized architectures optimized for inner alignment...],
+  table.cell[_Componentized architectures optimized for inner alignment..._],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[3/5],
@@ -899,7 +899,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future")[richard-mallah-how-aligned-ai-]],
-  table.cell[Neighborhood opt-in upzoning with land value capture],
+  table.cell[_Neighborhood opt-in upzoning with land value capture_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[11/20],
   table.cell[2/5],
@@ -907,7 +907,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/sam-bowman-whats-holding-back-progress-and-how-to-fix-it")[sam-bowman-whats-holding-back-]],
-  table.cell[Kacha's Global Symbiosis Council (GSC)],
+  table.cell[_Kacha's Global Symbiosis Council (GSC)_],
   table.cell[International Governance & Coordination],
   table.cell[10/20],
   table.cell[3/5],
@@ -915,7 +915,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/2035-the-era-of-sentient-symbiosis-and-human-ai-flourishment/")[2035-the-era-of-sentient-symbi]],
-  table.cell[Guardian Network],
+  table.cell[_Guardian Network_],
   table.cell[International Governance & Coordination],
   table.cell[11/20],
   table.cell[2/5],
@@ -923,7 +923,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/edusafe/")[edusafe]],
-  table.cell[Decentralized community-built AI systems],
+  table.cell[_Decentralized community-built AI systems_],
   table.cell[Decentralized & Democratic Institutions],
   table.cell[10/20],
   table.cell[3/5],
@@ -931,7 +931,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/new-world-in-the-making/")[new-world-in-the-making]],
-  table.cell[Bio-Responsive AI Interfaces],
+  table.cell[_Bio-Responsive AI Interfaces_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[11/20],
   table.cell[2/5],
@@ -939,7 +939,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/planet-joy/")[planet-joy]],
-  table.cell[Open-source AI-powered research funding and knowledge pla...],
+  table.cell[_Open-source AI-powered research funding and knowledge pla..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[10/20],
   table.cell[3/5],
@@ -947,7 +947,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/potentia/")[potentia]],
-  table.cell[Interplanetary Cooperative],
+  table.cell[_Interplanetary Cooperative_],
   table.cell[International Governance & Coordination],
   table.cell[11/20],
   table.cell[2/5],
@@ -955,7 +955,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/resilient-planetary-settlements/")[resilient-planetary-settlement]],
-  table.cell[Civic Loom],
+  table.cell[_Civic Loom_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[11/20],
   table.cell[2/5],
@@ -963,7 +963,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/symphora/")[symphora]],
-  table.cell[AI-powered participatory policy simulation platform],
+  table.cell[_AI-powered participatory policy simulation platform_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[10/20],
   table.cell[3/5],
@@ -971,7 +971,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/the-commons-cloud/")[the-commons-cloud]],
-  table.cell[The Flourishing Foundation],
+  table.cell[_The Flourishing Foundation_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[11/20],
   table.cell[2/5],
@@ -979,7 +979,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[5],
   table.cell[],
-  table.cell[The Evals for Evals Institute],
+  table.cell[_The Evals for Evals Institute_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[3/5],
@@ -987,7 +987,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[3],
   table.cell[],
-  table.cell[The World Convention on Transformative Artificial Intelli...],
+  table.cell[_The World Convention on Transformative Artificial Intelli..._],
   table.cell[International Governance & Coordination],
   table.cell[11/20],
   table.cell[2/5],
@@ -995,7 +995,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[],
-  table.cell[Global Deliberation as a Service (GDaaS)],
+  table.cell[_Global Deliberation as a Service (GDaaS)_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[10/20],
   table.cell[3/5],
@@ -1003,7 +1003,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[],
-  table.cell[World Convention on Transformative Artificial Intelligenc...],
+  table.cell[_World Convention on Transformative Artificial Intelligenc..._],
   table.cell[International Governance & Coordination],
   table.cell[10/20],
   table.cell[3/5],
@@ -1011,7 +1011,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[],
-  table.cell[Tool AI for Tool AI],
+  table.cell[_Tool AI for Tool AI_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[3/5],
@@ -1019,7 +1019,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[],
-  table.cell[NotADoctor.ai medical record serialization and RCT search],
+  table.cell[_NotADoctor.ai medical record serialization and RCT search_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[10/20],
   table.cell[2/5],
@@ -1027,7 +1027,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-critch-what-agi-might-look-like-in-practice")[andrew-critch-what-agi-might-l]],
-  table.cell[AI-mediated conflict resolution tool (retorsion/disgorgem...],
+  table.cell[_AI-mediated conflict resolution tool (retorsion/disgorgem..._],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[10/20],
   table.cell[2/5],
@@ -1035,7 +1035,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-critch-what-agi-might-look-like-in-practice")[andrew-critch-what-agi-might-l]],
-  table.cell[Aviary],
+  table.cell[_Aviary_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[10/20],
   table.cell[2/5],
@@ -1043,7 +1043,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery")[andrew-white-building-an-ai-sc]],
-  table.cell[Windfall Clause],
+  table.cell[_Windfall Clause_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[10/20],
   table.cell[2/5],
@@ -1051,7 +1051,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/anthony-aguirre-anna-yelizarova-on-worldbuilding")[anthony-aguirre-anna-yelizarov]],
-  table.cell[Project Hieroglyph],
+  table.cell[_Project Hieroglyph_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[9/20],
   table.cell[3/5],
@@ -1059,7 +1059,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/ed-finn-how-science-fiction-can-inspire-real-world-innovation")[ed-finn-how-science-fiction-ca]],
-  table.cell[Provably Safe AGI via Formal Verification],
+  table.cell[_Provably Safe AGI via Formal Verification_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[3/5],
@@ -1067,7 +1067,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/gus-docker-beyond-survival-envisioning-a-technologically-enhanced-utopia")[gus-docker-beyond-survival-env]],
-  table.cell[Closed-loop gene therapy for seizure suppression via acti...],
+  table.cell[_Closed-loop gene therapy for seizure suppression via acti..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[9/20],
   table.cell[3/5],
@@ -1075,7 +1075,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health")[jacques-carolan-the-future-of-]],
-  table.cell[AI underwriting / mandatory insurance for AI systems],
+  table.cell[_AI underwriting / mandatory insurance for AI systems_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[3/5],
@@ -1083,7 +1083,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai")[nathan-labenz-what-are-the-bes]],
-  table.cell[Self-Improving System Prompt for Continuous AI Capability...],
+  table.cell[_Self-Improving System Prompt for Continuous AI Capability..._],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[2/5],
@@ -1091,7 +1091,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption")[niklas-lundblad-how-ai-can-acc]],
-  table.cell[Multicriteria safety architecture with explicit precedenc...],
+  table.cell[_Multicriteria safety architecture with explicit precedenc..._],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[3/5],
@@ -1099,7 +1099,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future")[richard-mallah-how-aligned-ai-]],
-  table.cell[Blockchain-based Universal Self-Actualization Income],
+  table.cell[_Blockchain-based Universal Self-Actualization Income_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[10/20],
   table.cell[2/5],
@@ -1107,7 +1107,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures")[trent-mcconaghy-from-starships]],
-  table.cell[International Council of Life Extension],
+  table.cell[_International Council of Life Extension_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[10/20],
   table.cell[2/5],
@@ -1115,7 +1115,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/a-hope-for-human-immortality/")[a-hope-for-human-immortality]],
-  table.cell[Ecological Balance Council],
+  table.cell[_Ecological Balance Council_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[10/20],
   table.cell[2/5],
@@ -1123,7 +1123,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/green-renaissance/")[green-renaissance]],
-  table.cell[Adaptive Wearable Tech],
+  table.cell[_Adaptive Wearable Tech_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[9/20],
   table.cell[3/5],
@@ -1131,7 +1131,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[7],
   table.cell[#link("https://worlds.existentialhope.com/world/human-centric-technology/")[human-centric-technology]],
-  table.cell[Human-Tech Council],
+  table.cell[_Human-Tech Council_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[2/5],
@@ -1139,7 +1139,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/human-centric-technology/")[human-centric-technology]],
-  table.cell[Global Learning Collective],
+  table.cell[_Global Learning Collective_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[9/20],
   table.cell[3/5],
@@ -1147,7 +1147,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[6],
   table.cell[#link("https://worlds.existentialhope.com/world/lumina-the-world-illuminated-by-unleashed-human-brilliance/")[lumina-the-world-illuminated-b]],
-  table.cell[Emotional Coach (Empathetic Neuro-AI)],
+  table.cell[_Emotional Coach (Empathetic Neuro-AI)_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[9/20],
   table.cell[3/5],
@@ -1155,7 +1155,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/razmental-emotional-healing-ecosystems/")[razmental-emotional-healing-ec]],
-  table.cell[Regenerative Biospheres],
+  table.cell[_Regenerative Biospheres_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[9/20],
   table.cell[3/5],
@@ -1163,7 +1163,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/resilient-planetary-settlements/")[resilient-planetary-settlement]],
-  table.cell[AI Alignment Markets],
+  table.cell[_AI Alignment Markets_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[10/20],
   table.cell[2/5],
@@ -1171,7 +1171,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://worlds.existentialhope.com/world/the-symbiotic-age/")[the-symbiotic-age]],
-  table.cell[Global AI Alignment Commission (GAAC)],
+  table.cell[_Global AI Alignment Commission (GAAC)_],
   table.cell[International Governance & Coordination],
   table.cell[9/20],
   table.cell[3/5],
@@ -1179,7 +1179,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/the-symbiotic-age/")[the-symbiotic-age]],
-  table.cell[Extracellular vesicle-based blood diagnostics for tissue-...],
+  table.cell[_Extracellular vesicle-based blood diagnostics for tissue-..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[9/20],
   table.cell[2/5],
@@ -1187,7 +1187,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/amy-proal-rethinking-chronic-disease")[amy-proal-rethinking-chronic-d]],
-  table.cell[Protein-based nanomachines for in vivo tissue repair and ...],
+  table.cell[_Protein-based nanomachines for in vivo tissue repair and ..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[8/20],
   table.cell[3/5],
@@ -1195,7 +1195,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-baker-using-ai-for-science-to-solve-humanitys-biggest-problems")[david-baker-using-ai-for-scien]],
-  table.cell[Biohybrid living DBS electrode (neuron-based implant inte...],
+  table.cell[_Biohybrid living DBS electrode (neuron-based implant inte..._],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[8/20],
   table.cell[3/5],
@@ -1203,7 +1203,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health")[jacques-carolan-the-future-of-]],
-  table.cell[Chemputer / Chemputation programming language],
+  table.cell[_Chemputer / Chemputation programming language_],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[8/20],
   table.cell[3/5],
@@ -1211,7 +1211,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[7],
   table.cell[#link("https://www.existentialhope.com/podcasts/lee-cronin-catalyzing-progress-through-chemistry")[lee-cronin-catalyzing-progress]],
-  table.cell[Openwater universal diagnostic/therapeutic device],
+  table.cell[_Openwater universal diagnostic/therapeutic device_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[8/20],
   table.cell[3/5],
@@ -1219,7 +1219,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/mary-lou-jepsen-a-handheld-device-to-defeat-cancer")[mary-lou-jepsen-a-handheld-dev]],
-  table.cell[AI-driven forking narrative / interactive scenario conten...],
+  table.cell[_AI-driven forking narrative / interactive scenario conten..._],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[8/20],
   table.cell[3/5],
@@ -1227,7 +1227,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/nathan-labenz-what-are-the-best-case-scenarios-for-ai")[nathan-labenz-what-are-the-bes]],
-  table.cell[Agent Contract Declaration Requirement],
+  table.cell[_Agent Contract Declaration Requirement_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[2/5],
@@ -1235,7 +1235,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption")[niklas-lundblad-how-ai-can-acc]],
-  table.cell[Spectrum from environmental safety to metagenic safety],
+  table.cell[_Spectrum from environmental safety to metagenic safety_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[2/5],
@@ -1243,7 +1243,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://www.existentialhope.com/podcasts/richard-mallah-how-aligned-ai-could-help-us-create-a-flourishing-future")[richard-mallah-how-aligned-ai-]],
-  table.cell[Bounded AI Agents],
+  table.cell[_Bounded AI Agents_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[2/5],
@@ -1251,7 +1251,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/worldbuilding-special-3rd-place-floratech")[worldbuilding-special-3rd-plac]],
-  table.cell[BTC Trust Grid],
+  table.cell[_BTC Trust Grid_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[9/20],
   table.cell[2/5],
@@ -1259,7 +1259,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/worldbuilding-course-worldbuilding-toolbox-world-entry-page-world-gallery-x-twitter-instagram-medium-bookmark-sadvipra-ai/")[worldbuilding-course-worldbuil]],
-  table.cell[Global Fungal Biology Research Initiative (Big Tech + Pau...],
+  table.cell[_Global Fungal Biology Research Initiative (Big Tech + Pau..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[9/20],
   table.cell[2/5],
@@ -1267,7 +1267,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[3],
   table.cell[#link("https://worlds.existentialhope.com/world/fungi-terra/")[fungi-terra]],
-  table.cell[Biophilic Architecture],
+  table.cell[_Biophilic Architecture_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[9/20],
   table.cell[2/5],
@@ -1275,7 +1275,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[7],
   table.cell[#link("https://worlds.existentialhope.com/world/green-renaissance/")[green-renaissance]],
-  table.cell[Urban Sustainability Network],
+  table.cell[_Urban Sustainability Network_],
   table.cell[Energy, Environment & Planetary Systems],
   table.cell[9/20],
   table.cell[2/5],
@@ -1283,7 +1283,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[7],
   table.cell[#link("https://worlds.existentialhope.com/world/harmonized-urban-ecosystems/")[harmonized-urban-ecosystems]],
-  table.cell[AI Market Intermediaries],
+  table.cell[_AI Market Intermediaries_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[8/20],
   table.cell[3/5],
@@ -1291,7 +1291,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/the-more-beautiful-world-our-hearts-know-is-possible/")[the-more-beautiful-world-our-h]],
-  table.cell[The Indefinite Lifespan],
+  table.cell[_The Indefinite Lifespan_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[8/20],
   table.cell[3/5],
@@ -1299,7 +1299,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/the-world-of-equal-opportunity-for-sentient-beings-living-the-indefinite-lifespan-immortally/")[the-world-of-equal-opportunity]],
-  table.cell[Memory Looms],
+  table.cell[_Memory Looms_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[10/20],
   table.cell[1/5],
@@ -1307,7 +1307,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://worlds.existentialhope.com/world/threadtime/")[threadtime]],
-  table.cell[World Cultural Exchange Forum],
+  table.cell[_World Cultural Exchange Forum_],
   table.cell[International Governance & Coordination],
   table.cell[9/20],
   table.cell[2/5],
@@ -1315,7 +1315,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[6],
   table.cell[#link("https://worlds.existentialhope.com/world/unity-through-diversity/")[unity-through-diversity]],
-  table.cell[TimeLike / SECHI (Simulation-Enabled Cooperative Human In...],
+  table.cell[_TimeLike / SECHI (Simulation-Enabled Cooperative Human In..._],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[7/20],
   table.cell[4/5],
@@ -1323,7 +1323,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[],
-  table.cell[Request for Evaluation (RfE) Protocol],
+  table.cell[_Request for Evaluation (RfE) Protocol_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[9/20],
   table.cell[2/5],
@@ -1331,7 +1331,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[1],
   table.cell[],
-  table.cell[Focused Research Organizations (FROs)],
+  table.cell[_Focused Research Organizations (FROs)_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[7/20],
   table.cell[3/5],
@@ -1339,7 +1339,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps")[adam-marblestone-solving-scien]],
-  table.cell[Vagus nerve microbiome characterization study],
+  table.cell[_Vagus nerve microbiome characterization study_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[8/20],
   table.cell[2/5],
@@ -1347,7 +1347,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/amy-proal-rethinking-chronic-disease")[amy-proal-rethinking-chronic-d]],
-  table.cell[AI-driven drug repurposing pipeline (AMD/Ripasudil discov...],
+  table.cell[_AI-driven drug repurposing pipeline (AMD/Ripasudil discov..._],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[7/20],
   table.cell[3/5],
@@ -1355,7 +1355,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery")[andrew-white-building-an-ai-sc]],
-  table.cell[Universal Constructor],
+  table.cell[_Universal Constructor_],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[6/20],
   table.cell[4/5],
@@ -1363,7 +1363,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-deutsch-on-beauty-knowledge-and-progress")[david-deutsch-on-beauty-knowle]],
-  table.cell[Bell Labs Systems Engineer Role],
+  table.cell[_Bell Labs Systems Engineer Role_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[8/20],
   table.cell[2/5],
@@ -1371,7 +1371,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/eric-gilliam-what-history-can-teach-us-about-doing-better-science")[eric-gilliam-what-history-can-]],
-  table.cell[Meditation-State Detection Model],
+  table.cell[_Meditation-State Detection Model_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[9/20],
   table.cell[1/5],
@@ -1379,7 +1379,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/gus-docker-beyond-survival-envisioning-a-technologically-enhanced-utopia")[gus-docker-beyond-survival-env]],
-  table.cell[Vertis Solus space-based solar power array],
+  table.cell[_Vertis Solus space-based solar power array_],
   table.cell[Energy, Environment & Planetary Systems],
   table.cell[7/20],
   table.cell[3/5],
@@ -1387,7 +1387,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters")[pablos-holman-on-creating-tech]],
-  table.cell[Computer-controlled sail cargo ship],
+  table.cell[_Computer-controlled sail cargo ship_],
   table.cell[Energy, Environment & Planetary Systems],
   table.cell[7/20],
   table.cell[3/5],
@@ -1395,7 +1395,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/pablos-holman-on-creating-technology-that-actually-matters")[pablos-holman-on-creating-tech]],
-  table.cell[Fire-the-CEO Decision Market],
+  table.cell[_Fire-the-CEO Decision Market_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[8/20],
   table.cell[2/5],
@@ -1403,7 +1403,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/robin-hanson-on-futurism-his-best-career-advice")[robin-hanson-on-futurism-his-b]],
-  table.cell[Planetary-Scale Intelligence],
+  table.cell[_Planetary-Scale Intelligence_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[7/20],
   table.cell[3/5],
@@ -1411,7 +1411,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/sara-walker-unraveling-lifes-beginnings-with-the-cosmic-perspective")[sara-walker-unraveling-lifes-b]],
-  table.cell[NanoSync – Regenerative Nanotechnology],
+  table.cell[_NanoSync – Regenerative Nanotechnology_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[7/20],
   table.cell[3/5],
@@ -1419,7 +1419,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/elysium/")[elysium]],
-  table.cell[Institute for Life Extension (ILE)],
+  table.cell[_Institute for Life Extension (ILE)_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[7/20],
   table.cell[3/5],
@@ -1427,7 +1427,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/elysium/")[elysium]],
-  table.cell[Urban AI systems],
+  table.cell[_Urban AI systems_],
   table.cell[Energy, Environment & Planetary Systems],
   table.cell[7/20],
   table.cell[3/5],
@@ -1435,7 +1435,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[6],
   table.cell[#link("https://worlds.existentialhope.com/world/harmonized-urban-ecosystems/")[harmonized-urban-ecosystems]],
-  table.cell[AI-Managed Childhood Development Centers],
+  table.cell[_AI-Managed Childhood Development Centers_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[7/20],
   table.cell[3/5],
@@ -1443,7 +1443,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/harmony-haven/")[harmony-haven]],
-  table.cell[Predictive AI System for R&D Funding Allocation],
+  table.cell[_Predictive AI System for R&D Funding Allocation_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[7/20],
   table.cell[3/5],
@@ -1451,7 +1451,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/innovation-nation/")[innovation-nation]],
-  table.cell[Lifelong AI Guardians],
+  table.cell[_Lifelong AI Guardians_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[8/20],
   table.cell[2/5],
@@ -1459,7 +1459,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/kidtopia/")[kidtopia]],
-  table.cell[Earth UBI],
+  table.cell[_Earth UBI_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[8/20],
   table.cell[2/5],
@@ -1467,7 +1467,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/protopia-peace-project/")[protopia-peace-project]],
-  table.cell[Jurisdictional Routers],
+  table.cell[_Jurisdictional Routers_],
   table.cell[International Governance & Coordination],
   table.cell[8/20],
   table.cell[1/5],
@@ -1475,7 +1475,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[],
-  table.cell[Pareto-Optimal Negotiation Bots],
+  table.cell[_Pareto-Optimal Negotiation Bots_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1483,7 +1483,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[7],
   table.cell[],
-  table.cell[LitQA3 (high-recall literature evaluation benchmark)],
+  table.cell[_LitQA3 (high-recall literature evaluation benchmark)_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1491,7 +1491,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/andrew-white-building-an-ai-scientist-to-automate-discovery")[andrew-white-building-an-ai-sc]],
-  table.cell[LLM Historical Forecasting Benchmark],
+  table.cell[_LLM Historical Forecasting Benchmark_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1499,7 +1499,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-duvenaud-exploring-the-cruxes-and-possibilities-of-post-agi-futures")[david-duvenaud-exploring-the-c]],
-  table.cell[BBN-style Applied R&D Contractor (New BBNs)],
+  table.cell[_BBN-style Applied R&D Contractor (New BBNs)_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1507,7 +1507,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Fund],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/eric-gilliam-what-history-can-teach-us-about-doing-better-science")[eric-gilliam-what-history-can-]],
-  table.cell[Closed-loop ultrasound brain-state readout and mood modul...],
+  table.cell[_Closed-loop ultrasound brain-state readout and mood modul..._],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1515,7 +1515,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health")[jacques-carolan-the-future-of-]],
-  table.cell[Massively scalable intravascular or CSF-routed neural int...],
+  table.cell[_Massively scalable intravascular or CSF-routed neural int..._],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1523,7 +1523,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/jacques-carolan-the-future-of-brain-health")[jacques-carolan-the-future-of-]],
-  table.cell[Continuous AI-Driven Book Marketing Matchmaker],
+  table.cell[_Continuous AI-Driven Book Marketing Matchmaker_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[7/20],
   table.cell[2/5],
@@ -1531,7 +1531,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/jim-oshaughnessy-on-investing-in-infinite-human-potential")[jim-oshaughnessy-on-investing-]],
-  table.cell[Child Equity Stake Fund (US Birth Endowment)],
+  table.cell[_Child Equity Stake Fund (US Birth Endowment)_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[7/20],
   table.cell[2/5],
@@ -1539,7 +1539,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[8],
   table.cell[#link("https://www.existentialhope.com/podcasts/jim-oshaughnessy-on-investing-in-infinite-human-potential")[jim-oshaughnessy-on-investing-]],
-  table.cell[Onerofex (collective AI-mediated dreaming experience)],
+  table.cell[_Onerofex (collective AI-mediated dreaming experience)_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1547,7 +1547,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/ken-liu-what-ai-reveals-about-humanity")[ken-liu-what-ai-reveals-about-]],
-  table.cell[Atheoretical Science via Massive Sensor Networks and AI P...],
+  table.cell[_Atheoretical Science via Massive Sensor Networks and AI P..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1555,7 +1555,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption")[niklas-lundblad-how-ai-can-acc]],
-  table.cell[Parallel Federal Science Funding System with Mandatory In...],
+  table.cell[_Parallel Federal Science Funding System with Mandatory In..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1563,7 +1563,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/stuart-buck-what-is-good-science")[stuart-buck-what-is-good-scien]],
-  table.cell[Global Childhood Development Authority (GCDA)],
+  table.cell[_Global Childhood Development Authority (GCDA)_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1571,7 +1571,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/harmony-haven/")[harmony-haven]],
-  table.cell[The Children's Movement],
+  table.cell[_The Children's Movement_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1579,7 +1579,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/kidtopia/")[kidtopia]],
-  table.cell[Neural-Adaptive Learning AI],
+  table.cell[_Neural-Adaptive Learning AI_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1587,7 +1587,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/lumina-the-world-illuminated-by-unleashed-human-brilliance/")[lumina-the-world-illuminated-b]],
-  table.cell[Bitcoin-funded renewable energy cooperatives],
+  table.cell[_Bitcoin-funded renewable energy cooperatives_],
   table.cell[Energy, Environment & Planetary Systems],
   table.cell[7/20],
   table.cell[2/5],
@@ -1595,7 +1595,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/new-world-in-the-making/")[new-world-in-the-making]],
-  table.cell[Ecosystem-responsive AI management system],
+  table.cell[_Ecosystem-responsive AI management system_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[7/20],
   table.cell[2/5],
@@ -1603,7 +1603,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/potentia/")[potentia]],
-  table.cell[GAI (Global AI Board)],
+  table.cell[_GAI (Global AI Board)_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[7/20],
   table.cell[2/5],
@@ -1611,7 +1611,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/sustainable-abundance/")[sustainable-abundance]],
-  table.cell[United Nations Biosphere Geoengineering and AI Governance...],
+  table.cell[_United Nations Biosphere Geoengineering and AI Governance..._],
   table.cell[International Governance & Coordination],
   table.cell[7/20],
   table.cell[2/5],
@@ -1619,7 +1619,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/the-world-of-equal-opportunity-for-sentient-beings-living-the-indefinite-lifespan-immortally/")[the-world-of-equal-opportunity]],
-  table.cell[Little AI Robots (emotional decision-support chatbots)],
+  table.cell[_Little AI Robots (emotional decision-support chatbots)_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[7/20],
   table.cell[2/5],
@@ -1627,7 +1627,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[6],
   table.cell[#link("https://worlds.existentialhope.com/world/uniqualia/")[uniqualia]],
-  table.cell[Consolidated Intelligence Council],
+  table.cell[_Consolidated Intelligence Council_],
   table.cell[International Governance & Coordination],
   table.cell[7/20],
   table.cell[2/5],
@@ -1635,7 +1635,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/unified-peace/")[unified-peace]],
-  table.cell[Neural Harmony Interface],
+  table.cell[_Neural Harmony Interface_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[6/20],
   table.cell[3/5],
@@ -1643,7 +1643,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/veliona-the-world-of-unfolding-minds/")[veliona-the-world-of-unfolding]],
-  table.cell[Bio-templated microchips via implosion fabrication],
+  table.cell[_Bio-templated microchips via implosion fabrication_],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[5/20],
   table.cell[3/5],
@@ -1651,7 +1651,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/adam-marblestone-solving-sciences-biggest-gaps")[adam-marblestone-solving-scien]],
-  table.cell[Programmable synthetic molecular robots for chemical synt...],
+  table.cell[_Programmable synthetic molecular robots for chemical synt..._],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[5/20],
   table.cell[3/5],
@@ -1659,7 +1659,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[3],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-leigh-exploring-the-possibilities-of-nanotechnology")[david-leigh-exploring-the-poss]],
-  table.cell[Aldehyde-Stabilized Cryopreservation],
+  table.cell[_Aldehyde-Stabilized Cryopreservation_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[6/20],
   table.cell[2/5],
@@ -1667,7 +1667,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/dr-ariel-zeleznikow-johnston-the-future-loves-you")[dr-ariel-zeleznikow-johnston-t]],
-  table.cell[AI-powered blog aggregator with conversational interface],
+  table.cell[_AI-powered blog aggregator with conversational interface_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[7/20],
   table.cell[1/5],
@@ -1675,7 +1675,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Build],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/eli-dourado-on-accelerating-progress")[eli-dourado-on-accelerating-pr]],
-  table.cell[EgoLets],
+  table.cell[_EgoLets_],
   table.cell[AI-Mediated Deliberation & Collective...],
   table.cell[5/20],
   table.cell[3/5],
@@ -1683,7 +1683,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/ken-liu-what-ai-reveals-about-humanity")[ken-liu-what-ai-reveals-about-]],
-  table.cell[Chemical substrate computation / chemical consciousness],
+  table.cell[_Chemical substrate computation / chemical consciousness_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[5/20],
   table.cell[3/5],
@@ -1691,7 +1691,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/lee-cronin-catalyzing-progress-through-chemistry")[lee-cronin-catalyzing-progress]],
-  table.cell[Alexa Gentia (machine-negotiated agent legal structures)],
+  table.cell[_Alexa Gentia (machine-negotiated agent legal structures)_],
   table.cell[AI Safety, Alignment & Governance],
   table.cell[6/20],
   table.cell[2/5],
@@ -1699,7 +1699,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/niklas-lundblad-how-ai-can-accelerate-science-its-own-adoption")[niklas-lundblad-how-ai-can-acc]],
-  table.cell[Origin of Life Evolutionary Engine (chemical space search...],
+  table.cell[_Origin of Life Evolutionary Engine (chemical space search..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[5/20],
   table.cell[3/5],
@@ -1707,7 +1707,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/sara-walker-unraveling-lifes-beginnings-with-the-cosmic-perspective")[sara-walker-unraveling-lifes-b]],
-  table.cell[Assembly Theory],
+  table.cell[_Assembly Theory_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[6/20],
   table.cell[2/5],
@@ -1715,7 +1715,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/sara-walker-unraveling-lifes-beginnings-with-the-cosmic-perspective")[sara-walker-unraveling-lifes-b]],
-  table.cell[National Science and Technology Foresight Agency (NSTFA)],
+  table.cell[_National Science and Technology Foresight Agency (NSTFA)_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[6/20],
   table.cell[2/5],
@@ -1723,7 +1723,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/innovation-nation/")[innovation-nation]],
-  table.cell[Minimum-payload terraforming nanomachine for Mars],
+  table.cell[_Minimum-payload terraforming nanomachine for Mars_],
   table.cell[Nanotechnology & Advanced Manufacturing],
   table.cell[3/20],
   table.cell[4/5],
@@ -1731,7 +1731,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/lee-cronin-catalyzing-progress-through-chemistry")[lee-cronin-catalyzing-progress]],
-  table.cell[Microbial Interaction Simulation AI (Anthropic-built)],
+  table.cell[_Microbial Interaction Simulation AI (Anthropic-built)_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[5/20],
   table.cell[2/5],
@@ -1739,7 +1739,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/fungi-terra/")[fungi-terra]],
-  table.cell[Institute for Human Perplexity],
+  table.cell[_Institute for Human Perplexity_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[5/20],
   table.cell[2/5],
@@ -1747,7 +1747,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[2],
   table.cell[#link("https://worlds.existentialhope.com/world/uniqualia/")[uniqualia]],
-  table.cell[Gene Drives for Wild Animal Suffering Reduction],
+  table.cell[_Gene Drives for Wild Animal Suffering Reduction_],
   table.cell[Ecological & Regenerative Systems],
   table.cell[2/20],
   table.cell[4/5],
@@ -1755,7 +1755,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Convene],
   table.cell[4],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-pearce-a-future-without-suffering")[david-pearce-a-future-without-]],
-  table.cell[Focused Philanthropic Bet Modeled on Warren Weaver / Rock...],
+  table.cell[_Focused Philanthropic Bet Modeled on Warren Weaver / Rock..._],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[3/20],
   table.cell[3/5],
@@ -1763,7 +1763,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[6],
   table.cell[#link("https://www.existentialhope.com/podcasts/eric-gilliam-what-history-can-teach-us-about-doing-better-science")[eric-gilliam-what-history-can-]],
-  table.cell[Jurisdictional Arbitrage Special Economic Zones for BCI R...],
+  table.cell[_Jurisdictional Arbitrage Special Economic Zones for BCI R..._],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[4/20],
   table.cell[2/5],
@@ -1771,7 +1771,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[5],
   table.cell[#link("https://www.existentialhope.com/podcasts/trent-mcconaghy-from-starships-to-tokens-pioneering-futures")[trent-mcconaghy-from-starships]],
-  table.cell[Affective and Socio-Emotional Atmospheric Reading System],
+  table.cell[_Affective and Socio-Emotional Atmospheric Reading System_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[4/20],
   table.cell[2/5],
@@ -1779,7 +1779,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[5],
   table.cell[#link("https://worlds.existentialhope.com/world/edusafe/")[edusafe]],
-  table.cell[AI-driven individualized peace education system],
+  table.cell[_AI-driven individualized peace education system_],
   table.cell[Education, Development & Human Flouri...],
   table.cell[4/20],
   table.cell[2/5],
@@ -1787,7 +1787,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/unified-peace/")[unified-peace]],
-  table.cell[Elective Cryonic Suspension at Peak Vitality ('Kyasia')],
+  table.cell[_Elective Cryonic Suspension at Peak Vitality ('Kyasia')_],
   table.cell[Biotech, Medicine & Life Extension],
   table.cell[4/20],
   table.cell[1/5],
@@ -1795,7 +1795,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Advocate],
   table.cell[2],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-pearce-a-future-without-suffering")[david-pearce-a-future-without-]],
-  table.cell[Earth AI],
+  table.cell[_Earth AI_],
   table.cell[Economic Systems & Resource Distribution],
   table.cell[3/20],
   table.cell[2/5],
@@ -1803,7 +1803,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/protopia-peace-project/")[protopia-peace-project]],
-  table.cell[Neural Linguistic Interfaces],
+  table.cell[_Neural Linguistic Interfaces_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[2/20],
   table.cell[3/5],
@@ -1811,7 +1811,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[4],
   table.cell[#link("https://worlds.existentialhope.com/world/unity-through-diversity/")[unity-through-diversity]],
-  table.cell[Phenomenal Binding-Based Sentient AI Architecture],
+  table.cell[_Phenomenal Binding-Based Sentient AI Architecture_],
   table.cell[Neurotechnology & Brain-Computer Inte...],
   table.cell[1/20],
   table.cell[3/5],
@@ -1819,7 +1819,7 @@ The remaining 170 entities form the watch list — systems worth tracking but no
   table.cell[Research],
   table.cell[1],
   table.cell[#link("https://www.existentialhope.com/podcasts/david-pearce-a-future-without-suffering")[david-pearce-a-future-without-]],
-  table.cell[Grabby Aliens Three-Parameter Model],
+  table.cell[_Grabby Aliens Three-Parameter Model_],
   table.cell[Scientific Research & Knowledge Infra...],
   table.cell[0/20],
   table.cell[2/5],
@@ -1842,12 +1842,12 @@ Working concepts exist but lack capital to scale.
 
 _Watch list_ (7 entities):
 - The Collective of Inner Weavers (Bottleneck: Funding)
-- Project Hieroglyph (Bottleneck: Funding)
+- #link("https://hieroglyph.asu.edu/")[Project Hieroglyph] (Bottleneck: Funding)
 - Closed-loop gene therapy for seizure suppression via activity-sensing potassium-channel upregulation (Bottleneck: Regulation)
-- Openwater universal diagnostic/therapeutic device (Bottleneck: Regulation)
-- Biophilic Architecture (Bottleneck: Funding)
-- Focused Research Organizations (FROs) (Bottleneck: Funding)
-- BBN-style Applied R&D Contractor (New BBNs) (Bottleneck: Coordination)
+- #link("https://www.openwater.health/")[Openwater] universal diagnostic/therapeutic device (Bottleneck: Regulation)
+- #link("https://en.wikipedia.org/wiki/Biophilic_design")[Biophilic Architecture] (Bottleneck: Funding)
+- #link("https://www.convergentresearch.org/about-fros")[Focused Research Organizations (FROs)] (Bottleneck: Funding)
+- #link("https://en.wikipedia.org/wiki/Raytheon_BBN")[BBN]-style Applied R&D Contractor (New BBNs) (Bottleneck: Coordination)
 
 === Build (17 entities)
 
@@ -1855,13 +1855,13 @@ The research is done and the path is clear. What's missing is engineering teams 
 
 _Watch list_ (17 entities):
 - Translation Language Models (TLMs) with citizen-owned training databases (Bottleneck: Coordination)
-- The Delphi Collaboration Protocol (Bottleneck: Coordination)
-- Lean FRO (interactive theorem proving infrastructure for mathematics and AI) (Bottleneck: Engineering)
+- The #link("https://en.wikipedia.org/wiki/Delphi_method")[Delphi] Collaboration Protocol (Bottleneck: Coordination)
+- #link("https://lean-lang.org/")[Lean FRO] (interactive theorem proving infrastructure for mathematics and AI) (Bottleneck: Engineering)
 - Large-scale AI-mediated deliberation system (Bottleneck: Engineering)
-- Deep Fision borehole nuclear reactor (Bottleneck: Regulation)
-- Safety-Netted DAOs (Bottleneck: Engineering)
-- Multiplicity.ai (Bottleneck: Engineering)
-- Futarchy (Bottleneck: Social Acceptance)
+- #link("https://deepfission.com/")[Deep Fission] borehole nuclear reactor (Bottleneck: Regulation)
+- Safety-Netted #link("https://en.wikipedia.org/wiki/Decentralized_autonomous_organization")[DAOs] (Bottleneck: Engineering)
+- #link("https://themultiplicity.ai/")[Multiplicity.ai] (Bottleneck: Engineering)
+- #link("https://en.wikipedia.org/wiki/Futarchy")[Futarchy] (Bottleneck: Social Acceptance)
 - Author Personal Knowledge Graph / Writing Corpus Utility (Bottleneck: Engineering)
 - Tool AI for Tool AI (Bottleneck: Engineering)
 - _...and 7 more_
@@ -1871,10 +1871,10 @@ _Watch list_ (17 entities):
 Promising directions that need more investigation before they're ready for deployment.
 
 _Spotlight:_
-- #link("#ai-cryptographic-oracle-with-zero-knowledge-iot-auditing-and-jury-dao")[_AI cryptographic oracle with zero-knowledge IoT auditing and jury-DAO_] — A fraud-resistance layer combining zero-knowledge proofs from IoT sensor data, AI anomaly detection, stake-slashing penalties, and a decentralized human jury for retroactive balance correction. (Bottleneck: Coordination)
-- #link("#moral-trade")[_Moral Trade_] — A mechanism by which people or groups with different moral priorities swap concessions so that each gets more of what they care about than unilateral action would yield. (Bottleneck: Coordination)
-- #link("#comprehensive-ai-services-drexler")[_Comprehensive AI Services (Drexler)_] — An architecture of many narrow, domain-limited superhuman AIs that interact competitively rather than a single general superintelligence, achieving safety through structural narrowness. (Bottleneck: Coordination)
-- #link("#wisdom-dao")[_Wisdom DAO_] — A decentralized autonomous organization where human citizens and AI systems jointly propose, deliberate, and vote on governance policy using weighted voting and blockchain transparency. (Bottleneck: Regulation)
+- #link("#ai-cryptographic-oracle-with-zero-knowledge-iot-auditing-and-jury-dao")[_AI cryptographic oracle with zero-knowledge IoT auditing and jury-DAO_] — A fraud-resistance layer combining #link("https://en.wikipedia.org/wiki/Zero-knowledge_proof")[zero-knowledge proofs] from IoT sensor data, AI anomaly detection, stake-slashing penalties, and a decentralized human jury for retroactive balance correction. (Bottleneck: Coordination)
+- #link("#moral-trade")[_Moral Trade_] — A mechanism by which people or groups with different moral priorities swap concessions so that each gets more of what they care about than unilateral action would yield. Concept originated by #link("https://en.wikipedia.org/wiki/Toby_Ord")[Toby Ord]. (Bottleneck: Coordination)
+- #link("#comprehensive-ai-services-drexler")[_Comprehensive AI Services (Drexler)_] — An architecture of many narrow, domain-limited superhuman AIs that interact competitively rather than a single general superintelligence, achieving safety through structural narrowness. Based on #link("https://www.fhi.ox.ac.uk/wp-content/uploads/Reframing_Superintelligence_FHI-TR-2019-1.1-1.pdf")[Eric Drexler's framework]. (Bottleneck: Coordination)
+- #link("#wisdom-dao")[_Wisdom DAO_] — A #link("https://en.wikipedia.org/wiki/Decentralized_autonomous_organization")[decentralized autonomous organization] where human citizens and AI systems jointly propose, deliberate, and vote on governance policy using weighted voting and #link("https://en.wikipedia.org/wiki/Blockchain")[blockchain] transparency. (Bottleneck: Regulation)
 
 _Watch list_ (64 entities):
 - Liberal/Popperian AGI Education Framework (Bottleneck: Physics)
@@ -1894,21 +1894,21 @@ _Watch list_ (64 entities):
 These need policy changes, regulatory frameworks, or public support to move forward.
 
 _Spotlight:_
-- #link("#tokenized-neural-data-sharing-with-selective-disclosure")[_Tokenized neural data sharing with selective disclosure_] — A privacy architecture for BCI systems in which neural data is tokenized so users can selectively disclose specific streams of thought or brain state while retaining others as private. (Bottleneck: Regulation)
-- #link("#interbeing-forum")[_Interbeing Forum_] — A rotating bioregional assembly that grants formal representation to ecosystems and future generations through human guardians advised by digital twin data. (Bottleneck: Regulation)
+- #link("#tokenized-neural-data-sharing-with-selective-disclosure")[_Tokenized neural data sharing with selective disclosure_] — A privacy architecture for #link("https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface")[BCI] systems in which neural data is tokenized so users can selectively disclose specific streams of thought or brain state while retaining others as private. (Bottleneck: Regulation)
+- #link("#interbeing-forum")[_Interbeing Forum_] — A rotating bioregional assembly that grants formal representation to ecosystems and future generations through human guardians advised by #link("https://en.wikipedia.org/wiki/Digital_twin")[digital twin] data. (Bottleneck: Regulation)
 - #link("#attack-dog-dao-for-climate")[_Attack Dog DAO for Climate_] — A DAO that funds and coordinates environmental litigation on behalf of legally-recognized natural entities, financed through tokenized litigation investment. (Bottleneck: Regulation)
-- #link("#accord-of-watersheds")[_Accord of Watersheds_] — An international treaty framework that organizes political cooperation around watershed and bioregional boundaries rather than national borders. (Bottleneck: Regulation)
+- #link("#accord-of-watersheds")[_Accord of Watersheds_] — An international treaty framework that organizes political cooperation around #link("https://en.wikipedia.org/wiki/Drainage_basin")[watershed] and bioregional boundaries rather than national borders. (Bottleneck: Regulation)
 - #link("#watershed-parliaments")[_Watershed Parliaments_] — Bioregional governance bodies organized around watershed boundaries rather than political borders, incorporating ecological feedback into formal decision-making. (Bottleneck: Regulation)
-- #link("#loyal-ai-assistance-fiduciary-ai-assistance")[_Loyal AI Assistance (Fiduciary AI Assistance)_] — A personal AI system explicitly designed to be loyal to the individual user's goals rather than to platform or advertiser interests, contrasted with current assistants like Siri or Alexa. (Bottleneck: Regulation)
+- #link("#loyal-ai-assistance-fiduciary-ai-assistance")[_Loyal AI Assistance (Fiduciary AI Assistance)_] — A personal AI system explicitly designed to be loyal to the individual user's goals rather than to platform or advertiser interests, contrasted with current assistants like Siri or Alexa. Based on #link("https://arxiv.org/abs/2308.02435")[fiduciary AI principles]. (Bottleneck: Regulation)
 
 _Watch list_ (33 entities):
-- LexNodes (Bottleneck: Regulation)
-- De novo designed universal flu vaccines (Neil King / Baker Lab platform) (Bottleneck: Regulation)
+- #link("https://lexdao.org/")[LexDAO] (Bottleneck: Regulation)
+- De novo designed universal flu vaccines (#link("https://www.ipd.uw.edu/")[Neil King] / #link("https://www.bakerlab.org/")[Baker Lab] platform) (Bottleneck: Regulation)
 - Hybrid Market impact bond ledger (Bottleneck: Regulation)
 - Mandatory Open-Source AI Release Policy (Bottleneck: Regulation)
-- Orare - AI-powered Futarchy governance system (Bottleneck: Social Acceptance)
+- #link("https://orare.world/")[Orare] - AI-powered Futarchy governance system (Bottleneck: Social Acceptance)
 - Global Personhood Token / Trust-of-Personhood Standard (Bottleneck: Regulation)
-- Integration of Brain Preservation into the Medical System (Bottleneck: Regulation)
+- Integration of #link("https://www.brainpreservation.org/")[Brain Preservation] into the Medical System (Bottleneck: Regulation)
 - Open-source AI-powered research funding and knowledge platform (Bottleneck: Regulation)
 - Interplanetary Cooperative (Bottleneck: Regulation)
 - The Flourishing Foundation (Bottleneck: Regulation)
@@ -1921,23 +1921,23 @@ The pieces exist separately — what's missing is coordination between stakehold
 _Spotlight:_
 - #link("#community-governed-ai-mesh-systems")[_Community-Governed AI Mesh Systems_] — Decentralized AI networks trained on locally governed data and stewarded by community trust circles rather than centralized corporate or state actors. (Bottleneck: Coordination)
 - #link("#universal-ai-learning-uncommons-ualu")[_Universal AI Learning UnCommons (UALU)_] — A federated governance institution that develops, maintains, and audits AI education tools through multi-stakeholder councils including elders, learners, and ethicists. (Bottleneck: Coordination)
-- #link("#bci-operating-system-bci-os")[_BCI Operating System (BCI-OS)_] — An open-source operating system layer for brain-computer interfaces that embeds agency evaluation, AI model compatibility, and privacy standards as core OS-level features. (Bottleneck: Coordination)
+- #link("#bci-operating-system-bci-os")[_BCI Operating System (BCI-OS)_] — An open-source operating system layer for #link("https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface")[brain-computer interfaces] that embeds agency evaluation, AI model compatibility, and privacy standards as core OS-level features. (Bottleneck: Coordination)
 - #link("#civic-systems-co-op")[_Civic Systems Co-Op_] — A global open-source consortium that develops and maintains ethical AI tools for municipal and community governance. (Bottleneck: Coordination)
 - #link("#interoperable-governance-protocol-stack")[_Interoperable Governance Protocol Stack_] — A shared technical and governance protocol layer that allows citizens to port digital identities, benefits, and credentials across distinct federated city-state systems, and enables AI systems across those jurisdictions to align resource allocation and crisis modeling. (Bottleneck: Regulation)
 - #link("#dao-governed-open-innovation-platform-for-tlm-documentation-and-training-data")[_DAO-governed open innovation platform for TLM documentation and training data_] — A DAO-based governance structure that mandates open-source documentation and community-sourced feedback loops for translation model development and adaptation. (Bottleneck: Coordination)
-- #link("#digital-twins-for-communities-and-ecosystems")[_Digital Twins for Communities and Ecosystems_] — Real-time digital models of communities and ecosystems that enable participatory future simulation with locally-owned data. (Bottleneck: Coordination)
-- #link("#the-global-deliberation-coordinator")[_The Global Deliberation Coordinator_] — A platform institution designed to coordinate global deliberative processes and collective decision-making specifically around AI governance. (Bottleneck: Coordination)
+- #link("#digital-twins-for-communities-and-ecosystems")[_Digital Twins for Communities and Ecosystems_] — Real-time #link("https://en.wikipedia.org/wiki/Digital_twin")[digital models] of communities and ecosystems that enable participatory future simulation with locally-owned data. (Bottleneck: Coordination)
+- #link("#the-global-deliberation-coordinator")[_The Global Deliberation Coordinator_] — A platform institution designed to coordinate global #link("https://en.wikipedia.org/wiki/Deliberative_democracy")[deliberative processes] and collective decision-making specifically around AI governance. (Bottleneck: Coordination)
 - #link("#epistemic-stack")[_Epistemic stack_] — A citation and provenance system for all information—from newspaper articles to social media claims—that lets users trace any assertion back to its raw data sources, with trust scores based on historical accuracy of each link in the chain. (Bottleneck: Coordination)
 
 _Watch list_ (49 entities):
-- AI Fiduciaries (Bottleneck: Coordination)
+- #link("https://arxiv.org/abs/2308.02435")[AI Fiduciaries] (Bottleneck: Coordination)
 - Privacy-Preserving Global Regulatory Markets for AI Verification (Bottleneck: Coordination)
 - Continuity Guild (Bottleneck: Coordination)
 - BioEcho Mesh (Bottleneck: Coordination)
 - The Mnemosyne Assembly (Bottleneck: Coordination)
 - Open Cognition Ledger (Bottleneck: Coordination)
 - Living Rights Network (Bottleneck: Coordination)
-- Federated Procurement Platforms (Bottleneck: Coordination)
+- #link("https://en.wikipedia.org/wiki/OpenProcurement")[Federated Procurement Platforms] (Bottleneck: Coordination)
 - contextual autonomy (Bottleneck: Coordination)
 - Publishing for Machines (machine-readable scientific publishing framework) (Bottleneck: Social Acceptance)
 - _...and 39 more_
