@@ -67,7 +67,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "AI Safety, Alignment & Governance",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Coordination",
     "action": "Convene"
   },
@@ -868,7 +868,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "Decentralized & Democratic Institutions",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Social Acceptance",
     "action": "Research"
   },
@@ -1327,7 +1327,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "AI Safety, Alignment & Governance",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Regulation",
     "action": "Advocate"
   },
@@ -1606,7 +1606,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "Scientific Research & Knowledge Infrastructure",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Coordination",
     "action": "Convene"
   },
@@ -1642,7 +1642,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "AI Safety, Alignment & Governance",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Coordination",
     "action": "Convene"
   },
@@ -1660,7 +1660,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "Education, Development & Human Flourishing",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Coordination",
     "action": "Convene"
   },
@@ -1669,7 +1669,7 @@
     "dacc_total": 12,
     "transformative": 3,
     "group": "AI Safety, Alignment & Governance",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Coordination",
     "action": "Convene"
   },
@@ -1678,7 +1678,7 @@
     "dacc_total": 10,
     "transformative": 3,
     "group": "AI-Mediated Deliberation & Collective Intelligence",
-    "tier": 1,
+    "tier": 2,
     "bottleneck": "Coordination",
     "action": "Convene"
   },

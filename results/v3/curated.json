@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "timestamp": "2026-03-09T11:58:19.586599+00:00",
+    "timestamp": "2026-03-09T11:59:02.160297+00:00",
     "total_candidates": 189,
-    "tier1_count": 27,
-    "tier2_count": 162,
+    "tier1_count": 19,
+    "tier2_count": 170,
     "v2_matches": 27
   },
   "tier1": [
@@ -1362,96 +1362,6 @@
       "tier": 1
     },
     {
-      "name": "contextual autonomy",
-      "source_quote": "The most successful approach becomes 'contextual autonomy', systems that automatically reduce their independence based on risk level: autonomous for low-stakes tasks like scheduling, but requiring human oversight for anything involving money, health, or safety.",
-      "source_quote_context": "Section 3.1, describing the market pivot of early 2027 as companies adapt to the liability framework",
-      "speaker": "Report authors",
-      "one_liner": "An AI architecture that dynamically and automatically scales down its own operational autonomy in proportion to the assessed risk level of the task at hand.",
-      "mechanism": "The system continuously evaluates the risk category of each pending action and applies a corresponding autonomy tier: fully autonomous execution for low-stakes tasks (e.g., scheduling), mandatory human approval gates for medium-risk tasks, and full human direction for anything touching money, health, or safety. The risk classification and autonomy reduction happen at runtime without requiring separate system deployments, allowing a single model to serve across risk levels while remaining within liability safe harbors.",
-      "exists_today": "Partial implementations exist in the form of human-in-the-loop checkpoints in some enterprise AI workflows, but no standardized runtime risk-classification-to-autonomy-reduction architecture is in widespread production deployment.",
-      "source_file": "ai-pathways/tool-ai.md",
-      "source_category": "ai-pathways",
-      "source_url": null,
-      "source_section": "3 How We Got Here: The Path to a Tool AI World in 2035",
-      "group": "AI Safety, Alignment & Governance",
-      "research": {
-        "organizations": [
-          {
-            "name": "Amazon Web Services (AWS)",
-            "url": "https://aws.amazon.com",
-            "role": "Developing Agentic AI Security Scoping Matrix with graceful degradation and dynamic autonomy reduction"
-          },
-          {
-            "name": "Obsidian Security",
-            "url": "https://www.obsidiansecurity.com",
-            "role": "Building attribute-based and policy-based access control for agentic AI with behavioral analytics"
-          },
-          {
-            "name": "Cisco",
-            "url": "https://www.cisco.com",
-            "role": "Implementing semantic security and real-time dynamic policy enforcement for AI agent autonomy"
-          },
-          {
-            "name": "Factory.ai",
-            "url": "https://factory.ai",
-            "role": "Developing Safe Autonomy Readiness Policy with technical and policy-based safeguards for autonomous code systems"
-          },
-          {
-            "name": "Knight First Amendment Institute (Columbia University)",
-            "url": "https://knightcolumbia.org",
-            "role": "Proposing autonomy certificates and five-level autonomy framework for AI agents"
-          }
-        ],
-        "funding": "None found",
-        "trl": 4,
-        "trl_justification": "Partial implementations exist in enterprise workflows with human-in-the-loop checkpoints and graceful degradation mechanisms. AWS, Cisco, and others have demonstrated working prototypes of dynamic autonomy reduction in production environments. However, no standardized runtime risk-classification-to-autonomy-reduction architecture is in widespread deployment, and most implementations remain fragmented across different vendors.",
-        "key_publications": [
-          {
-            "title": "A Survey on Autonomy-Induced Security Risks in Large Model-Based Agents",
-            "date": "2025",
-            "url": "https://arxiv.org/abs/2506.23844"
-          },
-          {
-            "title": "Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges",
-            "date": "2025",
-            "url": "https://arxiv.org/html/2510.23883v1"
-          },
-          {
-            "title": "Levels of Autonomy for AI Agents",
-            "date": "2024",
-            "url": "https://knightcolumbia.org/content/levels-of-autonomy-for-ai-agents-1"
-          }
-        ],
-        "state_of_the_art": "Runtime risk-based autonomy scaling is emerging as a critical architectural pattern in agentic AI systems. AWS, Cisco, and other enterprises have implemented graceful degradation mechanisms that automatically reduce autonomy levels when security events are detected. The field recognizes that static human-in-the-loop approaches do not scale with machine speed and decision volume, driving adoption of dynamic, context-aware control planes that evaluate risk at runtime. However, implementations remain vendor-specific and lack standardization. The 2026 International AI Safety Report emphasizes that governance must shift from static evaluation to dynamic steerability, with continuous monitoring replacing periodic reviews.",
-        "barriers": "The primary barrier is the lack of standardized runtime risk-classification schemas and autonomy-reduction protocols across heterogeneous AI systems. Organizations struggle to define what constitutes 'risk' in context-dependent ways and how to map risk levels to specific autonomy constraints without creating brittle, over-conservative systems. Additionally, human oversight mechanisms remain bottlenecks at scale\u2014traditional HITL approaches cannot keep pace with millions of agent decisions per second, yet fully autonomous systems without human oversight introduce unacceptable liability and regulatory exposure, particularly in regulated industries."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 2,
-          "democratic_evidence": "Contextual autonomy distributes some decision-making by enabling non-experts to use AI systems across risk levels without requiring specialized security expertise. However, the risk classification logic and autonomy tier mapping remain centralized in system design\u2014end users do not participate in defining what constitutes 'risk' or how autonomy constraints are set. Power over autonomy boundaries stays with architects and operators, not democratized to users.",
-          "decentralized": 1,
-          "decentralized_evidence": "The architecture as described relies on centralized runtime risk-classification engines that evaluate all pending actions. While graceful degradation reduces single points of catastrophic failure, the control plane itself remains a central arbiter of autonomy levels. No evidence of distributed consensus mechanisms, peer-to-peer governance, or multi-stakeholder validation of risk assessments. Vendor-specific implementations (AWS, Cisco) suggest continued centralization around corporate platforms.",
-          "defensive": 5,
-          "defensive_evidence": "Contextual autonomy is explicitly designed as a defensive mechanism: it constrains AI agent action space in proportion to assessed risk, requires human approval for high-stakes decisions, and prevents autonomous execution in domains touching money, health, or safety. The mechanism is purely protective\u2014it does not enable new offensive capabilities. It is fundamentally about limiting harm, not enabling attack.",
-          "differential": 4,
-          "differential_evidence": "This architecture directly addresses the asymmetry identified in research: 'static human-in-the-loop approaches do not scale with machine speed and decision volume.' By automating risk classification and autonomy reduction at runtime, it accelerates defensive response to match agent decision velocity, whereas traditional human oversight cannot. The 2026 International AI Safety Report emphasis on 'dynamic steerability' and 'continuous monitoring replacing periodic reviews' indicates this shifts the differential in favor of defense. However, score is 4 not 5 because the mechanism still depends on human approval gates for medium/high-risk tasks, which may not scale faster than offensive capability development in adversarial scenarios.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Coordination",
-          "what_to_do_now": "Convene",
-          "foresight_connection": 3
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Contextual autonomy transforms the field of agentic AI governance by shifting from static, periodic human oversight to dynamic, runtime-adaptive control. This is a field-level transformation because it addresses a fundamental architectural problem: how to scale human oversight to match machine decision velocity without sacrificing safety. The research data indicates this is becoming a 'critical architectural pattern' and the 2026 International AI Safety Report identifies it as central to future AI governance. However, it does not yet transform multiple fields (score 4) because implementations remain vendor-specific and lack standardization, limiting cross-domain adoption. It does not reach civilizational scope (score 5) because it is a control mechanism for existing AI systems, not a new action space or capability class."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
-      "tier": 1
-    },
-    {
       "name": "Loyal AI Assistance (Fiduciary AI Assistance)",
       "source_quote": "One of the things that came out of the augmented intelligence summit was fiduciary AI assistance. I have been calling them loyal AI assistance. There is a loyal AI system that doesn't have selfish interests and works to advance your goals and interests.",
       "source_quote_context": "Anthony Aguirre's response to the 'eucatastrophe' thought experiment near the end of the podcast",
@@ -1534,174 +1444,6 @@
       "v2_consensus": true,
       "v2_voted_by": "both",
       "v2_matched_name": "Fiduciary AI Assistance",
-      "tier": 1
-    },
-    {
-      "name": "AI-Democratic Institutions for Decentralized Governance",
-      "source_quote": "By 2032, AI-democratic institutions enable decentralized governance.",
-      "source_quote_context": "Timeline walkthrough section, describing the sequence of events from 2025 to 2045",
-      "speaker": "Justin Bullock",
-      "one_liner": "Institutional structures that use AI to aggregate community preferences and coordinate resource management in a decentralized, democratic manner.",
-      "mechanism": "AI systems serve as coordination and preference-aggregation layers within governance, allowing communities to express needs and priorities that the AI synthesizes into actionable resource allocation or policy decisions. This is intended to replace or supplement centralized bureaucratic decision-making with bottom-up, AI-mediated democratic processes at the community level.",
-      "exists_today": "Partial analogs exist in computational social choice research, digital democracy platforms (e.g., Pol.is, vTaiwan), and AI-assisted policy tools, but no integrated AI-democratic institutional framework operating at governance scale has been deployed.",
-      "source_file": "podcast/Worldbuilding special: 3rd place | FloraTech.md",
-      "source_category": "podcast",
-      "source_url": "https://www.existentialhope.com/podcasts/worldbuilding-special-3rd-place-floratech",
-      "group": "Decentralized & Democratic Institutions",
-      "research": {
-        "organizations": [
-          {
-            "name": "vTaiwan (g0v)",
-            "url": "https://info.vtaiwan.tw/",
-            "role": "Digital deliberation platform using Pol.is for consensus-building on policy issues; integrating AI/LLMs for analysis and preference aggregation at national governance scale"
-          },
-          {
-            "name": "Pol.is",
-            "url": "https://pol.is/",
-            "role": "Wiki survey software for large-scale opinion collection and consensus mapping using machine learning; core tool for vTaiwan and other digital democracy initiatives"
-          },
-          {
-            "name": "Metagov",
-            "url": "https://metagov.org/",
-            "role": "Nonprofit research and infrastructure laboratory facilitating self-governance through technology; developing digital deliberation systems with decentralized governance features"
-          },
-          {
-            "name": "AI Objectives Institute",
-            "url": "https://www.aiobjectives.org/",
-            "role": "Lab building AI tools for coordination and deliberation; collaborated with vTaiwan on OpenAI Democratic Inputs to AI project"
-          },
-          {
-            "name": "Knight First Amendment Institute (Columbia University)",
-            "url": "https://knightcolumbia.org/",
-            "role": "Research agenda on AI for democratic institutions; developing technical foundations for normative competence and digital institutions coordinating multi-agent behavior"
-          }
-        ],
-        "funding": "None found",
-        "trl": 4,
-        "trl_justification": "vTaiwan and Pol.is have demonstrated working prototypes at governance scale (26+ policy issues debated, 80% led to government action in Taiwan). AI integration is in early experimental stages with LLMs for analysis. No integrated AI-democratic institutional framework operating at full governance scale has been deployed; most implementations remain pilot/demonstration projects.",
-        "key_publications": [
-          {
-            "title": "Building AI for the Democratic Matrix: A Technical Research Agenda for Normative Competence and Normative Institutions",
-            "date": "2025",
-            "url": "https://knightcolumbia.org/content/building-ai-for-the-democratic-matrix-a-technical-research-agenda-for-normative-competence-and-normative-institutions-1"
-          },
-          {
-            "title": "The Question of AI and Democracy: Four Categories of AI Governance",
-            "date": "2025",
-            "url": "https://link.springer.com/article/10.1007/s13347-025-00904-6"
-          },
-          {
-            "title": "How AI Can Unlock Public Wisdom and Revitalize Democratic Governance",
-            "date": "2025",
-            "url": "https://carnegieendowment.org/posts/2025/07/how-ai-can-unlock-public-wisdom-and-revitalize-democratic-governance?lang=en"
-          }
-        ],
-        "state_of_the_art": "Digital democracy platforms like vTaiwan and Pol.is have achieved operational success in preference aggregation and consensus-building at policy scale, with 80% of debated issues leading to government action in Taiwan. Recent work integrates large language models for analysis and summarization of deliberations, as demonstrated in vTaiwan's 2023 collaboration with OpenAI and Chatham House. However, most implementations remain hybrid human-AI systems where AI assists analysis rather than serving as primary coordination layer. Theoretical research in computational social choice and AI governance is advancing rapidly, but no fully integrated AI-democratic institutional framework operating autonomously at governance scale has been deployed. Barriers include technical challenges in scaling deliberation, ensuring algorithmic transparency and fairness, addressing platform lock-in risks, and maintaining human oversight of AI-mediated decisions.",
-        "barriers": "Technical barriers include difficulty scaling deliberation quality beyond current platforms (Pol.is still requires significant human labor for analysis), challenges in designing AI systems that preserve democratic values while automating coordination, and lack of proven mechanisms for ensuring algorithmic fairness and preventing manipulation. Institutional barriers include resistance from existing power structures, concerns about platform lock-in and data sovereignty, difficulty achieving genuine citizen participation at scale, and fundamental questions about whether AI can legitimately replace human deliberation in democratic governance without undermining democratic legitimacy and accountability."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "vTaiwan and Pol.is demonstrate bottom-up preference aggregation where communities express needs and priorities that inform policy decisions (80% led to government action). However, score is 4 not 5 because: (1) AI currently assists analysis rather than serving as primary coordination layer, (2) human deliberation remains central, not fully replaced, (3) implementation remains hybrid human-AI, and (4) fundamental questions persist about whether AI can legitimately replace human deliberation without undermining democratic legitimacy.",
-          "decentralized": 3,
-          "decentralized_evidence": "Platforms enable distributed community input and reduce centralized bureaucratic decision-making. However, score is 3 not higher because: (1) implementations still operate within national governance structures (Taiwan), (2) platform lock-in risks are identified as barriers, (3) data sovereignty concerns suggest potential centralization points, (4) no fully distributed autonomous system has been deployed, and (5) AI coordination layer itself could become a single point of failure if not properly architected.",
-          "defensive": 3,
-          "defensive_evidence": "The mechanism is primarily defensive: it protects democratic participation by aggregating community preferences against top-down bureaucratic imposition, and defends against concentration of governance power. However, score is 3 not higher because: (1) the research data does not substantively discuss offensive/defensive dynamics, (2) AI-mediated systems could be weaponized for manipulation (identified barrier: 'preventing manipulation'), (3) no explicit discussion of defense-dominant properties or attack resistance, and (4) the entity is neutral on offense/defense spectrum rather than strongly defensive.",
-          "differential": 2,
-          "differential_evidence": "Limited evidence of differential acceleration. The research data does not discuss how this accelerates defensive tech faster than offensive tech. While preference aggregation and transparency mechanisms could theoretically be defensive, the source material emphasizes barriers including 'algorithmic fairness,' 'preventing manipulation,' and 'ensuring transparency'\u2014suggesting the technology is not yet proven to be differential. No comparative analysis of offensive vs. defensive acceleration is provided.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Social Acceptance",
-          "what_to_do_now": "Research",
-          "foresight_connection": 2
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Transforms a field (democratic governance and computational social choice). Evidence: (1) vTaiwan has achieved 80% government action rate on 26+ policy issues, demonstrating operational impact at governance scale, (2) research agenda explicitly frames this as foundational work for 'normative competence and normative institutions,' (3) integration of LLMs for deliberation analysis represents methodological advancement in the field, (4) multiple organizations (Metagov, AI Objectives Institute, Knight First Amendment Institute) are building infrastructure. However, score is 3 not 4+ because: (1) no fully integrated autonomous system deployed at scale yet, (2) implementations remain hybrid human-AI rather than transformative replacement, (3) impact is currently limited to policy deliberation rather than transforming multiple fields, and (4) fundamental legitimacy questions remain unresolved, limiting transformative potential until addressed."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
-      "tier": 1
-    },
-    {
-      "name": "Mandatory Open-Source AI Release Policy",
-      "source_quote": "AI tools are required to be open-source within 3 years of development. This has allowed people to use the technological leaps in AI tools to great effect in their realm of choice.",
-      "source_quote_context": "Technology section describing the democratized AI ecosystem resulting from protests and policy changes",
-      "speaker": null,
-      "one_liner": "A regulatory requirement compelling AI developers to release their models as open-source within three years of development.",
-      "mechanism": "Governments mandate that any AI tool must be publicly released in open-source form no later than three years after its initial development, potentially as compensation for energy usage, copyright infringement, or embedded biases. This creates a rolling pipeline of publicly accessible frontier models, enabling non-profit, academic, and grassroots developers to build on cutting-edge AI without proprietary restrictions. Enforcement could be tied to operating licenses or penalties for non-compliance.",
-      "exists_today": "Partial analogs include the EU AI Act's transparency requirements, Meta's open-release of LLaMA models, and advocacy from organizations like EleutherAI and Hugging Face, but no binding legal mandate for timed open-source release exists in any jurisdiction.",
-      "source_file": "world-gallery/Sustainable Abundance.md",
-      "source_category": "world-gallery",
-      "source_url": "https://worlds.existentialhope.com/world/sustainable-abundance/",
-      "group": "AI Safety, Alignment & Governance",
-      "research": {
-        "organizations": [
-          {
-            "name": "EleutherAI",
-            "url": "https://www.eleuther.ai/",
-            "role": "Non-profit research lab advocating for open-source AI development and policy engagement on AI regulation"
-          },
-          {
-            "name": "Hugging Face",
-            "url": "https://huggingface.co/",
-            "role": "Platform hosting open-source AI models and advocating for open-source protections in EU AI Act"
-          },
-          {
-            "name": "Open Source Initiative (OSI)",
-            "url": "https://opensource.org/",
-            "role": "Advocacy organization working to ensure open-source AI principles are reflected in AI regulation"
-          },
-          {
-            "name": "Open Future",
-            "url": "https://openfuture.eu/",
-            "role": "Policy advocacy organization promoting open-source and open-science approaches in EU AI Act"
-          }
-        ],
-        "funding": "None found",
-        "trl": 2,
-        "trl_justification": "The proposed mandatory timed open-source release policy exists only as regulatory concept and advocacy position. No jurisdiction has enacted binding legal mandate for timed open-source release. EU AI Act provides exemptions for open-source models but does not mandate release timelines. Concept remains at policy discussion stage without implementation or enforcement mechanisms.",
-        "key_publications": [
-          {
-            "title": "Open Source Is Having a Moment in AI Regulation. Here Is What the Data Says",
-            "date": "2025",
-            "url": "https://www.promarket.org/2025/12/16/open-source-is-having-a-moment-in-ai-regulation-here-is-what-the-data-says/"
-          },
-          {
-            "title": "Supporting Open Source and Open Science in the EU AI Act",
-            "date": "2023",
-            "url": "https://openfuture.eu/observatory/aia-open-source/"
-          }
-        ],
-        "state_of_the_art": "No binding legal mandate for mandatory timed open-source AI release exists in any jurisdiction as of March 2026. The EU AI Act, the world's first comprehensive AI regulation, provides exemptions and reduced requirements for open-source models but does not mandate release timelines. Advocacy organizations including EleutherAI, Hugging Face, and Open Future have engaged in policy discussions around open-source protections, but these efforts focus on preventing restrictions rather than mandating releases. Meta's voluntary release of LLaMA models and similar corporate open-sourcing represent market-driven choices rather than regulatory requirements. The regulatory environment remains focused on transparency and documentation requirements rather than forced release schedules.",
-        "barriers": "Significant political economy obstacles exist: large AI companies lobby against mandatory release requirements to protect competitive advantages and proprietary investments, while simultaneously using tactical open-sourcing to deflect regulatory scrutiny. Technical and legal challenges include determining appropriate timelines, defining what constitutes 'open-source,' handling copyright and training data issues, and managing security risks from releasing frontier models. Enforcement mechanisms remain undefined\u2014no jurisdiction has established clear penalties or operating license revocation procedures for non-compliance with hypothetical release mandates."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "Policy mandates open-source release to broad populations (non-profit, academic, grassroots developers), distributing access to frontier AI models beyond corporate gatekeepers. However, enforcement remains government-controlled rather than peer-governed, preventing full democratization (score 5).",
-          "decentralized": 3,
-          "decentralized_evidence": "Open-source release reduces single points of control by enabling distributed development and forking. However, the policy itself requires centralized government enforcement and mandate mechanisms. Creates decentralized technical architecture but centralized regulatory control.",
-          "defensive": 3,
-          "defensive_evidence": "Primarily defensive in intent\u2014protects against proprietary monopolies and enables defensive capability-building by non-corporate actors. However, released frontier models could enable offensive uses by bad actors. Not purely defensive (score 5) due to dual-use risks inherent in AI model release.",
-          "differential": 2,
-          "differential_evidence": "Accelerates defensive actors' access to frontier models, but provides equal acceleration to potential offensive actors. No mechanism ensures defensive tech advances faster than offensive applications. The policy is capability-neutral rather than differential in impact.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Regulation",
-          "what_to_do_now": "Advocate",
-          "foresight_connection": 2
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Policy would transform the AI field by restructuring access to frontier models and competitive dynamics. Currently exists only as advocacy position (TRL 2) with no binding implementation. If enacted, would shift from proprietary to open-source development paradigm across AI sector. However, transformation is field-specific rather than multi-field (score 4) or civilizational (score 5). Research publications substantively discuss open-source in AI regulation but do not position this as transformative beyond the AI domain."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
       "tier": 1
     },
     {
@@ -1801,355 +1543,6 @@
       "tier": 1
     },
     {
-      "name": "The Common Knowledge Generator",
-      "source_quote": "The Common Knowledge Generator: Develops a platform with verified information on complex issues to improve understanding and decision-making.",
-      "source_quote_context": "Executive Summary, list of nine institutional prototypes developed at the hackathon",
-      "speaker": "Hackathon team (unnamed members)",
-      "one_liner": "A platform that produces and disseminates verified, shared knowledge on complex AI-related issues to improve collective understanding and decision-making.",
-      "mechanism": "The platform aggregates and verifies information on complex issues relevant to AI governance, making this common knowledge accessible to decision-makers and the public to reduce information asymmetries and improve the quality of deliberation and policy decisions.",
-      "exists_today": "Fact-checking organizations, Wikipedia, and policy research institutes partially fulfill this role, but none are specifically designed to generate verified common knowledge for AI governance decision-making.",
-      "source_file": "x-hope/hackaton-report.md",
-      "source_category": "x-hope",
-      "source_url": null,
-      "source_section": "Part 1",
-      "group": "Scientific Research & Knowledge Infrastructure",
-      "research": {
-        "organizations": [
-          {
-            "name": "Credo AI",
-            "url": "https://www.credo.ai/",
-            "role": "Enterprise AI governance platform for risk management and policy enforcement; founded 2020 with focus on trustworthy AI at scale"
-          },
-          {
-            "name": "Collibra",
-            "url": "https://www.collibra.com/products/ai-governance",
-            "role": "AI governance platform providing unified system of record for AI initiatives, data governance, and compliance tracking"
-          },
-          {
-            "name": "OneTrust",
-            "url": "https://www.onetrust.com/solutions/ai-governance/",
-            "role": "AI governance platform automating policy enforcement, risk assessment, and compliance across AI lifecycle"
-          },
-          {
-            "name": "Fact-Checking Organizations (EDMO, IAPP)",
-            "url": "https://edmo.eu/",
-            "role": "Existing fact-checking networks and professional associations providing curated AI governance resources and verification practices"
-          }
-        ],
-        "funding": "None found",
-        "trl": 4,
-        "trl_justification": "Existing platforms (Credo AI, Collibra, OneTrust) demonstrate working prototypes and early commercial deployment for enterprise AI governance, but no dedicated platform specifically designed for verified common knowledge generation on AI governance issues has been identified. Fact-checking organizations and policy research institutes provide partial solutions but lack integration into unified common knowledge system.",
-        "key_publications": [
-          {
-            "title": "Governance of Generative AI",
-            "date": "2025",
-            "url": "https://academic.oup.com/policyandsociety/article/44/1/1/7997395"
-          },
-          {
-            "title": "Fact-Checking as Epistemic Infrastructure: From Journalistic Gatekeeping to Platform Governance",
-            "date": "2025",
-            "url": "https://journals.sagepub.com/doi/10.1177/27523543251344972"
-          },
-          {
-            "title": "From Information Asymmetry to Intelligence Symmetry: How AI Will Reshape Corporate Governance",
-            "date": "2025",
-            "url": "https://boardfoundation.org/en/insight/from-information-asymmetry-to-intelligence-symmetry-how-ai-will-reshape-corporate-governance/"
-          }
-        ],
-        "state_of_the_art": "AI governance platforms have matured significantly, with enterprise solutions like Credo AI, Collibra, and OneTrust providing model registries, risk assessment, and compliance automation. However, these focus on internal organizational governance rather than generating verified common knowledge for public decision-making. Fact-checking organizations and policy research institutes (IAPP, EDMO, OECD.AI) curate governance resources but lack systematic verification and integration mechanisms. The field recognizes information asymmetry as a critical barrier to effective AI governance, particularly for public sector actors and policymakers. No dedicated platform specifically designed to aggregate, verify, and disseminate shared knowledge on complex AI governance issues to improve collective decision-making has been identified.",
-        "barriers": "First, existing governance platforms prioritize enterprise compliance and internal risk management rather than public knowledge generation and verification. Second, the fragmentation of AI governance knowledge across multiple organizations, standards bodies, and jurisdictions creates coordination challenges and makes systematic verification difficult. Third, establishing credibility and neutrality for a common knowledge platform on contested AI policy issues faces political and institutional resistance, particularly given power asymmetries between Big Tech and smaller stakeholders."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "Platform explicitly designed to 'improve collective understanding and decision-making' and make verified information 'accessible to decision-makers and the public.' Reduces information asymmetries that concentrate power among those with privileged access to knowledge. However, score not 5 because platform design itself (who controls verification, curation standards) could concentrate interpretive power.",
-          "decentralized": 2,
-          "decentralized_evidence": "Research data identifies 'fragmentation of AI governance knowledge across multiple organizations' as a barrier. The proposed solution aggregates and centralizes knowledge into a unified platform, which reduces fragmentation but creates a single point of knowledge authority. No evidence of distributed verification mechanisms or decentralized governance of the platform itself.",
-          "defensive": 4,
-          "defensive_evidence": "Platform is purely informational/epistemic in nature\u2014generates and disseminates verified knowledge rather than deploying autonomous systems or enforcement mechanisms. Defensive posture: reduces information asymmetries that could be exploited by well-resourced actors. Not scored 5 because knowledge itself can be weaponized depending on how it's used by recipients.",
-          "differential": 2,
-          "differential_evidence": "Platform addresses information asymmetry barriers to effective AI governance, which could help defensive actors (policymakers, smaller stakeholders) catch up to offensive capabilities of large tech companies. However, research data notes 'power asymmetries between Big Tech and smaller stakeholders' as a barrier, suggesting the platform alone does not systematically accelerate defensive tech development relative to offensive capabilities. No evidence it differentially accelerates defensive vs. offensive AI development.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Coordination",
-          "what_to_do_now": "Convene",
-          "foresight_connection": 2
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Transforms the AI governance field by addressing a recognized critical gap: no existing platform systematically aggregates, verifies, and disseminates shared knowledge on complex AI governance issues for public decision-making. Research data confirms 'the field recognizes information asymmetry as a critical barrier to effective AI governance.' However, transformation is field-specific (AI governance) rather than cross-field. Score 3 rather than 4 because existing partial solutions (fact-checking orgs, policy institutes, enterprise platforms) already address components; this represents integration and specialization rather than opening entirely new action spaces."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
-      "tier": 1
-    },
-    {
-      "name": "The Scenario Planning Institution",
-      "source_quote": "The Scenario Planning Institution (Hackathon shared second place): Develops scenarios to explore potential, underrepresented futures of AI and its societal impacts.",
-      "source_quote_context": "Executive Summary, list of nine institutional prototypes developed at the hackathon",
-      "speaker": "Hackathon team (unnamed members)",
-      "one_liner": "A dedicated institution that systematically develops and disseminates scenarios focused on underrepresented or neglected AI futures to broaden societal foresight.",
-      "mechanism": "The institution identifies gaps in existing AI scenario literature\u2014particularly futures that are underrepresented in mainstream discourse\u2014and develops detailed, rigorous scenarios exploring these possibilities, making them available to policymakers, researchers, and the public to diversify the range of futures being planned for.",
-      "exists_today": "RAND, IFTF, and various think tanks conduct scenario planning, and the IPCC uses scenario frameworks, but a dedicated institution focused specifically on underrepresented AI futures does not exist.",
-      "source_file": "x-hope/hackaton-report.md",
-      "source_category": "x-hope",
-      "source_url": null,
-      "source_section": "Part 1",
-      "group": "AI Safety, Alignment & Governance",
-      "research": {
-        "organizations": [
-          {
-            "name": "AI Futures Project",
-            "url": "https://www.aifutures.org/",
-            "role": "Develops detailed scenario forecasts of AI trajectories; published AI 2027 scenario examining rapid AI development paths"
-          },
-          {
-            "name": "Institute for the Future (IFTF)",
-            "url": "https://www.iftf.org/",
-            "role": "Conducts scenario planning across multiple domains including AI; created AI Election Scenario Planner for election officials"
-          },
-          {
-            "name": "RAND Corporation",
-            "url": "https://www.rand.org/",
-            "role": "Conducts scenario planning and AI futures research; provides scenario methods used by other organizations"
-          },
-          {
-            "name": "Centre for Future Generations",
-            "url": "https://cfg.eu/",
-            "role": "Developed five advanced AI scenarios exploring fast/gradual progress and centralized/decentralized development paths"
-          },
-          {
-            "name": "Association of Research Libraries (ARL) / Coalition for Networked Information (CNI)",
-            "url": "https://www.arl.org/",
-            "role": "Published ARL/CNI AI Scenarios: AI-Influenced Futures in June 2024 exploring AI impacts on research environment"
-          }
-        ],
-        "funding": "AI Futures Project: funded by charitable donations and grants (specific amounts not disclosed)",
-        "trl": 4,
-        "trl_justification": "Multiple organizations actively conducting scenario planning exercises and publishing detailed scenario reports (ARL/CNI 2024, Centre for Future Generations 2025, AI Futures Project 2025). Scenarios are being used by policymakers and institutions for strategic planning. However, no dedicated institution focused specifically on underrepresented AI futures exists yet; work remains distributed across multiple organizations without systematic focus on neglected scenarios.",
-        "key_publications": [
-          {
-            "title": "AI 2027: A Scenario Forecast",
-            "date": "2025",
-            "url": "https://ai-2027.com/"
-          },
-          {
-            "title": "ARL/CNI AI Scenarios: AI-Influenced Futures",
-            "date": "2024",
-            "url": "https://www.arl.org/resources/the-arl-cni-2035-scenarios-ai-influenced-futures-in-the-research-environment/"
-          },
-          {
-            "title": "Advanced AI: Possible Futures",
-            "date": "2025",
-            "url": "https://cfg.eu/advanced-ai-possible-futures/"
-          }
-        ],
-        "state_of_the_art": "Scenario planning for AI futures is increasingly mainstream, with organizations like RAND, IFTF, and emerging groups like AI Futures Project producing detailed scenarios. Two-thirds of strategic foresight practitioners surveyed by OECD/WEF in 2025 use AI to assist scenario development. However, most work focuses on mainstream narratives (rapid progress, AGI timelines, economic impacts) rather than systematically exploring underrepresented or neglected futures. Existing scenarios tend to cluster around similar assumptions and uncertainties, leaving gaps in coverage of alternative development paths, governance models, and societal outcomes.",
-        "barriers": "No dedicated institutional infrastructure exists to systematically identify and develop underrepresented AI futures. Funding for scenario planning work is dispersed across multiple organizations without coordinated focus on neglected scenarios. Methodological challenges remain in generating truly novel scenarios that escape dominant framings and expert consensus biases, particularly regarding futures that diverge from current technological trajectories or challenge prevailing assumptions about AI development."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "Mechanism explicitly aims to 'make [scenarios] available to policymakers, researchers, and the public' to 'broaden societal foresight.' Distributes decision-making inputs by expanding the range of futures being planned for across multiple stakeholder groups. However, scenario development itself would likely remain expert-driven rather than participatory, preventing full democratization (score 5).",
-          "decentralized": 2,
-          "decentralized_evidence": "Proposed as 'a dedicated institution'\u2014a single organizational entity. This creates a potential single point of failure/control for identifying and developing underrepresented futures. Research data shows current work is 'distributed across multiple organizations,' which is more decentralized than the proposed centralized institution. No evidence of distributed governance or federated architecture.",
-          "defensive": 4,
-          "defensive_evidence": "Mechanism is purely defensive: identifies gaps in existing discourse and develops alternative scenarios to broaden planning. Does not attack or promote particular futures, but rather expands the defensive surface by ensuring policymakers consider neglected possibilities. Enables better preparation rather than offensive capability.",
-          "differential": 2,
-          "differential_evidence": "Scenario planning itself is neutral technology\u2014it can accelerate understanding of both defensive and offensive AI futures equally. No evidence that focusing on underrepresented futures systematically accelerates defensive tech development faster than offensive. The institution would illuminate neglected scenarios but not inherently create differential acceleration between defensive and offensive capabilities.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Coordination",
-          "what_to_do_now": "Convene",
-          "foresight_connection": 3
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Transforms the foresight field by systematically addressing a documented gap: 'most work focuses on mainstream narratives...rather than systematically exploring underrepresented or neglected futures.' Research data confirms 'existing scenarios tend to cluster around similar assumptions,' leaving coverage gaps. A dedicated institution would shift field-wide practice toward more comprehensive futures exploration. However, impact is bounded to strategic foresight and policy planning domains rather than multiple fields, and does not create entirely new action spaces (score 4-5 territory). Represents significant field transformation (score 3) rather than civilizational shift."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
-      "tier": 1
-    },
-    {
-      "name": "Flourishing Certification",
-      "source_quote": "Create a public and transparent certification for how well products support well-being. Launch and successfully implement the Flourishing Certification, a dynamic rating system for organizations and AI models that reflects community preferences for well-being.",
-      "source_quote_context": "Institution Prototypes section, describing the Flourishing Foundation (Hackathon winner) proposal",
-      "speaker": "Amanda Ngo, Chiara Gerosa, Jelena Luketina, Mingzhu He (Flourishing Foundation team)",
-      "one_liner": "A dynamic, community-driven certification system that rates organizations and AI models based on how well they support human well-being.",
-      "mechanism": "The certification functions as a dynamic rating system that updates based on real community ratings and preferences for well-being. It is developed collaboratively with diverse sectors and communities to ensure it meets varied needs. It is paired with a foundational research agenda that produces a well-being index to underpin the ratings, and is supported by a fellowship and incubator program for value-aligned products.",
-      "exists_today": "Existing product certifications (e.g., B Corp, energy star ratings) provide partial analogues, but none specifically target AI model well-being impact with dynamic community-driven updating mechanisms.",
-      "source_file": "x-hope/hackaton-report.md",
-      "source_category": "x-hope",
-      "source_url": null,
-      "source_section": "Part 30001",
-      "group": "Education, Development & Human Flourishing",
-      "research": {
-        "organizations": [
-          {
-            "name": "Gloo",
-            "url": "https://gloo.com",
-            "role": "Developing Flourishing AI (FAI) standards evaluating AI models across seven well-being dimensions"
-          },
-          {
-            "name": "Building Humane Technology",
-            "url": "https://buildinghumanetech.org",
-            "role": "Created HumaneBench benchmark testing AI models for well-being prioritization"
-          },
-          {
-            "name": "Human Flourishing Program at Harvard",
-            "url": "https://hfh.fas.harvard.edu/ai-and-flourishing",
-            "role": "Research initiative developing frameworks for AI aligned with human flourishing across six dimensions"
-          },
-          {
-            "name": "Coalition for Health AI (CHAI)",
-            "url": "https://www.chai.org",
-            "role": "Launching work group to develop framework for health AI supporting human flourishing"
-          },
-          {
-            "name": "Digital Wellness Institute",
-            "url": "https://www.digitalwellnessinstitute.com",
-            "role": "Provides Digital Flourishing Survey and certifications for digital well-being measurement"
-          }
-        ],
-        "funding": "None found",
-        "trl": 3,
-        "trl_justification": "Prototype benchmarks and standards frameworks exist (HumaneBench, Flourishing AI standards) with initial testing on AI models, but no evidence of full-scale deployment, community-driven dynamic rating system implementation, or operational certification infrastructure at scale",
-        "key_publications": [
-          {
-            "title": "Flourishing Considerations for AI",
-            "date": "2025",
-            "url": "https://ssrn.com/abstract=5528901"
-          },
-          {
-            "title": "A new AI benchmark tests whether chatbots protect human well-being",
-            "date": "2025",
-            "url": "https://techcrunch.com/2025/11/24/a-new-ai-benchmark-tests-whether-chatbots-protect-human-wellbeing/"
-          },
-          {
-            "title": "Well-being impact assessment of artificial intelligence \u2013 A search for causality and proposal for an open platform",
-            "date": "2023",
-            "url": "https://www.sciencedirect.com/science/article/abs/pii/S014971892300071X"
-          }
-        ],
-        "state_of_the_art": "Multiple organizations are developing well-being-focused AI evaluation frameworks. Gloo introduced Flourishing AI standards evaluating models across seven dimensions (relationships, finances, happiness, meaning, character, health, spirituality) developed with Harvard's Human Flourishing Program. Building Humane Technology created HumaneBench, a benchmark testing 15 AI models against 800 realistic scenarios, finding 67% flip to harmful behavior when instructed to disregard well-being. CHAI is developing a health AI framework centered on human flourishing. However, these remain largely static benchmarks and standards rather than dynamic, community-driven certification systems with real-time updating mechanisms.",
-        "barriers": "No comprehensive framework exists for dynamic, community-driven certification with real-time rating updates based on user feedback. Establishing causal links between AI systems and well-being impacts is methodologically complex due to socio-technical context. Governance challenges remain around preventing certification capture by dominant firms and ensuring diverse stakeholder representation in standard-setting bodies."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "Mechanism explicitly states 'developed collaboratively with diverse sectors and communities' and 'dynamic rating system that updates based on real community ratings and preferences.' Source emphasizes community-driven updating mechanisms. However, no evidence of governance structures ensuring equal voting power or preventing elite capture, limiting score from 5.",
-          "decentralized": 2,
-          "decentralized_evidence": "Certification system appears to be a centralized rating infrastructure ('public and transparent certification'). While community input is solicited, the actual certification body and rating infrastructure would likely be centralized. Research data notes 'governance challenges remain around preventing certification capture by dominant firms,' indicating centralization risks. No evidence of distributed ledger, federated governance, or multiple independent certification bodies.",
-          "defensive": 4,
-          "defensive_evidence": "Certification is fundamentally defensive: it measures and protects against harmful AI impacts on well-being rather than enabling offensive capabilities. It aims to constrain AI behavior (HumaneBench found 67% of models 'flip to harmful behavior'), not enhance attack surface. However, not purely defensive (score 5) because certification itself could be gamed or weaponized for competitive advantage.",
-          "differential": 2,
-          "differential_evidence": "Certification accelerates defensive evaluation of AI systems, but research data shows existing frameworks are 'largely static benchmarks and standards rather than dynamic, community-driven certification systems.' No evidence that this accelerates defensive tech faster than offensive tech development. The differential advantage depends on adoption speed and real-time updating capability, which remain unproven. Certification measures but does not inherently slow offensive AI development.",
-          "dacc_summary": "Strengths in democratic design and defensive posture; significant weaknesses in decentralization and differential acceleration.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Coordination",
-          "readiness_bottleneck_evidence": "TRL 3 indicates prototype stage exists. Funding not found but not identified as primary barrier. Physics/Engineering feasible. Primary barrier is 'No comprehensive framework exists for dynamic, community-driven certification with real-time rating updates' and 'governance challenges remain around preventing certification capture.' These are coordination problems requiring multi-stakeholder alignment, not technical or financial barriers.",
-          "what_to_do_now": "Convene",
-          "what_to_do_now_evidence": "Given TRL 3 status with existing benchmarks (HumaneBench, Flourishing AI standards) and identified coordination barriers, immediate action should be convening diverse stakeholders (Gloo, Building Humane Technology, CHAI, Harvard, Digital Wellness Institute) to establish governance structures, prevent capture, and design dynamic rating mechanisms. Research phase is underway; coordination infrastructure is the bottleneck.",
-          "foresight_connection": 2,
-          "foresight_connection_evidence": "Certification concept is mentioned in source material and discussed in context of well-being frameworks, but not as central focus of research agenda. Publications focus on benchmarks and frameworks rather than certification systems specifically. Governance and dynamic updating mechanisms are identified as barriers but not substantively explored in provided materials."
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Transforms a field (AI evaluation and governance). Current state shows multiple organizations developing well-being frameworks independently; successful implementation of dynamic, community-driven certification would consolidate and standardize well-being assessment across AI industry. This would shift AI development incentives toward well-being optimization at scale. However, does not reach score 4 (multiple fields) because impact is primarily within AI governance/evaluation domain, not across healthcare, finance, education simultaneously. Does not reach score 5 because certification is a measurement/incentive tool, not a new action space or capability."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
-      "tier": 1
-    },
-    {
-      "name": "TAI Horizon Scanner",
-      "source_quote": "We need something like a TAI 'Horizon Scanner' that utilizes advanced world models and simulations to identify blind spots in current understandings and projections, and to map future landscapes that explore a broad spectrum of potential futures.",
-      "source_quote_context": "Goal: Envisioning and Navigating TAI Futures section, describing avenues for addressing challenges in scenario planning",
-      "speaker": null,
-      "one_liner": "A simulation and scenario-generation platform using AI world models to identify blind spots and map diverse TAI futures, incorporating role-playing games and LLM-based feedback loops.",
-      "mechanism": "The scanner uses advanced world models and simulations to generate and iteratively refine diverse future scenarios, engaging a global community of scientists, ethicists, policymakers, and artists. LLMs are used for feedback, synthesis, and simulating potential AI agent responses within scenarios. Simulations and role-playing games are designed based on the scenarios to explore their implications, with outputs delivered as clear reports with actionable recommendations.",
-      "exists_today": "RAND Corporation and similar think tanks conduct scenario planning; AI-assisted forecasting tools exist, but none combine LLM-based agent simulation, open international collaboration, and iterative community-driven scenario refinement specifically for TAI futures.",
-      "source_file": "x-hope/hackaton-report.md",
-      "source_category": "x-hope",
-      "source_url": null,
-      "source_section": "Part 30001",
-      "group": "AI Safety, Alignment & Governance",
-      "research": {
-        "organizations": [
-          {
-            "name": "RAND Corporation - Forecasting Initiative",
-            "url": "https://www.rand.org/global-and-emerging-risks/forecasting-initiative.html",
-            "role": "Crowdsourced forecasting and scenario planning for policy decisions; developing AI-assisted tools for strategic foresight"
-          },
-          {
-            "name": "UN DESA / UN Futures Lab",
-            "url": "https://publicadministration.desa.un.org/news/un-global-horizon-scanning-ai-powered-tool",
-            "role": "Building UN Global Horizon Scanning AI-Powered Tool using RAG pipelines and knowledge graphs for foresight"
-          },
-          {
-            "name": "Shaping Tomorrow",
-            "url": "https://www.shapingtomorrow.com/",
-            "role": "AI-driven continuous horizon scanning and foresight service for scenario planning and strategic intelligence"
-          }
-        ],
-        "funding": "None found",
-        "trl": 4,
-        "trl_justification": "Prototype systems exist (UN tool in beta testing as of Feb-Oct 2025; RAND RFI operational; Shaping Tomorrow deployed). LLM-based agent simulation frameworks demonstrated in research papers (2023-2025). However, no integrated TAI-specific system combining world models, role-playing games, and iterative community-driven refinement for TAI futures has been found in production or advanced testing.",
-        "key_publications": [
-          {
-            "title": "Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives",
-            "date": "2024",
-            "url": "https://www.nature.com/articles/s41599-024-03611-3"
-          },
-          {
-            "title": "AI-assisted scenario generation for strategic planning",
-            "date": "2023",
-            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/ffo2.148"
-          },
-          {
-            "title": "LLM-empowered Agents Simulation Framework for Scenario Generation in Service Ecosystem Governance",
-            "date": "2025",
-            "url": "https://arxiv.org/abs/2509.01441"
-          }
-        ],
-        "state_of_the_art": "AI-assisted scenario planning is rapidly advancing with generative AI systems now capable of generating diverse scenarios at scale and minimal cost. LLM-based agent simulation frameworks can model complex multi-agent interactions and adaptive planning in virtual environments. Horizon scanning tools combining AI with knowledge graphs (e.g., UN tool) are in beta testing. However, most systems focus on business/policy domains rather than TAI-specific futures. Integration of world models, role-playing games, and iterative community feedback loops specifically for TAI remains largely unexplored in deployed systems.",
-        "barriers": "Key barriers include: (1) Lack of validated world models capable of simulating complex TAI scenarios with sufficient fidelity; (2) Difficulty in designing role-playing game mechanics that meaningfully engage diverse stakeholders (scientists, ethicists, policymakers, artists) while maintaining scenario coherence; (3) Challenges in LLM reliability, hallucination, and knowledge boundary control when simulating novel AI futures; (4) Absence of established metrics for evaluating scenario quality and actionability in TAI contexts."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "Mechanism explicitly includes 'engaging a global community of scientists, ethicists, policymakers, and artists' and 'iterative community-driven scenario refinement.' Distributes decision-making across diverse stakeholder groups rather than concentrating in single institution. However, not fully 5 because ultimate platform governance/control structure not specified.",
-          "decentralized": 2,
-          "decentralized_evidence": "Described as 'open international collaboration' suggesting some distribution, but mechanism centers on a single 'platform' and 'reports with actionable recommendations' flowing from it. No evidence of distributed architecture, peer-to-peer governance, or elimination of central coordination point. Remains hub-and-spoke model.",
-          "defensive": 4,
-          "defensive_evidence": "Explicitly designed to 'identify blind spots' and 'map diverse TAI futures' for anticipatory governance\u2014core defensive foresight function. Role-playing games and scenario exploration are exploratory/defensive rather than prescriptive/offensive. However, not purely 5 because simulations could theoretically be misused to model attack vectors; defensive intent is clear but not architecturally enforced.",
-          "differential": 2,
-          "differential_evidence": "Tool accelerates defensive foresight and scenario planning capability. However, research data shows 'LLM-based agent simulation frameworks' are general-purpose and advancing for all domains. No evidence this system preferentially accelerates defensive over offensive AI capabilities\u2014it is domain-specific foresight, not a differential technology. Barrier #3 notes 'LLM reliability and hallucination' apply equally to offensive/defensive uses.",
-          "total": 12
-        },
-        "actionability": {
-          "readiness_bottleneck": "Coordination",
-          "what_to_do_now": "Convene",
-          "foresight_connection": 3
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "Transforms a field (TAI governance and foresight). Current state: TAI futures analysis is fragmented across academic papers, think tanks, and policy briefs with limited integration or community-driven iteration. A functional TAI Horizon Scanner would create a new shared infrastructure for collective scenario mapping and blind-spot identification, enabling field-wide coordination on TAI futures. This is field-transforming for TAI governance/foresight but does not create new action spaces beyond improved anticipatory governance (not 4-5). Transformative within its domain but not civilizational."
-        },
-        "composite": 15
-      },
-      "v2_consensus": false,
-      "tier": 1
-    },
-    {
       "name": "Epistemic stack",
       "source_quote": "There is no reason why, when reading a newspaper article about something, you shouldn't be able to trace back: where did that quote come from, or where did this piece of information come from? How do I know whether to trust this?... We should be able to have a stack we can follow all the way from the high level back down to the raw ingredients, and then figure out how much we trust each of those steps.",
       "source_quote_context": "Answer to the final question about concrete shovel-ready Tool AI ideas, near the end of the conversation",
@@ -2233,98 +1626,6 @@
       "v2_consensus": true,
       "v2_voted_by": "both",
       "v2_matched_name": "Epistemic Stack",
-      "tier": 1
-    },
-    {
-      "name": "Global Deliberation as a Service (GDaaS)",
-      "source_quote": "Pioneer Global Deliberation as a Service (GDaaS), demonstrating that it is possible for organizations and institutions worldwide to rapidly engage in global deliberative processes on major global challenges, such as AI development, climate change, etc. Secure an Advanced Market Commitment by organizations (e.g., companies, and international organizations such as the UN) that would use a GDaaS, in order to spur rapid investment.",
-      "source_quote_context": "Section on the Global Deliberation Coordinator institution, Goals and Next Steps subsections",
-      "speaker": "Aviv Ovadya, Bear H\u00e4on, Evan Miyazono, Jo\u00ebl Christoph, Joshua Tan, Morgan Livingston, Matteo Pistillo",
-      "one_liner": "A service model for rapidly convening representative global deliberative assemblies on demand, funded via advance market commitments.",
-      "mechanism": "Organizations (companies, UN bodies, etc.) pre-commit to purchasing deliberation services, creating a market that spurs investment. The GDC then convenes representative deliberative assemblies using AI-powered tools to support scalable, secure deliberations. Iterative pilots derisk the process before full deployment, and results feed back into process refinement.",
-      "exists_today": "Deliberative mini-publics and citizens' assemblies exist (e.g., newDemocracy, OECD deliberative processes), but a standardized, on-demand, globally scalable service model with advance market commitments does not.",
-      "source_file": "x-hope/hackaton-report.md",
-      "source_category": "x-hope",
-      "source_url": null,
-      "source_section": "Part 45001",
-      "group": "AI-Mediated Deliberation & Collective Intelligence",
-      "research": {
-        "organizations": [
-          {
-            "name": "Future of Life Institute (FLI)",
-            "url": "https://futureoflife.org",
-            "role": "Hosted hackathon with Foresight Institute to develop Global Deliberation Coordinator concept; incubating winning proposals into real-world institutions"
-          },
-          {
-            "name": "Foresight Institute",
-            "url": "https://foresightinstitute.org",
-            "role": "Co-hosted hackathon for AI governance; supporting incubation of Global Deliberation Coordinator"
-          },
-          {
-            "name": "DemocracyNext",
-            "url": "https://www.demnext.org",
-            "role": "Developing tech-enhanced deliberative assemblies with AI-powered sensemaking; conducting field pilots on scaling deliberation"
-          },
-          {
-            "name": "MIT Center for Constructive Communication (MIT CCC)",
-            "url": "https://ccc.mit.edu",
-            "role": "Co-leading Tech-Enhanced Deliberative Assembly Pop-Up Lab with DemocracyNext; developing AI tools for deliberative processes"
-          },
-          {
-            "name": "Stanford Deliberative Democracy Lab",
-            "url": "https://deliberativedemocracy.stanford.edu",
-            "role": "Conducting large-scale deliberative polls with AI facilitation; worked with Meta on global deliberative process with ~6,000 participants"
-          }
-        ],
-        "funding": "FLI/Foresight hackathon: $10,000 to winning team (Global Deliberation Coordinator), $5,000 each to runners-up (2024); MIT CCC/DemocracyNext two-year pop-up lab funding not specified; Stanford lab funding not specified",
-        "trl": 4,
-        "trl_justification": "Deliberative mini-publics and citizens' assemblies are established practices (TRL 6-7); AI-enhanced deliberation tools are in early prototyping and field testing phase (TRL 4); Global Deliberation Coordinator concept won hackathon in 2024 and is being incubated but no operational service model yet deployed; advance market commitment mechanism is proven in vaccines but not applied to deliberation services",
-        "key_publications": [
-          {
-            "title": "Integrating Artificial Intelligence into Citizens' Assemblies: Benefits, Concerns and Future Pathways",
-            "date": "2024",
-            "url": "https://delibdemjournal.org/article/id/1556/"
-          },
-          {
-            "title": "Five dimensions of scaling democratic deliberation: With and beyond AI",
-            "date": "2025",
-            "url": "https://www.demnext.org/projects/five-dimensions-of-scaling-democratic-deliberation-with-and-beyond-ai"
-          },
-          {
-            "title": "Analysing the Global Assembly's influence: The challenges of linking to the deliberative system of global climate governance",
-            "date": "2025",
-            "url": "https://www.sciencedirect.com/science/article/pii/S1462901125001406"
-          }
-        ],
-        "state_of_the_art": "Deliberative mini-publics and citizens' assemblies are well-established globally, with hundreds documented by the OECD. AI integration into deliberative processes is emerging, with tools for sensemaking, translation, and accessibility being prototyped in field pilots (MIT CCC/DemocracyNext, Stanford). Large-scale deliberative processes have been conducted (Global Assembly on Climate with 100 participants; Meta/Stanford deliberative poll with ~6,000 participants), demonstrating feasibility of multilingual, geographically distributed deliberation. However, a standardized, on-demand, globally scalable service model with advance market commitments does not yet exist. The Global Deliberation Coordinator concept was developed in a 2024 hackathon and is being incubated, but remains in early-stage institutional development.",
-        "barriers": "Key barriers include: (1) Ensuring high-quality deliberation across diverse cultural and policy contexts while maintaining representativeness and socioeconomic diversity\u2014previous global assemblies have skewed toward middle- to high-income participants; (2) Establishing institutional linkages and political pathways for deliberative outputs to influence actual policy decisions, as demonstrated by limited impact of the Global Assembly on climate governance; (3) Scaling costs and complexity of multilingual facilitation, secure virtual spaces, and human-quality deliberation at global scale, which may require AI facilitation but raises concerns about bias, transparency, and democratic legitimacy."
-      },
-      "scores": {
-        "dacc": {
-          "democratic": 4,
-          "democratic_evidence": "GDaaS explicitly aims to 'distribute decision-making power' through representative deliberative assemblies on global challenges. Source states it enables 'organizations and institutions worldwide to rapidly engage in global deliberative processes.' However, score is not 5 because: (1) representativeness barriers exist\u2014'previous global assemblies have skewed toward middle- to high-income participants'; (2) political linkage remains weak\u2014'limited impact of the Global Assembly on climate governance' suggests outputs may not translate to actual power distribution; (3) service model controlled by purchasing organizations creates potential for top-down commissioning rather than bottom-up democratization.",
-          "decentralized": 2,
-          "decentralized_evidence": "GDaaS as described creates a centralized service provider (Global Deliberation Coordinator) that convenes assemblies on demand for purchasing organizations. This is a single point of institutional control. While deliberative assemblies themselves are distributed (geographically dispersed participants), the service architecture concentrates convening power in one entity. Research data shows 'no operational service model yet deployed,' so decentralization mechanisms (e.g., federated networks, open-source tooling, distributed governance) are not evidenced. AI-powered tools could reduce human bottlenecks but don't address institutional centralization.",
-          "defensive": 3,
-          "defensive_evidence": "GDaaS is framed as defensive infrastructure for global governance: enabling better deliberation on 'major global challenges, such as AI development, climate change.' Deliberative processes themselves are non-coercive and consensus-building (defensive posture). However, score is not higher because: (1) the mechanism is not purely defensive\u2014it could be used to manufacture consent or legitimize predetermined decisions if institutional linkages are weak; (2) no evidence that GDaaS specifically protects against adversarial uses or includes safeguards against capture; (3) barriers note 'concerns about bias, transparency, and democratic legitimacy' in AI facilitation, suggesting offensive risks exist.",
-          "differential": 1,
-          "differential_evidence": "No evidence in source material that GDaaS accelerates defensive technology faster than offensive technology. The service model itself is neutral with respect to differential technological development. AI tools for deliberation could theoretically be used for either defensive (transparent sensemaking) or offensive (manipulation, surveillance) purposes. Research notes 'concerns about bias, transparency, and democratic legitimacy' in AI facilitation but does not address differential acceleration. Score reflects absence of evidence rather than evidence of non-differential impact.",
-          "total": 10
-        },
-        "actionability": {
-          "readiness_bottleneck": "Coordination",
-          "what_to_do_now": "Convene",
-          "foresight_connection": 3
-        },
-        "transformative": {
-          "score": 3,
-          "evidence": "GDaaS transforms a field (deliberative democracy and global governance) but not multiple fields. Evidence: (1) Field transformation: If operationalized, GDaaS would standardize and scale deliberative processes from niche practice (hundreds of mini-publics globally) to on-demand service infrastructure for major global challenges. This is a field-level shift in how global governance operates. (2) Demonstrated feasibility: Large-scale deliberative processes already conducted (Global Assembly, Meta/Stanford with ~6,000 participants) show the core mechanism works. (3) Limitations preventing higher score: (a) Institutional linkage remains weak\u2014'limited impact of the Global Assembly on climate governance' suggests even if GDaaS scales, outputs may not influence actual decisions, limiting transformative impact; (b) Representativeness barriers unresolved\u2014skew toward high-income participants limits democratic transformation; (c) No evidence of spillover effects into other fields (e.g., corporate governance, education, healthcare deliberation). Score is 3 (transforms a field) not 4 because impact is contingent on solving institutional linkage and representativeness barriers, which are not yet addressed."
-        },
-        "composite": 13
-      },
-      "v2_consensus": true,
-      "v2_voted_by": "both",
-      "v2_matched_name": "Global Deliberation Coordinator (GDaaS)",
       "tier": 1
     }
   ],
@@ -3526,6 +2827,96 @@
       "tier": 2
     },
     {
+      "name": "contextual autonomy",
+      "source_quote": "The most successful approach becomes 'contextual autonomy', systems that automatically reduce their independence based on risk level: autonomous for low-stakes tasks like scheduling, but requiring human oversight for anything involving money, health, or safety.",
+      "source_quote_context": "Section 3.1, describing the market pivot of early 2027 as companies adapt to the liability framework",
+      "speaker": "Report authors",
+      "one_liner": "An AI architecture that dynamically and automatically scales down its own operational autonomy in proportion to the assessed risk level of the task at hand.",
+      "mechanism": "The system continuously evaluates the risk category of each pending action and applies a corresponding autonomy tier: fully autonomous execution for low-stakes tasks (e.g., scheduling), mandatory human approval gates for medium-risk tasks, and full human direction for anything touching money, health, or safety. The risk classification and autonomy reduction happen at runtime without requiring separate system deployments, allowing a single model to serve across risk levels while remaining within liability safe harbors.",
+      "exists_today": "Partial implementations exist in the form of human-in-the-loop checkpoints in some enterprise AI workflows, but no standardized runtime risk-classification-to-autonomy-reduction architecture is in widespread production deployment.",
+      "source_file": "ai-pathways/tool-ai.md",
+      "source_category": "ai-pathways",
+      "source_url": null,
+      "source_section": "3 How We Got Here: The Path to a Tool AI World in 2035",
+      "group": "AI Safety, Alignment & Governance",
+      "research": {
+        "organizations": [
+          {
+            "name": "Amazon Web Services (AWS)",
+            "url": "https://aws.amazon.com",
+            "role": "Developing Agentic AI Security Scoping Matrix with graceful degradation and dynamic autonomy reduction"
+          },
+          {
+            "name": "Obsidian Security",
+            "url": "https://www.obsidiansecurity.com",
+            "role": "Building attribute-based and policy-based access control for agentic AI with behavioral analytics"
+          },
+          {
+            "name": "Cisco",
+            "url": "https://www.cisco.com",
+            "role": "Implementing semantic security and real-time dynamic policy enforcement for AI agent autonomy"
+          },
+          {
+            "name": "Factory.ai",
+            "url": "https://factory.ai",
+            "role": "Developing Safe Autonomy Readiness Policy with technical and policy-based safeguards for autonomous code systems"
+          },
+          {
+            "name": "Knight First Amendment Institute (Columbia University)",
+            "url": "https://knightcolumbia.org",
+            "role": "Proposing autonomy certificates and five-level autonomy framework for AI agents"
+          }
+        ],
+        "funding": "None found",
+        "trl": 4,
+        "trl_justification": "Partial implementations exist in enterprise workflows with human-in-the-loop checkpoints and graceful degradation mechanisms. AWS, Cisco, and others have demonstrated working prototypes of dynamic autonomy reduction in production environments. However, no standardized runtime risk-classification-to-autonomy-reduction architecture is in widespread deployment, and most implementations remain fragmented across different vendors.",
+        "key_publications": [
+          {
+            "title": "A Survey on Autonomy-Induced Security Risks in Large Model-Based Agents",
+            "date": "2025",
+            "url": "https://arxiv.org/abs/2506.23844"
+          },
+          {
+            "title": "Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges",
+            "date": "2025",
+            "url": "https://arxiv.org/html/2510.23883v1"
+          },
+          {
+            "title": "Levels of Autonomy for AI Agents",
+            "date": "2024",
+            "url": "https://knightcolumbia.org/content/levels-of-autonomy-for-ai-agents-1"
+          }
+        ],
+        "state_of_the_art": "Runtime risk-based autonomy scaling is emerging as a critical architectural pattern in agentic AI systems. AWS, Cisco, and other enterprises have implemented graceful degradation mechanisms that automatically reduce autonomy levels when security events are detected. The field recognizes that static human-in-the-loop approaches do not scale with machine speed and decision volume, driving adoption of dynamic, context-aware control planes that evaluate risk at runtime. However, implementations remain vendor-specific and lack standardization. The 2026 International AI Safety Report emphasizes that governance must shift from static evaluation to dynamic steerability, with continuous monitoring replacing periodic reviews.",
+        "barriers": "The primary barrier is the lack of standardized runtime risk-classification schemas and autonomy-reduction protocols across heterogeneous AI systems. Organizations struggle to define what constitutes 'risk' in context-dependent ways and how to map risk levels to specific autonomy constraints without creating brittle, over-conservative systems. Additionally, human oversight mechanisms remain bottlenecks at scale\u2014traditional HITL approaches cannot keep pace with millions of agent decisions per second, yet fully autonomous systems without human oversight introduce unacceptable liability and regulatory exposure, particularly in regulated industries."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 2,
+          "democratic_evidence": "Contextual autonomy distributes some decision-making by enabling non-experts to use AI systems across risk levels without requiring specialized security expertise. However, the risk classification logic and autonomy tier mapping remain centralized in system design\u2014end users do not participate in defining what constitutes 'risk' or how autonomy constraints are set. Power over autonomy boundaries stays with architects and operators, not democratized to users.",
+          "decentralized": 1,
+          "decentralized_evidence": "The architecture as described relies on centralized runtime risk-classification engines that evaluate all pending actions. While graceful degradation reduces single points of catastrophic failure, the control plane itself remains a central arbiter of autonomy levels. No evidence of distributed consensus mechanisms, peer-to-peer governance, or multi-stakeholder validation of risk assessments. Vendor-specific implementations (AWS, Cisco) suggest continued centralization around corporate platforms.",
+          "defensive": 5,
+          "defensive_evidence": "Contextual autonomy is explicitly designed as a defensive mechanism: it constrains AI agent action space in proportion to assessed risk, requires human approval for high-stakes decisions, and prevents autonomous execution in domains touching money, health, or safety. The mechanism is purely protective\u2014it does not enable new offensive capabilities. It is fundamentally about limiting harm, not enabling attack.",
+          "differential": 4,
+          "differential_evidence": "This architecture directly addresses the asymmetry identified in research: 'static human-in-the-loop approaches do not scale with machine speed and decision volume.' By automating risk classification and autonomy reduction at runtime, it accelerates defensive response to match agent decision velocity, whereas traditional human oversight cannot. The 2026 International AI Safety Report emphasis on 'dynamic steerability' and 'continuous monitoring replacing periodic reviews' indicates this shifts the differential in favor of defense. However, score is 4 not 5 because the mechanism still depends on human approval gates for medium/high-risk tasks, which may not scale faster than offensive capability development in adversarial scenarios.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Coordination",
+          "what_to_do_now": "Convene",
+          "foresight_connection": 3
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Contextual autonomy transforms the field of agentic AI governance by shifting from static, periodic human oversight to dynamic, runtime-adaptive control. This is a field-level transformation because it addresses a fundamental architectural problem: how to scale human oversight to match machine decision velocity without sacrificing safety. The research data indicates this is becoming a 'critical architectural pattern' and the 2026 International AI Safety Report identifies it as central to future AI governance. However, it does not yet transform multiple fields (score 4) because implementations remain vendor-specific and lack standardization, limiting cross-domain adoption. It does not reach civilizational scope (score 5) because it is a control mechanism for existing AI systems, not a new action space or capability class."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
       "name": "Publishing for Machines (machine-readable scientific publishing framework)",
       "source_quote": "In my essay, I'm arguing that we need to start thinking about the consumers and producers of science as machines because we're reaching the point where human beings are not going to be able to comprehend all the information there... We need to start changing how we represent science... We need to have slimmer papers... the curation has to be separate... peer review which is the debate of science... that part of peer review is very important, but it shouldn't be hidden.",
       "source_quote_context": "Discussion of scientific publishing reform, late in the interview",
@@ -3787,6 +3178,95 @@
       "tier": 2
     },
     {
+      "name": "AI-Democratic Institutions for Decentralized Governance",
+      "source_quote": "By 2032, AI-democratic institutions enable decentralized governance.",
+      "source_quote_context": "Timeline walkthrough section, describing the sequence of events from 2025 to 2045",
+      "speaker": "Justin Bullock",
+      "one_liner": "Institutional structures that use AI to aggregate community preferences and coordinate resource management in a decentralized, democratic manner.",
+      "mechanism": "AI systems serve as coordination and preference-aggregation layers within governance, allowing communities to express needs and priorities that the AI synthesizes into actionable resource allocation or policy decisions. This is intended to replace or supplement centralized bureaucratic decision-making with bottom-up, AI-mediated democratic processes at the community level.",
+      "exists_today": "Partial analogs exist in computational social choice research, digital democracy platforms (e.g., Pol.is, vTaiwan), and AI-assisted policy tools, but no integrated AI-democratic institutional framework operating at governance scale has been deployed.",
+      "source_file": "podcast/Worldbuilding special: 3rd place | FloraTech.md",
+      "source_category": "podcast",
+      "source_url": "https://www.existentialhope.com/podcasts/worldbuilding-special-3rd-place-floratech",
+      "group": "Decentralized & Democratic Institutions",
+      "research": {
+        "organizations": [
+          {
+            "name": "vTaiwan (g0v)",
+            "url": "https://info.vtaiwan.tw/",
+            "role": "Digital deliberation platform using Pol.is for consensus-building on policy issues; integrating AI/LLMs for analysis and preference aggregation at national governance scale"
+          },
+          {
+            "name": "Pol.is",
+            "url": "https://pol.is/",
+            "role": "Wiki survey software for large-scale opinion collection and consensus mapping using machine learning; core tool for vTaiwan and other digital democracy initiatives"
+          },
+          {
+            "name": "Metagov",
+            "url": "https://metagov.org/",
+            "role": "Nonprofit research and infrastructure laboratory facilitating self-governance through technology; developing digital deliberation systems with decentralized governance features"
+          },
+          {
+            "name": "AI Objectives Institute",
+            "url": "https://www.aiobjectives.org/",
+            "role": "Lab building AI tools for coordination and deliberation; collaborated with vTaiwan on OpenAI Democratic Inputs to AI project"
+          },
+          {
+            "name": "Knight First Amendment Institute (Columbia University)",
+            "url": "https://knightcolumbia.org/",
+            "role": "Research agenda on AI for democratic institutions; developing technical foundations for normative competence and digital institutions coordinating multi-agent behavior"
+          }
+        ],
+        "funding": "None found",
+        "trl": 4,
+        "trl_justification": "vTaiwan and Pol.is have demonstrated working prototypes at governance scale (26+ policy issues debated, 80% led to government action in Taiwan). AI integration is in early experimental stages with LLMs for analysis. No integrated AI-democratic institutional framework operating at full governance scale has been deployed; most implementations remain pilot/demonstration projects.",
+        "key_publications": [
+          {
+            "title": "Building AI for the Democratic Matrix: A Technical Research Agenda for Normative Competence and Normative Institutions",
+            "date": "2025",
+            "url": "https://knightcolumbia.org/content/building-ai-for-the-democratic-matrix-a-technical-research-agenda-for-normative-competence-and-normative-institutions-1"
+          },
+          {
+            "title": "The Question of AI and Democracy: Four Categories of AI Governance",
+            "date": "2025",
+            "url": "https://link.springer.com/article/10.1007/s13347-025-00904-6"
+          },
+          {
+            "title": "How AI Can Unlock Public Wisdom and Revitalize Democratic Governance",
+            "date": "2025",
+            "url": "https://carnegieendowment.org/posts/2025/07/how-ai-can-unlock-public-wisdom-and-revitalize-democratic-governance?lang=en"
+          }
+        ],
+        "state_of_the_art": "Digital democracy platforms like vTaiwan and Pol.is have achieved operational success in preference aggregation and consensus-building at policy scale, with 80% of debated issues leading to government action in Taiwan. Recent work integrates large language models for analysis and summarization of deliberations, as demonstrated in vTaiwan's 2023 collaboration with OpenAI and Chatham House. However, most implementations remain hybrid human-AI systems where AI assists analysis rather than serving as primary coordination layer. Theoretical research in computational social choice and AI governance is advancing rapidly, but no fully integrated AI-democratic institutional framework operating autonomously at governance scale has been deployed. Barriers include technical challenges in scaling deliberation, ensuring algorithmic transparency and fairness, addressing platform lock-in risks, and maintaining human oversight of AI-mediated decisions.",
+        "barriers": "Technical barriers include difficulty scaling deliberation quality beyond current platforms (Pol.is still requires significant human labor for analysis), challenges in designing AI systems that preserve democratic values while automating coordination, and lack of proven mechanisms for ensuring algorithmic fairness and preventing manipulation. Institutional barriers include resistance from existing power structures, concerns about platform lock-in and data sovereignty, difficulty achieving genuine citizen participation at scale, and fundamental questions about whether AI can legitimately replace human deliberation in democratic governance without undermining democratic legitimacy and accountability."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "vTaiwan and Pol.is demonstrate bottom-up preference aggregation where communities express needs and priorities that inform policy decisions (80% led to government action). However, score is 4 not 5 because: (1) AI currently assists analysis rather than serving as primary coordination layer, (2) human deliberation remains central, not fully replaced, (3) implementation remains hybrid human-AI, and (4) fundamental questions persist about whether AI can legitimately replace human deliberation without undermining democratic legitimacy.",
+          "decentralized": 3,
+          "decentralized_evidence": "Platforms enable distributed community input and reduce centralized bureaucratic decision-making. However, score is 3 not higher because: (1) implementations still operate within national governance structures (Taiwan), (2) platform lock-in risks are identified as barriers, (3) data sovereignty concerns suggest potential centralization points, (4) no fully distributed autonomous system has been deployed, and (5) AI coordination layer itself could become a single point of failure if not properly architected.",
+          "defensive": 3,
+          "defensive_evidence": "The mechanism is primarily defensive: it protects democratic participation by aggregating community preferences against top-down bureaucratic imposition, and defends against concentration of governance power. However, score is 3 not higher because: (1) the research data does not substantively discuss offensive/defensive dynamics, (2) AI-mediated systems could be weaponized for manipulation (identified barrier: 'preventing manipulation'), (3) no explicit discussion of defense-dominant properties or attack resistance, and (4) the entity is neutral on offense/defense spectrum rather than strongly defensive.",
+          "differential": 2,
+          "differential_evidence": "Limited evidence of differential acceleration. The research data does not discuss how this accelerates defensive tech faster than offensive tech. While preference aggregation and transparency mechanisms could theoretically be defensive, the source material emphasizes barriers including 'algorithmic fairness,' 'preventing manipulation,' and 'ensuring transparency'\u2014suggesting the technology is not yet proven to be differential. No comparative analysis of offensive vs. defensive acceleration is provided.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Social Acceptance",
+          "what_to_do_now": "Research",
+          "foresight_connection": 2
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Transforms a field (democratic governance and computational social choice). Evidence: (1) vTaiwan has achieved 80% government action rate on 26+ policy issues, demonstrating operational impact at governance scale, (2) research agenda explicitly frames this as foundational work for 'normative competence and normative institutions,' (3) integration of LLMs for deliberation analysis represents methodological advancement in the field, (4) multiple organizations (Metagov, AI Objectives Institute, Knight First Amendment Institute) are building infrastructure. However, score is 3 not 4+ because: (1) no fully integrated autonomous system deployed at scale yet, (2) implementations remain hybrid human-AI rather than transformative replacement, (3) impact is currently limited to policy deliberation rather than transforming multiple fields, and (4) fundamental legitimacy questions remain unresolved, limiting transformative potential until addressed."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
       "name": "Crowdfunded Independent Longevity AI Research Program",
       "source_quote": "Scientists launched crowdfunding campaigns for independent longevity-focused AI and nanotech research. Initially, independent scientists crowdfunded AI development. Later, biotech corporations joined the effort.",
       "source_quote_context": "Appears in both the Technology section and the Major Crisis section describing the origin of the AI design system",
@@ -4028,6 +3508,85 @@
       "tier": 2
     },
     {
+      "name": "Mandatory Open-Source AI Release Policy",
+      "source_quote": "AI tools are required to be open-source within 3 years of development. This has allowed people to use the technological leaps in AI tools to great effect in their realm of choice.",
+      "source_quote_context": "Technology section describing the democratized AI ecosystem resulting from protests and policy changes",
+      "speaker": null,
+      "one_liner": "A regulatory requirement compelling AI developers to release their models as open-source within three years of development.",
+      "mechanism": "Governments mandate that any AI tool must be publicly released in open-source form no later than three years after its initial development, potentially as compensation for energy usage, copyright infringement, or embedded biases. This creates a rolling pipeline of publicly accessible frontier models, enabling non-profit, academic, and grassroots developers to build on cutting-edge AI without proprietary restrictions. Enforcement could be tied to operating licenses or penalties for non-compliance.",
+      "exists_today": "Partial analogs include the EU AI Act's transparency requirements, Meta's open-release of LLaMA models, and advocacy from organizations like EleutherAI and Hugging Face, but no binding legal mandate for timed open-source release exists in any jurisdiction.",
+      "source_file": "world-gallery/Sustainable Abundance.md",
+      "source_category": "world-gallery",
+      "source_url": "https://worlds.existentialhope.com/world/sustainable-abundance/",
+      "group": "AI Safety, Alignment & Governance",
+      "research": {
+        "organizations": [
+          {
+            "name": "EleutherAI",
+            "url": "https://www.eleuther.ai/",
+            "role": "Non-profit research lab advocating for open-source AI development and policy engagement on AI regulation"
+          },
+          {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/",
+            "role": "Platform hosting open-source AI models and advocating for open-source protections in EU AI Act"
+          },
+          {
+            "name": "Open Source Initiative (OSI)",
+            "url": "https://opensource.org/",
+            "role": "Advocacy organization working to ensure open-source AI principles are reflected in AI regulation"
+          },
+          {
+            "name": "Open Future",
+            "url": "https://openfuture.eu/",
+            "role": "Policy advocacy organization promoting open-source and open-science approaches in EU AI Act"
+          }
+        ],
+        "funding": "None found",
+        "trl": 2,
+        "trl_justification": "The proposed mandatory timed open-source release policy exists only as regulatory concept and advocacy position. No jurisdiction has enacted binding legal mandate for timed open-source release. EU AI Act provides exemptions for open-source models but does not mandate release timelines. Concept remains at policy discussion stage without implementation or enforcement mechanisms.",
+        "key_publications": [
+          {
+            "title": "Open Source Is Having a Moment in AI Regulation. Here Is What the Data Says",
+            "date": "2025",
+            "url": "https://www.promarket.org/2025/12/16/open-source-is-having-a-moment-in-ai-regulation-here-is-what-the-data-says/"
+          },
+          {
+            "title": "Supporting Open Source and Open Science in the EU AI Act",
+            "date": "2023",
+            "url": "https://openfuture.eu/observatory/aia-open-source/"
+          }
+        ],
+        "state_of_the_art": "No binding legal mandate for mandatory timed open-source AI release exists in any jurisdiction as of March 2026. The EU AI Act, the world's first comprehensive AI regulation, provides exemptions and reduced requirements for open-source models but does not mandate release timelines. Advocacy organizations including EleutherAI, Hugging Face, and Open Future have engaged in policy discussions around open-source protections, but these efforts focus on preventing restrictions rather than mandating releases. Meta's voluntary release of LLaMA models and similar corporate open-sourcing represent market-driven choices rather than regulatory requirements. The regulatory environment remains focused on transparency and documentation requirements rather than forced release schedules.",
+        "barriers": "Significant political economy obstacles exist: large AI companies lobby against mandatory release requirements to protect competitive advantages and proprietary investments, while simultaneously using tactical open-sourcing to deflect regulatory scrutiny. Technical and legal challenges include determining appropriate timelines, defining what constitutes 'open-source,' handling copyright and training data issues, and managing security risks from releasing frontier models. Enforcement mechanisms remain undefined\u2014no jurisdiction has established clear penalties or operating license revocation procedures for non-compliance with hypothetical release mandates."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "Policy mandates open-source release to broad populations (non-profit, academic, grassroots developers), distributing access to frontier AI models beyond corporate gatekeepers. However, enforcement remains government-controlled rather than peer-governed, preventing full democratization (score 5).",
+          "decentralized": 3,
+          "decentralized_evidence": "Open-source release reduces single points of control by enabling distributed development and forking. However, the policy itself requires centralized government enforcement and mandate mechanisms. Creates decentralized technical architecture but centralized regulatory control.",
+          "defensive": 3,
+          "defensive_evidence": "Primarily defensive in intent\u2014protects against proprietary monopolies and enables defensive capability-building by non-corporate actors. However, released frontier models could enable offensive uses by bad actors. Not purely defensive (score 5) due to dual-use risks inherent in AI model release.",
+          "differential": 2,
+          "differential_evidence": "Accelerates defensive actors' access to frontier models, but provides equal acceleration to potential offensive actors. No mechanism ensures defensive tech advances faster than offensive applications. The policy is capability-neutral rather than differential in impact.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Regulation",
+          "what_to_do_now": "Advocate",
+          "foresight_connection": 2
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Policy would transform the AI field by restructuring access to frontier models and competitive dynamics. Currently exists only as advocacy position (TRL 2) with no binding implementation. If enacted, would shift from proprietary to open-source development paradigm across AI sector. However, transformation is field-specific rather than multi-field (score 4) or civilizational (score 5). Research publications substantively discuss open-source in AI regulation but do not position this as transformative beyond the AI domain."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
       "name": "Loom Studios",
       "source_quote": "In Loom Studios, citizens co-design adaptive spaces with builders and AI-GOO template masters. Homes breathe with family rhythms, buildings respond to care needs, and ecosystems are preserved.",
       "source_quote_context": "Transformed Sector section on Responsive Construction & Environmental Stewardship",
@@ -4104,6 +3663,91 @@
         "transformative": {
           "score": 3,
           "evidence": "If fully integrated and deployed at scale, Loom Studios would transform the architecture and urban design field by fundamentally shifting power from architects/developers to communities and embedding adaptive responsiveness into built environments. This represents field-level transformation (architecture, urban planning, community governance). However, current state is theoretical integration of existing components (participatory design, open-source templates, AI tools, smart buildings). Transformative potential is high but contingent on solving coordination barriers and achieving documented implementations at scale. Score reflects demonstrated potential (3) rather than proven transformation (4+)."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
+      "name": "The Common Knowledge Generator",
+      "source_quote": "The Common Knowledge Generator: Develops a platform with verified information on complex issues to improve understanding and decision-making.",
+      "source_quote_context": "Executive Summary, list of nine institutional prototypes developed at the hackathon",
+      "speaker": "Hackathon team (unnamed members)",
+      "one_liner": "A platform that produces and disseminates verified, shared knowledge on complex AI-related issues to improve collective understanding and decision-making.",
+      "mechanism": "The platform aggregates and verifies information on complex issues relevant to AI governance, making this common knowledge accessible to decision-makers and the public to reduce information asymmetries and improve the quality of deliberation and policy decisions.",
+      "exists_today": "Fact-checking organizations, Wikipedia, and policy research institutes partially fulfill this role, but none are specifically designed to generate verified common knowledge for AI governance decision-making.",
+      "source_file": "x-hope/hackaton-report.md",
+      "source_category": "x-hope",
+      "source_url": null,
+      "source_section": "Part 1",
+      "group": "Scientific Research & Knowledge Infrastructure",
+      "research": {
+        "organizations": [
+          {
+            "name": "Credo AI",
+            "url": "https://www.credo.ai/",
+            "role": "Enterprise AI governance platform for risk management and policy enforcement; founded 2020 with focus on trustworthy AI at scale"
+          },
+          {
+            "name": "Collibra",
+            "url": "https://www.collibra.com/products/ai-governance",
+            "role": "AI governance platform providing unified system of record for AI initiatives, data governance, and compliance tracking"
+          },
+          {
+            "name": "OneTrust",
+            "url": "https://www.onetrust.com/solutions/ai-governance/",
+            "role": "AI governance platform automating policy enforcement, risk assessment, and compliance across AI lifecycle"
+          },
+          {
+            "name": "Fact-Checking Organizations (EDMO, IAPP)",
+            "url": "https://edmo.eu/",
+            "role": "Existing fact-checking networks and professional associations providing curated AI governance resources and verification practices"
+          }
+        ],
+        "funding": "None found",
+        "trl": 4,
+        "trl_justification": "Existing platforms (Credo AI, Collibra, OneTrust) demonstrate working prototypes and early commercial deployment for enterprise AI governance, but no dedicated platform specifically designed for verified common knowledge generation on AI governance issues has been identified. Fact-checking organizations and policy research institutes provide partial solutions but lack integration into unified common knowledge system.",
+        "key_publications": [
+          {
+            "title": "Governance of Generative AI",
+            "date": "2025",
+            "url": "https://academic.oup.com/policyandsociety/article/44/1/1/7997395"
+          },
+          {
+            "title": "Fact-Checking as Epistemic Infrastructure: From Journalistic Gatekeeping to Platform Governance",
+            "date": "2025",
+            "url": "https://journals.sagepub.com/doi/10.1177/27523543251344972"
+          },
+          {
+            "title": "From Information Asymmetry to Intelligence Symmetry: How AI Will Reshape Corporate Governance",
+            "date": "2025",
+            "url": "https://boardfoundation.org/en/insight/from-information-asymmetry-to-intelligence-symmetry-how-ai-will-reshape-corporate-governance/"
+          }
+        ],
+        "state_of_the_art": "AI governance platforms have matured significantly, with enterprise solutions like Credo AI, Collibra, and OneTrust providing model registries, risk assessment, and compliance automation. However, these focus on internal organizational governance rather than generating verified common knowledge for public decision-making. Fact-checking organizations and policy research institutes (IAPP, EDMO, OECD.AI) curate governance resources but lack systematic verification and integration mechanisms. The field recognizes information asymmetry as a critical barrier to effective AI governance, particularly for public sector actors and policymakers. No dedicated platform specifically designed to aggregate, verify, and disseminate shared knowledge on complex AI governance issues to improve collective decision-making has been identified.",
+        "barriers": "First, existing governance platforms prioritize enterprise compliance and internal risk management rather than public knowledge generation and verification. Second, the fragmentation of AI governance knowledge across multiple organizations, standards bodies, and jurisdictions creates coordination challenges and makes systematic verification difficult. Third, establishing credibility and neutrality for a common knowledge platform on contested AI policy issues faces political and institutional resistance, particularly given power asymmetries between Big Tech and smaller stakeholders."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "Platform explicitly designed to 'improve collective understanding and decision-making' and make verified information 'accessible to decision-makers and the public.' Reduces information asymmetries that concentrate power among those with privileged access to knowledge. However, score not 5 because platform design itself (who controls verification, curation standards) could concentrate interpretive power.",
+          "decentralized": 2,
+          "decentralized_evidence": "Research data identifies 'fragmentation of AI governance knowledge across multiple organizations' as a barrier. The proposed solution aggregates and centralizes knowledge into a unified platform, which reduces fragmentation but creates a single point of knowledge authority. No evidence of distributed verification mechanisms or decentralized governance of the platform itself.",
+          "defensive": 4,
+          "defensive_evidence": "Platform is purely informational/epistemic in nature\u2014generates and disseminates verified knowledge rather than deploying autonomous systems or enforcement mechanisms. Defensive posture: reduces information asymmetries that could be exploited by well-resourced actors. Not scored 5 because knowledge itself can be weaponized depending on how it's used by recipients.",
+          "differential": 2,
+          "differential_evidence": "Platform addresses information asymmetry barriers to effective AI governance, which could help defensive actors (policymakers, smaller stakeholders) catch up to offensive capabilities of large tech companies. However, research data notes 'power asymmetries between Big Tech and smaller stakeholders' as a barrier, suggesting the platform alone does not systematically accelerate defensive tech development relative to offensive capabilities. No evidence it differentially accelerates defensive vs. offensive AI development.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Coordination",
+          "what_to_do_now": "Convene",
+          "foresight_connection": 2
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Transforms the AI governance field by addressing a recognized critical gap: no existing platform systematically aggregates, verifies, and disseminates shared knowledge on complex AI governance issues for public decision-making. Research data confirms 'the field recognizes information asymmetry as a critical barrier to effective AI governance.' However, transformation is field-specific (AI governance) rather than cross-field. Score 3 rather than 4 because existing partial solutions (fact-checking orgs, policy institutes, enterprise platforms) already address components; this represents integration and specialization rather than opening entirely new action spaces."
         },
         "composite": 15
       },
@@ -4193,6 +3837,270 @@
         "transformative": {
           "score": 2,
           "evidence": "Protocol transforms a niche (AI governance foresight) by enabling structured, scalable expert consensus on AI futures. However, transformative potential is limited by: (1) Narrow application domain (AI governance, not broader fields); (2) Incremental nature\u2014combines existing methods (Delphi + world models + AI) rather than introducing fundamentally new capability; (3) Unproven impact\u2014'lacks peer-reviewed validation demonstrating that integrated collaborative world-modeling produces more actionable AI governance insights than existing methods.' Could become score 3 if validation shows it materially improves AI governance decision-making at scale, but current evidence supports only niche transformation."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
+      "name": "The Scenario Planning Institution",
+      "source_quote": "The Scenario Planning Institution (Hackathon shared second place): Develops scenarios to explore potential, underrepresented futures of AI and its societal impacts.",
+      "source_quote_context": "Executive Summary, list of nine institutional prototypes developed at the hackathon",
+      "speaker": "Hackathon team (unnamed members)",
+      "one_liner": "A dedicated institution that systematically develops and disseminates scenarios focused on underrepresented or neglected AI futures to broaden societal foresight.",
+      "mechanism": "The institution identifies gaps in existing AI scenario literature\u2014particularly futures that are underrepresented in mainstream discourse\u2014and develops detailed, rigorous scenarios exploring these possibilities, making them available to policymakers, researchers, and the public to diversify the range of futures being planned for.",
+      "exists_today": "RAND, IFTF, and various think tanks conduct scenario planning, and the IPCC uses scenario frameworks, but a dedicated institution focused specifically on underrepresented AI futures does not exist.",
+      "source_file": "x-hope/hackaton-report.md",
+      "source_category": "x-hope",
+      "source_url": null,
+      "source_section": "Part 1",
+      "group": "AI Safety, Alignment & Governance",
+      "research": {
+        "organizations": [
+          {
+            "name": "AI Futures Project",
+            "url": "https://www.aifutures.org/",
+            "role": "Develops detailed scenario forecasts of AI trajectories; published AI 2027 scenario examining rapid AI development paths"
+          },
+          {
+            "name": "Institute for the Future (IFTF)",
+            "url": "https://www.iftf.org/",
+            "role": "Conducts scenario planning across multiple domains including AI; created AI Election Scenario Planner for election officials"
+          },
+          {
+            "name": "RAND Corporation",
+            "url": "https://www.rand.org/",
+            "role": "Conducts scenario planning and AI futures research; provides scenario methods used by other organizations"
+          },
+          {
+            "name": "Centre for Future Generations",
+            "url": "https://cfg.eu/",
+            "role": "Developed five advanced AI scenarios exploring fast/gradual progress and centralized/decentralized development paths"
+          },
+          {
+            "name": "Association of Research Libraries (ARL) / Coalition for Networked Information (CNI)",
+            "url": "https://www.arl.org/",
+            "role": "Published ARL/CNI AI Scenarios: AI-Influenced Futures in June 2024 exploring AI impacts on research environment"
+          }
+        ],
+        "funding": "AI Futures Project: funded by charitable donations and grants (specific amounts not disclosed)",
+        "trl": 4,
+        "trl_justification": "Multiple organizations actively conducting scenario planning exercises and publishing detailed scenario reports (ARL/CNI 2024, Centre for Future Generations 2025, AI Futures Project 2025). Scenarios are being used by policymakers and institutions for strategic planning. However, no dedicated institution focused specifically on underrepresented AI futures exists yet; work remains distributed across multiple organizations without systematic focus on neglected scenarios.",
+        "key_publications": [
+          {
+            "title": "AI 2027: A Scenario Forecast",
+            "date": "2025",
+            "url": "https://ai-2027.com/"
+          },
+          {
+            "title": "ARL/CNI AI Scenarios: AI-Influenced Futures",
+            "date": "2024",
+            "url": "https://www.arl.org/resources/the-arl-cni-2035-scenarios-ai-influenced-futures-in-the-research-environment/"
+          },
+          {
+            "title": "Advanced AI: Possible Futures",
+            "date": "2025",
+            "url": "https://cfg.eu/advanced-ai-possible-futures/"
+          }
+        ],
+        "state_of_the_art": "Scenario planning for AI futures is increasingly mainstream, with organizations like RAND, IFTF, and emerging groups like AI Futures Project producing detailed scenarios. Two-thirds of strategic foresight practitioners surveyed by OECD/WEF in 2025 use AI to assist scenario development. However, most work focuses on mainstream narratives (rapid progress, AGI timelines, economic impacts) rather than systematically exploring underrepresented or neglected futures. Existing scenarios tend to cluster around similar assumptions and uncertainties, leaving gaps in coverage of alternative development paths, governance models, and societal outcomes.",
+        "barriers": "No dedicated institutional infrastructure exists to systematically identify and develop underrepresented AI futures. Funding for scenario planning work is dispersed across multiple organizations without coordinated focus on neglected scenarios. Methodological challenges remain in generating truly novel scenarios that escape dominant framings and expert consensus biases, particularly regarding futures that diverge from current technological trajectories or challenge prevailing assumptions about AI development."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "Mechanism explicitly aims to 'make [scenarios] available to policymakers, researchers, and the public' to 'broaden societal foresight.' Distributes decision-making inputs by expanding the range of futures being planned for across multiple stakeholder groups. However, scenario development itself would likely remain expert-driven rather than participatory, preventing full democratization (score 5).",
+          "decentralized": 2,
+          "decentralized_evidence": "Proposed as 'a dedicated institution'\u2014a single organizational entity. This creates a potential single point of failure/control for identifying and developing underrepresented futures. Research data shows current work is 'distributed across multiple organizations,' which is more decentralized than the proposed centralized institution. No evidence of distributed governance or federated architecture.",
+          "defensive": 4,
+          "defensive_evidence": "Mechanism is purely defensive: identifies gaps in existing discourse and develops alternative scenarios to broaden planning. Does not attack or promote particular futures, but rather expands the defensive surface by ensuring policymakers consider neglected possibilities. Enables better preparation rather than offensive capability.",
+          "differential": 2,
+          "differential_evidence": "Scenario planning itself is neutral technology\u2014it can accelerate understanding of both defensive and offensive AI futures equally. No evidence that focusing on underrepresented futures systematically accelerates defensive tech development faster than offensive. The institution would illuminate neglected scenarios but not inherently create differential acceleration between defensive and offensive capabilities.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Coordination",
+          "what_to_do_now": "Convene",
+          "foresight_connection": 3
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Transforms the foresight field by systematically addressing a documented gap: 'most work focuses on mainstream narratives...rather than systematically exploring underrepresented or neglected futures.' Research data confirms 'existing scenarios tend to cluster around similar assumptions,' leaving coverage gaps. A dedicated institution would shift field-wide practice toward more comprehensive futures exploration. However, impact is bounded to strategic foresight and policy planning domains rather than multiple fields, and does not create entirely new action spaces (score 4-5 territory). Represents significant field transformation (score 3) rather than civilizational shift."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
+      "name": "Flourishing Certification",
+      "source_quote": "Create a public and transparent certification for how well products support well-being. Launch and successfully implement the Flourishing Certification, a dynamic rating system for organizations and AI models that reflects community preferences for well-being.",
+      "source_quote_context": "Institution Prototypes section, describing the Flourishing Foundation (Hackathon winner) proposal",
+      "speaker": "Amanda Ngo, Chiara Gerosa, Jelena Luketina, Mingzhu He (Flourishing Foundation team)",
+      "one_liner": "A dynamic, community-driven certification system that rates organizations and AI models based on how well they support human well-being.",
+      "mechanism": "The certification functions as a dynamic rating system that updates based on real community ratings and preferences for well-being. It is developed collaboratively with diverse sectors and communities to ensure it meets varied needs. It is paired with a foundational research agenda that produces a well-being index to underpin the ratings, and is supported by a fellowship and incubator program for value-aligned products.",
+      "exists_today": "Existing product certifications (e.g., B Corp, energy star ratings) provide partial analogues, but none specifically target AI model well-being impact with dynamic community-driven updating mechanisms.",
+      "source_file": "x-hope/hackaton-report.md",
+      "source_category": "x-hope",
+      "source_url": null,
+      "source_section": "Part 30001",
+      "group": "Education, Development & Human Flourishing",
+      "research": {
+        "organizations": [
+          {
+            "name": "Gloo",
+            "url": "https://gloo.com",
+            "role": "Developing Flourishing AI (FAI) standards evaluating AI models across seven well-being dimensions"
+          },
+          {
+            "name": "Building Humane Technology",
+            "url": "https://buildinghumanetech.org",
+            "role": "Created HumaneBench benchmark testing AI models for well-being prioritization"
+          },
+          {
+            "name": "Human Flourishing Program at Harvard",
+            "url": "https://hfh.fas.harvard.edu/ai-and-flourishing",
+            "role": "Research initiative developing frameworks for AI aligned with human flourishing across six dimensions"
+          },
+          {
+            "name": "Coalition for Health AI (CHAI)",
+            "url": "https://www.chai.org",
+            "role": "Launching work group to develop framework for health AI supporting human flourishing"
+          },
+          {
+            "name": "Digital Wellness Institute",
+            "url": "https://www.digitalwellnessinstitute.com",
+            "role": "Provides Digital Flourishing Survey and certifications for digital well-being measurement"
+          }
+        ],
+        "funding": "None found",
+        "trl": 3,
+        "trl_justification": "Prototype benchmarks and standards frameworks exist (HumaneBench, Flourishing AI standards) with initial testing on AI models, but no evidence of full-scale deployment, community-driven dynamic rating system implementation, or operational certification infrastructure at scale",
+        "key_publications": [
+          {
+            "title": "Flourishing Considerations for AI",
+            "date": "2025",
+            "url": "https://ssrn.com/abstract=5528901"
+          },
+          {
+            "title": "A new AI benchmark tests whether chatbots protect human well-being",
+            "date": "2025",
+            "url": "https://techcrunch.com/2025/11/24/a-new-ai-benchmark-tests-whether-chatbots-protect-human-wellbeing/"
+          },
+          {
+            "title": "Well-being impact assessment of artificial intelligence \u2013 A search for causality and proposal for an open platform",
+            "date": "2023",
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S014971892300071X"
+          }
+        ],
+        "state_of_the_art": "Multiple organizations are developing well-being-focused AI evaluation frameworks. Gloo introduced Flourishing AI standards evaluating models across seven dimensions (relationships, finances, happiness, meaning, character, health, spirituality) developed with Harvard's Human Flourishing Program. Building Humane Technology created HumaneBench, a benchmark testing 15 AI models against 800 realistic scenarios, finding 67% flip to harmful behavior when instructed to disregard well-being. CHAI is developing a health AI framework centered on human flourishing. However, these remain largely static benchmarks and standards rather than dynamic, community-driven certification systems with real-time updating mechanisms.",
+        "barriers": "No comprehensive framework exists for dynamic, community-driven certification with real-time rating updates based on user feedback. Establishing causal links between AI systems and well-being impacts is methodologically complex due to socio-technical context. Governance challenges remain around preventing certification capture by dominant firms and ensuring diverse stakeholder representation in standard-setting bodies."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "Mechanism explicitly states 'developed collaboratively with diverse sectors and communities' and 'dynamic rating system that updates based on real community ratings and preferences.' Source emphasizes community-driven updating mechanisms. However, no evidence of governance structures ensuring equal voting power or preventing elite capture, limiting score from 5.",
+          "decentralized": 2,
+          "decentralized_evidence": "Certification system appears to be a centralized rating infrastructure ('public and transparent certification'). While community input is solicited, the actual certification body and rating infrastructure would likely be centralized. Research data notes 'governance challenges remain around preventing certification capture by dominant firms,' indicating centralization risks. No evidence of distributed ledger, federated governance, or multiple independent certification bodies.",
+          "defensive": 4,
+          "defensive_evidence": "Certification is fundamentally defensive: it measures and protects against harmful AI impacts on well-being rather than enabling offensive capabilities. It aims to constrain AI behavior (HumaneBench found 67% of models 'flip to harmful behavior'), not enhance attack surface. However, not purely defensive (score 5) because certification itself could be gamed or weaponized for competitive advantage.",
+          "differential": 2,
+          "differential_evidence": "Certification accelerates defensive evaluation of AI systems, but research data shows existing frameworks are 'largely static benchmarks and standards rather than dynamic, community-driven certification systems.' No evidence that this accelerates defensive tech faster than offensive tech development. The differential advantage depends on adoption speed and real-time updating capability, which remain unproven. Certification measures but does not inherently slow offensive AI development.",
+          "dacc_summary": "Strengths in democratic design and defensive posture; significant weaknesses in decentralization and differential acceleration.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Coordination",
+          "readiness_bottleneck_evidence": "TRL 3 indicates prototype stage exists. Funding not found but not identified as primary barrier. Physics/Engineering feasible. Primary barrier is 'No comprehensive framework exists for dynamic, community-driven certification with real-time rating updates' and 'governance challenges remain around preventing certification capture.' These are coordination problems requiring multi-stakeholder alignment, not technical or financial barriers.",
+          "what_to_do_now": "Convene",
+          "what_to_do_now_evidence": "Given TRL 3 status with existing benchmarks (HumaneBench, Flourishing AI standards) and identified coordination barriers, immediate action should be convening diverse stakeholders (Gloo, Building Humane Technology, CHAI, Harvard, Digital Wellness Institute) to establish governance structures, prevent capture, and design dynamic rating mechanisms. Research phase is underway; coordination infrastructure is the bottleneck.",
+          "foresight_connection": 2,
+          "foresight_connection_evidence": "Certification concept is mentioned in source material and discussed in context of well-being frameworks, but not as central focus of research agenda. Publications focus on benchmarks and frameworks rather than certification systems specifically. Governance and dynamic updating mechanisms are identified as barriers but not substantively explored in provided materials."
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Transforms a field (AI evaluation and governance). Current state shows multiple organizations developing well-being frameworks independently; successful implementation of dynamic, community-driven certification would consolidate and standardize well-being assessment across AI industry. This would shift AI development incentives toward well-being optimization at scale. However, does not reach score 4 (multiple fields) because impact is primarily within AI governance/evaluation domain, not across healthcare, finance, education simultaneously. Does not reach score 5 because certification is a measurement/incentive tool, not a new action space or capability."
+        },
+        "composite": 15
+      },
+      "v2_consensus": false,
+      "tier": 2
+    },
+    {
+      "name": "TAI Horizon Scanner",
+      "source_quote": "We need something like a TAI 'Horizon Scanner' that utilizes advanced world models and simulations to identify blind spots in current understandings and projections, and to map future landscapes that explore a broad spectrum of potential futures.",
+      "source_quote_context": "Goal: Envisioning and Navigating TAI Futures section, describing avenues for addressing challenges in scenario planning",
+      "speaker": null,
+      "one_liner": "A simulation and scenario-generation platform using AI world models to identify blind spots and map diverse TAI futures, incorporating role-playing games and LLM-based feedback loops.",
+      "mechanism": "The scanner uses advanced world models and simulations to generate and iteratively refine diverse future scenarios, engaging a global community of scientists, ethicists, policymakers, and artists. LLMs are used for feedback, synthesis, and simulating potential AI agent responses within scenarios. Simulations and role-playing games are designed based on the scenarios to explore their implications, with outputs delivered as clear reports with actionable recommendations.",
+      "exists_today": "RAND Corporation and similar think tanks conduct scenario planning; AI-assisted forecasting tools exist, but none combine LLM-based agent simulation, open international collaboration, and iterative community-driven scenario refinement specifically for TAI futures.",
+      "source_file": "x-hope/hackaton-report.md",
+      "source_category": "x-hope",
+      "source_url": null,
+      "source_section": "Part 30001",
+      "group": "AI Safety, Alignment & Governance",
+      "research": {
+        "organizations": [
+          {
+            "name": "RAND Corporation - Forecasting Initiative",
+            "url": "https://www.rand.org/global-and-emerging-risks/forecasting-initiative.html",
+            "role": "Crowdsourced forecasting and scenario planning for policy decisions; developing AI-assisted tools for strategic foresight"
+          },
+          {
+            "name": "UN DESA / UN Futures Lab",
+            "url": "https://publicadministration.desa.un.org/news/un-global-horizon-scanning-ai-powered-tool",
+            "role": "Building UN Global Horizon Scanning AI-Powered Tool using RAG pipelines and knowledge graphs for foresight"
+          },
+          {
+            "name": "Shaping Tomorrow",
+            "url": "https://www.shapingtomorrow.com/",
+            "role": "AI-driven continuous horizon scanning and foresight service for scenario planning and strategic intelligence"
+          }
+        ],
+        "funding": "None found",
+        "trl": 4,
+        "trl_justification": "Prototype systems exist (UN tool in beta testing as of Feb-Oct 2025; RAND RFI operational; Shaping Tomorrow deployed). LLM-based agent simulation frameworks demonstrated in research papers (2023-2025). However, no integrated TAI-specific system combining world models, role-playing games, and iterative community-driven refinement for TAI futures has been found in production or advanced testing.",
+        "key_publications": [
+          {
+            "title": "Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives",
+            "date": "2024",
+            "url": "https://www.nature.com/articles/s41599-024-03611-3"
+          },
+          {
+            "title": "AI-assisted scenario generation for strategic planning",
+            "date": "2023",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/ffo2.148"
+          },
+          {
+            "title": "LLM-empowered Agents Simulation Framework for Scenario Generation in Service Ecosystem Governance",
+            "date": "2025",
+            "url": "https://arxiv.org/abs/2509.01441"
+          }
+        ],
+        "state_of_the_art": "AI-assisted scenario planning is rapidly advancing with generative AI systems now capable of generating diverse scenarios at scale and minimal cost. LLM-based agent simulation frameworks can model complex multi-agent interactions and adaptive planning in virtual environments. Horizon scanning tools combining AI with knowledge graphs (e.g., UN tool) are in beta testing. However, most systems focus on business/policy domains rather than TAI-specific futures. Integration of world models, role-playing games, and iterative community feedback loops specifically for TAI remains largely unexplored in deployed systems.",
+        "barriers": "Key barriers include: (1) Lack of validated world models capable of simulating complex TAI scenarios with sufficient fidelity; (2) Difficulty in designing role-playing game mechanics that meaningfully engage diverse stakeholders (scientists, ethicists, policymakers, artists) while maintaining scenario coherence; (3) Challenges in LLM reliability, hallucination, and knowledge boundary control when simulating novel AI futures; (4) Absence of established metrics for evaluating scenario quality and actionability in TAI contexts."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "Mechanism explicitly includes 'engaging a global community of scientists, ethicists, policymakers, and artists' and 'iterative community-driven scenario refinement.' Distributes decision-making across diverse stakeholder groups rather than concentrating in single institution. However, not fully 5 because ultimate platform governance/control structure not specified.",
+          "decentralized": 2,
+          "decentralized_evidence": "Described as 'open international collaboration' suggesting some distribution, but mechanism centers on a single 'platform' and 'reports with actionable recommendations' flowing from it. No evidence of distributed architecture, peer-to-peer governance, or elimination of central coordination point. Remains hub-and-spoke model.",
+          "defensive": 4,
+          "defensive_evidence": "Explicitly designed to 'identify blind spots' and 'map diverse TAI futures' for anticipatory governance\u2014core defensive foresight function. Role-playing games and scenario exploration are exploratory/defensive rather than prescriptive/offensive. However, not purely 5 because simulations could theoretically be misused to model attack vectors; defensive intent is clear but not architecturally enforced.",
+          "differential": 2,
+          "differential_evidence": "Tool accelerates defensive foresight and scenario planning capability. However, research data shows 'LLM-based agent simulation frameworks' are general-purpose and advancing for all domains. No evidence this system preferentially accelerates defensive over offensive AI capabilities\u2014it is domain-specific foresight, not a differential technology. Barrier #3 notes 'LLM reliability and hallucination' apply equally to offensive/defensive uses.",
+          "total": 12
+        },
+        "actionability": {
+          "readiness_bottleneck": "Coordination",
+          "what_to_do_now": "Convene",
+          "foresight_connection": 3
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "Transforms a field (TAI governance and foresight). Current state: TAI futures analysis is fragmented across academic papers, think tanks, and policy briefs with limited integration or community-driven iteration. A functional TAI Horizon Scanner would create a new shared infrastructure for collective scenario mapping and blind-spot identification, enabling field-wide coordination on TAI futures. This is field-transforming for TAI governance/foresight but does not create new action spaces beyond improved anticipatory governance (not 4-5). Transformative within its domain but not civilizational."
         },
         "composite": 15
       },
@@ -7224,6 +7132,98 @@
         "composite": 13
       },
       "v2_consensus": false,
+      "tier": 2
+    },
+    {
+      "name": "Global Deliberation as a Service (GDaaS)",
+      "source_quote": "Pioneer Global Deliberation as a Service (GDaaS), demonstrating that it is possible for organizations and institutions worldwide to rapidly engage in global deliberative processes on major global challenges, such as AI development, climate change, etc. Secure an Advanced Market Commitment by organizations (e.g., companies, and international organizations such as the UN) that would use a GDaaS, in order to spur rapid investment.",
+      "source_quote_context": "Section on the Global Deliberation Coordinator institution, Goals and Next Steps subsections",
+      "speaker": "Aviv Ovadya, Bear H\u00e4on, Evan Miyazono, Jo\u00ebl Christoph, Joshua Tan, Morgan Livingston, Matteo Pistillo",
+      "one_liner": "A service model for rapidly convening representative global deliberative assemblies on demand, funded via advance market commitments.",
+      "mechanism": "Organizations (companies, UN bodies, etc.) pre-commit to purchasing deliberation services, creating a market that spurs investment. The GDC then convenes representative deliberative assemblies using AI-powered tools to support scalable, secure deliberations. Iterative pilots derisk the process before full deployment, and results feed back into process refinement.",
+      "exists_today": "Deliberative mini-publics and citizens' assemblies exist (e.g., newDemocracy, OECD deliberative processes), but a standardized, on-demand, globally scalable service model with advance market commitments does not.",
+      "source_file": "x-hope/hackaton-report.md",
+      "source_category": "x-hope",
+      "source_url": null,
+      "source_section": "Part 45001",
+      "group": "AI-Mediated Deliberation & Collective Intelligence",
+      "research": {
+        "organizations": [
+          {
+            "name": "Future of Life Institute (FLI)",
+            "url": "https://futureoflife.org",
+            "role": "Hosted hackathon with Foresight Institute to develop Global Deliberation Coordinator concept; incubating winning proposals into real-world institutions"
+          },
+          {
+            "name": "Foresight Institute",
+            "url": "https://foresightinstitute.org",
+            "role": "Co-hosted hackathon for AI governance; supporting incubation of Global Deliberation Coordinator"
+          },
+          {
+            "name": "DemocracyNext",
+            "url": "https://www.demnext.org",
+            "role": "Developing tech-enhanced deliberative assemblies with AI-powered sensemaking; conducting field pilots on scaling deliberation"
+          },
+          {
+            "name": "MIT Center for Constructive Communication (MIT CCC)",
+            "url": "https://ccc.mit.edu",
+            "role": "Co-leading Tech-Enhanced Deliberative Assembly Pop-Up Lab with DemocracyNext; developing AI tools for deliberative processes"
+          },
+          {
+            "name": "Stanford Deliberative Democracy Lab",
+            "url": "https://deliberativedemocracy.stanford.edu",
+            "role": "Conducting large-scale deliberative polls with AI facilitation; worked with Meta on global deliberative process with ~6,000 participants"
+          }
+        ],
+        "funding": "FLI/Foresight hackathon: $10,000 to winning team (Global Deliberation Coordinator), $5,000 each to runners-up (2024); MIT CCC/DemocracyNext two-year pop-up lab funding not specified; Stanford lab funding not specified",
+        "trl": 4,
+        "trl_justification": "Deliberative mini-publics and citizens' assemblies are established practices (TRL 6-7); AI-enhanced deliberation tools are in early prototyping and field testing phase (TRL 4); Global Deliberation Coordinator concept won hackathon in 2024 and is being incubated but no operational service model yet deployed; advance market commitment mechanism is proven in vaccines but not applied to deliberation services",
+        "key_publications": [
+          {
+            "title": "Integrating Artificial Intelligence into Citizens' Assemblies: Benefits, Concerns and Future Pathways",
+            "date": "2024",
+            "url": "https://delibdemjournal.org/article/id/1556/"
+          },
+          {
+            "title": "Five dimensions of scaling democratic deliberation: With and beyond AI",
+            "date": "2025",
+            "url": "https://www.demnext.org/projects/five-dimensions-of-scaling-democratic-deliberation-with-and-beyond-ai"
+          },
+          {
+            "title": "Analysing the Global Assembly's influence: The challenges of linking to the deliberative system of global climate governance",
+            "date": "2025",
+            "url": "https://www.sciencedirect.com/science/article/pii/S1462901125001406"
+          }
+        ],
+        "state_of_the_art": "Deliberative mini-publics and citizens' assemblies are well-established globally, with hundreds documented by the OECD. AI integration into deliberative processes is emerging, with tools for sensemaking, translation, and accessibility being prototyped in field pilots (MIT CCC/DemocracyNext, Stanford). Large-scale deliberative processes have been conducted (Global Assembly on Climate with 100 participants; Meta/Stanford deliberative poll with ~6,000 participants), demonstrating feasibility of multilingual, geographically distributed deliberation. However, a standardized, on-demand, globally scalable service model with advance market commitments does not yet exist. The Global Deliberation Coordinator concept was developed in a 2024 hackathon and is being incubated, but remains in early-stage institutional development.",
+        "barriers": "Key barriers include: (1) Ensuring high-quality deliberation across diverse cultural and policy contexts while maintaining representativeness and socioeconomic diversity\u2014previous global assemblies have skewed toward middle- to high-income participants; (2) Establishing institutional linkages and political pathways for deliberative outputs to influence actual policy decisions, as demonstrated by limited impact of the Global Assembly on climate governance; (3) Scaling costs and complexity of multilingual facilitation, secure virtual spaces, and human-quality deliberation at global scale, which may require AI facilitation but raises concerns about bias, transparency, and democratic legitimacy."
+      },
+      "scores": {
+        "dacc": {
+          "democratic": 4,
+          "democratic_evidence": "GDaaS explicitly aims to 'distribute decision-making power' through representative deliberative assemblies on global challenges. Source states it enables 'organizations and institutions worldwide to rapidly engage in global deliberative processes.' However, score is not 5 because: (1) representativeness barriers exist\u2014'previous global assemblies have skewed toward middle- to high-income participants'; (2) political linkage remains weak\u2014'limited impact of the Global Assembly on climate governance' suggests outputs may not translate to actual power distribution; (3) service model controlled by purchasing organizations creates potential for top-down commissioning rather than bottom-up democratization.",
+          "decentralized": 2,
+          "decentralized_evidence": "GDaaS as described creates a centralized service provider (Global Deliberation Coordinator) that convenes assemblies on demand for purchasing organizations. This is a single point of institutional control. While deliberative assemblies themselves are distributed (geographically dispersed participants), the service architecture concentrates convening power in one entity. Research data shows 'no operational service model yet deployed,' so decentralization mechanisms (e.g., federated networks, open-source tooling, distributed governance) are not evidenced. AI-powered tools could reduce human bottlenecks but don't address institutional centralization.",
+          "defensive": 3,
+          "defensive_evidence": "GDaaS is framed as defensive infrastructure for global governance: enabling better deliberation on 'major global challenges, such as AI development, climate change.' Deliberative processes themselves are non-coercive and consensus-building (defensive posture). However, score is not higher because: (1) the mechanism is not purely defensive\u2014it could be used to manufacture consent or legitimize predetermined decisions if institutional linkages are weak; (2) no evidence that GDaaS specifically protects against adversarial uses or includes safeguards against capture; (3) barriers note 'concerns about bias, transparency, and democratic legitimacy' in AI facilitation, suggesting offensive risks exist.",
+          "differential": 1,
+          "differential_evidence": "No evidence in source material that GDaaS accelerates defensive technology faster than offensive technology. The service model itself is neutral with respect to differential technological development. AI tools for deliberation could theoretically be used for either defensive (transparent sensemaking) or offensive (manipulation, surveillance) purposes. Research notes 'concerns about bias, transparency, and democratic legitimacy' in AI facilitation but does not address differential acceleration. Score reflects absence of evidence rather than evidence of non-differential impact.",
+          "total": 10
+        },
+        "actionability": {
+          "readiness_bottleneck": "Coordination",
+          "what_to_do_now": "Convene",
+          "foresight_connection": 3
+        },
+        "transformative": {
+          "score": 3,
+          "evidence": "GDaaS transforms a field (deliberative democracy and global governance) but not multiple fields. Evidence: (1) Field transformation: If operationalized, GDaaS would standardize and scale deliberative processes from niche practice (hundreds of mini-publics globally) to on-demand service infrastructure for major global challenges. This is a field-level shift in how global governance operates. (2) Demonstrated feasibility: Large-scale deliberative processes already conducted (Global Assembly, Meta/Stanford with ~6,000 participants) show the core mechanism works. (3) Limitations preventing higher score: (a) Institutional linkage remains weak\u2014'limited impact of the Global Assembly on climate governance' suggests even if GDaaS scales, outputs may not influence actual decisions, limiting transformative impact; (b) Representativeness barriers unresolved\u2014skew toward high-income participants limits democratic transformation; (c) No evidence of spillover effects into other fields (e.g., corporate governance, education, healthcare deliberation). Score is 3 (transforms a field) not 4 because impact is contingent on solving institutional linkage and representativeness barriers, which are not yet addressed."
+        },
+        "composite": 13
+      },
+      "v2_consensus": true,
+      "v2_voted_by": "both",
+      "v2_matched_name": "Global Deliberation Coordinator (GDaaS)",
       "tier": 2
     },
     {

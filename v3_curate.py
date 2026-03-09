@@ -94,9 +94,9 @@ def apply_tiers(candidates):
 
         # Tier 1 thresholds
         if is_v2:
-            dacc_threshold = 10
+            dacc_threshold = 11
         else:
-            dacc_threshold = 12
+            dacc_threshold = 13
 
         if (dacc_total >= dacc_threshold
                 and trans_score >= 3
