@@ -133,7 +133,7 @@ def generate_plot():
         t = ax.annotate(
             label,
             (xs[i], ys[i]),
-            fontsize=10,
+            fontsize=12,
             color="#1A1A1A",
             fontweight="normal",
             zorder=6,
@@ -163,9 +163,9 @@ def generate_plot():
     # ── Axes ─────────────────────────────────────────────────────────
     ax.set_xlim(32, 100)
     ax.set_ylim(56, 92)
-    ax.set_xlabel("d/acc Values Alignment Score", fontsize=13, labelpad=12, fontweight="medium")
-    ax.set_ylabel("Technology Impact Score", fontsize=13, labelpad=12, fontweight="medium")
-    ax.set_title("d/acc Alignment vs. Technology Impact", fontsize=18, fontweight="bold", pad=20)
+    ax.set_xlabel("d/acc Values Alignment Score", fontsize=14, labelpad=12, fontweight="medium")
+    ax.set_ylabel("Technology Impact Score", fontsize=14, labelpad=12, fontweight="medium")
+    ax.set_title("d/acc Alignment vs. Technology Impact", fontsize=17, fontweight="bold", pad=20)
 
     ax.set_xticks(range(40, 101, 10))
     ax.set_yticks(range(60, 91, 5))
