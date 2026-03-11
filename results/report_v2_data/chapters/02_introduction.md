@@ -12,13 +12,14 @@ The category matters because it identifies a different kind of leverage. Most an
 
 ### What This Project Did
 
-Over 300 candidate hyper-entities (before deduplication) were extracted from 107 source documents (~490,000 words) from the [Existential Hope](https://existentialhope.com) community:
+Over 300 candidate hyper-entities (before deduplication) were extracted from 109 source documents (~490,000 words) from the [Existential Hope](https://existentialhope.com) community:
 
 - **65 podcast transcripts** from the [Existential Hope podcast](https://existentialhope.com/podcasts) — long-form conversations with scientists, technologists, and thinkers on long-term futures
 - **41 world gallery submissions** from [worlds.existentialhope.com](https://worlds.existentialhope.com) — written scenarios of positive long-range futures contributed by researchers and practitioners
-- **1 report** — the Existential Hope Hackathon report
+- **2 [AI Pathways](https://ai-pathways.existentialhope.com) essays** — scenario explorations of two contrasting AI futures (Tool AI and d/acc), developed with input from researchers at Anthropic, DeepMind, and others
+- **1 Existential Hope Hackathon report**
 
-Each candidate was scored on hyper-entity qualification, technology impact, and alignment with [d/acc values](https://ai-pathways.existentialhope.com) (technologies that distribute power rather than concentrate it, strengthen defense over offense, and enable broad cooperation). Two researchers reviewed the results independently and agreed on 39 entities.
+Each candidate was scored on hyper-entity qualification, technology impact, and alignment with [d/acc values](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html) (technologies that distribute power rather than concentrate it, strengthen defense over offense, and enable broad cooperation). Two researchers reviewed the results independently and agreed on 39 entities.
 
 This is an explicitly values-inflected exercise. The d/acc framework is one lens, not a universal one, but it's specific enough to be useful: it favors technologies that make a future worth arriving at, rather than just a powerful one.
 
