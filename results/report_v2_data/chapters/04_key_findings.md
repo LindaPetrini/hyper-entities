@@ -8,9 +8,9 @@
 
 The Existential Hope corpus skews toward well-aligned technologies—most entities sit in the 65–90% d/acc range, which reflects the community's orientation rather than the broader technology landscape. High d/acc alignment and high technology impact don't reliably coincide, though: several entities with the strongest values alignment scores are in governance and coordination, areas where the transformation is social and institutional rather than technical and where impact scores are harder to assign. The entities that combine both—high impact and high alignment—occupy a relatively sparse corner of the plot. On maturity, most entities sit at Early Demonstrations (20 of 39), with 11 still at foundational research, 6 at scaling challenges, and only 2 near deployment. The window for shaping these systems is open.
 
-### Seven Entities Worth More Attention
+### Most Underattended
 
-The following seven score well on both dimensions but receive disproportionately little funding and visibility relative to that performance:
+The entities combining high d/acc alignment with high technology impact—the sparse upper-right corner of the plot—and receiving the least funding and visibility relative to those scores are:
 
 - **Automated Scientific Publishing for Machine Consumers** (d/acc: 90%, Tech: 86%) — infrastructure for AI-native knowledge sharing, enabling scientific progress to compound at machine speed
 - **LexCommons** (d/acc: 90%, Tech: 81%) — open-source legal infrastructure, building on LexDAO's early work toward accessible governance tooling
@@ -22,5 +22,5 @@ The following seven score well on both dimensions but receive disproportionately
 
 ## Consensus Entities
 
-The 39 entities fall into nine thematic groups. One pair (Reputational Markets and Prediction Markets as Decision Support Systems) is presented as a single merged entity. 15 entities receive full write-ups; 24 appear in summary format.
+The 39 entities are organized into nine thematic groups. One pair (Reputational Markets and Prediction Markets as Decision Support Systems) is presented as a single merged entity.
 
