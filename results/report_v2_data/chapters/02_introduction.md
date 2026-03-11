@@ -4,11 +4,11 @@
 
 A *hyper-entity* has three defining traits: it doesn't exist yet (at most it's an idea or early sketch, not a working system); it would be transformative, not just an upgrade, enabling fundamentally new human capabilities; and—crucially—it's already reshaping the world anyway, because the mere expectation of it is driving how people invest, coordinate, and tell stories about the future right now.
 
-The term comes from Michael Nielsen, who emphasized the design dimension: hyper-entities as orienting visions that require genuine imagination to conceive. This project adds an operational criterion—that the anticipation is already measurably active, not merely conceptual.
+The term comes from [Michael Nielsen](https://michaelnotebook.com/optimism/index.html), who emphasized the design dimension: hyper-entities as orienting visions that require genuine imagination to conceive. This project adds an operational criterion—that the anticipation is already measurably active, not merely conceptual. That causal dimension is closer to what Nick Land calls [hyperstition](https://en.wikipedia.org/wiki/Hyperstition)—a self-fulfilling prophecy—though Nielsen himself draws a distinction between the two terms.
 
-The Internet before 1990 reorganized telecom R&D, policy, and venture capital before most people had been online. The Apollo program organized national budgets and education systems before any Moon landing. AGI today reshapes research priorities and corporate strategy despite not yet existing. In each case, the expectation did real work.
+Historical examples include the Internet (pre-1990s), which reorganized telecoms R&D, policy, and venture capital before widespread deployment; the Space Race (1950s–60s), where Moon missions organized national budgets and education systems before any launches; and AGI today, which reshapes AI research priorities, corporate strategies, and policy discussions despite not yet existing. In each case, the expectation did real work.
 
-The category matters because it identifies a different kind of leverage. The question isn't "what technology is most advanced?" but "what anticipated systems are already organizing effort and attention—and are they pointing in directions we'd actually endorse?"
+The category matters because it identifies a different kind of leverage. Most analysis of emerging technology asks what's most likely to arrive, or where momentum is building. This project asks something different: which anticipated systems are organizing effort and attention, and are they pointing toward futures worth wanting?
 
 ### What This Project Did
 
@@ -16,8 +16,12 @@ Over 300 candidate hyper-entities were extracted from 108 documents from the [Ex
 
 This is an explicitly values-inflected exercise. The d/acc framework is one lens, not a universal one, but it's specific enough to be useful: it favors technologies that make a future worth arriving at, rather than just a powerful one.
 
+The context for this project is a technology landscape heavily concentrated around one anticipated system. In 2024, [over $252 billion](https://hai.stanford.edu/ai-index/2025-ai-index-report/economy) in corporate investment flowed into AI and AGI companies; in 2025, AI startups raised [$211 billion in venture capital](https://dataconomy.com/2026/02/02/global-ai-funding-hits-211-billion-in-2025/), an 85% year-over-year increase. AGI may well be transformative—it's already a hyper-entity by the criteria above. But concentration creates crowding-out effects, and many of the systems in this report would be valuable regardless of AGI timelines, and several would make AGI's arrival safer to navigate. The argument isn't anti-AGI; it's closer to portfolio theory: under genuine uncertainty, infrastructure that creates value across many possible futures is worth naming.
+
 ### How to Use This Report
 
-The 39 entities aren't predictions. They're a curated map of futures that score well on impact and values alignment but receive fragmentary attention compared to more prominent technologies—a starting point for a different conversation about where to direct research, funding, and policy attention.
+The 39 entities aren't predictions. They're a curated map of futures that score well on impact and values alignment but receive fragmentary attention compared to more prominent technologies—a starting point for a different conversation about where to direct resources and attention.
 
-The scatter plot in Key Findings gives an overview of the landscape. The undervalued shortlist names seven that stand out on both dimensions. The thematic chapters go deeper on each cluster; they're designed to work as standalone reads if you're interested in a specific domain.
+The scatter plot in Key Findings gives an overview of the landscape. The undervalued shortlist names seven that stand out on both dimensions. The thematic chapters go deeper on each cluster and work as standalone reads.
+
+What you do with it depends on where you sit. **Funders**: the undervalued shortlist and upper-right quadrant of the scatter plot are the most direct starting points—systems with strong values alignment and meaningful impact that are currently under-resourced. **Policymakers**: the entities in that same quadrant are worth building regulatory runway for now, before they're large enough to attract the incumbent opposition that slows good governance. **Researchers and technologists**: the Open Questions sections throughout identify real frontiers—places where basic scientific understanding is missing, governance frameworks don't yet exist, or the coordination problem is more tractable than the technical one.
