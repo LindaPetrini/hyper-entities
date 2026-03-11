@@ -6,11 +6,11 @@
 
 *29 of 39 entities plotted; 10 excluded due to missing technology impact scores.*
 
-Most entities cluster in the middle range—solid values alignment, moderate to high technology impact. A smaller group combines high d/acc alignment with high impact; these are the clearest cases for increased attention. The spread reflects a genuine pattern: technologies that distribute power and support cooperation are not typically the ones attracting concentrated capital.
+Two things stand out in the distribution. First, the Existential Hope corpus skews toward well-aligned technologies—most entities sit in the 65–90% d/acc range, which reflects the community's orientation rather than the broader technology landscape. Second, high d/acc alignment and high technology impact don't reliably coincide. Several entities with the strongest values alignment scores are in governance and coordination—areas where the transformation is social and institutional rather than technical, and where impact scores are harder to assign. The entities that combine both—high impact and high alignment—occupy a relatively sparse corner of the plot, and those are the ones that warrant the most attention.
 
 ### Seven Entities Worth More Attention
 
-These seven score well by both measures but receive disproportionately little funding and visibility:
+The following seven score well on both dimensions but receive disproportionately little funding and visibility relative to that performance:
 
 - **Automated Scientific Publishing for Machine Consumers** (d/acc: 90%, Tech: 86%) — infrastructure for AI-native knowledge sharing, enabling scientific progress to compound at machine speed
 - **LexCommons** (d/acc: 90%, Tech: 81%) — open-source legal infrastructure, building on LexDAO's early work toward accessible governance tooling
