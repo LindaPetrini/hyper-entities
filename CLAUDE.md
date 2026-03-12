@@ -30,6 +30,17 @@ Dashboard for exploring "hyper-entities" - future systems that don't exist yet b
 ## GitHub Pages URL
 https://lindapetrini.github.io/hyper-entities/results/dashboard.html
 
+## Writing Style — Signs of AI Writing to Avoid
+When editing or drafting prose for this project, avoid these patterns:
+- Contrast framing: "Not X — but Y" / "Not X or Y — but Z"
+- Dramatic em-dash reveals mid-sentence
+- Punchy one-sentence paragraphs used for effect
+- Rhetorical questions as section openers
+- "That's the point" / "That's the outcome" as closing zingers
+- Overly adversarial framing (us vs. the dominant discourse, overlooked vs. hyped)
+- Stacking adjectives for intensity ("critical", "urgent", "invisible until too late")
+Aim for: clear, grounded, direct. Stakes are fine, polarizing is not.
+
 ## Commands
 ```bash
 python create_dashboard.py  # Regenerate dashboard
